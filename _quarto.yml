@@ -3,9 +3,11 @@ project:
   output-dir: docs
 
 book:
-  title: "math_script"
-  author: "Jane Doe"
-  date: "10/11/2022"
+  title: "Skript Mathematik"
+  author: "Prof. Dr. Jochen Kruppa"
+  date: "11. October 2022"
+  link-citations: yes
+  cover-image: cover.png
   chapters:
     - index.qmd
     - intro.qmd
