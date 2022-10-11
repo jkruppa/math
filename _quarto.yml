@@ -21,8 +21,10 @@ book:
     - preface.qmd
     - part: geometry-preface.qmd
       chapters:
+      - geometry-unit.qmd
       - geometry-area.qmd
       - geometry-volume.qmd
+      - geometry-parts.qmd
     - part: probability-preface.qmd
       chapters:
       - probability-basic.qmd
