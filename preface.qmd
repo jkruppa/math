@@ -3,6 +3,6 @@
 *Version vom `r format(Sys.time(), '%B %d, %Y um %H:%M:%S')`*
 
 
-: In @dormann2013parametrische und @hurlbert1984pseudoreplication finden wir eine Zusammenfassung von Quellen der Verwirrung also eigentlich der Varianz und deren mögliche Lösung um die Varianz zu beherrschen. {#tbl-experimental-hurlbert}
+In @dormann2013parametrische und @hurlbert1984pseudoreplication finden wir eine Zusammenfassung von Quellen der Verwirrung also eigentlich der Varianz und deren mögliche Lösung um die Varianz zu beherrschen. 
 
 ## Referenzen {.unnumbered}
