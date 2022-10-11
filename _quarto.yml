@@ -15,6 +15,14 @@ book:
   date: "11. October 2022"
   link-citations: yes
   cover-image: cover.png
+  downloads: [pdf]
+  page-footer: 
+    left: "Copyright 2022, Jochen Kruppa" 
+    right: 
+      - icon: github
+        href: https://github.com/jkruppa
+      - icon: youtube 
+        href: https://www.youtube.com/c/JochenKruppa
   chapters:
     - index.qmd
     - literature.qmd
@@ -29,6 +37,7 @@ book:
       chapters:
       - probability-basic.qmd
       - probability-conditional.qmd
+      - probability-distribution.qmd
       
 bibliography: references.bib
 lang: de 

@@ -11,7 +11,7 @@
     "href": "literature.html",
     "title": "1  Literatur",
     "section": "",
-    "text": "Version vom October 11, 2022 um 16:57:29\nWas ist gute Literatur? Immer schwer zu beurteilen. Im Folgenden liste ich einige Literaturquellen auf. Zum einen basiert eine Menge von dem R Code auf Wickham (2016) zum Anderen möchtest du dich vielleicht nochmal rechts oder links weiter bilden. Du musst aber nicht um die Klausur bestehen zu können. Siehe es eher als ein Angebot.\nNeben diesem Modul musst du vermutlich noch andere Module belegen. Deshalb hier eine Auswahl Literatur, die dir helfen mag. Zum einen ist die Literatur anders geschrieben und zum anderen sind dort andere Inhalte."
+    "text": "Version vom October 11, 2022 um 17:09:13\nWas ist gute Literatur? Immer schwer zu beurteilen. Im Folgenden liste ich einige Literaturquellen auf. Zum einen basiert eine Menge von dem R Code auf Wickham (2016) zum Anderen möchtest du dich vielleicht nochmal rechts oder links weiter bilden. Du musst aber nicht um die Klausur bestehen zu können. Siehe es eher als ein Angebot.\nNeben diesem Modul musst du vermutlich noch andere Module belegen. Deshalb hier eine Auswahl Literatur, die dir helfen mag. Zum einen ist die Literatur anders geschrieben und zum anderen sind dort andere Inhalte."
   },
   {
     "objectID": "literature.html#parametrische-statistik",
@@ -39,7 +39,7 @@
     "href": "preface.html",
     "title": "2  Einführung",
     "section": "",
-    "text": "Version vom October 11, 2022 um 16:57:31\nIn Dormann (2013) und Hurlbert (1984) finden wir eine Zusammenfassung von Quellen der Verwirrung also eigentlich der Varianz und deren mögliche Lösung um die Varianz zu beherrschen."
+    "text": "Version vom October 11, 2022 um 17:09:15\nIn Dormann (2013) und Hurlbert (1984) finden wir eine Zusammenfassung von Quellen der Verwirrung also eigentlich der Varianz und deren mögliche Lösung um die Varianz zu beherrschen."
   },
   {
     "objectID": "preface.html#referenzen",
@@ -53,55 +53,62 @@
     "href": "geometry-preface.html",
     "title": "Von Flächen, Volumen und Kegeln",
     "section": "",
-    "text": "Version vom October 11, 2022 um 16:57:34"
+    "text": "Version vom October 11, 2022 um 17:09:19"
   },
   {
     "objectID": "geometry-unit.html",
     "href": "geometry-unit.html",
     "title": "3  Maßeinheiten",
     "section": "",
-    "text": "Version vom October 11, 2022 um 16:57:40"
+    "text": "Version vom October 11, 2022 um 17:09:24"
   },
   {
     "objectID": "geometry-area.html",
     "href": "geometry-area.html",
     "title": "4  Flächenberechung",
     "section": "",
-    "text": "Version vom October 11, 2022 um 16:57:45"
+    "text": "Version vom October 11, 2022 um 17:09:29"
   },
   {
     "objectID": "geometry-volume.html",
     "href": "geometry-volume.html",
     "title": "5  Volumenberechung",
     "section": "",
-    "text": "Version vom October 11, 2022 um 16:57:50"
+    "text": "Version vom October 11, 2022 um 17:09:34"
   },
   {
     "objectID": "geometry-parts.html",
     "href": "geometry-parts.html",
     "title": "6  Teilstückgröße",
     "section": "",
-    "text": "Version vom October 11, 2022 um 16:57:56"
+    "text": "Version vom October 11, 2022 um 17:09:39"
   },
   {
     "objectID": "probability-preface.html",
     "href": "probability-preface.html",
     "title": "Wahrscheinlichkeitsberechung",
     "section": "",
-    "text": "Version vom October 11, 2022 um 16:58:01"
+    "text": "Version vom October 11, 2022 um 17:09:45"
   },
   {
     "objectID": "probability-basic.html",
     "href": "probability-basic.html",
     "title": "7  Grundlagen der Wahrscheinlichkeitsrechnung",
     "section": "",
-    "text": "Version vom October 11, 2022 um 16:58:06"
+    "text": "Version vom October 11, 2022 um 17:09:50"
   },
   {
     "objectID": "probability-conditional.html",
     "href": "probability-conditional.html",
     "title": "8  Bedingte Wahrscheinlichkeiten",
     "section": "",
-    "text": "Version vom October 11, 2022 um 16:58:11"
+    "text": "Version vom October 11, 2022 um 17:09:55"
+  },
+  {
+    "objectID": "probability-distribution.html",
+    "href": "probability-distribution.html",
+    "title": "9  Grundlagen der Wahrscheinlichkeitsrechnung",
+    "section": "",
+    "text": "Version vom October 11, 2022 um 17:10:00"
   }
 ]
