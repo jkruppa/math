@@ -2,8 +2,68 @@
 pacman::p_load(tidyverse, readxl, knitr, kableExtra, Hmisc)
 ```
 
-# Maßeinheiten {#sec-volume}
+# Maßeinheiten, Flächenmaße und Volumenmaße {#sec-volume}
 
 *Version vom `r format(Sys.time(), '%B %d, %Y um %H:%M:%S')`*
 
 ![](images/caution.png){fig-align="center" width="50%"}
+
+## Maßeinheiten
+
+| Buchstabe | Präfix | Wissenschaftlich | Zahl              |
+|-----------|--------|------------------|-------------------|
+| T         | Tera-  | $10^{12}$        | 1 000 000 000 000 |
+| G         | Giga-  | $10^{9}$         | 1 000 000 000     |
+| M         | Mega-  | $10^{6}$         | 1 000 000         |
+| k         | Kilo-  | $10^{3}$         | 1 000             |
+| h         | Hekto- | $10^{2}$         | 100               |
+
+: test
+
+| Buchstabe | Präfix | Wissenschaftlich | Zahl                |
+|-----------|--------|------------------|---------------------|
+| d         | Dezi-  | $10^{-1}$        | 0.1                 |
+| c         | Zenti- | $10^{-2}$        | 0.01                |
+| m         | Milli- | $10^{-3}$        | 0.001               |
+| $\mu$     | Mikro- | $10^{-6}$        | 0.000 000 1         |
+| n         | Nano-  | $10^{-9}$        | 0.000 000 000 1     |
+| p         | Pico-  | $10^{-12}$       | 0.000 000 000 000 1 |
+
+: ghj
+
+## Flächenmaße
+
+| $km^2$ | $ha$ | $ar$   | $m^2$     |
+|--------|------|--------|-----------|
+| 1      | 100  | 10 000 | 1 000 000 |
+|        | 1    | 100    | 10 000    |
+|        |      | 1      | 100       |
+
+: ad
+
+## Volumenmaße
+
+| Liter   | $hl$ | $l$          | $dl$      | $cl$     | $ml$      |
+|---------|------|--------------|-----------|----------|-----------|
+| $1m^3$  | 10   | 1 000        | 10 000    | 100 000  | 1 000 000 |
+|         | 1    | 100          | 1 000     | 10 000   | 100 000   |
+|         |      | 10           | 100       | 1 000    | 10 000    |
+| $1dm^3$ |      | 1            | 10        | 100      | 1 000     |
+|         |      |              | 1         | 10       | 100       |
+|         |      |              |           | 1        | 10        |
+| $1cm^3$ |      |              |           |          | 1         |
+|         |      | $1 000 cm^3$ | $100cm^3$ | $10cm^3$ | $1cm^3$   |
+
+: sgdgsd
+
+## Prozent, Promille und ppm
+
+|                                                          |                            |              | Ein Zuckerwürfel in                |
+|----------------------------------------------------------|----------------------------|--------------|------------------------------------|
+| 1 Prozent ist 1 Teil von hundert Teilen                  | 10 Gramm pro Kilogramm     | $10 g/kg$    | 0.27 Litern, ca. 2 Tassen          |
+| 1 Promille ist 1 Teil von Tausend Teilen                 | 1 Gramm pro Kilogramm      | $1 g/kg$     | 2.7 Litern, ca. 3.5 Flaschen Wein  |
+| 1 ppm (part per million) ist 1 Teil von 1 Million Teilen | 1 Milligramm pro Kilogramm | $0.001 g/kg$ | 2 700 Litern, ca. einem Tanklaster |
+
+: test
+
+##  
