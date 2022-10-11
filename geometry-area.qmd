@@ -8,11 +8,14 @@ pacman::p_load(tidyverse, readxl, knitr, kableExtra, Hmisc)
 
 ![](images/caution.png){fig-align="center" width="50%"}
 
-F = Fläche
+$F$ = Fläche
 
-U = Umfang
+$U$ = Umfang
 
 ## Quadrat
+
+
+
 
 $$
 F = a \cdot a = a^2
@@ -26,6 +29,18 @@ $$
 
 ## Rechteck
 
+::: column-margin
+Beachte auch folgenden Zusammenhang für das Rechteck:
+
+$$
+a = \cfrac{F}{b} = \cfrac{U - 2b}{2}
+$$
+
+$$
+b = \cfrac{F}{a} = \cfrac{U - 2a}{2}
+$$
+:::
+
 $$
 F = a \cdot b 
 $$
@@ -37,7 +52,29 @@ $$
 $$
 d = \sqrt{a^2 + b^2} 
 $$
+
+
 ## Trapez
+
+::: column-margin
+Beachte auch folgenden Zusammenhang für das Trapez:
+
+$$
+a = \cfrac{2F}{h}-b 
+$$
+
+$$
+b = \cfrac{2F}{h}-a 
+$$
+
+$$
+c = U - (a+b+d)
+$$
+
+$$
+d = U - (a+b+c)
+$$
+:::
 
 $$
 F = m \cdot h = \cfrac{a+b}{2}\cdot h 
@@ -49,6 +86,19 @@ $$
 
 ## Parallelogramm
 
+::: column-margin
+Beachte auch folgenden Zusammenhang für das Parallelogramm:
+
+$$
+a = \cfrac{2F}{h}
+$$
+
+$$
+b = \cfrac{U-2a}{2} 
+$$
+
+:::
+
 $$
 F = a \cdot h 
 $$
@@ -57,4 +107,47 @@ $$
 U = 2(a+b)
 $$
 
+## Dreieck
 
+$$
+F = \cfrac{c \cdot h_c}{2}
+$$
+
+$$
+U = a + b + c
+$$
+
+$$
+h_c = \cfrac{2 \cdot F}{c}
+$$
+Bei einem rechtwinkligen Dreieck gilt
+
+$$
+a^2 + b^2 = c^2
+$$
+
+$$
+\begin{aligned}
+a^2 &= c^2 - b1^2\\
+b^2 &= c^2 - a^2\\
+c^2 &= a^2 + b^2\\
+h^2 &= b^2 - q^2\\
+h^2 &= a^2 - p^2
+\end{aligned}
+$$
+
+## Kreis
+
+$$
+F = r^2 \cdot \pi = \cfrac{d^2 \cdot \pi}{4}
+$$
+
+$$
+U = 2r \cdot \pi = \cfrac{d \cdot \pi}{4 \cdot F}
+$$
+$$
+d = 2r
+$$
+$$
+r = \cfrac{U}{2 \cdot \pi}
+$$

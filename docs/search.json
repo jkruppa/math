@@ -11,7 +11,7 @@
     "href": "literature.html",
     "title": "1  Literatur",
     "section": "",
-    "text": "Version vom October 11, 2022 um 17:19:28\nWas ist gute Literatur? Immer schwer zu beurteilen. Im Folgenden liste ich einige Literaturquellen auf. Vielleicht möchtest du dich nochmal rechts oder links weiterbilden. Du musst aber nicht um die Klausur bestehen zu können. Siehe es eher als ein Angebot. Neben diesem Modul musst du vermutlich noch andere Module belegen. Deshalb hier eine Auswahl Literatur, die dir helfen mag. Zum einen ist die Literatur anders geschrieben und zum anderen sind dort andere Inhalte."
+    "text": "Version vom October 11, 2022 um 20:00:56\nWas ist gute Literatur? Immer schwer zu beurteilen. Im Folgenden liste ich einige Literaturquellen auf. Vielleicht möchtest du dich nochmal rechts oder links weiterbilden. Du musst aber nicht um die Klausur bestehen zu können. Siehe es eher als ein Angebot. Neben diesem Modul musst du vermutlich noch andere Module belegen. Deshalb hier eine Auswahl Literatur, die dir helfen mag. Zum einen ist die Literatur anders geschrieben und zum anderen sind dort andere Inhalte."
   },
   {
     "objectID": "literature.html#parametrische-statistik",
@@ -39,98 +39,7 @@
     "href": "preface.html",
     "title": "2  Einführung",
     "section": "",
-    "text": "Version vom October 11, 2022 um 17:32:16\nIn diesem Kapitel nenne ich die wichtigsten Lernziele, die nach dem Lesen des Skriptes im Rahmen deiner Lehrveranstaltung von dir erreicht worden sein sollten. Je nach besuchten Kurs kann natürlich nicht alles geschafft worden sein. Viele Kapitel haben noch eine Abschnitt in dem du mehr über die Klausur erfährst. So sehe diese Übersicht als Einführung für das was später an Lehrinhalten kommt. Wenn du die Lernziele hier verstehst, dann hast du eine gute und solide Grundlage in Statistik und Bio Data Science. Damit solltest du dann auch gut durch deine Bachelorarbeit kommen."
-  },
-  {
-    "objectID": "preface.html#referenzen",
-    "href": "preface.html#referenzen",
-    "title": "2  Einführung",
-    "section": "Referenzen",
-    "text": "Referenzen\n\n\n\n\nDormann, Carsten F. 2013. Parametrische Statistik. Springer.\n\n\nHurlbert, Stuart H. 1984. „Pseudoreplication and the design of ecological field experiments“. Ecological monographs 54 (2): 187–211."
-  },
-  {
-    "objectID": "geometry-preface.html",
-    "href": "geometry-preface.html",
-    "title": "Von Flächen, Volumen und Kegeln",
-    "section": "",
-    "text": "Version vom October 11, 2022 um 17:13:31"
-  },
-  {
-    "objectID": "geometry-unit.html",
-    "href": "geometry-unit.html",
-    "title": "3  Maßeinheiten",
-    "section": "",
-    "text": "Version vom October 11, 2022 um 17:13:36"
-  },
-  {
-    "objectID": "geometry-area.html",
-    "href": "geometry-area.html",
-    "title": "4  Flächenberechung",
-    "section": "",
-    "text": "Version vom October 11, 2022 um 17:40:59\nF = Fläche\nU = Umfang"
-  },
-  {
-    "objectID": "geometry-volume.html",
-    "href": "geometry-volume.html",
-    "title": "5  Volumenberechung",
-    "section": "",
-    "text": "Version vom October 11, 2022 um 17:13:47"
-  },
-  {
-    "objectID": "geometry-parts.html",
-    "href": "geometry-parts.html",
-    "title": "6  Teilstückgröße",
-    "section": "",
-    "text": "Version vom October 11, 2022 um 17:13:52"
-  },
-  {
-    "objectID": "probability-preface.html",
-    "href": "probability-preface.html",
-    "title": "Wahrscheinlichkeitsberechung",
-    "section": "",
-    "text": "Version vom October 11, 2022 um 17:13:58"
-  },
-  {
-    "objectID": "probability-basic.html",
-    "href": "probability-basic.html",
-    "title": "7  Grundlagen der Wahrscheinlichkeitsrechnung",
-    "section": "",
-    "text": "Version vom October 11, 2022 um 17:14:04"
-  },
-  {
-    "objectID": "probability-conditional.html",
-    "href": "probability-conditional.html",
-    "title": "8  Bedingte Wahrscheinlichkeiten",
-    "section": "",
-    "text": "Version vom October 11, 2022 um 17:14:09"
-  },
-  {
-    "objectID": "probability-distribution.html",
-    "href": "probability-distribution.html",
-    "title": "9  Grundlagen der Wahrscheinlichkeitsrechnung",
-    "section": "",
-    "text": "Version vom October 11, 2022 um 17:14:15"
-  },
-  {
-    "objectID": "preface.html#lernziel-1-eine-explorative-datananalyse-durchführen",
-    "href": "preface.html#lernziel-1-eine-explorative-datananalyse-durchführen",
-    "title": "2  Einführung",
-    "section": "2.1 Lernziel 1: Eine explorative Datananalyse durchführen",
-    "text": "2.1 Lernziel 1: Eine explorative Datananalyse durchführen"
-  },
-  {
-    "objectID": "preface.html#lernziel-1-eine-explorative-datananalyse-durchführen-1",
-    "href": "preface.html#lernziel-1-eine-explorative-datananalyse-durchführen-1",
-    "title": "2  Einführung",
-    "section": "2.2 Lernziel 1: Eine explorative Datananalyse durchführen",
-    "text": "2.2 Lernziel 1: Eine explorative Datananalyse durchführen"
-  },
-  {
-    "objectID": "preface.html#lernziel-1-eine-explorative-datananalyse-durchführen-2",
-    "href": "preface.html#lernziel-1-eine-explorative-datananalyse-durchführen-2",
-    "title": "2  Einführung",
-    "section": "2.3 Lernziel 1: Eine explorative Datananalyse durchführen",
-    "text": "2.3 Lernziel 1: Eine explorative Datananalyse durchführen"
+    "text": "Version vom October 11, 2022 um 20:00:58\nIn diesem Kapitel nenne ich die wichtigsten Lernziele, die nach dem Lesen des Skriptes im Rahmen deiner Lehrveranstaltung von dir erreicht worden sein sollten. Je nach besuchten Kurs kann natürlich nicht alles geschafft worden sein. Viele Kapitel haben noch eine Abschnitt in dem du mehr über die Klausur erfährst. So sehe diese Übersicht als Einführung für das was später an Lehrinhalten kommt. Wenn du die Lernziele hier verstehst, dann hast du eine gute und solide Grundlage in Statistik und Bio Data Science. Damit solltest du dann auch gut durch deine Bachelorarbeit kommen."
   },
   {
     "objectID": "preface.html#lernziel-1-geometrische-berechnungen-für-die-versuchsplanung-durchführen",
@@ -154,6 +63,27 @@
     "text": "2.3 Lernziel 3: Wahrscheinlichkeitsverteilungen verstehen"
   },
   {
+    "objectID": "geometry-preface.html",
+    "href": "geometry-preface.html",
+    "title": "Von Flächen, Volumen und Kegeln",
+    "section": "",
+    "text": "Version vom October 11, 2022 um 20:01:01"
+  },
+  {
+    "objectID": "geometry-unit.html",
+    "href": "geometry-unit.html",
+    "title": "3  Maßeinheiten",
+    "section": "",
+    "text": "Version vom October 11, 2022 um 20:01:04"
+  },
+  {
+    "objectID": "geometry-area.html",
+    "href": "geometry-area.html",
+    "title": "4  Flächenberechung",
+    "section": "",
+    "text": "Version vom October 11, 2022 um 20:02:27\n\\(F\\) = Fläche\n\\(U\\) = Umfang"
+  },
+  {
     "objectID": "geometry-area.html#quadrat",
     "href": "geometry-area.html#quadrat",
     "title": "4  Flächenberechung",
@@ -165,20 +95,104 @@
     "href": "geometry-area.html#rechteck",
     "title": "4  Flächenberechung",
     "section": "4.2 Rechteck",
-    "text": "4.2 Rechteck\n\\[\nF = a \\cdot b\n\\]\n\\[\nU = 2 \\cdot a + 2 \\cdot b = a (a+b)\n\\]\n\\[\nd = \\sqrt{a^2 + b^2}\n\\]"
+    "text": "4.2 Rechteck\n\n\nBeachte auch folgenden Zusammenhang für das Rechteck:\n\\[\na = \\cfrac{F}{b} = \\cfrac{U - 2b}{2}\n\\]\n\\[\nb = \\cfrac{F}{a} = \\cfrac{U - 2a}{2}\n\\]\n\\[\nF = a \\cdot b\n\\]\n\\[\nU = 2 \\cdot a + 2 \\cdot b = a (a+b)\n\\]\n\\[\nd = \\sqrt{a^2 + b^2}\n\\]"
   },
   {
     "objectID": "geometry-area.html#trapez",
     "href": "geometry-area.html#trapez",
     "title": "4  Flächenberechung",
     "section": "4.3 Trapez",
-    "text": "4.3 Trapez\n\\[\nF = m \\cdot h = \\cfrac{a+b}{2}\\cdot h\n\\]\n\\[\nU = a+b+c+d\n\\]"
+    "text": "4.3 Trapez\n\n\nBeachte auch folgenden Zusammenhang für das Trapez:\n\\[\na = \\cfrac{2F}{h}-b\n\\]\n\\[\nb = \\cfrac{2F}{h}-a\n\\]\n\\[\nc = U - (a+b+d)\n\\]\n\\[\nd = U - (a+b+c)\n\\]\n\\[\nF = m \\cdot h = \\cfrac{a+b}{2}\\cdot h\n\\]\n\\[\nU = a+b+c+d\n\\]"
   },
   {
     "objectID": "geometry-area.html#parallelogramm",
     "href": "geometry-area.html#parallelogramm",
     "title": "4  Flächenberechung",
     "section": "4.4 Parallelogramm",
-    "text": "4.4 Parallelogramm\n\\[\nF = a \\cdot h\n\\]\n\\[\nU = 2(a+b)\n\\]"
+    "text": "4.4 Parallelogramm\n\n\nBeachte auch folgenden Zusammenhang für das Parallelogramm:\n\\[\na = \\cfrac{2F}{h}\n\\]\n\\[\nb = \\cfrac{U-2a}{2}\n\\]\n\\[\nF = a \\cdot h\n\\]\n\\[\nU = 2(a+b)\n\\]"
+  },
+  {
+    "objectID": "geometry-area.html#dreieck",
+    "href": "geometry-area.html#dreieck",
+    "title": "4  Flächenberechung",
+    "section": "4.5 Dreieck",
+    "text": "4.5 Dreieck\n\\[\nF = \\cfrac{c \\cdot h_c}{2}\n\\]\n\\[\nU = a + b + c\n\\]\n\\[\nh_c = \\cfrac{2 \\cdot F}{c}\n\\]\nBei einem rechtwinkligen Dreieck gilt\n\\[\na^2 + b^2 = c^2\n\\]\n\\[\n\\begin{aligned}\na^2 &= c^2 - b1^2\\\\\nb^2 &= c^2 - a^2\\\\\nc^2 &= a^2 + b^2\\\\\nh^2 &= b^2 - q^2\\\\\nh^2 &= a^2 - p^2\n\\end{aligned}\n\\]"
+  },
+  {
+    "objectID": "geometry-area.html#kreis",
+    "href": "geometry-area.html#kreis",
+    "title": "4  Flächenberechung",
+    "section": "4.6 Kreis",
+    "text": "4.6 Kreis\n\\[\nF = r^2 \\cdot \\pi = \\cfrac{d^2 \\cdot \\pi}{4}\n\\]\n\\[\nU = 2r \\cdot \\pi = \\cfrac{d \\cdot \\pi}{4 \\cdot F}\n\\]\n\\[\nd = 2r\n\\]\n\\[\nr = \\cfrac{U}{2 \\cdot \\pi}\n\\]"
+  },
+  {
+    "objectID": "geometry-volume.html",
+    "href": "geometry-volume.html",
+    "title": "5  Volumenberechung",
+    "section": "",
+    "text": "Version vom October 11, 2022 um 20:15:09\n\\(V\\) = Volumen (Inhalt) \\(O\\) = Oberfläche \\(G\\) = Grundfläche"
+  },
+  {
+    "objectID": "geometry-parts.html",
+    "href": "geometry-parts.html",
+    "title": "6  Teilstückgröße",
+    "section": "",
+    "text": "Version vom October 11, 2022 um 20:01:12"
+  },
+  {
+    "objectID": "probability-preface.html",
+    "href": "probability-preface.html",
+    "title": "Wahrscheinlichkeitsberechung",
+    "section": "",
+    "text": "Version vom October 11, 2022 um 20:01:15"
+  },
+  {
+    "objectID": "probability-basic.html",
+    "href": "probability-basic.html",
+    "title": "7  Grundlagen der Wahrscheinlichkeitsrechnung",
+    "section": "",
+    "text": "Version vom October 11, 2022 um 20:01:18"
+  },
+  {
+    "objectID": "probability-conditional.html",
+    "href": "probability-conditional.html",
+    "title": "8  Bedingte Wahrscheinlichkeiten",
+    "section": "",
+    "text": "Version vom October 11, 2022 um 20:01:21"
+  },
+  {
+    "objectID": "probability-distribution.html",
+    "href": "probability-distribution.html",
+    "title": "9  Grundlagen der Wahrscheinlichkeitsrechnung",
+    "section": "",
+    "text": "Version vom October 11, 2022 um 20:01:23"
+  },
+  {
+    "objectID": "geometry-volume.html#würfel",
+    "href": "geometry-volume.html#würfel",
+    "title": "5  Volumenberechung",
+    "section": "5.1 Würfel",
+    "text": "5.1 Würfel\n\\[\nV = a^3\n\\]\n\\[\no = 6 \\cdot a^2\n\\]\n\\[\nG = a^2\n\\]\n\\[\nD = a\\sqrt{3}\n\\]"
+  },
+  {
+    "objectID": "geometry-volume.html#rechteckige-säule",
+    "href": "geometry-volume.html#rechteckige-säule",
+    "title": "5  Volumenberechung",
+    "section": "5.2 Rechteckige Säule",
+    "text": "5.2 Rechteckige Säule\n\\[\nV = G \\cdot h = a \\cdot b \\cdot c\n\\]\n\\[\nO = 2ab + 2ac + 2bc  \n\\]\n\\[\nG = a \\cdot b = \\cfrac{V}{h}\n\\]"
+  },
+  {
+    "objectID": "geometry-volume.html#zylinder",
+    "href": "geometry-volume.html#zylinder",
+    "title": "5  Volumenberechung",
+    "section": "5.3 Zylinder",
+    "text": "5.3 Zylinder\n\n\nBeachte auch folgenden Zusammenhang für den Zylinder:\n\\[\nr = \\sqrt{\\cfrac{V}{\\pi \\cdot h}}\n\\]\n\\[\nV = G \\cdot h = r^2 \\cdot \\pi \\cdot h\n\\]\n\\[\nO = 2 \\cdot G + 2r \\cdot \\pi \\cdot h\n\\]\n\\[\nG = r^2 \\cdot \\pi\n\\]\n\\[\nh = \\cfrac{V}{G} = \\cfrac{V}{r^2 \\cdot \\pi}\n\\]"
+  },
+  {
+    "objectID": "geometry-volume.html#kegel",
+    "href": "geometry-volume.html#kegel",
+    "title": "5  Volumenberechung",
+    "section": "5.4 Kegel",
+    "text": "5.4 Kegel\n\n\nBeachte auch folgenden Zusammenhang für den Kegel:\n\\[\nr = \\sqrt{\\cfrac{3V}{\\pi \\cdot h}}\n\\]\n\\[\nh = \\sqrt{s^2 - r^2}\n\\]\n\\[\ns = \\sqrt{r^2 + h^2}\n\\]\n\\[\nV = \\cfrac{1}{3} \\cdot h \\cdot r^2 \\cdot \\pi\n\\]\n\\[\nO = r^2 \\cdot \\pi \\cdot s\n\\]\n\\[\nG = r^2 \\cdot \\pi\n\\]"
   }
 ]

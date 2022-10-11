@@ -60,7 +60,7 @@ ul.task-list{list-style: none;}
 
 </head>
 
-<body class="nav-sidebar floating">
+<body class="nav-sidebar floating slimcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -172,11 +172,13 @@ ul.task-list{list-style: none;}
   <li><a href="#rechteck" id="toc-rechteck" class="nav-link" data-scroll-target="#rechteck"> <span class="header-section-number">4.2</span> Rechteck</a></li>
   <li><a href="#trapez" id="toc-trapez" class="nav-link" data-scroll-target="#trapez"> <span class="header-section-number">4.3</span> Trapez</a></li>
   <li><a href="#parallelogramm" id="toc-parallelogramm" class="nav-link" data-scroll-target="#parallelogramm"> <span class="header-section-number">4.4</span> Parallelogramm</a></li>
+  <li><a href="#dreieck" id="toc-dreieck" class="nav-link" data-scroll-target="#dreieck"> <span class="header-section-number">4.5</span> Dreieck</a></li>
+  <li><a href="#kreis" id="toc-kreis" class="nav-link" data-scroll-target="#kreis"> <span class="header-section-number">4.6</span> Kreis</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content page-columns page-full" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -197,14 +199,14 @@ ul.task-list{list-style: none;}
 <div class="cell">
 
 </div>
-<p><em>Version vom October 11, 2022 um 17:40:59</em></p>
+<p><em>Version vom October 11, 2022 um 20:02:27</em></p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/caution.png" class="img-fluid figure-img" style="width:50.0%"></p>
 </figure>
 </div>
-<p>F = Fläche</p>
-<p>U = Umfang</p>
+<p><span class="math inline">\(F\)</span> = Fläche</p>
+<p><span class="math inline">\(U\)</span> = Umfang</p>
 <section id="quadrat" class="level2" data-number="4.1">
 <h2 data-number="4.1" class="anchored" data-anchor-id="quadrat"><span class="header-section-number">4.1</span> Quadrat</h2>
 <p><span class="math display">\[
@@ -217,9 +219,18 @@ U = 4 \cdot a
 d = a \sqrt{2} = \sqrt{2\cdot a ^2}
 \]</span></p>
 </section>
-<section id="rechteck" class="level2" data-number="4.2">
+<section id="rechteck" class="level2 page-columns page-full" data-number="4.2">
 <h2 data-number="4.2" class="anchored" data-anchor-id="rechteck"><span class="header-section-number">4.2</span> Rechteck</h2>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p>Beachte auch folgenden Zusammenhang für das Rechteck:</p>
 <p><span class="math display">\[
+a = \cfrac{F}{b} = \cfrac{U - 2b}{2}
+\]</span></p>
+<p><span class="math display">\[
+b = \cfrac{F}{a} = \cfrac{U - 2a}{2}
+\]</span></p>
+</div></div><p><span class="math display">\[
 F = a \cdot b
 \]</span></p>
 <p><span class="math display">\[
@@ -229,22 +240,86 @@ U = 2 \cdot a + 2 \cdot b = a (a+b)
 d = \sqrt{a^2 + b^2}
 \]</span></p>
 </section>
-<section id="trapez" class="level2" data-number="4.3">
+<section id="trapez" class="level2 page-columns page-full" data-number="4.3">
 <h2 data-number="4.3" class="anchored" data-anchor-id="trapez"><span class="header-section-number">4.3</span> Trapez</h2>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p>Beachte auch folgenden Zusammenhang für das Trapez:</p>
 <p><span class="math display">\[
+a = \cfrac{2F}{h}-b
+\]</span></p>
+<p><span class="math display">\[
+b = \cfrac{2F}{h}-a
+\]</span></p>
+<p><span class="math display">\[
+c = U - (a+b+d)
+\]</span></p>
+<p><span class="math display">\[
+d = U - (a+b+c)
+\]</span></p>
+</div></div><p><span class="math display">\[
 F = m \cdot h = \cfrac{a+b}{2}\cdot h
 \]</span></p>
 <p><span class="math display">\[
 U = a+b+c+d
 \]</span></p>
 </section>
-<section id="parallelogramm" class="level2" data-number="4.4">
+<section id="parallelogramm" class="level2 page-columns page-full" data-number="4.4">
 <h2 data-number="4.4" class="anchored" data-anchor-id="parallelogramm"><span class="header-section-number">4.4</span> Parallelogramm</h2>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p>Beachte auch folgenden Zusammenhang für das Parallelogramm:</p>
 <p><span class="math display">\[
+a = \cfrac{2F}{h}
+\]</span></p>
+<p><span class="math display">\[
+b = \cfrac{U-2a}{2}
+\]</span></p>
+</div></div><p><span class="math display">\[
 F = a \cdot h
 \]</span></p>
 <p><span class="math display">\[
 U = 2(a+b)
+\]</span></p>
+</section>
+<section id="dreieck" class="level2" data-number="4.5">
+<h2 data-number="4.5" class="anchored" data-anchor-id="dreieck"><span class="header-section-number">4.5</span> Dreieck</h2>
+<p><span class="math display">\[
+F = \cfrac{c \cdot h_c}{2}
+\]</span></p>
+<p><span class="math display">\[
+U = a + b + c
+\]</span></p>
+<p><span class="math display">\[
+h_c = \cfrac{2 \cdot F}{c}
+\]</span></p>
+<p>Bei einem rechtwinkligen Dreieck gilt</p>
+<p><span class="math display">\[
+a^2 + b^2 = c^2
+\]</span></p>
+<p><span class="math display">\[
+\begin{aligned}
+a^2 &amp;= c^2 - b1^2\\
+b^2 &amp;= c^2 - a^2\\
+c^2 &amp;= a^2 + b^2\\
+h^2 &amp;= b^2 - q^2\\
+h^2 &amp;= a^2 - p^2
+\end{aligned}
+\]</span></p>
+</section>
+<section id="kreis" class="level2" data-number="4.6">
+<h2 data-number="4.6" class="anchored" data-anchor-id="kreis"><span class="header-section-number">4.6</span> Kreis</h2>
+<p><span class="math display">\[
+F = r^2 \cdot \pi = \cfrac{d^2 \cdot \pi}{4}
+\]</span></p>
+<p><span class="math display">\[
+U = 2r \cdot \pi = \cfrac{d \cdot \pi}{4 \cdot F}
+\]</span></p>
+<p><span class="math display">\[
+d = 2r
+\]</span></p>
+<p><span class="math display">\[
+r = \cfrac{U}{2 \cdot \pi}
 \]</span></p>
 
 
