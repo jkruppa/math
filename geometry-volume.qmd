@@ -35,7 +35,7 @@ $$
 
 ## Rechteckige Säule
 
-![](images/saeule.png){fig-align="center" width="30%"}
+![](images/saeule.png){fig-align="center" width="20%"}
 
 $$
 V = G \cdot h = a \cdot b \cdot c
@@ -78,7 +78,7 @@ h = \cfrac{V}{G} = \cfrac{V}{r^2 \cdot \pi}
 $$
 ## Kegel
 
-![](images/kegel.png){fig-align="center" width="30%"}
+![](images/kegel.png){fig-align="center" width="20%"}
 
 ::: column-margin
 Beachte auch folgenden Zusammenhang für den Kegel:

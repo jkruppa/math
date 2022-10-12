@@ -39,28 +39,28 @@
     "href": "preface.html",
     "title": "2  Einführung",
     "section": "",
-    "text": "Version vom October 11, 2022 um 20:16:53\nIn diesem Kapitel nenne ich die wichtigsten Lernziele, die nach dem Lesen des Skriptes im Rahmen deiner Lehrveranstaltung von dir erreicht worden sein sollten. Je nach besuchten Kurs kann natürlich nicht alles geschafft worden sein. Viele Kapitel haben noch eine Abschnitt in dem du mehr über die Klausur erfährst. So sehe diese Übersicht als Einführung für das was später an Lehrinhalten kommt. Wenn du die Lernziele hier verstehst, dann hast du eine gute und solide Grundlage in Statistik und Bio Data Science. Damit solltest du dann auch gut durch deine Bachelorarbeit kommen."
+    "text": "Version vom October 12, 2022 um 21:15:30\nIn diesem Kapitel nenne ich die wichtigsten Lernziele, die nach dem Lesen des Skriptes im Rahmen deiner Lehrveranstaltung von dir erreicht worden sein sollten. Je nach besuchten Kurs kann natürlich nicht alles geschafft worden sein. Viele Kapitel haben noch eine Abschnitt in dem du mehr über die Klausur erfährst. So sehe diese Übersicht als Einführung für das was später an Lehrinhalten kommt. Wenn du die Lernziele hier verstehst, dann hast du eine gute und solide Grundlage in Statistik und Bio Data Science. Damit solltest du dann auch gut durch deine Bachelorarbeit kommen."
   },
   {
     "objectID": "preface.html#lernziel-1-geometrische-berechnungen-für-die-versuchsplanung-durchführen",
     "href": "preface.html#lernziel-1-geometrische-berechnungen-für-die-versuchsplanung-durchführen",
     "title": "2  Einführung",
     "section": "2.1 Lernziel 1: Geometrische Berechnungen für die Versuchsplanung durchführen",
-    "text": "2.1 Lernziel 1: Geometrische Berechnungen für die Versuchsplanung durchführen"
+    "text": "2.1 Lernziel 1: Geometrische Berechnungen für die Versuchsplanung durchführen\nWir wollen nochmal lernen, wie wir Berechnungen für Flächen durchführen. Wir brauchen das Wissen um später ausrechnen zu können wie viel Platz wir für einen Versuch brauchen. Dafür wiederholen wir nochmal die gängigsten Formen und Flächen. Ebenso berechnen wir die Volumen von den gänigsten Körpern. Das Wissen brauchen wir um Abschätzen zu können wie viel Torf wir für unsere Töpfe ansetzen müssen oder wie viel Futter wir für unser Tierexperiment einkaufen müssen."
   },
   {
     "objectID": "preface.html#lernziel-2-grundlagen-von-wahrscheinlichkeiten-verstehen",
     "href": "preface.html#lernziel-2-grundlagen-von-wahrscheinlichkeiten-verstehen",
     "title": "2  Einführung",
     "section": "2.2 Lernziel 2: Grundlagen von Wahrscheinlichkeiten verstehen",
-    "text": "2.2 Lernziel 2: Grundlagen von Wahrscheinlichkeiten verstehen"
+    "text": "2.2 Lernziel 2: Grundlagen von Wahrscheinlichkeiten verstehen\nWir wollen lerne, wie sich Wahrscheinlichkeiten zusammensetzen. Also was ist eigentlich eine Wahrscheinlichkeit, wo kommt die Wahrscheinlichkeit her und wie rechnen wir mit Wahrscheinlichkeiten. Darüber hinaus lernen wir auch die bedingte Wahrscheinlichkeit kennen, die wir später in der Statistik nochmal brauchen. Vieles wirst du wiedererkennen. Wir wollen es hier nochmal wiederholen und festigen."
   },
   {
     "objectID": "preface.html#lernziel-3-wahrscheinlichkeitsverteilungen-verstehen",
     "href": "preface.html#lernziel-3-wahrscheinlichkeitsverteilungen-verstehen",
     "title": "2  Einführung",
     "section": "2.3 Lernziel 3: Wahrscheinlichkeitsverteilungen verstehen",
-    "text": "2.3 Lernziel 3: Wahrscheinlichkeitsverteilungen verstehen"
+    "text": "2.3 Lernziel 3: Wahrscheinlichkeitsverteilungen verstehen\nNeben den einfachen Wahrscheinlichkeiten von einem Ereignis, können wir uns auch kompliziertere Wahrscheinlichkeiten vorstellen. Wir schauen uns nicht nur ein Ereignis an, sondern eben eine ganze Reihe von möglichen Ausgängen eines Zufallsprozesses. Daher werden wir hier nochmal die gänigsten Verteilungen wiederholen und uns anschauen, was eigentlich eine Dichtefunktion ist."
   },
   {
     "objectID": "geometry-preface.html",
@@ -130,7 +130,7 @@
     "href": "geometry-volume.html",
     "title": "5  Volumenberechung",
     "section": "",
-    "text": "Version vom October 12, 2022 um 09:40:09\n\\(V\\) = Volumen (Inhalt) \\(O\\) = Oberfläche \\(G\\) = Grundfläche"
+    "text": "Version vom October 12, 2022 um 21:08:59\n\\(V\\) = Volumen (Inhalt) \\(O\\) = Oberfläche \\(G\\) = Grundfläche"
   },
   {
     "objectID": "geometry-volume.html#würfel",
