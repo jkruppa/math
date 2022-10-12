@@ -74,56 +74,56 @@
     "href": "geometry-unit.html",
     "title": "3  Maßeinheiten, Flächenmaße und Volumenmaße",
     "section": "",
-    "text": "Version vom October 11, 2022 um 20:47:31"
+    "text": "Version vom October 12, 2022 um 08:59:11"
   },
   {
     "objectID": "geometry-area.html",
     "href": "geometry-area.html",
     "title": "4  Flächenberechung",
     "section": "",
-    "text": "Version vom October 11, 2022 um 20:17:07\n\\(F\\) = Fläche\n\\(U\\) = Umfang"
+    "text": "Version vom October 12, 2022 um 08:59:01\n\\(F\\) = Fläche\n\\(U\\) = Umfang"
   },
   {
     "objectID": "geometry-area.html#quadrat",
     "href": "geometry-area.html#quadrat",
     "title": "4  Flächenberechung",
     "section": "4.1 Quadrat",
-    "text": "4.1 Quadrat\n\\[\nF = a \\cdot a = a^2\n\\]\n\\[\nU = 4 \\cdot a\n\\]\n\\[\nd = a \\sqrt{2} = \\sqrt{2\\cdot a ^2}\n\\]"
+    "text": "4.1 Quadrat\n\n\n\n\n\n\\[\nF = a \\cdot a = a^2\n\\]\n\\[\nU = 4 \\cdot a\n\\]\n\\[\nd = a \\sqrt{2} = \\sqrt{2\\cdot a ^2}\n\\]"
   },
   {
     "objectID": "geometry-area.html#rechteck",
     "href": "geometry-area.html#rechteck",
     "title": "4  Flächenberechung",
     "section": "4.2 Rechteck",
-    "text": "4.2 Rechteck\n\n\nBeachte auch folgenden Zusammenhang für das Rechteck:\n\\[\na = \\cfrac{F}{b} = \\cfrac{U - 2b}{2}\n\\]\n\\[\nb = \\cfrac{F}{a} = \\cfrac{U - 2a}{2}\n\\]\n\\[\nF = a \\cdot b\n\\]\n\\[\nU = 2 \\cdot a + 2 \\cdot b = a (a+b)\n\\]\n\\[\nd = \\sqrt{a^2 + b^2}\n\\]"
+    "text": "4.2 Rechteck\n\n\nBeachte auch folgenden Zusammenhang für das Rechteck:\n\\[\na = \\cfrac{F}{b} = \\cfrac{U - 2b}{2}\n\\]\n\\[\nb = \\cfrac{F}{a} = \\cfrac{U - 2a}{2}\n\\]\n\n\n\n\n\n\\[\nF = a \\cdot b\n\\]\n\\[\nU = 2 \\cdot a + 2 \\cdot b = a (a+b)\n\\]\n\\[\nd = \\sqrt{a^2 + b^2}\n\\]"
   },
   {
     "objectID": "geometry-area.html#trapez",
     "href": "geometry-area.html#trapez",
     "title": "4  Flächenberechung",
     "section": "4.3 Trapez",
-    "text": "4.3 Trapez\n\n\nBeachte auch folgenden Zusammenhang für das Trapez:\n\\[\na = \\cfrac{2F}{h}-b\n\\]\n\\[\nb = \\cfrac{2F}{h}-a\n\\]\n\\[\nc = U - (a+b+d)\n\\]\n\\[\nd = U - (a+b+c)\n\\]\n\\[\nF = m \\cdot h = \\cfrac{a+b}{2}\\cdot h\n\\]\n\\[\nU = a+b+c+d\n\\]"
+    "text": "4.3 Trapez\n\n\nBeachte auch folgenden Zusammenhang für das Trapez:\n\\[\na = \\cfrac{2F}{h}-b\n\\]\n\\[\nb = \\cfrac{2F}{h}-a\n\\]\n\\[\nc = U - (a+b+d)\n\\]\n\\[\nd = U - (a+b+c)\n\\]\n\n\n\n\n\n\\[\nF = m \\cdot h = \\cfrac{a+b}{2}\\cdot h\n\\]\n\\[\nU = a+b+c+d\n\\]"
   },
   {
     "objectID": "geometry-area.html#parallelogramm",
     "href": "geometry-area.html#parallelogramm",
     "title": "4  Flächenberechung",
     "section": "4.4 Parallelogramm",
-    "text": "4.4 Parallelogramm\n\n\nBeachte auch folgenden Zusammenhang für das Parallelogramm:\n\\[\na = \\cfrac{2F}{h}\n\\]\n\\[\nb = \\cfrac{U-2a}{2}\n\\]\n\\[\nF = a \\cdot h\n\\]\n\\[\nU = 2(a+b)\n\\]"
+    "text": "4.4 Parallelogramm\n\n\nBeachte auch folgenden Zusammenhang für das Parallelogramm:\n\\[\na = \\cfrac{2F}{h}\n\\]\n\\[\nb = \\cfrac{U-2a}{2}\n\\]\n\n\n\n\n\n\\[\nF = a \\cdot h\n\\]\n\\[\nU = 2(a+b)\n\\]"
   },
   {
     "objectID": "geometry-area.html#dreieck",
     "href": "geometry-area.html#dreieck",
     "title": "4  Flächenberechung",
     "section": "4.5 Dreieck",
-    "text": "4.5 Dreieck\n\\[\nF = \\cfrac{c \\cdot h_c}{2}\n\\]\n\\[\nU = a + b + c\n\\]\n\\[\nh_c = \\cfrac{2 \\cdot F}{c}\n\\]\nBei einem rechtwinkligen Dreieck gilt\n\\[\na^2 + b^2 = c^2\n\\]\n\\[\n\\begin{aligned}\na^2 &= c^2 - b1^2\\\\\nb^2 &= c^2 - a^2\\\\\nc^2 &= a^2 + b^2\\\\\nh^2 &= b^2 - q^2\\\\\nh^2 &= a^2 - p^2\n\\end{aligned}\n\\]"
+    "text": "4.5 Dreieck\n\n\n\n\n\n\\[\nF = \\cfrac{c \\cdot h_c}{2}\n\\]\n\\[\nU = a + b + c\n\\]\n\\[\nh_c = \\cfrac{2 \\cdot F}{c}\n\\]\n\n\n\n\n\nBei einem rechtwinkligen Dreieck gilt\n\\[\na^2 + b^2 = c^2\n\\]\n\\[\n\\begin{aligned}\na^2 &= c^2 - b1^2\\\\\nb^2 &= c^2 - a^2\\\\\nc^2 &= a^2 + b^2\\\\\nh^2 &= b^2 - q^2\\\\\nh^2 &= a^2 - p^2\n\\end{aligned}\n\\]"
   },
   {
     "objectID": "geometry-area.html#kreis",
     "href": "geometry-area.html#kreis",
     "title": "4  Flächenberechung",
     "section": "4.6 Kreis",
-    "text": "4.6 Kreis\n\\[\nF = r^2 \\cdot \\pi = \\cfrac{d^2 \\cdot \\pi}{4}\n\\]\n\\[\nU = 2r \\cdot \\pi = \\cfrac{d \\cdot \\pi}{4 \\cdot F}\n\\]\n\\[\nd = 2r\n\\]\n\\[\nr = \\cfrac{U}{2 \\cdot \\pi}\n\\]"
+    "text": "4.6 Kreis\n\n\n\n\n\n\\[\nF = r^2 \\cdot \\pi = \\cfrac{d^2 \\cdot \\pi}{4}\n\\]\n\\[\nU = 2r \\cdot \\pi = \\cfrac{d \\cdot \\pi}{4 \\cdot F}\n\\]\n\\[\nd = 2r\n\\]\n\\[\nr = \\cfrac{U}{2 \\cdot \\pi}\n\\]"
   },
   {
     "objectID": "geometry-volume.html",
