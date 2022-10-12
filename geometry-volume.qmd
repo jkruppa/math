@@ -14,7 +14,7 @@ $G$ = Grundfläche
 
 ## Würfel
 
-![](images/wuerfel.png){fig-align="center" width="40%"}
+![](images/wuerfel.png){fig-align="center" width="30%"}
 
 $$
 V = a^3
@@ -35,7 +35,7 @@ $$
 
 ## Rechteckige Säule
 
-![](images/saeule.png){fig-align="center" width="40%"}
+![](images/saeule.png){fig-align="center" width="30%"}
 
 $$
 V = G \cdot h = a \cdot b \cdot c
@@ -49,7 +49,7 @@ $$
 
 ## Zylinder
 
-![](images/zylinder.png){fig-align="center" width="30%"}
+![](images/zylinder.png){fig-align="center" width="20%"}
 
 ::: column-margin
 Beachte auch folgenden Zusammenhang für den Zylinder:
@@ -78,7 +78,7 @@ h = \cfrac{V}{G} = \cfrac{V}{r^2 \cdot \pi}
 $$
 ## Kegel
 
-![](images/kegel.png){fig-align="center" width="40%"}
+![](images/kegel.png){fig-align="center" width="30%"}
 
 ::: column-margin
 Beachte auch folgenden Zusammenhang für den Kegel:
