@@ -81,7 +81,7 @@
     "href": "geometry-area.html",
     "title": "4  Flächenberechung",
     "section": "",
-    "text": "Version vom October 12, 2022 um 08:59:01\n\\(F\\) = Fläche\n\\(U\\) = Umfang"
+    "text": "Version vom October 12, 2022 um 09:37:10\n\\(F\\) = Fläche\n\\(U\\) = Umfang"
   },
   {
     "objectID": "geometry-area.html#quadrat",
@@ -95,21 +95,21 @@
     "href": "geometry-area.html#rechteck",
     "title": "4  Flächenberechung",
     "section": "4.2 Rechteck",
-    "text": "4.2 Rechteck\n\n\nBeachte auch folgenden Zusammenhang für das Rechteck:\n\\[\na = \\cfrac{F}{b} = \\cfrac{U - 2b}{2}\n\\]\n\\[\nb = \\cfrac{F}{a} = \\cfrac{U - 2a}{2}\n\\]\n\n\n\n\n\n\\[\nF = a \\cdot b\n\\]\n\\[\nU = 2 \\cdot a + 2 \\cdot b = a (a+b)\n\\]\n\\[\nd = \\sqrt{a^2 + b^2}\n\\]"
+    "text": "4.2 Rechteck\n\n\n\n\n\n\n\nBeachte auch folgenden Zusammenhang für das Rechteck:\n\\[\na = \\cfrac{F}{b} = \\cfrac{U - 2b}{2}\n\\]\n\\[\nb = \\cfrac{F}{a} = \\cfrac{U - 2a}{2}\n\\]\n\\[\nF = a \\cdot b\n\\]\n\\[\nU = 2 \\cdot a + 2 \\cdot b = a (a+b)\n\\]\n\\[\nd = \\sqrt{a^2 + b^2}\n\\]"
   },
   {
     "objectID": "geometry-area.html#trapez",
     "href": "geometry-area.html#trapez",
     "title": "4  Flächenberechung",
     "section": "4.3 Trapez",
-    "text": "4.3 Trapez\n\n\nBeachte auch folgenden Zusammenhang für das Trapez:\n\\[\na = \\cfrac{2F}{h}-b\n\\]\n\\[\nb = \\cfrac{2F}{h}-a\n\\]\n\\[\nc = U - (a+b+d)\n\\]\n\\[\nd = U - (a+b+c)\n\\]\n\n\n\n\n\n\\[\nF = m \\cdot h = \\cfrac{a+b}{2}\\cdot h\n\\]\n\\[\nU = a+b+c+d\n\\]"
+    "text": "4.3 Trapez\n\n\n\n\n\n\n\nBeachte auch folgenden Zusammenhang für das Trapez:\n\\[\na = \\cfrac{2F}{h}-b\n\\]\n\\[\nb = \\cfrac{2F}{h}-a\n\\]\n\\[\nc = U - (a+b+d)\n\\]\n\\[\nd = U - (a+b+c)\n\\]\n\\[\nF = m \\cdot h = \\cfrac{a+b}{2}\\cdot h\n\\]\n\\[\nU = a+b+c+d\n\\]"
   },
   {
     "objectID": "geometry-area.html#parallelogramm",
     "href": "geometry-area.html#parallelogramm",
     "title": "4  Flächenberechung",
     "section": "4.4 Parallelogramm",
-    "text": "4.4 Parallelogramm\n\n\nBeachte auch folgenden Zusammenhang für das Parallelogramm:\n\\[\na = \\cfrac{2F}{h}\n\\]\n\\[\nb = \\cfrac{U-2a}{2}\n\\]\n\n\n\n\n\n\\[\nF = a \\cdot h\n\\]\n\\[\nU = 2(a+b)\n\\]"
+    "text": "4.4 Parallelogramm\n\n\n\n\n\n\n\nBeachte auch folgenden Zusammenhang für das Parallelogramm:\n\\[\na = \\cfrac{2F}{h}\n\\]\n\\[\nb = \\cfrac{U-2a}{2}\n\\]\n\\[\nF = a \\cdot h\n\\]\n\\[\nU = 2(a+b)\n\\]"
   },
   {
     "objectID": "geometry-area.html#dreieck",
@@ -130,35 +130,35 @@
     "href": "geometry-volume.html",
     "title": "5  Volumenberechung",
     "section": "",
-    "text": "Version vom October 11, 2022 um 20:17:12\n\\(V\\) = Volumen (Inhalt) \\(O\\) = Oberfläche \\(G\\) = Grundfläche"
+    "text": "Version vom October 12, 2022 um 09:36:29\n\\(V\\) = Volumen (Inhalt) \\(O\\) = Oberfläche \\(G\\) = Grundfläche"
   },
   {
     "objectID": "geometry-volume.html#würfel",
     "href": "geometry-volume.html#würfel",
     "title": "5  Volumenberechung",
     "section": "5.1 Würfel",
-    "text": "5.1 Würfel\n\\[\nV = a^3\n\\]\n\\[\no = 6 \\cdot a^2\n\\]\n\\[\nG = a^2\n\\]\n\\[\nD = a\\sqrt{3}\n\\]"
+    "text": "5.1 Würfel\n\n\n\n\n\n\\[\nV = a^3\n\\]\n\\[\no = 6 \\cdot a^2\n\\]\n\\[\nG = a^2\n\\]\n\\[\nD = a\\sqrt{3}\n\\]"
   },
   {
     "objectID": "geometry-volume.html#rechteckige-säule",
     "href": "geometry-volume.html#rechteckige-säule",
     "title": "5  Volumenberechung",
     "section": "5.2 Rechteckige Säule",
-    "text": "5.2 Rechteckige Säule\n\\[\nV = G \\cdot h = a \\cdot b \\cdot c\n\\]\n\\[\nO = 2ab + 2ac + 2bc  \n\\]\n\\[\nG = a \\cdot b = \\cfrac{V}{h}\n\\]"
+    "text": "5.2 Rechteckige Säule\n\n\n\n\n\n\\[\nV = G \\cdot h = a \\cdot b \\cdot c\n\\]\n\\[\nO = 2ab + 2ac + 2bc  \n\\]\n\\[\nG = a \\cdot b = \\cfrac{V}{h}\n\\]"
   },
   {
     "objectID": "geometry-volume.html#zylinder",
     "href": "geometry-volume.html#zylinder",
     "title": "5  Volumenberechung",
     "section": "5.3 Zylinder",
-    "text": "5.3 Zylinder\n\n\nBeachte auch folgenden Zusammenhang für den Zylinder:\n\\[\nr = \\sqrt{\\cfrac{V}{\\pi \\cdot h}}\n\\]\n\\[\nV = G \\cdot h = r^2 \\cdot \\pi \\cdot h\n\\]\n\\[\nO = 2 \\cdot G + 2r \\cdot \\pi \\cdot h\n\\]\n\\[\nG = r^2 \\cdot \\pi\n\\]\n\\[\nh = \\cfrac{V}{G} = \\cfrac{V}{r^2 \\cdot \\pi}\n\\]"
+    "text": "5.3 Zylinder\n\n\n\n\n\n\n\nBeachte auch folgenden Zusammenhang für den Zylinder:\n\\[\nr = \\sqrt{\\cfrac{V}{\\pi \\cdot h}}\n\\]\n\\[\nV = G \\cdot h = r^2 \\cdot \\pi \\cdot h\n\\]\n\\[\nO = 2 \\cdot G + 2r \\cdot \\pi \\cdot h\n\\]\n\\[\nG = r^2 \\cdot \\pi\n\\]\n\\[\nh = \\cfrac{V}{G} = \\cfrac{V}{r^2 \\cdot \\pi}\n\\]"
   },
   {
     "objectID": "geometry-volume.html#kegel",
     "href": "geometry-volume.html#kegel",
     "title": "5  Volumenberechung",
     "section": "5.4 Kegel",
-    "text": "5.4 Kegel\n\n\nBeachte auch folgenden Zusammenhang für den Kegel:\n\\[\nr = \\sqrt{\\cfrac{3V}{\\pi \\cdot h}}\n\\]\n\\[\nh = \\sqrt{s^2 - r^2}\n\\]\n\\[\ns = \\sqrt{r^2 + h^2}\n\\]\n\\[\nV = \\cfrac{1}{3} \\cdot h \\cdot r^2 \\cdot \\pi\n\\]\n\\[\nO = r^2 \\cdot \\pi \\cdot s\n\\]\n\\[\nG = r^2 \\cdot \\pi\n\\]"
+    "text": "5.4 Kegel\n\n\n\n\n\n\n\nBeachte auch folgenden Zusammenhang für den Kegel:\n\\[\nr = \\sqrt{\\cfrac{3V}{\\pi \\cdot h}}\n\\]\n\\[\nh = \\sqrt{s^2 - r^2}\n\\]\n\\[\ns = \\sqrt{r^2 + h^2}\n\\]\n\\[\nV = \\cfrac{1}{3} \\cdot h \\cdot r^2 \\cdot \\pi\n\\]\n\\[\nO = r^2 \\cdot \\pi \\cdot s\n\\]\n\\[\nG = r^2 \\cdot \\pi\n\\]"
   },
   {
     "objectID": "geometry-parts.html",

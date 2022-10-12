@@ -14,7 +14,7 @@ $U$ = Umfang
 
 ## Quadrat
 
-![](images/quadrat.png){fig-align="center" width="40%"}
+![](images/quadrat.png){fig-align="center" width="35%"}
 
 
 
@@ -30,6 +30,8 @@ $$
 
 ## Rechteck
 
+![](images/rechteck.png){fig-align="center" width="50%"}
+
 ::: column-margin
 Beachte auch folgenden Zusammenhang für das Rechteck:
 
@@ -42,7 +44,7 @@ b = \cfrac{F}{a} = \cfrac{U - 2a}{2}
 $$
 :::
 
-![](images/rechteck.png){fig-align="center" width="50%"}
+
 
 $$
 F = a \cdot b 
@@ -58,6 +60,8 @@ $$
 
 
 ## Trapez
+
+![](images/trapez.png){fig-align="center" width="50%"}
 
 ::: column-margin
 Beachte auch folgenden Zusammenhang für das Trapez:
@@ -79,7 +83,7 @@ d = U - (a+b+c)
 $$
 :::
 
-![](images/trapez.png){fig-align="center" width="50%"}
+
 
 $$
 F = m \cdot h = \cfrac{a+b}{2}\cdot h 
@@ -90,6 +94,8 @@ U = a+b+c+d
 $$
 
 ## Parallelogramm
+
+![](images/parallelogramm.png){fig-align="center" width="50%"}
 
 ::: column-margin
 Beachte auch folgenden Zusammenhang für das Parallelogramm:
@@ -104,7 +110,7 @@ $$
 
 :::
 
-![](images/parallelogramm.png){fig-align="center" width="50%"}
+
 
 $$
 F = a \cdot h 
