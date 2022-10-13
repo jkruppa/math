@@ -2,7 +2,7 @@
 pacman::p_load(tidyverse, readxl, knitr, kableExtra, Hmisc)
 ```
 
-# Von Flächen, Volumen und Kegeln {#sec-geometry}
+# Von Maßzahlen, Flächen und Volumen {#sec-geometry}
 
 *Version vom `r format(Sys.time(), '%B %d, %Y um %H:%M:%S')`*
 
