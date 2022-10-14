@@ -7,3 +7,16 @@ pacman::p_load(tidyverse, readxl, knitr, kableExtra, Hmisc)
 *Version vom `r format(Sys.time(), '%B %d, %Y um %H:%M:%S')`*
 
 ![](images/caution.png){fig-align="center" width="50%"}
+Text
+
+$Pr(A) = 2/3$
+
+$Pr(K_1)$ & $Pr(K_2)$
+
+$$
+\begin{aligned}
+Pr(K_1 \& K_2) &= Pr(K_1) \times Pr(K_2) \\
+               &= 1/2 \times 1/2 \\
+               &= 1/4
+\end{aligned}
+$$

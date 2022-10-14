@@ -11,7 +11,7 @@
     "href": "literature.html",
     "title": "1  Literatur",
     "section": "",
-    "text": "Version vom October 11, 2022 um 20:16:51\nWas ist gute Literatur? Immer schwer zu beurteilen. Im Folgenden liste ich einige Literaturquellen auf. Vielleicht möchtest du dich nochmal rechts oder links weiterbilden. Du musst aber nicht um die Klausur bestehen zu können. Siehe es eher als ein Angebot. Neben diesem Modul musst du vermutlich noch andere Module belegen. Deshalb hier eine Auswahl Literatur, die dir helfen mag. Zum einen ist die Literatur anders geschrieben und zum anderen sind dort andere Inhalte."
+    "text": "Version vom October 14, 2022 um 16:07:44\nWas ist gute Literatur? Immer schwer zu beurteilen. Im Folgenden liste ich einige Literaturquellen auf. Vielleicht möchtest du dich nochmal rechts oder links weiterbilden. Du musst aber nicht um die Klausur bestehen zu können. Siehe es eher als ein Angebot. Neben diesem Modul musst du vermutlich noch andere Module belegen. Deshalb hier eine Auswahl Literatur, die dir helfen mag. Zum einen ist die Literatur anders geschrieben und zum anderen sind dort andere Inhalte."
   },
   {
     "objectID": "literature.html#parametrische-statistik",
@@ -39,7 +39,7 @@
     "href": "preface.html",
     "title": "2  Einführung",
     "section": "",
-    "text": "Version vom October 12, 2022 um 21:15:30\nIn diesem Kapitel nenne ich die wichtigsten Lernziele, die nach dem Lesen des Skriptes im Rahmen deiner Lehrveranstaltung von dir erreicht worden sein sollten. Je nach besuchten Kurs kann natürlich nicht alles geschafft worden sein. Viele Kapitel haben noch eine Abschnitt in dem du mehr über die Klausur erfährst. So sehe diese Übersicht als Einführung für das was später an Lehrinhalten kommt. Wenn du die Lernziele hier verstehst, dann hast du eine gute und solide Grundlage in Statistik und Bio Data Science. Damit solltest du dann auch gut durch deine Bachelorarbeit kommen."
+    "text": "Version vom October 14, 2022 um 16:07:46\nIn diesem Kapitel nenne ich die wichtigsten Lernziele, die nach dem Lesen des Skriptes im Rahmen deiner Lehrveranstaltung von dir erreicht worden sein sollten. Je nach besuchten Kurs kann natürlich nicht alles geschafft worden sein. Viele Kapitel haben noch eine Abschnitt in dem du mehr über die Klausur erfährst. So sehe diese Übersicht als Einführung für das was später an Lehrinhalten kommt. Wenn du die Lernziele hier verstehst, dann hast du eine gute und solide Grundlage in Statistik und Bio Data Science. Damit solltest du dann auch gut durch deine Bachelorarbeit kommen."
   },
   {
     "objectID": "preface.html#lernziel-1-geometrische-berechnungen-für-die-versuchsplanung-durchführen",
@@ -67,21 +67,56 @@
     "href": "geometry-preface.html",
     "title": "Von Maßzahlen, Flächen und Volumen",
     "section": "",
-    "text": "Version vom October 13, 2022 um 16:37:07"
+    "text": "Version vom October 14, 2022 um 16:07:51"
   },
   {
     "objectID": "geometry-unit.html",
     "href": "geometry-unit.html",
     "title": "3  Maßeinheiten, Flächenmaße und Volumenmaße",
     "section": "",
-    "text": "Version vom October 12, 2022 um 08:59:11"
+    "text": "Version vom October 14, 2022 um 16:07:57"
+  },
+  {
+    "objectID": "geometry-unit.html#maßeinheiten",
+    "href": "geometry-unit.html#maßeinheiten",
+    "title": "3  Maßeinheiten, Flächenmaße und Volumenmaße",
+    "section": "3.1 Maßeinheiten",
+    "text": "3.1 Maßeinheiten\n\ntest\n\n\nBuchstabe\nPräfix\nWissenschaftlich\nZahl\n\n\n\n\nT\nTera-\n\\(10^{12}\\)\n1 000 000 000 000\n\n\nG\nGiga-\n\\(10^{9}\\)\n1 000 000 000\n\n\nM\nMega-\n\\(10^{6}\\)\n1 000 000\n\n\nk\nKilo-\n\\(10^{3}\\)\n1 000\n\n\nh\nHekto-\n\\(10^{2}\\)\n100\n\n\n\n\nghj\n\n\nBuchstabe\nPräfix\nWissenschaftlich\nZahl\n\n\n\n\nd\nDezi-\n\\(10^{-1}\\)\n0.1\n\n\nc\nZenti-\n\\(10^{-2}\\)\n0.01\n\n\nm\nMilli-\n\\(10^{-3}\\)\n0.001\n\n\n\\(\\mu\\)\nMikro-\n\\(10^{-6}\\)\n0.000 000 1\n\n\nn\nNano-\n\\(10^{-9}\\)\n0.000 000 000 1\n\n\np\nPico-\n\\(10^{-12}\\)\n0.000 000 000 000 1"
+  },
+  {
+    "objectID": "geometry-unit.html#flächenmaße",
+    "href": "geometry-unit.html#flächenmaße",
+    "title": "3  Maßeinheiten, Flächenmaße und Volumenmaße",
+    "section": "3.2 Flächenmaße",
+    "text": "3.2 Flächenmaße\n\nad\n\n\n\\(km^2\\)\n\\(ha\\)\n\\(ar\\)\n\\(m^2\\)\n\n\n\n\n1\n100\n10 000\n1 000 000\n\n\n\n1\n100\n10 000\n\n\n\n\n1\n100"
+  },
+  {
+    "objectID": "geometry-unit.html#volumenmaße",
+    "href": "geometry-unit.html#volumenmaße",
+    "title": "3  Maßeinheiten, Flächenmaße und Volumenmaße",
+    "section": "3.3 Volumenmaße",
+    "text": "3.3 Volumenmaße\n\nsgdgsd\n\n\nLiter\n\\(hl\\)\n\\(l\\)\n\\(dl\\)\n\\(cl\\)\n\\(ml\\)\n\n\n\n\n\\(1m^3\\)\n10\n1 000\n10 000\n100 000\n1 000 000\n\n\n\n1\n100\n1 000\n10 000\n100 000\n\n\n\n\n10\n100\n1 000\n10 000\n\n\n\\(1dm^3\\)\n\n1\n10\n100\n1 000\n\n\n\n\n\n1\n10\n100\n\n\n\n\n\n\n1\n10\n\n\n\\(1cm^3\\)\n\n\n\n\n1\n\n\n\n\n\\(1 000 cm^3\\)\n\\(100cm^3\\)\n\\(10cm^3\\)\n\\(1cm^3\\)"
+  },
+  {
+    "objectID": "geometry-unit.html#prozent-promille-und-ppm",
+    "href": "geometry-unit.html#prozent-promille-und-ppm",
+    "title": "3  Maßeinheiten, Flächenmaße und Volumenmaße",
+    "section": "3.4 Prozent, Promille und ppm",
+    "text": "3.4 Prozent, Promille und ppm\n\ntest\n\n\n\n\n\n\n\n\n\n\n\nEin Zuckerwürfel in\n\n\n\n\n1 Prozent ist 1 Teil von hundert Teilen\n10 Gramm pro Kilogramm\n\\(10 g/kg\\)\n0.27 Litern, ca. 2 Tassen\n\n\n1 Promille ist 1 Teil von Tausend Teilen\n1 Gramm pro Kilogramm\n\\(1 g/kg\\)\n2.7 Litern, ca. 3.5 Flaschen Wein\n\n\n1 ppm (part per million) ist 1 Teil von 1 Million Teilen\n1 Milligramm pro Kilogramm\n\\(0.001 g/kg\\)\n2 700 Litern, ca. einem Tanklaster"
+  },
+  {
+    "objectID": "geometry-unit.html#section",
+    "href": "geometry-unit.html#section",
+    "title": "3  Maßeinheiten, Flächenmaße und Volumenmaße",
+    "section": "3.5 ",
+    "text": "3.5"
   },
   {
     "objectID": "geometry-area.html",
     "href": "geometry-area.html",
     "title": "4  Flächenberechung",
     "section": "",
-    "text": "Version vom October 12, 2022 um 09:37:10\n\\(F\\) = Fläche\n\\(U\\) = Umfang"
+    "text": "Version vom October 14, 2022 um 16:08:03\n\\(F\\) = Fläche\n\\(U\\) = Umfang"
   },
   {
     "objectID": "geometry-area.html#quadrat",
@@ -130,7 +165,7 @@
     "href": "geometry-volume.html",
     "title": "5  Volumenberechung",
     "section": "",
-    "text": "Version vom October 12, 2022 um 21:08:59\n\\(V\\) = Volumen (Inhalt) \\(O\\) = Oberfläche \\(G\\) = Grundfläche"
+    "text": "Version vom October 14, 2022 um 16:08:09\n\\(V\\) = Volumen (Inhalt) \\(O\\) = Oberfläche \\(G\\) = Grundfläche"
   },
   {
     "objectID": "geometry-volume.html#würfel",
@@ -165,69 +200,48 @@
     "href": "geometry-parts.html",
     "title": "6  Teilstückgröße",
     "section": "",
-    "text": "Version vom October 11, 2022 um 20:17:17"
+    "text": "Version vom October 14, 2022 um 16:08:16"
   },
   {
     "objectID": "probability-preface.html",
     "href": "probability-preface.html",
     "title": "Wahrscheinlichkeitsberechung",
     "section": "",
-    "text": "Version vom October 11, 2022 um 20:17:23"
+    "text": "Version vom October 14, 2022 um 16:08:22"
   },
   {
     "objectID": "probability-basic.html",
     "href": "probability-basic.html",
     "title": "7  Grundlagen der Wahrscheinlichkeitsrechnung",
     "section": "",
-    "text": "Version vom October 11, 2022 um 20:17:28"
+    "text": "Version vom October 14, 2022 um 16:08:28\n Text\n\\(Pr(A) = 2/3\\)\n\\(Pr(K_1)\\) & \\(Pr(K_2)\\)\n\\[\n\\begin{aligned}\nPr(K_1 \\& K_2) &= Pr(K_1) \\times Pr(K_2) \\\\\n               &= 1/2 \\times 1/2 \\\\\n               &= 1/4\n\\end{aligned}\n\\]"
   },
   {
     "objectID": "probability-conditional.html",
     "href": "probability-conditional.html",
     "title": "8  Bedingte Wahrscheinlichkeiten",
     "section": "",
-    "text": "Version vom October 11, 2022 um 20:17:33"
+    "text": "Version vom October 14, 2022 um 16:08:34"
   },
   {
     "objectID": "probability-distribution.html",
     "href": "probability-distribution.html",
     "title": "9  Wahrscheinlichkeitsverteilungen",
     "section": "",
-    "text": "Version vom October 12, 2022 um 21:19:20"
+    "text": "Version vom October 14, 2022 um 16:08:41"
   },
   {
-    "objectID": "geometry-unit.html#maßeinheiten",
-    "href": "geometry-unit.html#maßeinheiten",
-    "title": "3  Maßeinheiten, Flächenmaße und Volumenmaße",
-    "section": "3.1 Maßeinheiten",
-    "text": "3.1 Maßeinheiten\n\ntest\n\n\nBuchstabe\nPräfix\nWissenschaftlich\nZahl\n\n\n\n\nT\nTera-\n\\(10^{12}\\)\n1 000 000 000 000\n\n\nG\nGiga-\n\\(10^{9}\\)\n1 000 000 000\n\n\nM\nMega-\n\\(10^{6}\\)\n1 000 000\n\n\nk\nKilo-\n\\(10^{3}\\)\n1 000\n\n\nh\nHekto-\n\\(10^{2}\\)\n100\n\n\n\n\nghj\n\n\nBuchstabe\nPräfix\nWissenschaftlich\nZahl\n\n\n\n\nd\nDezi-\n\\(10^{-1}\\)\n0.1\n\n\nc\nZenti-\n\\(10^{-2}\\)\n0.01\n\n\nm\nMilli-\n\\(10^{-3}\\)\n0.001\n\n\n\\(\\mu\\)\nMikro-\n\\(10^{-6}\\)\n0.000 000 1\n\n\nn\nNano-\n\\(10^{-9}\\)\n0.000 000 000 1\n\n\np\nPico-\n\\(10^{-12}\\)\n0.000 000 000 000 1"
+    "objectID": "functions-preface.html",
+    "href": "functions-preface.html",
+    "title": "Mathematische Funktionen",
+    "section": "",
+    "text": "Version vom October 14, 2022 um 16:08:47"
   },
   {
-    "objectID": "geometry-unit.html#flächenmaße",
-    "href": "geometry-unit.html#flächenmaße",
-    "title": "3  Maßeinheiten, Flächenmaße und Volumenmaße",
-    "section": "3.2 Flächenmaße",
-    "text": "3.2 Flächenmaße\n\nad\n\n\n\\(km^2\\)\n\\(ha\\)\n\\(ar\\)\n\\(m^2\\)\n\n\n\n\n1\n100\n10 000\n1 000 000\n\n\n\n1\n100\n10 000\n\n\n\n\n1\n100"
-  },
-  {
-    "objectID": "geometry-unit.html#volumenmaße",
-    "href": "geometry-unit.html#volumenmaße",
-    "title": "3  Maßeinheiten, Flächenmaße und Volumenmaße",
-    "section": "3.3 Volumenmaße",
-    "text": "3.3 Volumenmaße\n\nsgdgsd\n\n\nLiter\n\\(hl\\)\n\\(l\\)\n\\(dl\\)\n\\(cl\\)\n\\(ml\\)\n\n\n\n\n\\(1m^3\\)\n10\n1 000\n10 000\n100 000\n1 000 000\n\n\n\n1\n100\n1 000\n10 000\n100 000\n\n\n\n\n10\n100\n1 000\n10 000\n\n\n\\(1dm^3\\)\n\n1\n10\n100\n1 000\n\n\n\n\n\n1\n10\n100\n\n\n\n\n\n\n1\n10\n\n\n\\(1cm^3\\)\n\n\n\n\n1\n\n\n\n\n\\(1 000 cm^3\\)\n\\(100cm^3\\)\n\\(10cm^3\\)\n\\(1cm^3\\)"
-  },
-  {
-    "objectID": "geometry-unit.html#prozent-promille-und-ppm",
-    "href": "geometry-unit.html#prozent-promille-und-ppm",
-    "title": "3  Maßeinheiten, Flächenmaße und Volumenmaße",
-    "section": "3.4 Prozent, Promille und ppm",
-    "text": "3.4 Prozent, Promille und ppm\n\ntest\n\n\n\n\n\n\n\n\n\n\n\nEin Zuckerwürfel in\n\n\n\n\n1 Prozent ist 1 Teil von hundert Teilen\n10 Gramm pro Kilogramm\n\\(10 g/kg\\)\n0.27 Litern, ca. 2 Tassen\n\n\n1 Promille ist 1 Teil von Tausend Teilen\n1 Gramm pro Kilogramm\n\\(1 g/kg\\)\n2.7 Litern, ca. 3.5 Flaschen Wein\n\n\n1 ppm (part per million) ist 1 Teil von 1 Million Teilen\n1 Milligramm pro Kilogramm\n\\(0.001 g/kg\\)\n2 700 Litern, ca. einem Tanklaster"
-  },
-  {
-    "objectID": "geometry-unit.html#section",
-    "href": "geometry-unit.html#section",
-    "title": "3  Maßeinheiten, Flächenmaße und Volumenmaße",
-    "section": "3.5 ",
-    "text": "3.5"
+    "objectID": "functions-basic.html",
+    "href": "functions-basic.html",
+    "title": "10  Grundlagen Funktionen",
+    "section": "",
+    "text": "Version vom October 14, 2022 um 16:08:53\n https://en.wikipedia.org/wiki/Cubic_function\nhttps://en.wikipedia.org/wiki/Polynomial\n\n\n\n\n\n\n\n(a) Drei Normalverteilungen mit Varianzhomogenität.\n\n\n\n\n\n\n\n(b) Drei Normalverteilungen unter Varianzheterogenität.\n\n\n\n\nAbbildung 10.1— Histogramm verschiedener Normalverteilungen mit unterschiedlichen Mittelwerten."
   }
 ]

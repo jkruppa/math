@@ -1,0 +1,44 @@
+```{r echo = FALSE}
+pacman::p_load(tidyverse, readxl, knitr, kableExtra, Hmisc,
+               see)
+```
+
+# Grundlagen Funktionen {#sec-prob-basic}
+
+*Version vom `r format(Sys.time(), '%B %d, %Y um %H:%M:%S')`*
+
+![](images/caution.png){fig-align="center" width="50%"}
+https://en.wikipedia.org/wiki/Cubic_function
+
+https://en.wikipedia.org/wiki/Polynomial
+
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+#| label: fig-normal-02
+#| fig-align: center
+#| fig-height: 5
+#| fig-width: 5
+#| fig-cap: "Histogramm verschiedener Normalverteilungen mit unterschiedlichen Mittelwerten."
+#| fig-subcap: 
+#|   - "Drei Normalverteilungen mit Varianzhomogenität."
+#|   - "Drei Normalverteilungen unter Varianzheterogenität."
+#| layout-nrow: 1
+#| column: page
+
+plot_tbl <- tibble(x = seq(-12, 12, 0.1),
+                   y = x^3 - 3*x^2 - 144*x + 432)
+
+ggplot(plot_tbl, aes(x, y)) +
+  geom_line() +
+  theme_radar()
+
+plot_tbl <- tibble(x = seq(1, 10, 0.1),
+                   y = x^3)
+
+ggplot(plot_tbl, aes(x, y)) +
+  geom_line()
+```
+
