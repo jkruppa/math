@@ -214,7 +214,7 @@
     "href": "probability-basic.html",
     "title": "7  Grundlagen der Wahrscheinlichkeitsrechnung",
     "section": "",
-    "text": "Version vom October 14, 2022 um 16:08:28\n Text\n\\(Pr(A) = 2/3\\)\n\\(Pr(K_1)\\) & \\(Pr(K_2)\\)\n\\[\n\\begin{aligned}\nPr(K_1 \\& K_2) &= Pr(K_1) \\times Pr(K_2) \\\\\n               &= 1/2 \\times 1/2 \\\\\n               &= 1/4\n\\end{aligned}\n\\]"
+    "text": "Version vom October 14, 2022 um 16:31:10"
   },
   {
     "objectID": "probability-conditional.html",
@@ -242,6 +242,20 @@
     "href": "functions-basic.html",
     "title": "10  Grundlagen Funktionen",
     "section": "",
-    "text": "Version vom October 14, 2022 um 16:08:53\n https://en.wikipedia.org/wiki/Cubic_function\nhttps://en.wikipedia.org/wiki/Polynomial\n\n\n\n\n\n\n\n(a) Drei Normalverteilungen mit Varianzhomogenität.\n\n\n\n\n\n\n\n(b) Drei Normalverteilungen unter Varianzheterogenität.\n\n\n\n\nAbbildung 10.1— Histogramm verschiedener Normalverteilungen mit unterschiedlichen Mittelwerten."
+    "text": "Version vom October 14, 2022 um 16:30:58"
+  },
+  {
+    "objectID": "functions-basic.html#funktionen",
+    "href": "functions-basic.html#funktionen",
+    "title": "10  Grundlagen Funktionen",
+    "section": "10.1 Funktionen",
+    "text": "10.1 Funktionen\nhttps://en.wikipedia.org/wiki/Cubic_function\nhttps://en.wikipedia.org/wiki/Polynomial\n\n\n\n\n\n\n\n(a) Drei Normalverteilungen mit Varianzhomogenität.\n\n\n\n\n\n\n\n(b) Drei Normalverteilungen unter Varianzheterogenität.\n\n\n\n\nAbbildung 10.1— Histogramm verschiedener Normalverteilungen mit unterschiedlichen Mittelwerten."
+  },
+  {
+    "objectID": "probability-basic.html#regeln",
+    "href": "probability-basic.html#regeln",
+    "title": "7  Grundlagen der Wahrscheinlichkeitsrechnung",
+    "section": "7.1 Regeln",
+    "text": "7.1 Regeln\nText\n\\(Pr(A) = 2/3\\)\n\\(Pr(K_1)\\) & \\(Pr(K_2)\\)\n\\[\n\\begin{aligned}\nPr(K_1 \\& K_2) &= Pr(K_1) \\times Pr(K_2) \\\\\n               &= 1/2 \\times 1/2 \\\\\n               &= 1/4\n\\end{aligned}\n\\]"
   }
 ]

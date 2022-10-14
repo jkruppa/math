@@ -8,6 +8,10 @@ pacman::p_load(tidyverse, readxl, knitr, kableExtra, Hmisc,
 *Version vom `r format(Sys.time(), '%B %d, %Y um %H:%M:%S')`*
 
 ![](images/caution.png){fig-align="center" width="50%"}
+
+
+## Funktionen
+
 https://en.wikipedia.org/wiki/Cubic_function
 
 https://en.wikipedia.org/wiki/Polynomial
