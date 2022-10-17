@@ -1,6 +1,6 @@
 # Willkommen {.unnumbered}
 
-Auf den folgenden Seiten wirst du nochmal die Grundlagen der Mathemeatik in der Statistik lernen. Wir lagern hier die Inhalte die sehr mathematisch sind von den angewandten, statistischen Themen aus. Das heißt, du findest hier sehr viel Mathematik und auch Rechenbeispiele. Es wird aber R Code geben, du musst dann schauen, ob du den Code brauchst oder eher nicht. Das hat den einfachen Grund, das wir eben dann doch mal die Grundlagen in der Mathematik wiederholen müssen. Es kann aber auch sein, dass du gar nicht so viel Mathematik später brauchst - oder wiederkommst, weil du nochmal nachschauen willst, wie du eine Teilstückfläche berechnest. Wir auch immer, hier findest du die Mathematikteile aus meinenen Vorlesungen.
+Auf den folgenden Seiten wirst du nochmal die Grundlagen der Mathematik in der Statistik lernen. Wir lagern hier die Inhalte die sehr mathematisch sind von den angewandten, statistischen Themen aus. Das heißt, du findest hier sehr viel Mathematik und auch Rechenbeispiele. Es wird aber R Code geben - siehe den R Code als den Taschenrechnercode. Das hat den einfachen Grund, das wir eben dann doch mal die Grundlagen in der Mathematik wiederholen müssen. Es kann aber auch sein, dass du gar nicht so viel Mathematik später brauchst - oder wiederkommst, weil du nochmal nachschauen willst, wie du eine Teilstückfläche berechnest. Wir auch immer, hier findest du die Mathematikteile aus meinenen Vorlesungen.
 
 ::: {.callout-caution collapse="true"}
 ## Gesammelte Klausurfragen Bio Data Science
