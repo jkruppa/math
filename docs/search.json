@@ -261,70 +261,70 @@
   {
     "objectID": "vector-preface.html",
     "href": "vector-preface.html",
-    "title": "Vektor und Matrix Rechnungen",
+    "title": "Vektor und Matrix",
     "section": "",
-    "text": "Version vom Oktober 17, 2022 um 14:40:34"
+    "text": "Version vom October 17, 2022 um 20:32:40\nIn dem folgenden Kapitel wollen wir uns einmale mit Berechnungen mit Vektoren in Kapitel 11 beschäftigen. Das Kapitel ist eher kurz und dient nur der Erinnerung, was sind eigentlich Vektoren. Wir nutzen den Begriff häufig in der R Programmierung und wir wollen hier nochmal auf ein paar mathematische Eigenschaften eingehen.\nWichtiger ist in dem Sinne die Berechnungen mit Matrizen in Kapitel 12. Wir schauen uns hier nochmal die gängigen Rechenoperationen mit Matrizen an. Wir erschlagen aber nicht alles sondern schauen usn nur ausgewählte Aspekte einmal an. Wir brauchen Teile von den Berechnungen mit Matrizen später in der multiplen linearen Regression in der Statistik."
   },
   {
     "objectID": "vector-basic.html",
     "href": "vector-basic.html",
-    "title": "11  Berechungen mit Vektoren",
+    "title": "11  Berechnungen mit Vektoren",
     "section": "",
-    "text": "Version vom Oktober 17, 2022 um 14:40:38"
+    "text": "Version vom October 17, 2022 um 20:31:05"
   },
   {
     "objectID": "matrix-basic.html",
     "href": "matrix-basic.html",
-    "title": "12  Berechungen mit Matrizen",
+    "title": "12  Berechnungen mit Matrizen",
     "section": "",
-    "text": "Version vom October 17, 2022 um 20:24:18"
+    "text": "Version vom October 17, 2022 um 20:31:10"
   },
   {
     "objectID": "matrix-basic.html#vom-linearen-gleichungssystem-zur-matrix",
     "href": "matrix-basic.html#vom-linearen-gleichungssystem-zur-matrix",
-    "title": "12  Berechungen mit Matrizen",
+    "title": "12  Berechnungen mit Matrizen",
     "section": "12.5 Vom linearen Gleichungssystem zur Matrix",
     "text": "12.5 Vom linearen Gleichungssystem zur Matrix\nEine Stärke von Matrizen in der Statistik ist, dass wir mit der Matrix auch Gleichungssysteme darstellen können. Damit können wir in der linearen Regression auch komplexere Modelle sauber darstellen. Im Folgenden siehst du drei Gleichungen.\n\\[\n\\begin{aligned}\n–2x_1 + 4x_2 + 1x_3 &= 0 \\\\\n1x_1 + 2x_2 + 0x_3 &= 15 \\\\\n5x_1 + 3x_2 + 1x_3 &= 88\n\\end{aligned}\n\\]\nDiese drei Gleichungen können wir auch in drei Matrizen übersetzen. Wir brauchen einmal eine Matrix in der die Zahlen stehen, die vor dem \\(x_1\\) bis \\(x_3\\) stehen würden. Dann ein Vektor mit den Abkürzungen nach den Zahlen, also \\(x_1\\), \\(x_2\\) und \\(x_3\\). Abschließend noch der Vektor mit den Ergebnissen. Wie du sehen kannst, multiplizieren wir die erste Matrix mit dem ersten Vektor und erhalten den Ergebnisvektor.\n\\[\n\\begin{pmatrix}\n-2 & 4& 1 \\\\\n1 & 2 & 0 \\\\\n5 & 3 & 1\n\\end{pmatrix}\n\\cdot\n\\begin{pmatrix}\nx_1 \\\\ x_2 \\\\ x_3\n\\end{pmatrix}\n=\n\\begin{pmatrix}\n0 \\\\\n15 \\\\\n88\n\\end{pmatrix}\n\\]\nDu kannst in den Abschnitt Kapitel 12.8 springen um dir einmal an einem weiteren Beispiel die Matrixmultiplikation anzuschauen."
   },
   {
     "objectID": "matrix-basic.html#grundlagen-matrizen",
     "href": "matrix-basic.html#grundlagen-matrizen",
-    "title": "12  Berechungen mit Matrizen",
+    "title": "12  Berechnungen mit Matrizen",
     "section": "12.1 Grundlagen Matrizen",
     "text": "12.1 Grundlagen Matrizen\n\n\nDu findest dann hinter diesem Link auch Mathehilfe zu Vektor, Matrizen und Co.. Du kannst auf der Seite mal stöbern, ob du da was findest was dir hilft.\nWir nutzen Matrizen vor allem wenn es um zwei Dinge in der Statistik geht.\n\nKorrelationsmtarix oder die verwandte Varianz/Covarianzmatrix. In beiden steht die Streuung der Variablen in den Daten untereinander.\nModellmatrix, wenn wir ein Modell aufbauen und verstehen wollen wie sich die Variablen in \\(x\\) auf das Outcome \\(y\\) auswirken.\n\nAllgemein gesprochen bestehen Matrizen aus \\(m\\) Zeilen und \\(n\\) Spalten, weshalb sie auch (\\(m\\),\\(n\\))-Matrizen genannt werden. Die Dimension einer einzelnen Matrix mit \\(m\\) Zeilen und \\(n\\) Spalten ist \\(m \\times n\\). Hier musst du nochmal aufpassen, das \\(n\\) steht hier nicht für die Anzahl an Beobachtungen. Ja, es kann übereinstimmen, aber hier ist es einfach nur die Zahl für die Dimension der Matrix.\nWichtig ist, dass wir uns hier auf Teilaspekte der Matrixrechnung konzentrieren. Es gibt natürlich noch viel mehr, aber hier schauen wir uns das Basiswissen an, was du dann in den Statistikteilen benötigst oder aber als Grundlage für andere Fächer.\nWir schreiben also für die Matrix \\(A\\) die Matrix wie folgt auf.\n\\[\n\\begin{aligned}\nA = \\begin{pmatrix}\na_{11} & a_{12} & \\cdots & a_{1n} \\\\\na_{21} & a_{22} & \\cdots & a_{2n} \\\\\n\\vdots &\\vdots & \\ddots &\\vdots \\\\\na_{m1} & a_{m2} & \\cdots & a_{mn}\n\\end{pmatrix}\n\\end{aligned}\n\\]\nNeben der Darstellung mit den runden Klammern, gibt es auch noch die Darstellung mit den eckigen Klammern. Beide Arten sind im Prinzip nutzbar. Es macht keinen großen Unterschied von der mathematischen Seite. Wir wollen hier aber die runden Klammern nutzen um nicht später uns in R zu verwirren.\n\\[\nA =\n\\begin{bmatrix}\na_{11} & a_{12} & a_{13} \\\\\na_{21} & a_{22} & a_{23}\n\\end{bmatrix}\n\\]\nIm Prinzip haben wir damit eine Matrix zusammen. Schauen wir noch schnell, wie wir eine Matrix in R aufbauen. Wir nutzen die Option byrow = TRUE um der Funktion matrix() mitzuteilen, dass wir die Matrix zeilenweise auffüllen wollen. Einzelne Werte in einer Matrix können wir mit den eckigen Klammern [] ansprechen. Daher für die Mathematik die runden Klammern.\n\nmatrix(c(3, 5, 6,\n         3, 8, 1), byrow = TRUE, nrow = 2)\n\n     [,1] [,2] [,3]\n[1,]    3    5    6\n[2,]    3    8    1\n\n\nSchauen wir uns nun verschiedene Matrizen an, die in dem mathematischen Maße besonders sind, dass diese Matrizen einen eigenen Namen erhalten haben."
   },
   {
     "objectID": "matrix-basic.html#einheitsmatrix",
     "href": "matrix-basic.html#einheitsmatrix",
-    "title": "12  Berechungen mit Matrizen",
+    "title": "12  Berechnungen mit Matrizen",
     "section": "12.2 Einheitsmatrix",
     "text": "12.2 Einheitsmatrix\nDie Einheitsmatrix \\(A_E\\) besteht nur aus 0’en auf der Nebendiagonalen und 1’sen auf der Diagonalen. Damit ist die Matrix der Standard in vielen statistischen Verfahren, wenn wir keine besondere Varianzstruktur annehmen.\n\\[\nA_E =\n\\begin{pmatrix}\n1 & 0 & 0 \\\\\n0 & 1 & 0 \\\\\n0 & 0 & 1\n\\end{pmatrix}\n\\]"
   },
   {
     "objectID": "matrix-basic.html#diagonalmatrix",
     "href": "matrix-basic.html#diagonalmatrix",
-    "title": "12  Berechungen mit Matrizen",
+    "title": "12  Berechnungen mit Matrizen",
     "section": "12.3 Diagonalmatrix",
     "text": "12.3 Diagonalmatrix\nDie Diagnoalmatrix \\(A_D\\) besteht nur aus 0’en auf der Nebendiagonalen und beliebigen Werten auf der Diagonalen. Häufig sind die Werte in der Statistik auf der Diagonalen die Varianzen. Wenn die Variablen nicht miteinander korrelieren, dann sind die Nebendiagonalen 0.\n\\[\nA_D=\\begin{pmatrix}\n4 & 0 & 0 \\\\\n0 & 8 & 0 \\\\\n0 & 0 & 3\n\\end{pmatrix}\n\\]\nEine klassische Varian/Covarianzmatrix würde wie folgt aussehen. Wir bauen uns einen Datensatz mit den Noten von 5 Schülern über die Fächer Statistik, Informatik und Mathematik. Die Funktion cov() gibt uns die Varianz/Covarianzmatrix wieder.\n\npoints_tbl <- tibble(statistic = c(84, 82, 81, 89, 73),\n                     programing = c(85, 82, 72, 77, 63),\n                     math = c(97, 92, 93, 91, 88)) \npoints_tbl %>% cov()\n\n           statistic programing  math\nstatistic      33.70      36.45  9.55\nprograming     36.45      75.70 23.05\nmath            9.55      23.05 10.70\n\n\nWie wir auch schnell überprüfen können, sind auf der Diagonalen die Varianzen von den jeweiligen Fächern zu finden. In der Nebendiagonalen finden sich die Covarianzen. Also die Varianzen für das gemeinsame Variieren zwischen den Fächern und den fünf Schülern.\n\npoints_tbl %>% \n  summarise(var(statistic), var(programing), var(math))\n\n# A tibble: 1 × 3\n  `var(statistic)` `var(programing)` `var(math)`\n             <dbl>             <dbl>       <dbl>\n1             33.7              75.7        10.7\n\n\nWir können uns dann auch die passende Korrelationmatrix mit der Funktion cor() ausgeben lassen. wir skalieren dadurch die Varianz/Covarianzmatrix auf eine Diagonalen mit nur 1’sen und der Korrelation in den Nebendiagonalen. Die Korrelationsmatrix ist an der Diagonalen gespiegelt.\n\npoints_tbl %>% cor()\n\n            statistic programing       math\nstatistic  1.00000000 0.72166334 0.50291725\nprograming 0.72166334 1.00000000 0.80989944\nmath       0.50291725 0.80989944 1.00000000"
   },
   {
     "objectID": "matrix-basic.html#stochastische-matrix",
     "href": "matrix-basic.html#stochastische-matrix",
-    "title": "12  Berechungen mit Matrizen",
+    "title": "12  Berechnungen mit Matrizen",
     "section": "12.4 Stochastische Matrix",
     "text": "12.4 Stochastische Matrix\nEine stochastische Matrix \\(A_S\\) enthält nur Zahlen zwischen 0 und 1. Damit besteht eine stochastische Matrix aus Wahrscheinlichkeiten. Die Wahrscheinlichkeiten addieren sich entweder über die Zeilen oder über die Spalten zu 1 auf. In selten Fällem kann es auch sein, dass sich die Zeilen und Spalten auf 1 aufaddieren.\n\\[\nA_S=\\begin{pmatrix}\n0.25 & 0.5 & 0.25 \\\\\n0.25 & 0.25 & 0.5 \\\\\n0.5 & 0.25 & 0.25\n\\end{pmatrix}\n\\]"
   },
   {
     "objectID": "matrix-basic.html#zwei-matrizen-addieren",
     "href": "matrix-basic.html#zwei-matrizen-addieren",
-    "title": "12  Berechungen mit Matrizen",
+    "title": "12  Berechnungen mit Matrizen",
     "section": "12.6 Zwei Matrizen addieren",
     "text": "12.6 Zwei Matrizen addieren\nWenn wir zwei Matrizen \\(A\\) und \\(B\\) haben, die die gleiche Dimension haben, dann können wir die beiden Matrizen einfach addieren.\n\\[\nA=\\begin{pmatrix}\na_{11} & a_{12} \\\\\na_{21} & a_{22}\n\\end{pmatrix};\n\\qquad\nB=\\begin{pmatrix}\nb_{11} & b_{12} \\\\\nb_{21} & b_{22}\n\\end{pmatrix}\n\\]\nIm Folgenden sehen wir einmal die Addition der beiden Matrizen.\n\\[\nA \\pm B =\n\\begin{pmatrix}\na_{11}\\pm b_{11} & a_{12}\\pm b_{12} \\\\\na_{21}\\pm b_{21} & a_{22}\\pm b_{22}\n\\end{pmatrix}\n\\]\nIn R geht es ebenfalls einfach die beiden Matrizen zu addieren.\n\nA <- matrix(c(2, 3, 6, 7), ncol = 2)\nA\n\n     [,1] [,2]\n[1,]    2    6\n[2,]    3    7\n\nB <- matrix(c(0, 5, 4, 1), ncol = 2)\nB\n\n     [,1] [,2]\n[1,]    0    4\n[2,]    5    1\n\nA + B\n\n     [,1] [,2]\n[1,]    2   10\n[2,]    8    8\n\n\nWir nutzen die Addition relativ selten. Häufiger werden wir eine Matrix mit einer Zahl oder einem Vektor multiplizieren."
   },
   {
     "objectID": "matrix-basic.html#eine-matrix-mit-einer-zahl-multiplizieren",
     "href": "matrix-basic.html#eine-matrix-mit-einer-zahl-multiplizieren",
-    "title": "12  Berechungen mit Matrizen",
+    "title": "12  Berechnungen mit Matrizen",
     "section": "12.7 Eine Matrix mit einer Zahl multiplizieren",
     "text": "12.7 Eine Matrix mit einer Zahl multiplizieren\nWenn wir eine eine Matrix \\(A\\) mit einer Zahl \\(r\\) oder auch Skalar genannt multiplizieren dann multiplizieren wir jeden einzelnen Wert der Matrix mit dieser Zahl.\n\\[\nr \\cdot\n\\underbrace{\n\\begin{pmatrix}\n3 & 2 \\\\\n4 & 6\n\\end{pmatrix}}_{A} =\n\\begin{pmatrix}\n3 \\cdot r & 2 \\cdot r \\\\\n4 \\cdot r & 6 \\cdot r\n\\end{pmatrix}\n\\]\nAuch hier lässt sich der Zusammenhang einfach in R nachvollziehen. Wir bauen uns wieder die Matrix \\(A\\) und multiplizieren die Matrix \\(A\\) mit dem Skalar \\(r = 4\\).\n\nA <- matrix(c(3, 2, 4, 6), byrow = TRUE,  ncol = 2)\nA\n\n     [,1] [,2]\n[1,]    3    2\n[2,]    4    6\n\n4 * A\n\n     [,1] [,2]\n[1,]   12    8\n[2,]   16   24\n\n\nNeben der Multiplikation mit einer Zahl brauchen wir häufiger die Multiplikation einer Matrix mit einem Vektor."
   },
@@ -338,8 +338,22 @@
   {
     "objectID": "matrix-basic.html#sec-mat-mult",
     "href": "matrix-basic.html#sec-mat-mult",
-    "title": "12  Berechungen mit Matrizen",
+    "title": "12  Berechnungen mit Matrizen",
     "section": "12.8 Eine Matrix mit einem Vektor multiplizieren",
     "text": "12.8 Eine Matrix mit einem Vektor multiplizieren\nWenn wir eine Matrix mit einem Vektor multiplizieren wollen, dann müssen die Matrix und der Vektor zueinander passen. In unseren Fällen, wie wir häufig betrachten muss die Matrix die Anzahl an Spalten haben die der Länge des Vektors enspricht. In unseren Beispiel haben wir drei Spalten und somit muss der Vektor auch eine Länge von drei Einträgen haben.\n\\[\n\\begin{pmatrix}\n4 & 3 & 2 \\\\\n1 & 0 & 3\n\\end{pmatrix}\n\\cdot\n\\begin{pmatrix}\n2 \\\\ 0 \\\\ 1\n\\end{pmatrix}\n=\n\\begin{pmatrix}\n4 \\cdot 2+ 3 \\cdot 0 +2 \\cdot 1 \\\\\n1 \\cdot 2+ 0 \\cdot 0 +3 \\cdot 1\n\\end{pmatrix}\n=\n\\begin{pmatrix}\n10 \\\\\n5\n\\end{pmatrix}\n\\]\nWii können das Beispiel auch wieder in R nachvollziehen. In R gibt es keine Funktion mit Namen vector. Die Funktion c() erschafft einen Vektor. Wenn wir Matrizen oder Vektoren miteinander multipizieren wollen und anschließend aufaddieren, dann müssen wir den Operator %*% nutzen.\n\nA <- matrix(c(4, 3, 2,\n              1, 0, 3), byrow = 2, ncol = 3)\nA\n\n     [,1] [,2] [,3]\n[1,]    4    3    2\n[2,]    1    0    3\n\nB <- c(2, 0, 1)\nB\n\n[1] 2 0 1\n\nA %*% B\n\n     [,1]\n[1,]   10\n[2,]    5\n\n\nAm Ende kommt das Ergebnis raus, was wir auch erwartet haben."
+  },
+  {
+    "objectID": "vector-preface.html#berechungen-mit-matrizen",
+    "href": "vector-preface.html#berechungen-mit-matrizen",
+    "title": "Vektor und Matrix Rechnungen",
+    "section": "Berechungen mit Matrizen",
+    "text": "Berechungen mit Matrizen\nKapitel 12"
+  },
+  {
+    "objectID": "vector-preface.html#berechungen-mit-vektoren",
+    "href": "vector-preface.html#berechungen-mit-vektoren",
+    "title": "Vektor und Matrix Rechnungen",
+    "section": "Berechungen mit Vektoren",
+    "text": "Berechungen mit Vektoren\nKapitel 11"
   }
 ]

@@ -2,7 +2,7 @@
 pacman::p_load(tidyverse, readxl, knitr, kableExtra, Hmisc)
 ```
 
-# Berechungen mit Vektoren {#sec-vec}
+# Berechnungen mit Vektoren {#sec-vec}
 
 *Version vom `r format(Sys.time(), '%B %d, %Y um %H:%M:%S')`*
 

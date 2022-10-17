@@ -5,7 +5,7 @@ pacman::p_load(tidyverse, readxl, knitr, kableExtra, Hmisc,
 conflict_prefer("summarise", "dplyr")
 ```
 
-# Berechungen mit Matrizen {#sec-mat}
+# Berechnungen mit Matrizen {#sec-mat}
 
 *Version vom `r format(Sys.time(), '%B %d, %Y um %H:%M:%S')`*
 
