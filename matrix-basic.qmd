@@ -1,4 +1,5 @@
 ```{r echo = FALSE}
+#| message: false
 pacman::p_load(tidyverse, readxl, knitr, kableExtra, Hmisc,
                conflicted)
 conflict_prefer("summarise", "dplyr")
@@ -7,8 +8,6 @@ conflict_prefer("summarise", "dplyr")
 # Berechungen mit Matrizen {#sec-mat}
 
 *Version vom `r format(Sys.time(), '%B %d, %Y um %H:%M:%S')`*
-
-![](images/caution.png){fig-align="center" width="50%"}
 
 ## Grundlagen Matrizen
 
@@ -22,6 +21,8 @@ Wir nutzen Matrizen vor allem wenn es um zwei Dinge in der Statistik geht.
 2) Modellmatrix, wenn wir ein Modell aufbauen und verstehen wollen wie sich die Variablen in $x$ auf das Outcome $y$ auswirken.
 
 Allgemein gesprochen bestehen Matrizen aus $m$ Zeilen und $n$ Spalten, weshalb sie auch ($m$,$n$)-Matrizen genannt werden. Die Dimension einer einzelnen Matrix mit $m$ Zeilen und $n$ Spalten ist $m \times n$. Hier musst du nochmal aufpassen, das $n$ steht hier nicht für die Anzahl an Beobachtungen. Ja, es kann übereinstimmen, aber hier ist es einfach nur die Zahl für die Dimension der Matrix.
+
+Wichtig ist, dass wir uns hier auf Teilaspekte der Matrixrechnung konzentrieren. Es gibt natürlich noch viel mehr, aber hier schauen wir uns das Basiswissen an, was du dann in den Statistikteilen benötigst oder aber als Grundlage für andere Fächer.
 
 Wir schreiben also für die Matrix $A$ die Matrix wie folgt auf.
 
@@ -111,10 +112,9 @@ A_S=\begin{pmatrix}
 0.5 & 0.25 & 0.25
 \end{pmatrix}
 $$
-
-
-
 ## Vom linearen Gleichungssystem zur Matrix
+
+Eine Stärke von Matrizen in der Statistik ist, dass wir mit der Matrix auch Gleichungssysteme darstellen können. Damit können wir in der linearen Regression auch komplexere Modelle sauber darstellen. Im Folgenden siehst du drei Gleichungen. 
 
 $$
 \begin{aligned}
@@ -123,6 +123,8 @@ $$
 5x_1 + 3x_2 + 1x_3 &= 88
 \end{aligned}
 $$
+
+Diese drei Gleichungen können wir auch in drei Matrizen übersetzen. Wir brauchen einmal eine Matrix in der die Zahlen stehen, die vor dem $x_1$ bis $x_3$ stehen würden. Dann ein Vektor mit den Abkürzungen nach den Zahlen, also $x_1$, $x_2$ und $x_3$. Abschließend noch der Vektor mit den Ergebnissen. Wie du sehen kannst, multiplizieren wir die erste Matrix mit dem ersten Vektor und erhalten den Ergebnisvektor. 
 
 $$
 \begin{pmatrix} 
@@ -141,7 +143,11 @@ x_1 \\ x_2 \\ x_3
 88
 \end{pmatrix}
 $$
+Du kannst in den Abschnitt @sec-mat-mult springen um dir einmal an einem weiteren Beispiel die Matrixmultiplikation anzuschauen.
+
 ## Zwei Matrizen addieren
+
+Wenn wir zwei Matrizen $A$ und $B$ haben, die die gleiche Dimension haben, dann können wir die beiden Matrizen einfach addieren.
 
 $$
 A=\begin{pmatrix} 
@@ -154,6 +160,8 @@ b_{11} & b_{12} \\
 b_{21} & b_{22} 
 \end{pmatrix}
 $$
+Im Folgenden sehen wir einmal die Addition der beiden Matrizen.
+
 $$
 A \pm B = 
 \begin{pmatrix} 
@@ -161,7 +169,24 @@ a_{11}\pm b_{11} & a_{12}\pm b_{12} \\
 a_{21}\pm b_{21} & a_{22}\pm b_{22} 
 \end{pmatrix}
 $$
+
+In R geht es ebenfalls einfach die beiden Matrizen zu addieren.
+
+```{r}
+A <- matrix(c(2, 3, 6, 7), ncol = 2)
+A
+
+B <- matrix(c(0, 5, 4, 1), ncol = 2)
+B
+
+A + B
+```
+
+Wir nutzen die Addition relativ selten. Häufiger werden wir eine Matrix mit einer Zahl oder einem Vektor multiplizieren.
+
 ## Eine Matrix mit einer Zahl multiplizieren
+
+Wenn  wir eine eine Matrix $A$ mit einer Zahl $r$ oder auch Skalar genannt multiplizieren dann multiplizieren wir jeden einzelnen Wert der Matrix mit dieser Zahl.
 
 $$
 r \cdot 
@@ -175,7 +200,21 @@ r \cdot
 4 \cdot r & 6 \cdot r 
 \end{pmatrix}
 $$
-## Eine Matrix mit einem Vektor multiplizieren
+
+Auch hier lässt sich der Zusammenhang einfach in R nachvollziehen. Wir bauen uns wieder die Matrix $A$ und multiplizieren die Matrix $A$ mit dem Skalar $r = 4$.
+
+```{r}
+A <- matrix(c(3, 2, 4, 6), byrow = TRUE,  ncol = 2)
+A
+
+4 * A
+```
+
+Neben der Multiplikation mit einer Zahl brauchen wir häufiger die Multiplikation einer Matrix mit einem Vektor.
+
+## Eine Matrix mit einem Vektor multiplizieren {#sec-mat-mult}
+
+Wenn wir eine Matrix mit einem Vektor multiplizieren wollen, dann müssen die Matrix und der Vektor zueinander passen. In unseren Fällen, wie wir häufig betrachten muss die Matrix die Anzahl an Spalten haben die der Länge des Vektors enspricht. In unseren Beispiel haben wir drei Spalten und somit muss der Vektor auch eine Länge von drei Einträgen haben.
 
 $$
 \begin{pmatrix} 
@@ -198,6 +237,19 @@ $$
 \end{pmatrix}
 $$
 
+Wii können das Beispiel auch wieder in R nachvollziehen. In R gibt es keine Funktion mit Namen `vector`. Die Funktion `c()` erschafft einen Vektor. Wenn wir Matrizen oder Vektoren miteinander multipizieren wollen und anschließend aufaddieren, dann müssen wir den Operator `%*%` nutzen. 
 
+```{r}
+A <- matrix(c(4, 3, 2,
+              1, 0, 3), byrow = 2, ncol = 3)
+A
+
+B <- c(2, 0, 1)
+B
+
+A %*% B
+```
+
+Am Ende kommt das Ergebnis raus, was wir auch erwartet haben.
 
 
