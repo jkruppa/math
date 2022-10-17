@@ -263,14 +263,14 @@
     "href": "vector-preface.html",
     "title": "Vektor und Matrix",
     "section": "",
-    "text": "Version vom October 17, 2022 um 20:32:40\nIn dem folgenden Kapitel wollen wir uns einmale mit Berechnungen mit Vektoren in Kapitel 11 beschäftigen. Das Kapitel ist eher kurz und dient nur der Erinnerung, was sind eigentlich Vektoren. Wir nutzen den Begriff häufig in der R Programmierung und wir wollen hier nochmal auf ein paar mathematische Eigenschaften eingehen.\nWichtiger ist in dem Sinne die Berechnungen mit Matrizen in Kapitel 12. Wir schauen uns hier nochmal die gängigen Rechenoperationen mit Matrizen an. Wir erschlagen aber nicht alles sondern schauen usn nur ausgewählte Aspekte einmal an. Wir brauchen Teile von den Berechnungen mit Matrizen später in der multiplen linearen Regression in der Statistik."
+    "text": "Version vom October 17, 2022 um 20:33:29\nIn dem folgenden Kapitel wollen wir uns einmal mit Berechnungen mit Vektoren in Kapitel 11 beschäftigen. Das Kapitel ist eher kurz und dient nur der Erinnerung, was sind eigentlich Vektoren. Wir nutzen den Begriff häufig in der R Programmierung und wir wollen hier nochmal auf ein paar mathematische Eigenschaften eingehen.\nWichtiger ist in dem Sinne die Berechnungen mit Matrizen in Kapitel 12. Wir schauen uns hier nochmal die gängigen Rechenoperationen mit Matrizen an. Wir erschlagen aber nicht alles sondern schauen usn nur ausgewählte Aspekte einmal an. Wir brauchen Teile von den Berechnungen mit Matrizen später in der multiplen linearen Regression in der Statistik."
   },
   {
     "objectID": "vector-basic.html",
     "href": "vector-basic.html",
     "title": "11  Berechnungen mit Vektoren",
     "section": "",
-    "text": "Version vom October 17, 2022 um 20:31:05"
+    "text": "Version vom October 17, 2022 um 20:48:22"
   },
   {
     "objectID": "matrix-basic.html",
@@ -355,5 +355,12 @@
     "title": "Vektor und Matrix Rechnungen",
     "section": "Berechungen mit Vektoren",
     "text": "Berechungen mit Vektoren\nKapitel 11"
+  },
+  {
+    "objectID": "vector-basic.html#grundlagen-vektoren",
+    "href": "vector-basic.html#grundlagen-vektoren",
+    "title": "11  Berechnungen mit Vektoren",
+    "section": "11.1 Grundlagen Vektoren",
+    "text": "11.1 Grundlagen Vektoren\n\\[\nA= (3 , 5 , 1)^T = \\begin{pmatrix} 2 \\\\ 1 \\\\ 4 \\end{pmatrix}\n\\]\nVektoren der Länge 1 heißen Einheitsvektoren oder normierte Vektoren. Hat ein Vektor die Länge 0, so handelt es sich um den Nullvektor.\n\\[\n\\begin{pmatrix} a_1 \\\\ a_2 \\\\ a_3 \\end{pmatrix}\n\\pm\n\\begin{pmatrix} b_1 \\\\ b_2 \\\\ b_3 \\end{pmatrix}\n=\n\\begin{pmatrix} a_1 \\pm b_1 \\\\ a_2 \\pm b_2 \\\\ a_3 \\pm b_3 \\end{pmatrix}\n\\]\n\\[\n\\begin{pmatrix}\n2 \\\\ -1 \\\\ 5\n\\end{pmatrix}\n+\n\\begin{pmatrix}\n8 \\\\ 1 \\\\ -3\n\\end{pmatrix}\n=\n\\begin{pmatrix}\n2+8\\\\ -1+1 \\\\ 5+(-3)\n\\end{pmatrix}\n=\n\\begin{pmatrix}\n10\\\\ 0 \\\\ 2\n\\end{pmatrix}\n\\]\n\\[\n2 \\cdot \\begin{pmatrix} 2 \\\\ 2 \\\\ 2 \\end{pmatrix}  =\n\\begin{pmatrix} 2 \\cdot 2 \\\\ 2 \\cdot 2 \\\\ 2 \\cdot 2 \\end{pmatrix}  =\n\\begin{pmatrix} 4 \\\\ 4 \\\\ 4 \\end{pmatrix}\n\\]"
   }
 ]

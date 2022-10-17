@@ -6,6 +6,6 @@ pacman::p_load(tidyverse, readxl, knitr, kableExtra, Hmisc)
 
 *Version vom `r format(Sys.time(), '%B %d, %Y um %H:%M:%S')`*
 
-In dem folgenden Kapitel wollen wir uns einmale mit Berechnungen mit Vektoren in @sec-vec beschäftigen. Das Kapitel ist eher kurz und dient nur der Erinnerung, was sind eigentlich Vektoren. Wir nutzen den Begriff häufig in der R Programmierung und wir wollen hier nochmal auf ein paar mathematische Eigenschaften eingehen.
+In dem folgenden Kapitel wollen wir uns einmal mit Berechnungen mit Vektoren in @sec-vec beschäftigen. Das Kapitel ist eher kurz und dient nur der Erinnerung, was sind eigentlich Vektoren. Wir nutzen den Begriff häufig in der R Programmierung und wir wollen hier nochmal auf ein paar mathematische Eigenschaften eingehen.
 
 Wichtiger ist in dem Sinne die Berechnungen mit Matrizen in @sec-mat. Wir schauen uns hier nochmal die gängigen Rechenoperationen mit Matrizen an. Wir erschlagen aber nicht alles sondern schauen usn nur ausgewählte Aspekte einmal an. Wir brauchen Teile von den Berechnungen mit Matrizen später in der multiplen linearen Regression in der Statistik.
