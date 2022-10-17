@@ -1,5 +1,7 @@
 ```{r echo = FALSE}
-pacman::p_load(tidyverse, readxl, knitr, kableExtra, Hmisc)
+pacman::p_load(tidyverse, readxl, knitr, kableExtra, Hmisc,
+               conflicted)
+conflict_prefer("summarise", "dplyr")
 ```
 
 # Berechungen mit Matrizen {#sec-mat}
@@ -11,18 +13,21 @@ pacman::p_load(tidyverse, readxl, knitr, kableExtra, Hmisc)
 ## Grundlagen Matrizen
 
 ::: column-margin
-
 Du findest dann hinter diesem Link auch [Mathehilfe zu Vektor, Matrizen und Co.](https://www.studyhelp.de/online-lernen/mathe/). Du kannst auf der Seite mal stöbern, ob du da was findest was dir hilft.
-
 :::
 
+Wir nutzen Matrizen vor allem wenn es um zwei Dinge in der Statistik geht.
 
-Matrizen bestehen aus m Zeilen und n Spalten, weshalb sie auch (m,n)-Matrizen genannt werden. Die Dimension einer einzelnen Matrix (Matrizen ist nur der Plural vom Begriff „Matrix“) mit m Zeilen und n Spalten ist .
+1) Korrelationsmtarix oder die verwandte Varianz/Covarianzmatrix. In beiden steht die Streuung der Variablen in den Daten untereinander. 
+2) Modellmatrix, wenn wir ein Modell aufbauen und verstehen wollen wie sich die Variablen in $x$ auf das Outcome $y$ auswirken.
 
+Allgemein gesprochen bestehen Matrizen aus $m$ Zeilen und $n$ Spalten, weshalb sie auch ($m$,$n$)-Matrizen genannt werden. Die Dimension einer einzelnen Matrix mit $m$ Zeilen und $n$ Spalten ist $m \times n$. Hier musst du nochmal aufpassen, das $n$ steht hier nicht für die Anzahl an Beobachtungen. Ja, es kann übereinstimmen, aber hier ist es einfach nur die Zahl für die Dimension der Matrix.
+
+Wir schreiben also für die Matrix $A$ die Matrix wie folgt auf.
 
 $$
 \begin{aligned}
-A = \mathbf{A} = \begin{pmatrix} 
+A = \begin{pmatrix} 
 a_{11} & a_{12} & \cdots & a_{1n} \\ 
 a_{21} & a_{22} & \cdots & a_{2n} \\ 
 \vdots &\vdots & \ddots &\vdots \\ 
@@ -30,23 +35,30 @@ a_{m1} & a_{m2} & \cdots & a_{mn}
 \end{pmatrix}
 \end{aligned}
 $$
-$$
-\begin{pmatrix}
-a_{11} & a_{12} & a_{13} \\
-a_{21} & a_{22} & a_{23}
-\end{pmatrix}
-$$
+Neben der Darstellung mit den runden Klammern, gibt es auch noch die Darstellung mit den eckigen Klammern. Beide Arten sind im Prinzip nutzbar. Es macht keinen großen Unterschied von der mathematischen Seite. Wir wollen hier aber die runden Klammern nutzen um nicht später uns in R zu verwirren.
 
 $$
+A = 
 \begin{bmatrix}
 a_{11} & a_{12} & a_{13} \\
 a_{21} & a_{22} & a_{23}
 \end{bmatrix}
 $$
+Im Prinzip haben wir damit eine Matrix zusammen. Schauen wir noch schnell, wie wir eine Matrix in R aufbauen. Wir nutzen die Option `byrow = TRUE` um der Funktion `matrix()` mitzuteilen, dass wir die Matrix zeilenweise auffüllen wollen. Einzelne Werte in einer Matrix können wir mit den eckigen Klammern `[]` ansprechen. Daher für die Mathematik die runden Klammern.
+
+```{r}
+matrix(c(3, 5, 6,
+         3, 8, 1), byrow = TRUE, nrow = 2)
+```
+
+Schauen wir uns nun verschiedene Matrizen an, die in dem mathematischen Maße besonders sind, dass diese Matrizen einen eigenen Namen erhalten haben.
+
 ## Einheitsmatrix
 
+Die Einheitsmatrix $A_E$ besteht nur aus 0'en auf der Nebendiagonalen und 1'sen auf der Diagonalen. Damit ist die Matrix der Standard in vielen statistischen Verfahren, wenn wir keine besondere Varianzstruktur annehmen. 
+
 $$
-\textbf{E}_3=
+A_E =
 \begin{pmatrix}
 1 & 0 & 0 \\
 0 & 1 & 0 \\
@@ -56,18 +68,44 @@ $$
 
 ## Diagonalmatrix
 
+Die Diagnoalmatrix $A_D$ besteht nur aus 0'en auf der Nebendiagonalen und beliebigen Werten auf der Diagonalen. Häufig sind die Werte in der Statistik auf der Diagonalen die Varianzen. Wenn die Variablen *nicht* miteinander korrelieren, dann sind die Nebendiagonalen 0.
+
 $$
-\textbf{A}=\begin{pmatrix}
-6 & 0 & 0 \\
-0 & 3 & 0 \\
-0 & 0 & 5
+A_D=\begin{pmatrix}
+4 & 0 & 0 \\
+0 & 8 & 0 \\
+0 & 0 & 3
 \end{pmatrix}
 $$
 
+Eine klassische Varian/Covarianzmatrix würde wie folgt aussehen. Wir bauen uns einen Datensatz mit den Noten von 5 Schülern über die Fächer Statistik, Informatik und Mathematik. Die Funktion `cov()` gibt uns die Varianz/Covarianzmatrix wieder.
+
+```{r}
+points_tbl <- tibble(statistic = c(84, 82, 81, 89, 73),
+                     programing = c(85, 82, 72, 77, 63),
+                     math = c(97, 92, 93, 91, 88)) 
+points_tbl %>% cov()
+```
+
+Wie wir auch schnell überprüfen können, sind auf der Diagonalen die Varianzen von den jeweiligen Fächern zu finden. In der Nebendiagonalen finden sich die Covarianzen. Also die Varianzen für das *gemeinsame* Variieren zwischen den Fächern und den fünf Schülern.  
+
+```{r}
+points_tbl %>% 
+  summarise(var(statistic), var(programing), var(math))
+```
+Wir können uns dann auch die passende Korrelationmatrix mit der Funktion `cor()` ausgeben lassen. wir skalieren dadurch die Varianz/Covarianzmatrix auf eine Diagonalen mit nur 1'sen und der Korrelation in den Nebendiagonalen. Die Korrelationsmatrix ist an der Diagonalen gespiegelt.
+
+```{r}
+points_tbl %>% cor()
+```
+
+
 ## Stochastische Matrix
 
+Eine stochastische Matrix $A_S$ enthält nur Zahlen zwischen 0 und 1. Damit besteht eine stochastische Matrix aus Wahrscheinlichkeiten. Die Wahrscheinlichkeiten addieren sich *entweder* über die Zeilen oder über die Spalten zu 1 auf. In selten Fällem kann es auch sein, dass sich die Zeilen und Spalten auf 1 aufaddieren. 
+
 $$
-\textbf{A}=\begin{pmatrix}
+A_S=\begin{pmatrix}
 0.25 & 0.5 & 0.25 \\
 0.25 & 0.25 & 0.5 \\
 0.5 & 0.25 & 0.25
@@ -80,17 +118,17 @@ $$
 
 $$
 \begin{aligned}
-–1x_1 + 2x_2 + 0x_3 &= 0 \\
-1x_1 + 1x_2 + 1x_3 &= 34 \\
-10x_1 + 5x_2 + 1x_3 &= 100
+–2x_1 + 4x_2 + 1x_3 &= 0 \\
+1x_1 + 2x_2 + 0x_3 &= 15 \\
+5x_1 + 3x_2 + 1x_3 &= 88
 \end{aligned}
 $$
 
 $$
 \begin{pmatrix} 
--1 & 2 & 0 \\ 
-1 & 1 & 1 \\ 
-10 & 5 & 1 
+-2 & 4& 1 \\ 
+1 & 2 & 0 \\ 
+5 & 3 & 1 
 \end{pmatrix} 
 \cdot
 \begin{pmatrix}
@@ -99,10 +137,12 @@ x_1 \\ x_2 \\ x_3
 = 
 \begin{pmatrix}
 0 \\ 
-34 \\ 
-100
+15 \\ 
+88
 \end{pmatrix}
 $$
+## Zwei Matrizen addieren
+
 $$
 A=\begin{pmatrix} 
 a_{11} & a_{12} \\ 
@@ -121,37 +161,40 @@ a_{11}\pm b_{11} & a_{12}\pm b_{12} \\
 a_{21}\pm b_{21} & a_{22}\pm b_{22} 
 \end{pmatrix}
 $$
+## Eine Matrix mit einer Zahl multiplizieren
+
 $$
 r \cdot 
 \underbrace{
 \begin{pmatrix} 
 3 & 2 \\ 
-4 & 5 
+4 & 6 
 \end{pmatrix}}_{A} = 
 \begin{pmatrix} 
 3 \cdot r & 2 \cdot r \\ 
-4 \cdot r & 5 \cdot r 
+4 \cdot r & 6 \cdot r 
 \end{pmatrix}
 $$
+## Eine Matrix mit einem Vektor multiplizieren
 
 $$
 \begin{pmatrix} 
-3 & 2 & 1 \\ 
-1 & 0 & 2 
+4 & 3 & 2 \\ 
+1 & 0 & 3 
 \end{pmatrix} 
 \cdot 
 \begin{pmatrix} 
-1 \\ 0 \\ 4 
+2 \\ 0 \\ 1 
 \end{pmatrix} 
 = 
 \begin{pmatrix} 
-3 \cdot 1+ 2 \cdot 0 +1 \cdot 4 \\ 
-1 \cdot 1+ 0 \cdot 0 +2 \cdot 4 
+4 \cdot 2+ 3 \cdot 0 +2 \cdot 1 \\ 
+1 \cdot 2+ 0 \cdot 0 +3 \cdot 1 
 \end{pmatrix} 
 = 
 \begin{pmatrix} 
-7 \\ 
-9 
+10 \\ 
+5 
 \end{pmatrix}
 $$
 
