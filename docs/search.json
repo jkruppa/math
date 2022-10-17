@@ -214,14 +214,14 @@
     "href": "probability-basic.html",
     "title": "7  Grundlagen der Wahrscheinlichkeitsrechnung",
     "section": "",
-    "text": "Version vom October 17, 2022 um 17:08:41"
+    "text": "Version vom October 17, 2022 um 18:28:55"
   },
   {
     "objectID": "probability-basic.html#regeln",
     "href": "probability-basic.html#regeln",
     "title": "7  Grundlagen der Wahrscheinlichkeitsrechnung",
     "section": "7.1 Regeln",
-    "text": "7.1 Regeln\nUnd \\(\\cap\\)\nOder \\(\\cup\\)\nText\n\\(Pr(A) = 2/3\\)\n\\(Pr(K_1) \\cap \\cup Pr(K_2)\\)\n\\[\n\\begin{aligned}\nPr(K_1 \\cap K_2) &= Pr(K_1) \\times Pr(K_2) \\\\\n               &= 1/2 \\times 1/2 \\\\\n               &= 1/4\n\\end{aligned}\n\\]"
+    "text": "7.1 Regeln\nUnd \\(\\cap\\)\nOder \\(\\cup\\)\nText\n\\(Pr(A) = 2/3\\)\n\\(Pr(K_1) \\cap \\cup Pr(K_2)\\)\n\\[\n\\begin{aligned}\nPr(K_1 \\cap K_2) &= Pr(K_1) \\times Pr(K_2) \\\\\n               &= 1/2 \\times 1/2 \\\\\n               &= 1/4\n\\end{aligned}\n\\]\nIn Tabelle 7.1\n\n\nTabelle 7.1— Test\n\n\n\n\n\n\n\nAbbildung\n\nBedeutung\n\n\n\n\n\n\\(A \\cup B\\)\n\\(A\\) tritt ein oder \\(B\\) tritt ein\n\n\n\n\\(A \\cap B\\)\n\\(A\\) trit ein und \\(B\\) tritt ein\n\n\n\n\\(A \\setminus B\\)\n\\(A\\) tritt ein, aber \\(B\\) tritt nicht ein\n\n\n\n\\(\\bar{A} = \\Omega \\setminus A\\)\n\\(A\\) tritt nicht ein\n\n\n\n\\(A \\cup B\\)\nEntweder \\(A\\) ein oder \\(B\\) tritt ein oder keins von beiden\n\n\n\n\\(B \\subset A\\)\n\\(B\\) ist Teilmenge von \\(A\\)"
   },
   {
     "objectID": "probability-conditional.html",
@@ -277,13 +277,41 @@
     "href": "matrix-basic.html",
     "title": "12  Berechungen mit Matrizen",
     "section": "",
-    "text": "Version vom Oktober 17, 2022 um 14:40:11"
+    "text": "Version vom October 17, 2022 um 17:48:46"
   },
   {
     "objectID": "matrix-basic.html#vom-linearen-gleichungssystem-zur-matrix",
     "href": "matrix-basic.html#vom-linearen-gleichungssystem-zur-matrix",
     "title": "12  Berechungen mit Matrizen",
-    "section": "12.1 Vom linearen Gleichungssystem zur Matrix",
-    "text": "12.1 Vom linearen Gleichungssystem zur Matrix\nhttps://www.studyhelp.de/online-lernen/mathe/matrizen/"
+    "section": "12.5 Vom linearen Gleichungssystem zur Matrix",
+    "text": "12.5 Vom linearen Gleichungssystem zur Matrix\n\\[\n\\begin{aligned}\n–1x_1 + 2x_2 + 0x_3 &= 0 \\\\\n1x_1 + 1x_2 + 1x_3 &= 34 \\\\\n10x_1 + 5x_2 + 1x_3 &= 100\n\\end{aligned}\n\\]\n\\[\n\\begin{pmatrix}\n-1 & 2 & 0 \\\\\n1 & 1 & 1 \\\\\n10 & 5 & 1\n\\end{pmatrix}\n\\cdot\n\\begin{pmatrix}\nx_1 \\\\ x_2 \\\\ x_3\n\\end{pmatrix}\n=\n\\begin{pmatrix}\n0 \\\\\n34 \\\\\n100\n\\end{pmatrix}\n\\]\n\\[\nA=\\begin{pmatrix}\na_{11} & a_{12} \\\\\na_{21} & a_{22}\n\\end{pmatrix};\n\\qquad\nB=\\begin{pmatrix}\nb_{11} & b_{12} \\\\\nb_{21} & b_{22}\n\\end{pmatrix}\n\\]\n\\[\nA \\pm B =\n\\begin{pmatrix}\na_{11}\\pm b_{11} & a_{12}\\pm b_{12} \\\\\na_{21}\\pm b_{21} & a_{22}\\pm b_{22}\n\\end{pmatrix}\n\\]\n\\[\nr \\cdot\n\\underbrace{\n\\begin{pmatrix}\n3 & 2 \\\\\n4 & 5\n\\end{pmatrix}}_{A} =\n\\begin{pmatrix}\n3 \\cdot r & 2 \\cdot r \\\\\n4 \\cdot r & 5 \\cdot r\n\\end{pmatrix}\n\\]\n\\[\n\\begin{pmatrix}\n3 & 2 & 1 \\\\\n1 & 0 & 2\n\\end{pmatrix}\n\\cdot\n\\begin{pmatrix}\n1 \\\\ 0 \\\\ 4\n\\end{pmatrix}\n=\n\\begin{pmatrix}\n3 \\cdot 1+ 2 \\cdot 0 +1 \\cdot 4 \\\\\n1 \\cdot 1+ 0 \\cdot 0 +2 \\cdot 4\n\\end{pmatrix}\n=\n\\begin{pmatrix}\n7 \\\\\n9\n\\end{pmatrix}\n\\]"
+  },
+  {
+    "objectID": "matrix-basic.html#grundlagen-matrizen",
+    "href": "matrix-basic.html#grundlagen-matrizen",
+    "title": "12  Berechungen mit Matrizen",
+    "section": "12.1 Grundlagen Matrizen",
+    "text": "12.1 Grundlagen Matrizen\n\n\nDu findest dann hinter diesem Link auch Mathehilfe zu Vektor, Matrizen und Co.. Du kannst auf der Seite mal stöbern, ob du da was findest was dir hilft.\nMatrizen bestehen aus m Zeilen und n Spalten, weshalb sie auch (m,n)-Matrizen genannt werden. Die Dimension einer einzelnen Matrix (Matrizen ist nur der Plural vom Begriff „Matrix“) mit m Zeilen und n Spalten ist .\n\\[\n\\begin{aligned}\nA = \\mathbf{A} = \\begin{pmatrix}\na_{11} & a_{12} & \\cdots & a_{1n} \\\\\na_{21} & a_{22} & \\cdots & a_{2n} \\\\\n\\vdots &\\vdots & \\ddots &\\vdots \\\\\na_{m1} & a_{m2} & \\cdots & a_{mn}\n\\end{pmatrix}\n\\end{aligned}\n\\]\n\\[\n\\begin{pmatrix}\na_{11} & a_{12} & a_{13} \\\\\na_{21} & a_{22} & a_{23}\n\\end{pmatrix}\n\\]\n\\[\n\\begin{bmatrix}\na_{11} & a_{12} & a_{13} \\\\\na_{21} & a_{22} & a_{23}\n\\end{bmatrix}\n\\]"
+  },
+  {
+    "objectID": "matrix-basic.html#einheitsmatrix",
+    "href": "matrix-basic.html#einheitsmatrix",
+    "title": "12  Berechungen mit Matrizen",
+    "section": "12.2 Einheitsmatrix",
+    "text": "12.2 Einheitsmatrix\n\\[\n\\textbf{E}_3=\n\\begin{pmatrix}\n1 & 0 & 0 \\\\\n0 & 1 & 0 \\\\\n0 & 0 & 1\n\\end{pmatrix}\n\\]"
+  },
+  {
+    "objectID": "matrix-basic.html#diagonalmatrix",
+    "href": "matrix-basic.html#diagonalmatrix",
+    "title": "12  Berechungen mit Matrizen",
+    "section": "12.3 Diagonalmatrix",
+    "text": "12.3 Diagonalmatrix\n\\[\n\\textbf{A}=\\begin{pmatrix}\n6 & 0 & 0 \\\\\n0 & 3 & 0 \\\\\n0 & 0 & 5\n\\end{pmatrix}\n\\]"
+  },
+  {
+    "objectID": "matrix-basic.html#stochastische-matrix",
+    "href": "matrix-basic.html#stochastische-matrix",
+    "title": "12  Berechungen mit Matrizen",
+    "section": "12.4 Stochastische Matrix",
+    "text": "12.4 Stochastische Matrix\n\\[\n\\textbf{A}=\\begin{pmatrix}\n0.25 & 0.5 & 0.25 \\\\\n0.25 & 0.25 & 0.5 \\\\\n0.5 & 0.25 & 0.25\n\\end{pmatrix}\n\\]"
   }
 ]

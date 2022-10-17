@@ -8,7 +8,153 @@ pacman::p_load(tidyverse, readxl, knitr, kableExtra, Hmisc)
 
 ![](images/caution.png){fig-align="center" width="50%"}
 
+## Grundlagen Matrizen
+
+::: column-margin
+
+Du findest dann hinter diesem Link auch [Mathehilfe zu Vektor, Matrizen und Co.](https://www.studyhelp.de/online-lernen/mathe/). Du kannst auf der Seite mal stöbern, ob du da was findest was dir hilft.
+
+:::
+
+
+Matrizen bestehen aus m Zeilen und n Spalten, weshalb sie auch (m,n)-Matrizen genannt werden. Die Dimension einer einzelnen Matrix (Matrizen ist nur der Plural vom Begriff „Matrix“) mit m Zeilen und n Spalten ist .
+
+
+$$
+\begin{aligned}
+A = \mathbf{A} = \begin{pmatrix} 
+a_{11} & a_{12} & \cdots & a_{1n} \\ 
+a_{21} & a_{22} & \cdots & a_{2n} \\ 
+\vdots &\vdots & \ddots &\vdots \\ 
+a_{m1} & a_{m2} & \cdots & a_{mn} 
+\end{pmatrix}
+\end{aligned}
+$$
+$$
+\begin{pmatrix}
+a_{11} & a_{12} & a_{13} \\
+a_{21} & a_{22} & a_{23}
+\end{pmatrix}
+$$
+
+$$
+\begin{bmatrix}
+a_{11} & a_{12} & a_{13} \\
+a_{21} & a_{22} & a_{23}
+\end{bmatrix}
+$$
+## Einheitsmatrix
+
+$$
+\textbf{E}_3=
+\begin{pmatrix}
+1 & 0 & 0 \\
+0 & 1 & 0 \\
+0 & 0 & 1
+\end{pmatrix} 
+$$
+
+## Diagonalmatrix
+
+$$
+\textbf{A}=\begin{pmatrix}
+6 & 0 & 0 \\
+0 & 3 & 0 \\
+0 & 0 & 5
+\end{pmatrix}
+$$
+
+## Stochastische Matrix
+
+$$
+\textbf{A}=\begin{pmatrix}
+0.25 & 0.5 & 0.25 \\
+0.25 & 0.25 & 0.5 \\
+0.5 & 0.25 & 0.25
+\end{pmatrix}
+$$
+
+
+
 ## Vom linearen Gleichungssystem zur Matrix
 
-https://www.studyhelp.de/online-lernen/mathe/matrizen/
+$$
+\begin{aligned}
+–1x_1 + 2x_2 + 0x_3 &= 0 \\
+1x_1 + 1x_2 + 1x_3 &= 34 \\
+10x_1 + 5x_2 + 1x_3 &= 100
+\end{aligned}
+$$
+
+$$
+\begin{pmatrix} 
+-1 & 2 & 0 \\ 
+1 & 1 & 1 \\ 
+10 & 5 & 1 
+\end{pmatrix} 
+\cdot
+\begin{pmatrix}
+x_1 \\ x_2 \\ x_3
+\end{pmatrix} 
+= 
+\begin{pmatrix}
+0 \\ 
+34 \\ 
+100
+\end{pmatrix}
+$$
+$$
+A=\begin{pmatrix} 
+a_{11} & a_{12} \\ 
+a_{21} & a_{22} 
+\end{pmatrix}; 
+\qquad 
+B=\begin{pmatrix} 
+b_{11} & b_{12} \\ 
+b_{21} & b_{22} 
+\end{pmatrix}
+$$
+$$
+A \pm B = 
+\begin{pmatrix} 
+a_{11}\pm b_{11} & a_{12}\pm b_{12} \\ 
+a_{21}\pm b_{21} & a_{22}\pm b_{22} 
+\end{pmatrix}
+$$
+$$
+r \cdot 
+\underbrace{
+\begin{pmatrix} 
+3 & 2 \\ 
+4 & 5 
+\end{pmatrix}}_{A} = 
+\begin{pmatrix} 
+3 \cdot r & 2 \cdot r \\ 
+4 \cdot r & 5 \cdot r 
+\end{pmatrix}
+$$
+
+$$
+\begin{pmatrix} 
+3 & 2 & 1 \\ 
+1 & 0 & 2 
+\end{pmatrix} 
+\cdot 
+\begin{pmatrix} 
+1 \\ 0 \\ 4 
+\end{pmatrix} 
+= 
+\begin{pmatrix} 
+3 \cdot 1+ 2 \cdot 0 +1 \cdot 4 \\ 
+1 \cdot 1+ 0 \cdot 0 +2 \cdot 4 
+\end{pmatrix} 
+= 
+\begin{pmatrix} 
+7 \\ 
+9 
+\end{pmatrix}
+$$
+
+
+
 
