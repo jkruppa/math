@@ -1,11 +1,11 @@
+# Berechnungen mit Matrizen {#sec-mat}
+
 ```{r echo = FALSE}
 #| message: false
 pacman::p_load(tidyverse, readxl, knitr, kableExtra, Hmisc,
                conflicted)
 conflict_prefer("summarise", "dplyr")
 ```
-
-# Berechnungen mit Matrizen {#sec-mat}
 
 *Version vom `r format(Sys.time(), '%B %d, %Y um %H:%M:%S')`*
 
