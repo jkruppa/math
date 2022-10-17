@@ -67,7 +67,7 @@
     "href": "geometry-preface.html",
     "title": "Von Maßzahlen, Flächen und Volumen",
     "section": "",
-    "text": "Version vom October 17, 2022 um 10:36:55"
+    "text": "Version vom Oktober 17, 2022 um 14:40:17"
   },
   {
     "objectID": "geometry-unit.html",
@@ -214,7 +214,7 @@
     "href": "probability-basic.html",
     "title": "7  Grundlagen der Wahrscheinlichkeitsrechnung",
     "section": "",
-    "text": "Version vom October 17, 2022 um 10:37:27"
+    "text": "Version vom Oktober 17, 2022 um 14:40:21"
   },
   {
     "objectID": "probability-basic.html#regeln",
@@ -242,14 +242,14 @@
     "href": "functions-preface.html",
     "title": "Mathematische Funktionen",
     "section": "",
-    "text": "Version vom October 17, 2022 um 10:37:43"
+    "text": "Version vom Oktober 17, 2022 um 14:40:25"
   },
   {
     "objectID": "functions-basic.html",
     "href": "functions-basic.html",
     "title": "10  Grundlagen Funktionen",
     "section": "",
-    "text": "Version vom October 17, 2022 um 10:37:49"
+    "text": "Version vom Oktober 17, 2022 um 14:40:29"
   },
   {
     "objectID": "functions-basic.html#funktionen",
@@ -263,20 +263,27 @@
     "href": "vector-preface.html",
     "title": "Vektor und Matrix Rechnungen",
     "section": "",
-    "text": "Version vom October 17, 2022 um 10:37:58"
+    "text": "Version vom Oktober 17, 2022 um 14:40:34"
   },
   {
     "objectID": "vector-basic.html",
     "href": "vector-basic.html",
     "title": "11  Berechungen mit Vektoren",
     "section": "",
-    "text": "Version vom October 17, 2022 um 10:38:03"
+    "text": "Version vom Oktober 17, 2022 um 14:40:38"
   },
   {
     "objectID": "matrix-basic.html",
     "href": "matrix-basic.html",
     "title": "12  Berechungen mit Matrizen",
     "section": "",
-    "text": "Version vom October 17, 2022 um 10:38:09"
+    "text": "Version vom Oktober 17, 2022 um 14:40:11"
+  },
+  {
+    "objectID": "matrix-basic.html#vom-linearen-gleichungssystem-zur-matrix",
+    "href": "matrix-basic.html#vom-linearen-gleichungssystem-zur-matrix",
+    "title": "12  Berechungen mit Matrizen",
+    "section": "12.1 Vom linearen Gleichungssystem zur Matrix",
+    "text": "12.1 Vom linearen Gleichungssystem zur Matrix\nhttps://www.studyhelp.de/online-lernen/mathe/matrizen/"
   }
 ]
