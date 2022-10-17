@@ -40,7 +40,11 @@ book:
       - probability-distribution.qmd
     - part: functions-preface.qmd
       chapters: 
-        - functions-basic.qmd
+      - functions-basic.qmd
+    - part: vector-preface.qmd
+      chapters: 
+      - vector-basic.qmd
+      - matrix-basic.qmd
       
 bibliography: references.bib
 lang: de 

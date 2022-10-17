@@ -11,7 +11,7 @@
     "href": "literature.html",
     "title": "1  Literatur",
     "section": "",
-    "text": "Version vom October 14, 2022 um 16:07:44\nWas ist gute Literatur? Immer schwer zu beurteilen. Im Folgenden liste ich einige Literaturquellen auf. Vielleicht möchtest du dich nochmal rechts oder links weiterbilden. Du musst aber nicht um die Klausur bestehen zu können. Siehe es eher als ein Angebot. Neben diesem Modul musst du vermutlich noch andere Module belegen. Deshalb hier eine Auswahl Literatur, die dir helfen mag. Zum einen ist die Literatur anders geschrieben und zum anderen sind dort andere Inhalte."
+    "text": "Version vom October 17, 2022 um 10:36:43\nWas ist gute Literatur? Immer schwer zu beurteilen. Im Folgenden liste ich einige Literaturquellen auf. Vielleicht möchtest du dich nochmal rechts oder links weiterbilden. Du musst aber nicht um die Klausur bestehen zu können. Siehe es eher als ein Angebot. Neben diesem Modul musst du vermutlich noch andere Module belegen. Deshalb hier eine Auswahl Literatur, die dir helfen mag. Zum einen ist die Literatur anders geschrieben und zum anderen sind dort andere Inhalte."
   },
   {
     "objectID": "literature.html#parametrische-statistik",
@@ -39,7 +39,7 @@
     "href": "preface.html",
     "title": "2  Einführung",
     "section": "",
-    "text": "Version vom October 14, 2022 um 16:07:46\nIn diesem Kapitel nenne ich die wichtigsten Lernziele, die nach dem Lesen des Skriptes im Rahmen deiner Lehrveranstaltung von dir erreicht worden sein sollten. Je nach besuchten Kurs kann natürlich nicht alles geschafft worden sein. Viele Kapitel haben noch eine Abschnitt in dem du mehr über die Klausur erfährst. So sehe diese Übersicht als Einführung für das was später an Lehrinhalten kommt. Wenn du die Lernziele hier verstehst, dann hast du eine gute und solide Grundlage in Statistik und Bio Data Science. Damit solltest du dann auch gut durch deine Bachelorarbeit kommen."
+    "text": "Version vom October 17, 2022 um 10:36:45\nIn diesem Kapitel nenne ich die wichtigsten Lernziele, die nach dem Lesen des Skriptes im Rahmen deiner Lehrveranstaltung von dir erreicht worden sein sollten. Je nach besuchten Kurs kann natürlich nicht alles geschafft worden sein. Viele Kapitel haben noch eine Abschnitt in dem du mehr über die Klausur erfährst. So sehe diese Übersicht als Einführung für das was später an Lehrinhalten kommt. Wenn du die Lernziele hier verstehst, dann hast du eine gute und solide Grundlage in Statistik und Bio Data Science. Damit solltest du dann auch gut durch deine Bachelorarbeit kommen."
   },
   {
     "objectID": "preface.html#lernziel-1-geometrische-berechnungen-für-die-versuchsplanung-durchführen",
@@ -67,14 +67,14 @@
     "href": "geometry-preface.html",
     "title": "Von Maßzahlen, Flächen und Volumen",
     "section": "",
-    "text": "Version vom October 14, 2022 um 16:07:51"
+    "text": "Version vom October 17, 2022 um 10:36:55"
   },
   {
     "objectID": "geometry-unit.html",
     "href": "geometry-unit.html",
     "title": "3  Maßeinheiten, Flächenmaße und Volumenmaße",
     "section": "",
-    "text": "Version vom October 14, 2022 um 16:07:57"
+    "text": "Version vom October 17, 2022 um 10:37:01"
   },
   {
     "objectID": "geometry-unit.html#maßeinheiten",
@@ -116,7 +116,7 @@
     "href": "geometry-area.html",
     "title": "4  Flächenberechung",
     "section": "",
-    "text": "Version vom October 14, 2022 um 16:08:03\n\\(F\\) = Fläche\n\\(U\\) = Umfang"
+    "text": "Version vom October 17, 2022 um 10:37:06\n\\(F\\) = Fläche\n\\(U\\) = Umfang"
   },
   {
     "objectID": "geometry-area.html#quadrat",
@@ -165,7 +165,7 @@
     "href": "geometry-volume.html",
     "title": "5  Volumenberechung",
     "section": "",
-    "text": "Version vom October 14, 2022 um 16:08:09\n\\(V\\) = Volumen (Inhalt) \\(O\\) = Oberfläche \\(G\\) = Grundfläche"
+    "text": "Version vom October 17, 2022 um 10:37:12\n\\(V\\) = Volumen (Inhalt) \\(O\\) = Oberfläche \\(G\\) = Grundfläche"
   },
   {
     "objectID": "geometry-volume.html#würfel",
@@ -200,49 +200,56 @@
     "href": "geometry-parts.html",
     "title": "6  Teilstückgröße",
     "section": "",
-    "text": "Version vom October 14, 2022 um 16:08:16"
+    "text": "Version vom October 17, 2022 um 10:37:17"
   },
   {
     "objectID": "probability-preface.html",
     "href": "probability-preface.html",
     "title": "Wahrscheinlichkeitsberechung",
     "section": "",
-    "text": "Version vom October 14, 2022 um 16:08:22"
+    "text": "Version vom October 17, 2022 um 10:37:22"
   },
   {
     "objectID": "probability-basic.html",
     "href": "probability-basic.html",
     "title": "7  Grundlagen der Wahrscheinlichkeitsrechnung",
     "section": "",
-    "text": "Version vom October 14, 2022 um 16:31:10"
+    "text": "Version vom October 17, 2022 um 10:37:27"
+  },
+  {
+    "objectID": "probability-basic.html#regeln",
+    "href": "probability-basic.html#regeln",
+    "title": "7  Grundlagen der Wahrscheinlichkeitsrechnung",
+    "section": "7.1 Regeln",
+    "text": "7.1 Regeln\nText\n\\(Pr(A) = 2/3\\)\n\\(Pr(K_1)\\) & \\(Pr(K_2)\\)\n\\[\n\\begin{aligned}\nPr(K_1 \\& K_2) &= Pr(K_1) \\times Pr(K_2) \\\\\n               &= 1/2 \\times 1/2 \\\\\n               &= 1/4\n\\end{aligned}\n\\]"
   },
   {
     "objectID": "probability-conditional.html",
     "href": "probability-conditional.html",
     "title": "8  Bedingte Wahrscheinlichkeiten",
     "section": "",
-    "text": "Version vom October 14, 2022 um 16:08:34"
+    "text": "Version vom October 17, 2022 um 10:37:33"
   },
   {
     "objectID": "probability-distribution.html",
     "href": "probability-distribution.html",
     "title": "9  Wahrscheinlichkeitsverteilungen",
     "section": "",
-    "text": "Version vom October 14, 2022 um 16:08:41"
+    "text": "Version vom October 17, 2022 um 10:37:38"
   },
   {
     "objectID": "functions-preface.html",
     "href": "functions-preface.html",
     "title": "Mathematische Funktionen",
     "section": "",
-    "text": "Version vom October 14, 2022 um 16:08:47"
+    "text": "Version vom October 17, 2022 um 10:37:43"
   },
   {
     "objectID": "functions-basic.html",
     "href": "functions-basic.html",
     "title": "10  Grundlagen Funktionen",
     "section": "",
-    "text": "Version vom October 14, 2022 um 16:30:58"
+    "text": "Version vom October 17, 2022 um 10:37:49"
   },
   {
     "objectID": "functions-basic.html#funktionen",
@@ -252,10 +259,24 @@
     "text": "10.1 Funktionen\nhttps://en.wikipedia.org/wiki/Cubic_function\nhttps://en.wikipedia.org/wiki/Polynomial\n\n\n\n\n\n\n\n(a) Drei Normalverteilungen mit Varianzhomogenität.\n\n\n\n\n\n\n\n(b) Drei Normalverteilungen unter Varianzheterogenität.\n\n\n\n\nAbbildung 10.1— Histogramm verschiedener Normalverteilungen mit unterschiedlichen Mittelwerten."
   },
   {
-    "objectID": "probability-basic.html#regeln",
-    "href": "probability-basic.html#regeln",
-    "title": "7  Grundlagen der Wahrscheinlichkeitsrechnung",
-    "section": "7.1 Regeln",
-    "text": "7.1 Regeln\nText\n\\(Pr(A) = 2/3\\)\n\\(Pr(K_1)\\) & \\(Pr(K_2)\\)\n\\[\n\\begin{aligned}\nPr(K_1 \\& K_2) &= Pr(K_1) \\times Pr(K_2) \\\\\n               &= 1/2 \\times 1/2 \\\\\n               &= 1/4\n\\end{aligned}\n\\]"
+    "objectID": "vector-preface.html",
+    "href": "vector-preface.html",
+    "title": "Vektor und Matrix Rechnungen",
+    "section": "",
+    "text": "Version vom October 17, 2022 um 10:37:58"
+  },
+  {
+    "objectID": "vector-basic.html",
+    "href": "vector-basic.html",
+    "title": "11  Berechungen mit Vektoren",
+    "section": "",
+    "text": "Version vom October 17, 2022 um 10:38:03"
+  },
+  {
+    "objectID": "matrix-basic.html",
+    "href": "matrix-basic.html",
+    "title": "12  Berechungen mit Matrizen",
+    "section": "",
+    "text": "Version vom October 17, 2022 um 10:38:09"
   }
 ]
