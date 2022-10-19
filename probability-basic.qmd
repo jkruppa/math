@@ -28,10 +28,23 @@ Pr(K_1 \cap K_2) &= Pr(K_1) \times Pr(K_2) \\
 \end{aligned}
 $$
 
+
+
+In @tbl-mengen
+
+|         |         | Mengenschreibweise |         **Typ**         |
+|:-------:|:-------:|:------------------:|:-----------------------:|
+| $[a,b]$ | $[a,b]$ |     $\{x|a≤x≤b\}$     |       geschlossen       |
+| $]a,b[$ |  $(a,b)$  |    $\{x|a<x<b\}$    |          offen          |
+| $[a,b[$ | $[a,b)$  |    $\{x|a≤x<b\}$     | halboffen / rechtsoffen |
+| $]a,b]$ | $(a,b]$  |    $\{x|a<x≤b\}$     | halboffen / linksoffen  |
+
+: Test {#tbl-mengen}
+
 In @tbl-logical-figures
 
 |         Abbildung         |                                |                         Bedeutung                         |
-|:-------------------------:|:----------------:|:--------------------------:|
+|:-------------------------:|:----------------:|:-------------------------:|
 | ![](images/schnitt_1.png) |           $A \cup B$           |             $A$ tritt ein oder $B$ tritt ein              |
 | ![](images/schnitt_2.png) |           $A \cap B$           |              $A$ trit ein und $B$ tritt ein               |
 | ![](images/schnitt_3.png) |        $A \setminus B$         |          $A$ tritt ein, aber $B$ tritt nicht ein          |
