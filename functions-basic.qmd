@@ -12,6 +12,8 @@ pacman::p_load(tidyverse, readxl, knitr, kableExtra, Hmisc,
 
 ## Funktionen
 
+https://www.statforbiology.com/nonlinearregression/usefulequations#michaelis-menten_equation
+
 https://en.wikipedia.org/wiki/Cubic_function
 
 https://en.wikipedia.org/wiki/Polynomial
