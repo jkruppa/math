@@ -199,7 +199,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   </li>
         <li class="sidebar-item sidebar-item-section">
     <div class="sidebar-item-container"> 
-        <a href="./probability-preface.html" class="sidebar-item-text sidebar-link">Wahrscheinlichkeitsberechung</a>
+        <a href="./probability-preface.html" class="sidebar-item-text sidebar-link">Wahrscheinlichkeiten</a>
       <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
         <i class="bi bi-chevron-right ms-2"></i>
       </a>
@@ -207,7 +207,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./probability-basic.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Grundlagen der Wahrscheinlichkeitsrechnung</span></a>
+  <a href="./probability-basic.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Grundlagen der Wahrscheinlichkeit</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -292,7 +292,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="cell">
 
 </div>
-<p><em>Version vom October 17, 2022 um 21:05:27</em></p>
+<p><em>Version vom October 24, 2022 um 11:18:35</em></p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/caution.png" class="img-fluid figure-img" style="width:50.0%"></p>
@@ -350,6 +350,17 @@ A= (3, 5, 1)^T = \begin{pmatrix} 3 \\ 5 \\ 1 \end{pmatrix}
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="dv">2</span> <span class="sc">*</span> A</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 2 6 8</code></pre>
+</div>
+</div>
+<p>In R haben wir noch die Möglichkeit einen Vektor mit Namen zu versehen.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>A <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">2</span>, <span class="sc">-</span><span class="dv">1</span>, <span class="dv">5</span>)</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(A) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"A"</span>, <span class="st">"B"</span>, <span class="st">"C"</span>)</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>A</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> A  B  C 
+ 2 -1  5 </code></pre>
 </div>
 </div>
 

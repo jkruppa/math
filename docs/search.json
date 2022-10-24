@@ -249,14 +249,14 @@
     "href": "functions-basic.html",
     "title": "10  Grundlagen Funktionen",
     "section": "",
-    "text": "Version vom Oktober 17, 2022 um 14:40:29"
+    "text": "Version vom October 24, 2022 um 11:18:40"
   },
   {
     "objectID": "functions-basic.html#funktionen",
     "href": "functions-basic.html#funktionen",
     "title": "10  Grundlagen Funktionen",
     "section": "10.1 Funktionen",
-    "text": "10.1 Funktionen\nhttps://en.wikipedia.org/wiki/Cubic_function\nhttps://en.wikipedia.org/wiki/Polynomial\n\n\n\n\n\n\n\n(a) Drei Normalverteilungen mit Varianzhomogenität.\n\n\n\n\n\n\n\n(b) Drei Normalverteilungen unter Varianzheterogenität.\n\n\n\n\nAbbildung 10.1— Histogramm verschiedener Normalverteilungen mit unterschiedlichen Mittelwerten."
+    "text": "10.1 Funktionen\nhttps://www.statforbiology.com/nonlinearregression/usefulequations#michaelis-menten_equation\nhttps://en.wikipedia.org/wiki/Cubic_function\nhttps://en.wikipedia.org/wiki/Polynomial\n\n\n\n\n\n\n\n(a) Drei Normalverteilungen mit Varianzhomogenität.\n\n\n\n\n\n\n\n(b) Drei Normalverteilungen unter Varianzheterogenität.\n\n\n\n\nAbbildung 10.1— Histogramm verschiedener Normalverteilungen mit unterschiedlichen Mittelwerten."
   },
   {
     "objectID": "vector-preface.html",
@@ -270,7 +270,7 @@
     "href": "vector-basic.html",
     "title": "11  Berechnungen mit Vektoren",
     "section": "",
-    "text": "Version vom October 17, 2022 um 21:05:27"
+    "text": "Version vom October 24, 2022 um 11:18:35"
   },
   {
     "objectID": "matrix-basic.html",
@@ -361,6 +361,6 @@
     "href": "vector-basic.html#grundlagen-vektoren",
     "title": "11  Berechnungen mit Vektoren",
     "section": "11.1 Grundlagen Vektoren",
-    "text": "11.1 Grundlagen Vektoren\n\\[\nA= (3, 5, 1)^T = \\begin{pmatrix} 3 \\\\ 5 \\\\ 1 \\end{pmatrix}\n\\]\nVektoren der Länge 1 heißen Einheitsvektoren oder normierte Vektoren. Hat ein Vektor die Länge 0, so handelt es sich um den Nullvektor.\n\\[\n\\begin{pmatrix} a_1 \\\\ a_2 \\\\ a_3 \\end{pmatrix}\n\\pm\n\\begin{pmatrix} b_1 \\\\ b_2 \\\\ b_3 \\end{pmatrix}\n=\n\\begin{pmatrix} a_1 \\pm b_1 \\\\ a_2 \\pm b_2 \\\\ a_3 \\pm b_3 \\end{pmatrix}\n\\]\nSchauen wir uns den Zusammenhang einmal als Zahlenbeispiel an.\n\\[\n\\begin{pmatrix}\n2 \\\\ -1 \\\\ 5\n\\end{pmatrix}\n+\n\\begin{pmatrix}\n8 \\\\ 1 \\\\ -3\n\\end{pmatrix}\n=\n\\begin{pmatrix}\n2+8\\\\ -1+1 \\\\ 5+(-3)\n\\end{pmatrix}\n=\n\\begin{pmatrix}\n10\\\\ 0 \\\\ 2\n\\end{pmatrix}\n\\]\n\nA <- c(2, -1, 5)\nB <- c(8, 1, -3)\n\nA + B\n\n[1] 10  0  2\n\n\nWenn wir einen Vektor mit einer Zahl multiplizieren, dann multiplizieren wir jeden Wert des Vektors mit der Zahl.\n\\[\n2 \\cdot \\begin{pmatrix} 1 \\\\ 3 \\\\ 4 \\end{pmatrix}  =\n\\begin{pmatrix} 2 \\cdot 1 \\\\ 2 \\cdot 3 \\\\ 2 \\cdot 4 \\end{pmatrix}  =\n\\begin{pmatrix} 2 \\\\ 6 \\\\ 8 \\end{pmatrix}\n\\]\n\nA <- c(1, 3, 4)\n\n2 * A\n\n[1] 2 6 8"
+    "text": "11.1 Grundlagen Vektoren\n\\[\nA= (3, 5, 1)^T = \\begin{pmatrix} 3 \\\\ 5 \\\\ 1 \\end{pmatrix}\n\\]\nVektoren der Länge 1 heißen Einheitsvektoren oder normierte Vektoren. Hat ein Vektor die Länge 0, so handelt es sich um den Nullvektor.\n\\[\n\\begin{pmatrix} a_1 \\\\ a_2 \\\\ a_3 \\end{pmatrix}\n\\pm\n\\begin{pmatrix} b_1 \\\\ b_2 \\\\ b_3 \\end{pmatrix}\n=\n\\begin{pmatrix} a_1 \\pm b_1 \\\\ a_2 \\pm b_2 \\\\ a_3 \\pm b_3 \\end{pmatrix}\n\\]\nSchauen wir uns den Zusammenhang einmal als Zahlenbeispiel an.\n\\[\n\\begin{pmatrix}\n2 \\\\ -1 \\\\ 5\n\\end{pmatrix}\n+\n\\begin{pmatrix}\n8 \\\\ 1 \\\\ -3\n\\end{pmatrix}\n=\n\\begin{pmatrix}\n2+8\\\\ -1+1 \\\\ 5+(-3)\n\\end{pmatrix}\n=\n\\begin{pmatrix}\n10\\\\ 0 \\\\ 2\n\\end{pmatrix}\n\\]\n\nA <- c(2, -1, 5)\nB <- c(8, 1, -3)\n\nA + B\n\n[1] 10  0  2\n\n\nWenn wir einen Vektor mit einer Zahl multiplizieren, dann multiplizieren wir jeden Wert des Vektors mit der Zahl.\n\\[\n2 \\cdot \\begin{pmatrix} 1 \\\\ 3 \\\\ 4 \\end{pmatrix}  =\n\\begin{pmatrix} 2 \\cdot 1 \\\\ 2 \\cdot 3 \\\\ 2 \\cdot 4 \\end{pmatrix}  =\n\\begin{pmatrix} 2 \\\\ 6 \\\\ 8 \\end{pmatrix}\n\\]\n\nA <- c(1, 3, 4)\n\n2 * A\n\n[1] 2 6 8\n\n\nIn R haben wir noch die Möglichkeit einen Vektor mit Namen zu versehen.\n\nA <- c(2, -1, 5)\nnames(A) <- c(\"A\", \"B\", \"C\")\n\nA\n\n A  B  C \n 2 -1  5"
   }
 ]
