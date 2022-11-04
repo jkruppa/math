@@ -1,0 +1,34 @@
+# Distanzen {#sec-prob-basic}
+
+```{r echo = FALSE}
+pacman::p_load(tidyverse, readxl, knitr, kableExtra, Hmisc,
+               see)
+```
+
+*Version vom `r format(Sys.time(), '%B %d, %Y um %H:%M:%S')`*
+
+![](images/caution.png){fig-align="center" width="50%"}
+
+
+## Was sind mathematische Distanzen?
+
+### Euklidischer Abstand euclidean
+
+Euklidischer Abstand (eng. *euclidean*)
+
+https://de.wikipedia.org/wiki/Euklidischer_Abstand
+
+
+### Maximum
+
+### Manhattan
+
+https://de.wikipedia.org/wiki/Manhattan-Metrik
+
+### Canberra
+
+https://en.wikipedia.org/wiki/Canberra_distance
+
+### Hamming distance
+
+https://en.wikipedia.org/wiki/Hamming_distance

@@ -270,7 +270,7 @@
     "href": "vector-basic.html",
     "title": "11  Berechnungen mit Vektoren",
     "section": "",
-    "text": "Version vom October 24, 2022 um 11:18:35"
+    "text": "Version vom November 04, 2022 um 07:21:28"
   },
   {
     "objectID": "matrix-basic.html",
@@ -362,5 +362,33 @@
     "title": "11  Berechnungen mit Vektoren",
     "section": "11.1 Grundlagen Vektoren",
     "text": "11.1 Grundlagen Vektoren\n\\[\nA= (3, 5, 1)^T = \\begin{pmatrix} 3 \\\\ 5 \\\\ 1 \\end{pmatrix}\n\\]\nVektoren der Länge 1 heißen Einheitsvektoren oder normierte Vektoren. Hat ein Vektor die Länge 0, so handelt es sich um den Nullvektor.\n\\[\n\\begin{pmatrix} a_1 \\\\ a_2 \\\\ a_3 \\end{pmatrix}\n\\pm\n\\begin{pmatrix} b_1 \\\\ b_2 \\\\ b_3 \\end{pmatrix}\n=\n\\begin{pmatrix} a_1 \\pm b_1 \\\\ a_2 \\pm b_2 \\\\ a_3 \\pm b_3 \\end{pmatrix}\n\\]\nSchauen wir uns den Zusammenhang einmal als Zahlenbeispiel an.\n\\[\n\\begin{pmatrix}\n2 \\\\ -1 \\\\ 5\n\\end{pmatrix}\n+\n\\begin{pmatrix}\n8 \\\\ 1 \\\\ -3\n\\end{pmatrix}\n=\n\\begin{pmatrix}\n2+8\\\\ -1+1 \\\\ 5+(-3)\n\\end{pmatrix}\n=\n\\begin{pmatrix}\n10\\\\ 0 \\\\ 2\n\\end{pmatrix}\n\\]\n\nA <- c(2, -1, 5)\nB <- c(8, 1, -3)\n\nA + B\n\n[1] 10  0  2\n\n\nWenn wir einen Vektor mit einer Zahl multiplizieren, dann multiplizieren wir jeden Wert des Vektors mit der Zahl.\n\\[\n2 \\cdot \\begin{pmatrix} 1 \\\\ 3 \\\\ 4 \\end{pmatrix}  =\n\\begin{pmatrix} 2 \\cdot 1 \\\\ 2 \\cdot 3 \\\\ 2 \\cdot 4 \\end{pmatrix}  =\n\\begin{pmatrix} 2 \\\\ 6 \\\\ 8 \\end{pmatrix}\n\\]\n\nA <- c(1, 3, 4)\n\n2 * A\n\n[1] 2 6 8\n\n\nIn R haben wir noch die Möglichkeit einen Vektor mit Namen zu versehen.\n\nA <- c(2, -1, 5)\nnames(A) <- c(\"A\", \"B\", \"C\")\n\nA\n\n A  B  C \n 2 -1  5"
+  },
+  {
+    "objectID": "matrix-eigenwerte.html",
+    "href": "matrix-eigenwerte.html",
+    "title": "13  Eigenwerte von Matrizen",
+    "section": "",
+    "text": "Version vom November 04, 2022 um 07:23:59"
+  },
+  {
+    "objectID": "matrix-eigenwerte.html#berechnung-von-eigenwerten",
+    "href": "matrix-eigenwerte.html#berechnung-von-eigenwerten",
+    "title": "13  Eigenwerte von Matrizen",
+    "section": "13.1 Berechnung von Eigenwerten",
+    "text": "13.1 Berechnung von Eigenwerten\n\n\nDu findest dann hinter diesem Link auch Mathehilfe zu Vektor, Matrizen und Co.. Du kannst auf der Seite mal stöbern, ob du da was findest was dir hilft.\n\\[\nA_E =\n\\begin{pmatrix}\n1 & 0 & 0 \\\\\n0 & 1 & 0 \\\\\n0 & 0 & 1\n\\end{pmatrix}\n\\]"
+  },
+  {
+    "objectID": "functions-distance.html",
+    "href": "functions-distance.html",
+    "title": "11  Distanzen",
+    "section": "",
+    "text": "Version vom November 04, 2022 um 07:34:47"
+  },
+  {
+    "objectID": "functions-distance.html#was-sind-mathematische-distanzen",
+    "href": "functions-distance.html#was-sind-mathematische-distanzen",
+    "title": "11  Distanzen",
+    "section": "11.1 Was sind mathematische Distanzen?",
+    "text": "11.1 Was sind mathematische Distanzen?\n\n11.1.1 Euklidischer Abstand euclidean\nEuklidischer Abstand (eng. euclidean)\nhttps://de.wikipedia.org/wiki/Euklidischer_Abstand\n\n\n11.1.2 Maximum\n\n\n11.1.3 Manhattan\nhttps://de.wikipedia.org/wiki/Manhattan-Metrik\n\n\n11.1.4 Canberra\nhttps://en.wikipedia.org/wiki/Canberra_distance\n\n\n11.1.5 Hamming distance\nhttps://en.wikipedia.org/wiki/Hamming_distance"
   }
 ]

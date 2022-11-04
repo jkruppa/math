@@ -12,7 +12,7 @@ crossref:
 book:
   title: "Skript Mathematik"
   author: "Prof. Dr. Jochen Kruppa"
-  date: "18. October 2022"
+  date: "04. November 2022"
   link-citations: yes
   cover-image: cover.png
   #downloads: [pdf]
@@ -41,10 +41,12 @@ book:
     - part: functions-preface.qmd
       chapters: 
       - functions-basic.qmd
+      - functions-distance.qmd
     - part: vector-preface.qmd
       chapters: 
       - vector-basic.qmd
       - matrix-basic.qmd
+      - matrix-eigenwerte.qmd
       
 bibliography: references.bib
 lang: de 
