@@ -13,16 +13,7 @@ book:
   title: "Skript Mathematik"
   author: "Prof. Dr. Jochen Kruppa"
   date: "04. November 2022"
-  link-citations: yes
   cover-image: cover.png
-  #downloads: [pdf]
-  #page-footer: 
-  #  left: "Copyright 2022, Jochen Kruppa" 
-  #  right: 
-  #    - icon: github
-  #      href: https://github.com/jkruppa
-  #    - icon: youtube 
-  #      href: https://www.youtube.com/c/JochenKruppa
   chapters:
     - index.qmd
     - literature.qmd
@@ -32,7 +23,6 @@ book:
       - geometry-unit.qmd
       - geometry-area.qmd
       - geometry-volume.qmd
-      - geometry-parts.qmd
     - part: probability-preface.qmd
       chapters:
       - probability-basic.qmd
@@ -54,7 +44,7 @@ lang: de
 format:
   html:
     theme: cosmo
-  pdf:
-    documentclass: scrreprt
+#  pdf:
+#    documentclass: scrreprt
 
 
