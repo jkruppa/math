@@ -220,26 +220,31 @@ ul.task-list li input[type="checkbox"] {
 <div class="cell">
 
 </div>
-<p><em>Version vom January 22, 2023 um 16:03:54</em></p>
+<p><em>Version vom January 22, 2023 um 16:37:06</em></p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/caution.png" class="img-fluid figure-img" style="width:50.0%"></p>
 </figure>
 </div>
-<p><span class="math inline">\(F\)</span> = Fläche</p>
-<p><span class="math inline">\(U\)</span> = Umfang</p>
+<p>Im Folgenden wollen wir einmal die Flächen (<span class="math inline">\(F\)</span> oder auch <span class="math inline">\(A\)</span>) und die Umfänge <span class="math inline">\(U\)</span> von geometrischen Objekten bestimmen. Wir gehen hierfür die gängigsten geometrischen Formen einmal durch. Du musst dir dann raussuchen, was zu deiner Fragestellung dann am besten passt.</p>
 <section id="quadrat" class="level2" data-number="4.1">
 <h2 data-number="4.1" class="anchored" data-anchor-id="quadrat"><span class="header-section-number">4.1</span> Quadrat</h2>
+<p>Im Folgenden sehen wir die Abbildung eines Quadrats.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/quadrat.png" class="img-fluid figure-img" style="width:35.0%"></p>
 </figure>
 </div>
+<p>Wir berechnen die Fläche <span class="math inline">\(F\)</span> eines Quadrats mir folgender Formel.</p>
 <p><span class="math display">\[
 F = a \cdot a = a^2
-\]</span> <span class="math display">\[
+\]</span></p>
+<p>Den Umfang eines Quadrats <span class="math inline">\(U\)</span> können wir dann wie folgt berechnen.</p>
+<p><span class="math display">\[
 U = 4 \cdot a
-\]</span> <span class="math display">\[
+\]</span></p>
+<p>Die Diagonale <span class="math inline">\(d\)</span> eines Quadrates ergibt sich dann wie folgt.</p>
+<p><span class="math display">\[
 d = a \sqrt{2} = \sqrt{2\cdot a ^2}
 \]</span></p>
 </section>
@@ -259,12 +264,15 @@ a = \cfrac{F}{b} = \cfrac{U - 2b}{2}
 <p><span class="math display">\[
 b = \cfrac{F}{a} = \cfrac{U - 2a}{2}
 \]</span></p>
-</div></div><p><span class="math display">\[
+</div></div><p>Wir berechnen die Fläche <span class="math inline">\(F\)</span> eines Rechtecks mir folgender Formel.</p>
+<p><span class="math display">\[
 F = a \cdot b
 \]</span></p>
+<p>Den Umfang eines Rechtecks <span class="math inline">\(U\)</span> können wir dann wie folgt berechnen.</p>
 <p><span class="math display">\[
 U = 2 \cdot a + 2 \cdot b = a (a+b)
 \]</span></p>
+<p>Die Diagonale <span class="math inline">\(d\)</span> eines Rechtecks ergibt sich dann wie folgt.</p>
 <p><span class="math display">\[
 d = \sqrt{a^2 + b^2}
 \]</span></p>
@@ -291,9 +299,11 @@ c = U - (a+b+d)
 <p><span class="math display">\[
 d = U - (a+b+c)
 \]</span></p>
-</div></div><p><span class="math display">\[
+</div></div><p>Wir berechnen die Fläche <span class="math inline">\(F\)</span> eines Trapez mir folgender Formel.</p>
+<p><span class="math display">\[
 F = m \cdot h = \cfrac{a+b}{2}\cdot h
 \]</span></p>
+<p>Den Umfang eines Trapez <span class="math inline">\(U\)</span> können wir dann wie folgt berechnen.</p>
 <p><span class="math display">\[
 U = a+b+c+d
 \]</span></p>
@@ -314,9 +324,11 @@ a = \cfrac{2F}{h}
 <p><span class="math display">\[
 b = \cfrac{U-2a}{2}
 \]</span></p>
-</div></div><p><span class="math display">\[
+</div></div><p>Wir berechnen die Fläche <span class="math inline">\(F\)</span> eines Parallelogramms mir folgender Formel.</p>
+<p><span class="math display">\[
 F = a \cdot h
 \]</span></p>
+<p>Den Umfang eines Trapez <span class="math inline">\(U\)</span> können wir dann wie folgt berechnen.</p>
 <p><span class="math display">\[
 U = 2(a+b)
 \]</span></p>
@@ -328,14 +340,16 @@ U = 2(a+b)
 <p><img src="images/dreieck.png" class="img-fluid figure-img" style="width:40.0%"></p>
 </figure>
 </div>
+<p>Wir berechnen die Fläche <span class="math inline">\(F\)</span> eines Dreiecks mir folgender Formel.</p>
 <p><span class="math display">\[
-F = \cfrac{c \cdot h_c}{2}
+F = \cfrac{a \cdot h_a}{2}
 \]</span></p>
+<p>Den Umfang eines Dreiecks <span class="math inline">\(U\)</span> können wir dann wie folgt berechnen.</p>
 <p><span class="math display">\[
 U = a + b + c
 \]</span></p>
 <p><span class="math display">\[
-h_c = \cfrac{2 \cdot F}{c}
+h_a = \cfrac{2 \cdot F}{a}
 \]</span></p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -363,14 +377,19 @@ h^2 &amp;= a^2 - p^2
 <p><img src="images/kreis.png" class="img-fluid figure-img" style="width:30.0%"></p>
 </figure>
 </div>
+<p>Wir berechnen die Fläche <span class="math inline">\(F\)</span> eines Kreises mir folgender Formel.</p>
 <p><span class="math display">\[
 F = r^2 \cdot \pi = \cfrac{d^2 \cdot \pi}{4}
 \]</span></p>
+<p>Den Umfang eines Kreises <span class="math inline">\(U\)</span> können wir dann wie folgt berechnen.</p>
 <p><span class="math display">\[
 U = 2r \cdot \pi = \cfrac{d \cdot \pi}{4 \cdot F}
-\]</span> <span class="math display">\[
+\]</span> Die Diagonale <span class="math inline">\(d\)</span> eines Kreises ergibt sich dann wie folgt.</p>
+<p><span class="math display">\[
 d = 2r
-\]</span> <span class="math display">\[
+\]</span></p>
+<p>Und der Radius <span class="math inline">\(r\)</span> hängt dann wie folgt um Umfang <span class="math inline">\(U\)</span> ab.</p>
+<p><span class="math display">\[
 r = \cfrac{U}{2 \cdot \pi}
 \]</span></p>
 

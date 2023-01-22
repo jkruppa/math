@@ -8,22 +8,29 @@ pacman::p_load(tidyverse, readxl, knitr, kableExtra, Hmisc)
 
 ![](images/caution.png){fig-align="center" width="50%"}
 
-$F$ = Fläche
+Im Folgenden wollen wir einmal die Flächen ($F$ oder auch $A$) und die Umfänge $U$ von geometrischen Objekten bestimmen. Wir gehen hierfür die gängigsten geometrischen Formen einmal durch. Du musst dir dann raussuchen, was zu deiner Fragestellung dann am besten passt.
 
-$U$ = Umfang
 
 ## Quadrat
 
+Im Folgenden sehen wir die Abbildung eines Quadrats.
+
 ![](images/quadrat.png){fig-align="center" width="35%"}
 
-
+Wir berechnen die Fläche $F$ eines Quadrats mir folgender Formel.
 
 $$
 F = a \cdot a = a^2
 $$
+
+Den Umfang eines Quadrats $U$ können wir dann wie folgt berechnen.
+
 $$
 U = 4 \cdot a
 $$
+
+Die Diagonale $d$ eines Quadrates ergibt sich dann wie folgt.
+
 $$
 d = a \sqrt{2} = \sqrt{2\cdot a ^2}
 $$
@@ -44,15 +51,19 @@ b = \cfrac{F}{a} = \cfrac{U - 2a}{2}
 $$
 :::
 
-
+Wir berechnen die Fläche $F$ eines Rechtecks mir folgender Formel.
 
 $$
 F = a \cdot b 
 $$
 
+Den Umfang eines Rechtecks $U$ können wir dann wie folgt berechnen.
+
 $$
 U = 2 \cdot a + 2 \cdot b = a (a+b)
 $$
+
+Die Diagonale $d$ eines Rechtecks ergibt sich dann wie folgt.
 
 $$
 d = \sqrt{a^2 + b^2} 
@@ -83,11 +94,13 @@ d = U - (a+b+c)
 $$
 :::
 
-
+Wir berechnen die Fläche $F$ eines Trapez mir folgender Formel.
 
 $$
 F = m \cdot h = \cfrac{a+b}{2}\cdot h 
 $$
+
+Den Umfang eines Trapez $U$ können wir dann wie folgt berechnen.
 
 $$
 U = a+b+c+d
@@ -110,11 +123,13 @@ $$
 
 :::
 
-
+Wir berechnen die Fläche $F$ eines Parallelogramms mir folgender Formel.
 
 $$
 F = a \cdot h 
 $$
+
+Den Umfang eines Trapez $U$ können wir dann wie folgt berechnen.
 
 $$
 U = 2(a+b)
@@ -124,17 +139,20 @@ $$
 
 ![](images/dreieck.png){fig-align="center" width="40%"}
 
+Wir berechnen die Fläche $F$ eines Dreiecks mir folgender Formel.
 
 $$
-F = \cfrac{c \cdot h_c}{2}
+F = \cfrac{a \cdot h_a}{2}
 $$
+
+Den Umfang eines Dreiecks $U$ können wir dann wie folgt berechnen.
 
 $$
 U = a + b + c
 $$
 
 $$
-h_c = \cfrac{2 \cdot F}{c}
+h_a = \cfrac{2 \cdot F}{a}
 $$
 
 ![](images/dreieck_recht.png){fig-align="center" width="50%"}
@@ -160,16 +178,25 @@ $$
 
 ![](images/kreis.png){fig-align="center" width="30%"}
 
+Wir berechnen die Fläche $F$ eines Kreises mir folgender Formel.
+
 $$
 F = r^2 \cdot \pi = \cfrac{d^2 \cdot \pi}{4}
 $$
 
+Den Umfang eines Kreises $U$ können wir dann wie folgt berechnen.
+
 $$
 U = 2r \cdot \pi = \cfrac{d \cdot \pi}{4 \cdot F}
 $$
+Die Diagonale $d$ eines Kreises ergibt sich dann wie folgt.
+
 $$
 d = 2r
 $$
+
+Und der Radius $r$ hängt dann wie folgt um Umfang $U$ ab.
+
 $$
 r = \cfrac{U}{2 \cdot \pi}
 $$
