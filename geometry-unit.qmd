@@ -6,8 +6,6 @@ pacman::p_load(tidyverse, readxl, knitr, kableExtra, Hmisc)
 
 *Version vom `r format(Sys.time(), '%B %d, %Y um %H:%M:%S')`*
 
-![](images/caution.png){fig-align="center" width="50%"}
-
 ## Maßeinheiten
 
 Wozu brauchen wir Maßeinheiten? Zum einen wollen wir nicht immer so große Zahlen schreiben oder aber sehr kleine Zahlen. Die ganzen Nullen machen dann doch den Text sehr unübersichtlich. Aus diesem Grund gibt es mehrere Arten der Kurzschreibweise um Zahlen in einer kürzeren Form darzustellen. In der folgenden @tbl-unit-01 sind einem die sehr großzen Zahlen bis $10^{12}$ einmal dargestellt.
@@ -74,6 +72,8 @@ Die @tbl-unit-04 zeigt die Umrechnungen von Volumenmaßen. Häufig benötigen wi
 : Umrechnung von gängigen Volumenmaßen. {#tbl-unit-04}
 
 ## Prozent, Promille und ppm
+
+Abschließend schauen wir uns in der @tbl-unit-05 nochmal die Umrechnungen von Prozent und Promille an. Das Prinzip nutzen wir dann häufig zur Abschätzung von anderen Flächen oder Volumen, wenn wir nicht die exakte Änderung kennen sondern eben nur die Prozentuale.
 
 |                                                          |                            |              | Ein Zuckerwürfel in                |
 |------------------------|----------------|----------------|----------------|
