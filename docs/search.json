@@ -7,13 +7,6 @@
     "text": "Auf den folgenden Seiten wirst du nochmal die Grundlagen der Mathematik in der Statistik lernen. Wir lagern hier die Inhalte die sehr mathematisch sind von den angewandten, statistischen Themen aus. Das heißt, du findest hier sehr viel Mathematik und auch Rechenbeispiele. Es wird aber R Code geben - siehe den R Code als den Taschenrechnercode. Das hat den einfachen Grund, das wir eben dann doch mal die Grundlagen in der Mathematik wiederholen müssen. Es kann aber auch sein, dass du gar nicht so viel Mathematik später brauchst - oder wiederkommst, weil du nochmal nachschauen willst, wie du eine Teilstückfläche berechnest. Wir auch immer, hier findest du die Mathematikteile aus meinenen Vorlesungen."
   },
   {
-    "objectID": "index.html#lernen",
-    "href": "index.html#lernen",
-    "title": "Skript Mathematik",
-    "section": "Lernen…",
-    "text": "Lernen…\nAktuell gibt es nur die Möglichkeit die Inhalte dieses Skriptes in der Vorlesung “Mathematik und Statistik” an der Hochschule Osnabrück an der Fakultät Agrarwissenschaften und Landschaftsarchitektur (AuL) zu hören. Das Skript wird in der Vorlesung aufgearbeitet und durch Übungen unterstützt. Weitere Unterstützung wie Lehrvideos sind in der Planung.\n\n… auf YouTube\n\n\n\n\n\nAktuell gibt es auf YouTube unter https://www.youtube.com/c/JochenKruppa noch keine Lehrvideos als Ergänzung zum Mathematikteil. Geplant ist in den Videos Inhalte zu wiederholen und du kannst auf Pause drücken um nochmal die Rechenschritte nachverfolgen zu können."
-  },
-  {
     "objectID": "index.html#sec-contact-mail",
     "href": "index.html#sec-contact-mail",
     "title": "Skript Mathematik",
@@ -63,11 +56,18 @@
     "text": "2.3 Lernziel 3: Wahrscheinlichkeitsverteilungen verstehen\nNeben den einfachen Wahrscheinlichkeiten von einem Ereignis, können wir uns auch kompliziertere Wahrscheinlichkeiten vorstellen. Wir schauen uns nicht nur ein Ereignis an, sondern eben eine ganze Reihe von möglichen Ausgängen eines Zufallsprozesses. Daher werden wir hier nochmal die gänigsten Verteilungen wiederholen und uns anschauen, was eigentlich eine Dichtefunktion ist."
   },
   {
+    "objectID": "preface.html#lernziel4-matrixrechnungen-durchführen-können",
+    "href": "preface.html#lernziel4-matrixrechnungen-durchführen-können",
+    "title": "2  Einführung",
+    "section": "2.4 Lernziel4: Matrixrechnungen durchführen können",
+    "text": "2.4 Lernziel4: Matrixrechnungen durchführen können\nAm Ende wollen wir uns nochmal die Berechnung der Vektor- und Matrixrechnungen anschauen. Wir brauchen die Grundidee der Vektor- und Matrixrechnung in der Statistik um dort mit Vektoren und dann auch Datensätzen rechnen zu können. Wir halten hier aber alles sehr einfach und konzentrieren uns auf das Wichtigste."
+  },
+  {
     "objectID": "geometry-preface.html",
     "href": "geometry-preface.html",
     "title": "Von Maßzahlen, Flächen und Volumen",
     "section": "",
-    "text": "Version vom January 22, 2023 um 15:20:50\nIn dem folgenden Kapitel zu den Maßzahlen von Einheiten sowie der Fläche und dem Volumne wollen wir uns einmal mit den Grundlagen der Berechungen beschäftigen. Wir brauchen diese Werkzeuge um zu bestimmen, wie groß ein Teilstück sein soll oder aber wenn wir wissen wollen, wie viel Torf wir bestellen müssen.\nIm ersten Abschnitt schauen wir uns einmal Flächenmaße und Volumenmaße an. Wie sind die Abkürzungen für die entsprechenden Maßzahlen und wie lauten die Abkürzungen für sehr große oder sehr kleine Zahlen.\nDann schauen wir noch einmal auf die Flächen und Umfänge von gängigen geometrischen Objekten. Welche Eigenschaften hat das Quadrat, das Rechteck und der Kreis? Wir merken uns hier natürlich nur die wichtigsten Formeln, den Rest kannst du dann immer mal wieder bachschlagen.\nAm Ende wollen wir dann die Flächen noch ins Volumen bringen. Hier rechnen wir dann das Volumne eines Würfels oder eines Quaders aus. Häufig brauchen wir diese Informationen, wenn wir berechnen wollen, wie viel Torf wir brauchen oder wie viel Volumen an Futter verbraucht wird bzw. eingekauft werden muss."
+    "text": "Version vom January 22, 2023 um 16:03:48\nIn dem folgenden Kapitel zu den Maßzahlen von Einheiten sowie der Fläche und dem Volumne wollen wir uns einmal mit den Grundlagen der Berechungen beschäftigen. Wir brauchen diese Werkzeuge um zu bestimmen, wie groß ein Teilstück sein soll oder aber wenn wir wissen wollen, wie viel Torf wir bestellen müssen.\nIm ersten Abschnitt schauen wir uns einmal Flächenmaße und Volumenmaße an. Wie sind die Abkürzungen für die entsprechenden Maßzahlen und wie lauten die Abkürzungen für sehr große oder sehr kleine Zahlen.\nDann schauen wir noch einmal auf die Flächen und Umfänge von gängigen geometrischen Objekten. Welche Eigenschaften hat das Quadrat, das Rechteck und der Kreis? Wir merken uns hier natürlich nur die wichtigsten Formeln, den Rest kannst du dann immer mal wieder bachschlagen.\nAm Ende wollen wir dann die Flächen noch ins Volumen bringen. Hier rechnen wir dann das Volumne eines Würfels oder eines Quaders aus. Häufig brauchen wir diese Informationen, wenn wir berechnen wollen, wie viel Torf wir brauchen oder wie viel Volumen an Futter verbraucht wird bzw. eingekauft werden muss."
   },
   {
     "objectID": "geometry-unit.html#maßeinheiten",
@@ -96,13 +96,6 @@
     "title": "3  Maßeinheiten, Flächenmaße und Volumenmaße",
     "section": "3.4 Prozent, Promille und ppm",
     "text": "3.4 Prozent, Promille und ppm\nAbschließend schauen wir uns in der Tabelle 3.5 nochmal die Umrechnungen von Prozent und Promille an. Das Prinzip nutzen wir dann häufig zur Abschätzung von anderen Flächen oder Volumen, wenn wir nicht die exakte Änderung kennen sondern eben nur die Prozentuale.\n\n\nTabelle 3.5— Umrechnung von Prozenten und Anteilen.\n\n\n\n\n\n\n\n\n\n\n\nEin Zuckerwürfel in\n\n\n\n\n1 Prozent ist 1 Teil von hundert Teilen\n10 Gramm pro Kilogramm\n\\(10 g/kg\\)\n0.27 Litern, ca. 2 Tassen\n\n\n1 Promille ist 1 Teil von Tausend Teilen\n1 Gramm pro Kilogramm\n\\(1 g/kg\\)\n2.7 Litern, ca. 3.5 Flaschen Wein\n\n\n1 ppm (part per million) ist 1 Teil von 1 Million Teilen\n1 Milligramm pro Kilogramm\n\\(0.001 g/kg\\)\n2 700 Litern, ca. einem Tanklaster"
-  },
-  {
-    "objectID": "geometry-unit.html#section",
-    "href": "geometry-unit.html#section",
-    "title": "3  Maßeinheiten, Flächenmaße und Volumenmaße",
-    "section": "3.5 ",
-    "text": "3.5"
   },
   {
     "objectID": "geometry-area.html#quadrat",
@@ -172,7 +165,7 @@
     "href": "probability-preface.html",
     "title": "Wahrscheinlichkeiten",
     "section": "",
-    "text": "Version vom January 22, 2023 um 15:04:12"
+    "text": "Version vom January 22, 2023 um 16:03:59"
   },
   {
     "objectID": "probability-basic.html#regeln",
@@ -186,21 +179,21 @@
     "href": "probability-conditional.html",
     "title": "7  Bedingte Wahrscheinlichkeiten",
     "section": "",
-    "text": "Version vom January 22, 2023 um 15:04:18"
+    "text": "Version vom January 22, 2023 um 16:04:05"
   },
   {
     "objectID": "probability-distribution.html",
     "href": "probability-distribution.html",
     "title": "8  Wahrscheinlichkeitsverteilungen",
     "section": "",
-    "text": "Version vom January 22, 2023 um 15:04:20"
+    "text": "Version vom January 22, 2023 um 16:04:08"
   },
   {
     "objectID": "vector-preface.html",
     "href": "vector-preface.html",
     "title": "Vektor und Matrix",
     "section": "",
-    "text": "Version vom January 22, 2023 um 15:04:23\nIn dem folgenden Kapitel wollen wir uns einmal mit Berechnungen mit Vektoren in Kapitel 9 beschäftigen. Das Kapitel ist eher kurz und dient nur der Erinnerung, was sind eigentlich Vektoren. Wir nutzen den Begriff häufig in der R Programmierung und wir wollen hier nochmal auf ein paar mathematische Eigenschaften eingehen.\nWichtiger ist in dem Sinne die Berechnungen mit Matrizen in Kapitel 11. Wir schauen uns hier nochmal die gängigen Rechenoperationen mit Matrizen an. Wir erschlagen aber nicht alles sondern schauen usn nur ausgewählte Aspekte einmal an. Wir brauchen Teile von den Berechnungen mit Matrizen später in der multiplen linearen Regression in der Statistik."
+    "text": "Version vom January 22, 2023 um 16:04:10\nIn dem folgenden Kapitel wollen wir uns einmal mit Berechnungen mit Vektoren in Kapitel 9 beschäftigen. Das Kapitel ist eher kurz und dient nur der Erinnerung, was sind eigentlich Vektoren. Wir nutzen den Begriff häufig in der R Programmierung und wir wollen hier nochmal auf ein paar mathematische Eigenschaften eingehen.\nWichtiger ist in dem Sinne die Berechnungen mit Matrizen in Kapitel 10. Wir schauen uns hier nochmal die gängigen Rechenoperationen mit Matrizen an. Wir erschlagen aber nicht alles sondern schauen usn nur ausgewählte Aspekte einmal an. Wir brauchen Teile von den Berechnungen mit Matrizen später in der multiplen linearen Regression in der Statistik."
   },
   {
     "objectID": "vector-basic.html#grundlagen-vektoren",
@@ -257,19 +250,5 @@
     "title": "10  Berechnungen mit Matrizen",
     "section": "10.7 Eine Matrix mit einem Vektor multiplizieren",
     "text": "10.7 Eine Matrix mit einem Vektor multiplizieren\nWenn wir eine Matrix mit einem Vektor multiplizieren wollen, dann müssen die Matrix und der Vektor zueinander passen. In unseren Fällen, wie wir häufig betrachten muss die Matrix die Anzahl an Spalten haben die der Länge des Vektors enspricht. In unseren Beispiel haben wir drei Spalten und somit muss der Vektor auch eine Länge von drei Einträgen haben.\n\\[\n\\begin{pmatrix}\n4 & 3 & 2 \\\\\n1 & 0 & 3\n\\end{pmatrix}\n\\cdot\n\\begin{pmatrix}\n2 \\\\ 0 \\\\ 1\n\\end{pmatrix}\n=\n\\begin{pmatrix}\n4 \\cdot 2+ 3 \\cdot 0 +2 \\cdot 1 \\\\\n1 \\cdot 2+ 0 \\cdot 0 +3 \\cdot 1\n\\end{pmatrix}\n=\n\\begin{pmatrix}\n10 \\\\\n5\n\\end{pmatrix}\n\\]\nWii können das Beispiel auch wieder in R nachvollziehen. In R gibt es keine Funktion mit Namen vector. Die Funktion c() erschafft einen Vektor. Wenn wir Matrizen oder Vektoren miteinander multipizieren wollen und anschließend aufaddieren, dann müssen wir den Operator %*% nutzen.\n\nA <- matrix(c(4, 3, 2,\n              1, 0, 3), byrow = 2, ncol = 3)\nA\n\n     [,1] [,2] [,3]\n[1,]    4    3    2\n[2,]    1    0    3\n\nB <- c(2, 0, 1)\nB\n\n[1] 2 0 1\n\nA %*% B\n\n     [,1]\n[1,]   10\n[2,]    5\n\n\nAm Ende kommt das Ergebnis raus, was wir auch erwartet haben."
-  },
-  {
-    "objectID": "matrix-eigenwerte.html#berechnung-von-eigenwerten",
-    "href": "matrix-eigenwerte.html#berechnung-von-eigenwerten",
-    "title": "11  Eigenwerte von Matrizen",
-    "section": "11.1 Berechnung von Eigenwerten",
-    "text": "11.1 Berechnung von Eigenwerten\n\n\nDu findest dann hinter diesem Link auch Mathehilfe zu Vektor, Matrizen und Co.. Du kannst auf der Seite mal stöbern, ob du da was findest was dir hilft.\n\\[\nA_E =\n\\begin{pmatrix}\n1 & 0 & 0 \\\\\n0 & 1 & 0 \\\\\n0 & 0 & 1\n\\end{pmatrix}\n\\]"
-  },
-  {
-    "objectID": "preface.html#lernziel4-matrixrechnungen-durchführen-können",
-    "href": "preface.html#lernziel4-matrixrechnungen-durchführen-können",
-    "title": "2  Einführung",
-    "section": "2.4 Lernziel4: Matrixrechnungen durchführen können",
-    "text": "2.4 Lernziel4: Matrixrechnungen durchführen können\nAm Ende wollen wir uns nochmal die Berechnung der Vektor- und Matrixrechnungen anschauen. Wir brauchen die Grundidee der Vektor- und Matrixrechnung in der Statistik um dort mit Vektoren und dann auch Datensätzen rechnen zu können. Wir halten hier aber alles sehr einfach und konzentrieren uns auf das Wichtigste."
   }
 ]
