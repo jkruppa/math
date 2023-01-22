@@ -81,21 +81,21 @@
     "href": "geometry-unit.html#flächenmaße",
     "title": "3  Maßeinheiten, Flächenmaße und Volumenmaße",
     "section": "3.2 Flächenmaße",
-    "text": "3.2 Flächenmaße\n\nad\n\n\n\\(km^2\\)\n\\(ha\\)\n\\(ar\\)\n\\(m^2\\)\n\n\n\n\n1\n100\n10 000\n1 000 000\n\n\n\n1\n100\n10 000\n\n\n\n\n1\n100"
+    "text": "3.2 Flächenmaße\nIn der Tabelle 3.3 sehen wir nochmal die Umrechnung von gängigen Flächenmaßen. Dem einen oder anderen mag der Hektar \\(ha\\) geläufig sein, für alle anderen hier nochmal die Flächen zum nachschlagen. Das Ar \\(ar\\) ist in unterschiedlicher Verwendung, aber hier mit zu Vollständigkeit aufgeführt.\n\n\nTabelle 3.3— Umrechnung von gängigen Flächenmaßen.\n\n\n\\(km^2\\)\n\\(ha\\)\n\\(ar\\)\n\\(m^2\\)\n\n\n\n\n1\n100\n10 000\n1 000 000\n\n\n\n1\n100\n10 000\n\n\n\n\n1\n100"
   },
   {
     "objectID": "geometry-unit.html#volumenmaße",
     "href": "geometry-unit.html#volumenmaße",
     "title": "3  Maßeinheiten, Flächenmaße und Volumenmaße",
     "section": "3.3 Volumenmaße",
-    "text": "3.3 Volumenmaße\n\nsgdgsd\n\n\nLiter\n\\(hl\\)\n\\(l\\)\n\\(dl\\)\n\\(cl\\)\n\\(ml\\)\n\n\n\n\n\\(1m^3\\)\n10\n1 000\n10 000\n100 000\n1 000 000\n\n\n\n1\n100\n1 000\n10 000\n100 000\n\n\n\n\n10\n100\n1 000\n10 000\n\n\n\\(1dm^3\\)\n\n1\n10\n100\n1 000\n\n\n\n\n\n1\n10\n100\n\n\n\n\n\n\n1\n10\n\n\n\\(1cm^3\\)\n\n\n\n\n1\n\n\n\n\n\\(1 000 cm^3\\)\n\\(100cm^3\\)\n\\(10cm^3\\)\n\\(1cm^3\\)"
+    "text": "3.3 Volumenmaße\nDie Tabelle 3.4 zeigt die Umrechnungen von Volumenmaßen. Häufig benötigen wir verschiedene Volumen bei der Abfüllung von Dünger oder aber auch anderer Flüssigkeiten. Die Bewässerung und auch die Kühlung wird über Volumen geregelt. Auch ist es wichtig zu wisen, wie denn die Idee des Liters mit den \\(m^3\\) zusammenhängt.\n\n\nTabelle 3.4— Umrechnung von gängigen Volumenmaßen.\n\n\nLiter\n\\(hl\\)\n\\(l\\)\n\\(dl\\)\n\\(cl\\)\n\\(ml\\)\n\n\n\n\n\\(1m^3\\)\n10\n1 000\n10 000\n100 000\n1 000 000\n\n\n\n1\n100\n1 000\n10 000\n100 000\n\n\n\n\n10\n100\n1 000\n10 000\n\n\n\\(1dm^3\\)\n\n1\n10\n100\n1 000\n\n\n\n\n\n1\n10\n100\n\n\n\n\n\n\n1\n10\n\n\n\\(1cm^3\\)\n\n\n\n\n1\n\n\n\n\n\\(1 000 cm^3\\)\n\\(100cm^3\\)\n\\(10cm^3\\)\n\\(1cm^3\\)"
   },
   {
     "objectID": "geometry-unit.html#prozent-promille-und-ppm",
     "href": "geometry-unit.html#prozent-promille-und-ppm",
     "title": "3  Maßeinheiten, Flächenmaße und Volumenmaße",
     "section": "3.4 Prozent, Promille und ppm",
-    "text": "3.4 Prozent, Promille und ppm\n\ntest\n\n\n\n\n\n\n\n\n\n\n\nEin Zuckerwürfel in\n\n\n\n\n1 Prozent ist 1 Teil von hundert Teilen\n10 Gramm pro Kilogramm\n\\(10 g/kg\\)\n0.27 Litern, ca. 2 Tassen\n\n\n1 Promille ist 1 Teil von Tausend Teilen\n1 Gramm pro Kilogramm\n\\(1 g/kg\\)\n2.7 Litern, ca. 3.5 Flaschen Wein\n\n\n1 ppm (part per million) ist 1 Teil von 1 Million Teilen\n1 Milligramm pro Kilogramm\n\\(0.001 g/kg\\)\n2 700 Litern, ca. einem Tanklaster"
+    "text": "3.4 Prozent, Promille und ppm\n\n\nTabelle 3.5— Umrechnung von Prozenten und Anteilen.\n\n\n\n\n\n\n\n\n\n\n\nEin Zuckerwürfel in\n\n\n\n\n1 Prozent ist 1 Teil von hundert Teilen\n10 Gramm pro Kilogramm\n\\(10 g/kg\\)\n0.27 Litern, ca. 2 Tassen\n\n\n1 Promille ist 1 Teil von Tausend Teilen\n1 Gramm pro Kilogramm\n\\(1 g/kg\\)\n2.7 Litern, ca. 3.5 Flaschen Wein\n\n\n1 ppm (part per million) ist 1 Teil von 1 Million Teilen\n1 Milligramm pro Kilogramm\n\\(0.001 g/kg\\)\n2 700 Litern, ca. einem Tanklaster"
   },
   {
     "objectID": "geometry-unit.html#section",
