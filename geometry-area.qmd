@@ -37,6 +37,8 @@ $$
 
 ## Rechteck
 
+Das Rechteck ist ja ein Quadrat wo jemand gegengetreten hat. Eigentlich tritt ja das Quadrat nie so in der reinen Form auf, eigentlich haben wir immer Rechtecke vorliegen. Selten sind Tische oder Stallbuchten quadratisch.
+
 ![](images/rechteck.png){fig-align="center" width="50%"}
 
 ::: column-margin
@@ -71,6 +73,8 @@ $$
 
 
 ## Trapez
+
+Das Trapez ist ein Rechteck mit definitiv unterschiedlich langen Zeiten bzw. so unterschiedlich langen Seiten, dass wir nicht mehr von einem Rechteck ausgehen können. Viele Felder folgen einem Trapez oder einem Rechteck.
 
 ![](images/trapez.png){fig-align="center" width="50%"}
 
@@ -108,6 +112,8 @@ $$
 
 ## Parallelogramm
 
+Ein Parallelogramm ist ein gekipptes Rechteck. Auch hier haben wir die Anwendung eher auf landwirtschaftlichen Versuchsfeldern. 
+
 ![](images/parallelogramm.png){fig-align="center" width="50%"}
 
 ::: column-margin
@@ -137,6 +143,8 @@ $$
 
 ## Dreieck
 
+Auch hier kommt es dann auf die Anwendung an. Teilendstücke können einem Dreick folgen. Sonst kommt das Dreick dann doch eher seltener vor.
+
 ![](images/dreieck.png){fig-align="center" width="40%"}
 
 Wir berechnen die Fläche $F$ eines Dreiecks mir folgender Formel.
@@ -151,22 +159,28 @@ $$
 U = a + b + c
 $$
 
+Die Höhe des Dreiecks an der Seite $h_a$ lässt sich dann wie folgt ausrechnen. 
+
 $$
 h_a = \cfrac{2 \cdot F}{a}
 $$
 
+Wenn wir Glück haben, dann haben wir ein Dreieck mit einem rechten Winkel vorliegen, dann rechnen sich einige der Seiten etwas anders.
+
 ![](images/dreieck_recht.png){fig-align="center" width="50%"}
 
 
-Bei einem rechtwinkligen Dreieck gilt
+Bei einem rechtwinkligen Dreieck gilt dann folgender sehr bekannter Zusammenhang.
 
 $$
 a^2 + b^2 = c^2
 $$
 
+Daraus ergeben sich dann auch folgende Umformungen.
+
 $$
 \begin{aligned}
-a^2 &= c^2 - b1^2\\
+a^2 &= c^2 - b^2\\
 b^2 &= c^2 - a^2\\
 c^2 &= a^2 + b^2\\
 h^2 &= b^2 - q^2\\

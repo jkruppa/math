@@ -109,28 +109,28 @@
     "href": "geometry-area.html#rechteck",
     "title": "4  Flächenberechung",
     "section": "4.2 Rechteck",
-    "text": "4.2 Rechteck\n\n\n\n\n\n\n\nBeachte auch folgenden Zusammenhang für das Rechteck:\n\\[\na = \\cfrac{F}{b} = \\cfrac{U - 2b}{2}\n\\]\n\\[\nb = \\cfrac{F}{a} = \\cfrac{U - 2a}{2}\n\\]\nWir berechnen die Fläche \\(F\\) eines Rechtecks mir folgender Formel.\n\\[\nF = a \\cdot b\n\\]\nDen Umfang eines Rechtecks \\(U\\) können wir dann wie folgt berechnen.\n\\[\nU = 2 \\cdot a + 2 \\cdot b = a (a+b)\n\\]\nDie Diagonale \\(d\\) eines Rechtecks ergibt sich dann wie folgt.\n\\[\nd = \\sqrt{a^2 + b^2}\n\\]"
+    "text": "4.2 Rechteck\nDas Rechteck ist ja ein Quadrat wo jemand gegengetreten hat. Eigentlich tritt ja das Quadrat nie so in der reinen Form auf, eigentlich haben wir immer Rechtecke vorliegen. Selten sind Tische oder Stallbuchten quadratisch.\n\n\n\n\n\n\n\nBeachte auch folgenden Zusammenhang für das Rechteck:\n\\[\na = \\cfrac{F}{b} = \\cfrac{U - 2b}{2}\n\\]\n\\[\nb = \\cfrac{F}{a} = \\cfrac{U - 2a}{2}\n\\]\nWir berechnen die Fläche \\(F\\) eines Rechtecks mir folgender Formel.\n\\[\nF = a \\cdot b\n\\]\nDen Umfang eines Rechtecks \\(U\\) können wir dann wie folgt berechnen.\n\\[\nU = 2 \\cdot a + 2 \\cdot b = a (a+b)\n\\]\nDie Diagonale \\(d\\) eines Rechtecks ergibt sich dann wie folgt.\n\\[\nd = \\sqrt{a^2 + b^2}\n\\]"
   },
   {
     "objectID": "geometry-area.html#trapez",
     "href": "geometry-area.html#trapez",
     "title": "4  Flächenberechung",
     "section": "4.3 Trapez",
-    "text": "4.3 Trapez\n\n\n\n\n\n\n\nBeachte auch folgenden Zusammenhang für das Trapez:\n\\[\na = \\cfrac{2F}{h}-b\n\\]\n\\[\nb = \\cfrac{2F}{h}-a\n\\]\n\\[\nc = U - (a+b+d)\n\\]\n\\[\nd = U - (a+b+c)\n\\]\nWir berechnen die Fläche \\(F\\) eines Trapez mir folgender Formel.\n\\[\nF = m \\cdot h = \\cfrac{a+b}{2}\\cdot h\n\\]\nDen Umfang eines Trapez \\(U\\) können wir dann wie folgt berechnen.\n\\[\nU = a+b+c+d\n\\]"
+    "text": "4.3 Trapez\nDas Trapez ist ein Rechteck mit definitiv unterschiedlich langen Zeiten bzw. so unterschiedlich langen Seiten, dass wir nicht mehr von einem Rechteck ausgehen können. Viele Felder folgen einem Trapez oder einem Rechteck.\n\n\n\n\n\n\n\nBeachte auch folgenden Zusammenhang für das Trapez:\n\\[\na = \\cfrac{2F}{h}-b\n\\]\n\\[\nb = \\cfrac{2F}{h}-a\n\\]\n\\[\nc = U - (a+b+d)\n\\]\n\\[\nd = U - (a+b+c)\n\\]\nWir berechnen die Fläche \\(F\\) eines Trapez mir folgender Formel.\n\\[\nF = m \\cdot h = \\cfrac{a+b}{2}\\cdot h\n\\]\nDen Umfang eines Trapez \\(U\\) können wir dann wie folgt berechnen.\n\\[\nU = a+b+c+d\n\\]"
   },
   {
     "objectID": "geometry-area.html#parallelogramm",
     "href": "geometry-area.html#parallelogramm",
     "title": "4  Flächenberechung",
     "section": "4.4 Parallelogramm",
-    "text": "4.4 Parallelogramm\n\n\n\n\n\n\n\nBeachte auch folgenden Zusammenhang für das Parallelogramm:\n\\[\na = \\cfrac{2F}{h}\n\\]\n\\[\nb = \\cfrac{U-2a}{2}\n\\]\nWir berechnen die Fläche \\(F\\) eines Parallelogramms mir folgender Formel.\n\\[\nF = a \\cdot h\n\\]\nDen Umfang eines Trapez \\(U\\) können wir dann wie folgt berechnen.\n\\[\nU = 2(a+b)\n\\]"
+    "text": "4.4 Parallelogramm\nEin Parallelogramm ist ein gekipptes Rechteck. Auch hier haben wir die Anwendung eher auf landwirtschaftlichen Versuchsfeldern.\n\n\n\n\n\n\n\nBeachte auch folgenden Zusammenhang für das Parallelogramm:\n\\[\na = \\cfrac{2F}{h}\n\\]\n\\[\nb = \\cfrac{U-2a}{2}\n\\]\nWir berechnen die Fläche \\(F\\) eines Parallelogramms mir folgender Formel.\n\\[\nF = a \\cdot h\n\\]\nDen Umfang eines Trapez \\(U\\) können wir dann wie folgt berechnen.\n\\[\nU = 2(a+b)\n\\]"
   },
   {
     "objectID": "geometry-area.html#dreieck",
     "href": "geometry-area.html#dreieck",
     "title": "4  Flächenberechung",
     "section": "4.5 Dreieck",
-    "text": "4.5 Dreieck\n\n\n\n\n\nWir berechnen die Fläche \\(F\\) eines Dreiecks mir folgender Formel.\n\\[\nF = \\cfrac{a \\cdot h_a}{2}\n\\]\nDen Umfang eines Dreiecks \\(U\\) können wir dann wie folgt berechnen.\n\\[\nU = a + b + c\n\\]\n\\[\nh_a = \\cfrac{2 \\cdot F}{a}\n\\]\n\n\n\n\n\nBei einem rechtwinkligen Dreieck gilt\n\\[\na^2 + b^2 = c^2\n\\]\n\\[\n\\begin{aligned}\na^2 &= c^2 - b1^2\\\\\nb^2 &= c^2 - a^2\\\\\nc^2 &= a^2 + b^2\\\\\nh^2 &= b^2 - q^2\\\\\nh^2 &= a^2 - p^2\n\\end{aligned}\n\\]"
+    "text": "4.5 Dreieck\nAuch hier kommt es dann auf die Anwendung an. Teilendstücke können einem Dreick folgen. Sonst kommt das Dreick dann doch eher seltener vor.\n\n\n\n\n\nWir berechnen die Fläche \\(F\\) eines Dreiecks mir folgender Formel.\n\\[\nF = \\cfrac{a \\cdot h_a}{2}\n\\]\nDen Umfang eines Dreiecks \\(U\\) können wir dann wie folgt berechnen.\n\\[\nU = a + b + c\n\\]\nDie Höhe des Dreiecks an der Seite \\(h_a\\) lässt sich dann wie folgt ausrechnen.\n\\[\nh_a = \\cfrac{2 \\cdot F}{a}\n\\]\nWenn wir Glück haben, dann haben wir ein Dreieck mit einem rechten Winkel vorliegen, dann rechnen sich einige der Seiten etwas anders.\n\n\n\n\n\nBei einem rechtwinkligen Dreieck gilt dann folgender sehr bekannter Zusammenhang.\n\\[\na^2 + b^2 = c^2\n\\]\nDaraus ergeben sich dann auch folgende Umformungen.\n\\[\n\\begin{aligned}\na^2 &= c^2 - b^2\\\\\nb^2 &= c^2 - a^2\\\\\nc^2 &= a^2 + b^2\\\\\nh^2 &= b^2 - q^2\\\\\nh^2 &= a^2 - p^2\n\\end{aligned}\n\\]"
   },
   {
     "objectID": "geometry-area.html#kreis",
