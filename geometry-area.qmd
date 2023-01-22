@@ -6,10 +6,7 @@ pacman::p_load(tidyverse, readxl, knitr, kableExtra, Hmisc)
 
 *Version vom `r format(Sys.time(), '%B %d, %Y um %H:%M:%S')`*
 
-![](images/caution.png){fig-align="center" width="50%"}
-
 Im Folgenden wollen wir einmal die Flächen ($F$ oder auch $A$) und die Umfänge $U$ von geometrischen Objekten bestimmen. Wir gehen hierfür die gängigsten geometrischen Formen einmal durch. Du musst dir dann raussuchen, was zu deiner Fragestellung dann am besten passt.
-
 
 ## Quadrat
 
@@ -189,6 +186,8 @@ h^2 &= a^2 - p^2
 $$
 
 ## Kreis
+
+Zum Abschlus schauen wir uns nochmal den Kreis an. Hier kommt natürlich dann die Kreiszahl $\pi$ mit $3.14$ zum Einsatz. 
 
 ![](images/kreis.png){fig-align="center" width="30%"}
 

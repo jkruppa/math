@@ -137,7 +137,7 @@
     "href": "geometry-area.html#kreis",
     "title": "4  Flächenberechung",
     "section": "4.6 Kreis",
-    "text": "4.6 Kreis\n\n\n\n\n\nWir berechnen die Fläche \\(F\\) eines Kreises mir folgender Formel.\n\\[\nF = r^2 \\cdot \\pi = \\cfrac{d^2 \\cdot \\pi}{4}\n\\]\nDen Umfang eines Kreises \\(U\\) können wir dann wie folgt berechnen.\n\\[\nU = 2r \\cdot \\pi = \\cfrac{d \\cdot \\pi}{4 \\cdot F}\n\\] Die Diagonale \\(d\\) eines Kreises ergibt sich dann wie folgt.\n\\[\nd = 2r\n\\]\nUnd der Radius \\(r\\) hängt dann wie folgt um Umfang \\(U\\) ab.\n\\[\nr = \\cfrac{U}{2 \\cdot \\pi}\n\\]"
+    "text": "4.6 Kreis\nZum Abschlus schauen wir uns nochmal den Kreis an. Hier kommt natürlich dann die Kreiszahl \\(\\pi\\) mit \\(3.14\\) zum Einsatz.\n\n\n\n\n\nWir berechnen die Fläche \\(F\\) eines Kreises mir folgender Formel.\n\\[\nF = r^2 \\cdot \\pi = \\cfrac{d^2 \\cdot \\pi}{4}\n\\]\nDen Umfang eines Kreises \\(U\\) können wir dann wie folgt berechnen.\n\\[\nU = 2r \\cdot \\pi = \\cfrac{d \\cdot \\pi}{4 \\cdot F}\n\\] Die Diagonale \\(d\\) eines Kreises ergibt sich dann wie folgt.\n\\[\nd = 2r\n\\]\nUnd der Radius \\(r\\) hängt dann wie folgt um Umfang \\(U\\) ab.\n\\[\nr = \\cfrac{U}{2 \\cdot \\pi}\n\\]"
   },
   {
     "objectID": "geometry-volume.html#würfel",
