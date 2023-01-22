@@ -264,5 +264,12 @@
     "title": "11  Eigenwerte von Matrizen",
     "section": "11.1 Berechnung von Eigenwerten",
     "text": "11.1 Berechnung von Eigenwerten\n\n\nDu findest dann hinter diesem Link auch Mathehilfe zu Vektor, Matrizen und Co.. Du kannst auf der Seite mal stöbern, ob du da was findest was dir hilft.\n\\[\nA_E =\n\\begin{pmatrix}\n1 & 0 & 0 \\\\\n0 & 1 & 0 \\\\\n0 & 0 & 1\n\\end{pmatrix}\n\\]"
+  },
+  {
+    "objectID": "preface.html#lernziel4-matrixrechnungen-durchführen-können",
+    "href": "preface.html#lernziel4-matrixrechnungen-durchführen-können",
+    "title": "2  Einführung",
+    "section": "2.4 Lernziel4: Matrixrechnungen durchführen können",
+    "text": "2.4 Lernziel4: Matrixrechnungen durchführen können\nAm Ende wollen wir uns nochmal die Berechnung der Vektor- und Matrixrechnungen anschauen. Wir brauchen die Grundidee der Vektor- und Matrixrechnung in der Statistik um dort mit Vektoren und dann auch Datensätzen rechnen zu können. Wir halten hier aber alles sehr einfach und konzentrieren uns auf das Wichtigste."
   }
 ]

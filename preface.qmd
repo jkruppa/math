@@ -15,3 +15,7 @@ Wir wollen lerne, wie sich Wahrscheinlichkeiten zusammensetzen. Also was ist eig
 ## Lernziel 3: Wahrscheinlichkeitsverteilungen verstehen
 
 Neben den einfachen Wahrscheinlichkeiten von einem Ereignis, können wir uns auch kompliziertere Wahrscheinlichkeiten vorstellen. Wir schauen uns nicht nur ein Ereignis an, sondern eben eine ganze Reihe von möglichen Ausgängen eines Zufallsprozesses. Daher werden wir hier nochmal die gänigsten Verteilungen wiederholen und uns anschauen, was eigentlich eine Dichtefunktion ist. 
+
+## Lernziel4: Matrixrechnungen durchführen können
+
+Am Ende wollen wir uns nochmal die Berechnung der Vektor- und Matrixrechnungen anschauen. Wir brauchen die Grundidee der Vektor- und Matrixrechnung in der Statistik um dort mit Vektoren und dann auch Datensätzen rechnen zu können. Wir halten hier aber alles sehr einfach und konzentrieren uns auf das Wichtigste.

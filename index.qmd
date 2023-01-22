@@ -2,25 +2,13 @@
 
 Auf den folgenden Seiten wirst du nochmal die Grundlagen der Mathematik in der Statistik lernen. Wir lagern hier die Inhalte die sehr mathematisch sind von den angewandten, statistischen Themen aus. Das heißt, du findest hier sehr viel Mathematik und auch Rechenbeispiele. Es wird aber R Code geben - siehe den R Code als den Taschenrechnercode. Das hat den einfachen Grund, das wir eben dann doch mal die Grundlagen in der Mathematik wiederholen müssen. Es kann aber auch sein, dass du gar nicht so viel Mathematik später brauchst - oder wiederkommst, weil du nochmal nachschauen willst, wie du eine Teilstückfläche berechnest. Wir auch immer, hier findest du die Mathematikteile aus meinenen Vorlesungen.
 
-::: {.callout-caution collapse="true"}
+::: {.callout-caution}
 ## Gesammelte Klausurfragen Bio Data Science
 
 Du findest die [gesammelten Klausurfragen auf GitHub](https://github.com/jkruppa/exam/blob/main/Gesammelte_Klausurfragen_Bio_Data_Science.pdf) oder auf ILIAS in dem entsprechenden Modul. Die Klausurfragen zu den einzelnen Vorlesungen in einem Modul werden in den entsprechenden Übungen des Moduls besprochen. Bitte komme in die Übungen.
 
-Du brauchst dir die Fragen nicht alle auszudrucken. Wir besprechen die Fragen *teilweise* in den Übungen.
-
-Die finale Version für die Klausur veröffentliche ich Ende Dezember für das Wintersemester bzw. Ende Juni für das Sommersemester.
+![](images/youtube.png){fig-align="center" width="55"} [Playlist der Fragen & Antworten auf YouTube](https://www.youtube.com/playlist?list=PLe51bCp9JvEHxsispwEyTp6B9bqNZ1EmJ). Hier findest du nochmal alle Antworten zu den Fragen *kurz* besprochen.
 :::
-
-## Lernen...
-
-Aktuell gibt es nur die Möglichkeit die Inhalte dieses Skriptes in der Vorlesung "Mathematik und Statistik" an der Hochschule Osnabrück an der Fakultät Agrarwissenschaften und Landschaftsarchitektur (AuL) zu hören. Das Skript wird in der Vorlesung aufgearbeitet und durch Übungen unterstützt. Weitere Unterstützung wie Lehrvideos sind in der Planung.
-
-### ... auf YouTube
-
-![](images/youtube.png){fig-align="center" width="300"}
-
-Aktuell gibt es auf YouTube unter <https://www.youtube.com/c/JochenKruppa> noch **keine** Lehrvideos als Ergänzung zum Mathematikteil. Geplant ist in den Videos Inhalte zu wiederholen und du kannst auf Pause drücken um nochmal die Rechenschritte nachverfolgen zu können.
 
 ## Kontakt {#sec-contact-mail}
 
