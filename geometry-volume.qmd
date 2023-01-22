@@ -6,28 +6,33 @@ pacman::p_load(tidyverse, readxl, knitr, kableExtra, Hmisc)
 
 *Version vom `r format(Sys.time(), '%B %d, %Y um %H:%M:%S')`*
 
-![](images/caution.png){fig-align="center" width="50%"}
-
-$V$ = Volumen (Inhalt)
-$O$ = Oberfläche
-$G$ = Grundfläche
+In diesem Abschnitt wollen wir einmal das Volumen $V$, sowie die Oberfläche $O$ und die Grundfläche $G$ von verschiedenen geometrischen Objekten berechnen. Wie so oft musst du dir üerlegen, was bei deinem Objekt jetzt die Grundfläche ist. Aber das ist dan meist im konkreten Fall sehr klar. 
 
 ## Würfel
 
+Im Folgenden sehen wir einmal einen Würfel abgebildet.
+
 ![](images/wuerfel.png){fig-align="center" width="30%"}
+
+Das Volumen $V$ eines Würfels berechnet sich dann wie folgt.
 
 $$
 V = a^3
 $$
 
+Die Oberfläche $O$ eines Würfels wird dann wie folgt bestimmt.
+
 $$
-o = 6 \cdot a^2
+O = 6 \cdot a^2
 $$
 
+Die Grundfläche $G$ berechnet sich dann nach der folgenden Formel.
 
 $$
 G = a^2
 $$
+
+Wenn wir an der Diagonalen $D$ interessiert sind, nutzen wir dann folgende Formel.
 
 $$
 D = a\sqrt{3}
@@ -35,19 +40,31 @@ $$
 
 ## Rechteckige Säule
 
+Die rechteckige Säule entspricht dem Quadrat als Grundfläche. Meistens nutzen wir die Säule für die Berechnung von Luftvolumen. Wenn wir an dem Volumen eines Raumes interssiert sind, dann bietet sich die rechteckige Säule an.
+
 ![](images/saeule.png){fig-align="center" width="20%"}
+
+Das Volumen $V$ einer rechteckigen Säule berechnet sich dann wie folgt.
 
 $$
 V = G \cdot h = a \cdot b \cdot c
 $$
+
+Die Oberfläche $O$ einer rechteckigen Säule wird dann wie folgt bestimmt.
+
 $$
 O = 2ab + 2ac + 2bc  
 $$
+
+Die Grundfläche $G$ berechnet sich dann nach der folgenden Formel.
+
 $$
 G = a \cdot b = \cfrac{V}{h}
 $$
 
 ## Zylinder
+
+Der Zylinder bietet sich an für die Berechnung von Inhalten, da meistens dann die Töpfe oder die Silos einem Zylinder folgen. Wir haben also Töpfe als ganz kleine Zylinder oder eben Silos als riesige Zylinder.
 
 ![](images/zylinder.png){fig-align="center" width="20%"}
 
@@ -59,24 +76,33 @@ r = \sqrt{\cfrac{V}{\pi \cdot h}}
 $$
 :::
 
-
+Das Volumen $V$ eines Zylinders berechnet sich dann wie folgt.
 
 $$
 V = G \cdot h = r^2 \cdot \pi \cdot h
 $$
 
+Die Oberfläche $O$ eines Zylinders wird dann wie folgt bestimmt.
+
 $$
 O = 2 \cdot G + 2r \cdot \pi \cdot h
 $$
+Die Grundfläche $G$ berechnet sich dann nach der folgenden Formel.
 
 $$
 G = r^2 \cdot \pi
 $$
 
+Die Höhe $h$ des Zylinders können wir dann wie folgt bestimmen. 
+ 
 $$
 h = \cfrac{V}{G} = \cfrac{V}{r^2 \cdot \pi}
 $$
+
+
 ## Kegel
+
+Der Kegel ist ein Kreis mit einem Hut auf und kann deshalb eventuell für die Berechnungen von Volumen unter einem Netz genutzt werden. In der Praxis ist die Anwendung eher von spezieller Natur.
 
 ![](images/kegel.png){fig-align="center" width="20%"}
 
@@ -96,14 +122,19 @@ s = \sqrt{r^2 + h^2}
 $$
 :::
 
-
+Das Volumen $V$ eines Kegels berechnet sich dann wie folgt.
 
 $$
 V = \cfrac{1}{3} \cdot h \cdot r^2 \cdot \pi 
 $$
+
+Die Oberfläche $O$ eines Kegels wird dann wie folgt bestimmt.
+
 $$
 O = r^2 \cdot \pi \cdot s 
 $$
+
+Die Grundfläche $G$ berechnet sich dann nach der folgenden Formel.
 
 $$
 G = r^2 \cdot \pi

@@ -144,21 +144,21 @@
     "href": "geometry-volume.html#würfel",
     "title": "5  Volumenberechung",
     "section": "5.1 Würfel",
-    "text": "5.1 Würfel\n\n\n\n\n\n\\[\nV = a^3\n\\]\n\\[\no = 6 \\cdot a^2\n\\]\n\\[\nG = a^2\n\\]\n\\[\nD = a\\sqrt{3}\n\\]"
+    "text": "5.1 Würfel\nIm Folgenden sehen wir einmal einen Würfel abgebildet.\n\n\n\n\n\nDas Volumen \\(V\\) eines Würfels berechnet sich dann wie folgt.\n\\[\nV = a^3\n\\]\nDie Oberfläche \\(O\\) eines Würfels wird dann wie folgt bestimmt.\n\\[\nO = 6 \\cdot a^2\n\\]\nDie Grundfläche \\(G\\) berechnet sich dann nach der folgenden Formel.\n\\[\nG = a^2\n\\]\nWenn wir an der Diagonalen \\(D\\) interessiert sind, nutzen wir dann folgende Formel.\n\\[\nD = a\\sqrt{3}\n\\]"
   },
   {
     "objectID": "geometry-volume.html#rechteckige-säule",
     "href": "geometry-volume.html#rechteckige-säule",
     "title": "5  Volumenberechung",
     "section": "5.2 Rechteckige Säule",
-    "text": "5.2 Rechteckige Säule\n\n\n\n\n\n\\[\nV = G \\cdot h = a \\cdot b \\cdot c\n\\] \\[\nO = 2ab + 2ac + 2bc  \n\\] \\[\nG = a \\cdot b = \\cfrac{V}{h}\n\\]"
+    "text": "5.2 Rechteckige Säule\nDie rechteckige Säule entspricht dem Quadrat als Grundfläche. Meistens nutzen wir die Säule für die Berechnung von Luftvolumen. Wenn wir an dem Volumen eines Raumes interssiert sind, dann bietet sich die rechteckige Säule an.\n\n\n\n\n\nDas Volumen \\(V\\) einer rechteckigen Säule berechnet sich dann wie folgt.\n\\[\nV = G \\cdot h = a \\cdot b \\cdot c\n\\]\nDie Oberfläche \\(O\\) einer rechteckigen Säule wird dann wie folgt bestimmt.\n\\[\nO = 2ab + 2ac + 2bc  \n\\]\nDie Grundfläche \\(G\\) berechnet sich dann nach der folgenden Formel.\n\\[\nG = a \\cdot b = \\cfrac{V}{h}\n\\]"
   },
   {
     "objectID": "geometry-volume.html#zylinder",
     "href": "geometry-volume.html#zylinder",
     "title": "5  Volumenberechung",
     "section": "5.3 Zylinder",
-    "text": "5.3 Zylinder\n\n\n\n\n\n\n\nBeachte auch folgenden Zusammenhang für den Zylinder:\n\\[\nr = \\sqrt{\\cfrac{V}{\\pi \\cdot h}}\n\\]\n\\[\nV = G \\cdot h = r^2 \\cdot \\pi \\cdot h\n\\]\n\\[\nO = 2 \\cdot G + 2r \\cdot \\pi \\cdot h\n\\]\n\\[\nG = r^2 \\cdot \\pi\n\\]\n\\[\nh = \\cfrac{V}{G} = \\cfrac{V}{r^2 \\cdot \\pi}\n\\] ## Kegel\n\n\n\n\n\n\n\nBeachte auch folgenden Zusammenhang für den Kegel:\n\\[\nr = \\sqrt{\\cfrac{3V}{\\pi \\cdot h}}\n\\]\n\\[\nh = \\sqrt{s^2 - r^2}\n\\]\n\\[\ns = \\sqrt{r^2 + h^2}\n\\]\n\\[\nV = \\cfrac{1}{3} \\cdot h \\cdot r^2 \\cdot \\pi\n\\] \\[\nO = r^2 \\cdot \\pi \\cdot s\n\\]\n\\[\nG = r^2 \\cdot \\pi\n\\]"
+    "text": "5.3 Zylinder\nDer Zylinder bietet sich an für die Berechnung von Inhalten, da meistens dann die Töpfe oder die Silos einem Zylinder folgen. Wir haben also Töpfe als ganz kleine Zylinder oder eben Silos als riesige Zylinder.\n\n\n\n\n\n\n\nBeachte auch folgenden Zusammenhang für den Zylinder:\n\\[\nr = \\sqrt{\\cfrac{V}{\\pi \\cdot h}}\n\\]\nDas Volumen \\(V\\) eines Zylinders berechnet sich dann wie folgt.\n\\[\nV = G \\cdot h = r^2 \\cdot \\pi \\cdot h\n\\]\nDie Oberfläche \\(O\\) eines Zylinders wird dann wie folgt bestimmt.\n\\[\nO = 2 \\cdot G + 2r \\cdot \\pi \\cdot h\n\\] Die Grundfläche \\(G\\) berechnet sich dann nach der folgenden Formel.\n\\[\nG = r^2 \\cdot \\pi\n\\]\nDie Höhe \\(h\\) des Zylinders können wir dann wie folgt bestimmen.\n\\[\nh = \\cfrac{V}{G} = \\cfrac{V}{r^2 \\cdot \\pi}\n\\]"
   },
   {
     "objectID": "probability-preface.html",
@@ -250,5 +250,12 @@
     "title": "10  Berechnungen mit Matrizen",
     "section": "10.7 Eine Matrix mit einem Vektor multiplizieren",
     "text": "10.7 Eine Matrix mit einem Vektor multiplizieren\nWenn wir eine Matrix mit einem Vektor multiplizieren wollen, dann müssen die Matrix und der Vektor zueinander passen. In unseren Fällen, wie wir häufig betrachten muss die Matrix die Anzahl an Spalten haben die der Länge des Vektors enspricht. In unseren Beispiel haben wir drei Spalten und somit muss der Vektor auch eine Länge von drei Einträgen haben.\n\\[\n\\begin{pmatrix}\n4 & 3 & 2 \\\\\n1 & 0 & 3\n\\end{pmatrix}\n\\cdot\n\\begin{pmatrix}\n2 \\\\ 0 \\\\ 1\n\\end{pmatrix}\n=\n\\begin{pmatrix}\n4 \\cdot 2+ 3 \\cdot 0 +2 \\cdot 1 \\\\\n1 \\cdot 2+ 0 \\cdot 0 +3 \\cdot 1\n\\end{pmatrix}\n=\n\\begin{pmatrix}\n10 \\\\\n5\n\\end{pmatrix}\n\\]\nWii können das Beispiel auch wieder in R nachvollziehen. In R gibt es keine Funktion mit Namen vector. Die Funktion c() erschafft einen Vektor. Wenn wir Matrizen oder Vektoren miteinander multipizieren wollen und anschließend aufaddieren, dann müssen wir den Operator %*% nutzen.\n\nA <- matrix(c(4, 3, 2,\n              1, 0, 3), byrow = 2, ncol = 3)\nA\n\n     [,1] [,2] [,3]\n[1,]    4    3    2\n[2,]    1    0    3\n\nB <- c(2, 0, 1)\nB\n\n[1] 2 0 1\n\nA %*% B\n\n     [,1]\n[1,]   10\n[2,]    5\n\n\nAm Ende kommt das Ergebnis raus, was wir auch erwartet haben."
+  },
+  {
+    "objectID": "geometry-volume.html#kegel",
+    "href": "geometry-volume.html#kegel",
+    "title": "5  Volumenberechung",
+    "section": "5.4 Kegel",
+    "text": "5.4 Kegel\nDer Kegel ist ein Kreis mit einem Hut auf und kann deshalb eventuell für die Berechnungen von Volumen unter einem Netz genutzt werden. In der Praxis ist die Anwendung eher von spezieller Natur.\n\n\n\n\n\n\n\nBeachte auch folgenden Zusammenhang für den Kegel:\n\\[\nr = \\sqrt{\\cfrac{3V}{\\pi \\cdot h}}\n\\]\n\\[\nh = \\sqrt{s^2 - r^2}\n\\]\n\\[\ns = \\sqrt{r^2 + h^2}\n\\]\nDas Volumen \\(V\\) eines Kegels berechnet sich dann wie folgt.\n\\[\nV = \\cfrac{1}{3} \\cdot h \\cdot r^2 \\cdot \\pi\n\\]\nDie Oberfläche \\(O\\) eines Kegels wird dann wie folgt bestimmt.\n\\[\nO = r^2 \\cdot \\pi \\cdot s\n\\]\nDie Grundfläche \\(G\\) berechnet sich dann nach der folgenden Formel.\n\\[\nG = r^2 \\cdot \\pi\n\\]"
   }
 ]
