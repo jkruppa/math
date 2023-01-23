@@ -112,6 +112,8 @@ A_S=\begin{pmatrix}
 0.5 & 0.25 & 0.25
 \end{pmatrix}
 $$
+
+
 ## Vom linearen Gleichungssystem zur Matrix
 
 Eine Stärke von Matrizen in der Statistik ist, dass wir mit der Matrix auch Gleichungssysteme darstellen können. Damit können wir in der linearen Regression auch komplexere Modelle sauber darstellen. Im Folgenden siehst du drei Gleichungen. 
