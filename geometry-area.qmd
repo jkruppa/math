@@ -184,6 +184,38 @@ h^2 &= b^2 - q^2\\
 h^2 &= a^2 - p^2
 \end{aligned}
 $$
+Im Weiteren wollen wir uns nochmal die Winkel ein einem rechtwinkligen Dreieck anschauen und wie dort die Seitenlängen mit den Winkeln zusammenhängen.
+
+In unserem Fall liegt der rechte Winkel bei der Ecke C, somit berechnet sich die gegenüberliegende Seite $c$ nach folgenden Formeln. Ersteinmal mit der Betrachtung des Winkels $\alpha$.
+
+::: column-margin
+
+Wir immer gibt es auch auf Wikipedia eine gute [Übersicht über das rechtwinklige Dreieck.](https://de.wikipedia.org/wiki/Rechtwinkliges_Dreieck#Berechnung_und_Konstruktion)
+
+:::
+
+$$
+c = \cfrac{a}{\sin(\alpha)} = \cfrac{b}{\cos(\alpha)}
+$$
+
+Sowie im Weiteren nach der Formel, wenn wir den Winkel $\beta$ betrachten.
+
+$$
+c = \cfrac{b}{\sin(\beta)} = \cfrac{a}{\cos(\beta)}
+$$
+
+Wenn wir uns die Katheten $a$ und $b$ berechnen wollen, dann gelten die folgenden Formeln für die Kathete $a$.
+$$
+a = c \cdot \sin (\alpha) = c \cdot \cos (\beta),\\
+a = b \cdot \tan (\alpha) = b \cdot \cot (\beta)
+$$
+
+Die Kathete $b$ können wir dann ebenfalls berechnen.
+
+$$
+b = c \cdot \cos (\alpha) = c \cdot \sin (\beta),\\
+b = a \cdot \cot (\alpha) = a \cdot \tan (\beta)
+$$
 
 ## Kreis
 

@@ -140,3 +140,45 @@ $$
 G = r^2 \cdot \pi
 $$
 
+## Pyramide
+
+Das Volumen $V$ einer Pyramide berechnet sich dann wie folgt.
+
+$$
+V = \cfrac{1}{3} \cdot h \cdot a^2 
+$$
+Die Mantelfläche $M$ einer Pyramide errechnet sich dann folgendermaßen.
+
+$$
+M = 2 \cdot a \cdot h_a 
+$$
+
+Die Oberfläche $O$ einer Pyramide wird dann wie folgt bestimmt.
+
+$$
+O = a^2 + 2 \cdot a \cdot h_a 
+$$
+
+Die Grundfläche $G$ berechnet sich dann nach der folgenden Formel.
+
+$$
+G = a^2
+$$
+
+Die Höhe $h$ einer Pyramide lässt sich wie folgt berechnen.
+
+$$
+h = \sqrt{h_a^2 \cdot \left(\cfrac{a}{2}\right)^2}
+$$
+
+Oder aber über die Neigung der Seitenfläche $\alpha$ durch Umstellung der Formel nach $h$.
+
+$$
+\alpha = \arctan\left(\cfrac{h}{a/2}\right)
+$$
+$$
+\tan(\alpha) = \cfrac{h}{a/2}
+$$
+$$
+h = \tan(\alpha) \cdot a/2
+$$

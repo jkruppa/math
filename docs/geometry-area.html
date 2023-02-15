@@ -220,7 +220,7 @@ ul.task-list li input[type="checkbox"] {
 <div class="cell">
 
 </div>
-<p><em>Version vom January 22, 2023 um 16:57:04</em></p>
+<p><em>Version vom February 15, 2023 um 10:03:19</em></p>
 <p>Im Folgenden wollen wir einmal die Flächen (<span class="math inline">\(F\)</span> oder auch <span class="math inline">\(A\)</span>) und die Umfänge <span class="math inline">\(U\)</span> von geometrischen Objekten bestimmen. Wir gehen hierfür die gängigsten geometrischen Formen einmal durch. Du musst dir dann raussuchen, was zu deiner Fragestellung dann am besten passt.</p>
 <section id="quadrat" class="level2" data-number="4.1">
 <h2 data-number="4.1" class="anchored" data-anchor-id="quadrat"><span class="header-section-number">4.1</span> Quadrat</h2>
@@ -331,7 +331,7 @@ F = a \cdot h
 U = 2(a+b)
 \]</span></p>
 </section>
-<section id="dreieck" class="level2" data-number="4.5">
+<section id="dreieck" class="level2 page-columns page-full" data-number="4.5">
 <h2 data-number="4.5" class="anchored" data-anchor-id="dreieck"><span class="header-section-number">4.5</span> Dreieck</h2>
 <p>Auch hier kommt es dann auf die Anwendung an. Teilendstücke können einem Dreick folgen. Sonst kommt das Dreick dann doch eher seltener vor.</p>
 <div class="quarto-figure quarto-figure-center">
@@ -370,6 +370,26 @@ c^2 &amp;= a^2 + b^2\\
 h^2 &amp;= b^2 - q^2\\
 h^2 &amp;= a^2 - p^2
 \end{aligned}
+\]</span> Im Weiteren wollen wir uns nochmal die Winkel ein einem rechtwinkligen Dreieck anschauen und wie dort die Seitenlängen mit den Winkeln zusammenhängen.</p>
+<p>In unserem Fall liegt der rechte Winkel bei der Ecke C, somit berechnet sich die gegenüberliegende Seite <span class="math inline">\(c\)</span> nach folgenden Formeln. Ersteinmal mit der Betrachtung des Winkels <span class="math inline">\(\alpha\)</span>.</p>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p>Wir immer gibt es auch auf Wikipedia eine gute <a href="https://de.wikipedia.org/wiki/Rechtwinkliges_Dreieck#Berechnung_und_Konstruktion">Übersicht über das rechtwinklige Dreieck.</a></p>
+</div></div><p><span class="math display">\[
+c = \cfrac{a}{\sin(\alpha)} = \cfrac{b}{\cos(\alpha)}
+\]</span></p>
+<p>Sowie im Weiteren nach der Formel, wenn wir den Winkel <span class="math inline">\(\beta\)</span> betrachten.</p>
+<p><span class="math display">\[
+c = \cfrac{b}{\sin(\beta)} = \cfrac{a}{\cos(\beta)}
+\]</span></p>
+<p>Wenn wir uns die Katheten <span class="math inline">\(a\)</span> und <span class="math inline">\(b\)</span> berechnen wollen, dann gelten die folgenden Formeln für die Kathete <span class="math inline">\(a\)</span>. <span class="math display">\[
+a = c \cdot \sin (\alpha) = c \cdot \cos (\beta),\\
+a = b \cdot \tan (\alpha) = b \cdot \cot (\beta)
+\]</span></p>
+<p>Die Kathete <span class="math inline">\(b\)</span> können wir dann ebenfalls berechnen.</p>
+<p><span class="math display">\[
+b = c \cdot \cos (\alpha) = c \cdot \sin (\beta),\\
+b = a \cdot \cot (\alpha) = a \cdot \tan (\beta)
 \]</span></p>
 </section>
 <section id="kreis" class="level2" data-number="4.6">
