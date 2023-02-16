@@ -38,6 +38,26 @@ $$
 D = a\sqrt{3}
 $$
 
+## Kugel
+
+Das Volumen $V$ einer Kugel berechnet sich dann wie folgt.
+
+$$
+V = \cfrac{4}{3}\cdot \pi \cdot r^3
+$$
+
+Die Oberfläche $O$ einer Kugel wird dann wie folgt bestimmt.
+
+$$
+O = 4 \cdot \pi \cdot r^2
+$$
+
+Der Umfang $U$ ergibt sich dann durch folgende Formel
+
+$$
+U = 2 \cdot \pi \cdot r
+$$
+
 ## Rechteckige Säule
 
 Die rechteckige Säule entspricht dem Quadrat als Grundfläche. Meistens nutzen wir die Säule für die Berechnung von Luftvolumen. Wenn wir an dem Volumen eines Raumes interssiert sind, dann bietet sich die rechteckige Säule an.

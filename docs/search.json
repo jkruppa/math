@@ -150,15 +150,15 @@
     "objectID": "geometry-volume.html#rechteckige-säule",
     "href": "geometry-volume.html#rechteckige-säule",
     "title": "5  Volumenberechung",
-    "section": "5.2 Rechteckige Säule",
-    "text": "5.2 Rechteckige Säule\nDie rechteckige Säule entspricht dem Quadrat als Grundfläche. Meistens nutzen wir die Säule für die Berechnung von Luftvolumen. Wenn wir an dem Volumen eines Raumes interssiert sind, dann bietet sich die rechteckige Säule an.\n\n\n\n\n\nDas Volumen \\(V\\) einer rechteckigen Säule berechnet sich dann wie folgt.\n\\[\nV = G \\cdot h = a \\cdot b \\cdot c\n\\]\nDie Oberfläche \\(O\\) einer rechteckigen Säule wird dann wie folgt bestimmt.\n\\[\nO = 2ab + 2ac + 2bc  \n\\]\nDie Grundfläche \\(G\\) berechnet sich dann nach der folgenden Formel.\n\\[\nG = a \\cdot b = \\cfrac{V}{h}\n\\]"
+    "section": "5.3 Rechteckige Säule",
+    "text": "5.3 Rechteckige Säule\nDie rechteckige Säule entspricht dem Quadrat als Grundfläche. Meistens nutzen wir die Säule für die Berechnung von Luftvolumen. Wenn wir an dem Volumen eines Raumes interssiert sind, dann bietet sich die rechteckige Säule an.\n\n\n\n\n\nDas Volumen \\(V\\) einer rechteckigen Säule berechnet sich dann wie folgt.\n\\[\nV = G \\cdot h = a \\cdot b \\cdot c\n\\]\nDie Oberfläche \\(O\\) einer rechteckigen Säule wird dann wie folgt bestimmt.\n\\[\nO = 2ab + 2ac + 2bc  \n\\]\nDie Grundfläche \\(G\\) berechnet sich dann nach der folgenden Formel.\n\\[\nG = a \\cdot b = \\cfrac{V}{h}\n\\]"
   },
   {
     "objectID": "geometry-volume.html#zylinder",
     "href": "geometry-volume.html#zylinder",
     "title": "5  Volumenberechung",
-    "section": "5.3 Zylinder",
-    "text": "5.3 Zylinder\nDer Zylinder bietet sich an für die Berechnung von Inhalten, da meistens dann die Töpfe oder die Silos einem Zylinder folgen. Wir haben also Töpfe als ganz kleine Zylinder oder eben Silos als riesige Zylinder.\n\n\n\n\n\n\n\nBeachte auch folgenden Zusammenhang für den Zylinder:\n\\[\nr = \\sqrt{\\cfrac{V}{\\pi \\cdot h}}\n\\]\nDas Volumen \\(V\\) eines Zylinders berechnet sich dann wie folgt.\n\\[\nV = G \\cdot h = r^2 \\cdot \\pi \\cdot h\n\\]\nDie Oberfläche \\(O\\) eines Zylinders wird dann wie folgt bestimmt.\n\\[\nO = 2 \\cdot G + 2r \\cdot \\pi \\cdot h\n\\] Die Grundfläche \\(G\\) berechnet sich dann nach der folgenden Formel.\n\\[\nG = r^2 \\cdot \\pi\n\\]\nDie Höhe \\(h\\) des Zylinders können wir dann wie folgt bestimmen.\n\\[\nh = \\cfrac{V}{G} = \\cfrac{V}{r^2 \\cdot \\pi}\n\\]"
+    "section": "5.4 Zylinder",
+    "text": "5.4 Zylinder\nDer Zylinder bietet sich an für die Berechnung von Inhalten, da meistens dann die Töpfe oder die Silos einem Zylinder folgen. Wir haben also Töpfe als ganz kleine Zylinder oder eben Silos als riesige Zylinder.\n\n\n\n\n\n\n\nBeachte auch folgenden Zusammenhang für den Zylinder:\n\\[\nr = \\sqrt{\\cfrac{V}{\\pi \\cdot h}}\n\\]\nDas Volumen \\(V\\) eines Zylinders berechnet sich dann wie folgt.\n\\[\nV = G \\cdot h = r^2 \\cdot \\pi \\cdot h\n\\]\nDie Oberfläche \\(O\\) eines Zylinders wird dann wie folgt bestimmt.\n\\[\nO = 2 \\cdot G + 2r \\cdot \\pi \\cdot h\n\\] Die Grundfläche \\(G\\) berechnet sich dann nach der folgenden Formel.\n\\[\nG = r^2 \\cdot \\pi\n\\]\nDie Höhe \\(h\\) des Zylinders können wir dann wie folgt bestimmen.\n\\[\nh = \\cfrac{V}{G} = \\cfrac{V}{r^2 \\cdot \\pi}\n\\]"
   },
   {
     "objectID": "probability-preface.html",
@@ -255,8 +255,8 @@
     "objectID": "geometry-volume.html#kegel",
     "href": "geometry-volume.html#kegel",
     "title": "5  Volumenberechung",
-    "section": "5.4 Kegel",
-    "text": "5.4 Kegel\nDer Kegel ist ein Kreis mit einem Hut auf und kann deshalb eventuell für die Berechnungen von Volumen unter einem Netz genutzt werden. In der Praxis ist die Anwendung eher von spezieller Natur.\n\n\n\n\n\n\n\nBeachte auch folgenden Zusammenhang für den Kegel:\n\\[\nr = \\sqrt{\\cfrac{3V}{\\pi \\cdot h}}\n\\]\n\\[\nh = \\sqrt{s^2 - r^2}\n\\]\n\\[\ns = \\sqrt{r^2 + h^2}\n\\]\nDas Volumen \\(V\\) eines Kegels berechnet sich dann wie folgt.\n\\[\nV = \\cfrac{1}{3} \\cdot h \\cdot r^2 \\cdot \\pi\n\\]\nDie Oberfläche \\(O\\) eines Kegels wird dann wie folgt bestimmt.\n\\[\nO = r^2 \\cdot \\pi \\cdot s\n\\]\nDie Grundfläche \\(G\\) berechnet sich dann nach der folgenden Formel.\n\\[\nG = r^2 \\cdot \\pi\n\\]"
+    "section": "5.5 Kegel",
+    "text": "5.5 Kegel\nDer Kegel ist ein Kreis mit einem Hut auf und kann deshalb eventuell für die Berechnungen von Volumen unter einem Netz genutzt werden. In der Praxis ist die Anwendung eher von spezieller Natur.\n\n\n\n\n\n\n\nBeachte auch folgenden Zusammenhang für den Kegel:\n\\[\nr = \\sqrt{\\cfrac{3V}{\\pi \\cdot h}}\n\\]\n\\[\nh = \\sqrt{s^2 - r^2}\n\\]\n\\[\ns = \\sqrt{r^2 + h^2}\n\\]\nDas Volumen \\(V\\) eines Kegels berechnet sich dann wie folgt.\n\\[\nV = \\cfrac{1}{3} \\cdot h \\cdot r^2 \\cdot \\pi\n\\]\nDie Oberfläche \\(O\\) eines Kegels wird dann wie folgt bestimmt.\n\\[\nO = r^2 \\cdot \\pi \\cdot s\n\\]\nDie Grundfläche \\(G\\) berechnet sich dann nach der folgenden Formel.\n\\[\nG = r^2 \\cdot \\pi\n\\]"
   },
   {
     "objectID": "matrix-basic.html#vom-linearen-gleichungssystem-zur-matrix",
@@ -269,7 +269,14 @@
     "objectID": "geometry-volume.html#pyramide",
     "href": "geometry-volume.html#pyramide",
     "title": "5  Volumenberechung",
-    "section": "5.5 Pyramide",
-    "text": "5.5 Pyramide\nDas Volumen \\(V\\) einer Pyramide berechnet sich dann wie folgt.\n\\[\nV = \\cfrac{1}{3} \\cdot h \\cdot a^2\n\\] Die Mantelfläche \\(M\\) einer Pyramide errechnet sich dann folgendermaßen.\n\\[\nM = 2 \\cdot a \\cdot h_a\n\\]\nDie Oberfläche \\(O\\) einer Pyramide wird dann wie folgt bestimmt.\n\\[\nO = a^2 + 2 \\cdot a \\cdot h_a\n\\]\nDie Grundfläche \\(G\\) berechnet sich dann nach der folgenden Formel.\n\\[\nG = a^2\n\\]\nDie Höhe \\(h\\) einer Pyramide lässt sich wie folgt berechnen.\n\\[\nh = \\sqrt{h_a^2 \\cdot \\left(\\cfrac{a}{2}\\right)^2}\n\\]\nOder aber über die Neigung der Seitenfläche \\(\\alpha\\) durch Umstellung der Formel nach \\(h\\).\n\\[\n\\alpha = \\arctan\\left(\\cfrac{h}{a/2}\\right)\n\\] \\[\n\\tan(\\alpha) = \\cfrac{h}{a/2}\n\\] \\[\nh = \\tan(\\alpha) \\cdot a/2\n\\]"
+    "section": "5.6 Pyramide",
+    "text": "5.6 Pyramide\nDas Volumen \\(V\\) einer Pyramide berechnet sich dann wie folgt.\n\\[\nV = \\cfrac{1}{3} \\cdot h \\cdot a^2\n\\] Die Mantelfläche \\(M\\) einer Pyramide errechnet sich dann folgendermaßen.\n\\[\nM = 2 \\cdot a \\cdot h_a\n\\]\nDie Oberfläche \\(O\\) einer Pyramide wird dann wie folgt bestimmt.\n\\[\nO = a^2 + 2 \\cdot a \\cdot h_a\n\\]\nDie Grundfläche \\(G\\) berechnet sich dann nach der folgenden Formel.\n\\[\nG = a^2\n\\]\nDie Höhe \\(h\\) einer Pyramide lässt sich wie folgt berechnen.\n\\[\nh = \\sqrt{h_a^2 \\cdot \\left(\\cfrac{a}{2}\\right)^2}\n\\]\nOder aber über die Neigung der Seitenfläche \\(\\alpha\\) durch Umstellung der Formel nach \\(h\\).\n\\[\n\\alpha = \\arctan\\left(\\cfrac{h}{a/2}\\right)\n\\] \\[\n\\tan(\\alpha) = \\cfrac{h}{a/2}\n\\] \\[\nh = \\tan(\\alpha) \\cdot a/2\n\\]"
+  },
+  {
+    "objectID": "geometry-volume.html#kugel",
+    "href": "geometry-volume.html#kugel",
+    "title": "5  Volumenberechung",
+    "section": "5.2 Kugel",
+    "text": "5.2 Kugel\nDas Volumen \\(V\\) einer Kugel berechnet sich dann wie folgt.\n\\[\nV = \\cfrac{4}{3}\\cdot \\pi \\cdot r^3\n\\]\nDie Oberfläche \\(O\\) einer Kugel wird dann wie folgt bestimmt.\n\\[\nO = 4 \\cdot \\pi \\cdot r^2\n\\]\nDer Umfang \\(U\\) ergibt sich dann durch folgende Formel\n\\[\nU = 2 \\cdot \\pi \\cdot r\n\\]"
   }
 ]
