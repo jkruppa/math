@@ -186,7 +186,9 @@ h^2 &= a^2 - p^2
 $$
 Im Weiteren wollen wir uns nochmal die Winkel ein einem rechtwinkligen Dreieck anschauen und wie dort die Seitenlängen mit den Winkeln zusammenhängen.
 
-In unserem Fall liegt der rechte Winkel bei der Ecke C, somit berechnet sich die gegenüberliegende Seite $c$ nach folgenden Formeln. Ersteinmal mit der Betrachtung des Winkels $\alpha$.
+![](images/dreieck_recht_winkel.png){fig-align="center" width="60%"}
+
+In unserem Fall liegt der rechte Winkel bei der Ecke C, somit berechnet sich die gegenüberliegende Seite $c$ nach folgenden Formeln. Erst einmal mit der Betrachtung des Winkels $\alpha$.
 
 ::: column-margin
 
@@ -216,6 +218,8 @@ $$
 b = c \cdot \cos (\alpha) = c \cdot \sin (\beta),\\
 b = a \cdot \cot (\alpha) = a \cdot \tan (\beta)
 $$
+Für ein beliebiges Dreieck mit unterschiedlichen Winkeln gibt es eine Menge an Berechnungsmöglichkeiten. Hier bietet dann wieder die Wikipedia eine Übersicht über alle [Kongruenzsätze eines Dreiecks](https://de.wikipedia.org/wiki/Dreieck). Ich werde hier nicht nochmal die Wikipedia kopieren sondern dann in den entsprechenden Inhalten auf die Sätze eingehen.
+
 
 ## Kreis
 
