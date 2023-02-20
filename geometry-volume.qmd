@@ -162,6 +162,10 @@ $$
 
 ## Pyramide
 
+Die Pyramide ist im Prinzip ein Kegel auf einer quadratischen Grundfläche. So häufig nutzen wir die Pyramide nicht in der praktischen Anwendung, aber wir können an der Pyramide gut rumrechnen und uns nochmal mit den Winkelsätzen beschäftigen.
+
+![](images/pyramide.png){fig-align="center" width="40%"}
+
 Das Volumen $V$ einer Pyramide berechnet sich dann wie folgt.
 
 $$
@@ -202,3 +206,15 @@ $$
 $$
 h = \tan(\alpha) \cdot a/2
 $$
+
+Die Diagonale durch die Mitte der Grundfläche können wir wie folgt berechnen.
+
+$$
+d = \sqrt{a^2 + a^2} = \sqrt{2} \cdot a
+$$
+Dann ergibt sich der Winkel $\beta$ am der Seitenspitze der Pyramide wie folgt.
+
+$$
+\beta = \arctan\left(\cfrac{h}{d/2}\right)
+$$
+
