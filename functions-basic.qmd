@@ -19,6 +19,8 @@ https://en.wikipedia.org/wiki/Cubic_function
 https://en.wikipedia.org/wiki/Polynomial
 
 
+https://www.rhetos.de/html/lex/exponentielle_saettigungsfunktion.htm
+
 ```{r}
 #| echo: false
 #| message: false
