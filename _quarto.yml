@@ -12,7 +12,7 @@ crossref:
 book:
   title: "Skript Mathematik"
   author: "Prof. Dr. Jochen Kruppa"
-  date: "15. February 2023"
+  date: "23. February 2023"
   cover-image: cover.png
   chapters:
     - index.qmd
@@ -28,10 +28,10 @@ book:
       - probability-basic.qmd
       - probability-conditional.qmd
       - probability-distribution.qmd
-#    - part: functions-preface.qmd
-#      chapters: 
-#      - functions-basic.qmd
-#      - functions-distance.qmd
+    - part: functions-preface.qmd
+      chapters: 
+      - functions-basic.qmd
+      - functions-distance.qmd
     - part: vector-preface.qmd
       chapters: 
       - vector-basic.qmd

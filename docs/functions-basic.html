@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Skript Mathematik - 5&nbsp; Volumenberechung</title>
+<title>Skript Mathematik - 9&nbsp; Grundlagen Funktionen</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./probability-preface.html" rel="next">
-<link href="./geometry-area.html" rel="prev">
+<link href="./functions-distance.html" rel="next">
+<link href="./functions-preface.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -65,13 +65,13 @@ ul.task-list li input[type="checkbox"] {
 
 </head>
 
-<body class="nav-sidebar floating slimcontent">
+<body class="nav-sidebar floating">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Volumenberechung</span></h1>
+      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Grundlagen Funktionen</span></h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -129,7 +129,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./geometry-volume.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Volumenberechung</span></a>
+  <a href="./geometry-volume.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Volumenberechung</span></a>
   </div>
 </li>
       </ul>
@@ -169,7 +169,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./functions-basic.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Grundlagen Funktionen</span></a>
+  <a href="./functions-basic.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Grundlagen Funktionen</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -208,12 +208,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Inhaltsverzeichnis</h2>
    
   <ul>
-  <li><a href="#würfel" id="toc-würfel" class="nav-link active" data-scroll-target="#würfel"><span class="toc-section-number">5.1</span>  Würfel</a></li>
-  <li><a href="#kugel" id="toc-kugel" class="nav-link" data-scroll-target="#kugel"><span class="toc-section-number">5.2</span>  Kugel</a></li>
-  <li><a href="#rechteckige-säule" id="toc-rechteckige-säule" class="nav-link" data-scroll-target="#rechteckige-säule"><span class="toc-section-number">5.3</span>  Rechteckige Säule</a></li>
-  <li><a href="#zylinder" id="toc-zylinder" class="nav-link" data-scroll-target="#zylinder"><span class="toc-section-number">5.4</span>  Zylinder</a></li>
-  <li><a href="#kegel" id="toc-kegel" class="nav-link" data-scroll-target="#kegel"><span class="toc-section-number">5.5</span>  Kegel</a></li>
-  <li><a href="#pyramide" id="toc-pyramide" class="nav-link" data-scroll-target="#pyramide"><span class="toc-section-number">5.6</span>  Pyramide</a></li>
+  <li><a href="#funktionen" id="toc-funktionen" class="nav-link active" data-scroll-target="#funktionen"><span class="toc-section-number">9.1</span>  Funktionen</a></li>
   </ul>
 </nav>
     </div>
@@ -222,7 +217,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span id="sec-volume" class="quarto-section-identifier d-none d-lg-block"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Volumenberechung</span></span></h1>
+<h1 class="title"><span id="sec-prob-basic" class="quarto-section-identifier d-none d-lg-block"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Grundlagen Funktionen</span></span></h1>
 </div>
 
 
@@ -240,174 +235,45 @@ ul.task-list li input[type="checkbox"] {
 <div class="cell">
 
 </div>
-<p><em>Version vom February 23, 2023 um 17:26:22</em></p>
-<p>In diesem Abschnitt wollen wir einmal das Volumen <span class="math inline">\(V\)</span>, sowie die Oberfläche <span class="math inline">\(O\)</span> und die Grundfläche <span class="math inline">\(G\)</span> von verschiedenen geometrischen Objekten berechnen. Wie so oft musst du dir üerlegen, was bei deinem Objekt jetzt die Grundfläche ist. Aber das ist dan meist im konkreten Fall sehr klar.</p>
-<section id="würfel" class="level2" data-number="5.1">
-<h2 data-number="5.1" class="anchored" data-anchor-id="würfel"><span class="header-section-number">5.1</span> Würfel</h2>
-<p>Im Folgenden sehen wir einmal einen Würfel abgebildet.</p>
+<p><em>Version vom February 23, 2023 um 17:26:39</em></p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/wuerfel.png" class="img-fluid figure-img" style="width:30.0%"></p>
+<p><img src="images/caution.png" class="img-fluid figure-img" style="width:50.0%"></p>
 </figure>
 </div>
-<p>Das Volumen <span class="math inline">\(V\)</span> eines Würfels berechnet sich dann wie folgt.</p>
+<section id="funktionen" class="level2 page-columns page-full" data-number="9.1">
+<h2 data-number="9.1" class="anchored" data-anchor-id="funktionen"><span class="header-section-number">9.1</span> Funktionen</h2>
+<p>https://www.statforbiology.com/nonlinearregression/usefulequations#michaelis-menten_equation</p>
+<p>https://en.wikipedia.org/wiki/Cubic_function</p>
+<p>https://en.wikipedia.org/wiki/Polynomial</p>
+<p>https://de.wikipedia.org/wiki/Exponentielles_Wachstum</p>
+<p>https://www.rhetos.de/html/lex/exponentielle_saettigungsfunktion.htm</p>
 <p><span class="math display">\[
-V = a^3
+  \sum_{n=0}^N r^n = \cfrac{r^{N + 1} -1}{r - 1}
 \]</span></p>
-<p>Die Oberfläche <span class="math inline">\(O\)</span> eines Würfels wird dann wie folgt bestimmt.</p>
-<p><span class="math display">\[
-O = 6 \cdot a^2
-\]</span></p>
-<p>Die Grundfläche <span class="math inline">\(G\)</span> berechnet sich dann nach der folgenden Formel.</p>
-<p><span class="math display">\[
-G = a^2
-\]</span></p>
-<p>Wenn wir an der Diagonalen <span class="math inline">\(D\)</span> interessiert sind, nutzen wir dann folgende Formel.</p>
-<p><span class="math display">\[
-D = a\sqrt{3}
-\]</span></p>
-</section>
-<section id="kugel" class="level2" data-number="5.2">
-<h2 data-number="5.2" class="anchored" data-anchor-id="kugel"><span class="header-section-number">5.2</span> Kugel</h2>
-<p>Das Volumen <span class="math inline">\(V\)</span> einer Kugel berechnet sich dann wie folgt.</p>
-<p><span class="math display">\[
-V = \cfrac{4}{3}\cdot \pi \cdot r^3
-\]</span></p>
-<p>Die Oberfläche <span class="math inline">\(O\)</span> einer Kugel wird dann wie folgt bestimmt.</p>
-<p><span class="math display">\[
-O = 4 \cdot \pi \cdot r^2
-\]</span></p>
-<p>Der Umfang <span class="math inline">\(U\)</span> ergibt sich dann durch folgende Formel</p>
-<p><span class="math display">\[
-U = 2 \cdot \pi \cdot r
-\]</span></p>
-</section>
-<section id="rechteckige-säule" class="level2" data-number="5.3">
-<h2 data-number="5.3" class="anchored" data-anchor-id="rechteckige-säule"><span class="header-section-number">5.3</span> Rechteckige Säule</h2>
-<p>Die rechteckige Säule entspricht dem Quadrat als Grundfläche. Meistens nutzen wir die Säule für die Berechnung von Luftvolumen. Wenn wir an dem Volumen eines Raumes interssiert sind, dann bietet sich die rechteckige Säule an.</p>
-<div class="quarto-figure quarto-figure-center">
+<div id="fig-normal-02" class="cell column-page quarto-layout-panel">
 <figure class="figure">
-<p><img src="images/saeule.png" class="img-fluid figure-img" style="width:20.0%"></p>
-</figure>
-</div>
-<p>Das Volumen <span class="math inline">\(V\)</span> einer rechteckigen Säule berechnet sich dann wie folgt.</p>
-<p><span class="math display">\[
-V = G \cdot h = a \cdot b \cdot c
-\]</span></p>
-<p>Die Oberfläche <span class="math inline">\(O\)</span> einer rechteckigen Säule wird dann wie folgt bestimmt.</p>
-<p><span class="math display">\[
-O = 2ab + 2ac + 2bc  
-\]</span></p>
-<p>Die Grundfläche <span class="math inline">\(G\)</span> berechnet sich dann nach der folgenden Formel.</p>
-<p><span class="math display">\[
-G = a \cdot b = \cfrac{V}{h}
-\]</span></p>
-</section>
-<section id="zylinder" class="level2 page-columns page-full" data-number="5.4">
-<h2 data-number="5.4" class="anchored" data-anchor-id="zylinder"><span class="header-section-number">5.4</span> Zylinder</h2>
-<p>Der Zylinder bietet sich an für die Berechnung von Inhalten, da meistens dann die Töpfe oder die Silos einem Zylinder folgen. Wir haben also Töpfe als ganz kleine Zylinder oder eben Silos als riesige Zylinder.</p>
-<div class="quarto-figure quarto-figure-center">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="cell-output-display quarto-layout-cell quarto-layout-cell-subref" style="flex-basis: 50.0%;justify-content: center;">
+<div id="fig-normal-02-1" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><img src="images/zylinder.png" class="img-fluid figure-img" style="width:20.0%"></p>
+<p><img src="functions-basic_files/figure-html/fig-normal-02-1.png" class="img-fluid figure-img" data-ref-parent="fig-normal-02" width="480"></p>
+<p></p><figcaption class="figure-caption">(a) Drei Normalverteilungen mit Varianzhomogenität.</figcaption><p></p>
 </figure>
 </div>
-
-<div class="no-row-height column-margin column-container"><div class="">
-<p>Beachte auch folgenden Zusammenhang für den Zylinder:</p>
-<p><span class="math display">\[
-r = \sqrt{\cfrac{V}{\pi \cdot h}}
-\]</span></p>
-</div></div><p>Das Volumen <span class="math inline">\(V\)</span> eines Zylinders berechnet sich dann wie folgt.</p>
-<p><span class="math display">\[
-V = G \cdot h = r^2 \cdot \pi \cdot h
-\]</span></p>
-<p>Die Oberfläche <span class="math inline">\(O\)</span> eines Zylinders wird dann wie folgt bestimmt.</p>
-<p><span class="math display">\[
-O = 2 \cdot G + 2r \cdot \pi \cdot h
-\]</span> Die Grundfläche <span class="math inline">\(G\)</span> berechnet sich dann nach der folgenden Formel.</p>
-<p><span class="math display">\[
-G = r^2 \cdot \pi
-\]</span></p>
-<p>Die Höhe <span class="math inline">\(h\)</span> des Zylinders können wir dann wie folgt bestimmen.</p>
-<p><span class="math display">\[
-h = \cfrac{V}{G} = \cfrac{V}{r^2 \cdot \pi}
-\]</span></p>
-</section>
-<section id="kegel" class="level2 page-columns page-full" data-number="5.5">
-<h2 data-number="5.5" class="anchored" data-anchor-id="kegel"><span class="header-section-number">5.5</span> Kegel</h2>
-<p>Der Kegel ist ein Kreis mit einem Hut auf und kann deshalb eventuell für die Berechnungen von Volumen unter einem Netz genutzt werden. In der Praxis ist die Anwendung eher von spezieller Natur.</p>
-<div class="quarto-figure quarto-figure-center">
+</div>
+<div class="cell-output-display quarto-layout-cell quarto-layout-cell-subref" style="flex-basis: 50.0%;justify-content: center;">
+<div id="fig-normal-02-2" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><img src="images/kegel.png" class="img-fluid figure-img" style="width:20.0%"></p>
+<p><img src="functions-basic_files/figure-html/fig-normal-02-2.png" class="img-fluid figure-img" data-ref-parent="fig-normal-02" width="480"></p>
+<p></p><figcaption class="figure-caption">(b) Drei Normalverteilungen unter Varianzheterogenität.</figcaption><p></p>
 </figure>
 </div>
-
-<div class="no-row-height column-margin column-container"><div class="">
-<p>Beachte auch folgenden Zusammenhang für den Kegel:</p>
-<p><span class="math display">\[
-r = \sqrt{\cfrac{3V}{\pi \cdot h}}
-\]</span></p>
-<p><span class="math display">\[
-h = \sqrt{s^2 - r^2}
-\]</span></p>
-<p><span class="math display">\[
-s = \sqrt{r^2 + h^2}
-\]</span></p>
-</div></div><p>Das Volumen <span class="math inline">\(V\)</span> eines Kegels berechnet sich dann wie folgt.</p>
-<p><span class="math display">\[
-V = \cfrac{1}{3} \cdot h \cdot r^2 \cdot \pi
-\]</span></p>
-<p>Die Oberfläche <span class="math inline">\(O\)</span> eines Kegels wird dann wie folgt bestimmt.</p>
-<p><span class="math display">\[
-O = r^2 \cdot \pi \cdot s
-\]</span></p>
-<p>Die Grundfläche <span class="math inline">\(G\)</span> berechnet sich dann nach der folgenden Formel.</p>
-<p><span class="math display">\[
-G = r^2 \cdot \pi
-\]</span></p>
-</section>
-<section id="pyramide" class="level2" data-number="5.6">
-<h2 data-number="5.6" class="anchored" data-anchor-id="pyramide"><span class="header-section-number">5.6</span> Pyramide</h2>
-<p>Die Pyramide ist im Prinzip ein Kegel auf einer quadratischen Grundfläche. So häufig nutzen wir die Pyramide nicht in der praktischen Anwendung, aber wir können an der Pyramide gut rumrechnen und uns nochmal mit den Winkelsätzen beschäftigen.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/pyramide.png" class="img-fluid figure-img" style="width:40.0%"></p>
+</div>
+</div>
+<p></p><figcaption class="figure-caption">Abbildung&nbsp;9.1— Histogramm verschiedener Normalverteilungen mit unterschiedlichen Mittelwerten.</figcaption><p></p>
 </figure>
 </div>
-<p>Das Volumen <span class="math inline">\(V\)</span> einer Pyramide berechnet sich dann wie folgt.</p>
-<p><span class="math display">\[
-V = \cfrac{1}{3} \cdot h \cdot a^2
-\]</span> Die Mantelfläche <span class="math inline">\(M\)</span> einer Pyramide errechnet sich dann folgendermaßen.</p>
-<p><span class="math display">\[
-M = 2 \cdot a \cdot h_a
-\]</span></p>
-<p>Die Oberfläche <span class="math inline">\(O\)</span> einer Pyramide wird dann wie folgt bestimmt.</p>
-<p><span class="math display">\[
-O = a^2 + 2 \cdot a \cdot h_a
-\]</span></p>
-<p>Die Grundfläche <span class="math inline">\(G\)</span> berechnet sich dann nach der folgenden Formel.</p>
-<p><span class="math display">\[
-G = a^2
-\]</span></p>
-<p>Die Höhe <span class="math inline">\(h\)</span> einer Pyramide lässt sich wie folgt berechnen.</p>
-<p><span class="math display">\[
-h = \sqrt{h_a^2 \cdot \left(\cfrac{a}{2}\right)^2}
-\]</span></p>
-<p>Oder aber über die Neigung der Seitenfläche <span class="math inline">\(\alpha\)</span> durch Umstellung der Formel nach <span class="math inline">\(h\)</span>.</p>
-<p><span class="math display">\[
-\alpha = \arctan\left(\cfrac{h}{a/2}\right)
-\]</span> <span class="math display">\[
-\tan(\alpha) = \cfrac{h}{a/2}
-\]</span> <span class="math display">\[
-h = \tan(\alpha) \cdot a/2
-\]</span></p>
-<p>Die Diagonale durch die Mitte der Grundfläche können wir wie folgt berechnen.</p>
-<p><span class="math display">\[
-d = \sqrt{a^2 + a^2} = \sqrt{2} \cdot a
-\]</span> Dann ergibt sich der Winkel <span class="math inline">\(\beta\)</span> am der Seitenspitze der Pyramide wie folgt.</p>
-<p><span class="math display">\[
-\beta = \arctan\left(\cfrac{h}{d/2}\right)
-\]</span></p>
 
 
 </section>
@@ -548,13 +414,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./geometry-area.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Flächenberechung</span></span>
+      <a href="./functions-preface.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Mathematische Funktionen</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./probability-preface.html" class="pagination-link">
-        <span class="nav-page-text">Wahrscheinlichkeiten</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./functions-distance.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Distanzen</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
