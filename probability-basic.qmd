@@ -53,3 +53,5 @@ In @tbl-logical-figures
 | ![](images/schnitt_6.png) |         $B \subset A$          |                 $B$ ist Teilmenge von $A$                 |
 
 : Test {#tbl-logical-figures}
+
+## Bedingte Wahrscheinlichkeiten {#sec-prob-cond}

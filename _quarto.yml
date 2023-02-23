@@ -26,12 +26,12 @@ book:
     - part: probability-preface.qmd
       chapters:
       - probability-basic.qmd
-      - probability-conditional.qmd
+#      - probability-conditional.qmd
       - probability-distribution.qmd
     - part: functions-preface.qmd
       chapters: 
       - functions-basic.qmd
-      - functions-distance.qmd
+#      - functions-distance.qmd
     - part: vector-preface.qmd
       chapters: 
       - vector-basic.qmd

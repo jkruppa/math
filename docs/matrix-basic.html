@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Skript Mathematik - 12&nbsp; Berechnungen mit Matrizen</title>
+<title>Skript Mathematik - 10&nbsp; Berechnungen mit Matrizen</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -133,7 +133,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Berechnungen mit Matrizen</span></h1>
+      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Berechnungen mit Matrizen</span></h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -211,12 +211,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./probability-conditional.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Bedingte Wahrscheinlichkeiten</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./probability-distribution.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Wahrscheinlichkeitsverteilungen</span></a>
+  <a href="./probability-distribution.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Wahrscheinlichkeitsverteilungen</span></a>
   </div>
 </li>
       </ul>
@@ -231,12 +226,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./functions-basic.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Grundlagen Funktionen</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./functions-distance.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Distanzen</span></a>
+  <a href="./functions-basic.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Grundlagen Funktionen</span></a>
   </div>
 </li>
       </ul>
@@ -251,12 +241,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./vector-basic.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Berechnungen mit Vektoren</span></a>
+  <a href="./vector-basic.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Berechnungen mit Vektoren</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./matrix-basic.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Berechnungen mit Matrizen</span></a>
+  <a href="./matrix-basic.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Berechnungen mit Matrizen</span></a>
   </div>
 </li>
       </ul>
@@ -270,14 +260,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     <h2 id="toc-title">Inhaltsverzeichnis</h2>
    
   <ul>
-  <li><a href="#grundlagen-matrizen" id="toc-grundlagen-matrizen" class="nav-link active" data-scroll-target="#grundlagen-matrizen"><span class="toc-section-number">12.1</span>  Grundlagen Matrizen</a></li>
-  <li><a href="#einheitsmatrix" id="toc-einheitsmatrix" class="nav-link" data-scroll-target="#einheitsmatrix"><span class="toc-section-number">12.2</span>  Einheitsmatrix</a></li>
-  <li><a href="#diagonalmatrix" id="toc-diagonalmatrix" class="nav-link" data-scroll-target="#diagonalmatrix"><span class="toc-section-number">12.3</span>  Diagonalmatrix</a></li>
-  <li><a href="#stochastische-matrix" id="toc-stochastische-matrix" class="nav-link" data-scroll-target="#stochastische-matrix"><span class="toc-section-number">12.4</span>  Stochastische Matrix</a></li>
-  <li><a href="#vom-linearen-gleichungssystem-zur-matrix" id="toc-vom-linearen-gleichungssystem-zur-matrix" class="nav-link" data-scroll-target="#vom-linearen-gleichungssystem-zur-matrix"><span class="toc-section-number">12.5</span>  Vom linearen Gleichungssystem zur Matrix</a></li>
-  <li><a href="#zwei-matrizen-addieren" id="toc-zwei-matrizen-addieren" class="nav-link" data-scroll-target="#zwei-matrizen-addieren"><span class="toc-section-number">12.6</span>  Zwei Matrizen addieren</a></li>
-  <li><a href="#eine-matrix-mit-einer-zahl-multiplizieren" id="toc-eine-matrix-mit-einer-zahl-multiplizieren" class="nav-link" data-scroll-target="#eine-matrix-mit-einer-zahl-multiplizieren"><span class="toc-section-number">12.7</span>  Eine Matrix mit einer Zahl multiplizieren</a></li>
-  <li><a href="#sec-mat-mult" id="toc-sec-mat-mult" class="nav-link" data-scroll-target="#sec-mat-mult"><span class="toc-section-number">12.8</span>  Eine Matrix mit einem Vektor multiplizieren</a></li>
+  <li><a href="#grundlagen-matrizen" id="toc-grundlagen-matrizen" class="nav-link active" data-scroll-target="#grundlagen-matrizen"><span class="toc-section-number">10.1</span>  Grundlagen Matrizen</a></li>
+  <li><a href="#einheitsmatrix" id="toc-einheitsmatrix" class="nav-link" data-scroll-target="#einheitsmatrix"><span class="toc-section-number">10.2</span>  Einheitsmatrix</a></li>
+  <li><a href="#diagonalmatrix" id="toc-diagonalmatrix" class="nav-link" data-scroll-target="#diagonalmatrix"><span class="toc-section-number">10.3</span>  Diagonalmatrix</a></li>
+  <li><a href="#stochastische-matrix" id="toc-stochastische-matrix" class="nav-link" data-scroll-target="#stochastische-matrix"><span class="toc-section-number">10.4</span>  Stochastische Matrix</a></li>
+  <li><a href="#vom-linearen-gleichungssystem-zur-matrix" id="toc-vom-linearen-gleichungssystem-zur-matrix" class="nav-link" data-scroll-target="#vom-linearen-gleichungssystem-zur-matrix"><span class="toc-section-number">10.5</span>  Vom linearen Gleichungssystem zur Matrix</a></li>
+  <li><a href="#zwei-matrizen-addieren" id="toc-zwei-matrizen-addieren" class="nav-link" data-scroll-target="#zwei-matrizen-addieren"><span class="toc-section-number">10.6</span>  Zwei Matrizen addieren</a></li>
+  <li><a href="#eine-matrix-mit-einer-zahl-multiplizieren" id="toc-eine-matrix-mit-einer-zahl-multiplizieren" class="nav-link" data-scroll-target="#eine-matrix-mit-einer-zahl-multiplizieren"><span class="toc-section-number">10.7</span>  Eine Matrix mit einer Zahl multiplizieren</a></li>
+  <li><a href="#sec-mat-mult" id="toc-sec-mat-mult" class="nav-link" data-scroll-target="#sec-mat-mult"><span class="toc-section-number">10.8</span>  Eine Matrix mit einem Vektor multiplizieren</a></li>
   </ul>
 </nav>
     </div>
@@ -286,7 +276,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span id="sec-mat" class="quarto-section-identifier d-none d-lg-block"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Berechnungen mit Matrizen</span></span></h1>
+<h1 class="title"><span id="sec-mat" class="quarto-section-identifier d-none d-lg-block"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Berechnungen mit Matrizen</span></span></h1>
 </div>
 
 
@@ -304,9 +294,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="cell">
 
 </div>
-<p><em>Version vom February 23, 2023 um 17:26:54</em></p>
-<section id="grundlagen-matrizen" class="level2 page-columns page-full" data-number="12.1">
-<h2 data-number="12.1" class="anchored" data-anchor-id="grundlagen-matrizen"><span class="header-section-number">12.1</span> Grundlagen Matrizen</h2>
+<p><em>Version vom February 23, 2023 um 19:42:24</em></p>
+<section id="grundlagen-matrizen" class="level2 page-columns page-full" data-number="10.1">
+<h2 data-number="10.1" class="anchored" data-anchor-id="grundlagen-matrizen"><span class="header-section-number">10.1</span> Grundlagen Matrizen</h2>
 
 <div class="no-row-height column-margin column-container"><div class="">
 <p>Du findest dann hinter diesem Link auch <a href="https://www.studyhelp.de/online-lernen/mathe/">Mathehilfe zu Vektor, Matrizen und Co.</a>. Du kannst auf der Seite mal stöbern, ob du da was findest was dir hilft.</p>
@@ -346,8 +336,8 @@ a_{21} &amp; a_{22} &amp; a_{23}
 </div>
 <p>Schauen wir uns nun verschiedene Matrizen an, die in dem mathematischen Maße besonders sind, dass diese Matrizen einen eigenen Namen erhalten haben.</p>
 </section>
-<section id="einheitsmatrix" class="level2" data-number="12.2">
-<h2 data-number="12.2" class="anchored" data-anchor-id="einheitsmatrix"><span class="header-section-number">12.2</span> Einheitsmatrix</h2>
+<section id="einheitsmatrix" class="level2" data-number="10.2">
+<h2 data-number="10.2" class="anchored" data-anchor-id="einheitsmatrix"><span class="header-section-number">10.2</span> Einheitsmatrix</h2>
 <p>Die Einheitsmatrix <span class="math inline">\(A_E\)</span> besteht nur aus 0’en auf der Nebendiagonalen und 1’sen auf der Diagonalen. Damit ist die Matrix der Standard in vielen statistischen Verfahren, wenn wir keine besondere Varianzstruktur annehmen.</p>
 <p><span class="math display">\[
 A_E =
@@ -358,8 +348,8 @@ A_E =
 \end{pmatrix}
 \]</span></p>
 </section>
-<section id="diagonalmatrix" class="level2" data-number="12.3">
-<h2 data-number="12.3" class="anchored" data-anchor-id="diagonalmatrix"><span class="header-section-number">12.3</span> Diagonalmatrix</h2>
+<section id="diagonalmatrix" class="level2" data-number="10.3">
+<h2 data-number="10.3" class="anchored" data-anchor-id="diagonalmatrix"><span class="header-section-number">10.3</span> Diagonalmatrix</h2>
 <p>Die Diagnoalmatrix <span class="math inline">\(A_D\)</span> besteht nur aus 0’en auf der Nebendiagonalen und beliebigen Werten auf der Diagonalen. Häufig sind die Werte in der Statistik auf der Diagonalen die Varianzen. Wenn die Variablen <em>nicht</em> miteinander korrelieren, dann sind die Nebendiagonalen 0.</p>
 <p><span class="math display">\[
 A_D=\begin{pmatrix}
@@ -403,8 +393,8 @@ math       0.5029173  0.8098994 1.0000000</code></pre>
 </div>
 </div>
 </section>
-<section id="stochastische-matrix" class="level2" data-number="12.4">
-<h2 data-number="12.4" class="anchored" data-anchor-id="stochastische-matrix"><span class="header-section-number">12.4</span> Stochastische Matrix</h2>
+<section id="stochastische-matrix" class="level2" data-number="10.4">
+<h2 data-number="10.4" class="anchored" data-anchor-id="stochastische-matrix"><span class="header-section-number">10.4</span> Stochastische Matrix</h2>
 <p>Eine stochastische Matrix <span class="math inline">\(A_S\)</span> enthält nur Zahlen zwischen 0 und 1. Damit besteht eine stochastische Matrix aus Wahrscheinlichkeiten. Die Wahrscheinlichkeiten addieren sich <em>entweder</em> über die Zeilen oder über die Spalten zu 1 auf. In selten Fällem kann es auch sein, dass sich die Zeilen und Spalten auf 1 aufaddieren.</p>
 <p><span class="math display">\[
 A_S=\begin{pmatrix}
@@ -414,8 +404,8 @@ A_S=\begin{pmatrix}
 \end{pmatrix}
 \]</span></p>
 </section>
-<section id="vom-linearen-gleichungssystem-zur-matrix" class="level2" data-number="12.5">
-<h2 data-number="12.5" class="anchored" data-anchor-id="vom-linearen-gleichungssystem-zur-matrix"><span class="header-section-number">12.5</span> Vom linearen Gleichungssystem zur Matrix</h2>
+<section id="vom-linearen-gleichungssystem-zur-matrix" class="level2" data-number="10.5">
+<h2 data-number="10.5" class="anchored" data-anchor-id="vom-linearen-gleichungssystem-zur-matrix"><span class="header-section-number">10.5</span> Vom linearen Gleichungssystem zur Matrix</h2>
 <p>Eine Stärke von Matrizen in der Statistik ist, dass wir mit der Matrix auch Gleichungssysteme darstellen können. Damit können wir in der linearen Regression auch komplexere Modelle sauber darstellen. Im Folgenden siehst du drei Gleichungen.</p>
 <p><span class="math display">\[
 \begin{aligned}
@@ -441,10 +431,10 @@ x_1 \\ x_2 \\ x_3
 15 \\
 88
 \end{pmatrix}
-\]</span> Du kannst in den Abschnitt <a href="#sec-mat-mult"><span>Kapitel&nbsp;12.8</span></a> springen um dir einmal an einem weiteren Beispiel die Matrixmultiplikation anzuschauen.</p>
+\]</span> Du kannst in den Abschnitt <a href="#sec-mat-mult"><span>Kapitel&nbsp;10.8</span></a> springen um dir einmal an einem weiteren Beispiel die Matrixmultiplikation anzuschauen.</p>
 </section>
-<section id="zwei-matrizen-addieren" class="level2" data-number="12.6">
-<h2 data-number="12.6" class="anchored" data-anchor-id="zwei-matrizen-addieren"><span class="header-section-number">12.6</span> Zwei Matrizen addieren</h2>
+<section id="zwei-matrizen-addieren" class="level2" data-number="10.6">
+<h2 data-number="10.6" class="anchored" data-anchor-id="zwei-matrizen-addieren"><span class="header-section-number">10.6</span> Zwei Matrizen addieren</h2>
 <p>Wenn wir zwei Matrizen <span class="math inline">\(A\)</span> und <span class="math inline">\(B\)</span> haben, die die gleiche Dimension haben, dann können wir die beiden Matrizen einfach addieren.</p>
 <p><span class="math display">\[
 A=\begin{pmatrix}
@@ -489,8 +479,8 @@ a_{21}\pm b_{21} &amp; a_{22}\pm b_{22}
 </div>
 <p>Wir nutzen die Addition relativ selten. Häufiger werden wir eine Matrix mit einer Zahl oder einem Vektor multiplizieren.</p>
 </section>
-<section id="eine-matrix-mit-einer-zahl-multiplizieren" class="level2" data-number="12.7">
-<h2 data-number="12.7" class="anchored" data-anchor-id="eine-matrix-mit-einer-zahl-multiplizieren"><span class="header-section-number">12.7</span> Eine Matrix mit einer Zahl multiplizieren</h2>
+<section id="eine-matrix-mit-einer-zahl-multiplizieren" class="level2" data-number="10.7">
+<h2 data-number="10.7" class="anchored" data-anchor-id="eine-matrix-mit-einer-zahl-multiplizieren"><span class="header-section-number">10.7</span> Eine Matrix mit einer Zahl multiplizieren</h2>
 <p>Wenn wir eine eine Matrix <span class="math inline">\(A\)</span> mit einer Zahl <span class="math inline">\(r\)</span> oder auch Skalar genannt multiplizieren dann multiplizieren wir jeden einzelnen Wert der Matrix mit dieser Zahl.</p>
 <p><span class="math display">\[
 r \cdot
@@ -522,8 +512,8 @@ r \cdot
 </div>
 <p>Neben der Multiplikation mit einer Zahl brauchen wir häufiger die Multiplikation einer Matrix mit einem Vektor.</p>
 </section>
-<section id="sec-mat-mult" class="level2" data-number="12.8">
-<h2 data-number="12.8" class="anchored" data-anchor-id="sec-mat-mult"><span class="header-section-number">12.8</span> Eine Matrix mit einem Vektor multiplizieren</h2>
+<section id="sec-mat-mult" class="level2" data-number="10.8">
+<h2 data-number="10.8" class="anchored" data-anchor-id="sec-mat-mult"><span class="header-section-number">10.8</span> Eine Matrix mit einem Vektor multiplizieren</h2>
 <p>Wenn wir eine Matrix mit einem Vektor multiplizieren wollen, dann müssen die Matrix und der Vektor zueinander passen. In unseren Fällen, wie wir häufig betrachten muss die Matrix die Anzahl an Spalten haben die der Länge des Vektors enspricht. In unseren Beispiel haben wir drei Spalten und somit muss der Vektor auch eine Länge von drei Einträgen haben.</p>
 <p><span class="math display">\[
 \begin{pmatrix}
@@ -709,7 +699,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="./vector-basic.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Berechnungen mit Vektoren</span></span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Berechnungen mit Vektoren</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
