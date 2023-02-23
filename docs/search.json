@@ -67,7 +67,7 @@
     "href": "geometry-preface.html",
     "title": "Von Maßzahlen, Flächen und Volumen",
     "section": "",
-    "text": "Version vom February 23, 2023 um 19:41:49\nIn dem folgenden Kapitel zu den Maßzahlen von Einheiten sowie der Fläche und dem Volumne wollen wir uns einmal mit den Grundlagen der Berechungen beschäftigen. Wir brauchen diese Werkzeuge um zu bestimmen, wie groß ein Teilstück sein soll oder aber wenn wir wissen wollen, wie viel Torf wir bestellen müssen.\nIm ersten Abschnitt schauen wir uns einmal Flächenmaße und Volumenmaße an. Wie sind die Abkürzungen für die entsprechenden Maßzahlen und wie lauten die Abkürzungen für sehr große oder sehr kleine Zahlen.\nDann schauen wir noch einmal auf die Flächen und Umfänge von gängigen geometrischen Objekten. Welche Eigenschaften hat das Quadrat, das Rechteck und der Kreis? Wir merken uns hier natürlich nur die wichtigsten Formeln, den Rest kannst du dann immer mal wieder bachschlagen.\nAm Ende wollen wir dann die Flächen noch ins Volumen bringen. Hier rechnen wir dann das Volumne eines Würfels oder eines Quaders aus. Häufig brauchen wir diese Informationen, wenn wir berechnen wollen, wie viel Torf wir brauchen oder wie viel Volumen an Futter verbraucht wird bzw. eingekauft werden muss."
+    "text": "Version vom February 23, 2023 um 19:46:57\nIn dem folgenden Kapitel zu den Maßzahlen von Einheiten sowie der Fläche und dem Volumne wollen wir uns einmal mit den Grundlagen der Berechungen beschäftigen. Wir brauchen diese Werkzeuge um zu bestimmen, wie groß ein Teilstück sein soll oder aber wenn wir wissen wollen, wie viel Torf wir bestellen müssen.\nIm ersten Abschnitt schauen wir uns einmal Flächenmaße und Volumenmaße an. Wie sind die Abkürzungen für die entsprechenden Maßzahlen und wie lauten die Abkürzungen für sehr große oder sehr kleine Zahlen.\nDann schauen wir noch einmal auf die Flächen und Umfänge von gängigen geometrischen Objekten. Welche Eigenschaften hat das Quadrat, das Rechteck und der Kreis? Wir merken uns hier natürlich nur die wichtigsten Formeln, den Rest kannst du dann immer mal wieder bachschlagen.\nAm Ende wollen wir dann die Flächen noch ins Volumen bringen. Hier rechnen wir dann das Volumne eines Würfels oder eines Quaders aus. Häufig brauchen wir diese Informationen, wenn wir berechnen wollen, wie viel Torf wir brauchen oder wie viel Volumen an Futter verbraucht wird bzw. eingekauft werden muss."
   },
   {
     "objectID": "geometry-unit.html#maßeinheiten",
@@ -184,56 +184,56 @@
   {
     "objectID": "probability-preface.html",
     "href": "probability-preface.html",
-    "title": "Wahrscheinlichkeiten",
+    "title": "Von Wahrscheinlichkeiten",
     "section": "",
-    "text": "Version vom February 23, 2023 um 19:42:01"
+    "text": "Version vom February 23, 2023 um 19:47:10"
   },
   {
     "objectID": "probability-basic.html#regeln",
     "href": "probability-basic.html#regeln",
-    "title": "6  Grundlagen der Wahrscheinlichkeit",
+    "title": "6  Grundlagen",
     "section": "6.1 Regeln",
     "text": "6.1 Regeln\nUnd \\(\\cap\\)\nOder \\(\\cup\\)\nText\n\\(Pr(A) = 2/3\\)\n\\(Pr(K_1) \\cap \\cup Pr(K_2)\\)\n\\[\n\\begin{aligned}\nPr(K_1 \\cap K_2) &= Pr(K_1) \\times Pr(K_2) \\\\\n               &= 1/2 \\times 1/2 \\\\\n               &= 1/4\n\\end{aligned}\n\\]\nIn Tabelle 6.1\n\n\nTabelle 6.1— Test\n\n\n\n\nMengenschreibweise\nTyp\n\n\n\n\n\\([a,b]\\)\n\\([a,b]\\)\n\\(\\{x|a≤x≤b\\}\\)\ngeschlossen\n\n\n\\(]a,b[\\)\n\\((a,b)\\)\n\\(\\{x|a<x<b\\}\\)\noffen\n\n\n\\([a,b[\\)\n\\([a,b)\\)\n\\(\\{x|a≤x<b\\}\\)\nhalboffen / rechtsoffen\n\n\n\\(]a,b]\\)\n\\((a,b]\\)\n\\(\\{x|a<x≤b\\}\\)\nhalboffen / linksoffen\n\n\n\n\nIn Tabelle 6.2\n\n\nTabelle 6.2— Test\n\n\n\n\n\n\n\nAbbildung\n\nBedeutung\n\n\n\n\n\n\\(A \\cup B\\)\n\\(A\\) tritt ein oder \\(B\\) tritt ein\n\n\n\n\\(A \\cap B\\)\n\\(A\\) trit ein und \\(B\\) tritt ein\n\n\n\n\\(A \\setminus B\\)\n\\(A\\) tritt ein, aber \\(B\\) tritt nicht ein\n\n\n\n\\(\\bar{A} = \\Omega \\setminus A\\)\n\\(A\\) tritt nicht ein\n\n\n\n\\(A \\cup B\\)\nEntweder \\(A\\) ein oder \\(B\\) tritt ein oder keins von beiden\n\n\n\n\\(B \\subset A\\)\n\\(B\\) ist Teilmenge von \\(A\\)"
   },
   {
     "objectID": "probability-basic.html#sec-prob-cond",
     "href": "probability-basic.html#sec-prob-cond",
-    "title": "6  Grundlagen der Wahrscheinlichkeit",
+    "title": "6  Grundlagen",
     "section": "6.2 Bedingte Wahrscheinlichkeiten",
     "text": "6.2 Bedingte Wahrscheinlichkeiten"
   },
   {
     "objectID": "probability-distribution.html",
     "href": "probability-distribution.html",
-    "title": "7  Wahrscheinlichkeitsverteilungen",
+    "title": "7  Verteilungen",
     "section": "",
-    "text": "Version vom February 23, 2023 um 19:42:06\n\n\n\n\n\nhttps://rstudio-pubs-static.s3.amazonaws.com/35515_c4ea4e9714af4d888bfc701a37c39815.html\nhttps://yutannihilation.github.io/allYourFigureAreBelongToUs/ggfortify/ggdistribution/"
+    "text": "Version vom February 23, 2023 um 19:47:15\n\n\n\n\n\nhttps://rstudio-pubs-static.s3.amazonaws.com/35515_c4ea4e9714af4d888bfc701a37c39815.html\nhttps://yutannihilation.github.io/allYourFigureAreBelongToUs/ggfortify/ggdistribution/"
   },
   {
     "objectID": "functions-preface.html",
     "href": "functions-preface.html",
-    "title": "Mathematische Funktionen",
+    "title": "Von mathematischen Funktionen",
     "section": "",
-    "text": "Version vom February 23, 2023 um 19:42:09"
+    "text": "Version vom February 23, 2023 um 19:47:18"
   },
   {
     "objectID": "functions-basic.html#genutzte-r-pakete-für-das-kapitel",
     "href": "functions-basic.html#genutzte-r-pakete-für-das-kapitel",
-    "title": "8  Grundlagen Funktionen",
+    "title": "8  Grundlagen",
     "section": "8.1 Genutzte R Pakete für das Kapitel",
     "text": "8.1 Genutzte R Pakete für das Kapitel\nWir wollen folgende R Pakete in diesem Kapitel nutzen.\n\npacman::p_load(tidyverse, magrittr)\ncbbPalette <- c(\"#000000\", \"#E69F00\", \"#56B4E9\", \"#009E73\", \n                \"#F0E442\", \"#0072B2\", \"#D55E00\", \"#CC79A7\")"
   },
   {
     "objectID": "functions-basic.html#lineare-funktion",
     "href": "functions-basic.html#lineare-funktion",
-    "title": "8  Grundlagen Funktionen",
+    "title": "8  Grundlagen",
     "section": "8.2 Lineare Funktion",
     "text": "8.2 Lineare Funktion"
   },
   {
     "objectID": "functions-basic.html#exponentialfunktion",
     "href": "functions-basic.html#exponentialfunktion",
-    "title": "8  Grundlagen Funktionen",
+    "title": "8  Grundlagen",
     "section": "8.3 Exponentialfunktion",
     "text": "8.3 Exponentialfunktion\nExponentialfunktion\nhttps://www.statforbiology.com/nonlinearregression/usefulequations#michaelis-menten_equation\nhttps://en.wikipedia.org/wiki/Cubic_function\nhttps://en.wikipedia.org/wiki/Polynomial\nhttps://de.wikipedia.org/wiki/Exponentielles_Wachstum\nhttps://www.rhetos.de/html/lex/exponentielle_saettigungsfunktion.htm\n\nexp_tbl <- tibble(x = 0:10,\n                  y = 2^x)\nexp_tbl %>% print(n = Inf)\n\n# A tibble: 11 × 2\n       x     y\n   <int> <dbl>\n 1     0     1\n 2     1     2\n 3     2     4\n 4     3     8\n 5     4    16\n 6     5    32\n 7     6    64\n 8     7   128\n 9     8   256\n10     9   512\n11    10  1024\n\n\n\nexp_tbl %>% \n  ggplot(aes(x, y)) +\n  theme_minimal() +\n  geom_path() +\n  geom_point() \n\n\n\n\nAbbildung 8.1— test.\n\n\n\n\nDie Summe über alle \\(y\\)-Werte Auch als Formel mit\n\\[\n  \\sum_{n=0}^N r^n = \\cfrac{r^{N + 1} -1}{r - 1}\n\\]\n\n(2^(5+1)-1)/(2-1)\n\n[1] 63\n\n\n\nexp_tbl %<>% \n  mutate(cumsum_y = (2^(x+1)-1)/(2-1))\nexp_tbl\n\n# A tibble: 11 × 3\n       x     y cumsum_y\n   <int> <dbl>    <dbl>\n 1     0     1        1\n 2     1     2        3\n 3     2     4        7\n 4     3     8       15\n 5     4    16       31\n 6     5    32       63\n 7     6    64      127\n 8     7   128      255\n 9     8   256      511\n10     9   512     1023\n11    10  1024     2047\n\n\n\nexp_tbl %>% \n  ggplot(aes(x, cumsum_y)) +\n  theme_minimal() +\n  geom_path() +\n  geom_point() \n\n\n\n\nAbbildung 8.2— test.\n\n\n\n\n\\[\n  \\sum_{n=0}^N a \\cdot r^n = a\\left(\\cfrac{r^{N + 1} -1}{r - 1}\\right)\n\\]\n\n8.3.1 Halbwertszeit\n\\[\nN(t) = N_0 \\cdot \\cfrac{1}{2}^{\\cfrac{t}{t_{1/2}}}\n\\]\n\ntibble(t = 0:30,\n       y = 100 * 1/2^(t/3.5)) %>% \n  ggplot(aes(t, y)) +\n  theme_minimal() +\n  geom_path() +\n  geom_point() \n\n\n\n\nAbbildung 8.3— test.\n\n\n\n\n\n\n8.3.2 Sättigungsfunktion\n\\[\nf(x) = A - a \\cdot b^{-c \\cdot x + d}\n\\]\n\ntibble(x = 0:30,\n       y = 4 - 1.5 * 2^(-1/4*x + 2)) %>% \n  ggplot(aes(x, y)) +\n  theme_minimal() +\n  geom_hline(yintercept = 4, color = cbbPalette[2]) +\n  geom_path() +\n  geom_point()\n\n\n\n\nAbbildung 8.4— test."
   },
@@ -242,7 +242,7 @@
     "href": "vector-preface.html",
     "title": "Vektor und Matrix",
     "section": "",
-    "text": "Version vom February 23, 2023 um 19:42:18\nIn dem folgenden Kapitel wollen wir uns einmal mit Berechnungen mit Vektoren in Kapitel 9 beschäftigen. Das Kapitel ist eher kurz und dient nur der Erinnerung, was sind eigentlich Vektoren. Wir nutzen den Begriff häufig in der R Programmierung und wir wollen hier nochmal auf ein paar mathematische Eigenschaften eingehen.\nWichtiger ist in dem Sinne die Berechnungen mit Matrizen in Kapitel 10. Wir schauen uns hier nochmal die gängigen Rechenoperationen mit Matrizen an. Wir erschlagen aber nicht alles sondern schauen usn nur ausgewählte Aspekte einmal an. Wir brauchen Teile von den Berechnungen mit Matrizen später in der multiplen linearen Regression in der Statistik."
+    "text": "Version vom February 23, 2023 um 19:47:27\nIn dem folgenden Kapitel wollen wir uns einmal mit Berechnungen mit Vektoren in Kapitel 9 beschäftigen. Das Kapitel ist eher kurz und dient nur der Erinnerung, was sind eigentlich Vektoren. Wir nutzen den Begriff häufig in der R Programmierung und wir wollen hier nochmal auf ein paar mathematische Eigenschaften eingehen.\nWichtiger ist in dem Sinne die Berechnungen mit Matrizen in Kapitel 10. Wir schauen uns hier nochmal die gängigen Rechenoperationen mit Matrizen an. Wir erschlagen aber nicht alles sondern schauen usn nur ausgewählte Aspekte einmal an. Wir brauchen Teile von den Berechnungen mit Matrizen später in der multiplen linearen Regression in der Statistik."
   },
   {
     "objectID": "vector-basic.html#grundlagen-vektoren",

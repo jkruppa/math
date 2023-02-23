@@ -3,7 +3,7 @@ pacman::p_load(tidyverse, readxl, knitr, kableExtra, Hmisc,
                see)
 ```
 
-# Grundlagen Funktionen {#sec-prob-basic}
+# Grundlagen {#sec-prob-basic}
 
 *Version vom `r format(Sys.time(), '%B %d, %Y um %H:%M:%S')`*
 
