@@ -1,4 +1,4 @@
-# Distanzen {#sec-prob-basic}
+# Distanzen {#sec-func-dist}
 
 ```{r echo = FALSE}
 pacman::p_load(tidyverse, readxl, knitr, kableExtra, Hmisc,

@@ -220,8 +220,8 @@
     "objectID": "functions-basic.html#funktionen",
     "href": "functions-basic.html#funktionen",
     "title": "9  Grundlagen Funktionen",
-    "section": "9.1 Funktionen",
-    "text": "9.1 Funktionen\nhttps://www.statforbiology.com/nonlinearregression/usefulequations#michaelis-menten_equation\nhttps://en.wikipedia.org/wiki/Cubic_function\nhttps://en.wikipedia.org/wiki/Polynomial\nhttps://de.wikipedia.org/wiki/Exponentielles_Wachstum\nhttps://www.rhetos.de/html/lex/exponentielle_saettigungsfunktion.htm\n\\[\n  \\sum_{n=0}^N r^n = \\cfrac{r^{N + 1} -1}{r - 1}\n\\]\n\n\n\n\n\n\n\n(a) Drei Normalverteilungen mit Varianzhomogenität.\n\n\n\n\n\n\n\n(b) Drei Normalverteilungen unter Varianzheterogenität.\n\n\n\n\nAbbildung 9.1— Histogramm verschiedener Normalverteilungen mit unterschiedlichen Mittelwerten."
+    "section": "9.2 Funktionen",
+    "text": "9.2 Funktionen"
   },
   {
     "objectID": "functions-distance.html#was-sind-mathematische-distanzen",
@@ -299,5 +299,19 @@
     "title": "12  Berechnungen mit Matrizen",
     "section": "12.8 Eine Matrix mit einem Vektor multiplizieren",
     "text": "12.8 Eine Matrix mit einem Vektor multiplizieren\nWenn wir eine Matrix mit einem Vektor multiplizieren wollen, dann müssen die Matrix und der Vektor zueinander passen. In unseren Fällen, wie wir häufig betrachten muss die Matrix die Anzahl an Spalten haben die der Länge des Vektors enspricht. In unseren Beispiel haben wir drei Spalten und somit muss der Vektor auch eine Länge von drei Einträgen haben.\n\\[\n\\begin{pmatrix}\n4 & 3 & 2 \\\\\n1 & 0 & 3\n\\end{pmatrix}\n\\cdot\n\\begin{pmatrix}\n2 \\\\ 0 \\\\ 1\n\\end{pmatrix}\n=\n\\begin{pmatrix}\n4 \\cdot 2+ 3 \\cdot 0 +2 \\cdot 1 \\\\\n1 \\cdot 2+ 0 \\cdot 0 +3 \\cdot 1\n\\end{pmatrix}\n=\n\\begin{pmatrix}\n10 \\\\\n5\n\\end{pmatrix}\n\\]\nWii können das Beispiel auch wieder in R nachvollziehen. In R gibt es keine Funktion mit Namen vector. Die Funktion c() erschafft einen Vektor. Wenn wir Matrizen oder Vektoren miteinander multipizieren wollen und anschließend aufaddieren, dann müssen wir den Operator %*% nutzen.\n\nA <- matrix(c(4, 3, 2,\n              1, 0, 3), byrow = 2, ncol = 3)\nA\n\n     [,1] [,2] [,3]\n[1,]    4    3    2\n[2,]    1    0    3\n\nB <- c(2, 0, 1)\nB\n\n[1] 2 0 1\n\nA %*% B\n\n     [,1]\n[1,]   10\n[2,]    5\n\n\nAm Ende kommt das Ergebnis raus, was wir auch erwartet haben."
+  },
+  {
+    "objectID": "functions-basic.html#exponentialfunktion",
+    "href": "functions-basic.html#exponentialfunktion",
+    "title": "9  Grundlagen Funktionen",
+    "section": "9.3 Exponentialfunktion",
+    "text": "9.3 Exponentialfunktion\nExponentialfunktion\nhttps://www.statforbiology.com/nonlinearregression/usefulequations#michaelis-menten_equation\nhttps://en.wikipedia.org/wiki/Cubic_function\nhttps://en.wikipedia.org/wiki/Polynomial\nhttps://de.wikipedia.org/wiki/Exponentielles_Wachstum\nhttps://www.rhetos.de/html/lex/exponentielle_saettigungsfunktion.htm\n\nexp_tbl <- tibble(x = 0:10,\n                  y = 2^x)\nexp_tbl %>% print(n = Inf)\n\n# A tibble: 11 × 2\n       x     y\n   <int> <dbl>\n 1     0     1\n 2     1     2\n 3     2     4\n 4     3     8\n 5     4    16\n 6     5    32\n 7     6    64\n 8     7   128\n 9     8   256\n10     9   512\n11    10  1024\n\n\n\nexp_tbl %>% \n  ggplot(aes(x, y)) +\n  theme_minimal() +\n  geom_path() +\n  geom_point() \n\n\n\n\nAbbildung 9.1— test.\n\n\n\n\nDie Summe über alle \\(y\\)-Werte Auch als Formel mit\n\\[\n  \\sum_{n=0}^N r^n = \\cfrac{r^{N + 1} -1}{r - 1}\n\\]\n\n(2^(5+1)-1)/(2-1)\n\n[1] 63\n\n\n\nexp_tbl %>% \n  mutate(cumsum_y = (2^(x+1)-1)/(2-1))\n\n# A tibble: 11 × 3\n       x     y cumsum_y\n   <int> <dbl>    <dbl>\n 1     0     1        1\n 2     1     2        3\n 3     2     4        7\n 4     3     8       15\n 5     4    16       31\n 6     5    32       63\n 7     6    64      127\n 8     7   128      255\n 9     8   256      511\n10     9   512     1023\n11    10  1024     2047\n\n\n\\[\n  \\sum_{n=0}^N a \\cdot r^n = a\\left(\\cfrac{r^{N + 1} -1}{r - 1}\\right)\n\\]\n\n9.3.1 Halbwertszeit\n\\[\nN(t) = N_0 \\cdot \\cfrac{1}{2}^{\\cfrac{t}{t_{1/2}}}\n\\]\n\ntibble(t = 0:30,\n       y = 100 * 1/2^(t/3.5)) %>% \n  ggplot(aes(t, y)) +\n  theme_minimal() +\n  geom_path() +\n  geom_point() \n\n\n\n\nAbbildung 9.2— test.\n\n\n\n\n\n\n9.3.2 Sättigungsfunktion\n\\[\nf(x) = A - a \\cdot b^{-c \\cdot x + d}\n\\]\n\ntibble(x = 0:30,\n       y = 4 - 1.5 * 2^(-1/4*x + 2)) %>% \n  ggplot(aes(x, y)) +\n  theme_minimal() +\n  geom_hline(yintercept = 4, color = cbbPalette[2]) +\n  geom_path() +\n  geom_point()\n\n\n\n\nAbbildung 9.3— test.\n\n\n\n\n\n\n\n\n\n\n\n(a) Drei Normalverteilungen mit Varianzhomogenität.\n\n\n\n\n\n\n\n(b) Drei Normalverteilungen unter Varianzheterogenität.\n\n\n\n\nAbbildung 9.4— Histogramm verschiedener Normalverteilungen mit unterschiedlichen Mittelwerten."
+  },
+  {
+    "objectID": "functions-basic.html#genutzte-r-pakete-für-das-kapitel",
+    "href": "functions-basic.html#genutzte-r-pakete-für-das-kapitel",
+    "title": "9  Grundlagen Funktionen",
+    "section": "9.1 Genutzte R Pakete für das Kapitel",
+    "text": "9.1 Genutzte R Pakete für das Kapitel\nWir wollen folgende R Pakete in diesem Kapitel nutzen.\n\npacman::p_load(tidyverse)\ncbbPalette <- c(\"#000000\", \"#E69F00\", \"#56B4E9\", \"#009E73\", \n                \"#F0E442\", \"#0072B2\", \"#D55E00\", \"#CC79A7\")"
   }
 ]

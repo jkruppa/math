@@ -10,7 +10,25 @@ pacman::p_load(tidyverse, readxl, knitr, kableExtra, Hmisc,
 ![](images/caution.png){fig-align="center" width="50%"}
 
 
+
+
+## Genutzte R Pakete für das Kapitel
+
+Wir wollen folgende R Pakete in diesem Kapitel nutzen.
+
+```{r echo = TRUE}
+#| message: false
+pacman::p_load(tidyverse)
+cbbPalette <- c("#000000", "#E69F00", "#56B4E9", "#009E73", 
+                "#F0E442", "#0072B2", "#D55E00", "#CC79A7")
+```
+
+
 ## Funktionen
+
+## Exponentialfunktion
+
+Exponentialfunktion
 
 https://www.statforbiology.com/nonlinearregression/usefulequations#michaelis-menten_equation
 
@@ -22,9 +40,99 @@ https://de.wikipedia.org/wiki/Exponentielles_Wachstum
 
 https://www.rhetos.de/html/lex/exponentielle_saettigungsfunktion.htm
 
+```{r}
+exp_tbl <- tibble(x = 0:10,
+                  y = 2^x)
+exp_tbl %>% print(n = Inf)
+```
+
+
+
+
+```{r}
+#| echo: true
+#| message: false
+#| warning: false
+#| label: fig-exp-simple
+#| fig-align: center
+#| fig-height: 4
+#| fig-width: 5
+#| fig-cap: "test."
+
+exp_tbl %>% 
+  ggplot(aes(x, y)) +
+  theme_minimal() +
+  geom_path() +
+  geom_point() 
+```
+
+Die Summe über alle $y$-Werte Auch als Formel mit
+
 $$
   \sum_{n=0}^N r^n = \cfrac{r^{N + 1} -1}{r - 1}
 $$
+
+```{r}
+(2^(5+1)-1)/(2-1)
+```
+
+```{r}
+exp_tbl %>% 
+  mutate(cumsum_y = (2^(x+1)-1)/(2-1))
+```
+
+
+$$
+  \sum_{n=0}^N a \cdot r^n = a\left(\cfrac{r^{N + 1} -1}{r - 1}\right)
+$$
+
+### Halbwertszeit
+
+$$
+N(t) = N_0 \cdot \cfrac{1}{2}^{\cfrac{t}{t_{1/2}}}
+$$
+```{r}
+#| echo: true
+#| message: false
+#| warning: false
+#| label: fig-exp-halb
+#| fig-align: center
+#| fig-height: 4
+#| fig-width: 5
+#| fig-cap: "test."
+
+tibble(t = 0:30,
+       y = 100 * 1/2^(t/3.5)) %>% 
+  ggplot(aes(t, y)) +
+  theme_minimal() +
+  geom_path() +
+  geom_point() 
+```
+
+
+### Sättigungsfunktion
+
+$$
+f(x) = A - a \cdot b^{-c \cdot x + d}
+$$
+```{r}
+#| echo: true
+#| message: false
+#| warning: false
+#| label: fig-exp-satt
+#| fig-align: center
+#| fig-height: 4
+#| fig-width: 5
+#| fig-cap: "test."
+
+tibble(x = 0:30,
+       y = 4 - 1.5 * 2^(-1/4*x + 2)) %>% 
+  ggplot(aes(x, y)) +
+  theme_minimal() +
+  geom_hline(yintercept = 4, color = cbbPalette[2]) +
+  geom_path() +
+  geom_point()
+```
 
 ```{r}
 #| echo: false
