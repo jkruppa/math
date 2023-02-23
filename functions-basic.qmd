@@ -26,6 +26,29 @@ cbbPalette <- c("#000000", "#E69F00", "#56B4E9", "#009E73",
 
 ## Lineare Funktion
 
+$$
+f(x) = mx + b
+$$
+
+```{r}
+#| echo: true
+#| message: false
+#| warning: false
+#| label: fig-lin-simple
+#| fig-align: center
+#| fig-height: 4
+#| fig-width: 5
+#| fig-cap: "test."
+
+tibble(x = 0:10,
+       y = 1.5 * x + 5) %>% 
+  ggplot(aes(x, y)) +
+  theme_minimal() +
+  ylim(0, NA) +
+  geom_path() +
+  geom_point() 
+```
+
 ## Exponentialfunktion
 
 Exponentialfunktion
