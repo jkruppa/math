@@ -23,19 +23,19 @@ book:
       - geometry-unit.qmd
       - geometry-area.qmd
       - geometry-volume.qmd
-    - part: probability-preface.qmd
-      chapters:
-      - probability-basic.qmd
-#      - probability-conditional.qmd
-      - probability-distribution.qmd
-    - part: functions-preface.qmd
-      chapters: 
-      - functions-basic.qmd
-#      - functions-distance.qmd
     - part: vector-preface.qmd
       chapters: 
       - vector-basic.qmd
       - matrix-basic.qmd
+    - part: probability-preface.qmd
+#      chapters:
+#      - probability-basic.qmd
+#      - probability-conditional.qmd
+#      - probability-distribution.qmd
+    - part: functions-preface.qmd
+#      chapters: 
+#      - functions-basic.qmd
+#      - functions-distance.qmd
 #      - matrix-eigenwerte.qmd
       
 bibliography: references.bib
