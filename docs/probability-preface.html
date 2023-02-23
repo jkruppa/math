@@ -30,7 +30,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./functions-preface.html" rel="next">
+<link href="./probability-basic.html" rel="next">
 <link href="./matrix-basic.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -61,7 +61,6 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 </head>
 
@@ -155,25 +154,41 @@ ul.task-list li input[type="checkbox"] {
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
-      <span class="sidebar-item-text sidebar-link text-start">Von Wahrscheinlichkeiten</span>
+      <div class="sidebar-item-container"> 
+            <a href="./probability-preface.html" class="sidebar-item-text sidebar-link active">Von Wahrscheinlichkeiten</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./probability-basic.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Grundlagen</span></a>
+  </div>
+</li>
+      </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
-      <span class="sidebar-item-text sidebar-link text-start">Von mathematischen Funktionen</span>
+      <div class="sidebar-item-container"> 
+            <a href="./functions-preface.html" class="sidebar-item-text sidebar-link">Von mathematischen Funktionen</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./functions-basic.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Grundlagen</span></a>
+  </div>
+</li>
+      </ul>
   </li>
     </ul>
     </div>
 </nav>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Inhaltsverzeichnis</h2>
-   
-  <ul>
-  <li><a href="#regeln" id="toc-regeln" class="nav-link active" data-scroll-target="#regeln">Regeln</a></li>
-  <li><a href="#sec-prob-cond" id="toc-sec-prob-cond" class="nav-link" data-scroll-target="#sec-prob-cond">Bedingte Wahrscheinlichkeiten</a></li>
-  <li><a href="#sec-prob-dist" id="toc-sec-prob-dist" class="nav-link" data-scroll-target="#sec-prob-dist">Wahrscheinlichkeitsverteilungen</a></li>
-  </ul>
-</nav>
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -198,127 +213,14 @@ ul.task-list li input[type="checkbox"] {
 <div class="cell">
 
 </div>
-<p><em>Version vom February 23, 2023 um 20:02:26</em></p>
+<p><em>Version vom February 23, 2023 um 20:07:22</em></p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/caution.png" class="img-fluid figure-img" style="width:50.0%"></p>
 </figure>
 </div>
-<section id="regeln" class="level2">
-<h2 class="anchored" data-anchor-id="regeln">Regeln</h2>
-<p>Und <span class="math inline">\(\cap\)</span></p>
-<p>Oder <span class="math inline">\(\cup\)</span></p>
-<p>Text</p>
-<p><span class="math inline">\(Pr(A) = 2/3\)</span></p>
-<p><span class="math inline">\(Pr(K_1) \cap \cup Pr(K_2)\)</span></p>
-<p><span class="math display">\[
-\begin{aligned}
-Pr(K_1 \cap K_2) &amp;= Pr(K_1) \times Pr(K_2) \\
-               &amp;= 1/2 \times 1/2 \\
-               &amp;= 1/4
-\end{aligned}
-\]</span></p>
-<p>In <a href="#tbl-mengen">Tabelle&nbsp;<span>1</span></a></p>
-<div id="tbl-mengen" class="anchored">
-<table class="table">
-<caption>Tabelle&nbsp;1— Test</caption>
-<thead>
-<tr class="header">
-<th style="text-align: center;"></th>
-<th style="text-align: center;"></th>
-<th style="text-align: center;">Mengenschreibweise</th>
-<th style="text-align: center;"><strong>Typ</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: center;"><span class="math inline">\([a,b]\)</span></td>
-<td style="text-align: center;"><span class="math inline">\([a,b]\)</span></td>
-<td style="text-align: center;"><span class="math inline">\(\{x|a≤x≤b\}\)</span></td>
-<td style="text-align: center;">geschlossen</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;"><span class="math inline">\(]a,b[\)</span></td>
-<td style="text-align: center;"><span class="math inline">\((a,b)\)</span></td>
-<td style="text-align: center;"><span class="math inline">\(\{x|a&lt;x&lt;b\}\)</span></td>
-<td style="text-align: center;">offen</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;"><span class="math inline">\([a,b[\)</span></td>
-<td style="text-align: center;"><span class="math inline">\([a,b)\)</span></td>
-<td style="text-align: center;"><span class="math inline">\(\{x|a≤x&lt;b\}\)</span></td>
-<td style="text-align: center;">halboffen / rechtsoffen</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;"><span class="math inline">\(]a,b]\)</span></td>
-<td style="text-align: center;"><span class="math inline">\((a,b]\)</span></td>
-<td style="text-align: center;"><span class="math inline">\(\{x|a&lt;x≤b\}\)</span></td>
-<td style="text-align: center;">halboffen / linksoffen</td>
-</tr>
-</tbody>
-</table>
-</div>
-<p>In <a href="#tbl-logical-figures">Tabelle&nbsp;<span>2</span></a></p>
-<div id="tbl-logical-figures" class="anchored">
-<table class="table">
-<caption>Tabelle&nbsp;2— Test</caption>
-<colgroup>
-<col style="width: 37%">
-<col style="width: 25%">
-<col style="width: 37%">
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: center;">Abbildung</th>
-<th style="text-align: center;"></th>
-<th style="text-align: center;">Bedeutung</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: center;"><img src="images/schnitt_1.png" class="img-fluid"></td>
-<td style="text-align: center;"><span class="math inline">\(A \cup B\)</span></td>
-<td style="text-align: center;"><span class="math inline">\(A\)</span> tritt ein oder <span class="math inline">\(B\)</span> tritt ein</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;"><img src="images/schnitt_2.png" class="img-fluid"></td>
-<td style="text-align: center;"><span class="math inline">\(A \cap B\)</span></td>
-<td style="text-align: center;"><span class="math inline">\(A\)</span> trit ein und <span class="math inline">\(B\)</span> tritt ein</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;"><img src="images/schnitt_3.png" class="img-fluid"></td>
-<td style="text-align: center;"><span class="math inline">\(A \setminus B\)</span></td>
-<td style="text-align: center;"><span class="math inline">\(A\)</span> tritt ein, aber <span class="math inline">\(B\)</span> tritt nicht ein</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;"><img src="images/schnitt_4.png" class="img-fluid"></td>
-<td style="text-align: center;"><span class="math inline">\(\bar{A} = \Omega \setminus A\)</span></td>
-<td style="text-align: center;"><span class="math inline">\(A\)</span> tritt nicht ein</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;"><img src="images/schnitt_5.png" class="img-fluid"></td>
-<td style="text-align: center;"><span class="math inline">\(A \cup B\)</span></td>
-<td style="text-align: center;">Entweder <span class="math inline">\(A\)</span> ein oder <span class="math inline">\(B\)</span> tritt ein oder keins von beiden</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;"><img src="images/schnitt_6.png" class="img-fluid"></td>
-<td style="text-align: center;"><span class="math inline">\(B \subset A\)</span></td>
-<td style="text-align: center;"><span class="math inline">\(B\)</span> ist Teilmenge von <span class="math inline">\(A\)</span></td>
-</tr>
-</tbody>
-</table>
-</div>
-</section>
-<section id="sec-prob-cond" class="level2">
-<h2 class="anchored" data-anchor-id="sec-prob-cond">Bedingte Wahrscheinlichkeiten</h2>
-</section>
-<section id="sec-prob-dist" class="level2">
-<h2 class="anchored" data-anchor-id="sec-prob-dist">Wahrscheinlichkeitsverteilungen</h2>
-<p>https://rstudio-pubs-static.s3.amazonaws.com/35515_c4ea4e9714af4d888bfc701a37c39815.html</p>
-<p>https://yutannihilation.github.io/allYourFigureAreBelongToUs/ggfortify/ggdistribution/</p>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -461,8 +363,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./functions-preface.html" class="pagination-link">
-        <span class="nav-page-text">Von mathematischen Funktionen</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./probability-basic.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Grundlagen</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
