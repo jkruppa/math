@@ -2,7 +2,7 @@
 pacman::p_load(tidyverse, readxl, knitr, kableExtra, Hmisc)
 ```
 
-# Vektor und Matrix {#sec-vec-mat-preface}
+# Von Vektoren und Matrizen {#sec-vec-mat-preface}
 
 *Version vom `r format(Sys.time(), '%B %d, %Y um %H:%M:%S')`*
 
