@@ -18,7 +18,7 @@ Wir wollen folgende R Pakete in diesem Kapitel nutzen.
 
 ```{r echo = TRUE}
 #| message: false
-pacman::p_load(tidyverse)
+pacman::p_load(tidyverse, magrittr)
 cbbPalette <- c("#000000", "#E69F00", "#56B4E9", "#009E73", 
                 "#F0E442", "#0072B2", "#D55E00", "#CC79A7")
 ```
@@ -77,10 +77,27 @@ $$
 ```
 
 ```{r}
-exp_tbl %>% 
+exp_tbl %<>% 
   mutate(cumsum_y = (2^(x+1)-1)/(2-1))
+exp_tbl
 ```
 
+```{r}
+#| echo: true
+#| message: false
+#| warning: false
+#| label: fig-exp-simple-cumsum
+#| fig-align: center
+#| fig-height: 4
+#| fig-width: 5
+#| fig-cap: "test."
+
+exp_tbl %>% 
+  ggplot(aes(x, cumsum_y)) +
+  theme_minimal() +
+  geom_path() +
+  geom_point() 
+```
 
 $$
   \sum_{n=0}^N a \cdot r^n = a\left(\cfrac{r^{N + 1} -1}{r - 1}\right)
