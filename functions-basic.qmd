@@ -9,12 +9,12 @@ pacman::p_load(tidyverse, readxl, knitr, kableExtra, Hmisc,
 
 ![](images/caution.png){fig-align="center" width="50%"}
 
-
+In diesem Kapitel werden wir uns einmal mit den wichtigsten mathematischen Funktionen in der Anwendung beschäftigen. Wir schauen uns dabei die am meisten genutzen und am häufigsten vorkommenden Funktionen an. Daher fangen wir mit der linearen Funktion an, die uns dann in der Statistik sehr lange begleiten wird. Darüber hinaus schauen wir auch einmal auf die exponentielle Funktion, die in der Form uns später das ein oder andere Mal in der Analyse von echten Daten über den Weg läuft.
 
 
 ## Genutzte R Pakete für das Kapitel
 
-Wir wollen folgende R Pakete in diesem Kapitel nutzen.
+Wir wollen folgende R Pakete in diesem Kapitel nutzen. Zum einen brauchen wir das R Paket `tidyverse` um uns die Daten zu bauen, die wir dann mit dem R Paket `ggplot` visualisieren wollen. Das R Paket `ggplot` ist schon in dem R Paket `tidyverse` mit enthalten.
 
 ```{r echo = TRUE}
 #| message: false
@@ -26,9 +26,13 @@ cbbPalette <- c("#000000", "#E69F00", "#56B4E9", "#009E73",
 
 ## Lineare Funktion
 
+Wiederholen wir einmal die klassische lineare Funktion. Die lineare Funktion wird durch zwei Parameter bestimmt. Einmal die Steigung $m$ sowie der y-Achsenabschnitt $b$. Wenn also $x$ um 1 ansteigt, dann ändert sich $y$ um den Wert von $m$. Die Gerade schneidet die $y$-Achse an dem $y$-Wert von $b$.
+
 $$
 f(x) = mx + b
 $$
+
+In der @fig-lin-simple sehen wir die lineare Funktion $f(x) = 1.5 \cdot x + 4$ einmal als Gerade dargestellt. Hier wird nochmal schnell klar, was die Parameter der Geradengleichung aussagen. Die Gerade passiert die $y$-Achse bei einem Wert von 5. Wenn wir von $x=0$ zu $x=5$ gehen, dann steigt die Gerade von $y = 5$ auf $y = 12.5$. Damit ist dann die Steigung $m = \tfrac{12.5-5}{5} = 1.5$. Eigentlich realtiv einfach und *straight forward*.
 
 ```{r}
 #| echo: true
@@ -38,12 +42,12 @@ $$
 #| fig-align: center
 #| fig-height: 4
 #| fig-width: 5
-#| fig-cap: "test."
+#| fig-cap: "Eine einfache lineare Funktion mit der Steigung $m = 1.5$ und dem y-Achsenabschnitt $b = 5$."
 
 tibble(x = 0:10,
        y = 1.5 * x + 5) %>% 
   ggplot(aes(x, y)) +
-  theme_minimal() +
+  theme_radar() +
   ylim(0, NA) +
   geom_path() +
   geom_point() 
@@ -84,7 +88,7 @@ exp_tbl %>% print(n = Inf)
 
 exp_tbl %>% 
   ggplot(aes(x, y)) +
-  theme_minimal() +
+  theme_radar() +
   geom_path() +
   geom_point() 
 ```
@@ -117,7 +121,7 @@ exp_tbl
 
 exp_tbl %>% 
   ggplot(aes(x, cumsum_y)) +
-  theme_minimal() +
+  theme_radar() +
   geom_path() +
   geom_point() 
 ```
@@ -145,7 +149,7 @@ $$
 tibble(t = 0:30,
        y = 100 * 1/2^(t/3.5)) %>% 
   ggplot(aes(t, y)) +
-  theme_minimal() +
+  theme_radar() +
   geom_path() +
   geom_point() 
 ```
@@ -169,7 +173,7 @@ $$
 tibble(x = 0:30,
        y = 4 - 1.5 * 2^(-1/4*x + 2)) %>% 
   ggplot(aes(x, y)) +
-  theme_minimal() +
+  theme_radar() +
   geom_hline(yintercept = 4, color = cbbPalette[2]) +
   geom_path() +
   geom_point()
