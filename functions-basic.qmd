@@ -171,21 +171,22 @@ tibble(t = 0:30,
 
 ### Sättigungsfunktion
 
+Jedes biologisches Wachstum folgt einer Sättigungsfunktion auch wenn wir als erstes annehmen würden, es handelt sich um ein unbegrenztes exponentielles Wachstum. Hier wollen wir nicht in die Diskussion verfallen, ob es auch ein unbegrenztes ökonomisches Wachstum gibt oder nicht. Das Schneeballsystem sei hier nur warnend erwähnt.
+
+::: column-margin
+Auf der Wikipedia Seite finden sich [Beispiele für das exponentielle Wachstum](https://de.wikipedia.org/wiki/Exponentielles_Wachstum).
+:::
+
 $$
 f(x) = b_0 - a \cdot b_1^{-c \cdot x + d}
 $$
+Im Folgenden sehen wir einmal eine Gleichung einer Sättigungsfunktion als Beispiel.
+
 $$
 f(x) = 6 - 1.5 \cdot 2^{-\frac{1}{4}\cdot x + 2}
 $$
 
-
-```{r}
-tibble(x = 0:30,
-       y = 6 - 1.5 * 2^(-1/4*x + 2),
-       "- 1.5 * 2^(-1/4*x + 2)" = - 1.5 * 2^(-1/4*x + 2),
-       "2^(-1/4*x + 2)" = 2^(-1/4*x + 2))
-```
-
+In der @fig-exp-satt 
 
 
 ```{r}

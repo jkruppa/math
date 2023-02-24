@@ -127,7 +127,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 </head>
 
-<body class="nav-sidebar floating">
+<body class="nav-sidebar floating slimcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -267,7 +267,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content page-columns page-full" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -289,7 +289,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="cell">
 
 </div>
-<p><em>Version vom February 24, 2023 um 11:43:53</em></p>
+<p><em>Version vom February 24, 2023 um 12:00:46</em></p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/caution.png" class="img-fluid figure-img" style="width:50.0%"></p>
@@ -330,7 +330,7 @@ f(x) = mx + b_0
 </div>
 </div>
 </section>
-<section id="exponentialfunktion" class="level2" data-number="9.3">
+<section id="exponentialfunktion" class="level2 page-columns page-full" data-number="9.3">
 <h2 data-number="9.3" class="anchored" data-anchor-id="exponentialfunktion"><span class="header-section-number">9.3</span> Exponentialfunktion</h2>
 <p>Die Exponentialfunktion ist eine sehr wichtige biologische Funktion. Wir können mit der Exponentialfunktion zum Beispiel Wachstum oder aber Zerfall. Deshalb hier einmal die grundlegende Formel für die Exponentialfunktion.</p>
 <p><span class="math display">\[
@@ -457,43 +457,27 @@ N(t) = N_0 \cdot \cfrac{1}{2}^{\cfrac{t}{t_{1/2}}}
 </div>
 </div>
 </section>
-<section id="sättigungsfunktion" class="level3" data-number="9.3.2">
+<section id="sättigungsfunktion" class="level3 page-columns page-full" data-number="9.3.2">
 <h3 data-number="9.3.2" class="anchored" data-anchor-id="sättigungsfunktion"><span class="header-section-number">9.3.2</span> Sättigungsfunktion</h3>
-<p><span class="math display">\[
+<p>Jedes biologisches Wachstum folgt einer Sättigungsfunktion auch wenn wir als erstes annehmen würden, es handelt sich um ein unbegrenztes exponentielles Wachstum. Hier wollen wir nicht in die Diskussion verfallen, ob es auch ein unbegrenztes ökonomisches Wachstum gibt oder nicht. Das Schneeballsystem sei hier nur warnend erwähnt.</p>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p>Auf der Wikipedia Seite finden sich <a href="https://de.wikipedia.org/wiki/Exponentielles_Wachstum">Beispiele für das exponentielle Wachstum</a>.</p>
+</div></div><p><span class="math display">\[
 f(x) = b_0 - a \cdot b_1^{-c \cdot x + d}
-\]</span> <span class="math display">\[
+\]</span> Im Folgenden sehen wir einmal eine Gleichung einer Sättigungsfunktion als Beispiel.</p>
+<p><span class="math display">\[
 f(x) = 6 - 1.5 \cdot 2^{-\frac{1}{4}\cdot x + 2}
 \]</span></p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">tibble</span>(<span class="at">x =</span> <span class="dv">0</span><span class="sc">:</span><span class="dv">30</span>,</span>
-<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="dv">6</span> <span class="sc">-</span> <span class="fl">1.5</span> <span class="sc">*</span> <span class="dv">2</span><span class="sc">^</span>(<span class="sc">-</span><span class="dv">1</span><span class="sc">/</span><span class="dv">4</span><span class="sc">*</span>x <span class="sc">+</span> <span class="dv">2</span>),</span>
-<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>       <span class="st">"- 1.5 * 2^(-1/4*x + 2)"</span> <span class="ot">=</span> <span class="sc">-</span> <span class="fl">1.5</span> <span class="sc">*</span> <span class="dv">2</span><span class="sc">^</span>(<span class="sc">-</span><span class="dv">1</span><span class="sc">/</span><span class="dv">4</span><span class="sc">*</span>x <span class="sc">+</span> <span class="dv">2</span>),</span>
-<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>       <span class="st">"2^(-1/4*x + 2)"</span> <span class="ot">=</span> <span class="dv">2</span><span class="sc">^</span>(<span class="sc">-</span><span class="dv">1</span><span class="sc">/</span><span class="dv">4</span><span class="sc">*</span>x <span class="sc">+</span> <span class="dv">2</span>))</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 31 × 4
-       x     y `- 1.5 * 2^(-1/4*x + 2)` `2^(-1/4*x + 2)`
-   &lt;int&gt; &lt;dbl&gt;                    &lt;dbl&gt;            &lt;dbl&gt;
- 1     0 0                        -6               4    
- 2     1 0.955                    -5.05            3.36 
- 3     2 1.76                     -4.24            2.83 
- 4     3 2.43                     -3.57            2.38 
- 5     4 3                        -3               2    
- 6     5 3.48                     -2.52            1.68 
- 7     6 3.88                     -2.12            1.41 
- 8     7 4.22                     -1.78            1.19 
- 9     8 4.5                      -1.5             1    
-10     9 4.74                     -1.26            0.841
-# … with 21 more rows</code></pre>
-</div>
-</div>
+<p>In der <a href="#fig-exp-satt">Abbildung&nbsp;<span>9.5</span></a></p>
 <div class="cell" data-layout-align="center">
-<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">tibble</span>(<span class="at">x =</span> <span class="dv">0</span><span class="sc">:</span><span class="dv">30</span>,</span>
-<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="dv">6</span> <span class="sc">-</span> <span class="fl">1.5</span> <span class="sc">*</span> <span class="dv">2</span><span class="sc">^</span>(<span class="sc">-</span><span class="dv">1</span><span class="sc">/</span><span class="dv">4</span><span class="sc">*</span>x <span class="sc">+</span> <span class="dv">2</span>)) <span class="sc">%&gt;%</span> </span>
-<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(x, y)) <span class="sc">+</span></span>
-<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_radar</span>() <span class="sc">+</span></span>
-<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_hline</span>(<span class="at">yintercept =</span> <span class="dv">6</span>, <span class="at">color =</span> cbbPalette[<span class="dv">2</span>]) <span class="sc">+</span></span>
-<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_path</span>() <span class="sc">+</span></span>
-<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>()</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">tibble</span>(<span class="at">x =</span> <span class="dv">0</span><span class="sc">:</span><span class="dv">30</span>,</span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="dv">6</span> <span class="sc">-</span> <span class="fl">1.5</span> <span class="sc">*</span> <span class="dv">2</span><span class="sc">^</span>(<span class="sc">-</span><span class="dv">1</span><span class="sc">/</span><span class="dv">4</span><span class="sc">*</span>x <span class="sc">+</span> <span class="dv">2</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(x, y)) <span class="sc">+</span></span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_radar</span>() <span class="sc">+</span></span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_hline</span>(<span class="at">yintercept =</span> <span class="dv">6</span>, <span class="at">color =</span> cbbPalette[<span class="dv">2</span>]) <span class="sc">+</span></span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_path</span>() <span class="sc">+</span></span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>()</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div id="fig-exp-satt" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
