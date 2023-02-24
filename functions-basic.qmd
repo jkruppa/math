@@ -26,13 +26,13 @@ cbbPalette <- c("#000000", "#E69F00", "#56B4E9", "#009E73",
 
 ## Lineare Funktion
 
-Wiederholen wir einmal die klassische lineare Funktion. Die lineare Funktion wird durch zwei Parameter bestimmt. Einmal die Steigung $m$ sowie der y-Achsenabschnitt $b$. Wenn also $x$ um 1 ansteigt, dann ändert sich $y$ um den Wert von $m$. Die Gerade schneidet die $y$-Achse an dem $y$-Wert von $b$.
+Wiederholen wir einmal die klassische lineare Funktion. Die lineare Funktion wird durch zwei Parameter bestimmt. Einmal die Steigung $m$ sowie der y-Achsenabschnitt $b$. Wenn also $x$ um 1 ansteigt, dann ändert sich $y$ um den Wert von $m$. Die Gerade schneidet die $y$-Achse an dem $y$-Wert von $b_0$.
 
 $$
-f(x) = mx + b
+f(x) = mx + b_0
 $$
 
-In der @fig-lin-simple sehen wir die lineare Funktion $f(x) = 1.5 \cdot x + 4$ einmal als Gerade dargestellt. Hier wird nochmal schnell klar, was die Parameter der Geradengleichung aussagen. Die Gerade passiert die $y$-Achse bei einem Wert von 5. Wenn wir von $x=0$ zu $x=5$ gehen, dann steigt die Gerade von $y = 5$ auf $y = 12.5$. Damit ist dann die Steigung $m = \tfrac{12.5-5}{5} = 1.5$. Eigentlich realtiv einfach und *straight forward*.
+In der @fig-lin-simple sehen wir die lineare Funktion $f(x) = 1.5 \cdot x + 5$ einmal als Gerade dargestellt. Hier wird nochmal schnell klar, was die Parameter der Geradengleichung aussagen. Die Gerade passiert die $y$-Achse bei einem Wert von 5. Wenn wir von $x=0$ zu $x=5$ gehen, dann steigt die Gerade von $y = 5$ auf $y = 12.5$. Damit ist dann die Steigung $m = \tfrac{12.5-5}{5} = 1.5$. Eigentlich realtiv einfach und *straight forward*.
 
 ```{r}
 #| echo: true
@@ -42,7 +42,7 @@ In der @fig-lin-simple sehen wir die lineare Funktion $f(x) = 1.5 \cdot x + 4$ e
 #| fig-align: center
 #| fig-height: 4
 #| fig-width: 5
-#| fig-cap: "Eine einfache lineare Funktion mit der Steigung $m = 1.5$ und dem y-Achsenabschnitt $b = 5$."
+#| fig-cap: "Eine einfache lineare Funktion mit der Steigung $m = 1.5$ und dem y-Achsenabschnitt $b_0 = 5$."
 
 tibble(x = 0:10,
        y = 1.5 * x + 5) %>% 
@@ -55,17 +55,17 @@ tibble(x = 0:10,
 
 ## Exponentialfunktion
 
-Exponentialfunktion
+Die Exponentialfunktion ist eine sehr wichtige biologische Funktion. Wir können mit der Exponentialfunktion zum Beispiel Wachstum oder aber Zerfall. Deshalb hier einmal die grundlegende Formel für die Exponentialfunktion.
 
-https://www.statforbiology.com/nonlinearregression/usefulequations#michaelis-menten_equation
+$$
+f(x) = b_0 + a \cdot b_1^{c\cdot x + d}
+$$
+Wir haben hier wieder den $y$-Achsenabschnitt $b_0$. Dann einen Multiplikator $a$ für die eigentliche Exponentialfunktion. 
 
-https://en.wikipedia.org/wiki/Cubic_function
+$$
+f(x) = 2^x
+$$
 
-https://en.wikipedia.org/wiki/Polynomial
-
-https://de.wikipedia.org/wiki/Exponentielles_Wachstum
-
-https://www.rhetos.de/html/lex/exponentielle_saettigungsfunktion.htm
 
 ```{r}
 exp_tbl <- tibble(x = 0:10,
@@ -74,7 +74,21 @@ exp_tbl %>% print(n = Inf)
 ```
 
 
+$\log$ als Umkehrfunktion
 
+$$
+8 = 2^x
+$$
+$$
+\log_2(8) = 3
+$$
+
+$$
+\log_a(b) = \cfrac{\log(b)}{\log(a)}
+$$
+$$
+\log_{12}(50) = \cfrac{\log(50)}{\log(12)} = \cfrac{3.91}{2.48} = 1.58
+$$
 
 ```{r}
 #| echo: true
@@ -158,8 +172,22 @@ tibble(t = 0:30,
 ### Sättigungsfunktion
 
 $$
-f(x) = A - a \cdot b^{-c \cdot x + d}
+f(x) = b_0 - a \cdot b_1^{-c \cdot x + d}
 $$
+$$
+f(x) = 6 - 1.5 \cdot 2^{-\frac{1}{4}\cdot x + 2}
+$$
+
+
+```{r}
+tibble(x = 0:30,
+       y = 6 - 1.5 * 2^(-1/4*x + 2),
+       "- 1.5 * 2^(-1/4*x + 2)" = - 1.5 * 2^(-1/4*x + 2),
+       "2^(-1/4*x + 2)" = 2^(-1/4*x + 2))
+```
+
+
+
 ```{r}
 #| echo: true
 #| message: false
@@ -171,13 +199,24 @@ $$
 #| fig-cap: "test."
 
 tibble(x = 0:30,
-       y = 4 - 1.5 * 2^(-1/4*x + 2)) %>% 
+       y = 6 - 1.5 * 2^(-1/4*x + 2)) %>% 
   ggplot(aes(x, y)) +
   theme_radar() +
-  geom_hline(yintercept = 4, color = cbbPalette[2]) +
+  geom_hline(yintercept = 6, color = cbbPalette[2]) +
   geom_path() +
   geom_point()
 ```
 
+## Quellen
+
+https://www.statforbiology.com/nonlinearregression/usefulequations#michaelis-menten_equation
+
+https://en.wikipedia.org/wiki/Cubic_function
+
+https://en.wikipedia.org/wiki/Polynomial
+
+https://de.wikipedia.org/wiki/Exponentielles_Wachstum
+
+https://www.rhetos.de/html/lex/exponentielle_saettigungsfunktion.htm
 
 

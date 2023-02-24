@@ -262,6 +262,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   <li><a href="#halbwertszeit" id="toc-halbwertszeit" class="nav-link" data-scroll-target="#halbwertszeit"><span class="toc-section-number">9.3.1</span>  Halbwertszeit</a></li>
   <li><a href="#sättigungsfunktion" id="toc-sättigungsfunktion" class="nav-link" data-scroll-target="#sättigungsfunktion"><span class="toc-section-number">9.3.2</span>  Sättigungsfunktion</a></li>
   </ul></li>
+  <li><a href="#quellen" id="toc-quellen" class="nav-link" data-scroll-target="#quellen"><span class="toc-section-number">9.4</span>  Quellen</a></li>
   </ul>
 </nav>
     </div>
@@ -288,7 +289,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="cell">
 
 </div>
-<p><em>Version vom February 24, 2023 um 11:04:45</em></p>
+<p><em>Version vom February 24, 2023 um 11:43:53</em></p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/caution.png" class="img-fluid figure-img" style="width:50.0%"></p>
@@ -306,11 +307,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </section>
 <section id="lineare-funktion" class="level2" data-number="9.2">
 <h2 data-number="9.2" class="anchored" data-anchor-id="lineare-funktion"><span class="header-section-number">9.2</span> Lineare Funktion</h2>
-<p>Wiederholen wir einmal die klassische lineare Funktion. Die lineare Funktion wird durch zwei Parameter bestimmt. Einmal die Steigung <span class="math inline">\(m\)</span> sowie der y-Achsenabschnitt <span class="math inline">\(b\)</span>. Wenn also <span class="math inline">\(x\)</span> um 1 ansteigt, dann ändert sich <span class="math inline">\(y\)</span> um den Wert von <span class="math inline">\(m\)</span>. Die Gerade schneidet die <span class="math inline">\(y\)</span>-Achse an dem <span class="math inline">\(y\)</span>-Wert von <span class="math inline">\(b\)</span>.</p>
+<p>Wiederholen wir einmal die klassische lineare Funktion. Die lineare Funktion wird durch zwei Parameter bestimmt. Einmal die Steigung <span class="math inline">\(m\)</span> sowie der y-Achsenabschnitt <span class="math inline">\(b\)</span>. Wenn also <span class="math inline">\(x\)</span> um 1 ansteigt, dann ändert sich <span class="math inline">\(y\)</span> um den Wert von <span class="math inline">\(m\)</span>. Die Gerade schneidet die <span class="math inline">\(y\)</span>-Achse an dem <span class="math inline">\(y\)</span>-Wert von <span class="math inline">\(b_0\)</span>.</p>
 <p><span class="math display">\[
-f(x) = mx + b
+f(x) = mx + b_0
 \]</span></p>
-<p>In der <a href="#fig-lin-simple">Abbildung&nbsp;<span>9.1</span></a> sehen wir die lineare Funktion <span class="math inline">\(f(x) = 1.5 \cdot x + 4\)</span> einmal als Gerade dargestellt. Hier wird nochmal schnell klar, was die Parameter der Geradengleichung aussagen. Die Gerade passiert die <span class="math inline">\(y\)</span>-Achse bei einem Wert von 5. Wenn wir von <span class="math inline">\(x=0\)</span> zu <span class="math inline">\(x=5\)</span> gehen, dann steigt die Gerade von <span class="math inline">\(y = 5\)</span> auf <span class="math inline">\(y = 12.5\)</span>. Damit ist dann die Steigung <span class="math inline">\(m = \tfrac{12.5-5}{5} = 1.5\)</span>. Eigentlich realtiv einfach und <em>straight forward</em>.</p>
+<p>In der <a href="#fig-lin-simple">Abbildung&nbsp;<span>9.1</span></a> sehen wir die lineare Funktion <span class="math inline">\(f(x) = 1.5 \cdot x + 5\)</span> einmal als Gerade dargestellt. Hier wird nochmal schnell klar, was die Parameter der Geradengleichung aussagen. Die Gerade passiert die <span class="math inline">\(y\)</span>-Achse bei einem Wert von 5. Wenn wir von <span class="math inline">\(x=0\)</span> zu <span class="math inline">\(x=5\)</span> gehen, dann steigt die Gerade von <span class="math inline">\(y = 5\)</span> auf <span class="math inline">\(y = 12.5\)</span>. Damit ist dann die Steigung <span class="math inline">\(m = \tfrac{12.5-5}{5} = 1.5\)</span>. Eigentlich realtiv einfach und <em>straight forward</em>.</p>
 <div class="cell" data-layout-align="center">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">tibble</span>(<span class="at">x =</span> <span class="dv">0</span><span class="sc">:</span><span class="dv">10</span>,</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="fl">1.5</span> <span class="sc">*</span> x <span class="sc">+</span> <span class="dv">5</span>) <span class="sc">%&gt;%</span> </span>
@@ -323,7 +324,7 @@ f(x) = mx + b
 <div id="fig-lin-simple" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="functions-basic_files/figure-html/fig-lin-simple-1.png" class="img-fluid figure-img" width="480"></p>
-<p></p><figcaption class="figure-caption">Abbildung&nbsp;9.1— Eine einfache lineare Funktion mit der Steigung <span class="math inline">\(m = 1.5\)</span> und dem y-Achsenabschnitt <span class="math inline">\(b = 5\)</span>.</figcaption><p></p>
+<p></p><figcaption class="figure-caption">Abbildung&nbsp;9.1— Eine einfache lineare Funktion mit der Steigung <span class="math inline">\(m = 1.5\)</span> und dem y-Achsenabschnitt <span class="math inline">\(b_0 = 5\)</span>.</figcaption><p></p>
 </figure>
 </div>
 </div>
@@ -331,12 +332,13 @@ f(x) = mx + b
 </section>
 <section id="exponentialfunktion" class="level2" data-number="9.3">
 <h2 data-number="9.3" class="anchored" data-anchor-id="exponentialfunktion"><span class="header-section-number">9.3</span> Exponentialfunktion</h2>
-<p>Exponentialfunktion</p>
-<p>https://www.statforbiology.com/nonlinearregression/usefulequations#michaelis-menten_equation</p>
-<p>https://en.wikipedia.org/wiki/Cubic_function</p>
-<p>https://en.wikipedia.org/wiki/Polynomial</p>
-<p>https://de.wikipedia.org/wiki/Exponentielles_Wachstum</p>
-<p>https://www.rhetos.de/html/lex/exponentielle_saettigungsfunktion.htm</p>
+<p>Die Exponentialfunktion ist eine sehr wichtige biologische Funktion. Wir können mit der Exponentialfunktion zum Beispiel Wachstum oder aber Zerfall. Deshalb hier einmal die grundlegende Formel für die Exponentialfunktion.</p>
+<p><span class="math display">\[
+f(x) = b_0 + a \cdot b_1^{c\cdot x + d}
+\]</span> Wir haben hier wieder den <span class="math inline">\(y\)</span>-Achsenabschnitt <span class="math inline">\(b_0\)</span>. Dann einen Multiplikator <span class="math inline">\(a\)</span> für die eigentliche Exponentialfunktion.</p>
+<p><span class="math display">\[
+f(x) = 2^x
+\]</span></p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>exp_tbl <span class="ot">&lt;-</span> <span class="fu">tibble</span>(<span class="at">x =</span> <span class="dv">0</span><span class="sc">:</span><span class="dv">10</span>,</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>                  <span class="at">y =</span> <span class="dv">2</span><span class="sc">^</span>x)</span>
@@ -358,6 +360,17 @@ f(x) = mx + b
 11    10  1024</code></pre>
 </div>
 </div>
+<p><span class="math inline">\(\log\)</span> als Umkehrfunktion</p>
+<p><span class="math display">\[
+8 = 2^x
+\]</span> <span class="math display">\[
+\log_2(8) = 3
+\]</span></p>
+<p><span class="math display">\[
+\log_a(b) = \cfrac{\log(b)}{\log(a)}
+\]</span> <span class="math display">\[
+\log_{12}(50) = \cfrac{\log(50)}{\log(12)} = \cfrac{3.91}{2.48} = 1.58
+\]</span></p>
 <div class="cell" data-layout-align="center">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>exp_tbl <span class="sc">%&gt;%</span> </span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(x, y)) <span class="sc">+</span></span>
@@ -447,16 +460,40 @@ N(t) = N_0 \cdot \cfrac{1}{2}^{\cfrac{t}{t_{1/2}}}
 <section id="sättigungsfunktion" class="level3" data-number="9.3.2">
 <h3 data-number="9.3.2" class="anchored" data-anchor-id="sättigungsfunktion"><span class="header-section-number">9.3.2</span> Sättigungsfunktion</h3>
 <p><span class="math display">\[
-f(x) = A - a \cdot b^{-c \cdot x + d}
+f(x) = b_0 - a \cdot b_1^{-c \cdot x + d}
+\]</span> <span class="math display">\[
+f(x) = 6 - 1.5 \cdot 2^{-\frac{1}{4}\cdot x + 2}
 \]</span></p>
-<div class="cell" data-layout-align="center">
+<div class="cell">
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">tibble</span>(<span class="at">x =</span> <span class="dv">0</span><span class="sc">:</span><span class="dv">30</span>,</span>
-<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="dv">4</span> <span class="sc">-</span> <span class="fl">1.5</span> <span class="sc">*</span> <span class="dv">2</span><span class="sc">^</span>(<span class="sc">-</span><span class="dv">1</span><span class="sc">/</span><span class="dv">4</span><span class="sc">*</span>x <span class="sc">+</span> <span class="dv">2</span>)) <span class="sc">%&gt;%</span> </span>
-<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(x, y)) <span class="sc">+</span></span>
-<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_radar</span>() <span class="sc">+</span></span>
-<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_hline</span>(<span class="at">yintercept =</span> <span class="dv">4</span>, <span class="at">color =</span> cbbPalette[<span class="dv">2</span>]) <span class="sc">+</span></span>
-<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_path</span>() <span class="sc">+</span></span>
-<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>()</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="dv">6</span> <span class="sc">-</span> <span class="fl">1.5</span> <span class="sc">*</span> <span class="dv">2</span><span class="sc">^</span>(<span class="sc">-</span><span class="dv">1</span><span class="sc">/</span><span class="dv">4</span><span class="sc">*</span>x <span class="sc">+</span> <span class="dv">2</span>),</span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>       <span class="st">"- 1.5 * 2^(-1/4*x + 2)"</span> <span class="ot">=</span> <span class="sc">-</span> <span class="fl">1.5</span> <span class="sc">*</span> <span class="dv">2</span><span class="sc">^</span>(<span class="sc">-</span><span class="dv">1</span><span class="sc">/</span><span class="dv">4</span><span class="sc">*</span>x <span class="sc">+</span> <span class="dv">2</span>),</span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>       <span class="st">"2^(-1/4*x + 2)"</span> <span class="ot">=</span> <span class="dv">2</span><span class="sc">^</span>(<span class="sc">-</span><span class="dv">1</span><span class="sc">/</span><span class="dv">4</span><span class="sc">*</span>x <span class="sc">+</span> <span class="dv">2</span>))</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 31 × 4
+       x     y `- 1.5 * 2^(-1/4*x + 2)` `2^(-1/4*x + 2)`
+   &lt;int&gt; &lt;dbl&gt;                    &lt;dbl&gt;            &lt;dbl&gt;
+ 1     0 0                        -6               4    
+ 2     1 0.955                    -5.05            3.36 
+ 3     2 1.76                     -4.24            2.83 
+ 4     3 2.43                     -3.57            2.38 
+ 5     4 3                        -3               2    
+ 6     5 3.48                     -2.52            1.68 
+ 7     6 3.88                     -2.12            1.41 
+ 8     7 4.22                     -1.78            1.19 
+ 9     8 4.5                      -1.5             1    
+10     9 4.74                     -1.26            0.841
+# … with 21 more rows</code></pre>
+</div>
+</div>
+<div class="cell" data-layout-align="center">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">tibble</span>(<span class="at">x =</span> <span class="dv">0</span><span class="sc">:</span><span class="dv">30</span>,</span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="dv">6</span> <span class="sc">-</span> <span class="fl">1.5</span> <span class="sc">*</span> <span class="dv">2</span><span class="sc">^</span>(<span class="sc">-</span><span class="dv">1</span><span class="sc">/</span><span class="dv">4</span><span class="sc">*</span>x <span class="sc">+</span> <span class="dv">2</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(x, y)) <span class="sc">+</span></span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_radar</span>() <span class="sc">+</span></span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_hline</span>(<span class="at">yintercept =</span> <span class="dv">6</span>, <span class="at">color =</span> cbbPalette[<span class="dv">2</span>]) <span class="sc">+</span></span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_path</span>() <span class="sc">+</span></span>
+<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>()</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div id="fig-exp-satt" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
@@ -466,9 +503,17 @@ f(x) = A - a \cdot b^{-c \cdot x + d}
 </div>
 </div>
 </div>
-
-
 </section>
+</section>
+<section id="quellen" class="level2" data-number="9.4">
+<h2 data-number="9.4" class="anchored" data-anchor-id="quellen"><span class="header-section-number">9.4</span> Quellen</h2>
+<p>https://www.statforbiology.com/nonlinearregression/usefulequations#michaelis-menten_equation</p>
+<p>https://en.wikipedia.org/wiki/Cubic_function</p>
+<p>https://en.wikipedia.org/wiki/Polynomial</p>
+<p>https://de.wikipedia.org/wiki/Exponentielles_Wachstum</p>
+<p>https://www.rhetos.de/html/lex/exponentielle_saettigungsfunktion.htm</p>
+
+
 </section>
 
 </main> <!-- /main -->
