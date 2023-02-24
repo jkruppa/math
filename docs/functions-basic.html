@@ -289,7 +289,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="cell">
 
 </div>
-<p><em>Version vom February 24, 2023 um 12:43:55</em></p>
+<p><em>Version vom February 24, 2023 um 12:57:54</em></p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/caution.png" class="img-fluid figure-img" style="width:50.0%"></p>
@@ -394,16 +394,26 @@ f(x) = 2^x
 <p><span class="math display">\[
 \log_{12}(50) = \cfrac{\log(50)}{\log(12)} = \cfrac{3.91}{2.48} = 1.58
 \]</span></p>
-<p>Die Summe über alle <span class="math inline">\(y\)</span>-Werte Auch als Formel mit</p>
+<p>Häufig wollen wir nicht nur den Wert für einen Exponenten rechnen, also den Wert für <span class="math inline">\(f(x) = 2^5\)</span>, sondern die Summe aller <span class="math inline">\(x = 1, ..., 5\)</span>. Wir wollen also folgende Rechnung durchführen.</p>
 <p><span class="math display">\[
-  \sum_{n=0}^N r^n = \cfrac{r^{N + 1} -1}{r - 1}
+2^0 + 2^1 + 2^2 + 2^3 + 2^4 + 2^5 = 63
 \]</span></p>
+<p>Dafür können wir die folgende Formel nutzen. Wir setzen dann für <span class="math inline">\(b_1\)</span> die Basis ein und für <span class="math inline">\(N\)</span> den Exponenten bis zu dem wir einschließlich aufsummieren wollen.</p>
+<p><span class="math display">\[
+  \sum_{n=0}^N b_1^n = \cfrac{b_1^{N + 1} -1}{b_1 - 1}
+\]</span></p>
+<p>Das ganz können wir dann einmal ausfüllen. Die Basis <span class="math inline">\(b_1\)</span> ist dann <span class="math inline">\(2\)</span> und wir wollen bis zum fünften Exponenten aufsummieren. Daher ist dann <span class="math inline">\(N = 5\)</span>.</p>
+<p><span class="math display">\[
+  \sum_{n=0}^5 2^n = \cfrac{2^{5 + 1} -1}{2 - 1} = 63
+\]</span></p>
+<p>Und einmal die Überprüfung in R Code.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>(<span class="dv">2</span><span class="sc">^</span>(<span class="dv">5</span><span class="sc">+</span><span class="dv">1</span>)<span class="sc">-</span><span class="dv">1</span>)<span class="sc">/</span>(<span class="dv">2-1</span>)</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 63</code></pre>
 </div>
 </div>
+<p>Und nochmal als Tabelle dargestellt. In der Spalte <code>cumsum_y</code> findet sich das aufsummierte <span class="math inline">\(y\)</span>.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>exp_tbl <span class="sc">%&lt;&gt;%</span> </span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">cumsum_y =</span> (<span class="dv">2</span><span class="sc">^</span>(x<span class="sc">+</span><span class="dv">1</span>)<span class="sc">-</span><span class="dv">1</span>)<span class="sc">/</span>(<span class="dv">2-1</span>))</span>

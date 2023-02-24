@@ -119,16 +119,31 @@ $$
 \log_{12}(50) = \cfrac{\log(50)}{\log(12)} = \cfrac{3.91}{2.48} = 1.58
 $$
 
-
-Die Summe über alle $y$-Werte Auch als Formel mit
+Häufig wollen wir nicht nur den Wert für einen Exponenten rechnen, also den Wert für $f(x) = 2^5$, sondern die Summe aller $x = 1, ..., 5$. Wir wollen also folgende Rechnung durchführen.
 
 $$
-  \sum_{n=0}^N r^n = \cfrac{r^{N + 1} -1}{r - 1}
+2^0 + 2^1 + 2^2 + 2^3 + 2^4 + 2^5 = 63
 $$
+
+Dafür können wir die folgende Formel nutzen. Wir setzen dann für $b_1$ die Basis ein und für $N$ den Exponenten bis zu dem wir einschließlich aufsummieren wollen.
+
+$$
+  \sum_{n=0}^N b_1^n = \cfrac{b_1^{N + 1} -1}{b_1 - 1}
+$$
+
+Das ganz können wir dann einmal ausfüllen. Die Basis $b_1$ ist dann $2$ und wir wollen bis zum fünften Exponenten aufsummieren. Daher ist dann $N = 5$.
+
+$$
+  \sum_{n=0}^5 2^n = \cfrac{2^{5 + 1} -1}{2 - 1} = 63
+$$
+
+Und einmal die Überprüfung in R Code.
 
 ```{r}
 (2^(5+1)-1)/(2-1)
 ```
+
+Und nochmal als Tabelle dargestellt. In der Spalte `cumsum_y` findet sich das aufsummierte $y$.
 
 ```{r}
 exp_tbl %<>% 
