@@ -289,7 +289,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="cell">
 
 </div>
-<p><em>Version vom February 24, 2023 um 12:00:46</em></p>
+<p><em>Version vom February 24, 2023 um 12:17:54</em></p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/caution.png" class="img-fluid figure-img" style="width:50.0%"></p>
@@ -335,10 +335,12 @@ f(x) = mx + b_0
 <p>Die Exponentialfunktion ist eine sehr wichtige biologische Funktion. Wir können mit der Exponentialfunktion zum Beispiel Wachstum oder aber Zerfall. Deshalb hier einmal die grundlegende Formel für die Exponentialfunktion.</p>
 <p><span class="math display">\[
 f(x) = b_0 + a \cdot b_1^{c\cdot x + d}
-\]</span> Wir haben hier wieder den <span class="math inline">\(y\)</span>-Achsenabschnitt <span class="math inline">\(b_0\)</span>. Dann einen Multiplikator <span class="math inline">\(a\)</span> für die eigentliche Exponentialfunktion.</p>
+\]</span> Wir haben hier wieder den <span class="math inline">\(y\)</span>-Achsenabschnitt <span class="math inline">\(b_0\)</span>. Dann einen Multiplikator <span class="math inline">\(a\)</span> für die <em>eigentliche</em> Exponentialfunktion. Der wichtigste Parameter ist hierbei dann das <span class="math inline">\(b_1\)</span> oder die Basis. Wir haben dann noch den Exponenten, der meistens nur ein <span class="math inline">\(x\)</span> sein kann oder wiederum eine lineare Funktion. Wir konzentrieren uns hier eher auf die einfachen Exponentialfunktion.</p>
+<p>In der folgenden Gleichung sehen wir die Exponentialfunktion <span class="math inline">\(f(x) = 2^x\)</span> mit der Basis <span class="math inline">\(2\)</span> und dem Exponenten <span class="math inline">\(x\)</span>.</p>
 <p><span class="math display">\[
 f(x) = 2^x
 \]</span></p>
+<p>Wir können uns dann einmal die Daten erschaffen.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>exp_tbl <span class="ot">&lt;-</span> <span class="fu">tibble</span>(<span class="at">x =</span> <span class="dv">0</span><span class="sc">:</span><span class="dv">10</span>,</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>                  <span class="at">y =</span> <span class="dv">2</span><span class="sc">^</span>x)</span>
@@ -360,6 +362,22 @@ f(x) = 2^x
 11    10  1024</code></pre>
 </div>
 </div>
+<p>In der <a href="#fig-exp-simple">Abbildung&nbsp;<span>9.2</span></a> sehen wir die Exponentialfunktion <span class="math inline">\(f(x) = 2^x\)</span> einmal dargestellt.</p>
+<div class="cell" data-layout-align="center">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>exp_tbl <span class="sc">%&gt;%</span> </span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(x, y)) <span class="sc">+</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_radar</span>() <span class="sc">+</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_path</span>() <span class="sc">+</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>() </span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div id="fig-exp-simple" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="functions-basic_files/figure-html/fig-exp-simple-1.png" class="img-fluid figure-img" width="480"></p>
+<p></p><figcaption class="figure-caption">Abbildung&nbsp;9.2— Die einfache Exponentialfunktion <span class="math inline">\(f(x) = 2^x\)</span>.</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
 <p><span class="math inline">\(\log\)</span> als Umkehrfunktion</p>
 <p><span class="math display">\[
 8 = 2^x
@@ -371,21 +389,6 @@ f(x) = 2^x
 \]</span> <span class="math display">\[
 \log_{12}(50) = \cfrac{\log(50)}{\log(12)} = \cfrac{3.91}{2.48} = 1.58
 \]</span></p>
-<div class="cell" data-layout-align="center">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>exp_tbl <span class="sc">%&gt;%</span> </span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(x, y)) <span class="sc">+</span></span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_radar</span>() <span class="sc">+</span></span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_path</span>() <span class="sc">+</span></span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>() </span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-display">
-<div id="fig-exp-simple" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="functions-basic_files/figure-html/fig-exp-simple-1.png" class="img-fluid figure-img" width="480"></p>
-<p></p><figcaption class="figure-caption">Abbildung&nbsp;9.2— test.</figcaption><p></p>
-</figure>
-</div>
-</div>
-</div>
 <p>Die Summe über alle <span class="math inline">\(y\)</span>-Werte Auch als Formel mit</p>
 <p><span class="math display">\[
   \sum_{n=0}^N r^n = \cfrac{r^{N + 1} -1}{r - 1}

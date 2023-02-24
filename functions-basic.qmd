@@ -60,18 +60,41 @@ Die Exponentialfunktion ist eine sehr wichtige biologische Funktion. Wir können
 $$
 f(x) = b_0 + a \cdot b_1^{c\cdot x + d}
 $$
-Wir haben hier wieder den $y$-Achsenabschnitt $b_0$. Dann einen Multiplikator $a$ für die eigentliche Exponentialfunktion. 
+Wir haben hier wieder den $y$-Achsenabschnitt $b_0$. Dann einen Multiplikator $a$ für die *eigentliche* Exponentialfunktion. Der wichtigste Parameter ist hierbei dann das $b_1$ oder die Basis. Wir haben dann noch den Exponenten, der meistens nur ein $x$ sein kann oder wiederum eine lineare Funktion. Wir konzentrieren uns hier eher auf die einfachen Exponentialfunktion. 
+
+In der folgenden Gleichung sehen wir die Exponentialfunktion $f(x) = 2^x$ mit der Basis $2$ und dem Exponenten $x$.
 
 $$
 f(x) = 2^x
 $$
 
+Wir können uns dann einmal die Daten erschaffen.
 
 ```{r}
 exp_tbl <- tibble(x = 0:10,
                   y = 2^x)
 exp_tbl %>% print(n = Inf)
 ```
+
+In der @fig-exp-simple sehen wir die Exponentialfunktion $f(x) = 2^x$ einmal dargestellt.
+
+```{r}
+#| echo: true
+#| message: false
+#| warning: false
+#| label: fig-exp-simple
+#| fig-align: center
+#| fig-height: 4
+#| fig-width: 5
+#| fig-cap: "Die einfache Exponentialfunktion $f(x) = 2^x$."
+
+exp_tbl %>% 
+  ggplot(aes(x, y)) +
+  theme_radar() +
+  geom_path() +
+  geom_point() 
+```
+
 
 
 $\log$ als Umkehrfunktion
@@ -90,22 +113,6 @@ $$
 \log_{12}(50) = \cfrac{\log(50)}{\log(12)} = \cfrac{3.91}{2.48} = 1.58
 $$
 
-```{r}
-#| echo: true
-#| message: false
-#| warning: false
-#| label: fig-exp-simple
-#| fig-align: center
-#| fig-height: 4
-#| fig-width: 5
-#| fig-cap: "test."
-
-exp_tbl %>% 
-  ggplot(aes(x, y)) +
-  theme_radar() +
-  geom_path() +
-  geom_point() 
-```
 
 Die Summe über alle $y$-Werte Auch als Formel mit
 
@@ -176,6 +183,8 @@ Jedes biologisches Wachstum folgt einer Sättigungsfunktion auch wenn wir als er
 ::: column-margin
 Auf der Wikipedia Seite finden sich [Beispiele für das exponentielle Wachstum](https://de.wikipedia.org/wiki/Exponentielles_Wachstum).
 :::
+
+
 
 $$
 f(x) = b_0 - a \cdot b_1^{-c \cdot x + d}
