@@ -95,20 +95,26 @@ exp_tbl %>%
   geom_point() 
 ```
 
-
-
-$\log$ als Umkehrfunktion
+Häufig brauchen wir aber nicht die Information von $y$ und haben das $x$ gegeben, sondern genau andersherum. Wir haben ein $y$ gegeben und wollen dafür das $x$ ausrechnen. Für die Exponentialfunktion ist die Umkehrfunktion der Logarithmus $\log()$. Nehmen wir folgende Exponentialfunktion einmal an.
 
 $$
 8 = 2^x
 $$
+
+Wir wollen jetzt die Funktion nach $x$ auflösen und nutzen dafür den Logarithmus. Wir haben eine Basis von $2$ also nutzen wir den $\log_2$ von $8$ um den Exponenten $x$ zu erhalten.
+
 $$
 \log_2(8) = 3
 $$
 
+Manchmal rechnen wir mit einer recht großen Basis oder aber der Taschenrechner hat die Funktion für einen Logarithmus einer beliebigen Basis nicht implementiert. Daher können wir folgende Rechenoperation nutzen.
+
 $$
 \log_a(b) = \cfrac{\log(b)}{\log(a)}
 $$
+
+Das ganze einmal als Beispiel für die Basis $12$ mit dem Logarithmus $\log_{12}$.
+
 $$
 \log_{12}(50) = \cfrac{\log(50)}{\log(12)} = \cfrac{3.91}{2.48} = 1.58
 $$
