@@ -131,6 +131,7 @@ $$
 $$
 N(t) = N_0 \cdot \cfrac{1}{2}^{\cfrac{t}{t_{1/2}}}
 $$
+
 ```{r}
 #| echo: true
 #| message: false

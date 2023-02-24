@@ -1,0 +1,282 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Skript Mathematik",
+    "section": "",
+    "text": "Auf den folgenden Seiten wirst du nochmal die Grundlagen der Mathematik in der Statistik lernen. Wir lagern hier die Inhalte die sehr mathematisch sind von den angewandten, statistischen Themen aus. Das heißt, du findest hier sehr viel Mathematik und auch Rechenbeispiele. Es wird aber R Code geben - siehe den R Code als den Taschenrechnercode. Das hat den einfachen Grund, das wir eben dann doch mal die Grundlagen in der Mathematik wiederholen müssen. Es kann aber auch sein, dass du gar nicht so viel Mathematik später brauchst - oder wiederkommst, weil du nochmal nachschauen willst, wie du eine Teilstückfläche berechnest. Wir auch immer, hier findest du die Mathematikteile aus meinenen Vorlesungen."
+  },
+  {
+    "objectID": "index.html#sec-contact-mail",
+    "href": "index.html#sec-contact-mail",
+    "title": "Skript Mathematik",
+    "section": "Kontakt",
+    "text": "Kontakt\nWie erreichst du mich? Am einfachsten über die gute, alte E-Mail. Bitte bachte, dass gerade kurz vor den Prüfungen ich mehr E-Mails kriege. Leider kann es dann einen Tick dauern.\n\n\n\n\n\nEinfach an j.kruppa@hs-osnabrueck.de schreiben. Du findest hier auch eine kurze Formulierungshilfe. Einfach auf den Ausklapppfeil klicken.\nBitte gib immer in deiner E-Mail dein Modul - was du belegst - mit an. Pro Semester unterrichte ich immer drei sehr ähnlich klingende Module. Daher schau nochmal hier in der Liste, wenn du unsicher bist.\n\n\n\n\n\n\nE-Mailvorlage mit beispielhafter Anrede\n\n\n\n\n\nHallo Herr Kruppa,\n… ich belege gerade Ihr Modul Modulname und hätte eine Bitte/Frage/Anregung…\n… ich benötige Hilfe bei der Planung/Auswertung meiner Bachelorarbeit…\nMit freundlichen Grüßen\nM. Muster"
+  },
+  {
+    "objectID": "literature.html#parametrische-statistik",
+    "href": "literature.html#parametrische-statistik",
+    "title": "1  Literatur",
+    "section": "1.1 Parametrische Statistik",
+    "text": "1.1 Parametrische Statistik\n\n\n\n\n\nDormann (2013) liefert ein tolles deutsches Buch für die Vertiefung in die Statistik. Wir nutzen das Buch hier um uns nochmal auf die Verteilungen von der mathematischen Seite anzunähern. Wir wollen die Begriffe wie Dichte, Parameter und Schätzer für Verteilungen nochmal genauer anschauen. Das Buch ist an der Hochschule Osnabrück kostenlos über den Link zu erhalten."
+  },
+  {
+    "objectID": "literature.html#odds-ends",
+    "href": "literature.html#odds-ends",
+    "title": "1  Literatur",
+    "section": "1.2 Odds & Ends",
+    "text": "1.2 Odds & Ends\n\n\n\n\n\nAm Ende dann noch eine Mathebuch von Weisberg zu finden unter https://jonathanweisberg.org/vip/. Eigentlich eher ein Buch über Wahrscheinlichkeiten und wenn ein Buch am Ende stehen muss, dann ist es dieses Buch. Ich finde es sehr spannend zu lesen. Wir nutzen Teile aus dem Buch für die bedingten Wahrscheinlichkeiten."
+  },
+  {
+    "objectID": "literature.html#referenzen",
+    "href": "literature.html#referenzen",
+    "title": "1  Literatur",
+    "section": "Referenzen",
+    "text": "Referenzen\n\n\n\n\nDormann, Carsten F. 2013. Parametrische Statistik. Springer."
+  },
+  {
+    "objectID": "preface.html#lernziel-1-geometrische-berechnungen-für-die-versuchsplanung-durchführen",
+    "href": "preface.html#lernziel-1-geometrische-berechnungen-für-die-versuchsplanung-durchführen",
+    "title": "2  Einführung",
+    "section": "2.1 Lernziel 1: Geometrische Berechnungen für die Versuchsplanung durchführen",
+    "text": "2.1 Lernziel 1: Geometrische Berechnungen für die Versuchsplanung durchführen\nWir wollen nochmal lernen, wie wir Berechnungen für Flächen durchführen. Wir brauchen das Wissen um später ausrechnen zu können wie viel Platz wir für einen Versuch brauchen. Dafür wiederholen wir nochmal die gängigsten Formen und Flächen. Ebenso berechnen wir die Volumen von den gänigsten Körpern. Das Wissen brauchen wir um Abschätzen zu können wie viel Torf wir für unsere Töpfe ansetzen müssen oder wie viel Futter wir für unser Tierexperiment einkaufen müssen."
+  },
+  {
+    "objectID": "preface.html#lernziel-2-grundlagen-von-wahrscheinlichkeiten-verstehen",
+    "href": "preface.html#lernziel-2-grundlagen-von-wahrscheinlichkeiten-verstehen",
+    "title": "2  Einführung",
+    "section": "2.2 Lernziel 2: Grundlagen von Wahrscheinlichkeiten verstehen",
+    "text": "2.2 Lernziel 2: Grundlagen von Wahrscheinlichkeiten verstehen\nWir wollen lerne, wie sich Wahrscheinlichkeiten zusammensetzen. Also was ist eigentlich eine Wahrscheinlichkeit, wo kommt die Wahrscheinlichkeit her und wie rechnen wir mit Wahrscheinlichkeiten. Darüber hinaus lernen wir auch die bedingte Wahrscheinlichkeit kennen, die wir später in der Statistik nochmal brauchen. Vieles wirst du wiedererkennen. Wir wollen es hier nochmal wiederholen und festigen."
+  },
+  {
+    "objectID": "preface.html#lernziel-3-wahrscheinlichkeitsverteilungen-verstehen",
+    "href": "preface.html#lernziel-3-wahrscheinlichkeitsverteilungen-verstehen",
+    "title": "2  Einführung",
+    "section": "2.3 Lernziel 3: Wahrscheinlichkeitsverteilungen verstehen",
+    "text": "2.3 Lernziel 3: Wahrscheinlichkeitsverteilungen verstehen\nNeben den einfachen Wahrscheinlichkeiten von einem Ereignis, können wir uns auch kompliziertere Wahrscheinlichkeiten vorstellen. Wir schauen uns nicht nur ein Ereignis an, sondern eben eine ganze Reihe von möglichen Ausgängen eines Zufallsprozesses. Daher werden wir hier nochmal die gänigsten Verteilungen wiederholen und uns anschauen, was eigentlich eine Dichtefunktion ist."
+  },
+  {
+    "objectID": "preface.html#lernziel4-matrixrechnungen-durchführen-können",
+    "href": "preface.html#lernziel4-matrixrechnungen-durchführen-können",
+    "title": "2  Einführung",
+    "section": "2.4 Lernziel4: Matrixrechnungen durchführen können",
+    "text": "2.4 Lernziel4: Matrixrechnungen durchführen können\nAm Ende wollen wir uns nochmal die Berechnung der Vektor- und Matrixrechnungen anschauen. Wir brauchen die Grundidee der Vektor- und Matrixrechnung in der Statistik um dort mit Vektoren und dann auch Datensätzen rechnen zu können. Wir halten hier aber alles sehr einfach und konzentrieren uns auf das Wichtigste."
+  },
+  {
+    "objectID": "geometry-preface.html",
+    "href": "geometry-preface.html",
+    "title": "Von Maßzahlen, Flächen und Volumen",
+    "section": "",
+    "text": "Version vom January 22, 2023 um 16:03:48\nIn dem folgenden Kapitel zu den Maßzahlen von Einheiten sowie der Fläche und dem Volumne wollen wir uns einmal mit den Grundlagen der Berechungen beschäftigen. Wir brauchen diese Werkzeuge um zu bestimmen, wie groß ein Teilstück sein soll oder aber wenn wir wissen wollen, wie viel Torf wir bestellen müssen.\nIm ersten Abschnitt schauen wir uns einmal Flächenmaße und Volumenmaße an. Wie sind die Abkürzungen für die entsprechenden Maßzahlen und wie lauten die Abkürzungen für sehr große oder sehr kleine Zahlen.\nDann schauen wir noch einmal auf die Flächen und Umfänge von gängigen geometrischen Objekten. Welche Eigenschaften hat das Quadrat, das Rechteck und der Kreis? Wir merken uns hier natürlich nur die wichtigsten Formeln, den Rest kannst du dann immer mal wieder bachschlagen.\nAm Ende wollen wir dann die Flächen noch ins Volumen bringen. Hier rechnen wir dann das Volumne eines Würfels oder eines Quaders aus. Häufig brauchen wir diese Informationen, wenn wir berechnen wollen, wie viel Torf wir brauchen oder wie viel Volumen an Futter verbraucht wird bzw. eingekauft werden muss."
+  },
+  {
+    "objectID": "geometry-unit.html#maßeinheiten",
+    "href": "geometry-unit.html#maßeinheiten",
+    "title": "3  Maßeinheiten, Flächenmaße und Volumenmaße",
+    "section": "3.1 Maßeinheiten",
+    "text": "3.1 Maßeinheiten\nWozu brauchen wir Maßeinheiten? Zum einen wollen wir nicht immer so große Zahlen schreiben oder aber sehr kleine Zahlen. Die ganzen Nullen machen dann doch den Text sehr unübersichtlich. Aus diesem Grund gibt es mehrere Arten der Kurzschreibweise um Zahlen in einer kürzeren Form darzustellen. In der folgenden Tabelle 3.1 sind einem die sehr großzen Zahlen bis \\(10^{12}\\) einmal dargestellt.\n\n\nTabelle 3.1— Große Zahlen mit vielen Nullen mit den jeweiligen Abkürzungen und Schreibweisen.\n\n\n\n\n\n\n\n\n\nBuchstabe\nPräfix\nWissenschaftlich\nWissenschaftlich in R\nZahl\n\n\n\n\nT\nTera-\n\\(10^{12}\\)\n1e+12\n1 000 000 000 000\n\n\nG\nGiga-\n\\(10^{9}\\)\n1e+9\n1 000 000 000\n\n\nM\nMega-\n\\(10^{6}\\)\n1e+6\n1 000 000\n\n\nk\nKilo-\n\\(10^{3}\\)\n1e+3\n1 000\n\n\nh\nHekto-\n\\(10^{2}\\)\n1e+2\n100\n\n\n\n\nNachdem wir einmal die ganz großen Zahlen dargestellt haben, wollen wir uns in der Tabelle 3.2 nochmal die ganz kleinen Zahlen einmal anschauen. Besonders die schreibweise mit dem e werden wir dann wiederholt in R sehen.\n\n\nTabelle 3.2— Sehr kleine Zahlen mit vielen Nullen mit den jeweiligen Abkürzungen und Schreibweisen.\n\n\n\n\n\n\n\n\n\nBuchstabe\nPräfix\nWissenschaftlich\nWissenschaftlich in R\nZahl\n\n\n\n\nd\nDezi-\n\\(10^{-1}\\)\n1e-1\n0.1\n\n\nc\nZenti-\n\\(10^{-2}\\)\n1e-2\n0.01\n\n\nm\nMilli-\n\\(10^{-3}\\)\n1e-3\n0.001\n\n\n\\(\\mu\\)\nMikro-\n\\(10^{-6}\\)\n1e-6\n0.000 001\n\n\nn\nNano-\n\\(10^{-9}\\)\n1e-9\n0.000 000 001\n\n\np\nPico-\n\\(10^{-12}\\)\n1e-12\n0.000 000 000 001\n\n\n\n\nWenn dir unklar ist, wie denn eine Zahl mit dem e aussehen würde, kannst du die Funktion format() mit der Option scientific = FALSE nutzen. Damit schaltest du die exponentzielle Schreibweise in R aus.\n\nformat(1.8e+7, scientific = FALSE)\n\n[1] \"18000000\"\n\nformat(1.2e-4, scientific = FALSE)\n\n[1] \"0.00012\"\n\n\nViele Taschenrechner haben auch die Möglichkeit das e umzurechnen. Meistens sind wir dann aber in R und da können wir dann die obige Funktion schnell nutzen."
+  },
+  {
+    "objectID": "geometry-unit.html#flächenmaße",
+    "href": "geometry-unit.html#flächenmaße",
+    "title": "3  Maßeinheiten, Flächenmaße und Volumenmaße",
+    "section": "3.2 Flächenmaße",
+    "text": "3.2 Flächenmaße\nIn der Tabelle 3.3 sehen wir nochmal die Umrechnung von gängigen Flächenmaßen. Dem einen oder anderen mag der Hektar \\(ha\\) geläufig sein, für alle anderen hier nochmal die Flächen zum nachschlagen. Das Ar \\(ar\\) ist in unterschiedlicher Verwendung, aber hier mit zu Vollständigkeit aufgeführt.\n\n\nTabelle 3.3— Umrechnung von gängigen Flächenmaßen.\n\n\n\\(km^2\\)\n\\(ha\\)\n\\(ar\\)\n\\(m^2\\)\n\n\n\n\n1\n100\n10 000\n1 000 000\n\n\n\n1\n100\n10 000\n\n\n\n\n1\n100"
+  },
+  {
+    "objectID": "geometry-unit.html#volumenmaße",
+    "href": "geometry-unit.html#volumenmaße",
+    "title": "3  Maßeinheiten, Flächenmaße und Volumenmaße",
+    "section": "3.3 Volumenmaße",
+    "text": "3.3 Volumenmaße\nDie Tabelle 3.4 zeigt die Umrechnungen von Volumenmaßen. Häufig benötigen wir verschiedene Volumen bei der Abfüllung von Dünger oder aber auch anderer Flüssigkeiten. Die Bewässerung und auch die Kühlung wird über Volumen geregelt. Auch ist es wichtig zu wisen, wie denn die Idee des Liters mit den \\(m^3\\) zusammenhängt.\n\n\nTabelle 3.4— Umrechnung von gängigen Volumenmaßen.\n\n\nLiter\n\\(hl\\)\n\\(l\\)\n\\(dl\\)\n\\(cl\\)\n\\(ml\\)\n\n\n\n\n\\(1m^3\\)\n10\n1 000\n10 000\n100 000\n1 000 000\n\n\n\n1\n100\n1 000\n10 000\n100 000\n\n\n\n\n10\n100\n1 000\n10 000\n\n\n\\(1dm^3\\)\n\n1\n10\n100\n1 000\n\n\n\n\n\n1\n10\n100\n\n\n\n\n\n\n1\n10\n\n\n\\(1cm^3\\)\n\n\n\n\n1\n\n\n\n\n\\(1 000 cm^3\\)\n\\(100cm^3\\)\n\\(10cm^3\\)\n\\(1cm^3\\)"
+  },
+  {
+    "objectID": "geometry-unit.html#prozent-promille-und-ppm",
+    "href": "geometry-unit.html#prozent-promille-und-ppm",
+    "title": "3  Maßeinheiten, Flächenmaße und Volumenmaße",
+    "section": "3.4 Prozent, Promille und ppm",
+    "text": "3.4 Prozent, Promille und ppm\nAbschließend schauen wir uns in der Tabelle 3.5 nochmal die Umrechnungen von Prozent und Promille an. Das Prinzip nutzen wir dann häufig zur Abschätzung von anderen Flächen oder Volumen, wenn wir nicht die exakte Änderung kennen sondern eben nur die Prozentuale.\n\n\nTabelle 3.5— Umrechnung von Prozenten und Anteilen.\n\n\n\n\n\n\n\n\n\n\n\nEin Zuckerwürfel in\n\n\n\n\n1 Prozent ist 1 Teil von hundert Teilen\n10 Gramm pro Kilogramm\n\\(10 g/kg\\)\n0.27 Litern, ca. 2 Tassen\n\n\n1 Promille ist 1 Teil von Tausend Teilen\n1 Gramm pro Kilogramm\n\\(1 g/kg\\)\n2.7 Litern, ca. 3.5 Flaschen Wein\n\n\n1 ppm (part per million) ist 1 Teil von 1 Million Teilen\n1 Milligramm pro Kilogramm\n\\(0.001 g/kg\\)\n2 700 Litern, ca. einem Tanklaster"
+  },
+  {
+    "objectID": "geometry-area.html#quadrat",
+    "href": "geometry-area.html#quadrat",
+    "title": "4  Flächenberechung",
+    "section": "4.1 Quadrat",
+    "text": "4.1 Quadrat\nIm Folgenden sehen wir die Abbildung eines Quadrats.\n\n\n\n\n\nWir berechnen die Fläche \\(F\\) eines Quadrats mir folgender Formel.\n\\[\nF = a \\cdot a = a^2\n\\]\nDen Umfang eines Quadrats \\(U\\) können wir dann wie folgt berechnen.\n\\[\nU = 4 \\cdot a\n\\]\nDie Diagonale \\(d\\) eines Quadrates ergibt sich dann wie folgt.\n\\[\nd = a \\sqrt{2} = \\sqrt{2\\cdot a ^2}\n\\]"
+  },
+  {
+    "objectID": "geometry-area.html#rechteck",
+    "href": "geometry-area.html#rechteck",
+    "title": "4  Flächenberechung",
+    "section": "4.2 Rechteck",
+    "text": "4.2 Rechteck\nDas Rechteck ist ja ein Quadrat wo jemand gegengetreten hat. Eigentlich tritt ja das Quadrat nie so in der reinen Form auf, eigentlich haben wir immer Rechtecke vorliegen. Selten sind Tische oder Stallbuchten quadratisch.\n\n\n\n\n\n\n\nBeachte auch folgenden Zusammenhang für das Rechteck:\n\\[\na = \\cfrac{F}{b} = \\cfrac{U - 2b}{2}\n\\]\n\\[\nb = \\cfrac{F}{a} = \\cfrac{U - 2a}{2}\n\\]\nWir berechnen die Fläche \\(F\\) eines Rechtecks mir folgender Formel.\n\\[\nF = a \\cdot b\n\\]\nDen Umfang eines Rechtecks \\(U\\) können wir dann wie folgt berechnen.\n\\[\nU = 2 \\cdot a + 2 \\cdot b = a (a+b)\n\\]\nDie Diagonale \\(d\\) eines Rechtecks ergibt sich dann wie folgt.\n\\[\nd = \\sqrt{a^2 + b^2}\n\\]"
+  },
+  {
+    "objectID": "geometry-area.html#trapez",
+    "href": "geometry-area.html#trapez",
+    "title": "4  Flächenberechung",
+    "section": "4.3 Trapez",
+    "text": "4.3 Trapez\nDas Trapez ist ein Rechteck mit definitiv unterschiedlich langen Zeiten bzw. so unterschiedlich langen Seiten, dass wir nicht mehr von einem Rechteck ausgehen können. Viele Felder folgen einem Trapez oder einem Rechteck.\n\n\n\n\n\n\n\nBeachte auch folgenden Zusammenhang für das Trapez:\n\\[\na = \\cfrac{2F}{h}-b\n\\]\n\\[\nb = \\cfrac{2F}{h}-a\n\\]\n\\[\nc = U - (a+b+d)\n\\]\n\\[\nd = U - (a+b+c)\n\\]\nWir berechnen die Fläche \\(F\\) eines Trapez mir folgender Formel.\n\\[\nF = m \\cdot h = \\cfrac{a+b}{2}\\cdot h\n\\]\nDen Umfang eines Trapez \\(U\\) können wir dann wie folgt berechnen.\n\\[\nU = a+b+c+d\n\\]"
+  },
+  {
+    "objectID": "geometry-area.html#parallelogramm",
+    "href": "geometry-area.html#parallelogramm",
+    "title": "4  Flächenberechung",
+    "section": "4.4 Parallelogramm",
+    "text": "4.4 Parallelogramm\nEin Parallelogramm ist ein gekipptes Rechteck. Auch hier haben wir die Anwendung eher auf landwirtschaftlichen Versuchsfeldern.\n\n\n\n\n\n\n\nBeachte auch folgenden Zusammenhang für das Parallelogramm:\n\\[\na = \\cfrac{2F}{h}\n\\]\n\\[\nb = \\cfrac{U-2a}{2}\n\\]\nWir berechnen die Fläche \\(F\\) eines Parallelogramms mir folgender Formel.\n\\[\nF = a \\cdot h\n\\]\nDen Umfang eines Trapez \\(U\\) können wir dann wie folgt berechnen.\n\\[\nU = 2(a+b)\n\\]"
+  },
+  {
+    "objectID": "geometry-area.html#dreieck",
+    "href": "geometry-area.html#dreieck",
+    "title": "4  Flächenberechung",
+    "section": "4.5 Dreieck",
+    "text": "4.5 Dreieck\nAuch hier kommt es dann auf die Anwendung an. Teilendstücke können einem Dreick folgen. Sonst kommt das Dreick dann doch eher seltener vor.\n\n\n\n\n\nWir berechnen die Fläche \\(F\\) eines Dreiecks mir folgender Formel.\n\\[\nF = \\cfrac{a \\cdot h_a}{2}\n\\]\nDen Umfang eines Dreiecks \\(U\\) können wir dann wie folgt berechnen.\n\\[\nU = a + b + c\n\\]\nDie Höhe des Dreiecks an der Seite \\(h_a\\) lässt sich dann wie folgt ausrechnen.\n\\[\nh_a = \\cfrac{2 \\cdot F}{a}\n\\]\nWenn wir Glück haben, dann haben wir ein Dreieck mit einem rechten Winkel vorliegen, dann rechnen sich einige der Seiten etwas anders.\n\n\n\n\n\nBei einem rechtwinkligen Dreieck gilt dann folgender sehr bekannter Zusammenhang.\n\\[\na^2 + b^2 = c^2\n\\]\nDaraus ergeben sich dann auch folgende Umformungen.\n\\[\n\\begin{aligned}\na^2 &= c^2 - b^2\\\\\nb^2 &= c^2 - a^2\\\\\nc^2 &= a^2 + b^2\\\\\nh^2 &= b^2 - q^2\\\\\nh^2 &= a^2 - p^2\n\\end{aligned}\n\\] Im Weiteren wollen wir uns nochmal die Winkel ein einem rechtwinkligen Dreieck anschauen und wie dort die Seitenlängen mit den Winkeln zusammenhängen.\n\n\n\n\n\nIn unserem Fall liegt der rechte Winkel bei der Ecke C, somit berechnet sich die gegenüberliegende Seite \\(c\\) nach folgenden Formeln. Erst einmal mit der Betrachtung des Winkels \\(\\alpha\\).\n\n\nWir immer gibt es auch auf Wikipedia eine gute Übersicht über das rechtwinklige Dreieck.\n\\[\nc = \\cfrac{a}{\\sin(\\alpha)} = \\cfrac{b}{\\cos(\\alpha)}\n\\]\nSowie im Weiteren nach der Formel, wenn wir den Winkel \\(\\beta\\) betrachten.\n\\[\nc = \\cfrac{b}{\\sin(\\beta)} = \\cfrac{a}{\\cos(\\beta)}\n\\]\nWenn wir uns die Katheten \\(a\\) und \\(b\\) berechnen wollen, dann gelten die folgenden Formeln für die Kathete \\(a\\). \\[\na = c \\cdot \\sin (\\alpha) = c \\cdot \\cos (\\beta),\\\\\na = b \\cdot \\tan (\\alpha) = b \\cdot \\cot (\\beta)\n\\]\nDie Kathete \\(b\\) können wir dann ebenfalls berechnen.\n\\[\nb = c \\cdot \\cos (\\alpha) = c \\cdot \\sin (\\beta),\\\\\nb = a \\cdot \\cot (\\alpha) = a \\cdot \\tan (\\beta)\n\\] Für ein beliebiges Dreieck mit unterschiedlichen Winkeln gibt es eine Menge an Berechnungsmöglichkeiten. Hier bietet dann wieder die Wikipedia eine Übersicht über alle Kongruenzsätze eines Dreiecks. Ich werde hier nicht nochmal die Wikipedia kopieren sondern dann in den entsprechenden Inhalten auf die Sätze eingehen."
+  },
+  {
+    "objectID": "geometry-area.html#kreis",
+    "href": "geometry-area.html#kreis",
+    "title": "4  Flächenberechung",
+    "section": "4.6 Kreis",
+    "text": "4.6 Kreis\nZum Abschlus schauen wir uns nochmal den Kreis an. Hier kommt natürlich dann die Kreiszahl \\(\\pi\\) mit \\(3.14\\) zum Einsatz.\n\n\n\n\n\nWir berechnen die Fläche \\(F\\) eines Kreises mir folgender Formel.\n\\[\nF = r^2 \\cdot \\pi = \\cfrac{d^2 \\cdot \\pi}{4}\n\\]\nDen Umfang eines Kreises \\(U\\) können wir dann wie folgt berechnen.\n\\[\nU = 2r \\cdot \\pi = \\cfrac{d \\cdot \\pi}{4 \\cdot F}\n\\] Die Diagonale \\(d\\) eines Kreises ergibt sich dann wie folgt.\n\\[\nd = 2r\n\\]\nUnd der Radius \\(r\\) hängt dann wie folgt um Umfang \\(U\\) ab.\n\\[\nr = \\cfrac{U}{2 \\cdot \\pi}\n\\]"
+  },
+  {
+    "objectID": "geometry-volume.html#würfel",
+    "href": "geometry-volume.html#würfel",
+    "title": "5  Volumenberechung",
+    "section": "5.1 Würfel",
+    "text": "5.1 Würfel\nIm Folgenden sehen wir einmal einen Würfel abgebildet.\n\n\n\n\n\nDas Volumen \\(V\\) eines Würfels berechnet sich dann wie folgt.\n\\[\nV = a^3\n\\]\nDie Oberfläche \\(O\\) eines Würfels wird dann wie folgt bestimmt.\n\\[\nO = 6 \\cdot a^2\n\\]\nDie Grundfläche \\(G\\) berechnet sich dann nach der folgenden Formel.\n\\[\nG = a^2\n\\]\nWenn wir an der Diagonalen \\(D\\) interessiert sind, nutzen wir dann folgende Formel.\n\\[\nD = a\\sqrt{3}\n\\]"
+  },
+  {
+    "objectID": "geometry-volume.html#rechteckige-säule",
+    "href": "geometry-volume.html#rechteckige-säule",
+    "title": "5  Volumenberechung",
+    "section": "5.3 Rechteckige Säule",
+    "text": "5.3 Rechteckige Säule\nDie rechteckige Säule entspricht dem Quadrat als Grundfläche. Meistens nutzen wir die Säule für die Berechnung von Luftvolumen. Wenn wir an dem Volumen eines Raumes interssiert sind, dann bietet sich die rechteckige Säule an.\n\n\n\n\n\nDas Volumen \\(V\\) einer rechteckigen Säule berechnet sich dann wie folgt.\n\\[\nV = G \\cdot h = a \\cdot b \\cdot c\n\\]\nDie Oberfläche \\(O\\) einer rechteckigen Säule wird dann wie folgt bestimmt.\n\\[\nO = 2ab + 2ac + 2bc  \n\\]\nDie Grundfläche \\(G\\) berechnet sich dann nach der folgenden Formel.\n\\[\nG = a \\cdot b = \\cfrac{V}{h}\n\\]"
+  },
+  {
+    "objectID": "geometry-volume.html#zylinder",
+    "href": "geometry-volume.html#zylinder",
+    "title": "5  Volumenberechung",
+    "section": "5.4 Zylinder",
+    "text": "5.4 Zylinder\nDer Zylinder bietet sich an für die Berechnung von Inhalten, da meistens dann die Töpfe oder die Silos einem Zylinder folgen. Wir haben also Töpfe als ganz kleine Zylinder oder eben Silos als riesige Zylinder.\n\n\n\n\n\n\n\nBeachte auch folgenden Zusammenhang für den Zylinder:\n\\[\nr = \\sqrt{\\cfrac{V}{\\pi \\cdot h}}\n\\]\nDas Volumen \\(V\\) eines Zylinders berechnet sich dann wie folgt.\n\\[\nV = G \\cdot h = r^2 \\cdot \\pi \\cdot h\n\\]\nDie Oberfläche \\(O\\) eines Zylinders wird dann wie folgt bestimmt.\n\\[\nO = 2 \\cdot G + 2r \\cdot \\pi \\cdot h\n\\] Die Grundfläche \\(G\\) berechnet sich dann nach der folgenden Formel.\n\\[\nG = r^2 \\cdot \\pi\n\\]\nDie Höhe \\(h\\) des Zylinders können wir dann wie folgt bestimmen.\n\\[\nh = \\cfrac{V}{G} = \\cfrac{V}{r^2 \\cdot \\pi}\n\\]"
+  },
+  {
+    "objectID": "probability-preface.html",
+    "href": "probability-preface.html",
+    "title": "Wahrscheinlichkeiten",
+    "section": "",
+    "text": "Version vom January 22, 2023 um 16:03:59"
+  },
+  {
+    "objectID": "probability-basic.html#regeln",
+    "href": "probability-basic.html#regeln",
+    "title": "6  Grundlagen der Wahrscheinlichkeit",
+    "section": "6.1 Regeln",
+    "text": "6.1 Regeln\nUnd \\(\\cap\\)\nOder \\(\\cup\\)\nText\n\\(Pr(A) = 2/3\\)\n\\(Pr(K_1) \\cap \\cup Pr(K_2)\\)\n\\[\n\\begin{aligned}\nPr(K_1 \\cap K_2) &= Pr(K_1) \\times Pr(K_2) \\\\\n               &= 1/2 \\times 1/2 \\\\\n               &= 1/4\n\\end{aligned}\n\\]\nIn Tabelle 6.1\n\n\nTabelle 6.1— Test\n\n\n\n\nMengenschreibweise\nTyp\n\n\n\n\n\\([a,b]\\)\n\\([a,b]\\)\n\\(\\{x|a≤x≤b\\}\\)\ngeschlossen\n\n\n\\(]a,b[\\)\n\\((a,b)\\)\n\\(\\{x|a<x<b\\}\\)\noffen\n\n\n\\([a,b[\\)\n\\([a,b)\\)\n\\(\\{x|a≤x<b\\}\\)\nhalboffen / rechtsoffen\n\n\n\\(]a,b]\\)\n\\((a,b]\\)\n\\(\\{x|a<x≤b\\}\\)\nhalboffen / linksoffen\n\n\n\n\nIn Tabelle 6.2\n\n\nTabelle 6.2— Test\n\n\n\n\n\n\n\nAbbildung\n\nBedeutung\n\n\n\n\n\n\\(A \\cup B\\)\n\\(A\\) tritt ein oder \\(B\\) tritt ein\n\n\n\n\\(A \\cap B\\)\n\\(A\\) trit ein und \\(B\\) tritt ein\n\n\n\n\\(A \\setminus B\\)\n\\(A\\) tritt ein, aber \\(B\\) tritt nicht ein\n\n\n\n\\(\\bar{A} = \\Omega \\setminus A\\)\n\\(A\\) tritt nicht ein\n\n\n\n\\(A \\cup B\\)\nEntweder \\(A\\) ein oder \\(B\\) tritt ein oder keins von beiden\n\n\n\n\\(B \\subset A\\)\n\\(B\\) ist Teilmenge von \\(A\\)"
+  },
+  {
+    "objectID": "probability-conditional.html",
+    "href": "probability-conditional.html",
+    "title": "7  Bedingte Wahrscheinlichkeiten",
+    "section": "",
+    "text": "Version vom January 22, 2023 um 16:04:05"
+  },
+  {
+    "objectID": "probability-distribution.html",
+    "href": "probability-distribution.html",
+    "title": "8  Wahrscheinlichkeitsverteilungen",
+    "section": "",
+    "text": "Version vom January 22, 2023 um 16:04:08"
+  },
+  {
+    "objectID": "vector-preface.html",
+    "href": "vector-preface.html",
+    "title": "Vektor und Matrix",
+    "section": "",
+    "text": "Version vom January 22, 2023 um 16:04:10\nIn dem folgenden Kapitel wollen wir uns einmal mit Berechnungen mit Vektoren in Kapitel 9 beschäftigen. Das Kapitel ist eher kurz und dient nur der Erinnerung, was sind eigentlich Vektoren. Wir nutzen den Begriff häufig in der R Programmierung und wir wollen hier nochmal auf ein paar mathematische Eigenschaften eingehen.\nWichtiger ist in dem Sinne die Berechnungen mit Matrizen in Kapitel 10. Wir schauen uns hier nochmal die gängigen Rechenoperationen mit Matrizen an. Wir erschlagen aber nicht alles sondern schauen usn nur ausgewählte Aspekte einmal an. Wir brauchen Teile von den Berechnungen mit Matrizen später in der multiplen linearen Regression in der Statistik."
+  },
+  {
+    "objectID": "vector-basic.html#grundlagen-vektoren",
+    "href": "vector-basic.html#grundlagen-vektoren",
+    "title": "9  Berechnungen mit Vektoren",
+    "section": "9.1 Grundlagen Vektoren",
+    "text": "9.1 Grundlagen Vektoren\n\\[\nA= (3, 5, 1)^T = \\begin{pmatrix} 3 \\\\ 5 \\\\ 1 \\end{pmatrix}\n\\]\nVektoren der Länge 1 heißen Einheitsvektoren oder normierte Vektoren. Hat ein Vektor die Länge 0, so handelt es sich um den Nullvektor.\n\\[\n\\begin{pmatrix} a_1 \\\\ a_2 \\\\ a_3 \\end{pmatrix}\n\\pm\n\\begin{pmatrix} b_1 \\\\ b_2 \\\\ b_3 \\end{pmatrix}\n=\n\\begin{pmatrix} a_1 \\pm b_1 \\\\ a_2 \\pm b_2 \\\\ a_3 \\pm b_3 \\end{pmatrix}\n\\] Schauen wir uns den Zusammenhang einmal als Zahlenbeispiel an.\n\\[\n\\begin{pmatrix}\n2 \\\\ -1 \\\\ 5\n\\end{pmatrix}\n+\n\\begin{pmatrix}\n8 \\\\ 1 \\\\ -3\n\\end{pmatrix}\n=\n\\begin{pmatrix}\n2+8\\\\ -1+1 \\\\ 5+(-3)\n\\end{pmatrix}\n=\n\\begin{pmatrix}\n10\\\\ 0 \\\\ 2\n\\end{pmatrix}\n\\]\n\nA <- c(2, -1, 5)\nB <- c(8, 1, -3)\n\nA + B\n\n[1] 10  0  2\n\n\nWenn wir einen Vektor mit einer Zahl multiplizieren, dann multiplizieren wir jeden Wert des Vektors mit der Zahl.\n\\[\n2 \\cdot \\begin{pmatrix} 1 \\\\ 3 \\\\ 4 \\end{pmatrix}  =\n\\begin{pmatrix} 2 \\cdot 1 \\\\ 2 \\cdot 3 \\\\ 2 \\cdot 4 \\end{pmatrix}  =\n\\begin{pmatrix} 2 \\\\ 6 \\\\ 8 \\end{pmatrix}\n\\]\n\nA <- c(1, 3, 4)\n\n2 * A\n\n[1] 2 6 8\n\n\nIn R haben wir noch die Möglichkeit einen Vektor mit Namen zu versehen.\n\nA <- c(2, -1, 5)\nnames(A) <- c(\"A\", \"B\", \"C\")\n\nA\n\n A  B  C \n 2 -1  5"
+  },
+  {
+    "objectID": "matrix-basic.html#grundlagen-matrizen",
+    "href": "matrix-basic.html#grundlagen-matrizen",
+    "title": "10  Berechnungen mit Matrizen",
+    "section": "10.1 Grundlagen Matrizen",
+    "text": "10.1 Grundlagen Matrizen\n\n\nDu findest dann hinter diesem Link auch Mathehilfe zu Vektor, Matrizen und Co.. Du kannst auf der Seite mal stöbern, ob du da was findest was dir hilft.\nWir nutzen Matrizen vor allem wenn es um zwei Dinge in der Statistik geht.\n\nKorrelationsmtarix oder die verwandte Varianz/Covarianzmatrix. In beiden steht die Streuung der Variablen in den Daten untereinander.\nModellmatrix, wenn wir ein Modell aufbauen und verstehen wollen wie sich die Variablen in \\(x\\) auf das Outcome \\(y\\) auswirken.\n\nAllgemein gesprochen bestehen Matrizen aus \\(m\\) Zeilen und \\(n\\) Spalten, weshalb sie auch (\\(m\\),\\(n\\))-Matrizen genannt werden. Die Dimension einer einzelnen Matrix mit \\(m\\) Zeilen und \\(n\\) Spalten ist \\(m \\times n\\). Hier musst du nochmal aufpassen, das \\(n\\) steht hier nicht für die Anzahl an Beobachtungen. Ja, es kann übereinstimmen, aber hier ist es einfach nur die Zahl für die Dimension der Matrix.\nWichtig ist, dass wir uns hier auf Teilaspekte der Matrixrechnung konzentrieren. Es gibt natürlich noch viel mehr, aber hier schauen wir uns das Basiswissen an, was du dann in den Statistikteilen benötigst oder aber als Grundlage für andere Fächer.\nWir schreiben also für die Matrix \\(A\\) die Matrix wie folgt auf.\n\\[\n\\begin{aligned}\nA = \\begin{pmatrix}\na_{11} & a_{12} & \\cdots & a_{1n} \\\\\na_{21} & a_{22} & \\cdots & a_{2n} \\\\\n\\vdots &\\vdots & \\ddots &\\vdots \\\\\na_{m1} & a_{m2} & \\cdots & a_{mn}\n\\end{pmatrix}\n\\end{aligned}\n\\] Neben der Darstellung mit den runden Klammern, gibt es auch noch die Darstellung mit den eckigen Klammern. Beide Arten sind im Prinzip nutzbar. Es macht keinen großen Unterschied von der mathematischen Seite. Wir wollen hier aber die runden Klammern nutzen um nicht später uns in R zu verwirren.\n\\[\nA =\n\\begin{bmatrix}\na_{11} & a_{12} & a_{13} \\\\\na_{21} & a_{22} & a_{23}\n\\end{bmatrix}\n\\] Im Prinzip haben wir damit eine Matrix zusammen. Schauen wir noch schnell, wie wir eine Matrix in R aufbauen. Wir nutzen die Option byrow = TRUE um der Funktion matrix() mitzuteilen, dass wir die Matrix zeilenweise auffüllen wollen. Einzelne Werte in einer Matrix können wir mit den eckigen Klammern [] ansprechen. Daher für die Mathematik die runden Klammern.\n\nmatrix(c(3, 5, 6,\n         3, 8, 1), byrow = TRUE, nrow = 2)\n\n     [,1] [,2] [,3]\n[1,]    3    5    6\n[2,]    3    8    1\n\n\nSchauen wir uns nun verschiedene Matrizen an, die in dem mathematischen Maße besonders sind, dass diese Matrizen einen eigenen Namen erhalten haben."
+  },
+  {
+    "objectID": "matrix-basic.html#einheitsmatrix",
+    "href": "matrix-basic.html#einheitsmatrix",
+    "title": "10  Berechnungen mit Matrizen",
+    "section": "10.2 Einheitsmatrix",
+    "text": "10.2 Einheitsmatrix\nDie Einheitsmatrix \\(A_E\\) besteht nur aus 0’en auf der Nebendiagonalen und 1’sen auf der Diagonalen. Damit ist die Matrix der Standard in vielen statistischen Verfahren, wenn wir keine besondere Varianzstruktur annehmen.\n\\[\nA_E =\n\\begin{pmatrix}\n1 & 0 & 0 \\\\\n0 & 1 & 0 \\\\\n0 & 0 & 1\n\\end{pmatrix}\n\\]"
+  },
+  {
+    "objectID": "matrix-basic.html#diagonalmatrix",
+    "href": "matrix-basic.html#diagonalmatrix",
+    "title": "10  Berechnungen mit Matrizen",
+    "section": "10.3 Diagonalmatrix",
+    "text": "10.3 Diagonalmatrix\nDie Diagnoalmatrix \\(A_D\\) besteht nur aus 0’en auf der Nebendiagonalen und beliebigen Werten auf der Diagonalen. Häufig sind die Werte in der Statistik auf der Diagonalen die Varianzen. Wenn die Variablen nicht miteinander korrelieren, dann sind die Nebendiagonalen 0.\n\\[\nA_D=\\begin{pmatrix}\n4 & 0 & 0 \\\\\n0 & 8 & 0 \\\\\n0 & 0 & 3\n\\end{pmatrix}\n\\]\nEine klassische Varian/Covarianzmatrix würde wie folgt aussehen. Wir bauen uns einen Datensatz mit den Noten von 5 Schülern über die Fächer Statistik, Informatik und Mathematik. Die Funktion cov() gibt uns die Varianz/Covarianzmatrix wieder.\n\npoints_tbl <- tibble(statistic = c(84, 82, 81, 89, 73),\n                     programing = c(85, 82, 72, 77, 63),\n                     math = c(97, 92, 93, 91, 88)) \npoints_tbl %>% cov()\n\n           statistic programing  math\nstatistic      33.70      36.45  9.55\nprograming     36.45      75.70 23.05\nmath            9.55      23.05 10.70\n\n\nWie wir auch schnell überprüfen können, sind auf der Diagonalen die Varianzen von den jeweiligen Fächern zu finden. In der Nebendiagonalen finden sich die Covarianzen. Also die Varianzen für das gemeinsame Variieren zwischen den Fächern und den fünf Schülern.\n\npoints_tbl %>% \n  summarise(var(statistic), var(programing), var(math))\n\n# A tibble: 1 × 3\n  `var(statistic)` `var(programing)` `var(math)`\n             <dbl>             <dbl>       <dbl>\n1             33.7              75.7        10.7\n\n\nWir können uns dann auch die passende Korrelationmatrix mit der Funktion cor() ausgeben lassen. wir skalieren dadurch die Varianz/Covarianzmatrix auf eine Diagonalen mit nur 1’sen und der Korrelation in den Nebendiagonalen. Die Korrelationsmatrix ist an der Diagonalen gespiegelt.\n\npoints_tbl %>% cor()\n\n           statistic programing      math\nstatistic  1.0000000  0.7216633 0.5029173\nprograming 0.7216633  1.0000000 0.8098994\nmath       0.5029173  0.8098994 1.0000000"
+  },
+  {
+    "objectID": "matrix-basic.html#stochastische-matrix",
+    "href": "matrix-basic.html#stochastische-matrix",
+    "title": "10  Berechnungen mit Matrizen",
+    "section": "10.4 Stochastische Matrix",
+    "text": "10.4 Stochastische Matrix\nEine stochastische Matrix \\(A_S\\) enthält nur Zahlen zwischen 0 und 1. Damit besteht eine stochastische Matrix aus Wahrscheinlichkeiten. Die Wahrscheinlichkeiten addieren sich entweder über die Zeilen oder über die Spalten zu 1 auf. In selten Fällem kann es auch sein, dass sich die Zeilen und Spalten auf 1 aufaddieren.\n\\[\nA_S=\\begin{pmatrix}\n0.25 & 0.5 & 0.25 \\\\\n0.25 & 0.25 & 0.5 \\\\\n0.5 & 0.25 & 0.25\n\\end{pmatrix}\n\\]"
+  },
+  {
+    "objectID": "matrix-basic.html#zwei-matrizen-addieren",
+    "href": "matrix-basic.html#zwei-matrizen-addieren",
+    "title": "10  Berechnungen mit Matrizen",
+    "section": "10.6 Zwei Matrizen addieren",
+    "text": "10.6 Zwei Matrizen addieren\nWenn wir zwei Matrizen \\(A\\) und \\(B\\) haben, die die gleiche Dimension haben, dann können wir die beiden Matrizen einfach addieren.\n\\[\nA=\\begin{pmatrix}\na_{11} & a_{12} \\\\\na_{21} & a_{22}\n\\end{pmatrix};\n\\qquad\nB=\\begin{pmatrix}\nb_{11} & b_{12} \\\\\nb_{21} & b_{22}\n\\end{pmatrix}\n\\] Im Folgenden sehen wir einmal die Addition der beiden Matrizen.\n\\[\nA \\pm B =\n\\begin{pmatrix}\na_{11}\\pm b_{11} & a_{12}\\pm b_{12} \\\\\na_{21}\\pm b_{21} & a_{22}\\pm b_{22}\n\\end{pmatrix}\n\\]\nIn R geht es ebenfalls einfach die beiden Matrizen zu addieren.\n\nA <- matrix(c(2, 3, 6, 7), ncol = 2)\nA\n\n     [,1] [,2]\n[1,]    2    6\n[2,]    3    7\n\nB <- matrix(c(0, 5, 4, 1), ncol = 2)\nB\n\n     [,1] [,2]\n[1,]    0    4\n[2,]    5    1\n\nA + B\n\n     [,1] [,2]\n[1,]    2   10\n[2,]    8    8\n\n\nWir nutzen die Addition relativ selten. Häufiger werden wir eine Matrix mit einer Zahl oder einem Vektor multiplizieren."
+  },
+  {
+    "objectID": "matrix-basic.html#eine-matrix-mit-einer-zahl-multiplizieren",
+    "href": "matrix-basic.html#eine-matrix-mit-einer-zahl-multiplizieren",
+    "title": "10  Berechnungen mit Matrizen",
+    "section": "10.7 Eine Matrix mit einer Zahl multiplizieren",
+    "text": "10.7 Eine Matrix mit einer Zahl multiplizieren\nWenn wir eine eine Matrix \\(A\\) mit einer Zahl \\(r\\) oder auch Skalar genannt multiplizieren dann multiplizieren wir jeden einzelnen Wert der Matrix mit dieser Zahl.\n\\[\nr \\cdot\n\\underbrace{\n\\begin{pmatrix}\n3 & 2 \\\\\n4 & 6\n\\end{pmatrix}}_{A} =\n\\begin{pmatrix}\n3 \\cdot r & 2 \\cdot r \\\\\n4 \\cdot r & 6 \\cdot r\n\\end{pmatrix}\n\\]\nAuch hier lässt sich der Zusammenhang einfach in R nachvollziehen. Wir bauen uns wieder die Matrix \\(A\\) und multiplizieren die Matrix \\(A\\) mit dem Skalar \\(r = 4\\).\n\nA <- matrix(c(3, 2, 4, 6), byrow = TRUE,  ncol = 2)\nA\n\n     [,1] [,2]\n[1,]    3    2\n[2,]    4    6\n\n4 * A\n\n     [,1] [,2]\n[1,]   12    8\n[2,]   16   24\n\n\nNeben der Multiplikation mit einer Zahl brauchen wir häufiger die Multiplikation einer Matrix mit einem Vektor."
+  },
+  {
+    "objectID": "matrix-basic.html#sec-mat-mult",
+    "href": "matrix-basic.html#sec-mat-mult",
+    "title": "10  Berechnungen mit Matrizen",
+    "section": "10.8 Eine Matrix mit einem Vektor multiplizieren",
+    "text": "10.8 Eine Matrix mit einem Vektor multiplizieren\nWenn wir eine Matrix mit einem Vektor multiplizieren wollen, dann müssen die Matrix und der Vektor zueinander passen. In unseren Fällen, wie wir häufig betrachten muss die Matrix die Anzahl an Spalten haben die der Länge des Vektors enspricht. In unseren Beispiel haben wir drei Spalten und somit muss der Vektor auch eine Länge von drei Einträgen haben.\n\\[\n\\begin{pmatrix}\n4 & 3 & 2 \\\\\n1 & 0 & 3\n\\end{pmatrix}\n\\cdot\n\\begin{pmatrix}\n2 \\\\ 0 \\\\ 1\n\\end{pmatrix}\n=\n\\begin{pmatrix}\n4 \\cdot 2+ 3 \\cdot 0 +2 \\cdot 1 \\\\\n1 \\cdot 2+ 0 \\cdot 0 +3 \\cdot 1\n\\end{pmatrix}\n=\n\\begin{pmatrix}\n10 \\\\\n5\n\\end{pmatrix}\n\\]\nWii können das Beispiel auch wieder in R nachvollziehen. In R gibt es keine Funktion mit Namen vector. Die Funktion c() erschafft einen Vektor. Wenn wir Matrizen oder Vektoren miteinander multipizieren wollen und anschließend aufaddieren, dann müssen wir den Operator %*% nutzen.\n\nA <- matrix(c(4, 3, 2,\n              1, 0, 3), byrow = 2, ncol = 3)\nA\n\n     [,1] [,2] [,3]\n[1,]    4    3    2\n[2,]    1    0    3\n\nB <- c(2, 0, 1)\nB\n\n[1] 2 0 1\n\nA %*% B\n\n     [,1]\n[1,]   10\n[2,]    5\n\n\nAm Ende kommt das Ergebnis raus, was wir auch erwartet haben."
+  },
+  {
+    "objectID": "geometry-volume.html#kegel",
+    "href": "geometry-volume.html#kegel",
+    "title": "5  Volumenberechung",
+    "section": "5.5 Kegel",
+    "text": "5.5 Kegel\nDer Kegel ist ein Kreis mit einem Hut auf und kann deshalb eventuell für die Berechnungen von Volumen unter einem Netz genutzt werden. In der Praxis ist die Anwendung eher von spezieller Natur.\n\n\n\n\n\n\n\nBeachte auch folgenden Zusammenhang für den Kegel:\n\\[\nr = \\sqrt{\\cfrac{3V}{\\pi \\cdot h}}\n\\]\n\\[\nh = \\sqrt{s^2 - r^2}\n\\]\n\\[\ns = \\sqrt{r^2 + h^2}\n\\]\nDas Volumen \\(V\\) eines Kegels berechnet sich dann wie folgt.\n\\[\nV = \\cfrac{1}{3} \\cdot h \\cdot r^2 \\cdot \\pi\n\\]\nDie Oberfläche \\(O\\) eines Kegels wird dann wie folgt bestimmt.\n\\[\nO = r^2 \\cdot \\pi \\cdot s\n\\]\nDie Grundfläche \\(G\\) berechnet sich dann nach der folgenden Formel.\n\\[\nG = r^2 \\cdot \\pi\n\\]"
+  },
+  {
+    "objectID": "matrix-basic.html#vom-linearen-gleichungssystem-zur-matrix",
+    "href": "matrix-basic.html#vom-linearen-gleichungssystem-zur-matrix",
+    "title": "10  Berechnungen mit Matrizen",
+    "section": "10.5 Vom linearen Gleichungssystem zur Matrix",
+    "text": "10.5 Vom linearen Gleichungssystem zur Matrix\nEine Stärke von Matrizen in der Statistik ist, dass wir mit der Matrix auch Gleichungssysteme darstellen können. Damit können wir in der linearen Regression auch komplexere Modelle sauber darstellen. Im Folgenden siehst du drei Gleichungen.\n\\[\n\\begin{aligned}\n–2x_1 + 4x_2 + 1x_3 &= 0 \\\\\n1x_1 + 2x_2 + 0x_3 &= 15 \\\\\n5x_1 + 3x_2 + 1x_3 &= 88\n\\end{aligned}\n\\]\nDiese drei Gleichungen können wir auch in drei Matrizen übersetzen. Wir brauchen einmal eine Matrix in der die Zahlen stehen, die vor dem \\(x_1\\) bis \\(x_3\\) stehen würden. Dann ein Vektor mit den Abkürzungen nach den Zahlen, also \\(x_1\\), \\(x_2\\) und \\(x_3\\). Abschließend noch der Vektor mit den Ergebnissen. Wie du sehen kannst, multiplizieren wir die erste Matrix mit dem ersten Vektor und erhalten den Ergebnisvektor.\n\\[\n\\begin{pmatrix}\n-2 & 4& 1 \\\\\n1 & 2 & 0 \\\\\n5 & 3 & 1\n\\end{pmatrix}\n\\cdot\n\\begin{pmatrix}\nx_1 \\\\ x_2 \\\\ x_3\n\\end{pmatrix}\n=\n\\begin{pmatrix}\n0 \\\\\n15 \\\\\n88\n\\end{pmatrix}\n\\] Du kannst in den Abschnitt Kapitel 10.8 springen um dir einmal an einem weiteren Beispiel die Matrixmultiplikation anzuschauen."
+  },
+  {
+    "objectID": "geometry-volume.html#pyramide",
+    "href": "geometry-volume.html#pyramide",
+    "title": "5  Volumenberechung",
+    "section": "5.6 Pyramide",
+    "text": "5.6 Pyramide\nDie Pyramide ist im Prinzip ein Kegel auf einer quadratischen Grundfläche. So häufig nutzen wir die Pyramide nicht in der praktischen Anwendung, aber wir können an der Pyramide gut rumrechnen und uns nochmal mit den Winkelsätzen beschäftigen.\n\n\n\n\n\nDas Volumen \\(V\\) einer Pyramide berechnet sich dann wie folgt.\n\\[\nV = \\cfrac{1}{3} \\cdot h \\cdot a^2\n\\] Die Mantelfläche \\(M\\) einer Pyramide errechnet sich dann folgendermaßen.\n\\[\nM = 2 \\cdot a \\cdot h_a\n\\]\nDie Oberfläche \\(O\\) einer Pyramide wird dann wie folgt bestimmt.\n\\[\nO = a^2 + 2 \\cdot a \\cdot h_a\n\\]\nDie Grundfläche \\(G\\) berechnet sich dann nach der folgenden Formel.\n\\[\nG = a^2\n\\]\nDie Höhe \\(h\\) einer Pyramide lässt sich wie folgt berechnen.\n\\[\nh = \\sqrt{h_a^2 \\cdot \\left(\\cfrac{a}{2}\\right)^2}\n\\]\nOder aber über die Neigung der Seitenfläche \\(\\alpha\\) durch Umstellung der Formel nach \\(h\\).\n\\[\n\\alpha = \\arctan\\left(\\cfrac{h}{a/2}\\right)\n\\] \\[\n\\tan(\\alpha) = \\cfrac{h}{a/2}\n\\] \\[\nh = \\tan(\\alpha) \\cdot a/2\n\\]\nDie Diagonale durch die Mitte der Grundfläche können wir wie folgt berechnen.\n\\[\nd = \\sqrt{a^2 + a^2} = \\sqrt{2} \\cdot a\n\\] Dann ergibt sich der Winkel \\(\\beta\\) am der Seitenspitze der Pyramide wie folgt.\n\\[\n\\beta = \\arctan\\left(\\cfrac{h}{d/2}\\right)\n\\]"
+  },
+  {
+    "objectID": "geometry-volume.html#kugel",
+    "href": "geometry-volume.html#kugel",
+    "title": "5  Volumenberechung",
+    "section": "5.2 Kugel",
+    "text": "5.2 Kugel\nDas Volumen \\(V\\) einer Kugel berechnet sich dann wie folgt.\n\\[\nV = \\cfrac{4}{3}\\cdot \\pi \\cdot r^3\n\\]\nDie Oberfläche \\(O\\) einer Kugel wird dann wie folgt bestimmt.\n\\[\nO = 4 \\cdot \\pi \\cdot r^2\n\\]\nDer Umfang \\(U\\) ergibt sich dann durch folgende Formel\n\\[\nU = 2 \\cdot \\pi \\cdot r\n\\]"
+  }
+]
