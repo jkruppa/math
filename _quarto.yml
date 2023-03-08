@@ -12,7 +12,7 @@ crossref:
 book:
   title: "Skript Mathematik"
   author: "Prof. Dr. Jochen Kruppa"
-  date: "23. February 2023"
+  date: "08. March 2023"
   cover-image: cover.png
   chapters:
     - index.qmd

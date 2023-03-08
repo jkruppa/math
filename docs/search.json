@@ -67,7 +67,7 @@
     "href": "geometry-preface.html",
     "title": "Von Maßzahlen, Flächen und Volumen",
     "section": "",
-    "text": "Version vom March 08, 2023 um 11:58:12\nIn dem folgenden Kapitel zu den Maßzahlen von Einheiten sowie der Fläche und dem Volumne wollen wir uns einmal mit den Grundlagen der Berechungen beschäftigen. Wir brauchen diese Werkzeuge um zu bestimmen, wie groß ein Teilstück sein soll oder aber wenn wir wissen wollen, wie viel Torf wir bestellen müssen.\nIm ersten Abschnitt schauen wir uns einmal Flächenmaße und Volumenmaße an. Wie sind die Abkürzungen für die entsprechenden Maßzahlen und wie lauten die Abkürzungen für sehr große oder sehr kleine Zahlen.\nDann schauen wir noch einmal auf die Flächen und Umfänge von gängigen geometrischen Objekten. Welche Eigenschaften hat das Quadrat, das Rechteck und der Kreis? Wir merken uns hier natürlich nur die wichtigsten Formeln, den Rest kannst du dann immer mal wieder bachschlagen.\nAm Ende wollen wir dann die Flächen noch ins Volumen bringen. Hier rechnen wir dann das Volumne eines Würfels oder eines Quaders aus. Häufig brauchen wir diese Informationen, wenn wir berechnen wollen, wie viel Torf wir brauchen oder wie viel Volumen an Futter verbraucht wird bzw. eingekauft werden muss."
+    "text": "Version vom March 08, 2023 um 12:48:12\nIn dem folgenden Kapitel zu den Maßzahlen von Einheiten sowie der Fläche und dem Volumne wollen wir uns einmal mit den Grundlagen der Berechungen beschäftigen. Wir brauchen diese Werkzeuge um zu bestimmen, wie groß ein Teilstück sein soll oder aber wenn wir wissen wollen, wie viel Torf wir bestellen müssen.\nIm ersten Abschnitt schauen wir uns einmal Flächenmaße und Volumenmaße an. Wie sind die Abkürzungen für die entsprechenden Maßzahlen und wie lauten die Abkürzungen für sehr große oder sehr kleine Zahlen.\nDann schauen wir noch einmal auf die Flächen und Umfänge von gängigen geometrischen Objekten. Welche Eigenschaften hat das Quadrat, das Rechteck und der Kreis? Wir merken uns hier natürlich nur die wichtigsten Formeln, den Rest kannst du dann immer mal wieder bachschlagen.\nAm Ende wollen wir dann die Flächen noch ins Volumen bringen. Hier rechnen wir dann das Volumne eines Würfels oder eines Quaders aus. Häufig brauchen wir diese Informationen, wenn wir berechnen wollen, wie viel Torf wir brauchen oder wie viel Volumen an Futter verbraucht wird bzw. eingekauft werden muss."
   },
   {
     "objectID": "geometry-unit.html#maßeinheiten",
@@ -186,7 +186,7 @@
     "href": "vector-preface.html",
     "title": "Von Vektoren und Matrizen",
     "section": "",
-    "text": "Version vom March 08, 2023 um 11:58:20\nIn dem folgenden Kapitel wollen wir uns einmal mit Berechnungen mit Vektoren in Kapitel 6 beschäftigen. Das Kapitel ist eher kurz und dient nur der Erinnerung, was sind eigentlich Vektoren. Wir nutzen den Begriff häufig in der R Programmierung und wir wollen hier nochmal auf ein paar mathematische Eigenschaften eingehen.\nWichtiger ist in dem Sinne die Berechnungen mit Matrizen in Kapitel 7. Wir schauen uns hier nochmal die gängigen Rechenoperationen mit Matrizen an. Wir erschlagen aber nicht alles sondern schauen usn nur ausgewählte Aspekte einmal an. Wir brauchen Teile von den Berechnungen mit Matrizen später in der multiplen linearen Regression in der Statistik."
+    "text": "Version vom March 08, 2023 um 12:48:20\nIn dem folgenden Kapitel wollen wir uns einmal mit Berechnungen mit Vektoren in Kapitel 6 beschäftigen. Das Kapitel ist eher kurz und dient nur der Erinnerung, was sind eigentlich Vektoren. Wir nutzen den Begriff häufig in der R Programmierung und wir wollen hier nochmal auf ein paar mathematische Eigenschaften eingehen.\nWichtiger ist in dem Sinne die Berechnungen mit Matrizen in Kapitel 7. Wir schauen uns hier nochmal die gängigen Rechenoperationen mit Matrizen an. Wir erschlagen aber nicht alles sondern schauen usn nur ausgewählte Aspekte einmal an. Wir brauchen Teile von den Berechnungen mit Matrizen später in der multiplen linearen Regression in der Statistik."
   },
   {
     "objectID": "vector-basic.html#grundlagen-vektoren",
@@ -256,26 +256,26 @@
     "href": "probability-preface.html",
     "title": "Von Wahrscheinlichkeiten",
     "section": "",
-    "text": "Version vom March 08, 2023 um 11:58:26"
+    "text": "Version vom March 08, 2023 um 12:48:26"
   },
   {
     "objectID": "probability-basic.html#regeln",
     "href": "probability-basic.html#regeln",
-    "title": "8  Wahrscheinlichkeiten",
+    "title": "8  Berechnungen mit Wahrscheinlichkeiten",
     "section": "8.1 Regeln",
     "text": "8.1 Regeln\nUnd \\(\\cap\\)\nOder \\(\\cup\\)\nText\n\\(Pr(A) = 2/3\\)\n\\(Pr(K_1) \\cap \\cup Pr(K_2)\\)\n\\[\n\\begin{aligned}\nPr(K_1 \\cap K_2) &= Pr(K_1) \\times Pr(K_2) \\\\\n               &= 1/2 \\times 1/2 \\\\\n               &= 1/4\n\\end{aligned}\n\\]\nIn Tabelle 8.1\n\n\nTabelle 8.1— Test\n\n\n\n\nMengenschreibweise\nTyp\n\n\n\n\n\\([a,b]\\)\n\\([a,b]\\)\n\\(\\{x|a≤x≤b\\}\\)\ngeschlossen\n\n\n\\(]a,b[\\)\n\\((a,b)\\)\n\\(\\{x|a<x<b\\}\\)\noffen\n\n\n\\([a,b[\\)\n\\([a,b)\\)\n\\(\\{x|a≤x<b\\}\\)\nhalboffen / rechtsoffen\n\n\n\\(]a,b]\\)\n\\((a,b]\\)\n\\(\\{x|a<x≤b\\}\\)\nhalboffen / linksoffen\n\n\n\n\nIn Tabelle 8.2\n\n\nTabelle 8.2— Test\n\n\n\n\n\n\n\nAbbildung\n\nBedeutung\n\n\n\n\n\n\\(A \\cup B\\)\n\\(A\\) tritt ein oder \\(B\\) tritt ein\n\n\n\n\\(A \\cap B\\)\n\\(A\\) trit ein und \\(B\\) tritt ein\n\n\n\n\\(A \\setminus B\\)\n\\(A\\) tritt ein, aber \\(B\\) tritt nicht ein\n\n\n\n\\(\\bar{A} = \\Omega \\setminus A\\)\n\\(A\\) tritt nicht ein\n\n\n\n\\(A \\cup B\\)\nEntweder \\(A\\) ein oder \\(B\\) tritt ein oder keins von beiden\n\n\n\n\\(B \\subset A\\)\n\\(B\\) ist Teilmenge von \\(A\\)"
   },
   {
     "objectID": "probability-basic.html#sec-prob-cond",
     "href": "probability-basic.html#sec-prob-cond",
-    "title": "8  Wahrscheinlichkeiten",
+    "title": "8  Berechnungen mit Wahrscheinlichkeiten",
     "section": "8.2 Bedingte Wahrscheinlichkeiten",
     "text": "8.2 Bedingte Wahrscheinlichkeiten"
   },
   {
     "objectID": "probability-basic.html#sec-prob-dist",
     "href": "probability-basic.html#sec-prob-dist",
-    "title": "8  Wahrscheinlichkeiten",
+    "title": "8  Berechnungen mit Wahrscheinlichkeiten",
     "section": "8.3 Wahrscheinlichkeitsverteilungen",
     "text": "8.3 Wahrscheinlichkeitsverteilungen\nhttps://rstudio-pubs-static.s3.amazonaws.com/35515_c4ea4e9714af4d888bfc701a37c39815.html\nhttps://yutannihilation.github.io/allYourFigureAreBelongToUs/ggfortify/ggdistribution/"
   },
@@ -284,14 +284,14 @@
     "href": "probability-conditional.html",
     "title": "9  Bedingte Wahrscheinlichkeiten",
     "section": "",
-    "text": "Version vom March 08, 2023 um 11:58:30"
+    "text": "Version vom March 08, 2023 um 12:48:30"
   },
   {
     "objectID": "functions-preface.html",
     "href": "functions-preface.html",
     "title": "Von mathematischen Funktionen",
     "section": "",
-    "text": "Version vom March 08, 2023 um 11:58:32"
+    "text": "Version vom March 08, 2023 um 12:48:31"
   },
   {
     "objectID": "functions-basic.html#genutzte-r-pakete-für-das-kapitel",
@@ -326,6 +326,6 @@
     "href": "functions-extrem-stamm.html",
     "title": "11  Ableitung und Stammfunktion",
     "section": "",
-    "text": "Version vom March 08, 2023 um 11:58:38\n\n\n\n\n\ntest"
+    "text": "Version vom March 08, 2023 um 12:48:38\n\n\n\n\n\ntest"
   }
 ]
