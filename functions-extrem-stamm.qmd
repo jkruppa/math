@@ -1,0 +1,13 @@
+# Ableitung und Stammfunktion {#sec-func-dist}
+
+```{r echo = FALSE}
+pacman::p_load(tidyverse, readxl, knitr, kableExtra, Hmisc,
+               see)
+```
+
+*Version vom `r format(Sys.time(), '%B %d, %Y um %H:%M:%S')`*
+
+![](images/caution.png){fig-align="center" width="50%"}
+
+
+test
