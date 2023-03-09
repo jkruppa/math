@@ -1,4 +1,4 @@
-# Ableitung und Stammfunktion {#sec-func-dist}
+# Differential- und Integralrechnung {#sec-func-dist}
 
 ```{r echo = FALSE}
 pacman::p_load(tidyverse, readxl, knitr, kableExtra, Hmisc,
@@ -10,4 +10,46 @@ pacman::p_load(tidyverse, readxl, knitr, kableExtra, Hmisc,
 ![](images/caution.png){fig-align="center" width="50%"}
 
 
-test
+
+
+Wie immer gilt, wir schauen uns hier nur einen kleinen Teilabriss der Thematik an. Auch bei der hier betrachteten [Differentialrechnung](https://de.wikipedia.org/wiki/Differentialrechnung#Ableitungsfunktion) geht es um die Anwendung der ersten Ableitung $f'(x)$. Es geht also um die Betrachtung von Extremwertproblemen. In dem Fall der [Integralrechnung](https://de.wikipedia.org/wiki/Integralrechnung) wollen wir die Stammfunktion $F(x)$ nutzen um die Fläche unter einer Kurve zu berechnen. Mehr zu [quadratischen Gleichungen](https://de.wikipedia.org/wiki/Quadratische_Gleichung) gibt es dann auch auf Wikipeda. 
+
+::: column-margin
+
+[Tabelle von Ableitungs- und Stammfunktionen](https://de.wikipedia.org/wiki/Tabelle_von_Ableitungs-_und_Stammfunktionen)
+
+:::
+
+
+## Differentialrechnung
+
+
+## Integralrechnung
+
+
+## Quadratische Gleichung lösen
+
+::: column-margin
+Mehr zu [quadratischen Gleichungen](https://de.wikipedia.org/wiki/Quadratische_Gleichung) gibt es dann auch auf Wikipeda. 
+:::
+
+
+### a-b-c-Formel
+
+
+
+Die Lösungen der allgemeinen quadratischen Gleichung $ax^2 + bx + c = 0$ ist dann wie folgt.
+
+$$
+x_{1/2} = \cfrac{-b \pm\sqrt{b^2 - 4 \cdot a \cdot c}}{2 \cdot a}
+$$
+
+
+### p-q-Formel
+
+Bei Vorliegen der Normalform $x^2 + px + q = 0$ lauten die Lösungen nach der p-q-Formel wie folgt.
+
+$$
+x_{1,2} = - \cfrac{p}{2}\pm\sqrt{\left(\cfrac{p}2\right)^2 - q}
+$$
+

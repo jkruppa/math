@@ -111,7 +111,7 @@ $$
 
 Ein Parallelogramm ist ein gekipptes Rechteck. Auch hier haben wir die Anwendung eher auf landwirtschaftlichen Versuchsfeldern. 
 
-![](images/parallelogramm.png){fig-align="center" width="50%"}
+![](images/parallelogramm.png){fig-align="center" width="60%"}
 
 ::: column-margin
 Beachte auch folgenden Zusammenhang für das Parallelogramm:
@@ -136,6 +136,15 @@ Den Umfang eines Trapez $U$ können wir dann wie folgt berechnen.
 
 $$
 U = 2(a+b)
+$$
+
+Die Diagonale $e$ ist durch folgende Formel gegeben. Wir benötigen die Strecke $e$ bei der Berechnung eines Kräfteparallelogramms.
+
+$$
+e = \sqrt{a^2 + b^2 - 2ab \cdot \cos(\beta)}
+$$
+$$
+e = \sqrt{a^2 + b^2 + 2ab \cdot \cos(\alpha)}
 $$
 
 ## Dreieck

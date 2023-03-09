@@ -67,7 +67,7 @@
     "href": "geometry-preface.html",
     "title": "Von Maßzahlen, Flächen und Volumen",
     "section": "",
-    "text": "Version vom March 08, 2023 um 12:48:12\nIn dem folgenden Kapitel zu den Maßzahlen von Einheiten sowie der Fläche und dem Volumne wollen wir uns einmal mit den Grundlagen der Berechungen beschäftigen. Wir brauchen diese Werkzeuge um zu bestimmen, wie groß ein Teilstück sein soll oder aber wenn wir wissen wollen, wie viel Torf wir bestellen müssen.\nIm ersten Abschnitt schauen wir uns einmal Flächenmaße und Volumenmaße an. Wie sind die Abkürzungen für die entsprechenden Maßzahlen und wie lauten die Abkürzungen für sehr große oder sehr kleine Zahlen.\nDann schauen wir noch einmal auf die Flächen und Umfänge von gängigen geometrischen Objekten. Welche Eigenschaften hat das Quadrat, das Rechteck und der Kreis? Wir merken uns hier natürlich nur die wichtigsten Formeln, den Rest kannst du dann immer mal wieder bachschlagen.\nAm Ende wollen wir dann die Flächen noch ins Volumen bringen. Hier rechnen wir dann das Volumne eines Würfels oder eines Quaders aus. Häufig brauchen wir diese Informationen, wenn wir berechnen wollen, wie viel Torf wir brauchen oder wie viel Volumen an Futter verbraucht wird bzw. eingekauft werden muss."
+    "text": "Version vom March 09, 2023 um 09:31:01\nIn dem folgenden Kapitel zu den Maßzahlen von Einheiten sowie der Fläche und dem Volumne wollen wir uns einmal mit den Grundlagen der Berechungen beschäftigen. Wir brauchen diese Werkzeuge um zu bestimmen, wie groß ein Teilstück sein soll oder aber wenn wir wissen wollen, wie viel Torf wir bestellen müssen.\nIm ersten Abschnitt schauen wir uns einmal Flächenmaße und Volumenmaße an. Wie sind die Abkürzungen für die entsprechenden Maßzahlen und wie lauten die Abkürzungen für sehr große oder sehr kleine Zahlen.\nDann schauen wir noch einmal auf die Flächen und Umfänge von gängigen geometrischen Objekten. Welche Eigenschaften hat das Quadrat, das Rechteck und der Kreis? Wir merken uns hier natürlich nur die wichtigsten Formeln, den Rest kannst du dann immer mal wieder bachschlagen.\nAm Ende wollen wir dann die Flächen noch ins Volumen bringen. Hier rechnen wir dann das Volumne eines Würfels oder eines Quaders aus. Häufig brauchen wir diese Informationen, wenn wir berechnen wollen, wie viel Torf wir brauchen oder wie viel Volumen an Futter verbraucht wird bzw. eingekauft werden muss."
   },
   {
     "objectID": "geometry-unit.html#maßeinheiten",
@@ -123,7 +123,7 @@
     "href": "geometry-area.html#parallelogramm",
     "title": "4  Flächenberechung",
     "section": "4.4 Parallelogramm",
-    "text": "4.4 Parallelogramm\nEin Parallelogramm ist ein gekipptes Rechteck. Auch hier haben wir die Anwendung eher auf landwirtschaftlichen Versuchsfeldern.\n\n\n\n\n\n\n\nBeachte auch folgenden Zusammenhang für das Parallelogramm:\n\\[\na = \\cfrac{2F}{h}\n\\]\n\\[\nb = \\cfrac{U-2a}{2}\n\\]\nWir berechnen die Fläche \\(F\\) eines Parallelogramms mir folgender Formel.\n\\[\nF = a \\cdot h\n\\]\nDen Umfang eines Trapez \\(U\\) können wir dann wie folgt berechnen.\n\\[\nU = 2(a+b)\n\\]"
+    "text": "4.4 Parallelogramm\nEin Parallelogramm ist ein gekipptes Rechteck. Auch hier haben wir die Anwendung eher auf landwirtschaftlichen Versuchsfeldern.\n\n\n\n\n\n\n\nBeachte auch folgenden Zusammenhang für das Parallelogramm:\n\\[\na = \\cfrac{2F}{h}\n\\]\n\\[\nb = \\cfrac{U-2a}{2}\n\\]\nWir berechnen die Fläche \\(F\\) eines Parallelogramms mir folgender Formel.\n\\[\nF = a \\cdot h\n\\]\nDen Umfang eines Trapez \\(U\\) können wir dann wie folgt berechnen.\n\\[\nU = 2(a+b)\n\\]\nDie Diagonale \\(e\\) ist durch folgende Formel gegeben. Wir benötigen die Strecke \\(e\\) bei der Berechnung eines Kräfteparallelogramms.\n\\[\ne = \\sqrt{a^2 + b^2 - 2ab \\cdot \\cos(\\beta)}\n\\] \\[\ne = \\sqrt{a^2 + b^2 + 2ab \\cdot \\cos(\\alpha)}\n\\]"
   },
   {
     "objectID": "geometry-area.html#dreieck",
@@ -186,7 +186,7 @@
     "href": "vector-preface.html",
     "title": "Von Vektoren und Matrizen",
     "section": "",
-    "text": "Version vom March 08, 2023 um 12:48:20\nIn dem folgenden Kapitel wollen wir uns einmal mit Berechnungen mit Vektoren in Kapitel 6 beschäftigen. Das Kapitel ist eher kurz und dient nur der Erinnerung, was sind eigentlich Vektoren. Wir nutzen den Begriff häufig in der R Programmierung und wir wollen hier nochmal auf ein paar mathematische Eigenschaften eingehen.\nWichtiger ist in dem Sinne die Berechnungen mit Matrizen in Kapitel 7. Wir schauen uns hier nochmal die gängigen Rechenoperationen mit Matrizen an. Wir erschlagen aber nicht alles sondern schauen usn nur ausgewählte Aspekte einmal an. Wir brauchen Teile von den Berechnungen mit Matrizen später in der multiplen linearen Regression in der Statistik."
+    "text": "Version vom March 09, 2023 um 09:31:09\nIn dem folgenden Kapitel wollen wir uns einmal mit Berechnungen mit Vektoren in Kapitel 6 beschäftigen. Das Kapitel ist eher kurz und dient nur der Erinnerung, was sind eigentlich Vektoren. Wir nutzen den Begriff häufig in der R Programmierung und wir wollen hier nochmal auf ein paar mathematische Eigenschaften eingehen.\nWichtiger ist in dem Sinne die Berechnungen mit Matrizen in Kapitel 7. Wir schauen uns hier nochmal die gängigen Rechenoperationen mit Matrizen an. Wir erschlagen aber nicht alles sondern schauen usn nur ausgewählte Aspekte einmal an. Wir brauchen Teile von den Berechnungen mit Matrizen später in der multiplen linearen Regression in der Statistik."
   },
   {
     "objectID": "vector-basic.html#grundlagen-vektoren",
@@ -256,7 +256,7 @@
     "href": "probability-preface.html",
     "title": "Von Wahrscheinlichkeiten",
     "section": "",
-    "text": "Version vom March 08, 2023 um 12:48:26"
+    "text": "Version vom March 09, 2023 um 09:31:15"
   },
   {
     "objectID": "probability-basic.html#regeln",
@@ -284,14 +284,14 @@
     "href": "probability-conditional.html",
     "title": "9  Bedingte Wahrscheinlichkeiten",
     "section": "",
-    "text": "Version vom March 08, 2023 um 12:48:30"
+    "text": "Version vom March 09, 2023 um 09:31:19"
   },
   {
     "objectID": "functions-preface.html",
     "href": "functions-preface.html",
     "title": "Von mathematischen Funktionen",
     "section": "",
-    "text": "Version vom March 08, 2023 um 12:48:31"
+    "text": "Version vom March 09, 2023 um 09:31:20"
   },
   {
     "objectID": "functions-basic.html#genutzte-r-pakete-für-das-kapitel",
@@ -322,10 +322,24 @@
     "text": "10.4 Quellen\nhttps://www.statforbiology.com/nonlinearregression/usefulequations#michaelis-menten_equation\nhttps://en.wikipedia.org/wiki/Cubic_function\nhttps://en.wikipedia.org/wiki/Polynomial\nhttps://de.wikipedia.org/wiki/Exponentielles_Wachstum\nhttps://www.rhetos.de/html/lex/exponentielle_saettigungsfunktion.htm"
   },
   {
-    "objectID": "functions-extrem-stamm.html",
-    "href": "functions-extrem-stamm.html",
-    "title": "11  Ableitung und Stammfunktion",
-    "section": "",
-    "text": "Version vom March 08, 2023 um 12:48:38\n\n\n\n\n\ntest"
+    "objectID": "functions-extrem-stamm.html#differentialrechnung",
+    "href": "functions-extrem-stamm.html#differentialrechnung",
+    "title": "11  Differential- und Integralrechnung",
+    "section": "11.1 Differentialrechnung",
+    "text": "11.1 Differentialrechnung"
+  },
+  {
+    "objectID": "functions-extrem-stamm.html#integralrechnung",
+    "href": "functions-extrem-stamm.html#integralrechnung",
+    "title": "11  Differential- und Integralrechnung",
+    "section": "11.2 Integralrechnung",
+    "text": "11.2 Integralrechnung"
+  },
+  {
+    "objectID": "functions-extrem-stamm.html#quadratische-gleichung-lösen",
+    "href": "functions-extrem-stamm.html#quadratische-gleichung-lösen",
+    "title": "11  Differential- und Integralrechnung",
+    "section": "11.3 Quadratische Gleichung lösen",
+    "text": "11.3 Quadratische Gleichung lösen\n\n\nMehr zu quadratischen Gleichungen gibt es dann auch auf Wikipeda.\n\n11.3.1 a-b-c-Formel\nDie Lösungen der allgemeinen quadratischen Gleichung \\(ax^2 + bx + c = 0\\) ist dann wie folgt.\n\\[\nx_{1/2} = \\cfrac{-b \\pm\\sqrt{b^2 - 4 \\cdot a \\cdot c}}{2 \\cdot a}\n\\]\n\n\n11.3.2 p-q-Formel\nBei Vorliegen der Normalform \\(x^2 + px + q = 0\\) lauten die Lösungen nach der p-q-Formel wie folgt.\n\\[\nx_{1,2} = - \\cfrac{p}{2}\\pm\\sqrt{\\left(\\cfrac{p}2\\right)^2 - q}\n\\]"
   }
 ]
