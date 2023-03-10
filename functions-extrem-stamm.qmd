@@ -12,7 +12,7 @@ pacman::p_load(tidyverse, readxl, knitr, kableExtra, Hmisc,
 
 
 
-Wie immer gilt, wir schauen uns hier nur einen kleinen Teilabriss der Thematik an. Auch bei der hier betrachteten [Differentialrechnung](https://de.wikipedia.org/wiki/Differentialrechnung#Ableitungsfunktion) geht es um die Anwendung der ersten Ableitung $f'(x)$. Es geht also um die Betrachtung von Extremwertproblemen. In dem Fall der [Integralrechnung](https://de.wikipedia.org/wiki/Integralrechnung) wollen wir die Stammfunktion $F(x)$ nutzen um die Fläche unter einer Kurve zu berechnen. Mehr zu [quadratischen Gleichungen](https://de.wikipedia.org/wiki/Quadratische_Gleichung) gibt es dann auch auf Wikipeda. 
+Wie immer gilt, wir schauen uns hier nur einen kleinen Teilabriss der Thematik an. Auch bei der hier betrachteten [Differentialrechnung](https://de.wikipedia.org/wiki/Differentialrechnung#Ableitungsfunktion) geht es um die Anwendung der ersten Ableitung $f'(x)$. Es geht also um die Betrachtung von Extremwertproblemen. In dem Fall der [Integralrechnung](https://de.wikipedia.org/wiki/Integralrechnung) wollen wir die Stammfunktion $F(x)$ nutzen um die Fläche unter einer Kurve zu berechnen. 
 
 ::: column-margin
 
