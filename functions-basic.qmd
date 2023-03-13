@@ -137,19 +137,21 @@ $$
   \sum_{n=0}^5 2^n = \cfrac{2^{5 + 1} -1}{2 - 1} = 63
 $$
 
-Und einmal die Überprüfung in R Code.
+Und einmal die Überprüfung in R Code. Der R Code sieht dann immer etwas wilder aus, da wir natürlich nicht eine Formel direkt in R eingeben können. Mit den Leerzeichen wird es eventuell dann etwas übersichtlicher.
 
 ```{r}
-(2^(5+1)-1)/(2-1)
+(2^(5+1) - 1)/(2 - 1)
 ```
 
-Und nochmal als Tabelle dargestellt. In der Spalte `cumsum_y` findet sich das aufsummierte $y$.
+Wir können uns auch die Werte vom aufsummierten $y$ auch einmal für jedes $x$ berechnen lassen. Und nicht nur für $x = 5$, wie wir es eben gerade gemacht haben. Daher stelle ich hier nochmal die Berechnung als Tabelle dar. In der Spalte `cumsum_y` findet sich das aufsummierte $y$.
 
 ```{r}
 exp_tbl %<>% 
   mutate(cumsum_y = (2^(x+1)-1)/(2-1))
 exp_tbl
 ```
+
+Nachdem wir dann die Datentabelle haben, können wir die Funktion auch einmal abbilden. In der @fig-exp-simple-cumsum siehst du die exponentielle Funktion für $f(x) = 2^x$.
 
 ```{r}
 #| echo: true
@@ -159,7 +161,7 @@ exp_tbl
 #| fig-align: center
 #| fig-height: 4
 #| fig-width: 5
-#| fig-cap: "test."
+#| fig-cap: "Exponentielle Funktion für $f(x) = 2^x$"
 
 exp_tbl %>% 
   ggplot(aes(x, cumsum_y)) +
@@ -167,6 +169,8 @@ exp_tbl %>%
   geom_path() +
   geom_point() 
 ```
+
+Es kann vorkommen, dass wir uns nicht nur *einen* exponentiellen Anstieg anschauen, sondern gleich mehrere. Oder anders ausgedrückt, wir haben noch einen Faktor $a$ vor unserer exponentiellen Funktion in der Form $f(x) = a \cdot x^2$. In dem Fall berechnen wir die Summe wie folgt.
 
 $$
   \sum_{n=0}^N a \cdot r^n = a\left(\cfrac{r^{N + 1} -1}{r - 1}\right)

@@ -299,7 +299,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="cell">
 
 </div>
-<p><em>Version vom March 13, 2023 um 08:35:50</em></p>
+<p><em>Version vom March 13, 2023 um 09:19:31</em></p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/caution.png" class="img-fluid figure-img" style="width:50.0%"></p>
@@ -416,14 +416,14 @@ f(x) = 2^x
 <p><span class="math display">\[
   \sum_{n=0}^5 2^n = \cfrac{2^{5 + 1} -1}{2 - 1} = 63
 \]</span></p>
-<p>Und einmal die Überprüfung in R Code.</p>
+<p>Und einmal die Überprüfung in R Code. Der R Code sieht dann immer etwas wilder aus, da wir natürlich nicht eine Formel direkt in R eingeben können. Mit den Leerzeichen wird es eventuell dann etwas übersichtlicher.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>(<span class="dv">2</span><span class="sc">^</span>(<span class="dv">5</span><span class="sc">+</span><span class="dv">1</span>)<span class="sc">-</span><span class="dv">1</span>)<span class="sc">/</span>(<span class="dv">2-1</span>)</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>(<span class="dv">2</span><span class="sc">^</span>(<span class="dv">5</span><span class="sc">+</span><span class="dv">1</span>) <span class="sc">-</span> <span class="dv">1</span>)<span class="sc">/</span>(<span class="dv">2</span> <span class="sc">-</span> <span class="dv">1</span>)</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 63</code></pre>
 </div>
 </div>
-<p>Und nochmal als Tabelle dargestellt. In der Spalte <code>cumsum_y</code> findet sich das aufsummierte <span class="math inline">\(y\)</span>.</p>
+<p>Wir können uns auch die Werte vom aufsummierten <span class="math inline">\(y\)</span> auch einmal für jedes <span class="math inline">\(x\)</span> berechnen lassen. Und nicht nur für <span class="math inline">\(x = 5\)</span>, wie wir es eben gerade gemacht haben. Daher stelle ich hier nochmal die Berechnung als Tabelle dar. In der Spalte <code>cumsum_y</code> findet sich das aufsummierte <span class="math inline">\(y\)</span>.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>exp_tbl <span class="sc">%&lt;&gt;%</span> </span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">cumsum_y =</span> (<span class="dv">2</span><span class="sc">^</span>(x<span class="sc">+</span><span class="dv">1</span>)<span class="sc">-</span><span class="dv">1</span>)<span class="sc">/</span>(<span class="dv">2-1</span>))</span>
@@ -445,6 +445,7 @@ f(x) = 2^x
 11    10  1024     2047</code></pre>
 </div>
 </div>
+<p>Nachdem wir dann die Datentabelle haben, können wir die Funktion auch einmal abbilden. In der <a href="#fig-exp-simple-cumsum">Abbildung&nbsp;<span>10.3</span></a> siehst du die exponentielle Funktion für <span class="math inline">\(f(x) = 2^x\)</span>.</p>
 <div class="cell" data-layout-align="center">
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>exp_tbl <span class="sc">%&gt;%</span> </span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(x, cumsum_y)) <span class="sc">+</span></span>
@@ -455,11 +456,12 @@ f(x) = 2^x
 <div id="fig-exp-simple-cumsum" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="functions-basic_files/figure-html/fig-exp-simple-cumsum-1.png" class="img-fluid figure-img" width="480"></p>
-<p></p><figcaption class="figure-caption">Abbildung&nbsp;10.3— test.</figcaption><p></p>
+<p></p><figcaption class="figure-caption">Abbildung&nbsp;10.3— Exponentielle Funktion für <span class="math inline">\(f(x) = 2^x\)</span></figcaption><p></p>
 </figure>
 </div>
 </div>
 </div>
+<p>Es kann vorkommen, dass wir uns nicht nur <em>einen</em> exponentiellen Anstieg anschauen, sondern gleich mehrere. Oder anders ausgedrückt, wir haben noch einen Faktor <span class="math inline">\(a\)</span> vor unserer exponentiellen Funktion in der Form <span class="math inline">\(f(x) = a \cdot x^2\)</span>. In dem Fall berechnen wir die Summe wie folgt.</p>
 <p><span class="math display">\[
   \sum_{n=0}^N a \cdot r^n = a\left(\cfrac{r^{N + 1} -1}{r - 1}\right)
 \]</span></p>
