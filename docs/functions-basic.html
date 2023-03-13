@@ -270,8 +270,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   <li><a href="#lineare-funktion" id="toc-lineare-funktion" class="nav-link" data-scroll-target="#lineare-funktion"><span class="toc-section-number">10.2</span>  Lineare Funktion</a></li>
   <li><a href="#exponentialfunktion" id="toc-exponentialfunktion" class="nav-link" data-scroll-target="#exponentialfunktion"><span class="toc-section-number">10.3</span>  Exponentialfunktion</a>
   <ul class="collapse">
-  <li><a href="#halbwertszeit" id="toc-halbwertszeit" class="nav-link" data-scroll-target="#halbwertszeit"><span class="toc-section-number">10.3.1</span>  Halbwertszeit</a></li>
-  <li><a href="#sättigungsfunktion" id="toc-sättigungsfunktion" class="nav-link" data-scroll-target="#sättigungsfunktion"><span class="toc-section-number">10.3.2</span>  Sättigungsfunktion</a></li>
+  <li><a href="#exponentieller-anstieg" id="toc-exponentieller-anstieg" class="nav-link" data-scroll-target="#exponentieller-anstieg"><span class="toc-section-number">10.3.1</span>  Exponentieller Anstieg</a></li>
+  <li><a href="#halbwertszeit" id="toc-halbwertszeit" class="nav-link" data-scroll-target="#halbwertszeit"><span class="toc-section-number">10.3.2</span>  Halbwertszeit</a></li>
+  <li><a href="#sättigungsfunktion" id="toc-sättigungsfunktion" class="nav-link" data-scroll-target="#sättigungsfunktion"><span class="toc-section-number">10.3.3</span>  Sättigungsfunktion</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -299,7 +300,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="cell">
 
 </div>
-<p><em>Version vom March 13, 2023 um 09:19:31</em></p>
+<p><em>Version vom March 13, 2023 um 09:41:54</em></p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/caution.png" class="img-fluid figure-img" style="width:50.0%"></p>
@@ -342,6 +343,9 @@ f(x) = mx + b_0
 </section>
 <section id="exponentialfunktion" class="level2 page-columns page-full" data-number="10.3">
 <h2 data-number="10.3" class="anchored" data-anchor-id="exponentialfunktion"><span class="header-section-number">10.3</span> Exponentialfunktion</h2>
+<p>In diesem Abschnitt schauen wir uns die verschiedenen Arten der Exponentialfunktion an. Zum einen den exponentiellen Anstieg, den exponentiellen Abfall sowie die Sättigungsfunktion. Alle drei Arten der Exponentialfunktion haben in der Biologie ihren Platz und daher sollten wir die Grundlagen kennen.</p>
+<section id="exponentieller-anstieg" class="level3" data-number="10.3.1">
+<h3 data-number="10.3.1" class="anchored" data-anchor-id="exponentieller-anstieg"><span class="header-section-number">10.3.1</span> Exponentieller Anstieg</h3>
 <p>Die Exponentialfunktion ist eine sehr wichtige biologische Funktion. Wir können mit der Exponentialfunktion zum Beispiel Wachstum oder aber Zerfall. Deshalb hier einmal die grundlegende Formel für die Exponentialfunktion.</p>
 <p><span class="math display">\[
 f(x) = b_0 + a \cdot b_1^{c\cdot x + d}
@@ -461,15 +465,18 @@ f(x) = 2^x
 </div>
 </div>
 </div>
-<p>Es kann vorkommen, dass wir uns nicht nur <em>einen</em> exponentiellen Anstieg anschauen, sondern gleich mehrere. Oder anders ausgedrückt, wir haben noch einen Faktor <span class="math inline">\(a\)</span> vor unserer exponentiellen Funktion in der Form <span class="math inline">\(f(x) = a \cdot x^2\)</span>. In dem Fall berechnen wir die Summe wie folgt.</p>
+<p>Es kann vorkommen, dass wir uns nicht nur <em>einen</em> exponentiellen Anstieg anschauen, sondern gleich mehrere. Oder anders ausgedrückt, wir haben noch einen Faktor <span class="math inline">\(a\)</span> vor unserer exponentiellen Funktion in der Form <span class="math inline">\(f(x) = a \cdot r^n\)</span>. In dem Fall berechnen wir die Summe wie folgt.</p>
 <p><span class="math display">\[
   \sum_{n=0}^N a \cdot r^n = a\left(\cfrac{r^{N + 1} -1}{r - 1}\right)
 \]</span></p>
-<section id="halbwertszeit" class="level3" data-number="10.3.1">
-<h3 data-number="10.3.1" class="anchored" data-anchor-id="halbwertszeit"><span class="header-section-number">10.3.1</span> Halbwertszeit</h3>
+</section>
+<section id="halbwertszeit" class="level3" data-number="10.3.2">
+<h3 data-number="10.3.2" class="anchored" data-anchor-id="halbwertszeit"><span class="header-section-number">10.3.2</span> Halbwertszeit</h3>
+<p>Neben dem klassischen exponentiellen Wachstum gibt es noch den exponentiellen Abfall. Daher verringert sich unser ursprünglicher Wert exponentiell bis nichts mehr von “übrig” ist. Der Klassiker ist hier die Halbwertszeit. Wir haben also eine Menge <span class="math inline">\(N_0\)</span> von einem radioaktiven Material als Startmenge. Dann wollen wir wissen, wie viel radioaktives Material liegt nach der Zeit <span class="math inline">\(t\)</span> noch vor. Wir berechnen daher die Menge <span class="math inline">\(N(t)\)</span>. Dafür brauchen wir dann noch die Halbwertszeit <span class="math inline">\(t_{1/2}\)</span> als Konstante für jedes radioaktive Material. Damit ist dann folgende Formel gegeben.</p>
 <p><span class="math display">\[
 N(t) = N_0 \cdot \cfrac{1}{2}^{\cfrac{t}{t_{1/2}}}
 \]</span></p>
+<p>In der <a href="#fig-exp-halb">Abbildung&nbsp;<span>10.4</span></a> sehen wir dann die exponentielle Funktion für den Zerfall eines radioaktiven Nukleotids mit <span class="math inline">\(f(x) = 100 \cdot \cfrac{1}{2}^{\cfrac{t}{3.5}}\)</span>.</p>
 <div class="cell" data-layout-align="center">
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">tibble</span>(<span class="at">t =</span> <span class="dv">0</span><span class="sc">:</span><span class="dv">30</span>,</span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="dv">100</span> <span class="sc">*</span> <span class="dv">1</span><span class="sc">/</span><span class="dv">2</span><span class="sc">^</span>(t<span class="sc">/</span><span class="fl">3.5</span>)) <span class="sc">%&gt;%</span> </span>
@@ -481,14 +488,14 @@ N(t) = N_0 \cdot \cfrac{1}{2}^{\cfrac{t}{t_{1/2}}}
 <div id="fig-exp-halb" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="functions-basic_files/figure-html/fig-exp-halb-1.png" class="img-fluid figure-img" width="480"></p>
-<p></p><figcaption class="figure-caption">Abbildung&nbsp;10.4— test.</figcaption><p></p>
+<p></p><figcaption class="figure-caption">Abbildung&nbsp;10.4— Exponentielle Funktion für den exponentiellen Zerfall eines radioaktiven Nukleotids.</figcaption><p></p>
 </figure>
 </div>
 </div>
 </div>
 </section>
-<section id="sättigungsfunktion" class="level3 page-columns page-full" data-number="10.3.2">
-<h3 data-number="10.3.2" class="anchored" data-anchor-id="sättigungsfunktion"><span class="header-section-number">10.3.2</span> Sättigungsfunktion</h3>
+<section id="sättigungsfunktion" class="level3 page-columns page-full" data-number="10.3.3">
+<h3 data-number="10.3.3" class="anchored" data-anchor-id="sättigungsfunktion"><span class="header-section-number">10.3.3</span> Sättigungsfunktion</h3>
 <p>Jedes biologisches Wachstum folgt einer Sättigungsfunktion auch wenn wir als erstes annehmen würden, es handelt sich um ein unbegrenztes exponentielles Wachstum. Hier wollen wir nicht in die Diskussion verfallen, ob es auch ein unbegrenztes ökonomisches Wachstum gibt oder nicht. Das Schneeballsystem sei hier nur warnend erwähnt.</p>
 
 <div class="no-row-height column-margin column-container"><div class="">

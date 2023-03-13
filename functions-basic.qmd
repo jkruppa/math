@@ -55,6 +55,10 @@ tibble(x = 0:10,
 
 ## Exponentialfunktion
 
+In diesem Abschnitt schauen wir uns die verschiedenen Arten der Exponentialfunktion an. Zum einen den exponentiellen Anstieg, den exponentiellen Abfall sowie die Sättigungsfunktion. Alle drei Arten der Exponentialfunktion haben in der Biologie ihren Platz und daher sollten wir die Grundlagen kennen.
+
+### Exponentieller Anstieg
+
 Die Exponentialfunktion ist eine sehr wichtige biologische Funktion. Wir können mit der Exponentialfunktion zum Beispiel Wachstum oder aber Zerfall. Deshalb hier einmal die grundlegende Formel für die Exponentialfunktion.
 
 $$
@@ -170,7 +174,7 @@ exp_tbl %>%
   geom_point() 
 ```
 
-Es kann vorkommen, dass wir uns nicht nur *einen* exponentiellen Anstieg anschauen, sondern gleich mehrere. Oder anders ausgedrückt, wir haben noch einen Faktor $a$ vor unserer exponentiellen Funktion in der Form $f(x) = a \cdot x^2$. In dem Fall berechnen wir die Summe wie folgt.
+Es kann vorkommen, dass wir uns nicht nur *einen* exponentiellen Anstieg anschauen, sondern gleich mehrere. Oder anders ausgedrückt, wir haben noch einen Faktor $a$ vor unserer exponentiellen Funktion in der Form $f(x) = a \cdot r^n$. In dem Fall berechnen wir die Summe wie folgt.
 
 $$
   \sum_{n=0}^N a \cdot r^n = a\left(\cfrac{r^{N + 1} -1}{r - 1}\right)
@@ -178,9 +182,13 @@ $$
 
 ### Halbwertszeit
 
+Neben dem klassischen exponentiellen Wachstum gibt es noch den exponentiellen Abfall. Daher verringert sich unser ursprünglicher Wert exponentiell bis nichts mehr von "übrig" ist. Der Klassiker ist hier die Halbwertszeit. Wir haben also eine Menge $N_0$ von einem radioaktiven Material als Startmenge. Dann wollen wir wissen, wie viel radioaktives Material liegt nach der Zeit $t$ noch vor. Wir berechnen daher die Menge $N(t)$. Dafür brauchen wir dann noch die Halbwertszeit $t_{1/2}$ als Konstante für jedes radioaktive Material. Damit ist dann folgende Formel gegeben.
+
 $$
 N(t) = N_0 \cdot \cfrac{1}{2}^{\cfrac{t}{t_{1/2}}}
 $$
+
+In der @fig-exp-halb sehen wir dann die exponentielle Funktion für den Zerfall eines radioaktiven Nukleotids mit $f(x) = 100 \cdot \cfrac{1}{2}^{\cfrac{t}{3.5}}$. 
 
 ```{r}
 #| echo: true
@@ -190,7 +198,7 @@ $$
 #| fig-align: center
 #| fig-height: 4
 #| fig-width: 5
-#| fig-cap: "test."
+#| fig-cap: "Exponentielle Funktion für den exponentiellen Zerfall eines radioaktiven Nukleotids."
 
 tibble(t = 0:30,
        y = 100 * 1/2^(t/3.5)) %>% 
