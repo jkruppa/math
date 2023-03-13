@@ -300,7 +300,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="cell">
 
 </div>
-<p><em>Version vom March 13, 2023 um 09:41:54</em></p>
+<p><em>Version vom March 13, 2023 um 09:50:45</em></p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/caution.png" class="img-fluid figure-img" style="width:50.0%"></p>
@@ -344,7 +344,10 @@ f(x) = mx + b_0
 <section id="exponentialfunktion" class="level2 page-columns page-full" data-number="10.3">
 <h2 data-number="10.3" class="anchored" data-anchor-id="exponentialfunktion"><span class="header-section-number">10.3</span> Exponentialfunktion</h2>
 <p>In diesem Abschnitt schauen wir uns die verschiedenen Arten der Exponentialfunktion an. Zum einen den exponentiellen Anstieg, den exponentiellen Abfall sowie die Sättigungsfunktion. Alle drei Arten der Exponentialfunktion haben in der Biologie ihren Platz und daher sollten wir die Grundlagen kennen.</p>
-<section id="exponentieller-anstieg" class="level3" data-number="10.3.1">
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p>Auf der Wikipedia Seite finden sich <a href="https://de.wikipedia.org/wiki/Exponentielles_Wachstum">Beispiele für das exponentielle Wachstum</a>.</p>
+</div></div><section id="exponentieller-anstieg" class="level3" data-number="10.3.1">
 <h3 data-number="10.3.1" class="anchored" data-anchor-id="exponentieller-anstieg"><span class="header-section-number">10.3.1</span> Exponentieller Anstieg</h3>
 <p>Die Exponentialfunktion ist eine sehr wichtige biologische Funktion. Wir können mit der Exponentialfunktion zum Beispiel Wachstum oder aber Zerfall. Deshalb hier einmal die grundlegende Formel für die Exponentialfunktion.</p>
 <p><span class="math display">\[
@@ -494,19 +497,18 @@ N(t) = N_0 \cdot \cfrac{1}{2}^{\cfrac{t}{t_{1/2}}}
 </div>
 </div>
 </section>
-<section id="sättigungsfunktion" class="level3 page-columns page-full" data-number="10.3.3">
+<section id="sättigungsfunktion" class="level3" data-number="10.3.3">
 <h3 data-number="10.3.3" class="anchored" data-anchor-id="sättigungsfunktion"><span class="header-section-number">10.3.3</span> Sättigungsfunktion</h3>
 <p>Jedes biologisches Wachstum folgt einer Sättigungsfunktion auch wenn wir als erstes annehmen würden, es handelt sich um ein unbegrenztes exponentielles Wachstum. Hier wollen wir nicht in die Diskussion verfallen, ob es auch ein unbegrenztes ökonomisches Wachstum gibt oder nicht. Das Schneeballsystem sei hier nur warnend erwähnt.</p>
-
-<div class="no-row-height column-margin column-container"><div class="">
-<p>Auf der Wikipedia Seite finden sich <a href="https://de.wikipedia.org/wiki/Exponentielles_Wachstum">Beispiele für das exponentielle Wachstum</a>.</p>
-</div></div><p><span class="math display">\[
+<p>Die Sättigungsfunktion hat ein Maximum <span class="math inline">\(b_0\)</span> welches die Funktion nie erreicht. Von diesem Maximum <span class="math inline">\(b_0\)</span> wird dann immer ein Term abgezogen. Dieser Term hat am Anfang einen recht großes Wert und wird mit größeren <span class="math inline">\(x\)</span>-Werten immer kleiner. Daher nähert sich dann die Funktion dem Wert von <span class="math inline">\(b_0\)</span> an.</p>
+<p><span class="math display">\[
 f(x) = b_0 - a \cdot b_1^{-c \cdot x + d}
-\]</span> Im Folgenden sehen wir einmal eine Gleichung einer Sättigungsfunktion als Beispiel.</p>
+\]</span></p>
+<p>Im Folgenden sehen wir einmal eine Gleichung einer Sättigungsfunktion als Beispiel. Die Funktion wird nie den maximalen Wert von <span class="math inline">\(6\)</span> erreichen. Mit steigendem <span class="math inline">\(x\)</span> wird jedoch der Malusterm immer kleiner, so dass sich die Werte dann <span class="math inline">\(6\)</span> annähern.</p>
 <p><span class="math display">\[
 f(x) = 6 - 1.5 \cdot 2^{-\frac{1}{4}\cdot x + 2}
 \]</span></p>
-<p>In der <a href="#fig-exp-satt">Abbildung&nbsp;<span>10.5</span></a></p>
+<p>In der <a href="#fig-exp-satt">Abbildung&nbsp;<span>10.5</span></a> sehen wir den Zusammenhang nochmal visualisiert. Häufig führen biologische Wachstumsprozesse zu einer ähnlichen Sättigungsfunktion. Als weiteres Beispiel sei hier auch die Enzymekinetik mit der <a href="https://de.wikipedia.org/wiki/Enzymkinetik#Nicht_linearisierte_Graphen">Michaelis-Menten-Gleichung</a> berechnen.</p>
 <div class="cell" data-layout-align="center">
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">tibble</span>(<span class="at">x =</span> <span class="dv">0</span><span class="sc">:</span><span class="dv">30</span>,</span>
 <span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="dv">6</span> <span class="sc">-</span> <span class="fl">1.5</span> <span class="sc">*</span> <span class="dv">2</span><span class="sc">^</span>(<span class="sc">-</span><span class="dv">1</span><span class="sc">/</span><span class="dv">4</span><span class="sc">*</span>x <span class="sc">+</span> <span class="dv">2</span>)) <span class="sc">%&gt;%</span> </span>
@@ -519,7 +521,7 @@ f(x) = 6 - 1.5 \cdot 2^{-\frac{1}{4}\cdot x + 2}
 <div id="fig-exp-satt" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="functions-basic_files/figure-html/fig-exp-satt-1.png" class="img-fluid figure-img" width="480"></p>
-<p></p><figcaption class="figure-caption">Abbildung&nbsp;10.5— test.</figcaption><p></p>
+<p></p><figcaption class="figure-caption">Abbildung&nbsp;10.5— Exponentielle Funktion für eine Sättigung.</figcaption><p></p>
 </figure>
 </div>
 </div>

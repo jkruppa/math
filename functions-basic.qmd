@@ -57,6 +57,10 @@ tibble(x = 0:10,
 
 In diesem Abschnitt schauen wir uns die verschiedenen Arten der Exponentialfunktion an. Zum einen den exponentiellen Anstieg, den exponentiellen Abfall sowie die Sättigungsfunktion. Alle drei Arten der Exponentialfunktion haben in der Biologie ihren Platz und daher sollten wir die Grundlagen kennen.
 
+::: column-margin
+Auf der Wikipedia Seite finden sich [Beispiele für das exponentielle Wachstum](https://de.wikipedia.org/wiki/Exponentielles_Wachstum).
+:::
+
 ### Exponentieller Anstieg
 
 Die Exponentialfunktion ist eine sehr wichtige biologische Funktion. Wir können mit der Exponentialfunktion zum Beispiel Wachstum oder aber Zerfall. Deshalb hier einmal die grundlegende Formel für die Exponentialfunktion.
@@ -213,23 +217,19 @@ tibble(t = 0:30,
 
 Jedes biologisches Wachstum folgt einer Sättigungsfunktion auch wenn wir als erstes annehmen würden, es handelt sich um ein unbegrenztes exponentielles Wachstum. Hier wollen wir nicht in die Diskussion verfallen, ob es auch ein unbegrenztes ökonomisches Wachstum gibt oder nicht. Das Schneeballsystem sei hier nur warnend erwähnt.
 
-::: column-margin
-Auf der Wikipedia Seite finden sich [Beispiele für das exponentielle Wachstum](https://de.wikipedia.org/wiki/Exponentielles_Wachstum).
-:::
-
-
+Die Sättigungsfunktion hat ein Maximum $b_0$ welches die Funktion nie erreicht. Von diesem Maximum $b_0$ wird dann immer ein Term abgezogen. Dieser Term hat am Anfang einen recht großes Wert und wird mit größeren $x$-Werten immer kleiner. Daher nähert sich dann die Funktion dem Wert von $b_0$ an.
 
 $$
 f(x) = b_0 - a \cdot b_1^{-c \cdot x + d}
 $$
-Im Folgenden sehen wir einmal eine Gleichung einer Sättigungsfunktion als Beispiel.
+
+Im Folgenden sehen wir einmal eine Gleichung einer Sättigungsfunktion als Beispiel. Die Funktion wird nie den maximalen Wert von $6$ erreichen. Mit steigendem $x$ wird jedoch der Malusterm immer kleiner, so dass sich die Werte dann $6$ annähern.
 
 $$
 f(x) = 6 - 1.5 \cdot 2^{-\frac{1}{4}\cdot x + 2}
 $$
 
-In der @fig-exp-satt 
-
+In der @fig-exp-satt sehen wir den Zusammenhang nochmal visualisiert. Häufig führen biologische Wachstumsprozesse zu einer ähnlichen Sättigungsfunktion. Als weiteres Beispiel sei hier auch die Enzymekinetik mit der [Michaelis-Menten-Gleichung](https://de.wikipedia.org/wiki/Enzymkinetik#Nicht_linearisierte_Graphen) berechnen.
 
 ```{r}
 #| echo: true
@@ -239,7 +239,7 @@ In der @fig-exp-satt
 #| fig-align: center
 #| fig-height: 4
 #| fig-width: 5
-#| fig-cap: "test."
+#| fig-cap: "Exponentielle Funktion für eine Sättigung."
 
 tibble(x = 0:30,
        y = 6 - 1.5 * 2^(-1/4*x + 2)) %>% 
