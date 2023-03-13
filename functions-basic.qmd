@@ -238,16 +238,7 @@ tibble(x = 0:30,
   geom_point()
 ```
 
-## Quellen
 
-https://www.statforbiology.com/nonlinearregression/usefulequations#michaelis-menten_equation
 
-https://en.wikipedia.org/wiki/Cubic_function
-
-https://en.wikipedia.org/wiki/Polynomial
-
-https://de.wikipedia.org/wiki/Exponentielles_Wachstum
-
-https://www.rhetos.de/html/lex/exponentielle_saettigungsfunktion.htm
 
 
