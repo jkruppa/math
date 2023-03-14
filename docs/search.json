@@ -298,14 +298,14 @@
     "href": "functions-preface.html",
     "title": "Von mathematischen Funktionen",
     "section": "",
-    "text": "Version vom März 14, 2023 um 11:52:35"
+    "text": "Version vom März 14, 2023 um 12:45:29\n\n\n\n\n\nKapitel 10 Lineare und exponentielle Funktion\nKapitel 9 Differential- und Integralrechnung"
   },
   {
     "objectID": "functions-basic.html",
     "href": "functions-basic.html",
     "title": "8  Lineare und exponentielle Funktion",
     "section": "",
-    "text": "Version vom März 14, 2023 um 11:52:38\nIn diesem Kapitel werden wir uns einmal mit den wichtigsten mathematischen Funktionen in der Anwendung beschäftigen. Wir schauen uns dabei die am meisten genutzten und am häufigsten vorkommenden Funktionen an. Daher fangen wir mit der linearen Funktion an, die uns dann in der Statistik sehr lange begleiten wird. Darüber hinaus schauen wir auch einmal auf die exponentielle Funktion, die in der Form uns später das ein oder andere Mal in der Analyse von echten Daten über den Weg läuft."
+    "text": "Version vom März 14, 2023 um 12:43:48\nIn diesem Kapitel werden wir uns einmal mit den wichtigsten mathematischen Funktionen in der Anwendung beschäftigen. Wir schauen uns dabei die am meisten genutzten und am häufigsten vorkommenden Funktionen an. Daher fangen wir mit der linearen Funktion an, die uns dann in der Statistik sehr lange begleiten wird. Darüber hinaus schauen wir auch einmal auf die exponentielle Funktion, die in der Form uns später das ein oder andere Mal in der Analyse von echten Daten über den Weg läuft."
   },
   {
     "objectID": "functions-basic.html#genutzte-r-pakete-für-das-kapitel",
@@ -333,7 +333,7 @@
     "href": "functions-extrem-stamm.html",
     "title": "9  Differential- und Integralrechnung",
     "section": "",
-    "text": "Version vom März 14, 2023 um 11:52:44\nWie immer gilt, wir schauen uns hier nur einen kleinen Teilabriss der Thematik an. Auch bei der hier betrachteten Differentialrechnung geht es um die Anwendung der ersten Ableitung \\(f'(x)\\). Es geht also um die Betrachtung von Extremwertproblemen. In dem Fall der Integralrechnung wollen wir die Stammfunktion \\(F(x)\\) nutzen um die Fläche unter einer Kurve zu berechnen."
+    "text": "Version vom März 14, 2023 um 12:45:06\nWie immer gilt, wir schauen uns hier nur einen kleinen Teilabriss der Thematik an. Auch bei der hier betrachteten Differentialrechnung geht es um die Anwendung der ersten Ableitung \\(f'(x)\\). Es geht also um die Betrachtung von Extremwertproblemen. In dem Fall der Integralrechnung wollen wir die Stammfunktion \\(F(x)\\) nutzen um die Fläche unter einer Kurve zu berechnen."
   },
   {
     "objectID": "functions-extrem-stamm.html#differentialrechnung",

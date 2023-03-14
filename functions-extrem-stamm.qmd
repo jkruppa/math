@@ -1,4 +1,4 @@
-# Differential- und Integralrechnung {#sec-func-dist}
+# Differential- und Integralrechnung {#sec-func-diff}
 
 ```{r echo = FALSE}
 pacman::p_load(tidyverse, readxl, knitr, kableExtra, Hmisc,

@@ -7,8 +7,6 @@ pacman::p_load(tidyverse, readxl, knitr, kableExtra, Hmisc,
 
 *Version vom `r format(Sys.time(), '%B %d, %Y um %H:%M:%S')`*
 
-![](images/caution.png){fig-align="center" width="50%"}
-
 In diesem Kapitel werden wir uns einmal mit den wichtigsten mathematischen Funktionen in der Anwendung beschäftigen. Wir schauen uns dabei die am meisten genutzten und am häufigsten vorkommenden Funktionen an. Daher fangen wir mit der linearen Funktion an, die uns dann in der Statistik sehr lange begleiten wird. Darüber hinaus schauen wir auch einmal auf die exponentielle Funktion, die in der Form uns später das ein oder andere Mal in der Analyse von echten Daten über den Weg läuft.
 
 

@@ -8,3 +8,7 @@ pacman::p_load(tidyverse, readxl, knitr, kableExtra, Hmisc)
 
 ![](images/caution.png){fig-align="center" width="50%"}
 
+@sec-prob-basic Lineare und exponentielle Funktion 
+
+
+@sec-func-diff Differential- und Integralrechnung
