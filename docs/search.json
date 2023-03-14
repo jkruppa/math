@@ -7,11 +7,11 @@
     "text": "Auf den folgenden Seiten wirst du nochmal die Grundlagen der Mathematik in der Statistik lernen. Wir lagern hier die Inhalte die sehr mathematisch sind von den angewandten, statistischen Themen aus. Das heißt, du findest hier sehr viel Mathematik und auch Rechenbeispiele. Es wird aber R Code geben - siehe den R Code als den Taschenrechnercode. Das hat den einfachen Grund, das wir eben dann doch mal die Grundlagen in der Mathematik wiederholen müssen. Es kann aber auch sein, dass du gar nicht so viel Mathematik später brauchst - oder wiederkommst, weil du nochmal nachschauen willst, wie du eine Teilstückfläche berechnest. Wir auch immer, hier findest du die Mathematikteile aus meinenen Vorlesungen.\nDu findest die gesammelten Klausurfragen auf GitHub oder auf ILIAS in dem Modul “Mathematik und Statistik”. Die Klausurfargen bilden das Zentrum der jeweiligen Vorlesung. Und dann gibt es noch das Archive aller bisherigen Klausuren über alle Studiengänge hinweg. In der  Playlist der Fragen & Antworten findest du nochmal alle Antworten zu den Klausurfragen kurz besprochen.\n\n\nWie erreichst du mich? Am einfachsten über die gute, alte E-Mail. Bitte bachte, dass gerade kurz vor den Prüfungen ich mehr E-Mails kriege. Leider kann es dann einen Tick dauern.\n\n\n\n\n\nEinfach an j.kruppa@hs-osnabrueck.de schreiben. Du findest hier auch eine kurze Formulierungshilfe. Einfach auf den Ausklapppfeil klicken.\n\n\n\n\n\n\nE-Mailvorlage mit beispielhafter Anrede\n\n\n\n\n\nHallo Herr Kruppa,\n… ich belege gerade Ihr Modul Modulname und hätte eine Bitte/Frage/Anregung…\n… ich benötige Hilfe bei der Planung/Auswertung meiner Bachelorarbeit…\nMit freundlichen Grüßen\nM. Muster"
   },
   {
-    "objectID": "index.html#sec-contact-mail",
-    "href": "index.html#sec-contact-mail",
-    "title": "Skript Mathematik",
-    "section": "Kontakt",
-    "text": "Kontakt\nWie erreichst du mich? Am einfachsten über die gute, alte E-Mail. Bitte bachte, dass gerade kurz vor den Prüfungen ich mehr E-Mails kriege. Leider kann es dann einen Tick dauern.\n\n\n\n\n\nEinfach an j.kruppa@hs-osnabrueck.de schreiben. Du findest hier auch eine kurze Formulierungshilfe. Einfach auf den Ausklapppfeil klicken.\nBitte gib immer in deiner E-Mail dein Modul - was du belegst - mit an. Pro Semester unterrichte ich immer drei sehr ähnlich klingende Module. Daher schau nochmal hier in der Liste, wenn du unsicher bist.\n\n\n\n\n\n\nE-Mailvorlage mit beispielhafter Anrede\n\n\n\n\n\nHallo Herr Kruppa,\n… ich belege gerade Ihr Modul Modulname und hätte eine Bitte/Frage/Anregung…\n… ich benötige Hilfe bei der Planung/Auswertung meiner Bachelorarbeit…\nMit freundlichen Grüßen\nM. Muster"
+    "objectID": "literature.html",
+    "href": "literature.html",
+    "title": "1  Literatur",
+    "section": "",
+    "text": "Version vom März 14, 2023 um 11:52:01\nWas ist gute Literatur? Immer schwer zu beurteilen. Im Folgenden liste ich einige Literaturquellen auf. Vielleicht möchtest du dich nochmal rechts oder links weiterbilden. Du musst aber nicht um die Klausur bestehen zu können. Siehe es eher als ein Angebot. Neben diesem Modul musst du vermutlich noch andere Module belegen. Deshalb hier eine Auswahl Literatur, die dir helfen mag. Zum einen ist die Literatur anders geschrieben und zum anderen sind dort andere Inhalte."
   },
   {
     "objectID": "literature.html#parametrische-statistik",
@@ -33,6 +33,13 @@
     "title": "1  Literatur",
     "section": "Referenzen",
     "text": "Referenzen\n\n\n\n\nDormann, Carsten F. 2013. Parametrische Statistik. Springer."
+  },
+  {
+    "objectID": "preface.html",
+    "href": "preface.html",
+    "title": "2  Einführung",
+    "section": "",
+    "text": "Version vom März 14, 2023 um 11:52:02\nIn diesem Kapitel nenne ich die wichtigsten Lernziele, die nach dem Lesen des Skriptes im Rahmen deiner Lehrveranstaltung von dir erreicht worden sein sollten. Je nach besuchten Kurs kann natürlich nicht alles geschafft worden sein. Viele Kapitel haben noch eine Abschnitt in dem du mehr über die Klausur erfährst. So sehe diese Übersicht als Einführung für das was später an Lehrinhalten kommt. Wenn du die Lernziele hier verstehst, dann hast du eine gute und solide Grundlage in Statistik und Bio Data Science. Damit solltest du dann auch gut durch deine Bachelorarbeit kommen."
   },
   {
     "objectID": "preface.html#lernziel-1-geometrische-berechnungen-für-die-versuchsplanung-durchführen",
@@ -67,7 +74,14 @@
     "href": "geometry-preface.html",
     "title": "Von Maßzahlen, Flächen und Volumen",
     "section": "",
-    "text": "Version vom März 14, 2023 um 11:28:49\nIn dem folgenden Kapitel zu den Maßzahlen von Einheiten sowie der Fläche und dem Volumen wollen wir uns einmal mit den Grundlagen der Berechungen beschäftigen. Wir brauchen diese Werkzeuge um zu bestimmen, wie groß ein Teilstück sein soll oder aber wenn wir wissen wollen, wie viel Torf wir bestellen müssen.\nIm ersten Abschnitt schauen wir uns einmal Flächenmaße und Volumenmaße an. Wie sind die Abkürzungen für die entsprechenden Maßzahlen und wie lauten die Abkürzungen für sehr große oder sehr kleine Zahlen.\nDann schauen wir noch einmal auf die Flächen und Umfänge von gängigen geometrischen Objekten. Welche Eigenschaften hat das Quadrat, das Rechteck und der Kreis? Wir merken uns hier natürlich nur die wichtigsten Formeln, den Rest kannst du dann immer mal wieder nachschlagen.\nAm Ende wollen wir dann die Flächen noch ins Volumen bringen. Hier rechnen wir dann das Volumne eines Würfels oder eines Quaders aus. Häufig brauchen wir diese Informationen, wenn wir berechnen wollen, wie viel Torf wir brauchen oder wie viel Volumen an Futter verbraucht wird bzw. eingekauft werden muss."
+    "text": "Version vom März 14, 2023 um 11:52:06\nIn dem folgenden Kapitel zu den Maßzahlen von Einheiten sowie der Fläche und dem Volumen wollen wir uns einmal mit den Grundlagen der Berechungen beschäftigen. Wir brauchen diese Werkzeuge um zu bestimmen, wie groß ein Teilstück sein soll oder aber wenn wir wissen wollen, wie viel Torf wir bestellen müssen.\nIm ersten Abschnitt schauen wir uns einmal Flächenmaße und Volumenmaße an. Wie sind die Abkürzungen für die entsprechenden Maßzahlen und wie lauten die Abkürzungen für sehr große oder sehr kleine Zahlen.\nDann schauen wir noch einmal auf die Flächen und Umfänge von gängigen geometrischen Objekten. Welche Eigenschaften hat das Quadrat, das Rechteck und der Kreis? Wir merken uns hier natürlich nur die wichtigsten Formeln, den Rest kannst du dann immer mal wieder nachschlagen.\nAm Ende wollen wir dann die Flächen noch ins Volumen bringen. Hier rechnen wir dann das Volumne eines Würfels oder eines Quaders aus. Häufig brauchen wir diese Informationen, wenn wir berechnen wollen, wie viel Torf wir brauchen oder wie viel Volumen an Futter verbraucht wird bzw. eingekauft werden muss."
+  },
+  {
+    "objectID": "geometry-unit.html",
+    "href": "geometry-unit.html",
+    "title": "3  Maßeinheiten, Flächenmaße und Volumenmaße",
+    "section": "",
+    "text": "Version vom März 14, 2023 um 11:52:09"
   },
   {
     "objectID": "geometry-unit.html#maßeinheiten",
@@ -96,6 +110,13 @@
     "title": "3  Maßeinheiten, Flächenmaße und Volumenmaße",
     "section": "3.4 Prozent, Promille und ppm",
     "text": "3.4 Prozent, Promille und ppm\nAbschließend schauen wir uns in der Tabelle 3.5 nochmal die Umrechnungen von Prozent und Promille an. Das Prinzip nutzen wir dann häufig zur Abschätzung von anderen Flächen oder Volumen, wenn wir nicht die exakte Änderung kennen sondern eben nur die Prozentuale.\n\n\nTabelle 3.5— Umrechnung von Prozenten und Anteilen.\n\n\n\n\n\n\n\n\n\n\n\nEin Zuckerwürfel in\n\n\n\n\n1 Prozent ist 1 Teil von hundert Teilen\n10 Gramm pro Kilogramm\n\\(10 g/kg\\)\n0.27 Litern, ca. 2 Tassen\n\n\n1 Promille ist 1 Teil von Tausend Teilen\n1 Gramm pro Kilogramm\n\\(1 g/kg\\)\n2.7 Litern, ca. 3.5 Flaschen Wein\n\n\n1 ppm (part per million) ist 1 Teil von 1 Million Teilen\n1 Milligramm pro Kilogramm\n\\(0.001 g/kg\\)\n2 700 Litern, ca. einem Tanklaster"
+  },
+  {
+    "objectID": "geometry-area.html",
+    "href": "geometry-area.html",
+    "title": "4  Flächenberechung",
+    "section": "",
+    "text": "Version vom März 14, 2023 um 11:52:13\nIm Folgenden wollen wir einmal die Flächen (\\(F\\) oder auch \\(A\\)) und die Umfänge \\(U\\) von geometrischen Objekten bestimmen. Wir gehen hierfür die gängigsten geometrischen Formen einmal durch. Du musst dir dann raussuchen, was zu deiner Fragestellung dann am besten passt."
   },
   {
     "objectID": "geometry-area.html#quadrat",
@@ -138,6 +159,13 @@
     "title": "4  Flächenberechung",
     "section": "4.6 Kreis",
     "text": "4.6 Kreis\nZum Abschlus schauen wir uns nochmal den Kreis an. Hier kommt natürlich dann die Kreiszahl \\(\\pi\\) mit \\(3.14\\) zum Einsatz.\n\n\n\n\n\nWir berechnen die Fläche \\(F\\) eines Kreises mir folgender Formel.\n\\[\nF = r^2 \\cdot \\pi = \\cfrac{d^2 \\cdot \\pi}{4}\n\\]\nDen Umfang eines Kreises \\(U\\) können wir dann wie folgt berechnen.\n\\[\nU = 2r \\cdot \\pi = \\cfrac{d \\cdot \\pi}{4 \\cdot F}\n\\]\nDie Diagonale \\(d\\) eines Kreises ergibt sich dann wie folgt.\n\\[\nd = 2r\n\\]\nUnd der Radius \\(r\\) hängt dann wie folgt um Umfang \\(U\\) ab.\n\\[\nr = \\cfrac{U}{2 \\cdot \\pi}\n\\]"
+  },
+  {
+    "objectID": "geometry-volume.html",
+    "href": "geometry-volume.html",
+    "title": "5  Volumenberechung",
+    "section": "",
+    "text": "Version vom März 14, 2023 um 11:52:17\nIn diesem Abschnitt wollen wir einmal das Volumen \\(V\\), sowie die Oberfläche \\(O\\) und die Grundfläche \\(G\\) von verschiedenen geometrischen Objekten berechnen. Wie so oft musst du dir überlegen, was bei deinem Objekt jetzt die Grundfläche ist. Aber das ist dann meist im konkreten Fall sehr klar."
   },
   {
     "objectID": "geometry-volume.html#würfel",
@@ -186,7 +214,14 @@
     "href": "vector-preface.html",
     "title": "Von Vektoren und Matrizen",
     "section": "",
-    "text": "Version vom März 14, 2023 um 11:33:10\nIn dem folgenden Kapitel wollen wir uns einmal mit Berechnungen mit Vektoren in Kapitel 6 beschäftigen. Das Kapitel ist eher kurz und dient nur der Erinnerung, was sind eigentlich Vektoren. Wir nutzen den Begriff häufig in der R Programmierung und wir wollen hier nochmal auf ein paar mathematische Eigenschaften eingehen.\nWichtiger ist in dem Sinne die Berechnungen mit Matrizen in Kapitel 7. Wir schauen uns hier nochmal die gängigen Rechenoperationen mit Matrizen an. Wir erschlagen aber nicht alles sondern schauen uns nur ausgewählte Aspekte einmal an. Wir brauchen Teile von den Berechnungen mit Matrizen später in der multiplen linearen Regression in der Statistik."
+    "text": "Version vom März 14, 2023 um 11:52:22\nIn dem folgenden Kapitel wollen wir uns einmal mit Berechnungen mit Vektoren in Kapitel 6 beschäftigen. Das Kapitel ist eher kurz und dient nur der Erinnerung, was sind eigentlich Vektoren. Wir nutzen den Begriff häufig in der R Programmierung und wir wollen hier nochmal auf ein paar mathematische Eigenschaften eingehen.\nWichtiger ist in dem Sinne die Berechnungen mit Matrizen in Kapitel 7. Wir schauen uns hier nochmal die gängigen Rechenoperationen mit Matrizen an. Wir erschlagen aber nicht alles sondern schauen uns nur ausgewählte Aspekte einmal an. Wir brauchen Teile von den Berechnungen mit Matrizen später in der multiplen linearen Regression in der Statistik."
+  },
+  {
+    "objectID": "vector-basic.html",
+    "href": "vector-basic.html",
+    "title": "6  Berechnungen mit Vektoren",
+    "section": "",
+    "text": "Version vom März 14, 2023 um 11:52:26\nIn diesem Kapitel wollen wir uns kurz mit Vektoren beschäftigen. Wir nutzen hier den Begriff Vektor als eine Ansammlung von Zahlen, die wir in einem Vektor ablegen. Wenn wir mehrere Vektoren zusammenkleben, dann erhalten wir eine Matrix."
   },
   {
     "objectID": "vector-basic.html#grundlagen-vektoren",
@@ -194,6 +229,13 @@
     "title": "6  Berechnungen mit Vektoren",
     "section": "6.1 Grundlagen Vektoren",
     "text": "6.1 Grundlagen Vektoren\nIm Folgenden sehen wir einmal den Vektor \\(A\\) der drei Zahlen enthält. Wenn wir einen Vektor horizontal schreiben wollen, dann setzen wir immer noch ein “Hoch T” für transponiert an die Klammer am Ende des Vektors. Eigentlich wird ein Vektor nämlich vertikal dargestellt.\n\\[\nA= (3, 5, 1)^T = \\begin{pmatrix} 3 \\\\ 5 \\\\ 1 \\end{pmatrix}\n\\]\nEs gibt dann natürlich auch noch besondere Vektoren. Vektoren der Länge 1 heißen Einheitsvektoren oder normierte Vektoren. Hat ein Vektor die Länge 0, so handelt es sich um den Nullvektor. Beide Arten von Vektoren kommen in der Anwendung nicht vor. Wenn wir nichts vorliegen haben, dann brauchen wir auch keinen Vektor. Und eine einzelne Beobachtung bruachen wir nicht in einem Vektor speichern.\nWenn wir zwei Vektoren addieren wollen, dann addieren wir jedes paarweise Element in den beiden Vektoren.\n\\[\n\\begin{pmatrix} a_1 \\\\ a_2 \\\\ a_3 \\end{pmatrix}\n\\pm\n\\begin{pmatrix} b_1 \\\\ b_2 \\\\ b_3 \\end{pmatrix}\n=\n\\begin{pmatrix} a_1 \\pm b_1 \\\\ a_2 \\pm b_2 \\\\ a_3 \\pm b_3 \\end{pmatrix}\n\\]\nSchauen wir uns den Zusammenhang einmal als Zahlenbeispiel an.\n\\[\n\\begin{pmatrix}\n2 \\\\ -1 \\\\ 5\n\\end{pmatrix}\n+\n\\begin{pmatrix}\n8 \\\\ 1 \\\\ -3\n\\end{pmatrix}\n=\n\\begin{pmatrix}\n2+8\\\\ -1+1 \\\\ 5+(-3)\n\\end{pmatrix}\n=\n\\begin{pmatrix}\n10\\\\ 0 \\\\ 2\n\\end{pmatrix}\n\\]\nWir können die Berechnung auch einfach in R durchführen. Da wir in R nicht vertikal schreiben können sind alle Vektoren immer horizontal. Wir können über die Funktion t() einen Vektor transponieren, wenn wir das wollen würden.\n\nA <- c(2, -1, 5)\nB <- c(8, 1, -3)\n\nA + B\n\n[1] 10  0  2\n\n\nWenn wir einen Vektor mit einer Zahl multiplizieren, dann multiplizieren wir jeden Wert des Vektors mit der Zahl.\n\\[\n2 \\cdot \\begin{pmatrix} 1 \\\\ 3 \\\\ 4 \\end{pmatrix}  =\n\\begin{pmatrix} 2 \\cdot 1 \\\\ 2 \\cdot 3 \\\\ 2 \\cdot 4 \\end{pmatrix}  =\n\\begin{pmatrix} 2 \\\\ 6 \\\\ 8 \\end{pmatrix}\n\\]\nAuch hier einmal die Anwendung in R.\n\nA <- c(1, 3, 4)\n\n2 * A\n\n[1] 2 6 8\n\n\nIn R haben wir noch die Möglichkeit einen Vektor mit Namen zu versehen. Diese Möglichkeit brauchst du ab und an mal. Es ist ganz nett sich zu vergewissern, was die Zahl in einem Vektor eigentlich aussagen soll.\n\nA <- c(2, -1, 5)\nnames(A) <- c(\"A\", \"B\", \"C\")\n\nA\n\n A  B  C \n 2 -1  5"
+  },
+  {
+    "objectID": "matrix-basic.html",
+    "href": "matrix-basic.html",
+    "title": "7  Berechnungen mit Matrizen",
+    "section": "",
+    "text": "Version vom März 14, 2023 um 11:52:30"
   },
   {
     "objectID": "matrix-basic.html#grundlagen-matrizen",
@@ -252,157 +294,108 @@
     "text": "7.8 Eine Matrix mit einem Vektor multiplizieren\nWenn wir eine Matrix mit einem Vektor multiplizieren wollen, dann müssen die Matrix und der Vektor zueinander passen. In unseren Fällen, wie wir häufig betrachten muss die Matrix die Anzahl an Spalten haben die der Länge des Vektors enspricht. In unseren Beispiel haben wir drei Spalten und somit muss der Vektor auch eine Länge von drei Einträgen haben.\n\\[\n\\begin{pmatrix}\n4 & 3 & 2 \\\\\n1 & 0 & 3\n\\end{pmatrix}\n\\cdot\n\\begin{pmatrix}\n2 \\\\ 0 \\\\ 1\n\\end{pmatrix}\n=\n\\begin{pmatrix}\n4 \\cdot 2+ 3 \\cdot 0 +2 \\cdot 1 \\\\\n1 \\cdot 2+ 0 \\cdot 0 +3 \\cdot 1\n\\end{pmatrix}\n=\n\\begin{pmatrix}\n10 \\\\\n5\n\\end{pmatrix}\n\\]\nWii können das Beispiel auch wieder in R nachvollziehen. In R gibt es keine Funktion mit Namen vector. Die Funktion c() erschafft einen Vektor. Wenn wir Matrizen oder Vektoren miteinander multipizieren wollen und anschließend aufaddieren, dann müssen wir den Operator %*% nutzen.\n\nA <- matrix(c(4, 3, 2,\n              1, 0, 3), byrow = 2, ncol = 3)\nA\n\n     [,1] [,2] [,3]\n[1,]    4    3    2\n[2,]    1    0    3\n\nB <- c(2, 0, 1)\nB\n\n[1] 2 0 1\n\nA %*% B\n\n     [,1]\n[1,]   10\n[2,]    5\n\n\nAm Ende kommt das Ergebnis raus, was wir auch erwartet haben."
   },
   {
-    "objectID": "probability-preface.html",
-    "href": "probability-preface.html",
-    "title": "Von Wahrscheinlichkeiten",
-    "section": "",
-    "text": "Version vom March 09, 2023 um 09:31:15"
-  },
-  {
-    "objectID": "probability-basic.html#regeln",
-    "href": "probability-basic.html#regeln",
-    "title": "8  Berechnungen mit Wahrscheinlichkeiten",
-    "section": "8.1 Regeln",
-    "text": "8.1 Regeln\nUnd \\(\\cap\\)\nOder \\(\\cup\\)\nText\n\\(Pr(A) = 2/3\\)\n\\(Pr(K_1) \\cap \\cup Pr(K_2)\\)\n\\[\n\\begin{aligned}\nPr(K_1 \\cap K_2) &= Pr(K_1) \\times Pr(K_2) \\\\\n               &= 1/2 \\times 1/2 \\\\\n               &= 1/4\n\\end{aligned}\n\\]\nIn Tabelle 8.1\n\n\nTabelle 8.1— Test\n\n\n\n\nMengenschreibweise\nTyp\n\n\n\n\n\\([a,b]\\)\n\\([a,b]\\)\n\\(\\{x|a≤x≤b\\}\\)\ngeschlossen\n\n\n\\(]a,b[\\)\n\\((a,b)\\)\n\\(\\{x|a<x<b\\}\\)\noffen\n\n\n\\([a,b[\\)\n\\([a,b)\\)\n\\(\\{x|a≤x<b\\}\\)\nhalboffen / rechtsoffen\n\n\n\\(]a,b]\\)\n\\((a,b]\\)\n\\(\\{x|a<x≤b\\}\\)\nhalboffen / linksoffen\n\n\n\n\nIn Tabelle 8.2\n\n\nTabelle 8.2— Test\n\n\n\n\n\n\n\nAbbildung\n\nBedeutung\n\n\n\n\n\n\\(A \\cup B\\)\n\\(A\\) tritt ein oder \\(B\\) tritt ein\n\n\n\n\\(A \\cap B\\)\n\\(A\\) trit ein und \\(B\\) tritt ein\n\n\n\n\\(A \\setminus B\\)\n\\(A\\) tritt ein, aber \\(B\\) tritt nicht ein\n\n\n\n\\(\\bar{A} = \\Omega \\setminus A\\)\n\\(A\\) tritt nicht ein\n\n\n\n\\(A \\cup B\\)\nEntweder \\(A\\) ein oder \\(B\\) tritt ein oder keins von beiden\n\n\n\n\\(B \\subset A\\)\n\\(B\\) ist Teilmenge von \\(A\\)"
-  },
-  {
-    "objectID": "probability-basic.html#sec-prob-cond",
-    "href": "probability-basic.html#sec-prob-cond",
-    "title": "8  Berechnungen mit Wahrscheinlichkeiten",
-    "section": "8.2 Bedingte Wahrscheinlichkeiten",
-    "text": "8.2 Bedingte Wahrscheinlichkeiten"
-  },
-  {
-    "objectID": "probability-basic.html#sec-prob-dist",
-    "href": "probability-basic.html#sec-prob-dist",
-    "title": "8  Berechnungen mit Wahrscheinlichkeiten",
-    "section": "8.3 Wahrscheinlichkeitsverteilungen",
-    "text": "8.3 Wahrscheinlichkeitsverteilungen\nhttps://rstudio-pubs-static.s3.amazonaws.com/35515_c4ea4e9714af4d888bfc701a37c39815.html\nhttps://yutannihilation.github.io/allYourFigureAreBelongToUs/ggfortify/ggdistribution/"
-  },
-  {
-    "objectID": "probability-conditional.html",
-    "href": "probability-conditional.html",
-    "title": "9  Bedingte Wahrscheinlichkeiten",
-    "section": "",
-    "text": "Version vom March 09, 2023 um 09:31:19"
-  },
-  {
     "objectID": "functions-preface.html",
     "href": "functions-preface.html",
     "title": "Von mathematischen Funktionen",
     "section": "",
-    "text": "Version vom March 09, 2023 um 09:31:20"
-  },
-  {
-    "objectID": "functions-basic.html#genutzte-r-pakete-für-das-kapitel",
-    "href": "functions-basic.html#genutzte-r-pakete-für-das-kapitel",
-    "title": "10  Lineare und exponentielle Funktion",
-    "section": "10.1 Genutzte R Pakete für das Kapitel",
-    "text": "10.1 Genutzte R Pakete für das Kapitel\nWir wollen folgende R Pakete in diesem Kapitel nutzen. Zum einen brauchen wir das R Paket tidyverse um uns die Daten zu bauen, die wir dann mit dem R Paket ggplot visualisieren wollen. Das R Paket ggplot ist schon in dem R Paket tidyverse mit enthalten.\n\npacman::p_load(tidyverse, magrittr)\ncbbPalette <- c(\"#000000\", \"#E69F00\", \"#56B4E9\", \"#009E73\", \n                \"#F0E442\", \"#0072B2\", \"#D55E00\", \"#CC79A7\")"
-  },
-  {
-    "objectID": "functions-basic.html#lineare-funktion",
-    "href": "functions-basic.html#lineare-funktion",
-    "title": "10  Lineare und exponentielle Funktion",
-    "section": "10.2 Lineare Funktion",
-    "text": "10.2 Lineare Funktion\nWiederholen wir einmal die klassische lineare Funktion. Die lineare Funktion wird durch zwei Parameter bestimmt. Einmal die Steigung \\(m\\) sowie der y-Achsenabschnitt \\(b\\). Wenn also \\(x\\) um 1 ansteigt, dann ändert sich \\(y\\) um den Wert von \\(m\\). Die Gerade schneidet die \\(y\\)-Achse an dem \\(y\\)-Wert von \\(b_0\\).\n\\[\nf(x) = mx + b_0\n\\]\nIn der Abbildung 10.1 sehen wir die lineare Funktion \\(f(x) = 1.5 \\cdot x + 5\\) einmal als Gerade dargestellt. Hier wird nochmal schnell klar, was die Parameter der Geradengleichung aussagen. Die Gerade passiert die \\(y\\)-Achse bei einem Wert von 5. Wenn wir von \\(x=0\\) zu \\(x=5\\) gehen, dann steigt die Gerade von \\(y = 5\\) auf \\(y = 12.5\\). Damit ist dann die Steigung \\(m = \\tfrac{12.5-5}{5} = 1.5\\). Eigentlich realtiv einfach und straight forward.\n\ntibble(x = 0:10,\n       y = 1.5 * x + 5) %>% \n  ggplot(aes(x, y)) +\n  theme_radar() +\n  ylim(0, NA) +\n  geom_path() +\n  geom_point() \n\n\n\n\nAbbildung 10.1— Eine einfache lineare Funktion mit der Steigung \\(m = 1.5\\) und dem y-Achsenabschnitt \\(b_0 = 5\\)."
-  },
-  {
-    "objectID": "functions-basic.html#exponentialfunktion",
-    "href": "functions-basic.html#exponentialfunktion",
-    "title": "10  Lineare und exponentielle Funktion",
-    "section": "10.3 Exponentialfunktion",
-    "text": "10.3 Exponentialfunktion\nIn diesem Abschnitt schauen wir uns die verschiedenen Arten der Exponentialfunktion an. Zum einen den exponentiellen Anstieg, den exponentiellen Abfall sowie die Sättigungsfunktion. Alle drei Arten der Exponentialfunktion haben in der Biologie ihren Platz und daher sollten wir die Grundlagen kennen.\n\n\nAuf der Wikipedia Seite finden sich Beispiele für das exponentielle Wachstum.\n\n10.3.1 Exponentieller Anstieg\nDie Exponentialfunktion ist eine sehr wichtige biologische Funktion. Wir können mit der Exponentialfunktion zum Beispiel Wachstum oder aber Zerfall. Deshalb hier einmal die grundlegende Formel für die Exponentialfunktion.\n\\[\nf(x) = b_0 + a \\cdot b_1^{c\\cdot x + d}\n\\]\nWir haben hier wieder den \\(y\\)-Achsenabschnitt \\(b_0\\). Dann einen Multiplikator \\(a\\) für die eigentliche Exponentialfunktion. Der wichtigste Parameter ist hierbei dann das \\(b_1\\) oder die Basis. Wir haben dann noch den Exponenten, der meistens nur ein \\(x\\) sein kann oder wiederum eine lineare Funktion. Wir konzentrieren uns hier eher auf die einfachen Exponentialfunktion.\nIn der folgenden Gleichung sehen wir die Exponentialfunktion \\(f(x) = 2^x\\) mit der Basis \\(2\\) und dem Exponenten \\(x\\).\n\\[\nf(x) = 2^x\n\\]\nWir können uns dann einmal die Daten erschaffen.\n\nexp_tbl <- tibble(x = 0:10,\n                  y = 2^x)\nexp_tbl %>% print(n = Inf)\n\n# A tibble: 11 x 2\n       x     y\n   <int> <dbl>\n 1     0     1\n 2     1     2\n 3     2     4\n 4     3     8\n 5     4    16\n 6     5    32\n 7     6    64\n 8     7   128\n 9     8   256\n10     9   512\n11    10  1024\n\n\nIn der Abbildung 10.2 sehen wir die Exponentialfunktion \\(f(x) = 2^x\\) einmal dargestellt.\n\nexp_tbl %>% \n  ggplot(aes(x, y)) +\n  theme_radar() +\n  geom_path() +\n  geom_point() \n\n\n\n\nAbbildung 10.2— Die einfache Exponentialfunktion \\(f(x) = 2^x\\).\n\n\n\n\nHäufig brauchen wir aber nicht die Information von \\(y\\) und haben das \\(x\\) gegeben, sondern genau andersherum. Wir haben ein \\(y\\) gegeben und wollen dafür das \\(x\\) ausrechnen. Für die Exponentialfunktion ist die Umkehrfunktion der Logarithmus \\(\\log()\\). Nehmen wir folgende Exponentialfunktion einmal an.\n\\[\n8 = 2^x\n\\]\nWir wollen jetzt die Funktion nach \\(x\\) auflösen und nutzen dafür den Logarithmus. Wir haben eine Basis von \\(2\\) also nutzen wir den \\(\\log_2\\) von \\(8\\) um den Exponenten \\(x\\) zu erhalten.\n\\[\n\\log_2(8) = 3\n\\]\nManchmal rechnen wir mit einer recht großen Basis oder aber der Taschenrechner hat die Funktion für einen Logarithmus einer beliebigen Basis nicht implementiert. Daher können wir folgende Rechenoperation nutzen.\n\\[\n\\log_a(b) = \\cfrac{\\log(b)}{\\log(a)}\n\\]\nDas ganze einmal als Beispiel für die Basis \\(12\\) mit dem Logarithmus \\(\\log_{12}\\).\n\\[\n\\log_{12}(50) = \\cfrac{\\log(50)}{\\log(12)} = \\cfrac{3.91}{2.48} = 1.58\n\\]\nHäufig wollen wir nicht nur den Wert für einen Exponenten rechnen, also den Wert für \\(f(x) = 2^5\\), sondern die Summe aller \\(x = 1, ..., 5\\). Wir wollen also folgende Rechnung durchführen.\n\\[\n2^0 + 2^1 + 2^2 + 2^3 + 2^4 + 2^5 = 63\n\\]\nDafür können wir die folgende Formel nutzen. Wir setzen dann für \\(b_1\\) die Basis ein und für \\(N\\) den Exponenten bis zu dem wir einschließlich aufsummieren wollen.\n\\[\n  \\sum_{n=0}^N b_1^n = \\cfrac{b_1^{N + 1} -1}{b_1 - 1}\n\\]\nDas ganz können wir dann einmal ausfüllen. Die Basis \\(b_1\\) ist dann \\(2\\) und wir wollen bis zum fünften Exponenten aufsummieren. Daher ist dann \\(N = 5\\).\n\\[\n  \\sum_{n=0}^5 2^n = \\cfrac{2^{5 + 1} -1}{2 - 1} = 63\n\\]\nUnd einmal die Überprüfung in R Code. Der R Code sieht dann immer etwas wilder aus, da wir natürlich nicht eine Formel direkt in R eingeben können. Mit den Leerzeichen wird es eventuell dann etwas übersichtlicher.\n\n(2^(5+1) - 1)/(2 - 1)\n\n[1] 63\n\n\nWir können uns auch die Werte vom aufsummierten \\(y\\) auch einmal für jedes \\(x\\) berechnen lassen. Und nicht nur für \\(x = 5\\), wie wir es eben gerade gemacht haben. Daher stelle ich hier nochmal die Berechnung als Tabelle dar. In der Spalte cumsum_y findet sich das aufsummierte \\(y\\).\n\nexp_tbl %<>% \n  mutate(cumsum_y = (2^(x+1)-1)/(2-1))\nexp_tbl\n\n# A tibble: 11 x 3\n       x     y cumsum_y\n   <int> <dbl>    <dbl>\n 1     0     1        1\n 2     1     2        3\n 3     2     4        7\n 4     3     8       15\n 5     4    16       31\n 6     5    32       63\n 7     6    64      127\n 8     7   128      255\n 9     8   256      511\n10     9   512     1023\n11    10  1024     2047\n\n\nNachdem wir dann die Datentabelle haben, können wir die Funktion auch einmal abbilden. In der Abbildung 10.3 siehst du die exponentielle Funktion für \\(f(x) = 2^x\\).\n\nexp_tbl %>% \n  ggplot(aes(x, cumsum_y)) +\n  theme_radar() +\n  geom_path() +\n  geom_point() \n\n\n\n\nAbbildung 10.3— Exponentielle Funktion für \\(f(x) = 2^x\\)\n\n\n\n\nEs kann vorkommen, dass wir uns nicht nur einen exponentiellen Anstieg anschauen, sondern gleich mehrere. Oder anders ausgedrückt, wir haben noch einen Faktor \\(a\\) vor unserer exponentiellen Funktion in der Form \\(f(x) = a \\cdot r^n\\). In dem Fall berechnen wir die Summe wie folgt.\n\\[\n  \\sum_{n=0}^N a \\cdot r^n = a\\left(\\cfrac{r^{N + 1} -1}{r - 1}\\right)\n\\]\n\n\n10.3.2 Halbwertszeit\nNeben dem klassischen exponentiellen Wachstum gibt es noch den exponentiellen Abfall. Daher verringert sich unser ursprünglicher Wert exponentiell bis nichts mehr von “übrig” ist. Der Klassiker ist hier die Halbwertszeit. Wir haben also eine Menge \\(N_0\\) von einem radioaktiven Material als Startmenge. Dann wollen wir wissen, wie viel radioaktives Material liegt nach der Zeit \\(t\\) noch vor. Wir berechnen daher die Menge \\(N(t)\\). Dafür brauchen wir dann noch die Halbwertszeit \\(t_{1/2}\\) als Konstante für jedes radioaktive Material. Damit ist dann folgende Formel gegeben.\n\\[\nN(t) = N_0 \\cdot \\cfrac{1}{2}^{\\cfrac{t}{t_{1/2}}}\n\\]\nIn der Abbildung 10.4 sehen wir dann die exponentielle Funktion für den Zerfall eines radioaktiven Nukleotids mit \\(f(x) = 100 \\cdot \\cfrac{1}{2}^{\\cfrac{t}{3.5}}\\).\n\ntibble(t = 0:30,\n       y = 100 * 1/2^(t/3.5)) %>% \n  ggplot(aes(t, y)) +\n  theme_radar() +\n  geom_path() +\n  geom_point() \n\n\n\n\nAbbildung 10.4— Exponentielle Funktion für den exponentiellen Zerfall eines radioaktiven Nukleotids.\n\n\n\n\n\n\n10.3.3 Sättigungsfunktion\nJedes biologisches Wachstum folgt einer Sättigungsfunktion auch wenn wir als erstes annehmen würden, es handelt sich um ein unbegrenztes exponentielles Wachstum. Hier wollen wir nicht in die Diskussion verfallen, ob es auch ein unbegrenztes ökonomisches Wachstum gibt oder nicht. Das Schneeballsystem sei hier nur warnend erwähnt.\nDie Sättigungsfunktion hat ein Maximum \\(b_0\\) welches die Funktion nie erreicht. Von diesem Maximum \\(b_0\\) wird dann immer ein Term abgezogen. Dieser Term hat am Anfang einen recht großes Wert und wird mit größeren \\(x\\)-Werten immer kleiner. Daher nähert sich dann die Funktion dem Wert von \\(b_0\\) an.\n\\[\nf(x) = b_0 - a \\cdot b_1^{-c \\cdot x + d}\n\\]\nIm Folgenden sehen wir einmal eine Gleichung einer Sättigungsfunktion als Beispiel. Die Funktion wird nie den maximalen Wert von \\(6\\) erreichen. Mit steigendem \\(x\\) wird jedoch der Malusterm immer kleiner, so dass sich die Werte dann \\(6\\) annähern.\n\\[\nf(x) = 6 - 1.5 \\cdot 2^{-\\frac{1}{4}\\cdot x + 2}\n\\]\nIn der Abbildung 10.5 sehen wir den Zusammenhang nochmal visualisiert. Häufig führen biologische Wachstumsprozesse zu einer ähnlichen Sättigungsfunktion. Als weiteres Beispiel sei hier auch die Enzymekinetik mit der Michaelis-Menten-Gleichung berechnen.\n\ntibble(x = 0:30,\n       y = 6 - 1.5 * 2^(-1/4*x + 2)) %>% \n  ggplot(aes(x, y)) +\n  theme_radar() +\n  geom_hline(yintercept = 6, color = cbbPalette[2]) +\n  geom_path() +\n  geom_point()\n\n\n\n\nAbbildung 10.5— Exponentielle Funktion für eine Sättigung."
-  },
-  {
-    "objectID": "functions-basic.html#quellen",
-    "href": "functions-basic.html#quellen",
-    "title": "10  Lineare und exponentielle Funktion",
-    "section": "10.4 Quellen",
-    "text": "10.4 Quellen\nhttps://www.statforbiology.com/nonlinearregression/usefulequations#michaelis-menten_equation\nhttps://en.wikipedia.org/wiki/Cubic_function\nhttps://en.wikipedia.org/wiki/Polynomial\nhttps://de.wikipedia.org/wiki/Exponentielles_Wachstum\nhttps://www.rhetos.de/html/lex/exponentielle_saettigungsfunktion.htm"
-  },
-  {
-    "objectID": "functions-extrem-stamm.html#differentialrechnung",
-    "href": "functions-extrem-stamm.html#differentialrechnung",
-    "title": "11  Differential- und Integralrechnung",
-    "section": "11.1 Differentialrechnung",
-    "text": "11.1 Differentialrechnung\n\\[\n\\begin{aligned}\nf(x) &= x^2 +4x + 3\\\\\nf'(x) &= 2x + 4\n\\end{aligned}\n\\]"
-  },
-  {
-    "objectID": "functions-extrem-stamm.html#integralrechnung",
-    "href": "functions-extrem-stamm.html#integralrechnung",
-    "title": "11  Differential- und Integralrechnung",
-    "section": "11.2 Integralrechnung",
-    "text": "11.2 Integralrechnung\n\\[\n\\begin{aligned}\nf(x) &= x^2 +4x + 3\\\\\nF(x) &= \\cfrac{1}{3} \\cdot x^3 + \\cfrac{1}{2} \\cdot 4x^2 + 3x\n\\end{aligned}\n\\]"
-  },
-  {
-    "objectID": "functions-extrem-stamm.html#quadratische-gleichung-lösen",
-    "href": "functions-extrem-stamm.html#quadratische-gleichung-lösen",
-    "title": "11  Differential- und Integralrechnung",
-    "section": "11.3 Quadratische Gleichung lösen",
-    "text": "11.3 Quadratische Gleichung lösen\n\n\nMehr zu quadratischen Gleichungen gibt es dann auch auf Wikipeda.\n\n11.3.1 a-b-c-Formel\nDie Lösungen der allgemeinen quadratischen Gleichung \\(ax^2 + bx + c = 0\\) ist dann wie folgt.\n\\[\nx_{1/2} = \\cfrac{-b \\pm\\sqrt{b^2 - 4 \\cdot a \\cdot c}}{2 \\cdot a}\n\\]\nUnd einmal ein Beispiel.\n\\[\n\\begin{aligned}\n26 &= 5x^2 +4x\\\\\n5x^2 + 4x - 26 &= 0 \\\\\n\\end{aligned}\n\\]\nDann setzen wir alles einmal ein.\n\\[\n\\begin{aligned}\nx_{1/2} &= \\cfrac{-4 \\pm\\sqrt{4^2 - 4 \\cdot 5 \\cdot (-26)}}{2 \\cdot 5}\\\\\n&= \\cfrac{-4 \\pm\\sqrt{16 -(-520)}}{10}\\\\\n&= \\cfrac{-4 \\pm 23.15}{10}\\\\\n\\end{aligned}\n\\]\nDamit ergibt sich dann eine Lösung für \\(x_{1,2}\\) wie folgt.\n\\[\nx_1 = 1.92; \\; x_2 = -2.72\n\\]\n\n\n11.3.2 p-q-Formel\nBei Vorliegen der Normalform \\(x^2 + px + q = 0\\) lauten die Lösungen nach der p-q-Formel wie folgt.\n\\[\nx_{1,2} = - \\cfrac{p}{2}\\pm\\sqrt{\\left(\\cfrac{p}{2}\\right)^2 - q}\n\\]\nUnd einmal ein Beispiel.\n\\[\n\\begin{aligned}\n26 &= 5x^2 +4x\\\\\n5x^2 + 4x - 26 &= 0 \\\\\nx^2 + \\cfrac{4}{5}x - \\cfrac{26}{5} &= 0 \\\\\nx^2 + 0.8x - 5.2 &= 0 \\\\\n\\end{aligned}\n\\]\nDann setzen wir alles einmal ein.\n\\[\n\\begin{aligned}\nx_{1,2} &= - \\cfrac{0.8}{2}\\pm\\sqrt{\\left(\\cfrac{0.8}{2}\\right)^2 - (-5.2)}\\\\\n&= - 0.4\\pm\\sqrt{0.4^2 + 5.2}\\\\\n&= - 0.4\\pm\\sqrt{5.36}\\\\\n&= - 0.4\\pm2.32\n\\end{aligned}\n\\]\nDamit ergibt sich dann eine Lösung für \\(x_{1,2}\\) wie folgt.\n\\[\nx_1 = 1.92; \\; x_2 = -2.72\n\\]"
-  },
-  {
-    "objectID": "geometry-area.html",
-    "href": "geometry-area.html",
-    "title": "4  Flächenberechung",
-    "section": "",
-    "text": "Version vom März 14, 2023 um 11:30:08\nIm Folgenden wollen wir einmal die Flächen (\\(F\\) oder auch \\(A\\)) und die Umfänge \\(U\\) von geometrischen Objekten bestimmen. Wir gehen hierfür die gängigsten geometrischen Formen einmal durch. Du musst dir dann raussuchen, was zu deiner Fragestellung dann am besten passt."
+    "text": "Version vom März 14, 2023 um 11:52:35"
   },
   {
     "objectID": "functions-basic.html",
     "href": "functions-basic.html",
-    "title": "10  Lineare und exponentielle Funktion",
+    "title": "8  Lineare und exponentielle Funktion",
     "section": "",
-    "text": "Version vom März 14, 2023 um 11:26:33\nIn diesem Kapitel werden wir uns einmal mit den wichtigsten mathematischen Funktionen in der Anwendung beschäftigen. Wir schauen uns dabei die am meisten genutzten und am häufigsten vorkommenden Funktionen an. Daher fangen wir mit der linearen Funktion an, die uns dann in der Statistik sehr lange begleiten wird. Darüber hinaus schauen wir auch einmal auf die exponentielle Funktion, die in der Form uns später das ein oder andere Mal in der Analyse von echten Daten über den Weg läuft."
+    "text": "Version vom März 14, 2023 um 11:52:38\nIn diesem Kapitel werden wir uns einmal mit den wichtigsten mathematischen Funktionen in der Anwendung beschäftigen. Wir schauen uns dabei die am meisten genutzten und am häufigsten vorkommenden Funktionen an. Daher fangen wir mit der linearen Funktion an, die uns dann in der Statistik sehr lange begleiten wird. Darüber hinaus schauen wir auch einmal auf die exponentielle Funktion, die in der Form uns später das ein oder andere Mal in der Analyse von echten Daten über den Weg läuft."
+  },
+  {
+    "objectID": "functions-basic.html#genutzte-r-pakete-für-das-kapitel",
+    "href": "functions-basic.html#genutzte-r-pakete-für-das-kapitel",
+    "title": "8  Lineare und exponentielle Funktion",
+    "section": "8.1 Genutzte R Pakete für das Kapitel",
+    "text": "8.1 Genutzte R Pakete für das Kapitel\nWir wollen folgende R Pakete in diesem Kapitel nutzen. Zum einen brauchen wir das R Paket tidyverse um uns die Daten zu bauen, die wir dann mit dem R Paket ggplot visualisieren wollen. Das R Paket ggplot ist schon in dem R Paket tidyverse mit enthalten.\n\npacman::p_load(tidyverse, magrittr)\ncbbPalette <- c(\"#000000\", \"#E69F00\", \"#56B4E9\", \"#009E73\", \n                \"#F0E442\", \"#0072B2\", \"#D55E00\", \"#CC79A7\")"
+  },
+  {
+    "objectID": "functions-basic.html#lineare-funktion",
+    "href": "functions-basic.html#lineare-funktion",
+    "title": "8  Lineare und exponentielle Funktion",
+    "section": "8.2 Lineare Funktion",
+    "text": "8.2 Lineare Funktion\nWiederholen wir einmal die klassische lineare Funktion. Die lineare Funktion wird durch zwei Parameter bestimmt. Einmal die Steigung \\(m\\) sowie der y-Achsenabschnitt \\(b\\). Wenn also \\(x\\) um 1 ansteigt, dann ändert sich \\(y\\) um den Wert von \\(m\\). Die Gerade schneidet die \\(y\\)-Achse an dem \\(y\\)-Wert von \\(b_0\\).\n\\[\nf(x) = mx + b_0\n\\]\nIn der Abbildung 8.1 sehen wir die lineare Funktion \\(f(x) = 1.5 \\cdot x + 5\\) einmal als Gerade dargestellt. Hier wird nochmal schnell klar, was die Parameter der Geradengleichung aussagen. Die Gerade passiert die \\(y\\)-Achse bei einem Wert von 5. Wenn wir von \\(x=0\\) zu \\(x=5\\) gehen, dann steigt die Gerade von \\(y = 5\\) auf \\(y = 12.5\\). Damit ist dann die Steigung \\(m = \\tfrac{12.5-5}{5} = 1.5\\). Eigentlich realtiv einfach und straight forward.\n\ntibble(x = 0:10,\n       y = 1.5 * x + 5) %>% \n  ggplot(aes(x, y)) +\n  theme_radar() +\n  ylim(0, NA) +\n  geom_path() +\n  geom_point() \n\n\n\n\nAbbildung 8.1— Eine einfache lineare Funktion mit der Steigung \\(m = 1.5\\) und dem y-Achsenabschnitt \\(b_0 = 5\\)."
+  },
+  {
+    "objectID": "functions-basic.html#exponentialfunktion",
+    "href": "functions-basic.html#exponentialfunktion",
+    "title": "8  Lineare und exponentielle Funktion",
+    "section": "8.3 Exponentialfunktion",
+    "text": "8.3 Exponentialfunktion\nIn diesem Abschnitt schauen wir uns die verschiedenen Arten der Exponentialfunktion an. Zum einen den exponentiellen Anstieg, den exponentiellen Abfall sowie die Sättigungsfunktion. Alle drei Arten der Exponentialfunktion haben in der Biologie ihren Platz und daher sollten wir die Grundlagen kennen.\n\n\nAuf der Wikipedia Seite finden sich Beispiele für das exponentielle Wachstum.\n\n8.3.1 Exponentieller Anstieg\nDie Exponentialfunktion ist eine sehr wichtige biologische Funktion. Wir können mit der Exponentialfunktion zum Beispiel Wachstum oder aber Zerfall. Deshalb hier einmal die grundlegende Formel für die Exponentialfunktion.\n\\[\nf(x) = b_0 + a \\cdot b_1^{c\\cdot x + d}\n\\]\nWir haben hier wieder den \\(y\\)-Achsenabschnitt \\(b_0\\). Dann einen Multiplikator \\(a\\) für die eigentliche Exponentialfunktion. Der wichtigste Parameter ist hierbei dann das \\(b_1\\) oder die Basis. Wir haben dann noch den Exponenten, der meistens nur ein \\(x\\) sein kann oder wiederum eine lineare Funktion. Wir konzentrieren uns hier eher auf die einfachen Exponentialfunktion.\nIn der folgenden Gleichung sehen wir die Exponentialfunktion \\(f(x) = 2^x\\) mit der Basis \\(2\\) und dem Exponenten \\(x\\).\n\\[\nf(x) = 2^x\n\\]\nWir können uns dann einmal die Daten erschaffen.\n\nexp_tbl <- tibble(x = 0:10,\n                  y = 2^x)\nexp_tbl %>% print(n = Inf)\n\n# A tibble: 11 x 2\n       x     y\n   <int> <dbl>\n 1     0     1\n 2     1     2\n 3     2     4\n 4     3     8\n 5     4    16\n 6     5    32\n 7     6    64\n 8     7   128\n 9     8   256\n10     9   512\n11    10  1024\n\n\nIn der Abbildung 8.2 sehen wir die Exponentialfunktion \\(f(x) = 2^x\\) einmal dargestellt.\n\nexp_tbl %>% \n  ggplot(aes(x, y)) +\n  theme_radar() +\n  geom_path() +\n  geom_point() \n\n\n\n\nAbbildung 8.2— Die einfache Exponentialfunktion \\(f(x) = 2^x\\).\n\n\n\n\nHäufig brauchen wir aber nicht die Information von \\(y\\) und haben das \\(x\\) gegeben, sondern genau andersherum. Wir haben ein \\(y\\) gegeben und wollen dafür das \\(x\\) ausrechnen. Für die Exponentialfunktion ist die Umkehrfunktion der Logarithmus \\(\\log()\\). Nehmen wir folgende Exponentialfunktion einmal an.\n\\[\n8 = 2^x\n\\]\nWir wollen jetzt die Funktion nach \\(x\\) auflösen und nutzen dafür den Logarithmus. Wir haben eine Basis von \\(2\\) also nutzen wir den \\(\\log_2\\) von \\(8\\) um den Exponenten \\(x\\) zu erhalten.\n\\[\n\\log_2(8) = 3\n\\]\nManchmal rechnen wir mit einer recht großen Basis oder aber der Taschenrechner hat die Funktion für einen Logarithmus einer beliebigen Basis nicht implementiert. Daher können wir folgende Rechenoperation nutzen.\n\\[\n\\log_a(b) = \\cfrac{\\log(b)}{\\log(a)}\n\\]\nDas ganze einmal als Beispiel für die Basis \\(12\\) mit dem Logarithmus \\(\\log_{12}\\).\n\\[\n\\log_{12}(50) = \\cfrac{\\log(50)}{\\log(12)} = \\cfrac{3.91}{2.48} = 1.58\n\\]\nHäufig wollen wir nicht nur den Wert für einen Exponenten rechnen, also den Wert für \\(f(x) = 2^5\\), sondern die Summe aller \\(x = 1, ..., 5\\). Wir wollen also folgende Rechnung durchführen.\n\\[\n2^0 + 2^1 + 2^2 + 2^3 + 2^4 + 2^5 = 63\n\\]\nDafür können wir die folgende Formel nutzen. Wir setzen dann für \\(b_1\\) die Basis ein und für \\(N\\) den Exponenten bis zu dem wir einschließlich aufsummieren wollen.\n\\[\n  \\sum_{n=0}^N b_1^n = \\cfrac{b_1^{N + 1} -1}{b_1 - 1}\n\\]\nDas ganz können wir dann einmal ausfüllen. Die Basis \\(b_1\\) ist dann \\(2\\) und wir wollen bis zum fünften Exponenten aufsummieren. Daher ist dann \\(N = 5\\).\n\\[\n  \\sum_{n=0}^5 2^n = \\cfrac{2^{5 + 1} -1}{2 - 1} = 63\n\\]\nUnd einmal die Überprüfung in R Code. Der R Code sieht dann immer etwas wilder aus, da wir natürlich nicht eine Formel direkt in R eingeben können. Mit den Leerzeichen wird es eventuell dann etwas übersichtlicher.\n\n(2^(5+1) - 1)/(2 - 1)\n\n[1] 63\n\n\nWir können uns auch die Werte vom aufsummierten \\(y\\) auch einmal für jedes \\(x\\) berechnen lassen. Und nicht nur für \\(x = 5\\), wie wir es eben gerade gemacht haben. Daher stelle ich hier nochmal die Berechnung als Tabelle dar. In der Spalte cumsum_y findet sich das aufsummierte \\(y\\).\n\nexp_tbl %<>% \n  mutate(cumsum_y = (2^(x+1)-1)/(2-1))\nexp_tbl\n\n# A tibble: 11 x 3\n       x     y cumsum_y\n   <int> <dbl>    <dbl>\n 1     0     1        1\n 2     1     2        3\n 3     2     4        7\n 4     3     8       15\n 5     4    16       31\n 6     5    32       63\n 7     6    64      127\n 8     7   128      255\n 9     8   256      511\n10     9   512     1023\n11    10  1024     2047\n\n\nNachdem wir dann die Datentabelle haben, können wir die Funktion auch einmal abbilden. In der Abbildung 8.3 siehst du die exponentielle Funktion für \\(f(x) = 2^x\\).\n\nexp_tbl %>% \n  ggplot(aes(x, cumsum_y)) +\n  theme_radar() +\n  geom_path() +\n  geom_point() \n\n\n\n\nAbbildung 8.3— Exponentielle Funktion für \\(f(x) = 2^x\\)\n\n\n\n\nEs kann vorkommen, dass wir uns nicht nur einen exponentiellen Anstieg anschauen, sondern gleich mehrere. Oder anders ausgedrückt, wir haben noch einen Faktor \\(a\\) vor unserer exponentiellen Funktion in der Form \\(f(x) = a \\cdot r^n\\). In dem Fall berechnen wir die Summe wie folgt.\n\\[\n  \\sum_{n=0}^N a \\cdot r^n = a\\left(\\cfrac{r^{N + 1} -1}{r - 1}\\right)\n\\]\n\n\n8.3.2 Halbwertszeit\nNeben dem klassischen exponentiellen Wachstum gibt es noch den exponentiellen Abfall. Daher verringert sich unser ursprünglicher Wert exponentiell bis nichts mehr von “übrig” ist. Der Klassiker ist hier die Halbwertszeit. Wir haben also eine Menge \\(N_0\\) von einem radioaktiven Material als Startmenge. Dann wollen wir wissen, wie viel radioaktives Material liegt nach der Zeit \\(t\\) noch vor. Wir berechnen daher die Menge \\(N(t)\\). Dafür brauchen wir dann noch die Halbwertszeit \\(t_{1/2}\\) als Konstante für jedes radioaktive Material. Damit ist dann folgende Formel gegeben.\n\\[\nN(t) = N_0 \\cdot \\cfrac{1}{2}^{\\cfrac{t}{t_{1/2}}}\n\\]\nIn der Abbildung 8.4 sehen wir dann die exponentielle Funktion für den Zerfall eines radioaktiven Nukleotids mit \\(f(x) = 100 \\cdot \\cfrac{1}{2}^{\\cfrac{t}{3.5}}\\).\n\ntibble(t = 0:30,\n       y = 100 * 1/2^(t/3.5)) %>% \n  ggplot(aes(t, y)) +\n  theme_radar() +\n  geom_path() +\n  geom_point() \n\n\n\n\nAbbildung 8.4— Exponentielle Funktion für den exponentiellen Zerfall eines radioaktiven Nukleotids.\n\n\n\n\n\n\n8.3.3 Sättigungsfunktion\nJedes biologisches Wachstum folgt einer Sättigungsfunktion auch wenn wir als erstes annehmen würden, es handelt sich um ein unbegrenztes exponentielles Wachstum. Hier wollen wir nicht in die Diskussion verfallen, ob es auch ein unbegrenztes ökonomisches Wachstum gibt oder nicht. Das Schneeballsystem sei hier nur warnend erwähnt.\nDie Sättigungsfunktion hat ein Maximum \\(b_0\\) welches die Funktion nie erreicht. Von diesem Maximum \\(b_0\\) wird dann immer ein Term abgezogen. Dieser Term hat am Anfang einen recht großes Wert und wird mit größeren \\(x\\)-Werten immer kleiner. Daher nähert sich dann die Funktion dem Wert von \\(b_0\\) an.\n\\[\nf(x) = b_0 - a \\cdot b_1^{-c \\cdot x + d}\n\\]\nIm Folgenden sehen wir einmal eine Gleichung einer Sättigungsfunktion als Beispiel. Die Funktion wird nie den maximalen Wert von \\(6\\) erreichen. Mit steigendem \\(x\\) wird jedoch der Malusterm immer kleiner, so dass sich die Werte dann \\(6\\) annähern.\n\\[\nf(x) = 6 - 1.5 \\cdot 2^{-\\frac{1}{4}\\cdot x + 2}\n\\]\nIn der Abbildung 8.5 sehen wir den Zusammenhang nochmal visualisiert. Häufig führen biologische Wachstumsprozesse zu einer ähnlichen Sättigungsfunktion. Als weiteres Beispiel sei hier auch die Enzymekinetik mit der Michaelis-Menten-Gleichung berechnen.\n\ntibble(x = 0:30,\n       y = 6 - 1.5 * 2^(-1/4*x + 2)) %>% \n  ggplot(aes(x, y)) +\n  theme_radar() +\n  geom_hline(yintercept = 6, color = cbbPalette[2]) +\n  geom_path() +\n  geom_point()\n\n\n\n\nAbbildung 8.5— Exponentielle Funktion für eine Sättigung."
   },
   {
     "objectID": "functions-extrem-stamm.html",
     "href": "functions-extrem-stamm.html",
-    "title": "11  Differential- und Integralrechnung",
+    "title": "9  Differential- und Integralrechnung",
     "section": "",
-    "text": "Version vom März 14, 2023 um 11:26:38\nWie immer gilt, wir schauen uns hier nur einen kleinen Teilabriss der Thematik an. Auch bei der hier betrachteten Differentialrechnung geht es um die Anwendung der ersten Ableitung \\(f'(x)\\). Es geht also um die Betrachtung von Extremwertproblemen. In dem Fall der Integralrechnung wollen wir die Stammfunktion \\(F(x)\\) nutzen um die Fläche unter einer Kurve zu berechnen."
+    "text": "Version vom März 14, 2023 um 11:52:44\nWie immer gilt, wir schauen uns hier nur einen kleinen Teilabriss der Thematik an. Auch bei der hier betrachteten Differentialrechnung geht es um die Anwendung der ersten Ableitung \\(f'(x)\\). Es geht also um die Betrachtung von Extremwertproblemen. In dem Fall der Integralrechnung wollen wir die Stammfunktion \\(F(x)\\) nutzen um die Fläche unter einer Kurve zu berechnen."
   },
   {
-    "objectID": "literature.html",
-    "href": "literature.html",
-    "title": "1  Literatur",
-    "section": "",
-    "text": "Version vom März 14, 2023 um 11:27:42\nWas ist gute Literatur? Immer schwer zu beurteilen. Im Folgenden liste ich einige Literaturquellen auf. Vielleicht möchtest du dich nochmal rechts oder links weiterbilden. Du musst aber nicht um die Klausur bestehen zu können. Siehe es eher als ein Angebot. Neben diesem Modul musst du vermutlich noch andere Module belegen. Deshalb hier eine Auswahl Literatur, die dir helfen mag. Zum einen ist die Literatur anders geschrieben und zum anderen sind dort andere Inhalte."
+    "objectID": "functions-extrem-stamm.html#differentialrechnung",
+    "href": "functions-extrem-stamm.html#differentialrechnung",
+    "title": "9  Differential- und Integralrechnung",
+    "section": "9.1 Differentialrechnung",
+    "text": "9.1 Differentialrechnung\n\\[\n\\begin{aligned}\nf(x) &= x^2 +4x + 3\\\\\nf'(x) &= 2x + 4\n\\end{aligned}\n\\]"
   },
   {
-    "objectID": "preface.html",
-    "href": "preface.html",
-    "title": "2  Einführung",
-    "section": "",
-    "text": "Version vom März 14, 2023 um 11:27:49\nIn diesem Kapitel nenne ich die wichtigsten Lernziele, die nach dem Lesen des Skriptes im Rahmen deiner Lehrveranstaltung von dir erreicht worden sein sollten. Je nach besuchten Kurs kann natürlich nicht alles geschafft worden sein. Viele Kapitel haben noch eine Abschnitt in dem du mehr über die Klausur erfährst. So sehe diese Übersicht als Einführung für das was später an Lehrinhalten kommt. Wenn du die Lernziele hier verstehst, dann hast du eine gute und solide Grundlage in Statistik und Bio Data Science. Damit solltest du dann auch gut durch deine Bachelorarbeit kommen."
+    "objectID": "functions-extrem-stamm.html#integralrechnung",
+    "href": "functions-extrem-stamm.html#integralrechnung",
+    "title": "9  Differential- und Integralrechnung",
+    "section": "9.2 Integralrechnung",
+    "text": "9.2 Integralrechnung\n\\[\n\\begin{aligned}\nf(x) &= x^2 +4x + 3\\\\\nF(x) &= \\cfrac{1}{3} \\cdot x^3 + \\cfrac{1}{2} \\cdot 4x^2 + 3x\n\\end{aligned}\n\\]"
   },
   {
-    "objectID": "geometry-unit.html",
-    "href": "geometry-unit.html",
-    "title": "3  Maßeinheiten, Flächenmaße und Volumenmaße",
-    "section": "",
-    "text": "Version vom März 14, 2023 um 11:29:33"
+    "objectID": "functions-extrem-stamm.html#quadratische-gleichung-lösen",
+    "href": "functions-extrem-stamm.html#quadratische-gleichung-lösen",
+    "title": "9  Differential- und Integralrechnung",
+    "section": "9.3 Quadratische Gleichung lösen",
+    "text": "9.3 Quadratische Gleichung lösen\n\n\nMehr zu quadratischen Gleichungen gibt es dann auch auf Wikipeda.\n\n9.3.1 a-b-c-Formel\nDie Lösungen der allgemeinen quadratischen Gleichung \\(ax^2 + bx + c = 0\\) ist dann wie folgt.\n\\[\nx_{1/2} = \\cfrac{-b \\pm\\sqrt{b^2 - 4 \\cdot a \\cdot c}}{2 \\cdot a}\n\\]\nUnd einmal ein Beispiel.\n\\[\n\\begin{aligned}\n26 &= 5x^2 +4x\\\\\n5x^2 + 4x - 26 &= 0 \\\\\n\\end{aligned}\n\\]\nDann setzen wir alles einmal ein.\n\\[\n\\begin{aligned}\nx_{1/2} &= \\cfrac{-4 \\pm\\sqrt{4^2 - 4 \\cdot 5 \\cdot (-26)}}{2 \\cdot 5}\\\\\n&= \\cfrac{-4 \\pm\\sqrt{16 -(-520)}}{10}\\\\\n&= \\cfrac{-4 \\pm 23.15}{10}\\\\\n\\end{aligned}\n\\]\nDamit ergibt sich dann eine Lösung für \\(x_{1,2}\\) wie folgt.\n\\[\nx_1 = 1.92; \\; x_2 = -2.72\n\\]\n\n\n9.3.2 p-q-Formel\nBei Vorliegen der Normalform \\(x^2 + px + q = 0\\) lauten die Lösungen nach der p-q-Formel wie folgt.\n\\[\nx_{1,2} = - \\cfrac{p}{2}\\pm\\sqrt{\\left(\\cfrac{p}{2}\\right)^2 - q}\n\\]\nUnd einmal ein Beispiel.\n\\[\n\\begin{aligned}\n26 &= 5x^2 +4x\\\\\n5x^2 + 4x - 26 &= 0 \\\\\nx^2 + \\cfrac{4}{5}x - \\cfrac{26}{5} &= 0 \\\\\nx^2 + 0.8x - 5.2 &= 0 \\\\\n\\end{aligned}\n\\]\nDann setzen wir alles einmal ein.\n\\[\n\\begin{aligned}\nx_{1,2} &= - \\cfrac{0.8}{2}\\pm\\sqrt{\\left(\\cfrac{0.8}{2}\\right)^2 - (-5.2)}\\\\\n&= - 0.4\\pm\\sqrt{0.4^2 + 5.2}\\\\\n&= - 0.4\\pm\\sqrt{5.36}\\\\\n&= - 0.4\\pm2.32\n\\end{aligned}\n\\]\nDamit ergibt sich dann eine Lösung für \\(x_{1,2}\\) wie folgt.\n\\[\nx_1 = 1.92; \\; x_2 = -2.72\n\\]"
   },
   {
-    "objectID": "geometry-volume.html",
-    "href": "geometry-volume.html",
-    "title": "5  Volumenberechung",
+    "objectID": "probability-preface.html",
+    "href": "probability-preface.html",
+    "title": "Von Wahrscheinlichkeiten",
     "section": "",
-    "text": "Version vom März 14, 2023 um 11:32:29\nIn diesem Abschnitt wollen wir einmal das Volumen \\(V\\), sowie die Oberfläche \\(O\\) und die Grundfläche \\(G\\) von verschiedenen geometrischen Objekten berechnen. Wie so oft musst du dir überlegen, was bei deinem Objekt jetzt die Grundfläche ist. Aber das ist dann meist im konkreten Fall sehr klar."
+    "text": "Version vom März 14, 2023 um 11:52:48"
   },
   {
-    "objectID": "vector-basic.html",
-    "href": "vector-basic.html",
-    "title": "6  Berechnungen mit Vektoren",
+    "objectID": "probability-basic.html",
+    "href": "probability-basic.html",
+    "title": "10  Berechnungen mit Wahrscheinlichkeiten",
     "section": "",
-    "text": "Version vom März 14, 2023 um 11:49:55\nIn diesem Kapitel wollen wir uns kurz mit Vektoren beschäftigen. Wir nutzen hier den Begriff Vektor als eine Ansammlung von Zahlen, die wir in einem Vektor ablegen. Wenn wir mehrere Vektoren zusammenkleben, dann erhalten wir eine Matrix."
+    "text": "Version vom März 14, 2023 um 11:52:52"
   },
   {
-    "objectID": "matrix-basic.html",
-    "href": "matrix-basic.html",
-    "title": "7  Berechnungen mit Matrizen",
+    "objectID": "probability-basic.html#regeln",
+    "href": "probability-basic.html#regeln",
+    "title": "10  Berechnungen mit Wahrscheinlichkeiten",
+    "section": "10.1 Regeln",
+    "text": "10.1 Regeln\nUnd \\(\\cap\\)\nOder \\(\\cup\\)\nText\n\\(Pr(A) = 2/3\\)\n\\(Pr(K_1) \\cap \\cup Pr(K_2)\\)\n\\[\n\\begin{aligned}\nPr(K_1 \\cap K_2) &= Pr(K_1) \\times Pr(K_2) \\\\\n               &= 1/2 \\times 1/2 \\\\\n               &= 1/4\n\\end{aligned}\n\\]\nIn Tabelle 10.1\n\n\nTabelle 10.1— Test\n\n\n\n\nMengenschreibweise\nTyp\n\n\n\n\n\\([a,b]\\)\n\\([a,b]\\)\n\\(\\{x|a≤x≤b\\}\\)\ngeschlossen\n\n\n\\(]a,b[\\)\n\\((a,b)\\)\n\\(\\{x|a<x<b\\}\\)\noffen\n\n\n\\([a,b[\\)\n\\([a,b)\\)\n\\(\\{x|a≤x<b\\}\\)\nhalboffen / rechtsoffen\n\n\n\\(]a,b]\\)\n\\((a,b]\\)\n\\(\\{x|a<x≤b\\}\\)\nhalboffen / linksoffen\n\n\n\n\nIn Tabelle 10.2\n\n\nTabelle 10.2— Test\n\n\n\n\n\n\n\nAbbildung\n\nBedeutung\n\n\n\n\n\n\\(A \\cup B\\)\n\\(A\\) tritt ein oder \\(B\\) tritt ein\n\n\n\n\\(A \\cap B\\)\n\\(A\\) trit ein und \\(B\\) tritt ein\n\n\n\n\\(A \\setminus B\\)\n\\(A\\) tritt ein, aber \\(B\\) tritt nicht ein\n\n\n\n\\(\\bar{A} = \\Omega \\setminus A\\)\n\\(A\\) tritt nicht ein\n\n\n\n\\(A \\cup B\\)\nEntweder \\(A\\) ein oder \\(B\\) tritt ein oder keins von beiden\n\n\n\n\\(B \\subset A\\)\n\\(B\\) ist Teilmenge von \\(A\\)"
+  },
+  {
+    "objectID": "probability-basic.html#sec-prob-cond",
+    "href": "probability-basic.html#sec-prob-cond",
+    "title": "10  Berechnungen mit Wahrscheinlichkeiten",
+    "section": "10.2 Bedingte Wahrscheinlichkeiten",
+    "text": "10.2 Bedingte Wahrscheinlichkeiten"
+  },
+  {
+    "objectID": "probability-basic.html#sec-prob-dist",
+    "href": "probability-basic.html#sec-prob-dist",
+    "title": "10  Berechnungen mit Wahrscheinlichkeiten",
+    "section": "10.3 Wahrscheinlichkeitsverteilungen",
+    "text": "10.3 Wahrscheinlichkeitsverteilungen\nhttps://rstudio-pubs-static.s3.amazonaws.com/35515_c4ea4e9714af4d888bfc701a37c39815.html\nhttps://yutannihilation.github.io/allYourFigureAreBelongToUs/ggfortify/ggdistribution/"
+  },
+  {
+    "objectID": "probability-conditional.html",
+    "href": "probability-conditional.html",
+    "title": "11  Bedingte Wahrscheinlichkeiten",
     "section": "",
-    "text": "Version vom März 14, 2023 um 11:28:36"
+    "text": "Version vom März 14, 2023 um 11:52:56"
   }
 ]
