@@ -1,0 +1,16 @@
+{
+  "hash": "94c1578837aac9df00527eee46c5cd6b",
+  "result": {
+    "markdown": "::: {.cell}\n\n:::\n\n\n# Grundlagen Funktionen {#sec-prob-basic}\n\n*Version vom October 17, 2022 um 10:37:49*\n\n![](images/caution.png){fig-align=\"center\" width=\"50%\"}\n\n\n## Funktionen\n\nhttps://en.wikipedia.org/wiki/Cubic_function\n\nhttps://en.wikipedia.org/wiki/Polynomial\n\n\n\n::: {#fig-normal-02 .cell .column-page layout-nrow=\"1\" layout-align=\"center\"}\n::: {.cell-output-display}\n![Drei Normalverteilungen mit Varianzhomogenität.](functions-basic_files/figure-html/fig-normal-02-1.png){#fig-normal-02-1 fig-align='center' width=480}\n:::\n\n::: {.cell-output-display}\n![Drei Normalverteilungen unter Varianzheterogenität.](functions-basic_files/figure-html/fig-normal-02-2.png){#fig-normal-02-2 fig-align='center' width=480}\n:::\n\nHistogramm verschiedener Normalverteilungen mit unterschiedlichen Mittelwerten.\n:::\n",
+    "supporting": [
+      "functions-basic_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
