@@ -7,10 +7,6 @@ pacman::p_load(tidyverse, readxl, knitr, kableExtra, Hmisc,
 
 *Version vom `r format(Sys.time(), '%B %d, %Y um %H:%M:%S')`*
 
-![](images/caution.png){fig-align="center" width="50%"}
-
-
-
 
 Wie immer gilt, wir schauen uns hier nur einen kleinen Teilabriss der Thematik an. Auch bei der hier betrachteten [Differentialrechnung](https://de.wikipedia.org/wiki/Differentialrechnung#Ableitungsfunktion) geht es um die Anwendung der ersten Ableitung $f'(x)$. Es geht also um die Betrachtung von Extremwertproblemen. In dem Fall der [Integralrechnung](https://de.wikipedia.org/wiki/Integralrechnung) wollen wir die Stammfunktion $F(x)$ nutzen um die Fläche unter einer Kurve zu berechnen. 
 
@@ -23,6 +19,10 @@ Wie immer gilt, wir schauen uns hier nur einen kleinen Teilabriss der Thematik a
 
 ## Differentialrechnung
 
+Die Ableitung kennst du ja noch aus der Schule und wir wollen hier auch die Ableitung nur nutzen um Extremwertprobleme zu lösen. Das heißt, dass wir die erste Ablitung $f'(x)$ gleich Null setzen und dann Lösen. Wir du dann die Gleichugn $f`(x) = 0$ im quadratischen Fall löst, kannst du weiter unten im Kapitel nachlesen.
+
+Da wir wirklich keien allzu großen Probleme mit den Ableitungen lösen, reicht es, wenn du die gängigen Regeln der ersten Ableitung kennst. Im Folgenden leiten wir einmal eine quadratische Gleichung ab.
+
 $$
 \begin{aligned} 
 f(x) &= x^2 +4x + 3\\
@@ -30,7 +30,20 @@ f'(x) &= 2x + 4
 \end{aligned}
 $$
 
+Das ganze geht auch eine Nummer komplexer und etwas detaillierter aufgeschrieben.
+
+$$
+\begin{aligned} 
+f(x) &= 7x^3 +5x^2 + 6x + 2\\
+f'(x) &= 3 \cdot 7 x^{3-1} + 2 \cdot 5 x^{2-1}  + 1 \cdot 6 x^{1-1} \\
+&= 21x^2 + 10x + 6\\
+\end{aligned}
+$$
+
+
 ## Integralrechnung
+
+Für die Integralrechnung, also die Berechung der Fläche unter der Kurve, benötigen wir die Aufleitung der Funktion $f(x$. Die Aufleitung wird auch Stammfunktion $F(x)$ genannt. Bei der Stamfunktion musst du immer beachten, dass die Ableitung wieder zu der ursprünglichen Funktion $f(x)$ führt. Einmal ein Beispiel für die Stammfunktion.
 
 $$
 \begin{aligned} 
@@ -39,7 +52,21 @@ F(x) &= \cfrac{1}{3} \cdot x^3 + \cfrac{1}{2} \cdot 4x^2 + 3x
 \end{aligned}
 $$
 
+Das ganze geht auch eine Nummer komplexer und etwas detaillierter aufgeschrieben.
+
+$$
+\begin{aligned} 
+f(x) &= 7x^3 +5x^2 + 6x + 2\\
+F(x) &= \cfrac{1}{4} \cdot 7 x^{3+1} + \cfrac{1}{3} \cdot 5 x^{2+1}  + \cfrac{1}{2} \cdot 6 x^{1+1} + 2x^{0+1} \\
+&= \cfrac{7}{4}x^4 + \cfrac{5}{3}x^3 + 3x^2 + 2x\\
+\end{aligned}
+$$
+
+Wenn due jetzt die Stammfunktion $F(x)$ ableitest, dann kommt wieder die Funktion $f(x)$ heraus.
+
 ## Quadratische Gleichung lösen
+
+Bei den Extremwertproblemen ensteht meist eine quadratische Gleichung, die wir dann gleich Null setzen müssen. Um eine quadratische Gleichugn zu lösen, können wir auf zwei Ansätze zurückgreifen. Einmal die a-b-c-Formel oder die p-q-Formel. Welche der beiden Formeln du nutzt, ist eigentlich egal. Am Ende kannst du jede Gleichung vom a-b-c-Format in das p-q-Format überführen indem du die Gleichung durch a teilst.
 
 ::: column-margin
 Mehr zu [quadratischen Gleichungen](https://de.wikipedia.org/wiki/Quadratische_Gleichung) gibt es dann auch auf Wikipeda. 
@@ -48,9 +75,7 @@ Mehr zu [quadratischen Gleichungen](https://de.wikipedia.org/wiki/Quadratische_G
 
 ### a-b-c-Formel
 
-
-
-Die Lösungen der allgemeinen quadratischen Gleichung $ax^2 + bx + c = 0$ ist dann wie folgt.
+Die a-b-c-Formel wird auch Mitternachtsformel genannt und ist die allgemeine Lösung einer quadratischen Gleichung der Form $ax^2 + bx + c = 0$. Die a-b-c-Formel ist dann wie folgt.
 
 $$
 x_{1/2} = \cfrac{-b \pm\sqrt{b^2 - 4 \cdot a \cdot c}}{2 \cdot a}
@@ -81,7 +106,7 @@ $$
 
 ### p-q-Formel
 
-Bei Vorliegen der Normalform $x^2 + px + q = 0$ lauten die Lösungen nach der p-q-Formel wie folgt.
+Wenn wir ein $a=1$ vorleigen haben, dann spricht man auch von der Normalform der quadratischen Gleichung. Bei Vorliegen der Normalform $x^2 + px + q = 0$ lauten die Lösungen nach der p-q-Formel wie folgt.
 
 $$
 x_{1,2} = - \cfrac{p}{2}\pm\sqrt{\left(\cfrac{p}{2}\right)^2 - q}
