@@ -8,7 +8,7 @@ pacman::p_load(tidyverse, readxl, knitr, kableExtra, Hmisc)
 
 ## Maßeinheiten
 
-Wozu brauchen wir Maßeinheiten? Zum einen wollen wir nicht immer so große Zahlen schreiben oder aber sehr kleine Zahlen. Die ganzen Nullen machen dann doch den Text sehr unübersichtlich. Aus diesem Grund gibt es mehrere Arten der Kurzschreibweise um Zahlen in einer kürzeren Form darzustellen. In der folgenden @tbl-unit-01 sind einem die sehr großzen Zahlen bis $10^{12}$ einmal dargestellt.
+Wozu brauchen wir Maßeinheiten? Zum einen wollen wir nicht immer so große Zahlen schreiben oder aber sehr kleine Zahlen. Die ganzen Nullen machen dann doch den Text sehr unübersichtlich. Aus diesem Grund gibt es mehrere Arten der Kurzschreibweise um Zahlen in einer kürzeren Form darzustellen. In der folgenden @tbl-unit-01 sind einem die sehr großen Zahlen bis $10^{12}$ einmal dargestellt.
 
 | Buchstabe | Präfix | Wissenschaftlich | Wissenschaftlich in R | Zahl              |
 |--------------|--------------|--------------|-----------------|--------------|
@@ -33,7 +33,7 @@ Nachdem wir einmal die ganz großen Zahlen dargestellt haben, wollen wir uns in 
 
 : Sehr kleine Zahlen mit vielen Nullen mit den jeweiligen Abkürzungen und Schreibweisen. {#tbl-unit-02}
 
-Wenn dir unklar ist, wie denn eine Zahl mit dem `e` aussehen würde, kannst du die Funktion `format()` mit der Option `scientific = FALSE` nutzen. Damit schaltest du die exponentzielle Schreibweise in R aus.
+Wenn dir unklar ist, wie denn eine Zahl mit dem `e` aussehen würde, kannst du die Funktion `format()` mit der Option `scientific = FALSE` nutzen. Damit schaltest du die exponentielle Schreibweise in R aus.
 
 ```{r}
 format(1.8e+7, scientific = FALSE)

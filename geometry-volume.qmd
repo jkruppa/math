@@ -6,7 +6,7 @@ pacman::p_load(tidyverse, readxl, knitr, kableExtra, Hmisc)
 
 *Version vom `r format(Sys.time(), '%B %d, %Y um %H:%M:%S')`*
 
-In diesem Abschnitt wollen wir einmal das Volumen $V$, sowie die Oberfläche $O$ und die Grundfläche $G$ von verschiedenen geometrischen Objekten berechnen. Wie so oft musst du dir üerlegen, was bei deinem Objekt jetzt die Grundfläche ist. Aber das ist dan meist im konkreten Fall sehr klar. 
+In diesem Abschnitt wollen wir einmal das Volumen $V$, sowie die Oberfläche $O$ und die Grundfläche $G$ von verschiedenen geometrischen Objekten berechnen. Wie so oft musst du dir überlegen, was bei deinem Objekt jetzt die Grundfläche ist. Aber das ist dann meist im konkreten Fall sehr klar. 
 
 ## Würfel
 
