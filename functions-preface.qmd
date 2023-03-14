@@ -6,9 +6,5 @@ pacman::p_load(tidyverse, readxl, knitr, kableExtra, Hmisc)
 
 *Version vom `r format(Sys.time(), '%B %d, %Y um %H:%M:%S')`*
 
-![](images/caution.png){fig-align="center" width="50%"}
 
-@sec-prob-basic Lineare und exponentielle Funktion 
-
-
-@sec-func-diff Differential- und Integralrechnung
+In den folgenden Kapiteln wollen wir uns einmal die Grundlagen von mathematischen Funktionen anschauen. Dabei legen wir in dem @sec-prob-basic den Fokus auf lineare und exponentielle Funktionen. Wir werden hier nicht so sehr in die Tiefe gehen, sondern nur die wichtigsten Aspekte einmal beleuchten. Es gibt sehr viel Litertaur zu dem Thema, wir halten die Sache hier relativ kurz. In dem folgenden @sec-func-diff gehen wir dann genau so kurz auf die Differential- und Integralrechnung sowie die Lösung von quadratischen Gleichungen ein. 
