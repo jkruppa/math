@@ -287,18 +287,16 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="cell">
 
 </div>
-<p><em>Version vom März 14, 2023 um 11:33:26</em></p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/caution.png" class="img-fluid figure-img" style="width:50.0%"></p>
-</figure>
-</div>
+<p><em>Version vom März 14, 2023 um 11:49:55</em></p>
+<p>In diesem Kapitel wollen wir uns kurz mit Vektoren beschäftigen. Wir nutzen hier den Begriff Vektor als eine Ansammlung von Zahlen, die wir in einem Vektor ablegen. Wenn wir mehrere Vektoren zusammenkleben, dann erhalten wir eine Matrix.</p>
 <section id="grundlagen-vektoren" class="level2" data-number="6.1">
 <h2 data-number="6.1" class="anchored" data-anchor-id="grundlagen-vektoren"><span class="header-section-number">6.1</span> Grundlagen Vektoren</h2>
+<p>Im Folgenden sehen wir einmal den Vektor <span class="math inline">\(A\)</span> der drei Zahlen enthält. Wenn wir einen Vektor horizontal schreiben wollen, dann setzen wir immer noch ein “Hoch T” für transponiert an die Klammer am Ende des Vektors. Eigentlich wird ein Vektor nämlich vertikal dargestellt.</p>
 <p><span class="math display">\[
 A= (3, 5, 1)^T = \begin{pmatrix} 3 \\ 5 \\ 1 \end{pmatrix}
 \]</span></p>
-<p>Vektoren der Länge 1 heißen Einheitsvektoren oder normierte Vektoren. Hat ein Vektor die Länge 0, so handelt es sich um den Nullvektor.</p>
+<p>Es gibt dann natürlich auch noch besondere Vektoren. Vektoren der Länge 1 heißen Einheitsvektoren oder normierte Vektoren. Hat ein Vektor die Länge 0, so handelt es sich um den Nullvektor. Beide Arten von Vektoren kommen in der Anwendung nicht vor. Wenn wir nichts vorliegen haben, dann brauchen wir auch keinen Vektor. Und eine einzelne Beobachtung bruachen wir nicht in einem Vektor speichern.</p>
+<p>Wenn wir zwei Vektoren addieren wollen, dann addieren wir jedes paarweise Element in den beiden Vektoren.</p>
 <p><span class="math display">\[
 \begin{pmatrix} a_1 \\ a_2 \\ a_3 \end{pmatrix}
 \pm
@@ -324,6 +322,7 @@ A= (3, 5, 1)^T = \begin{pmatrix} 3 \\ 5 \\ 1 \end{pmatrix}
 10\\ 0 \\ 2
 \end{pmatrix}
 \]</span></p>
+<p>Wir können die Berechnung auch einfach in R durchführen. Da wir in R nicht vertikal schreiben können sind alle Vektoren immer horizontal. Wir können über die Funktion <code>t()</code> einen Vektor transponieren, wenn wir das wollen würden.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>A <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">2</span>, <span class="sc">-</span><span class="dv">1</span>, <span class="dv">5</span>)</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>B <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">8</span>, <span class="dv">1</span>, <span class="sc">-</span><span class="dv">3</span>)</span>
@@ -339,6 +338,7 @@ A= (3, 5, 1)^T = \begin{pmatrix} 3 \\ 5 \\ 1 \end{pmatrix}
 \begin{pmatrix} 2 \cdot 1 \\ 2 \cdot 3 \\ 2 \cdot 4 \end{pmatrix}  =
 \begin{pmatrix} 2 \\ 6 \\ 8 \end{pmatrix}
 \]</span></p>
+<p>Auch hier einmal die Anwendung in R.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>A <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">3</span>, <span class="dv">4</span>)</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -347,7 +347,7 @@ A= (3, 5, 1)^T = \begin{pmatrix} 3 \\ 5 \\ 1 \end{pmatrix}
 <pre><code>[1] 2 6 8</code></pre>
 </div>
 </div>
-<p>In R haben wir noch die Möglichkeit einen Vektor mit Namen zu versehen.</p>
+<p>In R haben wir noch die Möglichkeit einen Vektor mit Namen zu versehen. Diese Möglichkeit brauchst du ab und an mal. Es ist ganz nett sich zu vergewissern, was die Zahl in einem Vektor eigentlich aussagen soll.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>A <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">2</span>, <span class="sc">-</span><span class="dv">1</span>, <span class="dv">5</span>)</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(A) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"A"</span>, <span class="st">"B"</span>, <span class="st">"C"</span>)</span>

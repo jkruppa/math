@@ -6,18 +6,20 @@ pacman::p_load(tidyverse, readxl, knitr, kableExtra, Hmisc)
 
 *Version vom `r format(Sys.time(), '%B %d, %Y um %H:%M:%S')`*
 
-![](images/caution.png){fig-align="center" width="50%"}
+In diesem Kapitel wollen wir uns kurz mit Vektoren beschäftigen. Wir nutzen hier den Begriff Vektor als eine Ansammlung von Zahlen, die wir in einem Vektor ablegen. Wenn wir mehrere Vektoren zusammenkleben, dann erhalten wir eine Matrix.
 
 
 ## Grundlagen Vektoren
+
+Im Folgenden sehen wir einmal den Vektor $A$ der drei Zahlen enthält. Wenn wir einen Vektor horizontal schreiben wollen, dann setzen wir immer noch ein "Hoch T" für transponiert an die Klammer am Ende des Vektors. Eigentlich wird ein Vektor nämlich vertikal dargestellt. 
 
 $$
 A= (3, 5, 1)^T = \begin{pmatrix} 3 \\ 5 \\ 1 \end{pmatrix} 
 $$
 
+Es gibt dann natürlich auch noch besondere Vektoren. Vektoren der Länge 1 heißen Einheitsvektoren oder normierte Vektoren. Hat ein Vektor die Länge 0, so handelt es sich um den Nullvektor. Beide Arten von Vektoren kommen in der Anwendung nicht vor. Wenn wir nichts vorliegen haben, dann brauchen wir auch keinen Vektor. Und eine einzelne Beobachtung bruachen wir nicht in einem Vektor speichern.
 
-
-Vektoren der Länge 1 heißen Einheitsvektoren oder normierte Vektoren. Hat ein Vektor die Länge 0, so handelt es sich um den Nullvektor.
+Wenn wir zwei Vektoren addieren wollen, dann addieren wir jedes paarweise Element in den beiden Vektoren.
 
 $$
 \begin{pmatrix} a_1 \\ a_2 \\ a_3 \end{pmatrix} 
@@ -46,6 +48,8 @@ $$
 \end{pmatrix} 
 $$
 
+Wir können die Berechnung auch einfach in R durchführen. Da wir in R nicht vertikal schreiben können sind alle Vektoren immer horizontal. Wir können über die Funktion `t()` einen Vektor transponieren, wenn wir das wollen würden.
+
 ```{r}
 A <- c(2, -1, 5)
 B <- c(8, 1, -3)
@@ -60,13 +64,15 @@ $$
 \begin{pmatrix} 2 \cdot 1 \\ 2 \cdot 3 \\ 2 \cdot 4 \end{pmatrix}  =
 \begin{pmatrix} 2 \\ 6 \\ 8 \end{pmatrix}
 $$
+Auch hier einmal die Anwendung in R.
+
 ```{r}
 A <- c(1, 3, 4)
 
 2 * A
 ```
 
-In R haben wir noch die Möglichkeit einen Vektor mit Namen zu versehen.
+In R haben wir noch die Möglichkeit einen Vektor mit Namen zu versehen. Diese Möglichkeit brauchst du ab und an mal. Es ist ganz nett sich zu vergewissern, was die Zahl in einem Vektor eigentlich aussagen soll.
 
 ```{r}
 A <- c(2, -1, 5)
