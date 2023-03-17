@@ -8,7 +8,16 @@ pacman::p_load(tidyverse, readxl, knitr, kableExtra, Hmisc)
 
 ![](images/caution.png){fig-align="center" width="50%"}
 
-## Regeln
+## Baumdiagramme und Pfadregeln
+
+### 1. Pfadregel (Multiplikationsregel)
+
+### 2. Pfadregel (Additionsregel)
+
+
+https://3.vobs.at/maturawiki/index.php/Wahrscheinlichkeit:_Baumdiagramme_und_Pfadregeln
+
+### Summenregel
 
 Und $\cap$
 
