@@ -8,6 +8,12 @@ pacman::p_load(tidyverse, readxl, knitr, kableExtra, Hmisc)
 
 ![](images/caution.png){fig-align="center" width="50%"}
 
+## Odds & Ends
+
+![](images/odds_and_ends.PNG){fig-align="center"}
+
+Ein tolles online Buch von Jonathan Weisberg zu finden unter <https://jonathanweisberg.org/vip/>. Ein Buch über Wahrscheinlichkeiten, welches wunderbar zu lesen ist. Ich habe teilweise Beispiele aus dem Buch verwendet und darüber hinaus finde ich es sehr spannend zu lesen. 
+
 ## Baumdiagramme und Pfadregeln
 
 ### 1. Pfadregel (Multiplikationsregel)
@@ -17,11 +23,9 @@ pacman::p_load(tidyverse, readxl, knitr, kableExtra, Hmisc)
 
 https://3.vobs.at/maturawiki/index.php/Wahrscheinlichkeit:_Baumdiagramme_und_Pfadregeln
 
-### Summenregel
 
-Und $\cap$
 
-Oder $\cup$
+
 
 Text
 
@@ -52,6 +56,10 @@ In @tbl-mengen
 
 
 ## Logische Operatoren
+
+Und $\cap$
+
+Oder $\cup$
 
 In @tbl-logical-figures
 
