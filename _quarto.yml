@@ -36,7 +36,6 @@ book:
       - probability-basic.qmd
       - probability-distribution.qmd
 
-
 bibliography: references.bib
 lang: de 
 
