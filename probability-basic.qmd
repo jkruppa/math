@@ -28,7 +28,7 @@ Pr(K_1 \cap K_2) &= Pr(K_1) \times Pr(K_2) \\
 \end{aligned}
 $$
 
-
+## Mengenschreibweise
 
 In @tbl-mengen
 
@@ -40,6 +40,9 @@ In @tbl-mengen
 | $]a,b]$ | $(a,b]$  |    $\{x|a<x≤b\}$     | halboffen / linksoffen  |
 
 : Test {#tbl-mengen}
+
+
+## Logische Operatoren
 
 In @tbl-logical-figures
 
@@ -56,8 +59,4 @@ In @tbl-logical-figures
 
 ## Bedingte Wahrscheinlichkeiten {#sec-prob-cond}
 
-## Wahrscheinlichkeitsverteilungen {#sec-prob-dist}
 
-https://rstudio-pubs-static.s3.amazonaws.com/35515_c4ea4e9714af4d888bfc701a37c39815.html
-
-https://yutannihilation.github.io/allYourFigureAreBelongToUs/ggfortify/ggdistribution/

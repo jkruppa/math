@@ -11,3 +11,5 @@ pacman::p_load(tidyverse, readxl, knitr, kableExtra, Hmisc)
 https://rstudio-pubs-static.s3.amazonaws.com/35515_c4ea4e9714af4d888bfc701a37c39815.html
 
 https://yutannihilation.github.io/allYourFigureAreBelongToUs/ggfortify/ggdistribution/
+
+

@@ -34,8 +34,7 @@ book:
     - part: probability-preface.qmd
       chapters:
       - probability-basic.qmd
-      - probability-conditional.qmd
-#      - probability-distribution.qmd
+      - probability-distribution.qmd
 
 
 bibliography: references.bib
