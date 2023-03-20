@@ -8,6 +8,72 @@ pacman::p_load(tidyverse, readxl, knitr, kableExtra, Hmisc)
 
 ![](images/caution.png){fig-align="center" width="50%"}
 
+
+## Genutzte R Pakete für das Kapitel
+
+Wir wollen folgende R Pakete in diesem Kapitel nutzen. Zum einen brauchen wir das R Paket `tidyverse` um uns die Daten zu bauen, die wir dann mit dem R Paket `ggplot` visualisieren wollen. Das R Paket `ggplot` ist schon in dem R Paket `tidyverse` mit enthalten.
+
+```{r echo = TRUE}
+#| message: false
+pacman::p_load(tidyverse, magrittr, ggfortify)
+cbbPalette <- c("#000000", "#E69F00", "#56B4E9", "#009E73", 
+                "#F0E442", "#0072B2", "#D55E00", "#CC79A7")
+```
+
+
+
+
+
+## Dichtefunktion
+
+Die Funktion `dnorm()` gibt den Wert der Wahrscheinlichkeitsdichtefunktion (eng. *probability density function*, abk. *PDF*) der Normalverteilung bei einer bestimmten Zufallsvariablen $x$, einem Populationsmittelwert $\mu$ und einer Populationsstandardabweichung $\sigma$ zurück.
+
+```{r}
+ggdistribution(dnorm, seq(-3, 3, 0.1), mean = 0, sd = 1) +
+  theme_minimal()
+```
+
+
+## Kumulative Dichtefunktion
+
+Die Funktion `pnorm()` gibt den Wert der kumulativen Dichtefunktion (eng. *cumulative distribution function*, abk. *cdf*) der Normalverteilung bei einer bestimmten Zufallsvariablen $q$, einem Populationsmittel $\mu$ und einer Populationsstandardabweichung $\sigma$ zurück.
+
+```{r}
+ggdistribution(pnorm, seq(-3, 3, 0.1), mean = 0, sd = 1) +
+  theme_minimal()
+```
+
+Angenommen, die Größe der Männer an einer bestimmten Schule ist normalerweise mit einem Mittelwert von $\mu = 180cm$ und einer Standardabweichung von $\sigma = 14cm$ verteilt. Wie viel Prozent der Männer an dieser Schule sind **größer** als $195cm$?
+
+```{r}
+pnorm(195, mean = 180, sd = 14, lower.tail = FALSE)
+```
+
+Angenommen, das Gewicht einer bestimmten Otterart ist normalerweise mit einem Mittelwert von $\mu = 60kg$ und einer Standardabweichung von $\sigma = 10kg$ verteilt. Wie viel Prozent dieser Otterart wiegen **mindestens** $65kg$?
+
+```{r}
+pnorm(65, mean = 60, sd = 10, lower.tail = TRUE)
+```
+
+Angenommen, die Höhe der Sonnenblumen in einer bestimmten Region Niedersachsens ist normalerweise mit einem Mittelwert von $\mu = 250cm$ und einer Standardabweichung von $\sigma = 12cm$ verteilt. Wie viel Prozent der Pflanzen in dieser Region sind $200cm$ bis $220cm$ groß?
+
+```{r}
+pnorm(260, mean = 250, sd = 12) - pnorm(240, mean = 250, sd = 12)
+```
+
+
+## Inverse kumulativen Dichtefunktion
+
+Einfach ausgedrückt, kannst du `qnorm()` verwenden, um herauszufinden, wie hoch der Z-Score des p-ten Quantils der Normalverteilung ist.
+
+```{r}
+qnorm(0.95, mean = 0, sd = 1) %>% round(2)
+qnorm(0.975, mean = 0, sd = 1) %>% round(2)
+qnorm(0.99, mean = 0, sd = 1) %>% round(2)
+```
+
+
+
 https://rstudio-pubs-static.s3.amazonaws.com/35515_c4ea4e9714af4d888bfc701a37c39815.html
 
 https://yutannihilation.github.io/allYourFigureAreBelongToUs/ggfortify/ggdistribution/
