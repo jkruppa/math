@@ -68,6 +68,18 @@ qnorm(0.975, mean = 0, sd = 1) %>% round(2)
 qnorm(0.99, mean = 0, sd = 1) %>% round(2)
 ```
 
+@fig-distribution
+
+## Visualisierung von `pnorm()` und `qnorm()`
+
+```{r}
+pnorm(q = 1.96)
+qnorm(p = 0.975)
+qnorm(p = 0.025, lower.tail = FALSE)
+```
+
+
+![Test](images/distribution-t.png){fig-align="center" width="100%" #fig-distribution}
 
 
 https://rstudio-pubs-static.s3.amazonaws.com/35515_c4ea4e9714af4d888bfc701a37c39815.html

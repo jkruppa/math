@@ -382,6 +382,13 @@
     "href": "probability-distribution.html#inverse-kumulativen-dichtefunktion",
     "title": "11  Verteilungen",
     "section": "11.4 Inverse kumulativen Dichtefunktion",
-    "text": "11.4 Inverse kumulativen Dichtefunktion\nEinfach ausgedrückt, kannst du qnorm() verwenden, um herauszufinden, wie hoch der Z-Score des p-ten Quantils der Normalverteilung ist.\n\nqnorm(0.95, mean = 0, sd = 1) %>% round(2)\n\n[1] 1.64\n\nqnorm(0.975, mean = 0, sd = 1) %>% round(2)\n\n[1] 1.96\n\nqnorm(0.99, mean = 0, sd = 1) %>% round(2)\n\n[1] 2.33\n\n\nhttps://rstudio-pubs-static.s3.amazonaws.com/35515_c4ea4e9714af4d888bfc701a37c39815.html\nhttps://yutannihilation.github.io/allYourFigureAreBelongToUs/ggfortify/ggdistribution/"
+    "text": "11.4 Inverse kumulativen Dichtefunktion\nEinfach ausgedrückt, kannst du qnorm() verwenden, um herauszufinden, wie hoch der Z-Score des p-ten Quantils der Normalverteilung ist.\n\nqnorm(0.95, mean = 0, sd = 1) %>% round(2)\n\n[1] 1.64\n\nqnorm(0.975, mean = 0, sd = 1) %>% round(2)\n\n[1] 1.96\n\nqnorm(0.99, mean = 0, sd = 1) %>% round(2)\n\n[1] 2.33\n\n\nAbbildung 11.1"
+  },
+  {
+    "objectID": "probability-distribution.html#visualisierung-von-pnorm-und-qnorm",
+    "href": "probability-distribution.html#visualisierung-von-pnorm-und-qnorm",
+    "title": "11  Verteilungen",
+    "section": "11.5 Visualisierung von pnorm() und qnorm()",
+    "text": "11.5 Visualisierung von pnorm() und qnorm()\n\npnorm(q = 1.96)\n\n[1] 0.9750021\n\nqnorm(p = 0.975)\n\n[1] 1.959964\n\nqnorm(p = 0.025, lower.tail = FALSE)\n\n[1] 1.959964\n\n\n\n\n\nAbbildung 11.1— Test\n\n\nhttps://rstudio-pubs-static.s3.amazonaws.com/35515_c4ea4e9714af4d888bfc701a37c39815.html\nhttps://yutannihilation.github.io/allYourFigureAreBelongToUs/ggfortify/ggdistribution/"
   }
 ]

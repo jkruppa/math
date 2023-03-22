@@ -269,6 +269,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   <li><a href="#dichtefunktion" id="toc-dichtefunktion" class="nav-link" data-scroll-target="#dichtefunktion"><span class="toc-section-number">11.2</span>  Dichtefunktion</a></li>
   <li><a href="#kumulative-dichtefunktion" id="toc-kumulative-dichtefunktion" class="nav-link" data-scroll-target="#kumulative-dichtefunktion"><span class="toc-section-number">11.3</span>  Kumulative Dichtefunktion</a></li>
   <li><a href="#inverse-kumulativen-dichtefunktion" id="toc-inverse-kumulativen-dichtefunktion" class="nav-link" data-scroll-target="#inverse-kumulativen-dichtefunktion"><span class="toc-section-number">11.4</span>  Inverse kumulativen Dichtefunktion</a></li>
+  <li><a href="#visualisierung-von-pnorm-und-qnorm" id="toc-visualisierung-von-pnorm-und-qnorm" class="nav-link" data-scroll-target="#visualisierung-von-pnorm-und-qnorm"><span class="toc-section-number">11.5</span>  Visualisierung von <code>pnorm()</code> und <code>qnorm()</code></a></li>
   </ul>
 </nav>
     </div>
@@ -295,7 +296,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="cell">
 
 </div>
-<p><em>Version vom March 22, 2023 um 08:52:16</em></p>
+<p><em>Version vom March 22, 2023 um 09:40:50</em></p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/caution.png" class="img-fluid figure-img" style="width:50.0%"></p>
@@ -370,6 +371,30 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 2.33</code></pre>
 </div>
+</div>
+<p><a href="#fig-distribution">Abbildung&nbsp;<span>11.1</span></a></p>
+</section>
+<section id="visualisierung-von-pnorm-und-qnorm" class="level2" data-number="11.5">
+<h2 data-number="11.5" class="anchored" data-anchor-id="visualisierung-von-pnorm-und-qnorm"><span class="header-section-number">11.5</span> Visualisierung von <code>pnorm()</code> und <code>qnorm()</code></h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu">pnorm</span>(<span class="at">q =</span> <span class="fl">1.96</span>)</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.9750021</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="fu">qnorm</span>(<span class="at">p =</span> <span class="fl">0.975</span>)</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 1.959964</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="fu">qnorm</span>(<span class="at">p =</span> <span class="fl">0.025</span>, <span class="at">lower.tail =</span> <span class="cn">FALSE</span>)</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 1.959964</code></pre>
+</div>
+</div>
+<div id="fig-distribution" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="images/distribution-t.png" class="img-fluid figure-img" style="width:100.0%"></p>
+<p></p><figcaption class="figure-caption">Abbildung&nbsp;11.1— Test</figcaption><p></p>
+</figure>
 </div>
 <p>https://rstudio-pubs-static.s3.amazonaws.com/35515_c4ea4e9714af4d888bfc701a37c39815.html</p>
 <p>https://yutannihilation.github.io/allYourFigureAreBelongToUs/ggfortify/ggdistribution/</p>
