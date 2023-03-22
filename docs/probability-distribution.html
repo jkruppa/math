@@ -296,7 +296,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="cell">
 
 </div>
-<p><em>Version vom March 22, 2023 um 09:47:58</em></p>
+<p><em>Version vom March 22, 2023 um 10:58:02</em></p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/caution.png" class="img-fluid figure-img" style="width:50.0%"></p>
@@ -372,28 +372,28 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <pre><code>[1] 2.33</code></pre>
 </div>
 </div>
-<p><a href="#fig-distribution">Abbildung&nbsp;<span>11.1</span></a></p>
 </section>
 <section id="visualisierung-von-pnorm-und-qnorm" class="level2" data-number="11.5">
 <h2 data-number="11.5" class="anchored" data-anchor-id="visualisierung-von-pnorm-und-qnorm"><span class="header-section-number">11.5</span> Visualisierung von <code>pnorm()</code> und <code>qnorm()</code></h2>
+<p>In der <a href="#fig-distribution">Abbildung&nbsp;<span>11.1</span></a> sehen wir den Zusammenhang zwischen der Funktion <code>pnorm(q = 1.96)</code> und der Funktion <code>qnorm(p = 0.975)</code> einmal visualisiert.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu">pnorm</span>(<span class="at">q =</span> <span class="fl">1.96</span>)</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu">pnorm</span>(<span class="at">q =</span> <span class="fl">1.96</span>) <span class="sc">%&gt;%</span> <span class="fu">round</span>(<span class="dv">2</span>)</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 0.9750021</code></pre>
+<pre><code>[1] 0.98</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="fu">qnorm</span>(<span class="at">p =</span> <span class="fl">0.975</span>)</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="fu">qnorm</span>(<span class="at">p =</span> <span class="fl">0.975</span>) <span class="sc">%&gt;%</span> <span class="fu">round</span>(<span class="dv">2</span>)</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 1.959964</code></pre>
+<pre><code>[1] 1.96</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="fu">qnorm</span>(<span class="at">p =</span> <span class="fl">0.025</span>, <span class="at">lower.tail =</span> <span class="cn">FALSE</span>)</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="fu">qnorm</span>(<span class="at">p =</span> <span class="fl">0.025</span>, <span class="at">lower.tail =</span> <span class="cn">FALSE</span>) <span class="sc">%&gt;%</span> <span class="fu">round</span>(<span class="dv">2</span>)</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 1.959964</code></pre>
+<pre><code>[1] 1.96</code></pre>
 </div>
 </div>
 <div id="fig-distribution" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="images/distribution-t.png" class="img-fluid figure-img" style="width:100.0%"></p>
-<p></p><figcaption class="figure-caption">Abbildung&nbsp;11.1— Test</figcaption><p></p>
+<p></p><figcaption class="figure-caption">Abbildung&nbsp;11.1— Der Zusammenhang von <code>pnorm()</code> und <code>qnorm</code> einmal an einer Standardnormalverteilung visualisiert.</figcaption><p></p>
 </figure>
 </div>
 <p>https://rstudio-pubs-static.s3.amazonaws.com/35515_c4ea4e9714af4d888bfc701a37c39815.html</p>
