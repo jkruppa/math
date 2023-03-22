@@ -21,10 +21,6 @@ cbbPalette <- c("#000000", "#E69F00", "#56B4E9", "#009E73",
                 "#F0E442", "#0072B2", "#D55E00", "#CC79A7")
 ```
 
-
-
-
-
 ## Dichtefunktion
 
 Die Funktion `dnorm()` gibt den Wert der Wahrscheinlichkeitsdichtefunktion (eng. *probability density function*, abk. *PDF*) der Normalverteilung bei einer bestimmten Zufallsvariablen $x$, einem Populationsmittelwert $\mu$ und einer Populationsstandardabweichung $\sigma$ zurück.
@@ -33,7 +29,6 @@ Die Funktion `dnorm()` gibt den Wert der Wahrscheinlichkeitsdichtefunktion (eng.
 ggdistribution(dnorm, seq(-3, 3, 0.1), mean = 0, sd = 1) +
   theme_minimal()
 ```
-
 
 ## Kumulative Dichtefunktion
 
