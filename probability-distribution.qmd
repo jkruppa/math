@@ -8,6 +8,7 @@ pacman::p_load(tidyverse, readxl, knitr, kableExtra, Hmisc)
 
 ![](images/caution.png){fig-align="center" width="50%"}
 
+Wir werden uns in der [Statistikvorlesung noch vertieft mit Verteilungen](https://jkruppa.github.io/eda-distribution.html) beschäftigen. Deshalb hier nur ein kurzer Abriss und die Konzentration auf die Normalverteilung.
 
 ## Genutzte R Pakete für das Kapitel
 
