@@ -72,14 +72,15 @@ qnorm(0.99, mean = 0, sd = 1) %>% round(2)
 
 ## Visualisierung von `pnorm()` und `qnorm()`
 
-In der @fig-distribution sehen wir den Zusammenhang zwischen der Funktion `pnorm(q = 1.96)` und der Funktion `qnorm(p = 0.975)` einmal visualisiert.
+In der @fig-distribution sehen wir den Zusammenhang zwischen der Funktion `pnorm(q = 1.96)` und der Funktion `qnorm(p = 0.975)` einmal visualisiert. Manchmal ist es daann doch recht verwirrend, was die beiden Funktion dann machen. Deshalb einmal hier der R Code für eine Standardnormalverteilung. Wenn du kein `mean` oder `sd` in den Funktionen angibst, ist der Standardwert (eng. *default*) der einer Standardnormalverteilung.
 
 ```{r}
-pnorm(q = 1.96) %>% round(2)
+pnorm(q = 1.96) %>% round(3)
 qnorm(p = 0.975) %>% round(2)
 qnorm(p = 0.025, lower.tail = FALSE) %>% round(2)
 ```
 
+In der @fig-distribution sehen wir den Wert aus der Funktion `pnorm(q = 1.96)` mit $0.975$ als blaue Fläche unter der Kurve dargestellt. Den Wert für die Fläche auf der x-Achse mit $1.96$ ergibt dann die Funktion `qnorm(p = 0.975) %>% round(2)`.
 
 ![Der Zusammenhang von `pnorm()` und `qnorm` einmal an einer Standardnormalverteilung visualisiert.](images/distribution-t.png){fig-align="center" width="100%" #fig-distribution}
 

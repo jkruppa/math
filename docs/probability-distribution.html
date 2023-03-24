@@ -296,7 +296,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="cell">
 
 </div>
-<p><em>Version vom March 22, 2023 um 10:58:02</em></p>
+<p><em>Version vom March 24, 2023 um 12:22:40</em></p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/caution.png" class="img-fluid figure-img" style="width:50.0%"></p>
@@ -375,11 +375,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </section>
 <section id="visualisierung-von-pnorm-und-qnorm" class="level2" data-number="11.5">
 <h2 data-number="11.5" class="anchored" data-anchor-id="visualisierung-von-pnorm-und-qnorm"><span class="header-section-number">11.5</span> Visualisierung von <code>pnorm()</code> und <code>qnorm()</code></h2>
-<p>In der <a href="#fig-distribution">Abbildung&nbsp;<span>11.1</span></a> sehen wir den Zusammenhang zwischen der Funktion <code>pnorm(q = 1.96)</code> und der Funktion <code>qnorm(p = 0.975)</code> einmal visualisiert.</p>
+<p>In der <a href="#fig-distribution">Abbildung&nbsp;<span>11.1</span></a> sehen wir den Zusammenhang zwischen der Funktion <code>pnorm(q = 1.96)</code> und der Funktion <code>qnorm(p = 0.975)</code> einmal visualisiert. Manchmal ist es daann doch recht verwirrend, was die beiden Funktion dann machen. Deshalb einmal hier der R Code für eine Standardnormalverteilung. Wenn du kein <code>mean</code> oder <code>sd</code> in den Funktionen angibst, ist der Standardwert (eng. <em>default</em>) der einer Standardnormalverteilung.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu">pnorm</span>(<span class="at">q =</span> <span class="fl">1.96</span>) <span class="sc">%&gt;%</span> <span class="fu">round</span>(<span class="dv">2</span>)</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu">pnorm</span>(<span class="at">q =</span> <span class="fl">1.96</span>) <span class="sc">%&gt;%</span> <span class="fu">round</span>(<span class="dv">3</span>)</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 0.98</code></pre>
+<pre><code>[1] 0.975</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="fu">qnorm</span>(<span class="at">p =</span> <span class="fl">0.975</span>) <span class="sc">%&gt;%</span> <span class="fu">round</span>(<span class="dv">2</span>)</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
@@ -390,6 +390,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <pre><code>[1] 1.96</code></pre>
 </div>
 </div>
+<p>In der <a href="#fig-distribution">Abbildung&nbsp;<span>11.1</span></a> sehen wir den Wert aus der Funktion <code>pnorm(q = 1.96)</code> mit <span class="math inline">\(0.975\)</span> als blaue Fläche unter der Kurve dargestellt. Den Wert für die Fläche auf der x-Achse mit <span class="math inline">\(1.96\)</span> ergibt dann die Funktion <code>qnorm(p = 0.975) %&gt;% round(2)</code>.</p>
 <div id="fig-distribution" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="images/distribution-t.png" class="img-fluid figure-img" style="width:100.0%"></p>
