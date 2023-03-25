@@ -6,8 +6,6 @@ pacman::p_load(tidyverse, readxl, knitr, kableExtra, Hmisc)
 
 *Version vom `r format(Sys.time(), '%B %d, %Y um %H:%M:%S')`*
 
-![](images/caution.png){fig-align="center" width="50%"}
-
 Wir werden uns in der [Statistikvorlesung noch vertieft mit Verteilungen](https://jkruppa.github.io/eda-distribution.html) beschäftigen. Deshalb hier nur ein kurzer Abriss und die Konzentration auf die Normalverteilung. Im Folgenden einmal die Formel für die Normalverteilung. 
 
 $$
@@ -69,19 +67,17 @@ Angenommen, die Höhe der Sonnenblumen in einer bestimmten Region Niedersachsens
 pnorm(260, mean = 250, sd = 12) - pnorm(240, mean = 250, sd = 12)
 ```
 
-In dem letzten Fall haben wir einfach die Differenz zwischen zwei Normalveteilungen gebildet.
+In dem letzten Fall haben wir einfach die Differenz zwischen zwei Normalverteilungen gebildet.
 
 ## Inverse kumulativen Dichtefunktion
 
-Einfach ausgedrückt, kannst du `qnorm()` verwenden, um herauszufinden, wie hoch der Z-Score des p-ten Quantils der Normalverteilung ist.
+Einfach ausgedrückt, kannst du `qnorm()` verwenden, um herauszufinden zu welcher Fläche welcher Wert auf der x-Achse gehört. Du willst also nicht wissen, wie *wahrscheinlich* ein Wert für x ist, sondern gegeben einer Wahrscheinlichkeit den Wert von x haben. Ich habe dir hier ein paar Beispiele mitgebracht. Wir setzen also in die Funktion `qnorm()` die Fläche unter der Kurve ein, bei einer Standardnormalverteilung eben eine Wahrscheinlichkeit, und der erhalten den x-Wert wieder.
 
 ```{r}
 qnorm(0.95, mean = 0, sd = 1) %>% round(2)
 qnorm(0.975, mean = 0, sd = 1) %>% round(2)
 qnorm(0.99, mean = 0, sd = 1) %>% round(2)
 ```
-
-
 
 ## Visualisierung von `pnorm()` und `qnorm()`
 
@@ -96,10 +92,3 @@ qnorm(p = 0.025, lower.tail = FALSE) %>% round(2)
 In der @fig-distribution sehen wir den Wert aus der Funktion `pnorm(q = 1.96)` mit $0.975$ als blaue Fläche unter der Kurve dargestellt. Den Wert für die Fläche auf der x-Achse mit $1.96$ ergibt dann die Funktion `qnorm(p = 0.975) %>% round(2)`.
 
 ![Der Zusammenhang von `pnorm()` und `qnorm` einmal an einer Standardnormalverteilung visualisiert.](images/distribution-t.png){fig-align="center" width="100%" #fig-distribution}
-
-
-https://rstudio-pubs-static.s3.amazonaws.com/35515_c4ea4e9714af4d888bfc701a37c39815.html
-
-https://yutannihilation.github.io/allYourFigureAreBelongToUs/ggfortify/ggdistribution/
-
-

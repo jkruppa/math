@@ -296,12 +296,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="cell">
 
 </div>
-<p><em>Version vom March 25, 2023 um 09:57:38</em></p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/caution.png" class="img-fluid figure-img" style="width:50.0%"></p>
-</figure>
-</div>
+<p><em>Version vom March 25, 2023 um 10:06:59</em></p>
 <p>Wir werden uns in der <a href="https://jkruppa.github.io/eda-distribution.html">Statistikvorlesung noch vertieft mit Verteilungen</a> beschäftigen. Deshalb hier nur ein kurzer Abriss und die Konzentration auf die Normalverteilung. Im Folgenden einmal die Formel für die Normalverteilung.</p>
 <p><span class="math display">\[
 f(y \mid\mu,\sigma^2)=\cfrac{1}{\sqrt{2\pi\sigma^2}} e^{-\cfrac{(y-\mu)^2}{2\sigma^2}}\quad -\infty&lt;y&lt;\infty
@@ -360,11 +355,11 @@ f(y \mid\mu,\sigma^2)=\cfrac{1}{\sqrt{2\pi\sigma^2}} e^{-\cfrac{(y-\mu)^2}{2\sig
 <pre><code>[1] 0.5953432</code></pre>
 </div>
 </div>
-<p>In dem letzten Fall haben wir einfach die Differenz zwischen zwei Normalveteilungen gebildet.</p>
+<p>In dem letzten Fall haben wir einfach die Differenz zwischen zwei Normalverteilungen gebildet.</p>
 </section>
 <section id="inverse-kumulativen-dichtefunktion" class="level2" data-number="11.4">
 <h2 data-number="11.4" class="anchored" data-anchor-id="inverse-kumulativen-dichtefunktion"><span class="header-section-number">11.4</span> Inverse kumulativen Dichtefunktion</h2>
-<p>Einfach ausgedrückt, kannst du <code>qnorm()</code> verwenden, um herauszufinden, wie hoch der Z-Score des p-ten Quantils der Normalverteilung ist.</p>
+<p>Einfach ausgedrückt, kannst du <code>qnorm()</code> verwenden, um herauszufinden zu welcher Fläche welcher Wert auf der x-Achse gehört. Du willst also nicht wissen, wie <em>wahrscheinlich</em> ein Wert für x ist, sondern gegeben einer Wahrscheinlichkeit den Wert von x haben. Ich habe dir hier ein paar Beispiele mitgebracht. Wir setzen also in die Funktion <code>qnorm()</code> die Fläche unter der Kurve ein, bei einer Standardnormalverteilung eben eine Wahrscheinlichkeit, und der erhalten den x-Wert wieder.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">qnorm</span>(<span class="fl">0.95</span>, <span class="at">mean =</span> <span class="dv">0</span>, <span class="at">sd =</span> <span class="dv">1</span>) <span class="sc">%&gt;%</span> <span class="fu">round</span>(<span class="dv">2</span>)</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
@@ -404,8 +399,6 @@ f(y \mid\mu,\sigma^2)=\cfrac{1}{\sqrt{2\pi\sigma^2}} e^{-\cfrac{(y-\mu)^2}{2\sig
 <p></p><figcaption class="figure-caption">Abbildung&nbsp;11.1— Der Zusammenhang von <code>pnorm()</code> und <code>qnorm</code> einmal an einer Standardnormalverteilung visualisiert.</figcaption><p></p>
 </figure>
 </div>
-<p>https://rstudio-pubs-static.s3.amazonaws.com/35515_c4ea4e9714af4d888bfc701a37c39815.html</p>
-<p>https://yutannihilation.github.io/allYourFigureAreBelongToUs/ggfortify/ggdistribution/</p>
 
 
 </section>
