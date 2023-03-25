@@ -296,7 +296,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="cell">
 
 </div>
-<p><em>Version vom March 25, 2023 um 09:53:59</em></p>
+<p><em>Version vom March 25, 2023 um 09:57:38</em></p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/caution.png" class="img-fluid figure-img" style="width:50.0%"></p>
@@ -339,27 +339,28 @@ f(y \mid\mu,\sigma^2)=\cfrac{1}{\sqrt{2\pi\sigma^2}} e^{-\cfrac{(y-\mu)^2}{2\sig
 <p><img src="probability-distribution_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
-<p>Angenommen, die Größe der Männer an einer bestimmten Schule ist normalerweise mit einem Mittelwert von <span class="math inline">\(\mu = 180cm\)</span> und einer Standardabweichung von <span class="math inline">\(\sigma = 14cm\)</span> verteilt. Wie viel Prozent der Männer an dieser Schule sind <strong>größer</strong> als <span class="math inline">\(195cm\)</span>?</p>
+<p>Wir können jetzt mit der Funktion rechnen und ein paar beispielhafte Fragen beantworten. Angenommen, die Größe der Männer an einer bestimmten Schule ist normalverteilt mit einem Mittelwert von <span class="math inline">\(\mu = 180cm\)</span> und einer Standardabweichung von <span class="math inline">\(\sigma = 14cm\)</span>. Wie viel Prozent der Männer an dieser Schule sind <strong>größer</strong> als <span class="math inline">\(195cm\)</span>?</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">pnorm</span>(<span class="dv">195</span>, <span class="at">mean =</span> <span class="dv">180</span>, <span class="at">sd =</span> <span class="dv">14</span>, <span class="at">lower.tail =</span> <span class="cn">FALSE</span>)</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 0.1419884</code></pre>
 </div>
 </div>
-<p>Angenommen, das Gewicht einer bestimmten Otterart ist normalerweise mit einem Mittelwert von <span class="math inline">\(\mu = 60kg\)</span> und einer Standardabweichung von <span class="math inline">\(\sigma = 10kg\)</span> verteilt. Wie viel Prozent dieser Otterart wiegen <strong>mindestens</strong> <span class="math inline">\(65kg\)</span>?</p>
+<p>Angenommen, das Gewicht einer bestimmten Otterart ist normalverteilt mit einem Mittelwert von <span class="math inline">\(\mu = 60kg\)</span> und einer Standardabweichung von <span class="math inline">\(\sigma = 10kg\)</span>. Wie viel Prozent dieser Otterart wiegen <strong>mindestens</strong> <span class="math inline">\(65kg\)</span>? Hier kannst du mindestens auch als <strong>kleiner</strong> lesen.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">pnorm</span>(<span class="dv">65</span>, <span class="at">mean =</span> <span class="dv">60</span>, <span class="at">sd =</span> <span class="dv">10</span>, <span class="at">lower.tail =</span> <span class="cn">TRUE</span>)</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 0.6914625</code></pre>
 </div>
 </div>
-<p>Angenommen, die Höhe der Sonnenblumen in einer bestimmten Region Niedersachsens ist normalerweise mit einem Mittelwert von <span class="math inline">\(\mu = 250cm\)</span> und einer Standardabweichung von <span class="math inline">\(\sigma = 12cm\)</span> verteilt. Wie viel Prozent der Pflanzen in dieser Region sind <span class="math inline">\(200cm\)</span> bis <span class="math inline">\(220cm\)</span> groß?</p>
+<p>Angenommen, die Höhe der Sonnenblumen in einer bestimmten Region Niedersachsens ist normalverteilt mit einem Mittelwert von <span class="math inline">\(\mu = 250cm\)</span> und einer Standardabweichung von <span class="math inline">\(\sigma = 12cm\)</span>. Wie viel Prozent der Pflanzen in dieser Region sind <span class="math inline">\(200cm\)</span> bis <span class="math inline">\(220cm\)</span> groß?</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">pnorm</span>(<span class="dv">260</span>, <span class="at">mean =</span> <span class="dv">250</span>, <span class="at">sd =</span> <span class="dv">12</span>) <span class="sc">-</span> <span class="fu">pnorm</span>(<span class="dv">240</span>, <span class="at">mean =</span> <span class="dv">250</span>, <span class="at">sd =</span> <span class="dv">12</span>)</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 0.5953432</code></pre>
 </div>
 </div>
+<p>In dem letzten Fall haben wir einfach die Differenz zwischen zwei Normalveteilungen gebildet.</p>
 </section>
 <section id="inverse-kumulativen-dichtefunktion" class="level2" data-number="11.4">
 <h2 data-number="11.4" class="anchored" data-anchor-id="inverse-kumulativen-dichtefunktion"><span class="header-section-number">11.4</span> Inverse kumulativen Dichtefunktion</h2>

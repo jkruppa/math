@@ -51,24 +51,25 @@ ggdistribution(pnorm, seq(-3, 3, 0.1), mean = 0, sd = 1) +
   theme_minimal()
 ```
 
-Angenommen, die Größe der Männer an einer bestimmten Schule ist normalerweise mit einem Mittelwert von $\mu = 180cm$ und einer Standardabweichung von $\sigma = 14cm$ verteilt. Wie viel Prozent der Männer an dieser Schule sind **größer** als $195cm$?
+Wir können jetzt mit der Funktion rechnen und ein paar beispielhafte Fragen beantworten. Angenommen, die Größe der Männer an einer bestimmten Schule ist normalverteilt mit einem Mittelwert von $\mu = 180cm$ und einer Standardabweichung von $\sigma = 14cm$. Wie viel Prozent der Männer an dieser Schule sind **größer** als $195cm$?
 
 ```{r}
 pnorm(195, mean = 180, sd = 14, lower.tail = FALSE)
 ```
 
-Angenommen, das Gewicht einer bestimmten Otterart ist normalerweise mit einem Mittelwert von $\mu = 60kg$ und einer Standardabweichung von $\sigma = 10kg$ verteilt. Wie viel Prozent dieser Otterart wiegen **mindestens** $65kg$?
+Angenommen, das Gewicht einer bestimmten Otterart ist normalverteilt mit einem Mittelwert von $\mu = 60kg$ und einer Standardabweichung von $\sigma = 10kg$. Wie viel Prozent dieser Otterart wiegen **mindestens** $65kg$? Hier kannst du mindestens auch als **kleiner** lesen.
 
 ```{r}
 pnorm(65, mean = 60, sd = 10, lower.tail = TRUE)
 ```
 
-Angenommen, die Höhe der Sonnenblumen in einer bestimmten Region Niedersachsens ist normalerweise mit einem Mittelwert von $\mu = 250cm$ und einer Standardabweichung von $\sigma = 12cm$ verteilt. Wie viel Prozent der Pflanzen in dieser Region sind $200cm$ bis $220cm$ groß?
+Angenommen, die Höhe der Sonnenblumen in einer bestimmten Region Niedersachsens ist normalverteilt mit einem Mittelwert von $\mu = 250cm$ und einer Standardabweichung von $\sigma = 12cm$. Wie viel Prozent der Pflanzen in dieser Region sind $200cm$ bis $220cm$ groß?
 
 ```{r}
 pnorm(260, mean = 250, sd = 12) - pnorm(240, mean = 250, sd = 12)
 ```
 
+In dem letzten Fall haben wir einfach die Differenz zwischen zwei Normalveteilungen gebildet.
 
 ## Inverse kumulativen Dichtefunktion
 
