@@ -368,7 +368,7 @@
     "href": "probability-distribution.html#dichtefunktion",
     "title": "11  Verteilungen",
     "section": "11.2 Dichtefunktion",
-    "text": "11.2 Dichtefunktion\nDie Funktion dnorm() gibt den Wert der Wahrscheinlichkeitsdichtefunktion (eng. probability density function, abk. PDF) der Normalverteilung bei einer bestimmten Zufallsvariablen \\(x\\), einem Populationsmittelwert \\(\\mu\\) und einer Populationsstandardabweichung \\(\\sigma\\) zurück.\n\nggdistribution(dnorm, seq(-3, 3, 0.1), mean = 0, sd = 1) +\n  theme_minimal()"
+    "text": "11.2 Dichtefunktion\nDie Funktion dnorm() gibt den Wert der Wahrscheinlichkeitsdichtefunktion (eng. probability density function, abk. PDF) der Normalverteilung bei einer bestimmten Zufallsvariablen \\(x\\), einem Populationsmittelwert \\(\\mu\\) und einer Populationsstandardabweichung \\(\\sigma\\) zurück.\nWir schauen uns hier einmal die Standardnormalvertielung an. Als eine Standardnormalverteilung bezeichnet man eine Normalverteilung mit einem Mittelwert von 0 und einer Varianz bzw. Standardabweichung von 1.\n\nggdistribution(dnorm, seq(-3, 3, 0.1), mean = 0, sd = 1) +\n  theme_minimal()"
   },
   {
     "objectID": "probability-distribution.html#kumulative-dichtefunktion",

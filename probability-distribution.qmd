@@ -8,7 +8,12 @@ pacman::p_load(tidyverse, readxl, knitr, kableExtra, Hmisc)
 
 ![](images/caution.png){fig-align="center" width="50%"}
 
-Wir werden uns in der [Statistikvorlesung noch vertieft mit Verteilungen](https://jkruppa.github.io/eda-distribution.html) beschäftigen. Deshalb hier nur ein kurzer Abriss und die Konzentration auf die Normalverteilung.
+Wir werden uns in der [Statistikvorlesung noch vertieft mit Verteilungen](https://jkruppa.github.io/eda-distribution.html) beschäftigen. Deshalb hier nur ein kurzer Abriss und die Konzentration auf die Normalverteilung. Im Folgenden einmal die Formel für die Normalverteilung. 
+
+$$
+f(y \mid\mu,\sigma^2)=\cfrac{1}{\sqrt{2\pi\sigma^2}} e^{-\cfrac{(y-\mu)^2}{2\sigma^2}}\quad -\infty<y<\infty
+$$
+Die Formel sieht ganz schön wild aus, aber wir müssen mit der Formel selber nicht arbeiten. Wir wenden die Normalverteilung höchstens in der Generierung von Daten an. Sonst nutzen wir die Eigenschaften der Normalverteilung für die Analyse von Daten.
 
 ## Genutzte R Pakete für das Kapitel
 
@@ -21,9 +26,12 @@ cbbPalette <- c("#000000", "#E69F00", "#56B4E9", "#009E73",
                 "#F0E442", "#0072B2", "#D55E00", "#CC79A7")
 ```
 
+
 ## Dichtefunktion
 
 Die Funktion `dnorm()` gibt den Wert der Wahrscheinlichkeitsdichtefunktion (eng. *probability density function*, abk. *PDF*) der Normalverteilung bei einer bestimmten Zufallsvariablen $x$, einem Populationsmittelwert $\mu$ und einer Populationsstandardabweichung $\sigma$ zurück.
+
+Wir schauen uns hier einmal die Standardnormalvertielung an. Als eine Standardnormalverteilung bezeichnet man eine Normalverteilung mit einem Mittelwert von 0 und einer Varianz bzw. Standardabweichung von 1. 
 
 ```{r}
 ggdistribution(dnorm, seq(-3, 3, 0.1), mean = 0, sd = 1) +
