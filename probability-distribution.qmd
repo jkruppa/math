@@ -31,7 +31,7 @@ cbbPalette <- c("#000000", "#E69F00", "#56B4E9", "#009E73",
 
 Die Funktion `dnorm()` gibt den Wert der Wahrscheinlichkeitsdichtefunktion (eng. *probability density function*, abk. *PDF*) der Normalverteilung bei einer bestimmten Zufallsvariablen $x$, einem Populationsmittelwert $\mu$ und einer Populationsstandardabweichung $\sigma$ zurück.
 
-Wir schauen uns hier einmal die Standardnormalvertielung an. Als eine Standardnormalverteilung bezeichnet man eine Normalverteilung mit einem Mittelwert von 0 und einer Varianz bzw. Standardabweichung von 1. 
+Wir schauen uns hier einmal die Standardnormalvertielung an. Als eine Standardnormalverteilung bezeichnet man eine Normalverteilung mit einem Mittelwert von 0 und einer Varianz bzw. Standardabweichung von 1. Wir können uns einmal die Normalverteilung mit der Funktion `ggdistribution()` anschauen. Wir nehmen dafür die Werte auf der x-Achse von $-3$ bis $3$ in $0.1$ Schritten. Dafür können wir die Funktion `seq()` nutzen. Wir erhalten die typische Glockenkurve einer Normalverteilung.
 
 ```{r}
 ggdistribution(dnorm, seq(-3, 3, 0.1), mean = 0, sd = 1) +
@@ -40,7 +40,11 @@ ggdistribution(dnorm, seq(-3, 3, 0.1), mean = 0, sd = 1) +
 
 ## Kumulative Dichtefunktion
 
-Die Funktion `pnorm()` gibt den Wert der kumulativen Dichtefunktion (eng. *cumulative distribution function*, abk. *cdf*) der Normalverteilung bei einer bestimmten Zufallsvariablen $q$, einem Populationsmittel $\mu$ und einer Populationsstandardabweichung $\sigma$ zurück.
+Wenn wir die kumulierte Fläche *links* von einem Wert auf der x-Achse bestimmen wollen, dann nehmen wir die Funktion `pnorm()`. Die Funktion `pnorm()` gibt den Wert der kumulativen Dichtefunktion (eng. *cumulative distribution function*, abk. *cdf*) der Normalverteilung bei einer bestimmten Zufallsvariablen $q$, einem Populationsmittel $\mu$ und einer Populationsstandardabweichung $\sigma$ zurück.
+
+In der Standardnormalverteilung ist die Fläche unter der Kurve gleich 1. Daher kannst du dir die Fläche unter der Kurve auch als eine Wahrscheinlichkeit vorstellen. Mit der Idee Wahrscheinlichkeit gleich Fläche kannst du dir dann auch merken, dass die Funktion $pnorm()$ die Fläche berechnet. Das $p$ steht dann für *probability*.
+
+Hier dann auch einmal die Funktion für die x-Werte von $-3$ bis $3$ in $0.1$ Schritten. Du kannst gut erkennen wie sich die Fläche dann auf 1 aufaddiert. Auch macht es vollkommen Sinn, dass wir bei einem x-Wert von 0 die Hälfte der Fläche erreicht haben. Immerhin definiert der Mittelwert die Mitte der Normalverteilung, so dass wir dann auch erwarten, dass die Hälfte der Fläche bei dem x-Wert gleich dem Mittelwert erreicht ist.
 
 ```{r}
 ggdistribution(pnorm, seq(-3, 3, 0.1), mean = 0, sd = 1) +

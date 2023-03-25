@@ -296,7 +296,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="cell">
 
 </div>
-<p><em>Version vom March 25, 2023 um 09:12:33</em></p>
+<p><em>Version vom March 25, 2023 um 09:53:59</em></p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/caution.png" class="img-fluid figure-img" style="width:50.0%"></p>
@@ -318,7 +318,7 @@ f(y \mid\mu,\sigma^2)=\cfrac{1}{\sqrt{2\pi\sigma^2}} e^{-\cfrac{(y-\mu)^2}{2\sig
 <section id="dichtefunktion" class="level2" data-number="11.2">
 <h2 data-number="11.2" class="anchored" data-anchor-id="dichtefunktion"><span class="header-section-number">11.2</span> Dichtefunktion</h2>
 <p>Die Funktion <code>dnorm()</code> gibt den Wert der Wahrscheinlichkeitsdichtefunktion (eng. <em>probability density function</em>, abk. <em>PDF</em>) der Normalverteilung bei einer bestimmten Zufallsvariablen <span class="math inline">\(x\)</span>, einem Populationsmittelwert <span class="math inline">\(\mu\)</span> und einer Populationsstandardabweichung <span class="math inline">\(\sigma\)</span> zurück.</p>
-<p>Wir schauen uns hier einmal die Standardnormalvertielung an. Als eine Standardnormalverteilung bezeichnet man eine Normalverteilung mit einem Mittelwert von 0 und einer Varianz bzw. Standardabweichung von 1.</p>
+<p>Wir schauen uns hier einmal die Standardnormalvertielung an. Als eine Standardnormalverteilung bezeichnet man eine Normalverteilung mit einem Mittelwert von 0 und einer Varianz bzw. Standardabweichung von 1. Wir können uns einmal die Normalverteilung mit der Funktion <code>ggdistribution()</code> anschauen. Wir nehmen dafür die Werte auf der x-Achse von <span class="math inline">\(-3\)</span> bis <span class="math inline">\(3\)</span> in <span class="math inline">\(0.1\)</span> Schritten. Dafür können wir die Funktion <code>seq()</code> nutzen. Wir erhalten die typische Glockenkurve einer Normalverteilung.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggdistribution</span>(dnorm, <span class="fu">seq</span>(<span class="sc">-</span><span class="dv">3</span>, <span class="dv">3</span>, <span class="fl">0.1</span>), <span class="at">mean =</span> <span class="dv">0</span>, <span class="at">sd =</span> <span class="dv">1</span>) <span class="sc">+</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -329,7 +329,9 @@ f(y \mid\mu,\sigma^2)=\cfrac{1}{\sqrt{2\pi\sigma^2}} e^{-\cfrac{(y-\mu)^2}{2\sig
 </section>
 <section id="kumulative-dichtefunktion" class="level2" data-number="11.3">
 <h2 data-number="11.3" class="anchored" data-anchor-id="kumulative-dichtefunktion"><span class="header-section-number">11.3</span> Kumulative Dichtefunktion</h2>
-<p>Die Funktion <code>pnorm()</code> gibt den Wert der kumulativen Dichtefunktion (eng. <em>cumulative distribution function</em>, abk. <em>cdf</em>) der Normalverteilung bei einer bestimmten Zufallsvariablen <span class="math inline">\(q\)</span>, einem Populationsmittel <span class="math inline">\(\mu\)</span> und einer Populationsstandardabweichung <span class="math inline">\(\sigma\)</span> zurück.</p>
+<p>Wenn wir die kumulierte Fläche <em>links</em> von einem Wert auf der x-Achse bestimmen wollen, dann nehmen wir die Funktion <code>pnorm()</code>. Die Funktion <code>pnorm()</code> gibt den Wert der kumulativen Dichtefunktion (eng. <em>cumulative distribution function</em>, abk. <em>cdf</em>) der Normalverteilung bei einer bestimmten Zufallsvariablen <span class="math inline">\(q\)</span>, einem Populationsmittel <span class="math inline">\(\mu\)</span> und einer Populationsstandardabweichung <span class="math inline">\(\sigma\)</span> zurück.</p>
+<p>In der Standardnormalverteilung ist die Fläche unter der Kurve gleich 1. Daher kannst du dir die Fläche unter der Kurve auch als eine Wahrscheinlichkeit vorstellen. Mit der Idee Wahrscheinlichkeit gleich Fläche kannst du dir dann auch merken, dass die Funktion <span class="math inline">\(pnorm()\)</span> die Fläche berechnet. Das <span class="math inline">\(p\)</span> steht dann für <em>probability</em>.</p>
+<p>Hier dann auch einmal die Funktion für die x-Werte von <span class="math inline">\(-3\)</span> bis <span class="math inline">\(3\)</span> in <span class="math inline">\(0.1\)</span> Schritten. Du kannst gut erkennen wie sich die Fläche dann auf 1 aufaddiert. Auch macht es vollkommen Sinn, dass wir bei einem x-Wert von 0 die Hälfte der Fläche erreicht haben. Immerhin definiert der Mittelwert die Mitte der Normalverteilung, so dass wir dann auch erwarten, dass die Hälfte der Fläche bei dem x-Wert gleich dem Mittelwert erreicht ist.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggdistribution</span>(pnorm, <span class="fu">seq</span>(<span class="sc">-</span><span class="dv">3</span>, <span class="dv">3</span>, <span class="fl">0.1</span>), <span class="at">mean =</span> <span class="dv">0</span>, <span class="at">sd =</span> <span class="dv">1</span>) <span class="sc">+</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
