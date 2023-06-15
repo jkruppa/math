@@ -11,8 +11,9 @@ crossref:
 
 book:
   title: "Skript Mathematik"
+  subtitle: "Der kleine Leitfaden"
   author: "Prof. Dr. Jochen Kruppa"
-  date: "25. March 2023"
+  date: "15. June 2023"
   cover-image: cover.png
   chapters:
     - index.qmd
