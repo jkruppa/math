@@ -19,23 +19,19 @@ Das tolle Buch von Jonathan Weisberg ist online zu finden unter <https://jonatha
 ## Baumdiagramme und Pfadregeln
 
 ```{mermaid}
-flowchart LR
-  A[Hard edge] --> B(Round edge)
-  B --> C{Decision}
-  C --> D[Result one]
-  C --> E[Result two]
-```
-
-```{mermaid}
-flowchart LR
+graph LR
   A(Text) -->|text| B{Decision}
   B -- test --> C{Result one}
   B -->|text| D{Result two}
+  subgraph title [foo]
   C -->|text| E((Test))
   C -->|text| F(test)
   D -->|text| G(sdsd)
   D -->|text| H(dsdsd)
+  end
 ```
+
+
 
 
 Multiplikationsregel

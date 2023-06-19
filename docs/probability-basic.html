@@ -60,6 +60,7 @@ ul.task-list li input[type="checkbox"] {
     "search-submit-button-title": "Abschicken"
   }
 }</script>
+<meta name="mermaid-theme" content="default">
 <script src="site_libs/quarto-diagram/mermaid.min.js"></script>
 <script src="site_libs/quarto-diagram/mermaid-init.js"></script>
 <link href="site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
@@ -256,7 +257,7 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p><em>Version vom June 19, 2023 um 11:44:15</em></p>
+<p><em>Version vom June 19, 2023 um 11:56:39</em></p>
 <blockquote class="blockquote">
 <p><em>“Die wichtigsten Fragen des Lebens sind in der Tat größtenteils nur Wahrscheinlichkeitsprobleme.” — Pierre-Simon Laplace</em></p>
 </blockquote>
@@ -278,28 +279,16 @@ ul.task-list li input[type="checkbox"] {
 <div class="cell-output-display">
 <div>
 <div>
-<pre class="mermaid mermaid-js">flowchart LR
-  A[Hard edge] --&gt; B(Round edge)
-  B --&gt; C{Decision}
-  C --&gt; D[Result one]
-  C --&gt; E[Result two]
-</pre>
-</div>
-</div>
-</div>
-</div>
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<div>
-<pre class="mermaid mermaid-js">flowchart LR
+<pre class="mermaid mermaid-js">graph LR
   A(Text) --&gt;|text| B{Decision}
   B -- test --&gt; C{Result one}
   B --&gt;|text| D{Result two}
+  subgraph title [foo]
   C --&gt;|text| E((Test))
   C --&gt;|text| F(test)
   D --&gt;|text| G(sdsd)
   D --&gt;|text| H(dsdsd)
+  end
 </pre>
 </div>
 </div>
