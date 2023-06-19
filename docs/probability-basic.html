@@ -257,7 +257,7 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p><em>Version vom June 19, 2023 um 11:59:40</em></p>
+<p><em>Version vom June 19, 2023 um 15:50:12</em></p>
 <blockquote class="blockquote">
 <p><em>“Die wichtigsten Fragen des Lebens sind in der Tat größtenteils nur Wahrscheinlichkeitsprobleme.” — Pierre-Simon Laplace</em></p>
 </blockquote>
@@ -275,19 +275,23 @@ ul.task-list li input[type="checkbox"] {
 <p>Das tolle Buch von Jonathan Weisberg ist online zu finden unter <a href="https://jonathanweisberg.org/vip/" class="uri">https://jonathanweisberg.org/vip/</a>. Ein Buch über Wahrscheinlichkeiten, welches wunderbar zu lesen ist. Ich habe teilweise Beispiele aus dem Buch verwendet und darüber hinaus finde ich es sehr spannend zu lesen.</p>
 <section id="baumdiagramme-und-pfadregeln" class="level2" data-number="10.1">
 <h2 data-number="10.1" class="anchored" data-anchor-id="baumdiagramme-und-pfadregeln"><span class="header-section-number">10.1</span> Baumdiagramme und Pfadregeln</h2>
-<div class="cell">
+<p><a href="#fig-diag-0">Abbildung&nbsp;<span>10.1</span></a></p>
+<div class="cell" data-fig-width="6.5">
 <div class="cell-output-display">
+<div id="fig-diag-0" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
 <div>
-<div>
-<pre class="mermaid mermaid-js">graph LR
-  B((Foo)) -- 0.7 --&gt; C((foo))
-  B --&gt;|0.3| D((doo))
-  C --&gt;|0.4| E((Test))
-  C --&gt;|0.6| F((test))
-  D --&gt;|0.1| G((sdsd))
-  D --&gt;|0.9| H((dsdsd))
+<pre class="mermaid mermaid-js" data-label="fig-diag-0">graph TB
+  A(( )) --&gt;|0.7| B((A))
+  A --&gt;|0.3| C((B))
+  B --&gt;|0.4| D((A))
+  B --&gt;|0.6| E((B))
+  C --&gt;|0.1| F((A))
+  C --&gt;|0.9| G((B))
 </pre>
 </div>
+<figcaption class="figure-caption">Abbildung&nbsp;10.1— test</figcaption>
+</figure>
 </div>
 </div>
 </div>

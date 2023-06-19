@@ -18,18 +18,20 @@ Das tolle Buch von Jonathan Weisberg ist online zu finden unter <https://jonatha
 
 ## Baumdiagramme und Pfadregeln
 
+@fig-diag-0
+
 ```{mermaid}
-graph LR
-  B((Foo)) -- 0.7 --> C((foo))
-  B -->|0.3| D((doo))
-  C -->|0.4| E((Test))
-  C -->|0.6| F((test))
-  D -->|0.1| G((sdsd))
-  D -->|0.9| H((dsdsd))
+%%| fig-width: 6.5
+%%| fig-cap: "test"
+%%| label: fig-diag-0
+graph TB
+  A(( )) -->|0.7| B((A))
+  A -->|0.3| C((B))
+  B -->|0.4| D((A))
+  B -->|0.6| E((B))
+  C -->|0.1| F((A))
+  C -->|0.9| G((B))
 ```
-
-
-
 
 Multiplikationsregel
 
