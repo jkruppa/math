@@ -257,7 +257,7 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p><em>Version vom June 19, 2023 um 11:56:39</em></p>
+<p><em>Version vom June 19, 2023 um 11:59:40</em></p>
 <blockquote class="blockquote">
 <p><em>“Die wichtigsten Fragen des Lebens sind in der Tat größtenteils nur Wahrscheinlichkeitsprobleme.” — Pierre-Simon Laplace</em></p>
 </blockquote>
@@ -280,15 +280,12 @@ ul.task-list li input[type="checkbox"] {
 <div>
 <div>
 <pre class="mermaid mermaid-js">graph LR
-  A(Text) --&gt;|text| B{Decision}
-  B -- test --&gt; C{Result one}
-  B --&gt;|text| D{Result two}
-  subgraph title [foo]
-  C --&gt;|text| E((Test))
-  C --&gt;|text| F(test)
-  D --&gt;|text| G(sdsd)
-  D --&gt;|text| H(dsdsd)
-  end
+  B((Foo)) -- 0.7 --&gt; C((foo))
+  B --&gt;|0.3| D((doo))
+  C --&gt;|0.4| E((Test))
+  C --&gt;|0.6| F((test))
+  D --&gt;|0.1| G((sdsd))
+  D --&gt;|0.9| H((dsdsd))
 </pre>
 </div>
 </div>

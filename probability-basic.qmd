@@ -20,15 +20,12 @@ Das tolle Buch von Jonathan Weisberg ist online zu finden unter <https://jonatha
 
 ```{mermaid}
 graph LR
-  A(Text) -->|text| B{Decision}
-  B -- test --> C{Result one}
-  B -->|text| D{Result two}
-  subgraph title [foo]
-  C -->|text| E((Test))
-  C -->|text| F(test)
-  D -->|text| G(sdsd)
-  D -->|text| H(dsdsd)
-  end
+  B((Foo)) -- 0.7 --> C((foo))
+  B -->|0.3| D((doo))
+  C -->|0.4| E((Test))
+  C -->|0.6| F((test))
+  D -->|0.1| G((sdsd))
+  D -->|0.9| H((dsdsd))
 ```
 
 
