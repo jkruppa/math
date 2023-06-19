@@ -318,22 +318,22 @@
     "objectID": "probability-basic.html#mengenschreibweise",
     "href": "probability-basic.html#mengenschreibweise",
     "title": "10  Berechnungen mit Wahrscheinlichkeiten",
-    "section": "10.3 Mengenschreibweise",
-    "text": "10.3 Mengenschreibweise\nIn Tabelle 10.1\n\n\nTabelle 10.1— Test\n\n\n\n\nMengenschreibweise\nTyp\n\n\n\n\n\\([a,b]\\)\n\\([a,b]\\)\n\\(\\{x|a≤x≤b\\}\\)\ngeschlossen\n\n\n\\(]a,b[\\)\n\\((a,b)\\)\n\\(\\{x|a&lt;x&lt;b\\}\\)\noffen\n\n\n\\([a,b[\\)\n\\([a,b)\\)\n\\(\\{x|a≤x&lt;b\\}\\)\nhalboffen / rechtsoffen\n\n\n\\(]a,b]\\)\n\\((a,b]\\)\n\\(\\{x|a&lt;x≤b\\}\\)\nhalboffen / linksoffen"
+    "section": "10.2 Mengenschreibweise",
+    "text": "10.2 Mengenschreibweise\nIn Tabelle 10.1\n\n\nTabelle 10.1— Test\n\n\n\n\nMengenschreibweise\nTyp\n\n\n\n\n\\([a,b]\\)\n\\([a,b]\\)\n\\(\\{x|a≤x≤b\\}\\)\ngeschlossen\n\n\n\\(]a,b[\\)\n\\((a,b)\\)\n\\(\\{x|a&lt;x&lt;b\\}\\)\noffen\n\n\n\\([a,b[\\)\n\\([a,b)\\)\n\\(\\{x|a≤x&lt;b\\}\\)\nhalboffen / rechtsoffen\n\n\n\\(]a,b]\\)\n\\((a,b]\\)\n\\(\\{x|a&lt;x≤b\\}\\)\nhalboffen / linksoffen"
   },
   {
     "objectID": "probability-basic.html#logische-operatoren",
     "href": "probability-basic.html#logische-operatoren",
     "title": "10  Berechnungen mit Wahrscheinlichkeiten",
-    "section": "10.4 Logische Operatoren",
-    "text": "10.4 Logische Operatoren\nUnd \\(\\cap\\)\nOder \\(\\cup\\)\nIn Tabelle 10.2\n\n\nTabelle 10.2— Test\n\n\n\n\n\n\n\nAbbildung\n\nBedeutung\n\n\n\n\n\n\\(A \\cup B\\)\n\\(A\\) tritt ein oder \\(B\\) tritt ein\n\n\n\n\\(A \\cap B\\)\n\\(A\\) trit ein und \\(B\\) tritt ein\n\n\n\n\\(A \\setminus B\\)\n\\(A\\) tritt ein, aber \\(B\\) tritt nicht ein\n\n\n\n\\(\\bar{A} = \\Omega \\setminus A\\)\n\\(A\\) tritt nicht ein\n\n\n\n\\(A \\cup B\\)\nEntweder \\(A\\) ein oder \\(B\\) tritt ein oder keins von beiden\n\n\n\n\\(B \\subset A\\)\n\\(B\\) ist Teilmenge von \\(A\\)"
+    "section": "10.3 Logische Operatoren",
+    "text": "10.3 Logische Operatoren\nUnd \\(\\cap\\)\nOder \\(\\cup\\)\nIn Tabelle 10.2\n\n\nTabelle 10.2— Test\n\n\n\n\n\n\n\nAbbildung\n\nBedeutung\n\n\n\n\n\n\\(A \\cup B\\)\n\\(A\\) tritt ein oder \\(B\\) tritt ein\n\n\n\n\\(A \\cap B\\)\n\\(A\\) trit ein und \\(B\\) tritt ein\n\n\n\n\\(A \\setminus B\\)\n\\(A\\) tritt ein, aber \\(B\\) tritt nicht ein\n\n\n\n\\(\\bar{A} = \\Omega \\setminus A\\)\n\\(A\\) tritt nicht ein\n\n\n\n\\(A \\cup B\\)\nEntweder \\(A\\) ein oder \\(B\\) tritt ein oder keins von beiden\n\n\n\n\\(B \\subset A\\)\n\\(B\\) ist Teilmenge von \\(A\\)"
   },
   {
     "objectID": "probability-basic.html#sec-prob-cond",
     "href": "probability-basic.html#sec-prob-cond",
     "title": "10  Berechnungen mit Wahrscheinlichkeiten",
-    "section": "10.5 Bedingte Wahrscheinlichkeiten",
-    "text": "10.5 Bedingte Wahrscheinlichkeiten"
+    "section": "10.4 Bedingte Wahrscheinlichkeiten",
+    "text": "10.4 Bedingte Wahrscheinlichkeiten"
   },
   {
     "objectID": "probability-distribution.html",
@@ -346,8 +346,8 @@
     "objectID": "probability-basic.html#baumdiagramme-und-pfadregeln",
     "href": "probability-basic.html#baumdiagramme-und-pfadregeln",
     "title": "10  Berechnungen mit Wahrscheinlichkeiten",
-    "section": "10.2 Baumdiagramme und Pfadregeln",
-    "text": "10.2 Baumdiagramme und Pfadregeln\n\n10.2.1 1. Pfadregel (Multiplikationsregel)\n\n\n10.2.2 2. Pfadregel (Additionsregel)\nhttps://3.vobs.at/maturawiki/index.php/Wahrscheinlichkeit:_Baumdiagramme_und_Pfadregeln\nText\n\\(Pr(A) = 2/3\\)\n\\(Pr(K_1) \\cap \\cup Pr(K_2)\\)\n\\[\n\\begin{aligned}\nPr(K_1 \\cap K_2) &= Pr(K_1) \\times Pr(K_2) \\\\\n               &= 1/2 \\times 1/2 \\\\\n               &= 1/4\n\\end{aligned}\n\\]"
+    "section": "10.1 Baumdiagramme und Pfadregeln",
+    "text": "10.1 Baumdiagramme und Pfadregeln\n\n\n\n\nflowchart LR\n  A[Hard edge] --&gt; B(Round edge)\n  B --&gt; C{Decision}\n  C --&gt; D[Result one]\n  C --&gt; E[Result two]\n\n\n\n\n\n\n\n\n\nflowchart LR\n  A(Text) --&gt;|text| B{Decision}\n  B -- test --&gt; C{Result one}\n  B --&gt;|text| D{Result two}\n  C --&gt;|text| E((Test))\n  C --&gt;|text| F(test)\n  D --&gt;|text| G(sdsd)\n  D --&gt;|text| H(dsdsd)\n\n\n\n\n\nMultiplikationsregel\nMultiplikationsregel (UND-Regel): Sind zwei Ereignisse A und B unabhängig voneinander, dann gilt für die Wahrscheinlichkeit, dass beide zusammen auftreten: \\(Pr(A \\cap B) = Pr(A) \\cdot Pr(B)\\) Die Wahrscheinlichkeit, dass A und B zusammen auftreten ist \\(Pr(A)\\) mal \\(Pr(B)\\). Es wird zweimal hintereinander mit einem Würfel geworfen.\nAdditionsregel\nhttps://3.vobs.at/maturawiki/index.php/Wahrscheinlichkeit:_Baumdiagramme_und_Pfadregeln\nText\n\\(Pr(A) = 2/3\\)\n\\(Pr(K_1) \\cap \\cup Pr(K_2)\\)\n\\[\n\\begin{aligned}\nPr(K_1 \\cap K_2) &= Pr(K_1) \\times Pr(K_2) \\\\\n               &= 1/2 \\times 1/2 \\\\\n               &= 1/4\n\\end{aligned}\n\\]"
   },
   {
     "objectID": "probability-basic.html#odds-ends",

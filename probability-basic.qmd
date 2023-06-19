@@ -10,17 +10,39 @@ pacman::p_load(tidyverse, readxl, knitr, kableExtra, Hmisc)
 
 ![](images/caution.png){fig-align="center" width="50%"}
 
-## Odds & Ends
+Eigentlich habe ich in diesem sehr kurzen Leitfaden zur Mathematik nur eine echte Literaturempfehlung im Bereich der Wahrscheinlichkeitsrechnung und das ist das Buch von Jonathan Weisberg.
 
 ![](images/odds_and_ends.PNG){fig-align="center"}
 
-Ein tolles online Buch von Jonathan Weisberg zu finden unter <https://jonathanweisberg.org/vip/>. Ein Buch über Wahrscheinlichkeiten, welches wunderbar zu lesen ist. Ich habe teilweise Beispiele aus dem Buch verwendet und darüber hinaus finde ich es sehr spannend zu lesen. 
+Das tolle Buch von Jonathan Weisberg ist online zu finden unter <https://jonathanweisberg.org/vip/>. Ein Buch über Wahrscheinlichkeiten, welches wunderbar zu lesen ist. Ich habe teilweise Beispiele aus dem Buch verwendet und darüber hinaus finde ich es sehr spannend zu lesen. 
 
 ## Baumdiagramme und Pfadregeln
 
-### 1. Pfadregel (Multiplikationsregel)
+```{mermaid}
+flowchart LR
+  A[Hard edge] --> B(Round edge)
+  B --> C{Decision}
+  C --> D[Result one]
+  C --> E[Result two]
+```
 
-### 2. Pfadregel (Additionsregel)
+```{mermaid}
+flowchart LR
+  A(Text) -->|text| B{Decision}
+  B -- test --> C{Result one}
+  B -->|text| D{Result two}
+  C -->|text| E((Test))
+  C -->|text| F(test)
+  D -->|text| G(sdsd)
+  D -->|text| H(dsdsd)
+```
+
+
+Multiplikationsregel
+
+Multiplikationsregel (UND-Regel): Sind zwei Ereignisse A und B unabhängig voneinander, dann gilt für die Wahrscheinlichkeit, dass beide zusammen auftreten: $Pr(A \cap B) = Pr(A) \cdot Pr(B)$ Die Wahrscheinlichkeit, dass A und B zusammen auftreten ist $Pr(A)$ mal $Pr(B)$. Es wird zweimal hintereinander mit einem Würfel geworfen.
+
+Additionsregel
 
 
 https://3.vobs.at/maturawiki/index.php/Wahrscheinlichkeit:_Baumdiagramme_und_Pfadregeln
