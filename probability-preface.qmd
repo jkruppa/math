@@ -6,6 +6,8 @@ pacman::p_load(tidyverse, readxl, knitr, kableExtra, Hmisc)
 
 *Version vom `r format(Sys.time(), '%B %d, %Y um %H:%M:%S')`*
 
+> *"In keinem anderen Zweig der Mathematik ist es für Experten so leicht, sich zu vertun wie in der Wahrscheinlichkeitsrechnung." --- Martin Gardner*
+
 ![](images/caution.png){fig-align="center" width="50%"}
 
 

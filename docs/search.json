@@ -305,7 +305,7 @@
     "href": "probability-preface.html",
     "title": "Von Wahrscheinlichkeiten",
     "section": "",
-    "text": "Version vom March 17, 2023 um 10:13:05"
+    "text": "Version vom June 19, 2023 um 07:59:31\n\n“In keinem anderen Zweig der Mathematik ist es für Experten so leicht, sich zu vertun wie in der Wahrscheinlichkeitsrechnung.” — Martin Gardner"
   },
   {
     "objectID": "probability-basic.html#regeln",
@@ -319,7 +319,7 @@
     "href": "probability-basic.html#mengenschreibweise",
     "title": "10  Berechnungen mit Wahrscheinlichkeiten",
     "section": "10.3 Mengenschreibweise",
-    "text": "10.3 Mengenschreibweise\nIn Tabelle 10.1\n\n\nTabelle 10.1— Test\n\n\n\n\nMengenschreibweise\nTyp\n\n\n\n\n\\([a,b]\\)\n\\([a,b]\\)\n\\(\\{x|a≤x≤b\\}\\)\ngeschlossen\n\n\n\\(]a,b[\\)\n\\((a,b)\\)\n\\(\\{x|a<x<b\\}\\)\noffen\n\n\n\\([a,b[\\)\n\\([a,b)\\)\n\\(\\{x|a≤x<b\\}\\)\nhalboffen / rechtsoffen\n\n\n\\(]a,b]\\)\n\\((a,b]\\)\n\\(\\{x|a<x≤b\\}\\)\nhalboffen / linksoffen"
+    "text": "10.3 Mengenschreibweise\nIn Tabelle 10.1\n\n\nTabelle 10.1— Test\n\n\n\n\nMengenschreibweise\nTyp\n\n\n\n\n\\([a,b]\\)\n\\([a,b]\\)\n\\(\\{x|a≤x≤b\\}\\)\ngeschlossen\n\n\n\\(]a,b[\\)\n\\((a,b)\\)\n\\(\\{x|a&lt;x&lt;b\\}\\)\noffen\n\n\n\\([a,b[\\)\n\\([a,b)\\)\n\\(\\{x|a≤x&lt;b\\}\\)\nhalboffen / rechtsoffen\n\n\n\\(]a,b]\\)\n\\((a,b]\\)\n\\(\\{x|a&lt;x≤b\\}\\)\nhalboffen / linksoffen"
   },
   {
     "objectID": "probability-basic.html#logische-operatoren",

@@ -6,6 +6,8 @@ pacman::p_load(tidyverse, readxl, knitr, kableExtra, Hmisc)
 
 *Version vom `r format(Sys.time(), '%B %d, %Y um %H:%M:%S')`*
 
+> *"Die wichtigsten Fragen des Lebens sind in der Tat größtenteils nur Wahrscheinlichkeitsprobleme." --- Pierre-Simon Laplace*
+
 ![](images/caution.png){fig-align="center" width="50%"}
 
 ## Odds & Ends
