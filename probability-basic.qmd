@@ -20,6 +20,9 @@ Das tolle Buch von Jonathan Weisberg ist online zu finden unter <https://jonatha
 
 @fig-diag-0
 
+
+
+
 ```{mermaid}
 %%| fig-width: 6.5
 %%| fig-cap: "test"
@@ -40,7 +43,6 @@ Multiplikationsregel (UND-Regel): Sind zwei Ereignisse A und B unabhängig vonei
 Additionsregel
 
 
-https://3.vobs.at/maturawiki/index.php/Wahrscheinlichkeit:_Baumdiagramme_und_Pfadregeln
 
 
 
