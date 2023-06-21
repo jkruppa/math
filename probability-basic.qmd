@@ -20,8 +20,15 @@ Das tolle Buch von Jonathan Weisberg ist online zu finden unter <https://jonatha
 
 @fig-diag-0
 
+Um ein Baumdiagramm zu erstellen, gehst Du so vor:
+
+Es gibt einen Startpunkt, also die Wurzel oder auch der Ausgangspunkt, von dem so viele Äste abgehen, wie es in der ersten Stufe Deines Zufallsexperiments Ereignisse gibt. Diese schreibst Du an das Ende des jeweiligen Astes.
+Das Ende jeden Astes stellt einen neuen Verzweigungspunkt dar, von dem alle in der nächsten Stufe möglichen Ereignisse abgehen. Nach der 1. Stufe ergeben sich zum Beispiel die 1. Verzweigungspunkte. Dort kannst Du die jeweiligen Zwischenergebnisse eintragen. Analog funktioniert das für alle weiteren Stufen.
+Der Weg vom Anfang bis zu einem der Enden wird als Pfad bezeichnet. Am Ende eines Pfades steht das Endergebnis und somit stellt das Ende auch keinen Verzweigungspunkt mehr dar.
+Jeder Pfad beschreibt ein Ereignis des gesamten mehrstufigen Zufallsexperiments.
 
 
+![Ande.](images/prob_baum_01.png){#fig-prob-baum-01 fig-align="center" width="100%"}
 
 ```{mermaid}
 %%| fig-width: 6.5

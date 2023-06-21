@@ -257,7 +257,7 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p><em>Version vom June 20, 2023 um 10:26:16</em></p>
+<p><em>Version vom June 20, 2023 um 20:53:30</em></p>
 <blockquote class="blockquote">
 <p><em>“Die wichtigsten Fragen des Lebens sind in der Tat größtenteils nur Wahrscheinlichkeitsprobleme.” — Pierre-Simon Laplace</em></p>
 </blockquote>
@@ -275,7 +275,15 @@ ul.task-list li input[type="checkbox"] {
 <p>Das tolle Buch von Jonathan Weisberg ist online zu finden unter <a href="https://jonathanweisberg.org/vip/" class="uri">https://jonathanweisberg.org/vip/</a>. Ein Buch über Wahrscheinlichkeiten, welches wunderbar zu lesen ist. Ich habe teilweise Beispiele aus dem Buch verwendet und darüber hinaus finde ich es sehr spannend zu lesen.</p>
 <section id="baumdiagramme-und-pfadregeln" class="level2" data-number="10.1">
 <h2 data-number="10.1" class="anchored" data-anchor-id="baumdiagramme-und-pfadregeln"><span class="header-section-number">10.1</span> Baumdiagramme und Pfadregeln</h2>
-<p><a href="#fig-diag-0">Abbildung&nbsp;<span>10.1</span></a></p>
+<p><a href="#fig-diag-0">Abbildung&nbsp;<span>10.2</span></a></p>
+<p>Um ein Baumdiagramm zu erstellen, gehst Du so vor:</p>
+<p>Es gibt einen Startpunkt, also die Wurzel oder auch der Ausgangspunkt, von dem so viele Äste abgehen, wie es in der ersten Stufe Deines Zufallsexperiments Ereignisse gibt. Diese schreibst Du an das Ende des jeweiligen Astes. Das Ende jeden Astes stellt einen neuen Verzweigungspunkt dar, von dem alle in der nächsten Stufe möglichen Ereignisse abgehen. Nach der 1. Stufe ergeben sich zum Beispiel die 1. Verzweigungspunkte. Dort kannst Du die jeweiligen Zwischenergebnisse eintragen. Analog funktioniert das für alle weiteren Stufen. Der Weg vom Anfang bis zu einem der Enden wird als Pfad bezeichnet. Am Ende eines Pfades steht das Endergebnis und somit stellt das Ende auch keinen Verzweigungspunkt mehr dar. Jeder Pfad beschreibt ein Ereignis des gesamten mehrstufigen Zufallsexperiments.</p>
+<div id="fig-prob-baum-01" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="images/prob_baum_01.png" class="img-fluid figure-img" style="width:100.0%"></p>
+<figcaption class="figure-caption">Abbildung&nbsp;10.1— Ande.</figcaption>
+</figure>
+</div>
 <div class="cell" data-fig-width="6.5">
 <div class="cell-output-display">
 <div id="fig-diag-0" class="quarto-figure quarto-figure-center anchored">
@@ -290,7 +298,7 @@ ul.task-list li input[type="checkbox"] {
   C --&gt;|0.9| G((B))
 </pre>
 </div>
-<figcaption class="figure-caption">Abbildung&nbsp;10.1— test</figcaption>
+<figcaption class="figure-caption">Abbildung&nbsp;10.2— test</figcaption>
 </figure>
 </div>
 </div>
