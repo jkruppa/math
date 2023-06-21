@@ -20,7 +20,7 @@ Das tolle Buch von Jonathan Weisberg ist online zu finden unter <https://jonatha
 
 Schauen wir uns in @fig-prob-baum-01 einmal einen theoretischen Wahrscheinlichkeitsbaum an.
 
-- Bei einem Baumdiagramm gibt es einen Startpunkt. Der Startpunkt wird auch Wurzel (eng. *root*) genannt oder aber auch als Ausgangspunkt bezeichnet.
+- Bei einem Baumdiagramm gibt es einen Startpunkt. Der Startpunkt wird auch Wurzel (eng. *root*) genannt oder aber auch als Ausgangspunkt bezeichnet. Wie immer gibt es für den gleichen Sachverhalt verschiedene Begrifflichkeiten.
 - Von dem Startpunkt gehen so viele Äste ab, wie es in der ersten Stufe deines Zufallsexperiments Ereignisse gibt. Das Ereignis schreibst Du an das Ende des jeweiligen Astes. Meistens haben wir es mit einem Ereignis $A$ und dem Gegenereignis $\bar{A}$ zu tun.
 - Das Ende jeden Astes stellt einen neuen Verzweigungspunkt dar, von dem alle in der nächsten Stufe möglichen Ereignisse abgehen. Dort kannst du die jeweiligen Zwischenergebnisse eintragen. Analog funktioniert das für alle weiteren Stufen. Meistens haben wir aber nur die Verkettung von zwei Ereignissen.
 - Die Summe der Wahrscheinlichkeiten der Ereignisse auf einer Ebene des Baumdiagramms addiert sich zu 1 auf. Daher ist die Summe der Wahrscheinlichkeiten der Ereignisse $A$ und dem Gegenereignis $\bar{A}$ gleich 1.
