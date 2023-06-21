@@ -60,10 +60,6 @@ ul.task-list li input[type="checkbox"] {
     "search-submit-button-title": "Abschicken"
   }
 }</script>
-<meta name="mermaid-theme" content="default">
-<script src="site_libs/quarto-diagram/mermaid.min.js"></script>
-<script src="site_libs/quarto-diagram/mermaid-init.js"></script>
-<link href="site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -257,7 +253,7 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p><em>Version vom June 20, 2023 um 20:53:30</em></p>
+<p><em>Version vom June 21, 2023 um 09:38:58</em></p>
 <blockquote class="blockquote">
 <p><em>“Die wichtigsten Fragen des Lebens sind in der Tat größtenteils nur Wahrscheinlichkeitsprobleme.” — Pierre-Simon Laplace</em></p>
 </blockquote>
@@ -275,33 +271,20 @@ ul.task-list li input[type="checkbox"] {
 <p>Das tolle Buch von Jonathan Weisberg ist online zu finden unter <a href="https://jonathanweisberg.org/vip/" class="uri">https://jonathanweisberg.org/vip/</a>. Ein Buch über Wahrscheinlichkeiten, welches wunderbar zu lesen ist. Ich habe teilweise Beispiele aus dem Buch verwendet und darüber hinaus finde ich es sehr spannend zu lesen.</p>
 <section id="baumdiagramme-und-pfadregeln" class="level2" data-number="10.1">
 <h2 data-number="10.1" class="anchored" data-anchor-id="baumdiagramme-und-pfadregeln"><span class="header-section-number">10.1</span> Baumdiagramme und Pfadregeln</h2>
-<p><a href="#fig-diag-0">Abbildung&nbsp;<span>10.2</span></a></p>
-<p>Um ein Baumdiagramm zu erstellen, gehst Du so vor:</p>
-<p>Es gibt einen Startpunkt, also die Wurzel oder auch der Ausgangspunkt, von dem so viele Äste abgehen, wie es in der ersten Stufe Deines Zufallsexperiments Ereignisse gibt. Diese schreibst Du an das Ende des jeweiligen Astes. Das Ende jeden Astes stellt einen neuen Verzweigungspunkt dar, von dem alle in der nächsten Stufe möglichen Ereignisse abgehen. Nach der 1. Stufe ergeben sich zum Beispiel die 1. Verzweigungspunkte. Dort kannst Du die jeweiligen Zwischenergebnisse eintragen. Analog funktioniert das für alle weiteren Stufen. Der Weg vom Anfang bis zu einem der Enden wird als Pfad bezeichnet. Am Ende eines Pfades steht das Endergebnis und somit stellt das Ende auch keinen Verzweigungspunkt mehr dar. Jeder Pfad beschreibt ein Ereignis des gesamten mehrstufigen Zufallsexperiments.</p>
+<p>Schauen wir uns in <a href="#fig-prob-baum-01">Abbildung&nbsp;<span>10.1</span></a> einmal einen theoretischen Wahrscheinlichkeitsbaum an.</p>
+<ul>
+<li>Bei einem Baumdiagramm gibt es einen Startpunkt. Der Startpunkt wird auch Wurzel (eng. <em>root</em>) genannt oder aber auch als Ausgangspunkt bezeichnet.</li>
+<li>Von dem Startpunkt gehen so viele Äste ab, wie es in der ersten Stufe deines Zufallsexperiments Ereignisse gibt. Das Ereignis schreibst Du an das Ende des jeweiligen Astes. Meistens haben wir es mit einem Ereignis <span class="math inline">\(A\)</span> und dem Gegenereignis <span class="math inline">\(\bar{A}\)</span> zu tun.</li>
+<li>Das Ende jeden Astes stellt einen neuen Verzweigungspunkt dar, von dem alle in der nächsten Stufe möglichen Ereignisse abgehen. Dort kannst du die jeweiligen Zwischenergebnisse eintragen. Analog funktioniert das für alle weiteren Stufen. Meistens haben wir aber nur die Verkettung von zwei Ereignissen.</li>
+<li>Die Summe der Wahrscheinlichkeiten der Ereignisse auf einer Ebene des Baumdiagramms addiert sich zu 1 auf. Daher ist die Summe der Wahrscheinlichkeiten der Ereignisse <span class="math inline">\(A\)</span> und dem Gegenereignis <span class="math inline">\(\bar{A}\)</span> gleich 1.</li>
+<li>Der Weg vom Startpunkt bis zu einem der Enden wird als Pfad bezeichnet. Am Ende eines Pfades steht das Endergebnis und somit stellt das Ende auch keinen Verzweigungspunkt mehr dar.</li>
+<li>Jeder Pfad beschreibt ein Ereignis des gesamten mehrstufigen Zufallsexperiments. Jeder Verzweigungspunkt ein Zwischenereignis.</li>
+</ul>
 <div id="fig-prob-baum-01" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="images/prob_baum_01.png" class="img-fluid figure-img" style="width:100.0%"></p>
-<figcaption class="figure-caption">Abbildung&nbsp;10.1— Ande.</figcaption>
+<figcaption class="figure-caption">Abbildung&nbsp;10.1— Schematische Abbilung eines Wahrscheinlichkeitsbaum mit den Ereignissen <span class="math inline">\(A\)</span> und <span class="math inline">\(B\)</span> sowie deren Gegenereignis <span class="math inline">\(\bar{A}\)</span> und <span class="math inline">\(\bar{B}\)</span>.</figcaption>
 </figure>
-</div>
-<div class="cell" data-fig-width="6.5">
-<div class="cell-output-display">
-<div id="fig-diag-0" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<div>
-<pre class="mermaid mermaid-js" data-label="fig-diag-0">graph TB
-  A(( )) --&gt;|0.7| B((A))
-  A --&gt;|0.3| C((B))
-  B --&gt;|0.4| D((A))
-  B --&gt;|0.6| E((B))
-  C --&gt;|0.1| F((A))
-  C --&gt;|0.9| G((B))
-</pre>
-</div>
-<figcaption class="figure-caption">Abbildung&nbsp;10.2— test</figcaption>
-</figure>
-</div>
-</div>
 </div>
 <p>Multiplikationsregel</p>
 <p>Multiplikationsregel (UND-Regel): Sind zwei Ereignisse A und B unabhängig voneinander, dann gilt für die Wahrscheinlichkeit, dass beide zusammen auftreten: <span class="math inline">\(Pr(A \cap B) = Pr(A) \cdot Pr(B)\)</span> Die Wahrscheinlichkeit, dass A und B zusammen auftreten ist <span class="math inline">\(Pr(A)\)</span> mal <span class="math inline">\(Pr(B)\)</span>. Es wird zweimal hintereinander mit einem Würfel geworfen.</p>

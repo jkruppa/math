@@ -18,30 +18,18 @@ Das tolle Buch von Jonathan Weisberg ist online zu finden unter <https://jonatha
 
 ## Baumdiagramme und Pfadregeln
 
-@fig-diag-0
+Schauen wir uns in @fig-prob-baum-01 einmal einen theoretischen Wahrscheinlichkeitsbaum an.
 
-Um ein Baumdiagramm zu erstellen, gehst Du so vor:
+- Bei einem Baumdiagramm gibt es einen Startpunkt. Der Startpunkt wird auch Wurzel (eng. *root*) genannt oder aber auch als Ausgangspunkt bezeichnet.
+- Von dem Startpunkt gehen so viele Äste ab, wie es in der ersten Stufe deines Zufallsexperiments Ereignisse gibt. Das Ereignis schreibst Du an das Ende des jeweiligen Astes. Meistens haben wir es mit einem Ereignis $A$ und dem Gegenereignis $\bar{A}$ zu tun.
+- Das Ende jeden Astes stellt einen neuen Verzweigungspunkt dar, von dem alle in der nächsten Stufe möglichen Ereignisse abgehen. Dort kannst du die jeweiligen Zwischenergebnisse eintragen. Analog funktioniert das für alle weiteren Stufen. Meistens haben wir aber nur die Verkettung von zwei Ereignissen.
+- Die Summe der Wahrscheinlichkeiten der Ereignisse auf einer Ebene des Baumdiagramms addiert sich zu 1 auf. Daher ist die Summe der Wahrscheinlichkeiten der Ereignisse $A$ und dem Gegenereignis $\bar{A}$ gleich 1.
+- Der Weg vom Startpunkt bis zu einem der Enden wird als Pfad bezeichnet. Am Ende eines Pfades steht das Endergebnis und somit stellt das Ende auch keinen Verzweigungspunkt mehr dar.
+- Jeder Pfad beschreibt ein Ereignis des gesamten mehrstufigen Zufallsexperiments. Jeder Verzweigungspunkt ein Zwischenereignis.
 
-Es gibt einen Startpunkt, also die Wurzel oder auch der Ausgangspunkt, von dem so viele Äste abgehen, wie es in der ersten Stufe Deines Zufallsexperiments Ereignisse gibt. Diese schreibst Du an das Ende des jeweiligen Astes.
-Das Ende jeden Astes stellt einen neuen Verzweigungspunkt dar, von dem alle in der nächsten Stufe möglichen Ereignisse abgehen. Nach der 1. Stufe ergeben sich zum Beispiel die 1. Verzweigungspunkte. Dort kannst Du die jeweiligen Zwischenergebnisse eintragen. Analog funktioniert das für alle weiteren Stufen.
-Der Weg vom Anfang bis zu einem der Enden wird als Pfad bezeichnet. Am Ende eines Pfades steht das Endergebnis und somit stellt das Ende auch keinen Verzweigungspunkt mehr dar.
-Jeder Pfad beschreibt ein Ereignis des gesamten mehrstufigen Zufallsexperiments.
 
+![Schematische Abbilung eines Wahrscheinlichkeitsbaum mit den Ereignissen $A$ und $B$ sowie deren Gegenereignis $\bar{A}$ und $\bar{B}$.](images/prob_baum_01.png){#fig-prob-baum-01 fig-align="center" width="100%"}
 
-![Ande.](images/prob_baum_01.png){#fig-prob-baum-01 fig-align="center" width="100%"}
-
-```{mermaid}
-%%| fig-width: 6.5
-%%| fig-cap: "test"
-%%| label: fig-diag-0
-graph TB
-  A(( )) -->|0.7| B((A))
-  A -->|0.3| C((B))
-  B -->|0.4| D((A))
-  B -->|0.6| E((B))
-  C -->|0.1| F((A))
-  C -->|0.9| G((B))
-```
 
 Multiplikationsregel
 
