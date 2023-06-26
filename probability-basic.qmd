@@ -10,11 +10,46 @@ pacman::p_load(tidyverse, readxl, knitr, kableExtra, Hmisc)
 
 ![](images/caution.png){fig-align="center" width="50%"}
 
-Eigentlich habe ich in diesem sehr kurzen Leitfaden zur Mathematik nur eine echte Literaturempfehlung im Bereich der Wahrscheinlichkeitsrechnung und das ist das Buch von Jonathan Weisberg.
+Eigentlich habe ich in diesem sehr kurzen Leitfaden zur Mathematik nur eine echte Literaturempfehlung im Bereich der Wahrscheinlichkeitsrechnung und das ist das Buch von Jonathan Weisberg. Das tolle Buch von Jonathan Weisberg ist [online zu finden](https://jonathanweisberg.org/vip/). Ein schönes Buch über Wahrscheinlichkeiten. Ich habe teilweise Beispiele aus dem Buch verwendet und darüber hinaus finde ich es sehr spannend zu lesen. 
 
+::: column-margin
 ![](images/odds_and_ends.PNG){fig-align="center"}
+:::
 
-Das tolle Buch von Jonathan Weisberg ist online zu finden unter <https://jonathanweisberg.org/vip/>. Ein Buch über Wahrscheinlichkeiten, welches wunderbar zu lesen ist. Ich habe teilweise Beispiele aus dem Buch verwendet und darüber hinaus finde ich es sehr spannend zu lesen. 
+## Definiton einer Wahrscheinlichkeit
+
+Wenn wir mit Wahrscheinlichkeiten rechen, dann ermitteln wir die Wahrscheinlichkeiten $Pr$ für ein bestimmtes Ereignis in einem Zufallsexperiment. Das bekannteste Beispiel die Wahrscheinlichkeit für Kopf beim Werfen einer Münze. 
+
+![Sc.](images/prob_pr_overview.png){#fig-prob-baum-01 fig-align="center" width="80%"}
+
+![Sc.](images/prob_pr_gegen_overview.png){#fig-prob-baum-01 fig-align="center" width="90%"}
+
+
+Wenn du also eine Münze wirfst, dann erhältst du zufällig Kopf oder Zahl. Leider weißt du vorher nicht, auf welcher Seite die Münze landen wird. Wir können aber berechnen, wie groß die Wahrscheinlichkeit $Pr$ für ein Ergebnis Kopf oder Zahl ist. Mit dem Bestimmen einer Eintrittswahrscheinlichkeit eines Ereignisses beschäftigt sich die Wahrscheinlichkeitsrechnung. Du musst also immer wissen, auf welches Ereignis sich eine Wahrscheinlichkeit bezieht. Eine Wahrscheinlichkeit ohne ein Ereignis ist keine Bedeutung.
+
+Wir nutzen den begriff 'fair' für ein Objekt, wenn die Wahrscheinlichkeit für da Eintreten eines Ereignisses über alle Ereignisse gleich ist. Bei einem idealen, 'fairen' Würfel hat wegen der Symmetrie jede der sechs Seiten von vornherein die gleiche Wahrscheinlichkeit, nach dem Wurf oben zu liegen. Wir bezeichnen diese Vorabwahrscheinlichkeit auch A-priori-Wahrscheinlichkeit. Ein 'fairer' Würfel hat daher keine unsymmetrische Masseverteilung an einer Seite, so dass diese Seite häufiger unten liegt. Daher ist beispielsweise die Wahrscheinlichkeit bei einem Würfelwurf, eine ungerade Zahl zu werfen, $3/6 = 0.5 = 50%$, denn es gibt drei  Ergebnisse, die ungerade sind ($1, 3, 5$), bei sechs möglichen Ergebnissen.
+
+Wenn wir eine faire Münze nehmen, In unserem Beispiel sind Kopf und Zahl beide gleich wahrscheinlich. Du hast also eine Fifty-Fifty-Chance: Die Wahrscheinlichkeit für Kopf ist ½ (oder 50 %) und die für Zahl auch.
+
+Klassische, laplacesche Auffassung von Wahrscheinlichkeiten.
+
+In der Wahrscheinlichkeitsrechnung ermittelst du Wahrscheinlichkeiten für bestimmte Ereignisse in einem 
+
+::: {.callout-note}
+##  Ergebnis ist gleich Ergebnismenge
+
+Alles was bei einem Zufallsexperiment herauskommen kann. Ein sechsseitiger Würfel hat somit die Ergebnismenge $E = \{1, 2, 3, 4, 5, 6\}$
+:::
+
+::: {.callout-note}
+##  Ereignis
+
+Ein Ereignis definieren wir selber. Zum Beispiel sind $E_1 = \{\mbox{die Zahl ist größer als 3}\}$ und $E_2 = \{\mbox{die Zahl ist gleich 6}\}$ Ereignisse. Je nach Ergebnis des Würfels kannst du dann entscheiden, ob das Ereignis eingetreten ist oder nicht. 
+:::
+
+
+
+Dies ist die sogenannte klassische Definition, wie sie von Christiaan Huygens[8] und Jakob I Bernoulli[9] entwickelt und von Laplace formuliert wurde. Sie ist die Grundlage der klassischen Wahrscheinlichkeitstheorie. Die Elementarereignisse besitzen hierbei gleiche A-priori-Eintrittswahrscheinlichkeiten.[10]
 
 ## Baumdiagramme und Pfadregeln
 
