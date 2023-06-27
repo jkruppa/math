@@ -97,7 +97,7 @@ Schauen wir uns in @fig-prob-baum-01 einmal einen theoretischen Wahrscheinlichke
 
 Wir werfen eine faire Münze zweimal und erhalten folgendes Baumdiagramm.
 
-![](images/prob_baum_01.png){#fig-prob-baum-02 fig-align="center" width="50%"}
+![](images/prob_baum_02.png){#fig-prob-baum-01 fig-align="center" width="100%"}
 
 Darüber hinaus gehen wir davon aus, dass wir es mit einem unabhängigen Zufallsexperiment zu tun haben. Die beiden Münzwürfe beeinflussen sich nicht. Wir sind an den Wahrscheinlichkeiten für das Ereignis $E_3 = \{\mbox{(Kopf, Kopf)}\}$ und $E_4 = \{\mbox{(Kopf, Zahl), (Zahl, Kopf)}\}$ interessiert. Wir wollen also im Ereignis $E_3$ die Wahrscheinlichkeit für zweimal Kopf hintereinander bestimmen und bei dem Ereignis $E_4$ die Wahrscheinlichkeit für Kopf und Zahl, wobei die Reihenfolge unerheblich ist.
 
@@ -113,6 +113,7 @@ Additionsregel (ODER-Regel)
 
 Wir wollen nun die Wahrscheinlichkeit für das Ereignis $E_4$ berechnen. Dafür brauchen wir die Pfadwahrscheinlichkeiten für $Pr(\mbox{Kopf, Zahl})$ sowie $Pr(\mbox{Zahl, Kopf})$. In unserem Baumdiagramm können wir die Zahlen direkt am Ende der beiden Pfade ablesen. Die Wahrscheinlichkeiten sind jeweils $Pr(\mbox{Kopf, Zahl}) = 0.25$ sowie $Pr(\mbox{Zahl, Kopf}) = 0.25$. Jetzt addieren wir noch beide Wahrscheinlichkeiten auf und erhalten eine Wahrscheinlichkeit für $Pr(E_4)$ von 0.5.
 
+![](images/prob_baum_03.png){#fig-prob-baum-03 fig-align="center" width="100%"}
 
 $$
 \begin{aligned}

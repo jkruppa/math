@@ -255,7 +255,7 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p><em>Version vom Juni 27, 2023 um 15:18:35</em></p>
+<p><em>Version vom June 27, 2023 um 19:59:22</em></p>
 <blockquote class="blockquote">
 <p><em>“Die wichtigsten Fragen des Lebens sind in der Tat größtenteils nur Wahrscheinlichkeitsprobleme.” — Pierre-Simon Laplace</em></p>
 </blockquote>
@@ -369,9 +369,9 @@ ul.task-list li input[type="checkbox"] {
 <li>Jeder Pfad beschreibt ein Ereignis des gesamten mehrstufigen Zufallsexperiments. Jeder Verzweigungspunkt ein Zwischenereignis.</li>
 </ul>
 <p>Wir werfen eine faire Münze zweimal und erhalten folgendes Baumdiagramm.</p>
-<div id="fig-prob-baum-02" class="quarto-figure quarto-figure-center anchored">
+<div id="fig-prob-baum-01" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><img src="images/prob_baum_01.png" class="img-fluid figure-img" style="width:50.0%"></p>
+<p><img src="images/prob_baum_02.png" class="img-fluid figure-img" style="width:100.0%"></p>
 </figure>
 </div>
 <p>Darüber hinaus gehen wir davon aus, dass wir es mit einem unabhängigen Zufallsexperiment zu tun haben. Die beiden Münzwürfe beeinflussen sich nicht. Wir sind an den Wahrscheinlichkeiten für das Ereignis <span class="math inline">\(E_3 = \{\mbox{(Kopf, Kopf)}\}\)</span> und <span class="math inline">\(E_4 = \{\mbox{(Kopf, Zahl), (Zahl, Kopf)}\}\)</span> interessiert. Wir wollen also im Ereignis <span class="math inline">\(E_3\)</span> die Wahrscheinlichkeit für zweimal Kopf hintereinander bestimmen und bei dem Ereignis <span class="math inline">\(E_4\)</span> die Wahrscheinlichkeit für Kopf und Zahl, wobei die Reihenfolge unerheblich ist.</p>
@@ -389,6 +389,11 @@ ul.task-list li input[type="checkbox"] {
 </dd>
 </dl>
 <p>Wir wollen nun die Wahrscheinlichkeit für das Ereignis <span class="math inline">\(E_4\)</span> berechnen. Dafür brauchen wir die Pfadwahrscheinlichkeiten für <span class="math inline">\(Pr(\mbox{Kopf, Zahl})\)</span> sowie <span class="math inline">\(Pr(\mbox{Zahl, Kopf})\)</span>. In unserem Baumdiagramm können wir die Zahlen direkt am Ende der beiden Pfade ablesen. Die Wahrscheinlichkeiten sind jeweils <span class="math inline">\(Pr(\mbox{Kopf, Zahl}) = 0.25\)</span> sowie <span class="math inline">\(Pr(\mbox{Zahl, Kopf}) = 0.25\)</span>. Jetzt addieren wir noch beide Wahrscheinlichkeiten auf und erhalten eine Wahrscheinlichkeit für <span class="math inline">\(Pr(E_4)\)</span> von 0.5.</p>
+<div id="fig-prob-baum-03" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="images/prob_baum_03.png" class="img-fluid figure-img" style="width:100.0%"></p>
+</figure>
+</div>
 <p><span class="math display">\[
 \begin{aligned}
 Pr(A \cap B) &amp;= 0.3 \cdot 0.2 = 0.06 \\
