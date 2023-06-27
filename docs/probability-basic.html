@@ -226,11 +226,12 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Inhaltsverzeichnis</h2>
    
   <ul>
-  <li><a href="#definiton-einer-wahrscheinlichkeit" id="toc-definiton-einer-wahrscheinlichkeit" class="nav-link active" data-scroll-target="#definiton-einer-wahrscheinlichkeit"><span class="header-section-number">10.1</span> Definiton einer Wahrscheinlichkeit</a></li>
+  <li><a href="#laplacescher-wahrscheinlichkeitbegriff" id="toc-laplacescher-wahrscheinlichkeitbegriff" class="nav-link active" data-scroll-target="#laplacescher-wahrscheinlichkeitbegriff"><span class="header-section-number">10.1</span> Laplacescher Wahrscheinlichkeitbegriff</a></li>
   <li><a href="#baumdiagramme-und-pfadregeln" id="toc-baumdiagramme-und-pfadregeln" class="nav-link" data-scroll-target="#baumdiagramme-und-pfadregeln"><span class="header-section-number">10.2</span> Baumdiagramme und Pfadregeln</a></li>
-  <li><a href="#mengenschreibweise" id="toc-mengenschreibweise" class="nav-link" data-scroll-target="#mengenschreibweise"><span class="header-section-number">10.3</span> Mengenschreibweise</a></li>
-  <li><a href="#logische-operatoren" id="toc-logische-operatoren" class="nav-link" data-scroll-target="#logische-operatoren"><span class="header-section-number">10.4</span> Logische Operatoren</a></li>
-  <li><a href="#sec-prob-cond" id="toc-sec-prob-cond" class="nav-link" data-scroll-target="#sec-prob-cond"><span class="header-section-number">10.5</span> Bedingte Wahrscheinlichkeiten</a></li>
+  <li><a href="#satz-von-bayes" id="toc-satz-von-bayes" class="nav-link" data-scroll-target="#satz-von-bayes"><span class="header-section-number">10.3</span> Satz von Bayes</a></li>
+  <li><a href="#mengenschreibweise" id="toc-mengenschreibweise" class="nav-link" data-scroll-target="#mengenschreibweise"><span class="header-section-number">10.4</span> Mengenschreibweise</a></li>
+  <li><a href="#logische-operatoren" id="toc-logische-operatoren" class="nav-link" data-scroll-target="#logische-operatoren"><span class="header-section-number">10.5</span> Logische Operatoren</a></li>
+  <li><a href="#sec-prob-cond" id="toc-sec-prob-cond" class="nav-link" data-scroll-target="#sec-prob-cond"><span class="header-section-number">10.6</span> Bedingte Wahrscheinlichkeiten</a></li>
   </ul>
 </nav>
     </div>
@@ -254,7 +255,7 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p><em>Version vom Juni 27, 2023 um 13:32:25</em></p>
+<p><em>Version vom Juni 27, 2023 um 14:33:19</em></p>
 <blockquote class="blockquote">
 <p><em>“Die wichtigsten Fragen des Lebens sind in der Tat größtenteils nur Wahrscheinlichkeitsprobleme.” — Pierre-Simon Laplace</em></p>
 </blockquote>
@@ -263,6 +264,7 @@ ul.task-list li input[type="checkbox"] {
 <p><img src="images/caution.png" class="img-fluid figure-img" style="width:50.0%"></p>
 </figure>
 </div>
+<p>In diesem Abschnitt wollen wir uns nochmal die Grundlagen der Wahrscheinlcihkeitsrechnung vergegenwertigen. Vieles davon ist schon bekannt und dient der Auffrischung. Wir brauchen Wahrscheinlichkeiten und deren Berechnungen später in der direkten Anwendung in der Statistik. Wir konzentrieren uns hier zu Anfang auf den laplaceschen Wahrscheinlichkeitbegriff und werden noch andere in der Statistik kennen lernen. Zum Anfang soll aber der klassische laplacesche Wahrscheinlichkeitbegriff ausreichen.</p>
 <p>Eigentlich habe ich in diesem sehr kurzen Leitfaden zur Mathematik nur eine echte Literaturempfehlung im Bereich der Wahrscheinlichkeitsrechnung und das ist das Buch von Jonathan Weisberg. Das tolle Buch von Jonathan Weisberg ist <a href="https://jonathanweisberg.org/vip/">online zu finden</a>. Ein schönes Buch über Wahrscheinlichkeiten. Ich habe teilweise Beispiele aus dem Buch verwendet und darüber hinaus finde ich es sehr spannend zu lesen.</p>
 
 <div class="no-row-height column-margin column-container"><div class="">
@@ -271,68 +273,77 @@ ul.task-list li input[type="checkbox"] {
 <p><img src="images/odds_and_ends.PNG" class="img-fluid figure-img"></p>
 </figure>
 </div>
-</div></div><section id="definiton-einer-wahrscheinlichkeit" class="level2" data-number="10.1">
-<h2 data-number="10.1" class="anchored" data-anchor-id="definiton-einer-wahrscheinlichkeit"><span class="header-section-number">10.1</span> Definiton einer Wahrscheinlichkeit</h2>
-<p>Wenn wir mit Wahrscheinlichkeiten rechen, dann ermitteln wir die Wahrscheinlichkeiten <span class="math inline">\(Pr\)</span> für ein bestimmtes Ereignis <span class="math inline">\(A\)</span> in einem Zufallsexperiment. Im Folgenden siehst du die Schreibweise für die Wahrscheinlichkeit <span class="math inline">\(Pr\)</span> für das Ereignis <span class="math inline">\(A\)</span>. Die Wahrscheinlichkeit <span class="math inline">\(Pr(A)\)</span> ist gleich 0.6 in dem Zufallsexperiment.</p>
+</div></div><section id="laplacescher-wahrscheinlichkeitbegriff" class="level2" data-number="10.1">
+<h2 data-number="10.1" class="anchored" data-anchor-id="laplacescher-wahrscheinlichkeitbegriff"><span class="header-section-number">10.1</span> Laplacescher Wahrscheinlichkeitbegriff</h2>
+<p>Wenn du also eine Münze wirfst, dann erhältst du zufällig Kopf oder Zahl. Leider weißt du vorher nicht, auf welcher Seite die Münze landen wird. Wir können aber berechnen, wie groß die Wahrscheinlichkeit <span class="math inline">\(Pr\)</span> für ein Ergebnis Kopf oder Zahl ist. Mit dem Bestimmen einer Eintrittswahrscheinlichkeit eines Ereignisses beschäftigt sich die Wahrscheinlichkeitsrechnung. Wir beginnen mit einem einstufigen Zufallsexperiment.</p>
+<dl>
+<dt>Einstufiges Zufallsexperiment</dt>
+<dd>
+Wir haben den Versuch nur einmal durchgeführt hast. Zum Beispiel wurde die Münze nur einmal geworfen. Der Würfel wurde nur einmal gerollt.
+</dd>
+</dl>
+<p>Wenn wir mit Wahrscheinlichkeiten rechen, dann ermitteln wir also die Wahrscheinlichkeiten <span class="math inline">\(Pr\)</span> für ein bestimmtes Ereignis <span class="math inline">\(A\)</span> in einem Zufallsexperiment. Im Folgenden siehst du die Schreibweise für die Wahrscheinlichkeit <span class="math inline">\(Pr\)</span> für das Ereignis <span class="math inline">\(A\)</span>.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/prob_pr_overview.png" class="img-fluid figure-img" style="width:80.0%"></p>
 </figure>
 </div>
-<p>Das bekannteste Beispiel die Wahrscheinlichkeit für Kopf beim Werfen einer Münze.</p>
-<p><img src="images/prob_pr_gegen_overview.png" class="img-fluid" style="width:90.0%" data-fig-align="center"> Im Folgenden sehen wir einmal die Ergebnismenge eines sechseitigen Würfels 1W6.</p>
+<p>Die Wahrscheinlichkeit <span class="math inline">\(Pr(A)\)</span> für das Auftreten des Ereignisses <span class="math inline">\(A\)</span> ist 0.6. Hierbei ist wichtig, dass wir immer eine Wahrscheinlichkeit auf ein Ereignis beziehen. Ohne ein Ereignis ist eine Wahrscheinlichkeit nicht zu interpretieren.</p>
+<dl>
+<dt>Ereignis</dt>
+<dd>
+Ein Ereignis definieren wir selber. Zum Beispiel sind <span class="math inline">\(E_1 = \{\mbox{die Zahl ist größer als 3}\}\)</span> und <span class="math inline">\(E_2 = \{\mbox{die Zahl ist gleich 6}\}\)</span> Ereignisse. Je nach Ergebnis des Würfels wird entscheiden, ob das Ereignis eingetreten ist oder nicht.
+</dd>
+</dl>
+<p>Neben dem Ereignis <span class="math inline">\(A\)</span> gibt es noch das Gegenereignis <span class="math inline">\(\bar{A}\)</span> oder <span class="math inline">\(A'\)</span>. Das Gegenereignis tritt ein, wenn das eigentlich Ereignis nicht passiert ist. Wir berechnen die Wahrscheinlichkeit für das Gegenereignis <span class="math inline">\(Pr(\bar{A})\)</span> in dem wir 1 minus der Wahrscheinlichkeit für das Eintreten des Ereignisses <span class="math inline">\(A\)</span> rechnen.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/prob_pr_gegen_overview.png" class="img-fluid figure-img" style="width:90.0%"></p>
+</figure>
+</div>
+<p>Für das Werfen einer Münze wäre das Ereignis <span class="math inline">\(A = \{Kopf\}\)</span> gleich <span class="math inline">\(0.5\)</span>. Das Gegenereignis <span class="math inline">\(\bar{A} = \{Zahl\}\)</span> wäre dann <span class="math inline">\(1-Pr(A)\)</span> und somit auch <span class="math inline">\(0.5\)</span>. Hier haben wir es aber mit einer ‘fairen’ Münze in unserem Zufallsexperiment zu tun.</p>
+<dl>
+<dt>Fair</dt>
+<dd>
+Wir nutzen den begriff ‘fair’ für ein Objekt, wenn die Wahrscheinlichkeit für da Eintreten eines Ereignisses durch das Objekt über alle Ereignisse gleich ist. Bei einem idealen, ‘fairen’ Würfel hat wegen der Symmetrie jede der sechs Seiten von vornherein die gleiche Wahrscheinlichkeit, nach dem Wurf oben zu liegen.
+</dd>
+</dl>
+<p>Bei einer Münze ist die Sachlage ja relativ einfach. Im Folgenden sehen wir einmal die Ergebnismenge eines sechseitigen Würfels oder 1W6 genauer an. Bei einem Würfel haben wir ja mehrere Möglichkeiten ein Ereignis zu definieren.</p>
+<dl>
+<dt>Ergebnis oder Ergebnismenge</dt>
+<dd>
+Alles was bei einem Zufallsexperiment herauskommen kann. Ein sechsseitiger Würfel hat somit die Ergebnismenge <span class="math inline">\(E = \{1, 2, 3, 4, 5, 6\}\)</span>
+</dd>
+</dl>
+<p>Bei einem sechseitigen Würfel können die Zahlen von eins bis sechs oben liegen.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/prob_wuerfel_01.png" class="img-fluid figure-img" style="width:90.0%"></p>
 </figure>
 </div>
-<p>Einmal für das Ereignis <span class="math inline">\(E_1 = \{\mbox{die Zahl ist gerade}\}\)</span></p>
+<p>Jede der Zahlen hat eine Vorabwahrscheinlichkeit oder auch A-priori-Wahrscheinlichkeit für das Auftreten nach einem Wurf von <span class="math inline">\(1/6\)</span> oder <span class="math inline">\(0.1\overline{6}\)</span>. Betrachten wir jetzt einmal verschiedene mögliche Ereignisse. Fangen wir mit dem Ereignis <span class="math inline">\(E_1 = \{\mbox{die Zahl ist gerade}\}\)</span> an.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/prob_wuerfel_02.png" class="img-fluid figure-img" style="width:90.0%"></p>
 </figure>
 </div>
-<p><span class="math inline">\(E_1 = \{\mbox{die Zahl ist größer gleich 3}\}\)</span></p>
+<p>Wir teilen nun die Anzahl der betrachteten Ergebnisse durch die Anzahl aller möglichen Ergebnisse. Wir erkennen, dass wir mit <span class="math inline">\(2, 4\)</span> und <span class="math inline">\(6\)</span> drei Ergebnisse haben, die eine gerade Zahl darstellen. Insgesamt hat der Würfel sechs Seiten, so dass wir sechs mögliche Ergebnisse haben. Somit ist die Wahrscheinlichkeit <span class="math inline">\(Pr(E_1) = 0.5\)</span>. Die Gegenwahrscheinlichkeit <span class="math inline">\(\bar{E}_1 = \{\mbox{die Zahl ist nicht gerade}\}\)</span> ist somit auch <span class="math inline">\(0.5\)</span>.</p>
+<p>Als asbschließendes Abeispiel noch das Ereignis <span class="math inline">\(E_2 = \{\mbox{die Zahl ist größer gleich 3}\}\)</span>.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/prob_wuerfel_03.png" class="img-fluid figure-img" style="width:90.0%"></p>
 </figure>
 </div>
-<p>Wenn du also eine Münze wirfst, dann erhältst du zufällig Kopf oder Zahl. Leider weißt du vorher nicht, auf welcher Seite die Münze landen wird. Wir können aber berechnen, wie groß die Wahrscheinlichkeit <span class="math inline">\(Pr\)</span> für ein Ergebnis Kopf oder Zahl ist. Mit dem Bestimmen einer Eintrittswahrscheinlichkeit eines Ereignisses beschäftigt sich die Wahrscheinlichkeitsrechnung. Du musst also immer wissen, auf welches Ereignis sich eine Wahrscheinlichkeit bezieht. Eine Wahrscheinlichkeit ohne ein Ereignis ist keine Bedeutung.</p>
-<p>Wir nutzen den begriff ‘fair’ für ein Objekt, wenn die Wahrscheinlichkeit für da Eintreten eines Ereignisses über alle Ereignisse gleich ist. Bei einem idealen, ‘fairen’ Würfel hat wegen der Symmetrie jede der sechs Seiten von vornherein die gleiche Wahrscheinlichkeit, nach dem Wurf oben zu liegen. Wir bezeichnen diese Vorabwahrscheinlichkeit auch A-priori-Wahrscheinlichkeit. Ein ‘fairer’ Würfel hat daher keine unsymmetrische Masseverteilung an einer Seite, so dass diese Seite häufiger unten liegt. Daher ist beispielsweise die Wahrscheinlichkeit bei einem Würfelwurf, eine ungerade Zahl zu werfen, <span class="math inline">\(3/6 = 0.5 = 50%\)</span>, denn es gibt drei Ergebnisse, die ungerade sind (<span class="math inline">\(1, 3, 5\)</span>), bei sechs möglichen Ergebnissen.</p>
-<p>Wenn wir eine faire Münze nehmen, In unserem Beispiel sind Kopf und Zahl beide gleich wahrscheinlich. Du hast also eine Fifty-Fifty-Chance: Die Wahrscheinlichkeit für Kopf ist ½ (oder 50 %) und die für Zahl auch.</p>
-<p>Klassische, laplacesche Auffassung von Wahrscheinlichkeiten.</p>
-<p>In der Wahrscheinlichkeitsrechnung ermittelst du Wahrscheinlichkeiten für bestimmte Ereignisse in einem</p>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Ergebnis ist gleich Ergebnismenge
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Alles was bei einem Zufallsexperiment herauskommen kann. Ein sechsseitiger Würfel hat somit die Ergebnismenge <span class="math inline">\(E = \{1, 2, 3, 4, 5, 6\}\)</span></p>
-</div>
-</div>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Ereignis
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Ein Ereignis definieren wir selber. Zum Beispiel sind <span class="math inline">\(E_1 = \{\mbox{die Zahl ist größer als 3}\}\)</span> und <span class="math inline">\(E_2 = \{\mbox{die Zahl ist gleich 6}\}\)</span> Ereignisse. Je nach Ergebnis des Würfels kannst du dann entscheiden, ob das Ereignis eingetreten ist oder nicht.</p>
-</div>
-</div>
-<p>Dies ist die sogenannte klassische Definition, wie sie von Christiaan Huygens[8] und Jakob I Bernoulli[9] entwickelt und von Laplace formuliert wurde. Sie ist die Grundlage der klassischen Wahrscheinlichkeitstheorie. Die Elementarereignisse besitzen hierbei gleiche A-priori-Eintrittswahrscheinlichkeiten.[10]</p>
+<p>Hier haben wir dann eine Wahrscheinlichkeit <span class="math inline">\(Pr(E_2) = \cfrac{4}{6} = 0.6\overline{6}\)</span> vorliegen. Wir haben vier Ergebnisse, die größer sind als gleich drei, von insgesamt sechs möglichen Ergebnissen.</p>
 </section>
 <section id="baumdiagramme-und-pfadregeln" class="level2" data-number="10.2">
 <h2 data-number="10.2" class="anchored" data-anchor-id="baumdiagramme-und-pfadregeln"><span class="header-section-number">10.2</span> Baumdiagramme und Pfadregeln</h2>
+<dl>
+<dt>Zweistufiges Zufallsexperiment</dt>
+<dd>
+Wir führen den Versuch nun zweimal durch. Zum Beispiel wurde die Münze nur zweimal geworfen und wir wollen die Wahrscheinlichkeit für das Ereignis <span class="math inline">\(E_3 = \{\mbox{Kopf, Kopf}\}\)</span> bestimmen.
+</dd>
+</dl>
 <p>Schauen wir uns in <a href="#fig-prob-baum-01">Abbildung&nbsp;<span>10.1</span></a> einmal einen theoretischen Wahrscheinlichkeitsbaum an.</p>
 <ul>
 <li>Bei einem Baumdiagramm gibt es einen Startpunkt. Der Startpunkt wird auch Wurzel (eng. <em>root</em>) genannt oder aber auch als Ausgangspunkt bezeichnet. Wie immer gibt es für den gleichen Sachverhalt verschiedene Begrifflichkeiten.</li>
@@ -411,8 +422,22 @@ Pr(K_1 \cap K_2) &amp;= Pr(K_1) \times Pr(K_2) \\
 \end{aligned}
 \]</span></p>
 </section>
-<section id="mengenschreibweise" class="level2" data-number="10.3">
-<h2 data-number="10.3" class="anchored" data-anchor-id="mengenschreibweise"><span class="header-section-number">10.3</span> Mengenschreibweise</h2>
+<section id="satz-von-bayes" class="level2" data-number="10.3">
+<h2 data-number="10.3" class="anchored" data-anchor-id="satz-von-bayes"><span class="header-section-number">10.3</span> Satz von Bayes</h2>
+<p>Für zwei Ereignisse <span class="math inline">\(A\)</span> und <span class="math inline">\(B\)</span> mit der Eintrittswahrscheinlichkeit <span class="math inline">\(Pr(B) &gt; 0\)</span> lässt sich die Wahrscheinlichkeit von <span class="math inline">\(A\)</span> unter der Bedingung, dass <span class="math inline">\(B\)</span> eingetreten ist, durch die Wahrscheinlichkeit von <span class="math inline">\(B\)</span> unter der Bedingung, dass <span class="math inline">\(A\)</span> eingetreten ist, errechnen:</p>
+<p><span class="math display">\[
+Pr(A\mid B) = \cfrac{Pr(B\mid A) \cdot Pr(A)} {Pr(B)}
+\]</span></p>
+<p>mit</p>
+<ul>
+<li><span class="math inline">\(Pr(A\mid B)\)</span> ist die bedingte Wahrscheinlichkeit des Ereignisses <span class="math inline">\(A\)</span> unter der Bedingung, dass <span class="math inline">\(B\)</span> eingetreten ist,</li>
+<li><span class="math inline">\(Pr(B\mid A)\)</span> ist die bedingte Wahrscheinlichkeit des Ereignisses <span class="math inline">\(B\)</span> unter der Bedingung, dass <span class="math inline">\(A\)</span> eingetreten ist,</li>
+<li><span class="math inline">\(Pr(A)\)</span> ist die a-priori-Wahrscheinlichkeit des Ereignisses <span class="math inline">\(A\)</span> und</li>
+<li><span class="math inline">\(Pr(B)\)</span> ist die a-priori-Wahrscheinlichkeit des Ereignisses <span class="math inline">\(B\)</span>.</li>
+</ul>
+</section>
+<section id="mengenschreibweise" class="level2" data-number="10.4">
+<h2 data-number="10.4" class="anchored" data-anchor-id="mengenschreibweise"><span class="header-section-number">10.4</span> Mengenschreibweise</h2>
 <p>In <a href="#tbl-mengen">Tabelle&nbsp;<span>10.2</span></a></p>
 <div id="tbl-mengen" class="anchored">
 <table class="table">
@@ -454,8 +479,8 @@ Pr(K_1 \cap K_2) &amp;= Pr(K_1) \times Pr(K_2) \\
 </table>
 </div>
 </section>
-<section id="logische-operatoren" class="level2" data-number="10.4">
-<h2 data-number="10.4" class="anchored" data-anchor-id="logische-operatoren"><span class="header-section-number">10.4</span> Logische Operatoren</h2>
+<section id="logische-operatoren" class="level2" data-number="10.5">
+<h2 data-number="10.5" class="anchored" data-anchor-id="logische-operatoren"><span class="header-section-number">10.5</span> Logische Operatoren</h2>
 <p>Und <span class="math inline">\(\cap\)</span></p>
 <p>Oder <span class="math inline">\(\cup\)</span></p>
 <p>In <a href="#tbl-logical-figures">Tabelle&nbsp;<span>10.3</span></a></p>
@@ -483,7 +508,7 @@ Pr(K_1 \cap K_2) &amp;= Pr(K_1) \times Pr(K_2) \\
 <tr class="even">
 <td style="text-align: center;"><img src="images/schnitt_2.png" class="img-fluid"></td>
 <td style="text-align: center;"><span class="math inline">\(A \cap B\)</span></td>
-<td style="text-align: center;"><span class="math inline">\(A\)</span> trit ein und <span class="math inline">\(B\)</span> tritt ein</td>
+<td style="text-align: center;"><span class="math inline">\(A\)</span> tritt ein und <span class="math inline">\(B\)</span> tritt ein</td>
 </tr>
 <tr class="odd">
 <td style="text-align: center;"><img src="images/schnitt_3.png" class="img-fluid"></td>
@@ -509,8 +534,8 @@ Pr(K_1 \cap K_2) &amp;= Pr(K_1) \times Pr(K_2) \\
 </table>
 </div>
 </section>
-<section id="sec-prob-cond" class="level2" data-number="10.5">
-<h2 data-number="10.5" class="anchored" data-anchor-id="sec-prob-cond"><span class="header-section-number">10.5</span> Bedingte Wahrscheinlichkeiten</h2>
+<section id="sec-prob-cond" class="level2" data-number="10.6">
+<h2 data-number="10.6" class="anchored" data-anchor-id="sec-prob-cond"><span class="header-section-number">10.6</span> Bedingte Wahrscheinlichkeiten</h2>
 
 
 </section>
