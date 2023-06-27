@@ -305,7 +305,7 @@
     "href": "probability-preface.html",
     "title": "Von Wahrscheinlichkeiten",
     "section": "",
-    "text": "Version vom June 19, 2023 um 07:59:31\n\n“In keinem anderen Zweig der Mathematik ist es für Experten so leicht, sich zu vertun wie in der Wahrscheinlichkeitsrechnung.” — Martin Gardner"
+    "text": "Version vom Juni 27, 2023 um 13:32:31\n\n“In keinem anderen Zweig der Mathematik ist es für Experten so leicht, sich zu vertun wie in der Wahrscheinlichkeitsrechnung.” — Martin Gardner"
   },
   {
     "objectID": "probability-basic.html#regeln",
@@ -361,7 +361,7 @@
     "href": "probability-distribution.html#genutzte-r-pakete-für-das-kapitel",
     "title": "11  Verteilungen",
     "section": "11.1 Genutzte R Pakete für das Kapitel",
-    "text": "11.1 Genutzte R Pakete für das Kapitel\nWir wollen folgende R Pakete in diesem Kapitel nutzen. Zum einen brauchen wir das R Paket tidyverse um uns die Daten zu bauen, die wir dann mit dem R Paket ggplot visualisieren wollen. Das R Paket ggplot ist schon in dem R Paket tidyverse mit enthalten.\n\npacman::p_load(tidyverse, magrittr, ggfortify)\ncbbPalette <- c(\"#000000\", \"#E69F00\", \"#56B4E9\", \"#009E73\", \n                \"#F0E442\", \"#0072B2\", \"#D55E00\", \"#CC79A7\")"
+    "text": "11.1 Genutzte R Pakete für das Kapitel\nWir wollen folgende R Pakete in diesem Kapitel nutzen. Zum einen brauchen wir das R Paket tidyverse um uns die Daten zu bauen, die wir dann mit dem R Paket ggplot visualisieren wollen. Das R Paket ggplot ist schon in dem R Paket tidyverse mit enthalten.\n\npacman::p_load(tidyverse, magrittr, ggfortify)\ncbbPalette &lt;- c(\"#000000\", \"#E69F00\", \"#56B4E9\", \"#009E73\", \n                \"#F0E442\", \"#0072B2\", \"#D55E00\", \"#CC79A7\")"
   },
   {
     "objectID": "probability-distribution.html#dichtefunktion",
@@ -382,14 +382,14 @@
     "href": "probability-distribution.html#inverse-kumulativen-dichtefunktion",
     "title": "11  Verteilungen",
     "section": "11.4 Inverse kumulativen Dichtefunktion",
-    "text": "11.4 Inverse kumulativen Dichtefunktion\nEinfach ausgedrückt, kannst du qnorm() verwenden, um herauszufinden zu welcher Fläche welcher Wert auf der x-Achse gehört. Du willst also nicht wissen, wie wahrscheinlich ein Wert für x ist, sondern gegeben einer Wahrscheinlichkeit den Wert von x haben. Ich habe dir hier ein paar Beispiele mitgebracht. Wir setzen also in die Funktion qnorm() die Fläche unter der Kurve ein, bei einer Standardnormalverteilung eben eine Wahrscheinlichkeit, und der erhalten den x-Wert wieder.\n\nqnorm(0.95, mean = 0, sd = 1) %>% round(2)\n\n[1] 1.64\n\nqnorm(0.975, mean = 0, sd = 1) %>% round(2)\n\n[1] 1.96\n\nqnorm(0.99, mean = 0, sd = 1) %>% round(2)\n\n[1] 2.33"
+    "text": "11.4 Inverse kumulativen Dichtefunktion\nEinfach ausgedrückt, kannst du qnorm() verwenden, um herauszufinden zu welcher Fläche welcher Wert auf der x-Achse gehört. Du willst also nicht wissen, wie wahrscheinlich ein Wert für x ist, sondern gegeben einer Wahrscheinlichkeit den Wert von x haben. Ich habe dir hier ein paar Beispiele mitgebracht. Wir setzen also in die Funktion qnorm() die Fläche unter der Kurve ein, bei einer Standardnormalverteilung eben eine Wahrscheinlichkeit, und der erhalten den x-Wert wieder.\n\nqnorm(0.95, mean = 0, sd = 1) %&gt;% round(2)\n\n[1] 1.64\n\nqnorm(0.975, mean = 0, sd = 1) %&gt;% round(2)\n\n[1] 1.96\n\nqnorm(0.99, mean = 0, sd = 1) %&gt;% round(2)\n\n[1] 2.33"
   },
   {
     "objectID": "probability-distribution.html#visualisierung-von-pnorm-und-qnorm",
     "href": "probability-distribution.html#visualisierung-von-pnorm-und-qnorm",
     "title": "11  Verteilungen",
     "section": "11.5 Visualisierung von pnorm() und qnorm()",
-    "text": "11.5 Visualisierung von pnorm() und qnorm()\nIn der Abbildung 11.1 sehen wir den Zusammenhang zwischen der Funktion pnorm(q = 1.96) und der Funktion qnorm(p = 0.975) einmal visualisiert. Manchmal ist es daann doch recht verwirrend, was die beiden Funktion dann machen. Deshalb einmal hier der R Code für eine Standardnormalverteilung. Wenn du kein mean oder sd in den Funktionen angibst, ist der Standardwert (eng. default) der einer Standardnormalverteilung.\n\npnorm(q = 1.96) %>% round(3)\n\n[1] 0.975\n\nqnorm(p = 0.975) %>% round(2)\n\n[1] 1.96\n\nqnorm(p = 0.025, lower.tail = FALSE) %>% round(2)\n\n[1] 1.96\n\n\nIn der Abbildung 11.1 sehen wir den Wert aus der Funktion pnorm(q = 1.96) mit \\(0.975\\) als blaue Fläche unter der Kurve dargestellt. Den Wert für die Fläche auf der x-Achse mit \\(1.96\\) ergibt dann die Funktion qnorm(p = 0.975) %>% round(2).\n\n\n\nAbbildung 11.1— Der Zusammenhang von pnorm() und qnorm einmal an einer Standardnormalverteilung visualisiert."
+    "text": "11.5 Visualisierung von pnorm() und qnorm()\nIn der Abbildung 11.1 sehen wir den Zusammenhang zwischen der Funktion pnorm(q = 1.96) und der Funktion qnorm(p = 0.975) einmal visualisiert. Manchmal ist es daann doch recht verwirrend, was die beiden Funktion dann machen. Deshalb einmal hier der R Code für eine Standardnormalverteilung. Wenn du kein mean oder sd in den Funktionen angibst, ist der Standardwert (eng. default) der einer Standardnormalverteilung.\n\npnorm(q = 1.96) %&gt;% round(3)\n\n[1] 0.975\n\nqnorm(p = 0.975) %&gt;% round(2)\n\n[1] 1.96\n\nqnorm(p = 0.025, lower.tail = FALSE) %&gt;% round(2)\n\n[1] 1.96\n\n\nIn der Abbildung 11.1 sehen wir den Wert aus der Funktion pnorm(q = 1.96) mit \\(0.975\\) als blaue Fläche unter der Kurve dargestellt. Den Wert für die Fläche auf der x-Achse mit \\(1.96\\) ergibt dann die Funktion qnorm(p = 0.975) %&gt;% round(2).\n\n\n\nAbbildung 11.1— Der Zusammenhang von pnorm() und qnorm einmal an einer Standardnormalverteilung visualisiert."
   },
   {
     "objectID": "probability-basic.html#definiton-einer-wahrscheinlichkeit",
