@@ -30,6 +30,9 @@ Das bekannteste Beispiel die Wahrscheinlichkeit für Kopf beim Werfen einer Mün
 Im Folgenden sehen wir einmal die Ergebnismenge eines sechseitigen Würfels 1W6.
 
 ![](images/prob_wuerfel_01.png){fig-align="center" width="90%"}
+
+
+
 Einmal für das Ereignis $E_1 = \{\mbox{die Zahl ist gerade}\}$ 
 
 ![](images/prob_wuerfel_02.png){fig-align="center" width="90%"}
