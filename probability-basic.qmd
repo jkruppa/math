@@ -18,11 +18,13 @@ Eigentlich habe ich in diesem sehr kurzen Leitfaden zur Mathematik nur eine echt
 
 ## Definiton einer Wahrscheinlichkeit
 
-Wenn wir mit Wahrscheinlichkeiten rechen, dann ermitteln wir die Wahrscheinlichkeiten $Pr$ für ein bestimmtes Ereignis in einem Zufallsexperiment. Das bekannteste Beispiel die Wahrscheinlichkeit für Kopf beim Werfen einer Münze. 
+Wenn wir mit Wahrscheinlichkeiten rechen, dann ermitteln wir die Wahrscheinlichkeiten $Pr$ für ein bestimmtes Ereignis $A$ in einem Zufallsexperiment. Im Folgenden siehst du die Schreibweise für die Wahrscheinlichkeit $Pr$ für das Ereignis $A$. Die Wahrscheinlichkeit $Pr(A)$ ist gleich 0.6 in dem Zufallsexperiment.
 
-![Sc.](images/prob_pr_overview.png){#fig-prob-baum-01 fig-align="center" width="80%"}
+![](images/prob_pr_overview.png){fig-align="center" width="80%"}
 
-![Sc.](images/prob_pr_gegen_overview.png){#fig-prob-baum-01 fig-align="center" width="90%"}
+Das bekannteste Beispiel die Wahrscheinlichkeit für Kopf beim Werfen einer Münze. 
+
+![](images/prob_pr_gegen_overview.png){fig-align="center" width="90%"}
 
 
 Wenn du also eine Münze wirfst, dann erhältst du zufällig Kopf oder Zahl. Leider weißt du vorher nicht, auf welcher Seite die Münze landen wird. Wir können aber berechnen, wie groß die Wahrscheinlichkeit $Pr$ für ein Ergebnis Kopf oder Zahl ist. Mit dem Bestimmen einer Eintrittswahrscheinlichkeit eines Ereignisses beschäftigt sich die Wahrscheinlichkeitsrechnung. Du musst also immer wissen, auf welches Ereignis sich eine Wahrscheinlichkeit bezieht. Eine Wahrscheinlichkeit ohne ein Ereignis ist keine Bedeutung.
