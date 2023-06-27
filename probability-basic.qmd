@@ -64,13 +64,24 @@ Als asbschließendes Abeispiel noch das Ereignis $E_2 = \{\mbox{die Zahl ist gr�
 
 Hier haben wir dann eine Wahrscheinlichkeit $Pr(E_2) = \cfrac{4}{6} = 0.6\overline{6}$ vorliegen. Wir haben vier Ergebnisse, die größer sind als gleich drei, von insgesamt sechs möglichen Ergebnissen.
 
+Wir können diese Gedankenspiele auch mit anderen Würfeltypen oder Münzen durchspielen. Auch lässt sich hier sehr gut die Wahrscheinlichkeit für einen Gewinn und die Niete darstellen. In der Summe müssen sich die beiden Wahrscheinlichkeiten für das Eintreten der Ereignisse auf Eins summieren. Häufig ist aber so, dass wir nicht nur ein einstufiges Zufallsexperiment haben, sondern uns häufig fragen, wie ist die Wahrscheinlichkeit für $A$, wenn schon $B$ eingetreten ist. 
+
 ## Baumdiagramme und Pfadregeln
+
+In einem Baumdiagramm verbinden wir zwei einstufige Zufallsexperimente in ein zweistufiges oder eben auch mehrstufiges Zufallsexperiment. Wir nutzen dafür das Baumdiagramm zur Visualisierung sowie die Pfadregeln zum Lösen der Wahrscheinlichkeitsrechnungen. 
 
 Zweistufiges Zufallsexperiment
 : Wir führen den Versuch nun zweimal durch. Zum Beispiel wurde die Münze nur zweimal geworfen und wir wollen die Wahrscheinlichkeit für das Ereignis $E_3 = \{\mbox{Kopf, Kopf}\}$ bestimmen.
 
+Zusätzlich schauen wir uns auch noch die Vierfeldertafel an, die als Tabelle das Baumdiagramm für abhängige Ereignisse repräsentiert.
 
-Schauen wir uns in @fig-prob-baum-01 einmal einen theoretischen Wahrscheinlichkeitsbaum an.
+Abhängige Ereignisse
+: Die Wahrscheinlichkeit für das Auftreten des Ereignisses $A$ hängt von dem *vorherigen* Eintreten des Ereignisses $B$ ab. 
+
+Schauen wir uns in @fig-prob-baum-01 einmal einen theoretischen Wahrscheinlichkeitsbaum an. Wir schreiben hier erstmal nur die Ereignisse $A$ und $B$ auf. Danach betrachten wir einmal die Sachlage an einem Beispiel für unabhängige Ereignisse und einmal für abhängige Ereignisse.
+
+![Schematische Abbilung eines Wahrscheinlichkeitsbaum mit den Ereignissen $A$ und $B$ sowie deren Gegenereignis $\bar{A}$ und $\bar{B}$.](images/prob_baum_01.png){#fig-prob-baum-01 fig-align="center" width="100%"}
+
 
 - Bei einem Baumdiagramm gibt es einen Startpunkt. Der Startpunkt wird auch Wurzel (eng. *root*) genannt oder aber auch als Ausgangspunkt bezeichnet. Wie immer gibt es für den gleichen Sachverhalt verschiedene Begrifflichkeiten.
 - Von dem Startpunkt gehen so viele Äste ab, wie es in der ersten Stufe deines Zufallsexperiments Ereignisse gibt. Das Ereignis schreibst Du an das Ende des jeweiligen Astes. Meistens haben wir es mit einem Ereignis $A$ und dem Gegenereignis $\bar{A}$ zu tun.
@@ -79,15 +90,15 @@ Schauen wir uns in @fig-prob-baum-01 einmal einen theoretischen Wahrscheinlichke
 - Der Weg vom Startpunkt bis zu einem der Enden wird als Pfad bezeichnet. Am Ende eines Pfades steht das Endergebnis und somit stellt das Ende auch keinen Verzweigungspunkt mehr dar.
 - Jeder Pfad beschreibt ein Ereignis des gesamten mehrstufigen Zufallsexperiments. Jeder Verzweigungspunkt ein Zwischenereignis.
 
+Wir werfen eine faire Münze zweimal und erhalten folgendes Baumdiagramm. Darüber hinaus gehen wir davon aus, dass wir es mit einem unabhängigen Zufallsexperiment zu tun haben. Die beiden Münzwürfe beeinflussen sich nicht. Wir sind an den Wahrscheinlichkeiten für das Ereignis $E_3 = \{\mbox{(Kopf, Kopf)}\}$ und $E_4 = \{\mbox{(Kopf, Zahl), (Zahl, Kopf)}\}$ interessiert. Wir wollen also im Ereignis $E_3$ die Wahrscheinlichkeit für zweimal Kopf hintereinander bestimmen und bei dem Ereignis $E_4$ die Wahrscheinlichkeit für Kopf und Zahl, wobei die Reihenfolge unerheblich ist. 
 
-![Schematische Abbilung eines Wahrscheinlichkeitsbaum mit den Ereignissen $A$ und $B$ sowie deren Gegenereignis $\bar{A}$ und $\bar{B}$.](images/prob_baum_01.png){#fig-prob-baum-01 fig-align="center" width="100%"}
+Multiplikationsregel (UND-Regel)
+: Sind zwei Ereignisse A und B unabhängig voneinander, dann gilt für die Wahrscheinlichkeit, dass beide zusammen auftreten: $Pr(A \cap B) = Pr(A) \cdot Pr(B)$ Die Wahrscheinlichkeit, dass A und B zusammen auftreten ist $Pr(A)$ mal $Pr(B)$. Es wird zweimal hintereinander mit einem Würfel geworfen.
 
+Wenn wir also die Wahrscheinlichkeit $Pr(E_3)$ bestimmen wollen, dann müssen wir die Wahscheinlichkeiten $Pr(\mbox{Kopf})$ aus dem ersten Wurf mit der Wahrscheinlichkeit für $Pr(\mbox{Kopf})$ multiplizieren. Da wir eine faire Münze vorliegen haben, ist die Wahrscheinlichkeit für $Pr(E_3) = 0.5 \cdot 0.5 = 0.25$.
 
-Multiplikationsregel
-
-Multiplikationsregel (UND-Regel): Sind zwei Ereignisse A und B unabhängig voneinander, dann gilt für die Wahrscheinlichkeit, dass beide zusammen auftreten: $Pr(A \cap B) = Pr(A) \cdot Pr(B)$ Die Wahrscheinlichkeit, dass A und B zusammen auftreten ist $Pr(A)$ mal $Pr(B)$. Es wird zweimal hintereinander mit einem Würfel geworfen.
-
-Additionsregel
+Additionsregel (ODER-Regel)
+: Die Wahrscheinlichkeit, dass ein Zufallsereignis eines von mehreren Resultaten liefert, ist die Summe der Einzelwahrscheinlichkeiten dieser Resultate. Es werden die Wahrscheinlichkeiten am Ende der Pfade addiert.
 
 
 

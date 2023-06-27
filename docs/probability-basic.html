@@ -255,7 +255,7 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p><em>Version vom Juni 27, 2023 um 14:33:19</em></p>
+<p><em>Version vom Juni 27, 2023 um 14:58:52</em></p>
 <blockquote class="blockquote">
 <p><em>“Die wichtigsten Fragen des Lebens sind in der Tat größtenteils nur Wahrscheinlichkeitsprobleme.” — Pierre-Simon Laplace</em></p>
 </blockquote>
@@ -335,16 +335,31 @@ Alles was bei einem Zufallsexperiment herauskommen kann. Ein sechsseitiger Würf
 </figure>
 </div>
 <p>Hier haben wir dann eine Wahrscheinlichkeit <span class="math inline">\(Pr(E_2) = \cfrac{4}{6} = 0.6\overline{6}\)</span> vorliegen. Wir haben vier Ergebnisse, die größer sind als gleich drei, von insgesamt sechs möglichen Ergebnissen.</p>
+<p>Wir können diese Gedankenspiele auch mit anderen Würfeltypen oder Münzen durchspielen. Auch lässt sich hier sehr gut die Wahrscheinlichkeit für einen Gewinn und die Niete darstellen. In der Summe müssen sich die beiden Wahrscheinlichkeiten für das Eintreten der Ereignisse auf Eins summieren. Häufig ist aber so, dass wir nicht nur ein einstufiges Zufallsexperiment haben, sondern uns häufig fragen, wie ist die Wahrscheinlichkeit für <span class="math inline">\(A\)</span>, wenn schon <span class="math inline">\(B\)</span> eingetreten ist.</p>
 </section>
 <section id="baumdiagramme-und-pfadregeln" class="level2" data-number="10.2">
 <h2 data-number="10.2" class="anchored" data-anchor-id="baumdiagramme-und-pfadregeln"><span class="header-section-number">10.2</span> Baumdiagramme und Pfadregeln</h2>
+<p>In einem Baumdiagramm verbinden wir zwei einstufige Zufallsexperimente in ein zweistufiges oder eben auch mehrstufiges Zufallsexperiment. Wir nutzen dafür das Baumdiagramm zur Visualisierung sowie die Pfadregeln zum Lösen der Wahrscheinlichkeitsrechnungen.</p>
 <dl>
 <dt>Zweistufiges Zufallsexperiment</dt>
 <dd>
 Wir führen den Versuch nun zweimal durch. Zum Beispiel wurde die Münze nur zweimal geworfen und wir wollen die Wahrscheinlichkeit für das Ereignis <span class="math inline">\(E_3 = \{\mbox{Kopf, Kopf}\}\)</span> bestimmen.
 </dd>
 </dl>
-<p>Schauen wir uns in <a href="#fig-prob-baum-01">Abbildung&nbsp;<span>10.1</span></a> einmal einen theoretischen Wahrscheinlichkeitsbaum an.</p>
+<p>Zusätzlich schauen wir uns auch noch die Vierfeldertafel an, die als Tabelle das Baumdiagramm für abhängige Ereignisse repräsentiert.</p>
+<dl>
+<dt>Abhängige Ereignisse</dt>
+<dd>
+Die Wahrscheinlichkeit für das Auftreten des Ereignisses <span class="math inline">\(A\)</span> hängt von dem <em>vorherigen</em> Eintreten des Ereignisses <span class="math inline">\(B\)</span> ab.
+</dd>
+</dl>
+<p>Schauen wir uns in <a href="#fig-prob-baum-01">Abbildung&nbsp;<span>10.1</span></a> einmal einen theoretischen Wahrscheinlichkeitsbaum an. Wir schreiben hier erstmal nur die Ereignisse <span class="math inline">\(A\)</span> und <span class="math inline">\(B\)</span> auf. Danach betrachten wir einmal die Sachlage an einem Beispiel für unabhängige Ereignisse und einmal für abhängige Ereignisse.</p>
+<div id="fig-prob-baum-01" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="images/prob_baum_01.png" class="img-fluid figure-img" style="width:100.0%"></p>
+<figcaption class="figure-caption">Abbildung&nbsp;10.1— Schematische Abbilung eines Wahrscheinlichkeitsbaum mit den Ereignissen <span class="math inline">\(A\)</span> und <span class="math inline">\(B\)</span> sowie deren Gegenereignis <span class="math inline">\(\bar{A}\)</span> und <span class="math inline">\(\bar{B}\)</span>.</figcaption>
+</figure>
+</div>
 <ul>
 <li>Bei einem Baumdiagramm gibt es einen Startpunkt. Der Startpunkt wird auch Wurzel (eng. <em>root</em>) genannt oder aber auch als Ausgangspunkt bezeichnet. Wie immer gibt es für den gleichen Sachverhalt verschiedene Begrifflichkeiten.</li>
 <li>Von dem Startpunkt gehen so viele Äste ab, wie es in der ersten Stufe deines Zufallsexperiments Ereignisse gibt. Das Ereignis schreibst Du an das Ende des jeweiligen Astes. Meistens haben wir es mit einem Ereignis <span class="math inline">\(A\)</span> und dem Gegenereignis <span class="math inline">\(\bar{A}\)</span> zu tun.</li>
@@ -353,15 +368,20 @@ Wir führen den Versuch nun zweimal durch. Zum Beispiel wurde die Münze nur zwe
 <li>Der Weg vom Startpunkt bis zu einem der Enden wird als Pfad bezeichnet. Am Ende eines Pfades steht das Endergebnis und somit stellt das Ende auch keinen Verzweigungspunkt mehr dar.</li>
 <li>Jeder Pfad beschreibt ein Ereignis des gesamten mehrstufigen Zufallsexperiments. Jeder Verzweigungspunkt ein Zwischenereignis.</li>
 </ul>
-<div id="fig-prob-baum-01" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="images/prob_baum_01.png" class="img-fluid figure-img" style="width:100.0%"></p>
-<figcaption class="figure-caption">Abbildung&nbsp;10.1— Schematische Abbilung eines Wahrscheinlichkeitsbaum mit den Ereignissen <span class="math inline">\(A\)</span> und <span class="math inline">\(B\)</span> sowie deren Gegenereignis <span class="math inline">\(\bar{A}\)</span> und <span class="math inline">\(\bar{B}\)</span>.</figcaption>
-</figure>
-</div>
-<p>Multiplikationsregel</p>
-<p>Multiplikationsregel (UND-Regel): Sind zwei Ereignisse A und B unabhängig voneinander, dann gilt für die Wahrscheinlichkeit, dass beide zusammen auftreten: <span class="math inline">\(Pr(A \cap B) = Pr(A) \cdot Pr(B)\)</span> Die Wahrscheinlichkeit, dass A und B zusammen auftreten ist <span class="math inline">\(Pr(A)\)</span> mal <span class="math inline">\(Pr(B)\)</span>. Es wird zweimal hintereinander mit einem Würfel geworfen.</p>
-<p>Additionsregel</p>
+<p>Wir werfen eine faire Münze zweimal und erhalten folgendes Baumdiagramm. Darüber hinaus gehen wir davon aus, dass wir es mit einem unabhängigen Zufallsexperiment zu tun haben. Die beiden Münzwürfe beeinflussen sich nicht. Wir sind an den Wahrscheinlichkeiten für das Ereignis <span class="math inline">\(E_3 = \{\mbox{(Kopf, Kopf)}\}\)</span> und <span class="math inline">\(E_4 = \{\mbox{(Kopf, Zahl), (Zahl, Kopf)}\}\)</span> interessiert. Wir wollen also im Ereignis <span class="math inline">\(E_3\)</span> die Wahrscheinlichkeit für zweimal Kopf hintereinander bestimmen und bei dem Ereignis <span class="math inline">\(E_4\)</span> die Wahrscheinlichkeit für Kopf und Zahl, wobei die Reihenfolge unerheblich ist.</p>
+<dl>
+<dt>Multiplikationsregel (UND-Regel)</dt>
+<dd>
+Sind zwei Ereignisse A und B unabhängig voneinander, dann gilt für die Wahrscheinlichkeit, dass beide zusammen auftreten: <span class="math inline">\(Pr(A \cap B) = Pr(A) \cdot Pr(B)\)</span> Die Wahrscheinlichkeit, dass A und B zusammen auftreten ist <span class="math inline">\(Pr(A)\)</span> mal <span class="math inline">\(Pr(B)\)</span>. Es wird zweimal hintereinander mit einem Würfel geworfen.
+</dd>
+</dl>
+<p>Wenn wir also die Wahrscheinlichkeit <span class="math inline">\(Pr(E_3)\)</span> bestimmen wollen, dann müssen wir die Wahscheinlichkeiten <span class="math inline">\(Pr(\mbox{Kopf})\)</span> aus dem ersten Wurf mit der Wahrscheinlichkeit für <span class="math inline">\(Pr(\mbox{Kopf})\)</span> multiplizieren. Da wir eine faire Münze vorliegen haben, ist die Wahrscheinlichkeit für <span class="math inline">\(Pr(E_3) = 0.5 \cdot 0.5 = 0.25\)</span>.</p>
+<dl>
+<dt>Additionsregel (ODER-Regel)</dt>
+<dd>
+Die Wahrscheinlichkeit, dass ein Zufallsereignis eines von mehreren Resultaten liefert, ist die Summe der Einzelwahrscheinlichkeiten dieser Resultate. Es werden die Wahrscheinlichkeiten am Ende der Pfade addiert.
+</dd>
+</dl>
 <div id="tbl-prob-1" class="anchored">
 <table class="table">
 <caption>Tabelle&nbsp;10.1— Eine 2x2 Tabelle als Beispiel für unterschiedliche Flohinfektionen bei Hunden und Katzen. Dargestellt sind die <em>beobachteten</em> Werte.</caption>
