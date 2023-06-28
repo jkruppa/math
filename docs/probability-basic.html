@@ -235,7 +235,6 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#satz-von-bayes" id="toc-satz-von-bayes" class="nav-link" data-scroll-target="#satz-von-bayes"><span class="header-section-number">10.3</span> Satz von Bayes</a></li>
   <li><a href="#mengenschreibweise" id="toc-mengenschreibweise" class="nav-link" data-scroll-target="#mengenschreibweise"><span class="header-section-number">10.4</span> Mengenschreibweise</a></li>
   <li><a href="#logische-operatoren" id="toc-logische-operatoren" class="nav-link" data-scroll-target="#logische-operatoren"><span class="header-section-number">10.5</span> Logische Operatoren</a></li>
-  <li><a href="#sec-prob-cond" id="toc-sec-prob-cond" class="nav-link" data-scroll-target="#sec-prob-cond"><span class="header-section-number">10.6</span> Bedingte Wahrscheinlichkeiten</a></li>
   </ul>
 </nav>
     </div>
@@ -259,15 +258,10 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p><em>Version vom Juni 28, 2023 um 08:28:25</em></p>
+<p><em>Version vom Juni 28, 2023 um 08:47:15</em></p>
 <blockquote class="blockquote">
 <p><em>“Die wichtigsten Fragen des Lebens sind in der Tat größtenteils nur Wahrscheinlichkeitsprobleme.” — Pierre-Simon Laplace</em></p>
 </blockquote>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/caution.png" class="img-fluid figure-img" style="width:50.0%"></p>
-</figure>
-</div>
 <p>In diesem Abschnitt wollen wir uns nochmal die Grundlagen der Wahrscheinlcihkeitsrechnung vergegenwertigen. Vieles davon ist schon bekannt und dient der Auffrischung. Wir brauchen Wahrscheinlichkeiten und deren Berechnungen später in der direkten Anwendung in der Statistik. Wir konzentrieren uns hier zu Anfang auf den laplaceschen Wahrscheinlichkeitbegriff und werden noch andere in der Statistik kennen lernen. Zum Anfang soll aber der klassische laplacesche Wahrscheinlichkeitbegriff ausreichen.</p>
 <p>Eigentlich habe ich in diesem sehr kurzen Leitfaden zur Mathematik nur eine echte Literaturempfehlung im Bereich der Wahrscheinlichkeitsrechnung und das ist das Buch von Jonathan Weisberg. Das tolle Buch von Jonathan Weisberg ist <a href="https://jonathanweisberg.org/vip/">online zu finden</a>. Ein schönes Buch über Wahrscheinlichkeiten. Ich habe teilweise Beispiele aus dem Buch verwendet und darüber hinaus finde ich es sehr spannend zu lesen.</p>
 
@@ -415,7 +409,7 @@ Pr(Kopf \cap Kopf) &amp;= Pr(Kopf) \times Pr(Kopf) \\
 <dl>
 <dt>Bedingte Wahrscheinlichkeit</dt>
 <dd>
-Wir schreiben <span class="math inline">\(Pr(A \mid B)\)</span>, wenn wir die Wahrscheinlichkeit für das Ereignis <span class="math inline">\(A\)</span> bestimmen wolln unter der Bedingung das <span class="math inline">\(B\)</span> schon eingetreten ist.
+Wir schreiben <span class="math inline">\(Pr(B \mid A)\)</span>, wenn wir die Wahrscheinlichkeit für das Ereignis <span class="math inline">\(B\)</span> bestimmen wolln unter der Bedingung das <span class="math inline">\(A\)</span> schon eingetreten ist.
 </dd>
 </dl>
 <p>Die Wahrscheinlichkeiten am Ende der Pfade berechnet sich wie gewohnt mit der Multiplikationsregel. Wir können so die Wahrscheinlichkeit für <span class="math inline">\(Pr(A \cap B)\)</span> für den ersten Pfad und die folgenden Pfade berechnen.</p>
@@ -463,25 +457,25 @@ Pr(\bar{A} \cap \bar{B}) &amp;= 0.7 \cdot 0.9 = 0.63 \\
 </tbody>
 </table>
 <p>In der Kreuztabelle kannst du dann auch einfach die Wahrscheinlichkeiten für <span class="math inline">\(Pr(B)\)</span> und <span class="math inline">\(Pr(\bar{B})\)</span> unabhängig von dem Ereignis <span class="math inline">\(A\)</span> und <span class="math inline">\(\bar{A}\)</span> durch summieren bestimmen. In den Zeilensummen findest du die Wahrscheinlichkeiten für die Ereignisse <span class="math inline">\(A\)</span> und <span class="math inline">\(\bar{A}\)</span> mit <span class="math inline">\(Pr(A) = 0.3\)</span> und <span class="math inline">\(Pr(\bar{A}) = 0.7\)</span> wieder. In den Spaltensummen stehen dann die unabhängigen Wahrscheinlichkeiten für für <span class="math inline">\(Pr(B)\)</span> und <span class="math inline">\(Pr(\bar{B})\)</span> mit <span class="math inline">\(Pr(B) = 0.13\)</span> und <span class="math inline">\(Pr(\bar{B}) = 0.87\)</span>.</p>
-<p>Die bedingte Wahrscheinlichkeit <span class="math inline">\(Pr(A\mid B)\)</span> können wir uns auch als Fläche<em>anteil</em> vorstellen. Im Folgenden haben wir die Ereignisse <span class="math inline">\(A\)</span> und <span class="math inline">\(B\)</span>, die sich überschneiden. In der lila Fläche finden die Ereignisse <span class="math inline">\(A\)</span> und <span class="math inline">\(B\)</span> statt. Wir schreiben hier <span class="math inline">\(A \cap B\)</span>.</p>
+<p>Die bedingte Wahrscheinlichkeit <span class="math inline">\(Pr(B\mid A)\)</span> können wir uns auch als Fläche<em>anteil</em> vorstellen. Im Folgenden haben wir die Ereignisse <span class="math inline">\(A\)</span> und <span class="math inline">\(B\)</span>, die sich überschneiden. In der lila Fläche finden die Ereignisse <span class="math inline">\(A\)</span> und <span class="math inline">\(B\)</span> statt. Wir schreiben hier <span class="math inline">\(A \cap B\)</span>.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/schnitt_2.png" class="img-fluid figure-img" style="width:50.0%"></p>
 </figure>
 </div>
-<p>Wenn <span class="math inline">\(B\)</span> gilt, wie wahrscheinlich sind wir dann in der lila Fläche, also gilt <span class="math inline">\(A\)</span> und <span class="math inline">\(B\)</span>? Das können wir dann einfach über den Anteil der Fläche <span class="math inline">\(A\cap B\)</span> an der Fläche <span class="math inline">\(B\)</span> berechnen. Das wiederum ist nichts anderes als die bedingte Wahrscheinlichkeit, dass <span class="math inline">\(A\)</span> gilt, wenn <span class="math inline">\(B\)</span> wahr ist.</p>
+<p>Wenn <span class="math inline">\(A\)</span> gilt, wie wahrscheinlich sind wir dann in der lila Fläche, also gilt <span class="math inline">\(A \cap B\)</span>? Das können wir dann einfach über den Anteil der Fläche <span class="math inline">\(A\cap B\)</span> an der Fläche <span class="math inline">\(A\)</span> berechnen. Das wiederum ist nichts anderes als die bedingte Wahrscheinlichkeit, dass <span class="math inline">\(B\)</span> gilt, wenn <span class="math inline">\(A\)</span> wahr ist.</p>
 <p><span class="math display">\[
-Pr(A\mid B) = \cfrac{Pr(A \cap B)}{P(B)}
+Pr(B\mid A) = \cfrac{Pr(A \cap B)}{P(A)}
 \]</span></p>
-<p><span class="math inline">\(Pr(A) = 2/3\)</span></p>
-<p><span class="math inline">\(Pr(K_1) \cap \cup Pr(K_2)\)</span></p>
+<p>Somit haben wir hier auf drei Arten uns nochmal vor Augen geführt, was eine bedingte Wahrscheinlicheit für das Eintreten eines Ereignisses bedeutet.</p>
 </section>
 </section>
 <section id="satz-von-bayes" class="level2" data-number="10.3">
 <h2 data-number="10.3" class="anchored" data-anchor-id="satz-von-bayes"><span class="header-section-number">10.3</span> Satz von Bayes</h2>
-<p>Für zwei Ereignisse <span class="math inline">\(A\)</span> und <span class="math inline">\(B\)</span> mit der Eintrittswahrscheinlichkeit <span class="math inline">\(Pr(B) &gt; 0\)</span> lässt sich die Wahrscheinlichkeit von <span class="math inline">\(A\)</span> unter der Bedingung, dass <span class="math inline">\(B\)</span> eingetreten ist, durch die Wahrscheinlichkeit von <span class="math inline">\(B\)</span> unter der Bedingung, dass <span class="math inline">\(A\)</span> eingetreten ist, errechnen:</p>
+<p>Im vorherigen Abschnitt haben wir uns mit der Frage beschäftigt, wie wir die bedingte Wahrscheinlichkeit <span class="math inline">\(Pr(A \mid B)\)</span> berechnen. Was ist aber, wenn wir an der bedingten Wahrscheinlichkeit für <span class="math inline">\(Pr(B \mid A)\)</span> interessiert sind? Hier hilft uns der Satz von Bayes weiter, der die Umformung von bedingten Wahrscheinlichkeiten ermöglicht.</p>
+<p>Der Satz von Bayes ist wie folgt definiert. Für zwei Ereignisse <span class="math inline">\(A\)</span> und <span class="math inline">\(B\)</span> mit der Eintrittswahrscheinlichkeit <span class="math inline">\(Pr(B) &gt; 0\)</span> lässt sich die Wahrscheinlichkeit von <span class="math inline">\(A\)</span> unter der Bedingung, dass <span class="math inline">\(B\)</span> eingetreten ist, durch die Wahrscheinlichkeit von <span class="math inline">\(B\)</span> unter der Bedingung, dass <span class="math inline">\(A\)</span> eingetreten ist, errechnen:</p>
 <p><span class="math display">\[
-Pr(B\mid A) = \cfrac{Pr(A\mid B) \cdot Pr(B)} {Pr(A)}
+Pr(A\mid B) = \cfrac{Pr(B \mid A) \cdot Pr(A)} {Pr(B)}
 \]</span></p>
 <p>mit</p>
 <ul>
@@ -490,10 +484,18 @@ Pr(B\mid A) = \cfrac{Pr(A\mid B) \cdot Pr(B)} {Pr(A)}
 <li><span class="math inline">\(Pr(A)\)</span> ist die a-priori-Wahrscheinlichkeit des Ereignisses <span class="math inline">\(A\)</span> und</li>
 <li><span class="math inline">\(Pr(B)\)</span> ist die a-priori-Wahrscheinlichkeit des Ereignisses <span class="math inline">\(B\)</span>.</li>
 </ul>
+<p>Es ist wichtig zu merken, dass im Zähler immer die Wahrscheinlichkeit von der bedingten Wahrscheinlichkeit steht. Wir haben hier im Zähler <span class="math inline">\(Pr(B \mid A)\)</span> also müssen wir hier mit <span class="math inline">\(Pr(A)\)</span> multiplizieren und die Wahrscheinlichkeit <span class="math inline">\(Pr(B)\)</span> kommt in den Zähler. Dann das ganze einmal an unserem Beispiel von oben durchgerechnet.</p>
+<p><span class="math display">\[
+\begin{aligned}
+Pr(A\mid B) &amp;= \cfrac{Pr(B\mid A) \cdot Pr(A)} {Pr(B)} \\
+&amp;= \cfrac{0.2 \cdot 0.3} {0.13} \\
+&amp;= 0.46
+\end{aligned}
+\]</span> Wir nennen die bedingte Wahrscheinlichkeit von <span class="math inline">\(Pr(A \mid B)\)</span> auch die inverse Wahrscheinlichkeit von <span class="math inline">\(Pr(B \mid A)\)</span>.</p>
 </section>
 <section id="mengenschreibweise" class="level2" data-number="10.4">
 <h2 data-number="10.4" class="anchored" data-anchor-id="mengenschreibweise"><span class="header-section-number">10.4</span> Mengenschreibweise</h2>
-<p>In <a href="#tbl-mengen">Tabelle&nbsp;<span>10.1</span></a></p>
+<p>In <span class="citation" data-cites="tbl">(<a href="#ref-tbl" role="doc-biblioref"><strong>tbl?</strong></a>)</span>- sehen wir nochmal als Wiederholung verschiedene Mengenschreibweisen.</p>
 <div id="tbl-mengen" class="anchored">
 <table class="table">
 <caption>Tabelle&nbsp;10.1— Test</caption>
@@ -536,9 +538,7 @@ Pr(B\mid A) = \cfrac{Pr(A\mid B) \cdot Pr(B)} {Pr(A)}
 </section>
 <section id="logische-operatoren" class="level2" data-number="10.5">
 <h2 data-number="10.5" class="anchored" data-anchor-id="logische-operatoren"><span class="header-section-number">10.5</span> Logische Operatoren</h2>
-<p>Und <span class="math inline">\(\cap\)</span></p>
-<p>Oder <span class="math inline">\(\cup\)</span></p>
-<p>In <a href="#tbl-logical-figures">Tabelle&nbsp;<span>10.2</span></a></p>
+<p>In <a href="#tbl-logical-figures">Tabelle&nbsp;<span>10.2</span></a> nochmal die Zusammenfassung von Menge, mathematischer Mengenschreibweise sowie deren Bedeutung.</p>
 <div id="tbl-logical-figures" class="anchored">
 <table class="table">
 <caption>Tabelle&nbsp;10.2— Test</caption>
@@ -588,9 +588,6 @@ Pr(B\mid A) = \cfrac{Pr(A\mid B) \cdot Pr(B)} {Pr(A)}
 </tbody>
 </table>
 </div>
-</section>
-<section id="sec-prob-cond" class="level2" data-number="10.6">
-<h2 data-number="10.6" class="anchored" data-anchor-id="sec-prob-cond"><span class="header-section-number">10.6</span> Bedingte Wahrscheinlichkeiten</h2>
 
 
 </section>

@@ -8,8 +8,6 @@ pacman::p_load(tidyverse, readxl, knitr, kableExtra, Hmisc)
 
 > *"Die wichtigsten Fragen des Lebens sind in der Tat größtenteils nur Wahrscheinlichkeitsprobleme." --- Pierre-Simon Laplace*
 
-![](images/caution.png){fig-align="center" width="50%"}
-
 In diesem Abschnitt wollen wir uns nochmal die Grundlagen der Wahrscheinlcihkeitsrechnung vergegenwertigen. Vieles davon ist schon bekannt und dient der Auffrischung. Wir brauchen Wahrscheinlichkeiten und deren Berechnungen später in der direkten Anwendung in der Statistik. Wir konzentrieren uns hier zu Anfang auf den laplaceschen Wahrscheinlichkeitbegriff und werden noch andere in der Statistik kennen lernen. Zum Anfang soll aber der klassische laplacesche Wahrscheinlichkeitbegriff ausreichen.
 
 Eigentlich habe ich in diesem sehr kurzen Leitfaden zur Mathematik nur eine echte Literaturempfehlung im Bereich der Wahrscheinlichkeitsrechnung und das ist das Buch von Jonathan Weisberg. Das tolle Buch von Jonathan Weisberg ist [online zu finden](https://jonathanweisberg.org/vip/). Ein schönes Buch über Wahrscheinlichkeiten. Ich habe teilweise Beispiele aus dem Buch verwendet und darüber hinaus finde ich es sehr spannend zu lesen.
@@ -132,7 +130,7 @@ Soweit haben wir uns einen unabhängigen Zufallsversuch angeschaut. Der zweite M
 ![](images/prob_baum_03.png){#fig-prob-baum-03 fig-align="center" width="100%"}
 
 Bedingte Wahrscheinlichkeit
-: Wir schreiben $Pr(A \mid B)$, wenn wir die Wahrscheinlichkeit für das Ereignis $A$ bestimmen wolln unter der Bedingung das $B$ schon eingetreten ist. 
+: Wir schreiben $Pr(B \mid A)$, wenn wir die Wahrscheinlichkeit für das Ereignis $B$ bestimmen wolln unter der Bedingung das $A$ schon eingetreten ist. 
 
 Die Wahrscheinlichkeiten am Ende der Pfade berechnet sich wie gewohnt mit der Multiplikationsregel. Wir können so die Wahrscheinlichkeit für $Pr(A \cap B)$ für den ersten Pfad und die folgenden Pfade berechnen.
 
@@ -157,31 +155,26 @@ Wenn dir die Schreibweise mit dem Bogen $\cap$ ungewohnt ist, dann kannst du dir
 In der Kreuztabelle kannst du dann auch einfach die Wahrscheinlichkeiten für $Pr(B)$ und $Pr(\bar{B})$ unabhängig von dem Ereignis $A$ und $\bar{A}$ durch summieren bestimmen. In den Zeilensummen findest du die  Wahrscheinlichkeiten für die Ereignisse  $A$ und $\bar{A}$ mit $Pr(A) = 0.3$ und $Pr(\bar{A}) = 0.7$ wieder. In den Spaltensummen stehen dann die unabhängigen Wahrscheinlichkeiten für für $Pr(B)$ und $Pr(\bar{B})$ mit  $Pr(B) = 0.13$ und $Pr(\bar{B}) = 0.87$. 
 
 
-Die bedingte Wahrscheinlichkeit $Pr(A\mid B)$ können wir uns auch als Fläche*anteil* vorstellen. Im Folgenden haben wir die Ereignisse $A$ und $B$, die sich überschneiden. In der lila Fläche finden die Ereignisse $A$ und $B$ statt. Wir schreiben hier $A \cap B$. 
+Die bedingte Wahrscheinlichkeit $Pr(B\mid A)$ können wir uns auch als Fläche*anteil* vorstellen. Im Folgenden haben wir die Ereignisse $A$ und $B$, die sich überschneiden. In der lila Fläche finden die Ereignisse $A$ und $B$ statt. Wir schreiben hier $A \cap B$. 
 
 ![](images/schnitt_2.png){fig-align="center" width="50%"}
 
-Wenn $B$ gilt, wie wahrscheinlich sind wir dann in der lila Fläche, also gilt $A$ und $B$? Das können wir dann einfach über den Anteil der Fläche $A\cap B$ an der Fläche $B$ berechnen. Das wiederum ist nichts anderes als die bedingte Wahrscheinlichkeit, dass $A$ gilt, wenn $B$ wahr ist.
+Wenn $A$ gilt, wie wahrscheinlich sind wir dann in der lila Fläche, also gilt $A \cap B$? Das können wir dann einfach über den Anteil der Fläche $A\cap B$ an der Fläche $A$ berechnen. Das wiederum ist nichts anderes als die bedingte Wahrscheinlichkeit, dass $B$ gilt, wenn $A$ wahr ist.
 
 $$
-Pr(A\mid B) = \cfrac{Pr(A \cap B)}{P(B)}
+Pr(B\mid A) = \cfrac{Pr(A \cap B)}{P(A)}
 $$
 
-
-
-
-$Pr(A) = 2/3$
-
-$Pr(K_1) \cap \cup Pr(K_2)$
-
-
+Somit haben wir hier auf drei Arten uns nochmal vor Augen geführt, was eine bedingte Wahrscheinlicheit für das Eintreten eines Ereignisses bedeutet.
 
 ## Satz von Bayes
 
-Für zwei Ereignisse $A$ und $B$ mit der Eintrittswahrscheinlichkeit $Pr(B) > 0$ lässt sich die Wahrscheinlichkeit von $A$ unter der Bedingung, dass $B$ eingetreten ist, durch die Wahrscheinlichkeit von $B$ unter der Bedingung, dass $A$ eingetreten ist, errechnen:
+Im vorherigen Abschnitt haben wir uns mit der Frage beschäftigt, wie wir die bedingte Wahrscheinlichkeit $Pr(A \mid B)$ berechnen. Was ist aber, wenn wir an der bedingten Wahrscheinlichkeit für $Pr(B \mid A)$ interessiert sind? Hier hilft uns der Satz von Bayes weiter, der die Umformung von bedingten Wahrscheinlichkeiten ermöglicht. 
+
+Der Satz von Bayes ist wie folgt definiert. Für zwei Ereignisse $A$ und $B$ mit der Eintrittswahrscheinlichkeit $Pr(B) > 0$ lässt sich die Wahrscheinlichkeit von $A$ unter der Bedingung, dass $B$ eingetreten ist, durch die Wahrscheinlichkeit von $B$ unter der Bedingung, dass $A$ eingetreten ist, errechnen:
 
 $$
-Pr(B\mid A) = \cfrac{Pr(A\mid B) \cdot Pr(B)} {Pr(A)}
+Pr(A\mid B) = \cfrac{Pr(B \mid A) \cdot Pr(A)} {Pr(B)}
 $$
 
 mit
@@ -191,9 +184,21 @@ mit
 -   $Pr(A)$ ist die a-priori-Wahrscheinlichkeit des Ereignisses $A$ und
 -   $Pr(B)$ ist die a-priori-Wahrscheinlichkeit des Ereignisses $B$.
 
+Es ist wichtig zu merken, dass im Zähler immer die Wahrscheinlichkeit von der bedingten Wahrscheinlichkeit steht. Wir haben hier im Zähler $Pr(B \mid A)$ also müssen wir hier mit $Pr(A)$ multiplizieren und die Wahrscheinlichkeit $Pr(B)$ kommt in den Zähler. Dann das ganze einmal an unserem Beispiel von oben durchgerechnet.
+
+$$
+\begin{aligned}
+Pr(A\mid B) &= \cfrac{Pr(B\mid A) \cdot Pr(A)} {Pr(B)} \\
+ &= \cfrac{0.2 \cdot 0.3} {0.13} \\
+ &= 0.46
+\end{aligned}
+$$
+Wir nennen die bedingte Wahrscheinlichkeit von $Pr(A \mid B)$ auch die inverse Wahrscheinlichkeit von $Pr(B \mid A)$.
+
+
 ## Mengenschreibweise
 
-In @tbl-mengen
+In @tbl- sehen wir nochmal als Wiederholung verschiedene Mengenschreibweisen.
 
 |         |         | Mengenschreibweise |         **Typ**         |
 |:-------:|:-------:|:------------------:|:-----------------------:|
@@ -206,11 +211,7 @@ In @tbl-mengen
 
 ## Logische Operatoren
 
-Und $\cap$
-
-Oder $\cup$
-
-In @tbl-logical-figures
+In @tbl-logical-figures nochmal die Zusammenfassung von Menge, mathematischer Mengenschreibweise sowie deren Bedeutung.
 
 |         Abbildung         |                                |                         Bedeutung                         |
 |:-------------------------:|:-----------------:|:-------------------------:|
@@ -222,5 +223,3 @@ In @tbl-logical-figures
 | ![](images/schnitt_6.png) |         $B \subset A$          |                 $B$ ist Teilmenge von $A$                 |
 
 : Test {#tbl-logical-figures}
-
-## Bedingte Wahrscheinlichkeiten {#sec-prob-cond}
