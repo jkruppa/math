@@ -258,12 +258,12 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p><em>Version vom Juni 28, 2023 um 08:47:15</em></p>
+<p><em>Version vom Juni 28, 2023 um 08:55:26</em></p>
 <blockquote class="blockquote">
 <p><em>“Die wichtigsten Fragen des Lebens sind in der Tat größtenteils nur Wahrscheinlichkeitsprobleme.” — Pierre-Simon Laplace</em></p>
 </blockquote>
 <p>In diesem Abschnitt wollen wir uns nochmal die Grundlagen der Wahrscheinlcihkeitsrechnung vergegenwertigen. Vieles davon ist schon bekannt und dient der Auffrischung. Wir brauchen Wahrscheinlichkeiten und deren Berechnungen später in der direkten Anwendung in der Statistik. Wir konzentrieren uns hier zu Anfang auf den laplaceschen Wahrscheinlichkeitbegriff und werden noch andere in der Statistik kennen lernen. Zum Anfang soll aber der klassische laplacesche Wahrscheinlichkeitbegriff ausreichen.</p>
-<p>Eigentlich habe ich in diesem sehr kurzen Leitfaden zur Mathematik nur eine echte Literaturempfehlung im Bereich der Wahrscheinlichkeitsrechnung und das ist das Buch von Jonathan Weisberg. Das tolle Buch von Jonathan Weisberg ist <a href="https://jonathanweisberg.org/vip/">online zu finden</a>. Ein schönes Buch über Wahrscheinlichkeiten. Ich habe teilweise Beispiele aus dem Buch verwendet und darüber hinaus finde ich es sehr spannend zu lesen.</p>
+<p>Eigentlich habe ich in diesem sehr kurzen Leitfaden zur Mathematik nur eine echte Literaturempfehlung im Bereich der Wahrscheinlichkeitsrechnung und das ist das Buch Odds &amp; Ends von Jonathan Weisberg. Das tolle Buch von Jonathan Weisberg ist <a href="https://jonathanweisberg.org/vip/">online zu finden</a>. Ein schönes Buch über Wahrscheinlichkeiten. Ich habe teilweise Beispiele aus dem Buch verwendet und darüber hinaus finde ich es sehr spannend zu lesen.</p>
 
 <div class="no-row-height column-margin column-container"><div class="">
 <div class="quarto-figure quarto-figure-center">
@@ -470,10 +470,13 @@ Pr(B\mid A) = \cfrac{Pr(A \cap B)}{P(A)}
 <p>Somit haben wir hier auf drei Arten uns nochmal vor Augen geführt, was eine bedingte Wahrscheinlicheit für das Eintreten eines Ereignisses bedeutet.</p>
 </section>
 </section>
-<section id="satz-von-bayes" class="level2" data-number="10.3">
+<section id="satz-von-bayes" class="level2 page-columns page-full" data-number="10.3">
 <h2 data-number="10.3" class="anchored" data-anchor-id="satz-von-bayes"><span class="header-section-number">10.3</span> Satz von Bayes</h2>
 <p>Im vorherigen Abschnitt haben wir uns mit der Frage beschäftigt, wie wir die bedingte Wahrscheinlichkeit <span class="math inline">\(Pr(A \mid B)\)</span> berechnen. Was ist aber, wenn wir an der bedingten Wahrscheinlichkeit für <span class="math inline">\(Pr(B \mid A)\)</span> interessiert sind? Hier hilft uns der Satz von Bayes weiter, der die Umformung von bedingten Wahrscheinlichkeiten ermöglicht.</p>
-<p>Der Satz von Bayes ist wie folgt definiert. Für zwei Ereignisse <span class="math inline">\(A\)</span> und <span class="math inline">\(B\)</span> mit der Eintrittswahrscheinlichkeit <span class="math inline">\(Pr(B) &gt; 0\)</span> lässt sich die Wahrscheinlichkeit von <span class="math inline">\(A\)</span> unter der Bedingung, dass <span class="math inline">\(B\)</span> eingetreten ist, durch die Wahrscheinlichkeit von <span class="math inline">\(B\)</span> unter der Bedingung, dass <span class="math inline">\(A\)</span> eingetreten ist, errechnen:</p>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p>Siehe auch folgendes Beispiel aus <a href="https://jonathanweisberg.org/vip/chbayes.html#chbayes">Odds &amp; Ends von Jonathan Weisberg</a> zu verschiedenfarbigen Taxis.</p>
+</div></div><p>Der Satz von Bayes ist wie folgt definiert. Für zwei Ereignisse <span class="math inline">\(A\)</span> und <span class="math inline">\(B\)</span> mit der Eintrittswahrscheinlichkeit <span class="math inline">\(Pr(B) &gt; 0\)</span> lässt sich die Wahrscheinlichkeit von <span class="math inline">\(A\)</span> unter der Bedingung, dass <span class="math inline">\(B\)</span> eingetreten ist, durch die Wahrscheinlichkeit von <span class="math inline">\(B\)</span> unter der Bedingung, dass <span class="math inline">\(A\)</span> eingetreten ist, errechnen:</p>
 <p><span class="math display">\[
 Pr(A\mid B) = \cfrac{Pr(B \mid A) \cdot Pr(A)} {Pr(B)}
 \]</span></p>

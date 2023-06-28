@@ -10,7 +10,7 @@ pacman::p_load(tidyverse, readxl, knitr, kableExtra, Hmisc)
 
 In diesem Abschnitt wollen wir uns nochmal die Grundlagen der Wahrscheinlcihkeitsrechnung vergegenwertigen. Vieles davon ist schon bekannt und dient der Auffrischung. Wir brauchen Wahrscheinlichkeiten und deren Berechnungen später in der direkten Anwendung in der Statistik. Wir konzentrieren uns hier zu Anfang auf den laplaceschen Wahrscheinlichkeitbegriff und werden noch andere in der Statistik kennen lernen. Zum Anfang soll aber der klassische laplacesche Wahrscheinlichkeitbegriff ausreichen.
 
-Eigentlich habe ich in diesem sehr kurzen Leitfaden zur Mathematik nur eine echte Literaturempfehlung im Bereich der Wahrscheinlichkeitsrechnung und das ist das Buch von Jonathan Weisberg. Das tolle Buch von Jonathan Weisberg ist [online zu finden](https://jonathanweisberg.org/vip/). Ein schönes Buch über Wahrscheinlichkeiten. Ich habe teilweise Beispiele aus dem Buch verwendet und darüber hinaus finde ich es sehr spannend zu lesen.
+Eigentlich habe ich in diesem sehr kurzen Leitfaden zur Mathematik nur eine echte Literaturempfehlung im Bereich der Wahrscheinlichkeitsrechnung und das ist das Buch Odds & Ends von Jonathan Weisberg. Das tolle Buch von Jonathan Weisberg ist [online zu finden](https://jonathanweisberg.org/vip/). Ein schönes Buch über Wahrscheinlichkeiten. Ich habe teilweise Beispiele aus dem Buch verwendet und darüber hinaus finde ich es sehr spannend zu lesen.
 
 ::: column-margin
 ![](images/odds_and_ends.PNG){fig-align="center"}
@@ -170,6 +170,10 @@ Somit haben wir hier auf drei Arten uns nochmal vor Augen geführt, was eine bed
 ## Satz von Bayes
 
 Im vorherigen Abschnitt haben wir uns mit der Frage beschäftigt, wie wir die bedingte Wahrscheinlichkeit $Pr(A \mid B)$ berechnen. Was ist aber, wenn wir an der bedingten Wahrscheinlichkeit für $Pr(B \mid A)$ interessiert sind? Hier hilft uns der Satz von Bayes weiter, der die Umformung von bedingten Wahrscheinlichkeiten ermöglicht. 
+
+::: column-margin
+Siehe auch folgendes Beispiel aus [Odds & Ends von Jonathan Weisberg](https://jonathanweisberg.org/vip/chbayes.html#chbayes) zu verschiedenfarbigen Taxis.
+:::
 
 Der Satz von Bayes ist wie folgt definiert. Für zwei Ereignisse $A$ und $B$ mit der Eintrittswahrscheinlichkeit $Pr(B) > 0$ lässt sich die Wahrscheinlichkeit von $A$ unter der Bedingung, dass $B$ eingetreten ist, durch die Wahrscheinlichkeit von $B$ unter der Bedingung, dass $A$ eingetreten ist, errechnen:
 
