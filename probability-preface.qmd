@@ -8,7 +8,9 @@ pacman::p_load(tidyverse, readxl, knitr, kableExtra, Hmisc)
 
 > *"In keinem anderen Zweig der Mathematik ist es für Experten so leicht, sich zu vertun wie in der Wahrscheinlichkeitsrechnung." --- Martin Gardner*
 
-![](images/caution.png){fig-align="center" width="50%"}
+In den folgenden zwei kurzen Abschnitten wollen wir uns nochmal mit der Wahrscheinlichkeit beschäftigen. Wir gehen nochmal die Grundlagen der Wahrscheinlichkeitsrechnung durch. Dabei wiederholen wir das Baumdiagramm und gehen auf bedingte Wahrscheinlichkeiten ein.
+
+Am Ende betrachten wir dann nochmal kurz Wahrscheinlichkeitsverteilungen, da wir die Idee der Wahrscheinlichkeitsverteilung noch später in der Statistik brauchen. Auch hier haben wir dann nur einen kurzen Abriss und Verteifen dann in späteren statistsichen Modulen.
 
 
 
