@@ -95,11 +95,13 @@ Schauen wir uns in @fig-prob-baum-01 einmal einen theoretischen Wahrscheinlichke
 -   Der Weg vom Startpunkt bis zu einem der Enden wird als Pfad bezeichnet. Am Ende eines Pfades steht das Endergebnis und somit stellt das Ende auch keinen Verzweigungspunkt mehr dar.
 -   Jeder Pfad beschreibt ein Ereignis des gesamten mehrstufigen Zufallsexperiments. Jeder Verzweigungspunkt ein Zwischenereignis.
 
-Wir werfen eine faire Münze zweimal und erhalten folgendes Baumdiagramm.
+### Unabhängiger Zufallsversuch
+
+Wir werfen eine faire Münze zweimal und erhalten folgendes Baumdiagramm. Darüber hinaus gehen wir davon aus, dass wir es mit einem unabhängigen Zufallsexperiment zu tun haben.
 
 ![](images/prob_baum_02.png){#fig-prob-baum-01 fig-align="center" width="100%"}
 
-Darüber hinaus gehen wir davon aus, dass wir es mit einem unabhängigen Zufallsexperiment zu tun haben. Die beiden Münzwürfe beeinflussen sich nicht. Wir sind an den Wahrscheinlichkeiten für das Ereignis $E_3 = \{\mbox{(Kopf, Kopf)}\}$ und $E_4 = \{\mbox{(Kopf, Zahl), (Zahl, Kopf)}\}$ interessiert. Wir wollen also im Ereignis $E_3$ die Wahrscheinlichkeit für zweimal Kopf hintereinander bestimmen und bei dem Ereignis $E_4$ die Wahrscheinlichkeit für Kopf und Zahl, wobei die Reihenfolge unerheblich ist.
+Die beiden Münzwürfe beeinflussen sich nicht. Wir sind an den Wahrscheinlichkeiten für das Ereignis $E_3 = \{\mbox{(Kopf, Kopf)}\}$ und $E_4 = \{\mbox{(Kopf, Zahl), (Zahl, Kopf)}\}$ interessiert. Wir wollen also im Ereignis $E_3$ die Wahrscheinlichkeit für zweimal Kopf hintereinander bestimmen und bei dem Ereignis $E_4$ die Wahrscheinlichkeit für Kopf und Zahl, wobei die Reihenfolge unerheblich ist.
 
 Multiplikationsregel (UND-Regel)
 
@@ -113,7 +115,26 @@ Additionsregel (ODER-Regel)
 
 Wir wollen nun die Wahrscheinlichkeit für das Ereignis $E_4$ berechnen. Dafür brauchen wir die Pfadwahrscheinlichkeiten für $Pr(\mbox{Kopf, Zahl})$ sowie $Pr(\mbox{Zahl, Kopf})$. In unserem Baumdiagramm können wir die Zahlen direkt am Ende der beiden Pfade ablesen. Die Wahrscheinlichkeiten sind jeweils $Pr(\mbox{Kopf, Zahl}) = 0.25$ sowie $Pr(\mbox{Zahl, Kopf}) = 0.25$. Jetzt addieren wir noch beide Wahrscheinlichkeiten auf und erhalten eine Wahrscheinlichkeit für $Pr(E_4)$ von 0.5.
 
+In der Mengenschreibweise können wir die Wahrscheinlichkeit für das Ereignis zweimal Kopf wie folgt schreiben. Das $\cap$ steht dabei für das logische *UND*.
+
+$$
+\begin{aligned}
+Pr(Kopf \cap Kopf) &= Pr(Kopf) \times Pr(Kopf) \\
+               &= 1/2 \times 1/2 \\
+               &= 1/4
+\end{aligned}
+$$
+
+### Abhängiger Zufallsversuch
+
+Soweit haben wir uns einen unabhängigen Zufallsversuch angeschaut. Der zweite Münzwurf war unabhängig vom ersten Münzwurf. Oder der erste Münzwurf beeinflusst nicht den zweiten Münzwurf. Im Folgenden wollen wir uns ein abhängiges Zufallsexperiment anschauen. Wenn das Ereignis $A$ oder das Gegenereignis $\bar{A}$ auftritt, dann tritt das Ereignis $B$ und das Gegenereignis $\bar{B}$ nicht unabhängig voneinander auf. Das Ereignis $A$ tritt mit einer Wahrscheinlichkeit von $0.3$ auf. Somit tritt das Gegenereignis $\bar{A}$ mit einer Wahrscheinlichkeit von $0.7$ auf. Im Weiteren tritt das Ereignis $B$ abhängig vom Auftreten von $A$ oder $\bar{A}$ mit unterschiedlicher Wahrscheinlichkeit auf. Im folgenden Baumdiagramm ist der Zusammenhang visualisiert.
+
 ![](images/prob_baum_03.png){#fig-prob-baum-03 fig-align="center" width="100%"}
+
+Bedingte Wahrscheinlichkeit
+: Wir schreiben $Pr(A \mid B)$, wenn wir die Wahrscheinlichkeit für das Ereignis $A$ bestimmen wolln unter der Bedingung das $B$ schon eingetreten ist. 
+
+Die Wahrscheinlichkeiten am Ende der Pfade berechnet sich wie gewohnt mit der Multiplikationsregel. Wir können so die Wahrscheinlichkeit für $Pr(A \cap B)$ für den ersten Pfad und die folgenden Pfade berechnen.
 
 $$
 \begin{aligned}
@@ -124,6 +145,7 @@ Pr(\bar{A} \cap \bar{B}) &= 0.7 \cdot 0.9 = 0.63 \\
 \end{aligned}
 $$
 
+Wenn dir die Schreibweise mit dem Bogen $\cap$ ungewohnt ist, dann kannst du dir das Baumdiagramm auch als eine Kreuztabelle vorstellen. Wir tragen in die Felder immer den Wert ein, bei dem der Spaltenwert und der Zeilenwert gilt. Im ersten Feld gilt $A$ aus der ersten Zeile und $B$ aus der ersten Spalte. 
 
 |       |                     |                     |                     |
 |:-----:|:-------------------:|:-------------------:|:-------------------:|
@@ -132,27 +154,34 @@ $$
 | $\mathbf{\bar{A}}$  |  $Pr(\bar{A} \cap B) = 0.07$  |  $Pr(\bar{A} \cap \bar{B}) = 0.63$  | $\mathbf{0.70}$ |
 |  Summe     | $\mathbf{0.13}$ | $\mathbf{0.87}$ |      $1.00$       |
 
+In der Kreuztabelle kannst du dann auch einfach die Wahrscheinlichkeiten für $Pr(B)$ und $Pr(\bar{B})$ unabhängig von dem Ereignis $A$ und $\bar{A}$ durch summieren bestimmen. In den Zeilensummen findest du die  Wahrscheinlichkeiten für die Ereignisse  $A$ und $\bar{A}$ mit $Pr(A) = 0.3$ und $Pr(\bar{A}) = 0.7$ wieder. In den Spaltensummen stehen dann die unabhängigen Wahrscheinlichkeiten für für $Pr(B)$ und $Pr(\bar{B})$ mit  $Pr(B) = 0.13$ und $Pr(\bar{B}) = 0.87$. 
 
-Text
+
+Die bedingte Wahrscheinlichkeit $Pr(A\mid B)$ können wir uns auch als Fläche*anteil* vorstellen. Im Folgenden haben wir die Ereignisse $A$ und $B$, die sich überschneiden. In der lila Fläche finden die Ereignisse $A$ und $B$ statt. Wir schreiben hier $A \cap B$. 
+
+![](images/schnitt_2.png){fig-align="center" width="50%"}
+
+Wenn $B$ gilt, wie wahrscheinlich sind wir dann in der lila Fläche, also gilt $A$ und $B$? Das können wir dann einfach über den Anteil der Fläche $A\cap B$ an der Fläche $B$ berechnen. Das wiederum ist nichts anderes als die bedingte Wahrscheinlichkeit, dass $A$ gilt, wenn $B$ wahr ist.
+
+$$
+Pr(A\mid B) = \cfrac{Pr(A \cap B)}{P(B)}
+$$
+
+
+
 
 $Pr(A) = 2/3$
 
 $Pr(K_1) \cap \cup Pr(K_2)$
 
-$$
-\begin{aligned}
-Pr(K_1 \cap K_2) &= Pr(K_1) \times Pr(K_2) \\
-               &= 1/2 \times 1/2 \\
-               &= 1/4
-\end{aligned}
-$$
+
 
 ## Satz von Bayes
 
 Für zwei Ereignisse $A$ und $B$ mit der Eintrittswahrscheinlichkeit $Pr(B) > 0$ lässt sich die Wahrscheinlichkeit von $A$ unter der Bedingung, dass $B$ eingetreten ist, durch die Wahrscheinlichkeit von $B$ unter der Bedingung, dass $A$ eingetreten ist, errechnen:
 
 $$
-Pr(A\mid B) = \cfrac{Pr(B\mid A) \cdot Pr(A)} {Pr(B)}
+Pr(B\mid A) = \cfrac{Pr(A\mid B) \cdot Pr(B)} {Pr(A)}
 $$
 
 mit

@@ -227,7 +227,11 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#laplacescher-wahrscheinlichkeitbegriff" id="toc-laplacescher-wahrscheinlichkeitbegriff" class="nav-link active" data-scroll-target="#laplacescher-wahrscheinlichkeitbegriff"><span class="header-section-number">10.1</span> Laplacescher Wahrscheinlichkeitbegriff</a></li>
-  <li><a href="#baumdiagramme-und-pfadregeln" id="toc-baumdiagramme-und-pfadregeln" class="nav-link" data-scroll-target="#baumdiagramme-und-pfadregeln"><span class="header-section-number">10.2</span> Baumdiagramme und Pfadregeln</a></li>
+  <li><a href="#baumdiagramme-und-pfadregeln" id="toc-baumdiagramme-und-pfadregeln" class="nav-link" data-scroll-target="#baumdiagramme-und-pfadregeln"><span class="header-section-number">10.2</span> Baumdiagramme und Pfadregeln</a>
+  <ul class="collapse">
+  <li><a href="#unabhängiger-zufallsversuch" id="toc-unabhängiger-zufallsversuch" class="nav-link" data-scroll-target="#unabhängiger-zufallsversuch"><span class="header-section-number">10.2.1</span> Unabhängiger Zufallsversuch</a></li>
+  <li><a href="#abhängiger-zufallsversuch" id="toc-abhängiger-zufallsversuch" class="nav-link" data-scroll-target="#abhängiger-zufallsversuch"><span class="header-section-number">10.2.2</span> Abhängiger Zufallsversuch</a></li>
+  </ul></li>
   <li><a href="#satz-von-bayes" id="toc-satz-von-bayes" class="nav-link" data-scroll-target="#satz-von-bayes"><span class="header-section-number">10.3</span> Satz von Bayes</a></li>
   <li><a href="#mengenschreibweise" id="toc-mengenschreibweise" class="nav-link" data-scroll-target="#mengenschreibweise"><span class="header-section-number">10.4</span> Mengenschreibweise</a></li>
   <li><a href="#logische-operatoren" id="toc-logische-operatoren" class="nav-link" data-scroll-target="#logische-operatoren"><span class="header-section-number">10.5</span> Logische Operatoren</a></li>
@@ -255,7 +259,7 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p><em>Version vom June 27, 2023 um 19:59:22</em></p>
+<p><em>Version vom Juni 28, 2023 um 08:28:25</em></p>
 <blockquote class="blockquote">
 <p><em>“Die wichtigsten Fragen des Lebens sind in der Tat größtenteils nur Wahrscheinlichkeitsprobleme.” — Pierre-Simon Laplace</em></p>
 </blockquote>
@@ -368,13 +372,15 @@ ul.task-list li input[type="checkbox"] {
 <li>Der Weg vom Startpunkt bis zu einem der Enden wird als Pfad bezeichnet. Am Ende eines Pfades steht das Endergebnis und somit stellt das Ende auch keinen Verzweigungspunkt mehr dar.</li>
 <li>Jeder Pfad beschreibt ein Ereignis des gesamten mehrstufigen Zufallsexperiments. Jeder Verzweigungspunkt ein Zwischenereignis.</li>
 </ul>
-<p>Wir werfen eine faire Münze zweimal und erhalten folgendes Baumdiagramm.</p>
+<section id="unabhängiger-zufallsversuch" class="level3" data-number="10.2.1">
+<h3 data-number="10.2.1" class="anchored" data-anchor-id="unabhängiger-zufallsversuch"><span class="header-section-number">10.2.1</span> Unabhängiger Zufallsversuch</h3>
+<p>Wir werfen eine faire Münze zweimal und erhalten folgendes Baumdiagramm. Darüber hinaus gehen wir davon aus, dass wir es mit einem unabhängigen Zufallsexperiment zu tun haben.</p>
 <div id="fig-prob-baum-01" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="images/prob_baum_02.png" class="img-fluid figure-img" style="width:100.0%"></p>
 </figure>
 </div>
-<p>Darüber hinaus gehen wir davon aus, dass wir es mit einem unabhängigen Zufallsexperiment zu tun haben. Die beiden Münzwürfe beeinflussen sich nicht. Wir sind an den Wahrscheinlichkeiten für das Ereignis <span class="math inline">\(E_3 = \{\mbox{(Kopf, Kopf)}\}\)</span> und <span class="math inline">\(E_4 = \{\mbox{(Kopf, Zahl), (Zahl, Kopf)}\}\)</span> interessiert. Wir wollen also im Ereignis <span class="math inline">\(E_3\)</span> die Wahrscheinlichkeit für zweimal Kopf hintereinander bestimmen und bei dem Ereignis <span class="math inline">\(E_4\)</span> die Wahrscheinlichkeit für Kopf und Zahl, wobei die Reihenfolge unerheblich ist.</p>
+<p>Die beiden Münzwürfe beeinflussen sich nicht. Wir sind an den Wahrscheinlichkeiten für das Ereignis <span class="math inline">\(E_3 = \{\mbox{(Kopf, Kopf)}\}\)</span> und <span class="math inline">\(E_4 = \{\mbox{(Kopf, Zahl), (Zahl, Kopf)}\}\)</span> interessiert. Wir wollen also im Ereignis <span class="math inline">\(E_3\)</span> die Wahrscheinlichkeit für zweimal Kopf hintereinander bestimmen und bei dem Ereignis <span class="math inline">\(E_4\)</span> die Wahrscheinlichkeit für Kopf und Zahl, wobei die Reihenfolge unerheblich ist.</p>
 <dl>
 <dt>Multiplikationsregel (UND-Regel)</dt>
 <dd>
@@ -389,11 +395,30 @@ ul.task-list li input[type="checkbox"] {
 </dd>
 </dl>
 <p>Wir wollen nun die Wahrscheinlichkeit für das Ereignis <span class="math inline">\(E_4\)</span> berechnen. Dafür brauchen wir die Pfadwahrscheinlichkeiten für <span class="math inline">\(Pr(\mbox{Kopf, Zahl})\)</span> sowie <span class="math inline">\(Pr(\mbox{Zahl, Kopf})\)</span>. In unserem Baumdiagramm können wir die Zahlen direkt am Ende der beiden Pfade ablesen. Die Wahrscheinlichkeiten sind jeweils <span class="math inline">\(Pr(\mbox{Kopf, Zahl}) = 0.25\)</span> sowie <span class="math inline">\(Pr(\mbox{Zahl, Kopf}) = 0.25\)</span>. Jetzt addieren wir noch beide Wahrscheinlichkeiten auf und erhalten eine Wahrscheinlichkeit für <span class="math inline">\(Pr(E_4)\)</span> von 0.5.</p>
+<p>In der Mengenschreibweise können wir die Wahrscheinlichkeit für das Ereignis zweimal Kopf wie folgt schreiben. Das <span class="math inline">\(\cap\)</span> steht dabei für das logische <em>UND</em>.</p>
+<p><span class="math display">\[
+\begin{aligned}
+Pr(Kopf \cap Kopf) &amp;= Pr(Kopf) \times Pr(Kopf) \\
+               &amp;= 1/2 \times 1/2 \\
+               &amp;= 1/4
+\end{aligned}
+\]</span></p>
+</section>
+<section id="abhängiger-zufallsversuch" class="level3" data-number="10.2.2">
+<h3 data-number="10.2.2" class="anchored" data-anchor-id="abhängiger-zufallsversuch"><span class="header-section-number">10.2.2</span> Abhängiger Zufallsversuch</h3>
+<p>Soweit haben wir uns einen unabhängigen Zufallsversuch angeschaut. Der zweite Münzwurf war unabhängig vom ersten Münzwurf. Oder der erste Münzwurf beeinflusst nicht den zweiten Münzwurf. Im Folgenden wollen wir uns ein abhängiges Zufallsexperiment anschauen. Wenn das Ereignis <span class="math inline">\(A\)</span> oder das Gegenereignis <span class="math inline">\(\bar{A}\)</span> auftritt, dann tritt das Ereignis <span class="math inline">\(B\)</span> und das Gegenereignis <span class="math inline">\(\bar{B}\)</span> nicht unabhängig voneinander auf. Das Ereignis <span class="math inline">\(A\)</span> tritt mit einer Wahrscheinlichkeit von <span class="math inline">\(0.3\)</span> auf. Somit tritt das Gegenereignis <span class="math inline">\(\bar{A}\)</span> mit einer Wahrscheinlichkeit von <span class="math inline">\(0.7\)</span> auf. Im Weiteren tritt das Ereignis <span class="math inline">\(B\)</span> abhängig vom Auftreten von <span class="math inline">\(A\)</span> oder <span class="math inline">\(\bar{A}\)</span> mit unterschiedlicher Wahrscheinlichkeit auf. Im folgenden Baumdiagramm ist der Zusammenhang visualisiert.</p>
 <div id="fig-prob-baum-03" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="images/prob_baum_03.png" class="img-fluid figure-img" style="width:100.0%"></p>
 </figure>
 </div>
+<dl>
+<dt>Bedingte Wahrscheinlichkeit</dt>
+<dd>
+Wir schreiben <span class="math inline">\(Pr(A \mid B)\)</span>, wenn wir die Wahrscheinlichkeit für das Ereignis <span class="math inline">\(A\)</span> bestimmen wolln unter der Bedingung das <span class="math inline">\(B\)</span> schon eingetreten ist.
+</dd>
+</dl>
+<p>Die Wahrscheinlichkeiten am Ende der Pfade berechnet sich wie gewohnt mit der Multiplikationsregel. Wir können so die Wahrscheinlichkeit für <span class="math inline">\(Pr(A \cap B)\)</span> für den ersten Pfad und die folgenden Pfade berechnen.</p>
 <p><span class="math display">\[
 \begin{aligned}
 Pr(A \cap B) &amp;= 0.3 \cdot 0.2 = 0.06 \\
@@ -402,6 +427,7 @@ Pr(\bar{A} \cap B) &amp;= 0.7 \cdot 0.1 = 0.07 \\
 Pr(\bar{A} \cap \bar{B}) &amp;= 0.7 \cdot 0.9 = 0.63 \\
 \end{aligned}
 \]</span></p>
+<p>Wenn dir die Schreibweise mit dem Bogen <span class="math inline">\(\cap\)</span> ungewohnt ist, dann kannst du dir das Baumdiagramm auch als eine Kreuztabelle vorstellen. Wir tragen in die Felder immer den Wert ein, bei dem der Spaltenwert und der Zeilenwert gilt. Im ersten Feld gilt <span class="math inline">\(A\)</span> aus der ersten Zeile und <span class="math inline">\(B\)</span> aus der ersten Spalte.</p>
 <table class="table">
 <colgroup>
 <col style="width: 10%">
@@ -436,22 +462,26 @@ Pr(\bar{A} \cap \bar{B}) &amp;= 0.7 \cdot 0.9 = 0.63 \\
 </tr>
 </tbody>
 </table>
-<p>Text</p>
+<p>In der Kreuztabelle kannst du dann auch einfach die Wahrscheinlichkeiten für <span class="math inline">\(Pr(B)\)</span> und <span class="math inline">\(Pr(\bar{B})\)</span> unabhängig von dem Ereignis <span class="math inline">\(A\)</span> und <span class="math inline">\(\bar{A}\)</span> durch summieren bestimmen. In den Zeilensummen findest du die Wahrscheinlichkeiten für die Ereignisse <span class="math inline">\(A\)</span> und <span class="math inline">\(\bar{A}\)</span> mit <span class="math inline">\(Pr(A) = 0.3\)</span> und <span class="math inline">\(Pr(\bar{A}) = 0.7\)</span> wieder. In den Spaltensummen stehen dann die unabhängigen Wahrscheinlichkeiten für für <span class="math inline">\(Pr(B)\)</span> und <span class="math inline">\(Pr(\bar{B})\)</span> mit <span class="math inline">\(Pr(B) = 0.13\)</span> und <span class="math inline">\(Pr(\bar{B}) = 0.87\)</span>.</p>
+<p>Die bedingte Wahrscheinlichkeit <span class="math inline">\(Pr(A\mid B)\)</span> können wir uns auch als Fläche<em>anteil</em> vorstellen. Im Folgenden haben wir die Ereignisse <span class="math inline">\(A\)</span> und <span class="math inline">\(B\)</span>, die sich überschneiden. In der lila Fläche finden die Ereignisse <span class="math inline">\(A\)</span> und <span class="math inline">\(B\)</span> statt. Wir schreiben hier <span class="math inline">\(A \cap B\)</span>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/schnitt_2.png" class="img-fluid figure-img" style="width:50.0%"></p>
+</figure>
+</div>
+<p>Wenn <span class="math inline">\(B\)</span> gilt, wie wahrscheinlich sind wir dann in der lila Fläche, also gilt <span class="math inline">\(A\)</span> und <span class="math inline">\(B\)</span>? Das können wir dann einfach über den Anteil der Fläche <span class="math inline">\(A\cap B\)</span> an der Fläche <span class="math inline">\(B\)</span> berechnen. Das wiederum ist nichts anderes als die bedingte Wahrscheinlichkeit, dass <span class="math inline">\(A\)</span> gilt, wenn <span class="math inline">\(B\)</span> wahr ist.</p>
+<p><span class="math display">\[
+Pr(A\mid B) = \cfrac{Pr(A \cap B)}{P(B)}
+\]</span></p>
 <p><span class="math inline">\(Pr(A) = 2/3\)</span></p>
 <p><span class="math inline">\(Pr(K_1) \cap \cup Pr(K_2)\)</span></p>
-<p><span class="math display">\[
-\begin{aligned}
-Pr(K_1 \cap K_2) &amp;= Pr(K_1) \times Pr(K_2) \\
-               &amp;= 1/2 \times 1/2 \\
-               &amp;= 1/4
-\end{aligned}
-\]</span></p>
+</section>
 </section>
 <section id="satz-von-bayes" class="level2" data-number="10.3">
 <h2 data-number="10.3" class="anchored" data-anchor-id="satz-von-bayes"><span class="header-section-number">10.3</span> Satz von Bayes</h2>
 <p>Für zwei Ereignisse <span class="math inline">\(A\)</span> und <span class="math inline">\(B\)</span> mit der Eintrittswahrscheinlichkeit <span class="math inline">\(Pr(B) &gt; 0\)</span> lässt sich die Wahrscheinlichkeit von <span class="math inline">\(A\)</span> unter der Bedingung, dass <span class="math inline">\(B\)</span> eingetreten ist, durch die Wahrscheinlichkeit von <span class="math inline">\(B\)</span> unter der Bedingung, dass <span class="math inline">\(A\)</span> eingetreten ist, errechnen:</p>
 <p><span class="math display">\[
-Pr(A\mid B) = \cfrac{Pr(B\mid A) \cdot Pr(A)} {Pr(B)}
+Pr(B\mid A) = \cfrac{Pr(A\mid B) \cdot Pr(B)} {Pr(A)}
 \]</span></p>
 <p>mit</p>
 <ul>
