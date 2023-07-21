@@ -305,7 +305,7 @@
     "href": "probability-preface.html",
     "title": "Von Wahrscheinlichkeiten",
     "section": "",
-    "text": "Version vom Juni 28, 2023 um 08:50:08\n\n“In keinem anderen Zweig der Mathematik ist es für Experten so leicht, sich zu vertun wie in der Wahrscheinlichkeitsrechnung.” — Martin Gardner\n\nIn den folgenden zwei kurzen Abschnitten wollen wir uns nochmal mit der Wahrscheinlichkeit beschäftigen. Wir gehen nochmal die Grundlagen der Wahrscheinlichkeitsrechnung durch. Dabei wiederholen wir das Baumdiagramm und gehen auf bedingte Wahrscheinlichkeiten ein.\nAm Ende betrachten wir dann nochmal kurz Wahrscheinlichkeitsverteilungen, da wir die Idee der Wahrscheinlichkeitsverteilung noch später in der Statistik brauchen. Auch hier haben wir dann nur einen kurzen Abriss und Verteifen dann in späteren statistsichen Modulen."
+    "text": "Version vom July 21, 2023 um 15:12:39\n\n“In keinem anderen Zweig der Mathematik ist es für Experten so leicht, sich zu vertun wie in der Wahrscheinlichkeitsrechnung.” — Martin Gardner\n\nIn den folgenden zwei kurzen Abschnitten wollen wir uns nochmal mit der Wahrscheinlichkeit beschäftigen. Wir gehen nochmal die Grundlagen der Wahrscheinlichkeitsrechnung durch. Dabei wiederholen wir das Baumdiagramm und gehen auf bedingte Wahrscheinlichkeiten ein.\nAm Ende betrachten wir dann nochmal kurz Wahrscheinlichkeitsverteilungen, da wir die Idee der Wahrscheinlichkeitsverteilung noch später in der Statistik brauchen. Auch hier haben wir dann nur einen kurzen Abriss und Verteifen dann in späteren statistsichen Modulen."
   },
   {
     "objectID": "probability-basic.html#regeln",
@@ -319,14 +319,14 @@
     "href": "probability-basic.html#mengenschreibweise",
     "title": "10  Berechnungen mit Wahrscheinlichkeiten",
     "section": "10.4 Mengenschreibweise",
-    "text": "10.4 Mengenschreibweise\nIn (tbl?)- sehen wir nochmal als Wiederholung verschiedene Mengenschreibweisen.\n\n\nTabelle 10.1— Test\n\n\n\n\nMengenschreibweise\nTyp\n\n\n\n\n\\([a,b]\\)\n\\([a,b]\\)\n\\(\\{x|a≤x≤b\\}\\)\ngeschlossen\n\n\n\\(]a,b[\\)\n\\((a,b)\\)\n\\(\\{x|a&lt;x&lt;b\\}\\)\noffen\n\n\n\\([a,b[\\)\n\\([a,b)\\)\n\\(\\{x|a≤x&lt;b\\}\\)\nhalboffen / rechtsoffen\n\n\n\\(]a,b]\\)\n\\((a,b]\\)\n\\(\\{x|a&lt;x≤b\\}\\)\nhalboffen / linksoffen"
+    "text": "10.4 Mengenschreibweise\nIm Folgenden sehen wir nochmal als Wiederholung verschiedene Mengenschreibweisen.\n\n\n\n\n\nMengenschreibweise\nTyp\n\n\n\n\n\\([a,b]\\)\n\\([a,b]\\)\n\\(\\{x|a≤x≤b\\}\\)\ngeschlossen\n\n\n\\(]a,b[\\)\n\\((a,b)\\)\n\\(\\{x|a&lt;x&lt;b\\}\\)\noffen\n\n\n\\([a,b[\\)\n\\([a,b)\\)\n\\(\\{x|a≤x&lt;b\\}\\)\nhalboffen / rechtsoffen\n\n\n\\(]a,b]\\)\n\\((a,b]\\)\n\\(\\{x|a&lt;x≤b\\}\\)\nhalboffen / linksoffen"
   },
   {
     "objectID": "probability-basic.html#logische-operatoren",
     "href": "probability-basic.html#logische-operatoren",
     "title": "10  Berechnungen mit Wahrscheinlichkeiten",
     "section": "10.5 Logische Operatoren",
-    "text": "10.5 Logische Operatoren\nIn Tabelle 10.2 nochmal die Zusammenfassung von Menge, mathematischer Mengenschreibweise sowie deren Bedeutung.\n\n\nTabelle 10.2— Test\n\n\n\n\n\n\n\nAbbildung\n\nBedeutung\n\n\n\n\n\n\\(A \\cup B\\)\n\\(A\\) tritt ein oder \\(B\\) tritt ein\n\n\n\n\\(A \\cap B\\)\n\\(A\\) tritt ein und \\(B\\) tritt ein\n\n\n\n\\(A \\setminus B\\)\n\\(A\\) tritt ein, aber \\(B\\) tritt nicht ein\n\n\n\n\\(\\bar{A} = \\Omega \\setminus A\\)\n\\(A\\) tritt nicht ein\n\n\n\n\\(A \\cup B\\)\nEntweder \\(A\\) ein oder \\(B\\) tritt ein oder keins von beiden\n\n\n\n\\(B \\subset A\\)\n\\(B\\) ist Teilmenge von \\(A\\)"
+    "text": "10.5 Logische Operatoren\nIn Tabelle 10.1 nochmal die Zusammenfassung von Menge, mathematischer Mengenschreibweise sowie deren Bedeutung.\n\n\nTabelle 10.1— Zusammenfassung von Menge und mathematischer Mengenschreibweise\n\n\n\n\n\n\n\nAbbildung\n\nBedeutung\n\n\n\n\n\n\\(A \\cup B\\)\n\\(A\\) tritt ein oder \\(B\\) tritt ein\n\n\n\n\\(A \\cap B\\)\n\\(A\\) tritt ein und \\(B\\) tritt ein\n\n\n\n\\(A \\setminus B\\)\n\\(A\\) tritt ein, aber \\(B\\) tritt nicht ein\n\n\n\n\\(\\bar{A} = \\Omega \\setminus A\\)\n\\(A\\) tritt nicht ein\n\n\n\n\\(A \\cup B\\)\nEntweder \\(A\\) ein oder \\(B\\) tritt ein oder keins von beiden\n\n\n\n\\(B \\subset A\\)\n\\(B\\) ist Teilmenge von \\(A\\)"
   },
   {
     "objectID": "probability-basic.html#sec-prob-cond",

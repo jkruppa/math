@@ -202,7 +202,7 @@ Wir nennen die bedingte Wahrscheinlichkeit von $Pr(A \mid B)$ auch die inverse W
 
 ## Mengenschreibweise
 
-In @tbl- sehen wir nochmal als Wiederholung verschiedene Mengenschreibweisen.
+Im Folgenden sehen wir nochmal als Wiederholung verschiedene Mengenschreibweisen.
 
 |         |         | Mengenschreibweise |         **Typ**         |
 |:-------:|:-------:|:------------------:|:-----------------------:|
@@ -211,7 +211,6 @@ In @tbl- sehen wir nochmal als Wiederholung verschiedene Mengenschreibweisen.
 | $[a,b[$ | $[a,b)$ |   $\{x|a≤x<b\}$    | halboffen / rechtsoffen |
 | $]a,b]$ | $(a,b]$ |   $\{x|a<x≤b\}$    | halboffen / linksoffen  |
 
-: Test {#tbl-mengen}
 
 ## Logische Operatoren
 
@@ -226,4 +225,4 @@ In @tbl-logical-figures nochmal die Zusammenfassung von Menge, mathematischer Me
 | ![](images/schnitt_5.png) |           $A \cup B$           | Entweder $A$ ein oder $B$ tritt ein oder keins von beiden |
 | ![](images/schnitt_6.png) |         $B \subset A$          |                 $B$ ist Teilmenge von $A$                 |
 
-: Test {#tbl-logical-figures}
+: Zusammenfassung von Menge und mathematischer Mengenschreibweise {#tbl-logical-figures}
