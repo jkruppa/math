@@ -14,7 +14,6 @@ book:
   subtitle: "Der kleine Leitfaden"
   author: "Prof. Dr. Jochen Kruppa"
   date: "21. July 2023"
-  cover-image: cover.png
   chapters:
     - index.qmd
     - literature.qmd
@@ -43,6 +42,7 @@ lang: de
 format:
   html:
     theme: cosmo
+    cover-image: cover2023.png
     mermaid:
       theme: default
 #  pdf:
