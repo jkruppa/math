@@ -1,6 +1,6 @@
 # Literatur {#sec-literatur}
 
-*Version vom `r format(Sys.time(), '%B %d, %Y um %H:%M:%S')`*
+*Letzte Änderung am `r format(fs::file_info("literature.qmd")$modification_time, '%d. %B %Y um %H:%M:%S')`*
 
 Was ist gute Literatur? Immer schwer zu beurteilen. Im Folgenden liste ich einige Literaturquellen auf. Vielleicht möchtest du dich nochmal rechts oder links weiterbilden. Du musst aber nicht um die Klausur bestehen zu können. Siehe es eher als ein Angebot. Neben diesem Modul musst du vermutlich noch andere Module belegen. Deshalb hier eine Auswahl Literatur, die dir helfen mag. Zum einen ist die Literatur anders geschrieben und zum anderen sind dort andere Inhalte.
 

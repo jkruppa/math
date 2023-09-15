@@ -5,8 +5,7 @@ pacman::p_load(tidyverse, readxl, knitr, kableExtra, Hmisc,
                see)
 ```
 
-*Version vom `r format(Sys.time(), '%B %d, %Y um %H:%M:%S')`*
-
+*Letzte Änderung am `r format(fs::file_info("functions-extrem-stamm.qmd")$modification_time, '%d. %B %Y um %H:%M:%S')`*
 
 Wie immer gilt, wir schauen uns hier nur einen kleinen Teilabriss der Thematik an. Auch bei der hier betrachteten [Differentialrechnung](https://de.wikipedia.org/wiki/Differentialrechnung#Ableitungsfunktion) geht es um die Anwendung der ersten Ableitung $f'(x)$. Es geht also um die Betrachtung von Extremwertproblemen. In dem Fall der [Integralrechnung](https://de.wikipedia.org/wiki/Integralrechnung) wollen wir die Stammfunktion $F(x)$ nutzen um die Fläche unter einer Kurve zu berechnen. 
 

@@ -5,12 +5,12 @@ pacman::p_load(tidyverse, readxl, knitr, kableExtra, Hmisc,
 
 # Lineare und exponentielle Funktion {#sec-prob-basic}
 
-*Version vom `r format(Sys.time(), '%B %d, %Y um %H:%M:%S')`*
+*Letzte Änderung am `r format(fs::file_info("functions-basic.qmd")$modification_time, '%d. %B %Y um %H:%M:%S')`*
 
 In diesem Kapitel werden wir uns einmal mit den wichtigsten mathematischen Funktionen in der Anwendung beschäftigen. Wir schauen uns dabei die am meisten genutzten und am häufigsten vorkommenden Funktionen an. Daher fangen wir mit der linearen Funktion an, die uns dann in der Statistik sehr lange begleiten wird. Darüber hinaus schauen wir auch einmal auf die exponentielle Funktion, die in der Form uns später das ein oder andere Mal in der Analyse von echten Daten über den Weg läuft.
 
 
-## Genutzte R Pakete für das Kapitel
+## Genutzte R Pakete
 
 Wir wollen folgende R Pakete in diesem Kapitel nutzen. Zum einen brauchen wir das R Paket `tidyverse` um uns die Daten zu bauen, die wir dann mit dem R Paket `ggplot` visualisieren wollen. Das R Paket `ggplot` ist schon in dem R Paket `tidyverse` mit enthalten.
 

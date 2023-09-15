@@ -4,7 +4,7 @@ pacman::p_load(tidyverse, readxl, knitr, kableExtra, Hmisc)
 
 # Von Vektoren und Matrizen {#sec-vec-mat-preface}
 
-*Version vom `r format(Sys.time(), '%B %d, %Y um %H:%M:%S')`*
+*Letzte Änderung am `r format(fs::file_info("vector-preface.qmd")$modification_time, '%d. %B %Y um %H:%M:%S')`*
 
 In dem folgenden Kapitel wollen wir uns einmal mit Berechnungen mit Vektoren in @sec-vec beschäftigen. Das Kapitel ist eher kurz und dient nur der Erinnerung, was sind eigentlich Vektoren. Wir nutzen den Begriff häufig in der R Programmierung und wir wollen hier nochmal auf ein paar mathematische Eigenschaften eingehen.
 

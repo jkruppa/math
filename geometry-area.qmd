@@ -4,7 +4,7 @@ pacman::p_load(tidyverse, readxl, knitr, kableExtra, Hmisc)
 
 # Flächenberechung {#sec-area}
 
-*Version vom `r format(Sys.time(), '%B %d, %Y um %H:%M:%S')`*
+*Letzte Änderung am `r format(fs::file_info("geometry-area.qmd")$modification_time, '%d. %B %Y um %H:%M:%S')`*
 
 Im Folgenden wollen wir einmal die Flächen ($F$ oder auch $A$) und die Umfänge $U$ von geometrischen Objekten bestimmen. Wir gehen hierfür die gängigsten geometrischen Formen einmal durch. Du musst dir dann raussuchen, was zu deiner Fragestellung dann am besten passt.
 
