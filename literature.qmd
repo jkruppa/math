@@ -1,3 +1,7 @@
+```{r echo = FALSE}
+pacman::p_load(tidyverse, readxl, knitr, kableExtra, Hmisc)
+```
+
 # Literatur {#sec-literatur}
 
 *Letzte Änderung am `r format(fs::file_info("literature.qmd")$modification_time, '%d. %B %Y um %H:%M:%S')`*

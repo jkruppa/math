@@ -18,7 +18,7 @@ Wie immer gilt, wir schauen uns hier nur einen kleinen Teilabriss der Thematik a
 
 ## Differentialrechnung
 
-Die Ableitung kennst du ja noch aus der Schule und wir wollen hier auch die Ableitung nur nutzen um Extremwertprobleme zu lösen. Das heißt, dass wir die erste Ablitung $f'(x)$ gleich Null setzen und dann Lösen. Wir du dann die Gleichugn $f`(x) = 0$ im quadratischen Fall löst, kannst du weiter unten im Kapitel nachlesen.
+Die Ableitung kennst du ja noch aus der Schule und wir wollen hier auch die Ableitung nur nutzen um Extremwertprobleme zu lösen. Das heißt, dass wir die erste Ablitung $f'(x)$ gleich Null setzen und dann Lösen. Wir du dann die Gleichugn $f'(x) = 0$ im quadratischen Fall löst, kannst du weiter unten im Kapitel nachlesen.
 
 Da wir wirklich keien allzu großen Probleme mit den Ableitungen lösen, reicht es, wenn du die gängigen Regeln der ersten Ableitung kennst. Im Folgenden leiten wir einmal eine quadratische Gleichung ab.
 
