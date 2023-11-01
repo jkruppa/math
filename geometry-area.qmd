@@ -229,6 +229,23 @@ b = a \cdot \cot (\alpha) = a \cdot \tan (\beta)
 $$
 Für ein beliebiges Dreieck mit unterschiedlichen Winkeln gibt es eine Menge an Berechnungsmöglichkeiten. Hier bietet dann wieder die Wikipedia eine Übersicht über alle [Kongruenzsätze eines Dreiecks](https://de.wikipedia.org/wiki/Dreieck). Ich werde hier nicht nochmal die Wikipedia kopieren sondern dann in den entsprechenden Inhalten auf die Sätze eingehen.
 
+::: {.callout-tip}
+## Einmal $\boldsymbol{\tan}$, $\boldsymbol{\sin}$ und $\boldsymbol{\cos}$ für den Winkel $\boldsymbol{\alpha}$
+
+Hier nochmal in einem rechtwinkeligen Dreieck die Winkelzusammenhänge für den Winkel $\alpha$. Du musst dann für den Winkel $\beta$ eben die Seiten entsprechend der Katheten und Hypotenuse anpassen.
+
+$$
+\tan(\alpha) = \cfrac{a}{b} = \cfrac{Gegenkathete}{Ankathete}
+$$
+$$
+\sin(\alpha) = \cfrac{a}{c} = \cfrac{Gegenkathete}{Hypotenuse}
+$$
+
+$$
+\cos(\alpha) = \cfrac{b}{c} = \cfrac{Ankathete}{Hypotenuse}
+$$
+
+:::
 
 ## Kreis
 
