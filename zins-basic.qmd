@@ -27,27 +27,34 @@ Beginnen wir mit der jährlichen Verzinsung. Bei Krediten und Spareinlagen ist d
 
 ### Einfache Zinsen ohne Zinseszinsen (lineare Verzinsung)
 
+Fangen wir einmal mit der einfachen Formel für lineare Zinsen ohne Zinseszinsen an. Wir wollen wissen wie viel $K_n$ wir aus $K_0$ mit einem Zinssatz $i$ über $n$ Jahre erhalten.
+
 $$
 K_n = K_0 + K_0 \cdot n \cdot i = K_0 \cdot (1 + n \cdot i)
 $$
 
-Ein Startkapital von 1.000EUR wird zu einem Zinssatz von 5 Prozent über 2 Jahre angelegt. Bei einfacher Verzinsung ergäbe sich ein Endkapital von
+Machen wir das Ganze einmal mit einem Beispiel. Wir haben ein Startkapital von 1.000 EUR, welches zu einem Zinssatz von 5 Prozent über 2 Jahre angelegt wird. Bei einfacher Verzinsung ergäbe sich ein damit ein Endkapital wie folgt. Wir wollen also unser Endkapital $K_2$ nach zwei Jahren wissen.
 
 $$
-K_2 = 1000 \; \mbox{EUR}  \cdot (1 + 2 \cdot 0{,}05) = 1100 \; \mbox{EUR} 
+K_2 = 1000 \; \mbox{EUR}  \cdot (1 + 2 \cdot 0.05) = 1100 \; \mbox{EUR} 
 $$
+Damit kommen wir recht schnell und intuitiv auf unsere $1100$ EUR. Problem ist nur, so wird nicht verzinst. Wir leben in einer Welt des Zinseszins, wie Einstein schon in dem Eingangszitat so schön formuliert hat.
 
 ### Zinseszinsrechnung (exponentielle Verzinsung)
+
+Wenn wir den Zinseszins mit berücksichtigen, dann ändert sich die Formel leicht. Wir haben jetzt eine Exponentialfunktion. Wir müssen also nur etwas anders rechnen. Das Setting ist wiederum das Gleiche, wir rechnen wieder mit einem Startkapital von 1.000 EUR, welches zu einem Zinssatz von 5 Prozent über 2 Jahre angelegt wird.
 
 $$
 K_n = K_0 \cdot (1 + i)^n = K_0 \cdot q^n
 $$
 
-Ein Startkapital von 1.000EUR wird zu einem Zinssatz von 5 Prozent über 2 Jahre angelegt. Bei jährlicher Verzinsung ergäbe sich ein Endkapital von
+Dann einmal rein mit den Informationen in die Formel und schon erhalten wir unser Endkapitel nach zwei Jahren mit Zinseszins. Hier können wir uns aussuchen, ob wir mit der $i$-Formel oder der $q$-Formel rechnen. 
 
 $$
-K_2 = 1000 \; \mbox{EUR} \cdot (1 + 0{,}05)^2 = 1102{,}50 \; \mbox{EUR}
+K_2 = \overbrace{1000 \; \mbox{EUR} \cdot (1 + 0.05)^2}^{K_0 \cdot (1 + i)^n} = \underbrace{1000 \; \mbox{EUR} \cdot (1.05)^2}_{K_0 \cdot q^n}  = 1102.50 \; \mbox{EUR}
 $$
+
+Der Betrag ist natürlich hier mit $2.5$ EUR sehr klein. Das macht sich aber bei größeren Beträgen und vorallem längeren Laufzeiten sehr stark bemerkbar! Deshalb schauen wir uns auch gleich einmal die 72er-Regel an.
 
 ## 72er-Regel
 

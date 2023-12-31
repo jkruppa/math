@@ -282,7 +282,7 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p><em>Letzte Änderung am 31. December 2023 um 18:41:09</em></p>
+<p><em>Letzte Änderung am 31. December 2023 um 18:55:21</em></p>
 <blockquote class="blockquote">
 <p><em>“Compound interest is the eighth wonder of the world. He who understands it, earns it … he who doesn’t … pays it.” — Albert Einstein</em></p>
 </blockquote>
@@ -306,23 +306,26 @@ ul.task-list li input[type="checkbox"] {
 <p>Beginnen wir mit der jährlichen Verzinsung. Bei Krediten und Spareinlagen ist die jährliche Verzinsung ja der Standard. Deshalb einmal die lineare Variante ohne die Zinseszins und dann einmal die exponentielle Verzinsung mit dem Zinseszins.</p>
 <section id="einfache-zinsen-ohne-zinseszinsen-lineare-verzinsung" class="level3" data-number="12.1.1">
 <h3 data-number="12.1.1" class="anchored" data-anchor-id="einfache-zinsen-ohne-zinseszinsen-lineare-verzinsung"><span class="header-section-number">12.1.1</span> Einfache Zinsen ohne Zinseszinsen (lineare Verzinsung)</h3>
+<p>Fangen wir einmal mit der einfachen Formel für lineare Zinsen ohne Zinseszinsen an. Wir wollen wissen wie viel <span class="math inline">\(K_n\)</span> wir aus <span class="math inline">\(K_0\)</span> mit einem Zinssatz <span class="math inline">\(i\)</span> über <span class="math inline">\(n\)</span> Jahre erhalten.</p>
 <p><span class="math display">\[
 K_n = K_0 + K_0 \cdot n \cdot i = K_0 \cdot (1 + n \cdot i)
 \]</span></p>
-<p>Ein Startkapital von 1.000EUR wird zu einem Zinssatz von 5 Prozent über 2 Jahre angelegt. Bei einfacher Verzinsung ergäbe sich ein Endkapital von</p>
+<p>Machen wir das Ganze einmal mit einem Beispiel. Wir haben ein Startkapital von 1.000 EUR, welches zu einem Zinssatz von 5 Prozent über 2 Jahre angelegt wird. Bei einfacher Verzinsung ergäbe sich ein damit ein Endkapital wie folgt. Wir wollen also unser Endkapital <span class="math inline">\(K_2\)</span> nach zwei Jahren wissen.</p>
 <p><span class="math display">\[
-K_2 = 1000 \; \mbox{EUR}  \cdot (1 + 2 \cdot 0{,}05) = 1100 \; \mbox{EUR}
-\]</span></p>
+K_2 = 1000 \; \mbox{EUR}  \cdot (1 + 2 \cdot 0.05) = 1100 \; \mbox{EUR}
+\]</span> Damit kommen wir recht schnell und intuitiv auf unsere <span class="math inline">\(1100\)</span> EUR. Problem ist nur, so wird nicht verzinst. Wir leben in einer Welt des Zinseszins, wie Einstein schon in dem Eingangszitat so schön formuliert hat.</p>
 </section>
 <section id="zinseszinsrechnung-exponentielle-verzinsung" class="level3" data-number="12.1.2">
 <h3 data-number="12.1.2" class="anchored" data-anchor-id="zinseszinsrechnung-exponentielle-verzinsung"><span class="header-section-number">12.1.2</span> Zinseszinsrechnung (exponentielle Verzinsung)</h3>
+<p>Wenn wir den Zinseszins mit berücksichtigen, dann ändert sich die Formel leicht. Wir haben jetzt eine Exponentialfunktion. Wir müssen also nur etwas anders rechnen. Das Setting ist wiederum das Gleiche, wir rechnen wieder mit einem Startkapital von 1.000 EUR, welches zu einem Zinssatz von 5 Prozent über 2 Jahre angelegt wird.</p>
 <p><span class="math display">\[
 K_n = K_0 \cdot (1 + i)^n = K_0 \cdot q^n
 \]</span></p>
-<p>Ein Startkapital von 1.000EUR wird zu einem Zinssatz von 5 Prozent über 2 Jahre angelegt. Bei jährlicher Verzinsung ergäbe sich ein Endkapital von</p>
+<p>Dann einmal rein mit den Informationen in die Formel und schon erhalten wir unser Endkapitel nach zwei Jahren mit Zinseszins. Hier können wir uns aussuchen, ob wir mit der <span class="math inline">\(i\)</span>-Formel oder der <span class="math inline">\(q\)</span>-Formel rechnen.</p>
 <p><span class="math display">\[
-K_2 = 1000 \; \mbox{EUR} \cdot (1 + 0{,}05)^2 = 1102{,}50 \; \mbox{EUR}
+K_2 = \overbrace{1000 \; \mbox{EUR} \cdot (1 + 0.05)^2}^{K_0 \cdot (1 + i)^n} = \underbrace{1000 \; \mbox{EUR} \cdot (1.05)^2}_{K_0 \cdot q^n}  = 1102.50 \; \mbox{EUR}
 \]</span></p>
+<p>Der Betrag ist natürlich hier mit <span class="math inline">\(2.5\)</span> EUR sehr klein. Das macht sich aber bei größeren Beträgen und vorallem längeren Laufzeiten sehr stark bemerkbar! Deshalb schauen wir uns auch gleich einmal die 72er-Regel an.</p>
 </section>
 </section>
 <section id="er-regel" class="level2" data-number="12.2">
