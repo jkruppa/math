@@ -35,6 +35,9 @@ book:
       chapters:
       - probability-basic.qmd
       - probability-distribution.qmd
+    - part: zinsen-preface.qmd
+      chapters: 
+      - zins-basic.qmd
 
 bibliography: references.bib
 lang: de 

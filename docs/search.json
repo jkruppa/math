@@ -390,5 +390,54 @@
     "title": "4  Flächenberechung",
     "section": "4.6 Test",
     "text": "4.6 Test"
+  },
+  {
+    "objectID": "zins-basic.html",
+    "href": "zins-basic.html",
+    "title": "12  Berechnungen mit Zinsen",
+    "section": "",
+    "text": "Letzte Änderung am 31. December 2023 um 13:02:25\n\n\n\n\n\nZinsrechnung auf Wikipedia"
+  },
+  {
+    "objectID": "zinsen-preface.html",
+    "href": "zinsen-preface.html",
+    "title": "Von Zinsen",
+    "section": "",
+    "text": "Letzte Änderung am 31. December 2023 um 13:00:32\n\n\n\n\n\nText"
+  },
+  {
+    "objectID": "zins-basic.html#einfache-zinsen-ohne-zinseszinsen-lineare-verzinsung",
+    "href": "zins-basic.html#einfache-zinsen-ohne-zinseszinsen-lineare-verzinsung",
+    "title": "12  Berechnungen mit Zinsen",
+    "section": "12.1 Einfache Zinsen ohne Zinseszinsen (lineare Verzinsung)",
+    "text": "12.1 Einfache Zinsen ohne Zinseszinsen (lineare Verzinsung)\n\\[\nK_n = K_0 + K_0 \\cdot n \\cdot i = K_0 \\cdot (1 + n \\cdot i)\n\\]\nEin Startkapital von 1.000€ wird zu einem Zinssatz von 5 Prozent über 2 Jahre angelegt. Bei einfacher Verzinsung ergäbe sich ein Endkapital von\n\\[\nK_2 = 1000 \\; \\mbox{EUR}  \\cdot (1 + 2 \\cdot 0{,}05) = 1100 \\; \\mbox{EUR}\n\\]"
+  },
+  {
+    "objectID": "zins-basic.html#zinseszinsrechnung-exponentielle-verzinsung",
+    "href": "zins-basic.html#zinseszinsrechnung-exponentielle-verzinsung",
+    "title": "12  Berechnungen mit Zinsen",
+    "section": "12.2 Zinseszinsrechnung (exponentielle Verzinsung)",
+    "text": "12.2 Zinseszinsrechnung (exponentielle Verzinsung)\n\\[\nK_n = K_0 \\cdot (1 + i)^n = K_0 \\cdot q^n\n\\]\nEin Startkapital von 1.000 wird zu einem Zinssatz von 5 Prozent über 2 Jahre angelegt. Bei jährlicher Verzinsung ergäbe sich ein Endkapital von\n\\[\nK_2 = 1000 \\; \\mbox{EUR} \\cdot (1 + 0{,}05)^2 = 1102{,}50 \\; \\mbox{EUR}\n\\]"
+  },
+  {
+    "objectID": "zins-basic.html#er-regel",
+    "href": "zins-basic.html#er-regel",
+    "title": "12  Berechnungen mit Zinsen",
+    "section": "12.2 72er-Regel",
+    "text": "12.2 72er-Regel\n72er-Regel\nDie Zeit \\(t\\) (in Jahren), in der sich eine Kapitalanlage mit Zinssatz \\(i\\) (pro Jahr) verdoppelt, ist nach der 72er-Regel:\n\\[\nt \\approx \\frac{72}{100 \\cdot i} = \\frac{72}{p} ~\\text{Jahre}\n\\]\nDabei bezeichnet \\(p\\) den Zinsfuß.\nMan kann dieselbe Formel benutzen, um abzuschätzen, welcher Zinsfuß \\(p\\) benötigt wird, um ein Kapital in vorgegebener Zeit \\(t\\) zu verdoppeln:\n\\[\np \\approx \\frac{72 ~\\text{Jahre}}{t}\n\\]\nIn welcher Zeit \\(t\\) wird sich ein Betrag, der zu einem Zinsfuß von \\(p = 8\\) (8 Prozent pro Jahr) angelegt ist, verdoppeln?\n\\[\nt = \\frac{72}{p} ~\\text{Jahre} = \\frac{72}{8} ~\\text{Jahre} = 9 ~\\text{Jahre}\n\\]\nWelchen Zinsfuß \\(p\\) (pro Jahr) benötigt man, um ein Kapital im Zeitraum \\(t=12 ~\\text{Jahre}\\) zu verdoppeln?\n\\[\np = \\frac{72 ~\\text{Jahre}}{t} = \\frac{72 ~\\text{Jahre}}{12 ~\\text{Jahre}} = 6\n\\]\nDie 72er-Regel kann nicht nur auf die Zinsrechnung, sondern auf jede Art exponentiellen Wachstums angewendet werden. Beispielsweise beträgt die Generationszeit, also die Zeitspanne, in der sich eine Mikrobenpopulation verdoppelt, bei einer stündlichen Wachstumsrate von \\(4\\%\\) ungefähr \\(\\tfrac{72}{4}=18\\) Stunden."
+  },
+  {
+    "objectID": "zins-basic.html#jährliche-verzinsung",
+    "href": "zins-basic.html#jährliche-verzinsung",
+    "title": "12  Berechnungen mit Zinsen",
+    "section": "12.1 Jährliche Verzinsung",
+    "text": "12.1 Jährliche Verzinsung\nBeginnen wir mit der jährlichen Verzinsung. Bei Krediten und Spareinlagen ist die jährliche Verzinsung ja der Standard. Deshalb einmal die lineare Variante ohne die Zinseszins und dann einmal die exponentielle Verzinsung mit dem Zinseszins.\n\n12.1.1 Einfache Zinsen ohne Zinseszinsen (lineare Verzinsung)\n\\[\nK_n = K_0 + K_0 \\cdot n \\cdot i = K_0 \\cdot (1 + n \\cdot i)\n\\]\nEin Startkapital von 1.000EUR wird zu einem Zinssatz von 5 Prozent über 2 Jahre angelegt. Bei einfacher Verzinsung ergäbe sich ein Endkapital von\n\\[\nK_2 = 1000 \\; \\mbox{EUR}  \\cdot (1 + 2 \\cdot 0{,}05) = 1100 \\; \\mbox{EUR}\n\\]\n\n\n12.1.2 Zinseszinsrechnung (exponentielle Verzinsung)\n\\[\nK_n = K_0 \\cdot (1 + i)^n = K_0 \\cdot q^n\n\\]\nEin Startkapital von 1.000EUR wird zu einem Zinssatz von 5 Prozent über 2 Jahre angelegt. Bei jährlicher Verzinsung ergäbe sich ein Endkapital von\n\\[\nK_2 = 1000 \\; \\mbox{EUR} \\cdot (1 + 0{,}05)^2 = 1102{,}50 \\; \\mbox{EUR}\n\\]"
+  },
+  {
+    "objectID": "zins-basic.html#unterjährige-verzinsung",
+    "href": "zins-basic.html#unterjährige-verzinsung",
+    "title": "12  Berechnungen mit Zinsen",
+    "section": "12.3 Unterjährige Verzinsung",
+    "text": "12.3 Unterjährige Verzinsung\nBei unterjährig verzinslichen Anlagen erfolgt die Zinsgutschrift mehrmals im Jahr. Der Zeitraum der Verzinsung ist also kleiner als ein Jahr. Üblich sind beispielsweise Zeiträume von:\n\neinem halben Jahr,\neinem Quartal oder\neinem Monat oder\ntageweise bei Restmonaten.\n\nDie Anzahl der Zinsperioden im Jahr wird in Formeln durch das Symbol \\(m\\) ausgedrückt. Bei quartalsweiser Verzinsung wäre \\(m\\) zum Beispiel 4 (4 Quartale pro Jahr). Oftmals wird ein sogenannter nomineller Jahreszinssatz (\\(i_\\mathrm{nom}\\)) angegeben.\nDer relative Periodenzinssatz \\(i_\\mathrm{rel}\\) beträgt dann:\n\\[\ni_{\\mathrm{rel}} = \\frac{i_{\\mathrm{nom}}}{m}\n\\]\n\n12.3.1 Einfache Verzinsung (linear)\nFür das Endkapital \\(K_{n,k}\\) nach \\(n\\) Jahren mit je \\(m\\) Zinsperioden sowie \\(k\\) weiteren unterjährigen Zinsperioden gilt:\n\\[\nK_{\\mathrm{n,k}} = K_0 \\cdot (1 + [n \\cdot m + k]\\cdot i_{\\mathrm{rel}})\n\\]\nDabei stellt \\(n \\cdot m + k\\) die Gesamtzahl von Zinsperioden nach \\(n\\) Jahren und \\(k\\) Perioden dar (Laufzeit in Zinsperioden).\nEin Kapital von 1.000 EUR wird bei monatlicher Verzinsung (\\(m = 12\\)) zu einem nominellen Jahreszinssatz von 6 Prozent angelegt.\nDer relative Periodenzinssatz beträgt 0,5%. Nach 2 Jahren und 4 Monaten ergibt sich mit einfachen Zinsen ein Endkapital von\n\\[\nK_{\\mathrm{2,4}} = 1000 \\; \\mbox{EUR}  \\cdot (1 + [2 \\cdot 12 + 4]\\cdot 0.005) = 1000 \\; \\mbox{EUR}  \\cdot 1140 = 1140 \\; \\mbox{EUR}\n\\]\n\n\n12.3.2 Verzinsung mit Zinseszinsen (exponentiell)\nFür das Endkapital \\(K_{n,k}\\) nach \\(n\\) Jahren mit je \\(m\\) Zinsperioden sowie \\(k\\) weiteren unterjährigen Zinsperioden gilt\n\\[\nK_{\\mathrm{n,k}} = K_0 \\cdot (1 + i_{\\mathrm{rel}})^{n \\cdot m + k}\n\\]\nDie Laufzeit in Zinsperioden berechnet sich also analog zur einfachen Zinsrechnung wieder zu \\(n \\cdot m + k\\)\nZusätzlich zum relativen und nominellen Zinssatz lässt sich beim Zinseszinsfall der effektive Jahreszinssatz \\(i_\\mathrm{eff}\\) bestimmen, bei dem eine einmalige jährliche Verzinsung zu eben diesem Zinssatz dasselbe Ergebnis liefert wie eine mehrmalige unterjährige Verzinsung zum relativen Zinssatz. Mit \\(i_{\\mathrm{nom}}\\) als dem nominellen Jahreszinssatz p.a., \\(m\\) als der Zahl der Zinsperioden pro Jahr sowie dem Quotienten beider Größen $ m $ als dem relativen Periodenzinssatz \\(i_{\\mathrm{rel}}\\) gilt dann:\n\\[\ni_{\\mathrm{eff}} = \\left( 1 + \\frac{i_{\\mathrm{nom}}}{m} \\right)^m - 1\n\\]\nEin Kapital von 1.000 wird wie oben angelegt \\((m = 12\\); \\(i_\\mathrm{nom} = 6\\%\\); \\(i_\\mathrm{rel}= \\tfrac {0.06} {12} = 0.005\\); \\(i_\\mathrm{kon}= \\sqrt[12]{1.06} - 1 \\approx 0.004868)\\).\nNach 2 Jahren und 4 Monaten und damit 28-maliger geometrischer bzw. exponentieller Verzinsung mit dem relativen Periodenzinssatz \\(i_{\\mathrm{rel}}\\) beträgt das Kapital inkl. der Zinseszinsen dann\n\\[\nK_{\\mathrm{2,4}} = 1000 \\; \\mbox{EUR} \\cdot (1 + 0.005)^{2 \\cdot 12 + 4} \\approx 1149.87 \\; \\mbox{EUR}\n\\].\nDasselbe Resultat erhielte man aber auch, wenn man von vornherein mit dem effektiven Jahreszinssatz, in diesem Fall\n\\[\ni_{\\mathrm{eff}} = \\left( 1 + \\frac{0.06}{12} \\right)^{12} - 1 \\approx 0.061678 \\approx 6.1678\\%\n\\]\nrechnen würde:\n\\[\nK_{\\mathrm{2,4}} = 1000 \\; \\mbox{EUR} \\cdot (1 + 0.061678)^{\\frac{28}{12}} \\approx 1149.87 \\; \\mbox{EUR}\n\\]"
   }
 ]

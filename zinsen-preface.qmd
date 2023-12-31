@@ -1,0 +1,12 @@
+```{r echo = FALSE}
+pacman::p_load(tidyverse, readxl, knitr, kableExtra, Hmisc)
+```
+
+# Von Zinsen
+
+*Letzte Änderung am `r format(fs::file_info("zinsen-preface.qmd")$modification_time, '%d. %B %Y um %H:%M:%S')`*
+
+![](images/caution.png){fig-align="center" width="50%"}
+
+
+
