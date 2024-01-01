@@ -58,36 +58,31 @@ Der Betrag ist natürlich hier mit $2.5$ EUR sehr klein. Das macht sich aber bei
 
 ## 72er-Regel
 
-[72er-Regel](https://de.wikipedia.org/wiki/72er-Regel)
-
-Die Zeit $t$ (in Jahren), in der sich eine Kapitalanlage mit Zinssatz $i$ (pro Jahr) verdoppelt, ist nach der 72er-Regel:
+Die [72er-Regel](https://de.wikipedia.org/wiki/72er-Regel) ist eigentlich eine wunberbare Regel, die es sehr schön erlaubt einmal abzuschätzen, wie gut sich eine Wertanlage lohnt. Die 72er-Regel beschreibt die Zeit $t$ (in Jahren), in der sich eine Kapitalanlage mit Zinssatz $i$ (pro Jahr) verdoppelt. Damit können wir für die 72-Regel wie folgt schreiben. Dabei bezeichnet $p$ die Zinsen in Prozent.
 
 $$
 t \approx \frac{72}{100 \cdot i} = \frac{72}{p} ~\text{Jahre}
 $$ 
 
-Dabei bezeichnet $p$ den Zinsfuß.
-
-Man kann dieselbe Formel benutzen, um abzuschätzen, welcher Zinsfuß $p$ benötigt wird, um ein Kapital in vorgegebener Zeit $t$ zu verdoppeln:
+Wir können die Formel auch benutzen, um abzuschätzen, welche Prozentsatz $p$ benötigt wird, um ein Kapital in vorgegebener Zeit $t$ zu verdoppeln.
 
 $$
 p \approx \frac{72 ~\text{Jahre}}{t}
 $$
 
-In welcher Zeit $t$ wird sich ein Betrag, der zu einem Zinsfuß von $p = 8$ (8 Prozent pro Jahr) angelegt ist, verdoppeln?
+Damit kommen wir aucn schon zu dem Beispiel. In welcher Zeit $t$ wird sich eine Wertanlage, der zu einem Prozentsatz von $p = 8$ (8 Prozent pro Jahr) angelegt ist, verdoppeln?
 
 $$
 t = \frac{72}{p} ~\text{Jahre} = \frac{72}{8} ~\text{Jahre} = 9 ~\text{Jahre}
 $$
 
-Welchen Zinsfuß $p$ (pro Jahr) benötigt man, um ein Kapital im Zeitraum $t=12 ~\text{Jahre}$ zu verdoppeln?
+Welche Zinsen in Prozent $p$ (pro Jahr) benötigemn wir, um ein Kapital im Zeitraum $t=12 ~\text{Jahre}$ zu verdoppeln?
 
 $$
-p = \frac{72 ~\text{Jahre}}{t} = \frac{72 ~\text{Jahre}}{12 ~\text{Jahre}} = 6
+p = \frac{72 ~\text{Jahre}}{t} = \frac{72 ~\text{Jahre}}{12 ~\text{Jahre}} = 6 ~\text{Jahre}
 $$
 
-Die 72er-Regel kann nicht nur auf die Zinsrechnung, sondern auf jede Art exponentiellen Wachstums angewendet werden. Beispielsweise beträgt die Generationszeit, also die Zeitspanne, in der sich eine Mikrobenpopulation verdoppelt, bei einer stündlichen Wachstumsrate von $4\%$ ungefähr $\tfrac{72}{4}=18$ Stunden.
-
+Die 72er-Regel können wir nicht nur auf die Zinsrechnung, sondern auf jede Art exponentiellen Wachstums anwenden. Beispielsweise beträgt die Generationszeit, also die Zeitspanne, in der sich eine Mikrobenpopulation verdoppelt, bei einer stündlichen Wachstumsrate von $4\%$ ungefähr $\tfrac{72}{4}=18$ Stunden.
 
 ## Unterjährige Verzinsung
 
