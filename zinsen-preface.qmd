@@ -6,7 +6,10 @@ pacman::p_load(tidyverse, readxl, knitr, kableExtra, Hmisc)
 
 *Letzte Änderung am `r format(fs::file_info("zinsen-preface.qmd")$modification_time, '%d. %B %Y um %H:%M:%S')`*
 
-![](images/caution.png){fig-align="center" width="50%"}
+Zinsen und Zinseszinsen sind grundlegende Konzepte der Finanzwelt, die eine zentrale Rolle bei der Bewertung von Investitionen, Krediten und finanziellen Entscheidungen spielen. Zinsen beziehen sich auf die Gebühr, die für die Nutzung von Geldmittel gezahlt wird. Sie können sowohl für geliehenes Geld (Kreditzinsen) als auch für angelegtes Kapital (Anlagezinsen) relevant sein.
 
+Der Zinseszins ist ein weiteres wichtiges Prinzip, das besagt, dass nicht nur der ursprüngliche Betrag Zinsen generiert, sondern auch die bereits aufgelaufenen Zinsen. Mit anderen Worten, der Zinseszins ermöglicht es, dass Zinsen auf die Zinsen addiert werden, was zu exponentiellem Wachstum führen kann.
+
+Die Berücksichtigung von Zinsen und Zinseszinsen ist entscheidend, um langfristige finanzielle Auswirkungen zu verstehen und strategische Entscheidungen im Bereich der Geldanlage oder Schuldenaufnahme zu treffen. Diese Konzepte spielen eine Schlüsselrolle in der Welt der persönlichen Finanzen, Investitionen, Wirtschaft und Banking.
 
 

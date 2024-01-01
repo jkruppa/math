@@ -8,8 +8,6 @@ pacman::p_load(tidyverse, readxl, knitr, kableExtra, Hmisc)
 
 > *"Compound interest is the eighth wonder of the world. He who understands it, earns it ... he who doesn't ... pays it." --- Albert Einstein*
 
-![](images/caution.png){fig-align="center" width="50%"}
-
 Das folgende Kapitel basiert auf der [Zinsrechnung auf Wikipedia](https://de.wikipedia.org/wiki/Zinsrechnung). Ich habe hier die teile, die wir dann in der Vorlesung brauchen rausgesucht und angepasst. Deshalb habe ich auch die Notation der Wikipediaseite beibehalten, dann kannst du dort noch mal tiefer Einsteigen, solltest du noch mehr Zinsrechnung in anderen Modulen brauchen. Wir nutzen hier die Grundlagen der Zinsrechnung. Für alle Abschnitte ergibt sich daher eine Notation, die ich hier nochmal vorstelle.
 
 - *Anfangskapital*: $K_0$ (Kapital nach 0 Jahren), das Geld mit dem wir starten. Oder den Kredit, den wir bei der Bank aufnehmen.
@@ -76,7 +74,7 @@ $$
 t = \frac{72}{p} ~\text{Jahre} = \frac{72}{8} ~\text{Jahre} = 9 ~\text{Jahre}
 $$
 
-Welche Zinsen in Prozent $p$ (pro Jahr) benötigemn wir, um ein Kapital im Zeitraum $t=12 ~\text{Jahre}$ zu verdoppeln?
+Welche Zinsen in Prozent $p$ (pro Jahr) benötigen wir, um ein Kapital im Zeitraum $t=12 ~\text{Jahre}$ zu verdoppeln?
 
 $$
 p = \frac{72 ~\text{Jahre}}{t} = \frac{72 ~\text{Jahre}}{12 ~\text{Jahre}} = 6 ~\text{Jahre}
@@ -86,71 +84,63 @@ Die 72er-Regel können wir nicht nur auf die Zinsrechnung, sondern auf jede Art 
 
 ## Unterjährige Verzinsung
 
-Bei unterjährig verzinslichen Anlagen erfolgt die Zinsgutschrift mehrmals im Jahr. Der Zeitraum der Verzinsung ist also kleiner als ein Jahr. Üblich sind beispielsweise Zeiträume von:
+Manchmal haben wir das Problem, dass eine Wertanlage oder ein Kredit nicht ganzjährig läuft. Dann müssen wir mit unterjähriger Verzinsung rechnen. Bei unterjährig verzinslichen Anlagen erfolgt die Zinsgutschrift mehrmals im Jahr oder aber der Kredit läuft nur eine bestimmte Anzahl an Monaten. Der Zeitraum der Verzinsung ist also kleiner als ein Jahr. Üblich sind beispielsweise Zeiträume von:
 
 - einem halben Jahr,
 - einem Quartal oder
 - einem Monat oder
 - tageweise bei Restmonaten.
 
-Die Anzahl der Zinsperioden im Jahr wird in Formeln durch das Symbol $m$ ausgedrückt. Bei quartalsweiser Verzinsung wäre $m$ zum Beispiel 4 (4 Quartale pro Jahr). Oftmals wird ein sogenannter *nomineller Jahreszinssatz* ($i_\mathrm{nom}$) angegeben.
-
-Der relative Periodenzinssatz $i_\mathrm{rel}$ beträgt dann:
+Die Anzahl der Zinsperioden im Jahr wird in Formeln durch das Symbol $m$ ausgedrückt. Bei quartalsweiser Verzinsung wäre $m$ zum Beispiel 4 also 4 Quartale pro Jahr. Oftmals wird daher ein sogenannter *nomineller Jahreszinssatz* ($i_\mathrm{nom}$) angegeben. Der relative Periodenzinssatz $i_\mathrm{rel}$ beträgt dann:
 
 $$
 i_{\mathrm{rel}} = \frac{i_{\mathrm{nom}}}{m}
 $$
 
+Wir werden uns die Sachlage dann einmal an ein paar Beispielen anschauen, dann werden die Zusammenhänge dann auch meist klarer.
+
 ### Einfache Verzinsung (linear) 
 
-Für das Endkapital $K_{n,k}$ nach $n$ Jahren mit je $m$ Zinsperioden sowie $k$ weiteren unterjährigen Zinsperioden gilt:
+Fangen wir wieder mit einem linearen Zusammenhang an. Wir haben das Endkapital $K_{n,k}$ nach $n$ Jahren mit je $m$ Zinsperioden sowie $k$ weiteren unterjährigen Zinsperioden vorliegen. Damit gilt dann die folgende Formel für das Endkapital.
 
 $$
 K_{\mathrm{n,k}} = K_0 \cdot (1 + [n \cdot m + k]\cdot i_{\mathrm{rel}})
 $$
 
-Dabei stellt $n \cdot m + k$ die Gesamtzahl von Zinsperioden nach $n$ Jahren und $k$ Perioden dar (Laufzeit in Zinsperioden).
-
-Ein Kapital von 1.000 EUR wird bei monatlicher Verzinsung ($m = 12$) zu einem nominellen Jahreszinssatz von 6 Prozent angelegt.
-
-Der relative Periodenzinssatz beträgt 0,5%. Nach 2 Jahren und 4 Monaten ergibt sich mit einfachen Zinsen ein Endkapital von
+Dabei stellt $n \cdot m + k$ die Gesamtzahl von Zinsperioden nach $n$ Jahren und $k$ Perioden dar. Schauen wir uns das einmal mit einem Zahlenbeispiel an. Ein Kapital von 1.000 EUR wird bei monatlicher Verzinsung ($m = 12$) zu einem nominellen Jahreszinssatz von 6 Prozent angelegt. Der relative Prozentsatz $i_\mathrm{rel}$ beträgt daher 0.5%. Nach 2 Jahren und 4 Monaten ergibt sich mit einfachen Zinsen ein Endkapital von 1140 EUR.
 
 $$
 K_{\mathrm{2,4}} = 1000 \; \mbox{EUR}  \cdot (1 + [2 \cdot 12 + 4]\cdot 0.005) = 1000 \; \mbox{EUR}  \cdot 1140 = 1140 \; \mbox{EUR}
 $$
 
+Die Rechnung ist dabei relativ geradeaus. Du musst eben nur schauen, dass du die Jahre und Monate richtig berücksichtigst. 
 
 ### Verzinsung mit Zinseszinsen (exponentiell)
 
-Für das Endkapital $K_{n,k}$ nach $n$ Jahren mit je $m$ Zinsperioden sowie $k$ weiteren unterjährigen Zinsperioden gilt
+Die lineare Betrachtung macht eigentlich keinen tieferen Sinn. Wir arbeiten eigentlich nur mit dem Zinseszins. Hier haben wir das Endkapital $K_{n,k}$ nach $n$ Jahren mit je $m$ Zinsperioden sowie $k$ weiteren unterjährigen Zinsperioden vorliegen. Die Laufzeit in Zinsperioden berechnet sich also analog zur einfachen Zinsrechnung wieder zu $n \cdot m + k$. Damit gilt dann folgende Formel für das exponentielle Wachstum der Anlage.
 
 $$
 K_{\mathrm{n,k}} = K_0 \cdot (1 + i_{\mathrm{rel}})^{n \cdot m + k}
 $$
-
-Die Laufzeit in Zinsperioden berechnet sich also analog zur einfachen Zinsrechnung wieder zu $n \cdot m + k$
-
-Zusätzlich zum *relativen* und *nominellen* Zinssatz lässt sich beim Zinseszinsfall der *effektive Jahres*zinssatz $i_\mathrm{eff}$ bestimmen, bei dem eine einmalige jährliche Verzinsung zu eben diesem Zinssatz dasselbe Ergebnis liefert wie eine mehrmalige unterjährige Verzinsung zum *relativen* Zinssatz. Mit $i_{\mathrm{nom}}$ als dem *nominellen Jahres*zinssatz p.a., $m$ als der Zahl der Zinsperioden pro Jahr sowie dem Quotienten beider Größen $\tfrac {i_{\mathrm{nom}}} m $ als dem *relativen Perioden*zinssatz $i_{\mathrm{rel}}$ gilt dann:
+Zusätzlich zum *relativen* und *nominellen* Zinssatz lässt sich beim Zinseszinsfall der *effektive Jahres*zinssatz $i_\mathrm{eff}$ bestimmen, bei dem eine einmalige jährliche Verzinsung zu eben diesem Zinssatz dasselbe Ergebnis liefert wie eine mehrmalige unterjährige Verzinsung zum *relativen* Zinssatz. Wir berechnen dann den effektiven Jahreszins wie folgt.
 
 $$
 i_{\mathrm{eff}} = \left( 1 + \frac{i_{\mathrm{nom}}}{m} \right)^m - 1
 $$
 
-Ein Kapital von 1.000 wird wie oben angelegt $(m = 12$; $i_\mathrm{nom} = 6\%$; $i_\mathrm{rel}= \tfrac {0.06} {12} = 0.005$; $i_\mathrm{kon}= \sqrt[12]{1.06} - 1 \approx 0.004868)$.
-
-Nach 2&nbsp;Jahren und 4&nbsp;Monaten und damit 28-maliger geometrischer bzw. exponentieller Verzinsung mit dem relativen Periodenzinssatz $i_{\mathrm{rel}}$ beträgt das Kapital inkl. der Zinseszinsen dann
+Auch hier einmal ein Beispiel. Ein Kapital von 1.000 EUR wird wie oben angelegt $(m = 12$; $i_\mathrm{nom} = 6\%$; $i_\mathrm{rel}= \tfrac {0.06} {12} = 0.005$. Nach 2 Jahren und 4 Monaten und damit 28-maliger exponentieller Verzinsung mit dem relativen Periodenzinssatz $i_{\mathrm{rel}}$ beträgt das Kapital inkl. der Zinseszinsen dann 1149.87 EUR.
 
 $$
 K_{\mathrm{2,4}} = 1000 \; \mbox{EUR} \cdot (1 + 0.005)^{2 \cdot 12 + 4} \approx 1149.87 \; \mbox{EUR}
-$$.
+$$
 
-Dasselbe Resultat erhielte man aber auch, wenn man von vornherein mit dem effektiven Jahreszinssatz, in diesem Fall
+Dasselbe Resultat erhielte man aber auch, wenn man von vornherein mit dem effektiven Jahreszinssatz rechnen würde.
 
 $$
 i_{\mathrm{eff}} = \left( 1 + \frac{0.06}{12} \right)^{12} - 1 \approx 0.061678 \approx 6.1678\% 
 $$
 
-rechnen würde:
+Dann ändert sich die Formel nur leicht und wir erhalten aber das gleiche Ergebnis.
 
 $$
 K_{\mathrm{2,4}} = 1000 \; \mbox{EUR} \cdot (1 + 0.061678)^{\frac{28}{12}} \approx 1149.87 \; \mbox{EUR}
