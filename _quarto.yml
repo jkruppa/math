@@ -12,8 +12,8 @@ crossref:
 book:
   title: "Skript Mathematik"
   subtitle: "Der kleine Leitfaden"
-  author: "Prof. Dr. Jochen Kruppa"
-  date: "04. October 2023"
+  author: "Prof. Dr. Jochen Kruppa-Scheetz"
+  date: "24. June 2024"
   chapters:
     - index.qmd
     - literature.qmd
@@ -48,8 +48,16 @@ format:
       light: zephyr
       dark: superhero
     cover-image: cover2023.png
+    code-annotations: hover
+    lightbox: true
+    toc-expand: 2
+    code-fold: show
+    highlight-style: tango
+    code-block-border-left: true
+    code-summary: "R Code [zeigen / verbergen]"
+    code-tools: true
     mermaid:
-      theme: default
+      theme: neutral
 #  pdf:
 #    documentclass: scrreprt
 
