@@ -13,7 +13,7 @@ f(y \mid\mu,\sigma^2)=\cfrac{1}{\sqrt{2\pi\sigma^2}} e^{-\cfrac{(y-\mu)^2}{2\sig
 $$
 Die Formel sieht ganz schön wild aus, aber wir müssen mit der Formel selber nicht arbeiten. Wir wenden die Normalverteilung höchstens in der Generierung von Daten an. Sonst nutzen wir die Eigenschaften der Normalverteilung für die Analyse von Daten.
 
-## Genutzte R Pakete für das Kapitel
+## Genutzte R Pakete
 
 Wir wollen folgende R Pakete in diesem Kapitel nutzen. Zum einen brauchen wir das R Paket `tidyverse` um uns die Daten zu bauen, die wir dann mit dem R Paket `ggplot` visualisieren wollen. Das R Paket `ggplot` ist schon in dem R Paket `tidyverse` mit enthalten.
 

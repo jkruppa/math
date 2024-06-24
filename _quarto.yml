@@ -17,7 +17,6 @@ book:
   chapters:
     - index.qmd
     - literature.qmd
-    - preface.qmd
     - part: geometry-preface.qmd
       chapters:
       - geometry-unit.qmd
