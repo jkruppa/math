@@ -8,7 +8,7 @@
 
 <meta name="description" content="Eine Formelsammlung für Mathematik in den Agrarwissenschaften">
 
-<title>Mathematik - 6&nbsp; Lineare und exponentielle Funktion</title>
+<title>Mathematik für Agrarwissenschaften - 6&nbsp; Lineare und exponentielle Funktion</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -165,7 +165,7 @@ window.Quarto = {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">Mathematik</a> 
+      <a href="./">Mathematik für Agrarwissenschaften</a> 
         <div class="sidebar-tools-main tools-wide">
     <a href="https://github.com/jkruppa/jkruppa.github.io/math" title="Quellcode" class="quarto-navigation-tool px-1" aria-label="Quellcode"><i class="bi bi-github"></i></a>
     <div class="dropdown">
@@ -372,7 +372,7 @@ window.Quarto = {
 <h2 data-number="6.1" class="anchored" data-anchor-id="genutzte-r-pakete"><span class="header-section-number">6.1</span> Genutzte R Pakete</h2>
 <p>Wir wollen folgende R Pakete in diesem Kapitel nutzen. Zum einen brauchen wir das R Paket <code>tidyverse</code> um uns die Daten zu bauen, die wir dann mit dem R Paket <code>ggplot</code> visualisieren wollen. Das R Paket <code>ggplot</code> ist schon in dem R Paket <code>tidyverse</code> mit enthalten.</p>
 <div class="cell">
-<details open="" class="code-fold">
+<details class="code-fold">
 <summary>R Code [zeigen / verbergen]</summary>
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>pacman<span class="sc">::</span><span class="fu">p_load</span>(tidyverse, magrittr)</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>cbbPalette <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"#000000"</span>, <span class="st">"#E69F00"</span>, <span class="st">"#56B4E9"</span>, <span class="st">"#009E73"</span>, </span>
@@ -388,7 +388,7 @@ f(x) = mx + b_0
 \]</span></p>
 <p>In der <a href="#fig-lin-simple" class="quarto-xref">Abbildung&nbsp;<span>6.1</span></a> sehen wir die lineare Funktion <span class="math inline">\(f(x) = 1.5 \cdot x + 5\)</span> einmal als Gerade dargestellt. Hier wird nochmal schnell klar, was die Parameter der Geradengleichung aussagen. Die Gerade passiert die <span class="math inline">\(y\)</span>-Achse bei einem Wert von 5. Wenn wir von <span class="math inline">\(x=0\)</span> zu <span class="math inline">\(x=5\)</span> gehen, dann steigt die Gerade von <span class="math inline">\(y = 5\)</span> auf <span class="math inline">\(y = 12.5\)</span>. Damit ist dann die Steigung <span class="math inline">\(m = \tfrac{12.5-5}{5} = 1.5\)</span>. Eigentlich realtiv einfach und <em>straight forward</em>.</p>
 <div class="cell" data-layout-align="center">
-<details open="" class="code-fold">
+<details class="code-fold">
 <summary>R Code [zeigen / verbergen]</summary>
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">tibble</span>(<span class="at">x =</span> <span class="dv">0</span><span class="sc">:</span><span class="dv">10</span>,</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="fl">1.5</span> <span class="sc">*</span> x <span class="sc">+</span> <span class="dv">5</span>) <span class="sc">%&gt;%</span> </span>
@@ -430,7 +430,7 @@ f(x) = 2^x
 \]</span></p>
 <p>Wir können uns dann einmal die Daten erschaffen.</p>
 <div class="cell">
-<details open="" class="code-fold">
+<details class="code-fold">
 <summary>R Code [zeigen / verbergen]</summary>
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>exp_tbl <span class="ot">&lt;-</span> <span class="fu">tibble</span>(<span class="at">x =</span> <span class="dv">0</span><span class="sc">:</span><span class="dv">10</span>,</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>                  <span class="at">y =</span> <span class="dv">2</span><span class="sc">^</span>x)</span>
@@ -455,7 +455,7 @@ f(x) = 2^x
 </div>
 <p>In der <a href="#fig-exp-simple" class="quarto-xref">Abbildung&nbsp;<span>6.2</span></a> sehen wir die Exponentialfunktion <span class="math inline">\(f(x) = 2^x\)</span> einmal dargestellt.</p>
 <div class="cell" data-layout-align="center">
-<details open="" class="code-fold">
+<details class="code-fold">
 <summary>R Code [zeigen / verbergen]</summary>
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>exp_tbl <span class="sc">%&gt;%</span> </span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(x, y)) <span class="sc">+</span></span>
@@ -506,7 +506,7 @@ Abbildung&nbsp;6.2— Die einfache Exponentialfunktion <span class="math inline"
 \]</span></p>
 <p>Und einmal die Überprüfung in R Code. Der R Code sieht dann immer etwas wilder aus, da wir natürlich nicht eine Formel direkt in R eingeben können. Mit den Leerzeichen wird es eventuell dann etwas übersichtlicher.</p>
 <div class="cell">
-<details open="" class="code-fold">
+<details class="code-fold">
 <summary>R Code [zeigen / verbergen]</summary>
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>(<span class="dv">2</span><span class="sc">^</span>(<span class="dv">5</span><span class="sc">+</span><span class="dv">1</span>) <span class="sc">-</span> <span class="dv">1</span>)<span class="sc">/</span>(<span class="dv">2</span> <span class="sc">-</span> <span class="dv">1</span>)</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
@@ -516,7 +516,7 @@ Abbildung&nbsp;6.2— Die einfache Exponentialfunktion <span class="math inline"
 </div>
 <p>Wir können uns auch die Werte vom aufsummierten <span class="math inline">\(y\)</span> auch einmal für jedes <span class="math inline">\(x\)</span> berechnen lassen. Und nicht nur für <span class="math inline">\(x = 5\)</span>, wie wir es eben gerade gemacht haben. Daher stelle ich hier nochmal die Berechnung als Tabelle dar. In der Spalte <code>cumsum_y</code> findet sich das aufsummierte <span class="math inline">\(y\)</span>.</p>
 <div class="cell">
-<details open="" class="code-fold">
+<details class="code-fold">
 <summary>R Code [zeigen / verbergen]</summary>
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>exp_tbl <span class="sc">%&lt;&gt;%</span> </span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">cumsum_y =</span> (<span class="dv">2</span><span class="sc">^</span>(x<span class="sc">+</span><span class="dv">1</span>)<span class="sc">-</span><span class="dv">1</span>)<span class="sc">/</span>(<span class="dv">2-1</span>))</span>
@@ -541,7 +541,7 @@ Abbildung&nbsp;6.2— Die einfache Exponentialfunktion <span class="math inline"
 </div>
 <p>Nachdem wir dann die Datentabelle haben, können wir die Funktion auch einmal abbilden. In der <a href="#fig-exp-simple-cumsum" class="quarto-xref">Abbildung&nbsp;<span>6.3</span></a> siehst du die exponentielle Funktion für <span class="math inline">\(f(x) = 2^x\)</span>.</p>
 <div class="cell" data-layout-align="center">
-<details open="" class="code-fold">
+<details class="code-fold">
 <summary>R Code [zeigen / verbergen]</summary>
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>exp_tbl <span class="sc">%&gt;%</span> </span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(x, cumsum_y)) <span class="sc">+</span></span>
@@ -575,7 +575,7 @@ N(t) = N_0 \cdot \cfrac{1}{2}^{\cfrac{t}{t_{1/2}}}
 \]</span></p>
 <p>In der <a href="#fig-exp-halb" class="quarto-xref">Abbildung&nbsp;<span>6.4</span></a> sehen wir dann die exponentielle Funktion für den Zerfall eines radioaktiven Nukleotids mit <span class="math inline">\(f(x) = 100 \cdot \cfrac{1}{2}^{\cfrac{t}{3.5}}\)</span>.</p>
 <div class="cell" data-layout-align="center">
-<details open="" class="code-fold">
+<details class="code-fold">
 <summary>R Code [zeigen / verbergen]</summary>
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">tibble</span>(<span class="at">t =</span> <span class="dv">0</span><span class="sc">:</span><span class="dv">30</span>,</span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="dv">100</span> <span class="sc">*</span> <span class="dv">1</span><span class="sc">/</span><span class="dv">2</span><span class="sc">^</span>(t<span class="sc">/</span><span class="fl">3.5</span>)) <span class="sc">%&gt;%</span> </span>
@@ -611,7 +611,7 @@ f(x) = 6 - 1.5 \cdot 2^{-\frac{1}{4}\cdot x + 2}
 \]</span></p>
 <p>In der <a href="#fig-exp-satt" class="quarto-xref">Abbildung&nbsp;<span>6.5</span></a> sehen wir den Zusammenhang nochmal visualisiert. Häufig führen biologische Wachstumsprozesse zu einer ähnlichen Sättigungsfunktion. Als weiteres Beispiel sei hier auch die Enzymekinetik mit der <a href="https://de.wikipedia.org/wiki/Enzymkinetik#Nicht_linearisierte_Graphen">Michaelis-Menten-Gleichung</a> berechnen.</p>
 <div class="cell" data-layout-align="center">
-<details open="" class="code-fold">
+<details class="code-fold">
 <summary>R Code [zeigen / verbergen]</summary>
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">tibble</span>(<span class="at">x =</span> <span class="dv">0</span><span class="sc">:</span><span class="dv">30</span>,</span>
 <span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="dv">6</span> <span class="sc">-</span> <span class="fl">1.5</span> <span class="sc">*</span> <span class="dv">2</span><span class="sc">^</span>(<span class="sc">-</span><span class="dv">1</span><span class="sc">/</span><span class="dv">4</span><span class="sc">*</span>x <span class="sc">+</span> <span class="dv">2</span>)) <span class="sc">%&gt;%</span> </span>
@@ -1573,7 +1573,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div>
   </div>
 </footer>
-<script>var lightboxQuarto = GLightbox({"openEffect":"zoom","closeEffect":"zoom","selector":".lightbox","loop":false,"descPosition":"bottom"});
+<script>var lightboxQuarto = GLightbox({"selector":".lightbox","openEffect":"zoom","descPosition":"bottom","loop":false,"closeEffect":"zoom"});
 window.onload = () => {
   lightboxQuarto.on('slide_before_load', (data) => {
     const { slideIndex, slideNode, slideConfig, player, trigger } = data;

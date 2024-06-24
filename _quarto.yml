@@ -61,7 +61,7 @@ format:
     code-annotations: hover
     lightbox: true
     toc-expand: 2
-    code-fold: show
+    code-fold: true
     highlight-style: tango
     code-block-border-left: true
     code-summary: "R Code [zeigen / verbergen]"

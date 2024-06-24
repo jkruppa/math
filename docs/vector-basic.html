@@ -8,7 +8,7 @@
 
 <meta name="description" content="Eine Formelsammlung für Mathematik in den Agrarwissenschaften">
 
-<title>Mathematik - 4&nbsp; Berechnungen mit Vektoren</title>
+<title>Mathematik für Agrarwissenschaften - 4&nbsp; Berechnungen mit Vektoren</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -162,7 +162,7 @@ window.Quarto = {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">Mathematik</a> 
+      <a href="./">Mathematik für Agrarwissenschaften</a> 
         <div class="sidebar-tools-main tools-wide">
     <a href="https://github.com/jkruppa/jkruppa.github.io/math" title="Quellcode" class="quarto-navigation-tool px-1" aria-label="Quellcode"><i class="bi bi-github"></i></a>
     <div class="dropdown">
@@ -392,7 +392,7 @@ A= (3, 5, 1)^T = \begin{pmatrix} 3 \\ 5 \\ 1 \end{pmatrix}
 \]</span></p>
 <p>Wir können die Berechnung auch einfach in R durchführen. Da wir in R nicht vertikal schreiben können sind alle Vektoren immer horizontal. Wir können über die Funktion <code>t()</code> einen Vektor transponieren, wenn wir das wollen würden.</p>
 <div class="cell">
-<details open="" class="code-fold">
+<details class="code-fold">
 <summary>R Code [zeigen / verbergen]</summary>
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>A <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">2</span>, <span class="sc">-</span><span class="dv">1</span>, <span class="dv">5</span>)</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>B <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">8</span>, <span class="dv">1</span>, <span class="sc">-</span><span class="dv">3</span>)</span>
@@ -410,7 +410,7 @@ A= (3, 5, 1)^T = \begin{pmatrix} 3 \\ 5 \\ 1 \end{pmatrix}
 \begin{pmatrix} 2 \\ 6 \\ 8 \end{pmatrix}
 \]</span> Auch hier einmal die Anwendung in R.</p>
 <div class="cell">
-<details open="" class="code-fold">
+<details class="code-fold">
 <summary>R Code [zeigen / verbergen]</summary>
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>A <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">3</span>, <span class="dv">4</span>)</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -422,7 +422,7 @@ A= (3, 5, 1)^T = \begin{pmatrix} 3 \\ 5 \\ 1 \end{pmatrix}
 </div>
 <p>In R haben wir noch die Möglichkeit einen Vektor mit Namen zu versehen. Diese Möglichkeit brauchst du ab und an mal. Es ist ganz nett sich zu vergewissern, was die Zahl in einem Vektor eigentlich aussagen soll.</p>
 <div class="cell">
-<details open="" class="code-fold">
+<details class="code-fold">
 <summary>R Code [zeigen / verbergen]</summary>
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>A <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">2</span>, <span class="sc">-</span><span class="dv">1</span>, <span class="dv">5</span>)</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(A) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"A"</span>, <span class="st">"B"</span>, <span class="st">"C"</span>)</span>

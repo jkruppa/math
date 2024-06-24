@@ -8,7 +8,7 @@
 
 <meta name="description" content="Eine Formelsammlung für Mathematik in den Agrarwissenschaften">
 
-<title>Mathematik - 5&nbsp; Berechnungen mit Matrizen</title>
+<title>Mathematik für Agrarwissenschaften - 5&nbsp; Berechnungen mit Matrizen</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -162,7 +162,7 @@ window.Quarto = {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">Mathematik</a> 
+      <a href="./">Mathematik für Agrarwissenschaften</a> 
         <div class="sidebar-tools-main tools-wide">
     <a href="https://github.com/jkruppa/jkruppa.github.io/math" title="Quellcode" class="quarto-navigation-tool px-1" aria-label="Quellcode"><i class="bi bi-github"></i></a>
     <div class="dropdown">
@@ -395,7 +395,7 @@ a_{21} &amp; a_{22} &amp; a_{23}
 \end{bmatrix}
 \]</span> Im Prinzip haben wir damit eine Matrix zusammen. Schauen wir noch schnell, wie wir eine Matrix in R aufbauen. Wir nutzen die Option <code>byrow = TRUE</code> um der Funktion <code>matrix()</code> mitzuteilen, dass wir die Matrix zeilenweise auffüllen wollen. Einzelne Werte in einer Matrix können wir mit den eckigen Klammern <code>[]</code> ansprechen. Daher für die Mathematik die runden Klammern.</p>
 <div class="cell">
-<details open="" class="code-fold">
+<details class="code-fold">
 <summary>R Code [zeigen / verbergen]</summary>
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">matrix</span>(<span class="fu">c</span>(<span class="dv">3</span>, <span class="dv">5</span>, <span class="dv">6</span>,</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>         <span class="dv">3</span>, <span class="dv">8</span>, <span class="dv">1</span>), <span class="at">byrow =</span> <span class="cn">TRUE</span>, <span class="at">nrow =</span> <span class="dv">2</span>)</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -432,7 +432,7 @@ A_D=\begin{pmatrix}
 \]</span></p>
 <p>Eine klassische Varian/Covarianzmatrix würde wie folgt aussehen. Wir bauen uns einen Datensatz mit den Noten von 5 Schülern über die Fächer Statistik, Informatik und Mathematik. Die Funktion <code>cov()</code> gibt uns die Varianz/Covarianzmatrix wieder.</p>
 <div class="cell">
-<details open="" class="code-fold">
+<details class="code-fold">
 <summary>R Code [zeigen / verbergen]</summary>
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>points_tbl <span class="ot">&lt;-</span> <span class="fu">tibble</span>(<span class="at">statistic =</span> <span class="fu">c</span>(<span class="dv">84</span>, <span class="dv">82</span>, <span class="dv">81</span>, <span class="dv">89</span>, <span class="dv">73</span>),</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>                     <span class="at">programing =</span> <span class="fu">c</span>(<span class="dv">85</span>, <span class="dv">82</span>, <span class="dv">72</span>, <span class="dv">77</span>, <span class="dv">63</span>),</span>
@@ -448,7 +448,7 @@ math            9.55      23.05 10.70</code></pre>
 </div>
 <p>Wie wir auch schnell überprüfen können, sind auf der Diagonalen die Varianzen von den jeweiligen Fächern zu finden. In der Nebendiagonalen finden sich die Covarianzen. Also die Varianzen für das <em>gemeinsame</em> Variieren zwischen den Fächern und den fünf Schülern.</p>
 <div class="cell">
-<details open="" class="code-fold">
+<details class="code-fold">
 <summary>R Code [zeigen / verbergen]</summary>
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>points_tbl <span class="sc">%&gt;%</span> </span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="fu">var</span>(statistic), <span class="fu">var</span>(programing), <span class="fu">var</span>(math))</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -462,7 +462,7 @@ math            9.55      23.05 10.70</code></pre>
 </div>
 <p>Wir können uns dann auch die passende Korrelationmatrix mit der Funktion <code>cor()</code> ausgeben lassen. wir skalieren dadurch die Varianz/Covarianzmatrix auf eine Diagonalen mit nur 1’sen und der Korrelation in den Nebendiagonalen. Die Korrelationsmatrix ist an der Diagonalen gespiegelt.</p>
 <div class="cell">
-<details open="" class="code-fold">
+<details class="code-fold">
 <summary>R Code [zeigen / verbergen]</summary>
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>points_tbl <span class="sc">%&gt;%</span> <span class="fu">cor</span>()</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
@@ -537,7 +537,7 @@ a_{21}\pm b_{21} &amp; a_{22}\pm b_{22}
 \]</span></p>
 <p>In R geht es ebenfalls einfach die beiden Matrizen zu addieren.</p>
 <div class="cell">
-<details open="" class="code-fold">
+<details class="code-fold">
 <summary>R Code [zeigen / verbergen]</summary>
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>A <span class="ot">&lt;-</span> <span class="fu">matrix</span>(<span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">6</span>, <span class="dv">7</span>), <span class="at">ncol =</span> <span class="dv">2</span>)</span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>A</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -547,7 +547,7 @@ a_{21}\pm b_{21} &amp; a_{22}\pm b_{22}
 [1,]    2    6
 [2,]    3    7</code></pre>
 </div>
-<details open="" class="code-fold">
+<details class="code-fold">
 <summary>R Code [zeigen / verbergen]</summary>
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>B <span class="ot">&lt;-</span> <span class="fu">matrix</span>(<span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">5</span>, <span class="dv">4</span>, <span class="dv">1</span>), <span class="at">ncol =</span> <span class="dv">2</span>)</span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>B</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -557,7 +557,7 @@ a_{21}\pm b_{21} &amp; a_{22}\pm b_{22}
 [1,]    0    4
 [2,]    5    1</code></pre>
 </div>
-<details open="" class="code-fold">
+<details class="code-fold">
 <summary>R Code [zeigen / verbergen]</summary>
 <div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>A <span class="sc">+</span> B</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
@@ -586,7 +586,7 @@ r \cdot
 \]</span></p>
 <p>Auch hier lässt sich der Zusammenhang einfach in R nachvollziehen. Wir bauen uns wieder die Matrix <span class="math inline">\(A\)</span> und multiplizieren die Matrix <span class="math inline">\(A\)</span> mit dem Skalar <span class="math inline">\(r = 4\)</span>.</p>
 <div class="cell">
-<details open="" class="code-fold">
+<details class="code-fold">
 <summary>R Code [zeigen / verbergen]</summary>
 <div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>A <span class="ot">&lt;-</span> <span class="fu">matrix</span>(<span class="fu">c</span>(<span class="dv">3</span>, <span class="dv">2</span>, <span class="dv">4</span>, <span class="dv">6</span>), <span class="at">byrow =</span> <span class="cn">TRUE</span>,  <span class="at">ncol =</span> <span class="dv">2</span>)</span>
 <span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>A</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -596,7 +596,7 @@ r \cdot
 [1,]    3    2
 [2,]    4    6</code></pre>
 </div>
-<details open="" class="code-fold">
+<details class="code-fold">
 <summary>R Code [zeigen / verbergen]</summary>
 <div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="dv">4</span> <span class="sc">*</span> A</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
@@ -633,7 +633,7 @@ r \cdot
 \]</span></p>
 <p>Wii können das Beispiel auch wieder in R nachvollziehen. In R gibt es keine Funktion mit Namen <code>vector</code>. Die Funktion <code>c()</code> erschafft einen Vektor. Wenn wir Matrizen oder Vektoren miteinander multipizieren wollen und anschließend aufaddieren, dann müssen wir den Operator <code>%*%</code> nutzen.</p>
 <div class="cell">
-<details open="" class="code-fold">
+<details class="code-fold">
 <summary>R Code [zeigen / verbergen]</summary>
 <div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>A <span class="ot">&lt;-</span> <span class="fu">matrix</span>(<span class="fu">c</span>(<span class="dv">4</span>, <span class="dv">3</span>, <span class="dv">2</span>,</span>
 <span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>              <span class="dv">1</span>, <span class="dv">0</span>, <span class="dv">3</span>), <span class="at">byrow =</span> <span class="dv">2</span>, <span class="at">ncol =</span> <span class="dv">3</span>)</span>
@@ -644,7 +644,7 @@ r \cdot
 [1,]    4    3    2
 [2,]    1    0    3</code></pre>
 </div>
-<details open="" class="code-fold">
+<details class="code-fold">
 <summary>R Code [zeigen / verbergen]</summary>
 <div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>B <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">0</span>, <span class="dv">1</span>)</span>
 <span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>B</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -652,7 +652,7 @@ r \cdot
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 2 0 1</code></pre>
 </div>
-<details open="" class="code-fold">
+<details class="code-fold">
 <summary>R Code [zeigen / verbergen]</summary>
 <div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>A <span class="sc">%*%</span> B</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
