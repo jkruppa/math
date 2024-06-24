@@ -6,6 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="description" content="Eine Formelsammlung für Mathematik in den Agrarwissenschaften">
 
 <title>Mathematik - 1&nbsp; Maßeinheiten, Flächenmaße und Volumenmaße</title>
 <style>
@@ -162,7 +163,31 @@ window.Quarto = {
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="./">Mathematik</a> 
-        <div class="sidebar-tools-main">
+        <div class="sidebar-tools-main tools-wide">
+    <a href="https://github.com/jkruppa/jkruppa.github.io/math" title="Quellcode" class="quarto-navigation-tool px-1" aria-label="Quellcode"><i class="bi bi-github"></i></a>
+    <div class="dropdown">
+      <a href="" title="Share" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Share"><i class="bi bi-share"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://twitter.com/intent/tweet?url=|url|">
+              <i class="bi bi-bi-twitter pe-1"></i>
+            Twitter
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://www.facebook.com/sharer/sharer.php?u=|url|">
+              <i class="bi bi-bi-facebook pe-1"></i>
+            Facebook
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://www.linkedin.com/sharing/share-offsite/?url=|url|">
+              <i class="bi bi-bi-linkedin pe-1"></i>
+            LinkedIn
+            </a>
+          </li>
+      </ul>
+    </div>
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Dunkelmodus umschalten"><i class="bi"></i></a>
 </div>
     </div>
@@ -310,7 +335,7 @@ window.Quarto = {
   <li><a href="#volumenmaße" id="toc-volumenmaße" class="nav-link" data-scroll-target="#volumenmaße"><span class="header-section-number">1.3</span> Volumenmaße</a></li>
   <li><a href="#prozent-promille-und-ppm" id="toc-prozent-promille-und-ppm" class="nav-link" data-scroll-target="#prozent-promille-und-ppm"><span class="header-section-number">1.4</span> Prozent, Promille und ppm</a></li>
   </ul>
-</nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/jkruppa/jkruppa.github.io/math/edit/master/geometry-unit.qmd" class="toc-action"><i class="bi bi-github"></i>Seite editieren</a></li><li><a href="https://github.com/jkruppa/jkruppa.github.io/math/issues/new" class="toc-action"><i class="bi empty"></i>Problem melden</a></li><li><a href="https://github.com/jkruppa/jkruppa.github.io/math/blob/master/geometry-unit.qmd" class="toc-action"><i class="bi empty"></i>Quellcode anzeigen</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -334,7 +359,7 @@ window.Quarto = {
 </header>
 
 
-<p><em>Letzte Änderung am 28. September 2023 um 16:30:14</em></p>
+<p><em>Letzte Änderung am 24. June 2024 um 17:28:49</em></p>
 <section id="maßeinheiten" class="level2" data-number="1.1">
 <h2 data-number="1.1" class="anchored" data-anchor-id="maßeinheiten"><span class="header-section-number">1.1</span> Maßeinheiten</h2>
 <p>Wozu brauchen wir Maßeinheiten? Zum einen wollen wir nicht immer so große Zahlen schreiben oder aber sehr kleine Zahlen. Die ganzen Nullen machen dann doch den Text sehr unübersichtlich. Aus diesem Grund gibt es mehrere Arten der Kurzschreibweise um Zahlen in einer kürzeren Form darzustellen. In der folgenden <a href="#tbl-unit-01" class="quarto-xref">Tabelle&nbsp;<span>1.1</span></a> sind einem die sehr großen Zahlen bis <span class="math inline">\(10^{12}\)</span> einmal dargestellt.</p>
@@ -474,6 +499,20 @@ Tabelle&nbsp;1.2— Sehr kleine Zahlen mit vielen Nullen mit den jeweiligen Abk�
 </div>
 </figure>
 </div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Wieviele Nullen sollen es sein?
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Du kannst dir merken, dass bei positiven Hochzahlen, die Hochzahl die Anzahl an Nullen angibt. So ist eben 1e+2 eine 1 mit zwei Nullen, also Hundert. Eine <span class="math inline">\(10^3\)</span> ist eine Eins mit drei Nullen, also Tausend.</p>
+<p>Bei den negativen Hochzahlen, siehst du immer eine Null weniger, als die Hochzahl angibt. So ist 1e-2 eben 0.01 und damit nur eine Null vor der Eins. Ebenso ist dann <span class="math inline">\(10^{-4}\)</span> dann 0.0001 also eine Eins mit drei Nullen.</p>
+</div>
+</div>
 <p>Wenn dir unklar ist, wie denn eine Zahl mit dem <code>e</code> aussehen würde, kannst du die Funktion <code>format()</code> mit der Option <code>scientific = FALSE</code> nutzen. Damit schaltest du die exponentielle Schreibweise in R aus.</p>
 <div class="cell">
 <details open="" class="code-fold">
@@ -549,11 +588,11 @@ Tabelle&nbsp;1.4— Umrechnung von gängigen Volumenmaßen.
 <thead>
 <tr class="header">
 <th>Liter</th>
-<th><span class="math inline">\(hl\)</span></th>
-<th><span class="math inline">\(l\)</span></th>
-<th><span class="math inline">\(dl\)</span></th>
-<th><span class="math inline">\(cl\)</span></th>
-<th><span class="math inline">\(ml\)</span></th>
+<th>hl</th>
+<th>l</th>
+<th>dl</th>
+<th>cl</th>
+<th>ml</th>
 </tr>
 </thead>
 <tbody>
@@ -1372,58 +1411,79 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb5-33"><a href="#cb5-33" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb5-34"><a href="#cb5-34" aria-hidden="true" tabindex="-1"></a>: Sehr kleine Zahlen mit vielen Nullen mit den jeweiligen Abkürzungen und Schreibweisen. {#tbl-unit-02}</span>
 <span id="cb5-35"><a href="#cb5-35" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-36"><a href="#cb5-36" aria-hidden="true" tabindex="-1"></a>Wenn dir unklar ist, wie denn eine Zahl mit dem <span class="in">`e`</span> aussehen würde, kannst du die Funktion <span class="in">`format()`</span> mit der Option <span class="in">`scientific = FALSE`</span> nutzen. Damit schaltest du die exponentielle Schreibweise in R aus.</span>
-<span id="cb5-37"><a href="#cb5-37" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-40"><a href="#cb5-40" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb5-41"><a href="#cb5-41" aria-hidden="true" tabindex="-1"></a><span class="fu">format</span>(<span class="fl">1.8e+7</span>, <span class="at">scientific =</span> <span class="cn">FALSE</span>)</span>
-<span id="cb5-42"><a href="#cb5-42" aria-hidden="true" tabindex="-1"></a><span class="fu">format</span>(<span class="fl">1.2e-4</span>, <span class="at">scientific =</span> <span class="cn">FALSE</span>)</span>
-<span id="cb5-43"><a href="#cb5-43" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb5-44"><a href="#cb5-44" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-45"><a href="#cb5-45" aria-hidden="true" tabindex="-1"></a>Viele Taschenrechner haben auch die Möglichkeit das <span class="in">`e`</span> umzurechnen. Meistens sind wir dann aber in R und da können wir dann die obige Funktion schnell nutzen.</span>
-<span id="cb5-46"><a href="#cb5-46" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-47"><a href="#cb5-47" aria-hidden="true" tabindex="-1"></a><span class="fu">## Flächenmaße</span></span>
-<span id="cb5-48"><a href="#cb5-48" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-49"><a href="#cb5-49" aria-hidden="true" tabindex="-1"></a>In der @tbl-unit-03 sehen wir nochmal die Umrechnung von gängigen Flächenmaßen. Dem einen oder anderen mag der Hektar $ha$ geläufig sein, für alle anderen hier nochmal die Flächen zum nachschlagen. Das Ar $ar$ ist in unterschiedlicher Verwendung, aber hier mit zu Vollständigkeit aufgeführt.</span>
-<span id="cb5-50"><a href="#cb5-50" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-51"><a href="#cb5-51" aria-hidden="true" tabindex="-1"></a>| $km^2$ | $ha$ | $ar$   | $m^2$     |</span>
-<span id="cb5-52"><a href="#cb5-52" aria-hidden="true" tabindex="-1"></a>|--------|------|--------|-----------|</span>
-<span id="cb5-53"><a href="#cb5-53" aria-hidden="true" tabindex="-1"></a>| 1      | 100  | 10 000 | 1 000 000 |</span>
-<span id="cb5-54"><a href="#cb5-54" aria-hidden="true" tabindex="-1"></a>|        | 1    | 100    | 10 000    |</span>
-<span id="cb5-55"><a href="#cb5-55" aria-hidden="true" tabindex="-1"></a>|        |      | 1      | 100       |</span>
+<span id="cb5-36"><a href="#cb5-36" aria-hidden="true" tabindex="-1"></a>::: callout-tip</span>
+<span id="cb5-37"><a href="#cb5-37" aria-hidden="true" tabindex="-1"></a><span class="fu">## Wieviele Nullen sollen es sein?</span></span>
+<span id="cb5-38"><a href="#cb5-38" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-39"><a href="#cb5-39" aria-hidden="true" tabindex="-1"></a>Du kannst dir merken, dass bei positiven Hochzahlen, die Hochzahl die Anzahl an Nullen angibt. So ist eben 1e+2 eine 1 mit zwei Nullen, also Hundert. Eine $10^3$ ist eine Eins mit drei Nullen, also Tausend.</span>
+<span id="cb5-40"><a href="#cb5-40" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-41"><a href="#cb5-41" aria-hidden="true" tabindex="-1"></a>Bei den negativen Hochzahlen, siehst du immer eine Null weniger, als die Hochzahl angibt. So ist 1e-2 eben 0.01 und damit nur eine Null vor der Eins. Ebenso ist dann $10^{-4}$ dann 0.0001 also eine Eins mit drei Nullen.</span>
+<span id="cb5-42"><a href="#cb5-42" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb5-43"><a href="#cb5-43" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-44"><a href="#cb5-44" aria-hidden="true" tabindex="-1"></a>Wenn dir unklar ist, wie denn eine Zahl mit dem <span class="in">`e`</span> aussehen würde, kannst du die Funktion <span class="in">`format()`</span> mit der Option <span class="in">`scientific = FALSE`</span> nutzen. Damit schaltest du die exponentielle Schreibweise in R aus.</span>
+<span id="cb5-45"><a href="#cb5-45" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-48"><a href="#cb5-48" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb5-49"><a href="#cb5-49" aria-hidden="true" tabindex="-1"></a><span class="fu">format</span>(<span class="fl">1.8e+7</span>, <span class="at">scientific =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb5-50"><a href="#cb5-50" aria-hidden="true" tabindex="-1"></a><span class="fu">format</span>(<span class="fl">1.2e-4</span>, <span class="at">scientific =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb5-51"><a href="#cb5-51" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb5-52"><a href="#cb5-52" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-53"><a href="#cb5-53" aria-hidden="true" tabindex="-1"></a>Viele Taschenrechner haben auch die Möglichkeit das <span class="in">`e`</span> umzurechnen. Meistens sind wir dann aber in R und da können wir dann die obige Funktion schnell nutzen.</span>
+<span id="cb5-54"><a href="#cb5-54" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-55"><a href="#cb5-55" aria-hidden="true" tabindex="-1"></a><span class="fu">## Flächenmaße</span></span>
 <span id="cb5-56"><a href="#cb5-56" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-57"><a href="#cb5-57" aria-hidden="true" tabindex="-1"></a>: Umrechnung von gängigen Flächenmaßen. {#tbl-unit-03}</span>
+<span id="cb5-57"><a href="#cb5-57" aria-hidden="true" tabindex="-1"></a>In der @tbl-unit-03 sehen wir nochmal die Umrechnung von gängigen Flächenmaßen. Dem einen oder anderen mag der Hektar $ha$ geläufig sein, für alle anderen hier nochmal die Flächen zum nachschlagen. Das Ar $ar$ ist in unterschiedlicher Verwendung, aber hier mit zu Vollständigkeit aufgeführt.</span>
 <span id="cb5-58"><a href="#cb5-58" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-59"><a href="#cb5-59" aria-hidden="true" tabindex="-1"></a><span class="fu">## Volumenmaße</span></span>
-<span id="cb5-60"><a href="#cb5-60" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-61"><a href="#cb5-61" aria-hidden="true" tabindex="-1"></a>Die @tbl-unit-04 zeigt die Umrechnungen von Volumenmaßen. Häufig benötigen wir verschiedene Volumen bei der Abfüllung von Dünger oder aber auch anderer Flüssigkeiten. Die Bewässerung und auch die Kühlung wird über Volumen geregelt. Auch ist es wichtig zu wisen, wie denn die Idee des *Liters* mit den $m^3$ zusammenhängt.</span>
-<span id="cb5-62"><a href="#cb5-62" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-63"><a href="#cb5-63" aria-hidden="true" tabindex="-1"></a>| Liter   | $hl$ | $l$          | $dl$      | $cl$     | $ml$      |</span>
-<span id="cb5-64"><a href="#cb5-64" aria-hidden="true" tabindex="-1"></a>|---------|------|--------------|-----------|----------|-----------|</span>
-<span id="cb5-65"><a href="#cb5-65" aria-hidden="true" tabindex="-1"></a>| $1m^3$  | 10   | 1 000        | 10 000    | 100 000  | 1 000 000 |</span>
-<span id="cb5-66"><a href="#cb5-66" aria-hidden="true" tabindex="-1"></a>|         | 1    | 100          | 1 000     | 10 000   | 100 000   |</span>
-<span id="cb5-67"><a href="#cb5-67" aria-hidden="true" tabindex="-1"></a>|         |      | 10           | 100       | 1 000    | 10 000    |</span>
-<span id="cb5-68"><a href="#cb5-68" aria-hidden="true" tabindex="-1"></a>| $1dm^3$ |      | 1            | 10        | 100      | 1 000     |</span>
-<span id="cb5-69"><a href="#cb5-69" aria-hidden="true" tabindex="-1"></a>|         |      |              | 1         | 10       | 100       |</span>
-<span id="cb5-70"><a href="#cb5-70" aria-hidden="true" tabindex="-1"></a>|         |      |              |           | 1        | 10        |</span>
-<span id="cb5-71"><a href="#cb5-71" aria-hidden="true" tabindex="-1"></a>| $1cm^3$ |      |              |           |          | 1         |</span>
-<span id="cb5-72"><a href="#cb5-72" aria-hidden="true" tabindex="-1"></a>|         |      | $1 000 cm^3$ | $100cm^3$ | $10cm^3$ | $1cm^3$   |</span>
-<span id="cb5-73"><a href="#cb5-73" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-74"><a href="#cb5-74" aria-hidden="true" tabindex="-1"></a>: Umrechnung von gängigen Volumenmaßen. {#tbl-unit-04}</span>
-<span id="cb5-75"><a href="#cb5-75" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-76"><a href="#cb5-76" aria-hidden="true" tabindex="-1"></a><span class="fu">## Prozent, Promille und ppm</span></span>
-<span id="cb5-77"><a href="#cb5-77" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-78"><a href="#cb5-78" aria-hidden="true" tabindex="-1"></a>Abschließend schauen wir uns in der @tbl-unit-05 nochmal die Umrechnungen von Prozent und Promille an. Das Prinzip nutzen wir dann häufig zur Abschätzung von anderen Flächen oder Volumen, wenn wir nicht die exakte Änderung kennen sondern eben nur die Prozentuale.</span>
-<span id="cb5-79"><a href="#cb5-79" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-80"><a href="#cb5-80" aria-hidden="true" tabindex="-1"></a>|                                                          |                            |              | Ein Zuckerwürfel in                |</span>
-<span id="cb5-81"><a href="#cb5-81" aria-hidden="true" tabindex="-1"></a>|------------------------|----------------|----------------|----------------|</span>
-<span id="cb5-82"><a href="#cb5-82" aria-hidden="true" tabindex="-1"></a>| 1 Prozent ist 1 Teil von hundert Teilen                  | 10 Gramm pro Kilogramm     | $10 g/kg$    | 0.27 Litern, ca. 2 Tassen          |</span>
-<span id="cb5-83"><a href="#cb5-83" aria-hidden="true" tabindex="-1"></a>| 1 Promille ist 1 Teil von Tausend Teilen                 | 1 Gramm pro Kilogramm      | $1 g/kg$     | 2.7 Litern, ca. 3.5 Flaschen Wein  |</span>
-<span id="cb5-84"><a href="#cb5-84" aria-hidden="true" tabindex="-1"></a>| 1 ppm (part per million) ist 1 Teil von 1 Million Teilen | 1 Milligramm pro Kilogramm | $0.001 g/kg$ | 2 700 Litern, ca. einem Tanklaster |</span>
+<span id="cb5-59"><a href="#cb5-59" aria-hidden="true" tabindex="-1"></a>| $km^2$ | $ha$ | $ar$   | $m^2$     |</span>
+<span id="cb5-60"><a href="#cb5-60" aria-hidden="true" tabindex="-1"></a>|--------|------|--------|-----------|</span>
+<span id="cb5-61"><a href="#cb5-61" aria-hidden="true" tabindex="-1"></a>| 1      | 100  | 10 000 | 1 000 000 |</span>
+<span id="cb5-62"><a href="#cb5-62" aria-hidden="true" tabindex="-1"></a>|        | 1    | 100    | 10 000    |</span>
+<span id="cb5-63"><a href="#cb5-63" aria-hidden="true" tabindex="-1"></a>|        |      | 1      | 100       |</span>
+<span id="cb5-64"><a href="#cb5-64" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-65"><a href="#cb5-65" aria-hidden="true" tabindex="-1"></a>: Umrechnung von gängigen Flächenmaßen. {#tbl-unit-03}</span>
+<span id="cb5-66"><a href="#cb5-66" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-67"><a href="#cb5-67" aria-hidden="true" tabindex="-1"></a><span class="fu">## Volumenmaße</span></span>
+<span id="cb5-68"><a href="#cb5-68" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-69"><a href="#cb5-69" aria-hidden="true" tabindex="-1"></a>Die @tbl-unit-04 zeigt die Umrechnungen von Volumenmaßen. Häufig benötigen wir verschiedene Volumen bei der Abfüllung von Dünger oder aber auch anderer Flüssigkeiten. Die Bewässerung und auch die Kühlung wird über Volumen geregelt. Auch ist es wichtig zu wisen, wie denn die Idee des *Liters* mit den $m^3$ zusammenhängt.</span>
+<span id="cb5-70"><a href="#cb5-70" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-71"><a href="#cb5-71" aria-hidden="true" tabindex="-1"></a>| Liter   | hl | l          | dl      | cl     | ml     |</span>
+<span id="cb5-72"><a href="#cb5-72" aria-hidden="true" tabindex="-1"></a>|---------|------|--------------|-----------|----------|-----------|</span>
+<span id="cb5-73"><a href="#cb5-73" aria-hidden="true" tabindex="-1"></a>| $1m^3$  | 10   | 1 000        | 10 000    | 100 000  | 1 000 000 |</span>
+<span id="cb5-74"><a href="#cb5-74" aria-hidden="true" tabindex="-1"></a>|         | 1    | 100          | 1 000     | 10 000   | 100 000   |</span>
+<span id="cb5-75"><a href="#cb5-75" aria-hidden="true" tabindex="-1"></a>|         |      | 10           | 100       | 1 000    | 10 000    |</span>
+<span id="cb5-76"><a href="#cb5-76" aria-hidden="true" tabindex="-1"></a>| $1dm^3$ |      | 1            | 10        | 100      | 1 000     |</span>
+<span id="cb5-77"><a href="#cb5-77" aria-hidden="true" tabindex="-1"></a>|         |      |              | 1         | 10       | 100       |</span>
+<span id="cb5-78"><a href="#cb5-78" aria-hidden="true" tabindex="-1"></a>|         |      |              |           | 1        | 10        |</span>
+<span id="cb5-79"><a href="#cb5-79" aria-hidden="true" tabindex="-1"></a>| $1cm^3$ |      |              |           |          | 1         |</span>
+<span id="cb5-80"><a href="#cb5-80" aria-hidden="true" tabindex="-1"></a>|         |      | $1 000 cm^3$ | $100cm^3$ | $10cm^3$ | $1cm^3$   |</span>
+<span id="cb5-81"><a href="#cb5-81" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-82"><a href="#cb5-82" aria-hidden="true" tabindex="-1"></a>: Umrechnung von gängigen Volumenmaßen. {#tbl-unit-04}</span>
+<span id="cb5-83"><a href="#cb5-83" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-84"><a href="#cb5-84" aria-hidden="true" tabindex="-1"></a><span class="fu">## Prozent, Promille und ppm</span></span>
 <span id="cb5-85"><a href="#cb5-85" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-86"><a href="#cb5-86" aria-hidden="true" tabindex="-1"></a>: Umrechnung von Prozenten und Anteilen. {#tbl-unit-05}</span>
+<span id="cb5-86"><a href="#cb5-86" aria-hidden="true" tabindex="-1"></a>Abschließend schauen wir uns in der @tbl-unit-05 nochmal die Umrechnungen von Prozent und Promille an. Das Prinzip nutzen wir dann häufig zur Abschätzung von anderen Flächen oder Volumen, wenn wir nicht die exakte Änderung kennen sondern eben nur die Prozentuale.</span>
+<span id="cb5-87"><a href="#cb5-87" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-88"><a href="#cb5-88" aria-hidden="true" tabindex="-1"></a>|                                                          |                            |              | Ein Zuckerwürfel in                |</span>
+<span id="cb5-89"><a href="#cb5-89" aria-hidden="true" tabindex="-1"></a>|------------------------|----------------|----------------|----------------|</span>
+<span id="cb5-90"><a href="#cb5-90" aria-hidden="true" tabindex="-1"></a>| 1 Prozent ist 1 Teil von hundert Teilen                  | 10 Gramm pro Kilogramm     | $10 g/kg$    | 0.27 Litern, ca. 2 Tassen          |</span>
+<span id="cb5-91"><a href="#cb5-91" aria-hidden="true" tabindex="-1"></a>| 1 Promille ist 1 Teil von Tausend Teilen                 | 1 Gramm pro Kilogramm      | $1 g/kg$     | 2.7 Litern, ca. 3.5 Flaschen Wein  |</span>
+<span id="cb5-92"><a href="#cb5-92" aria-hidden="true" tabindex="-1"></a>| 1 ppm (part per million) ist 1 Teil von 1 Million Teilen | 1 Milligramm pro Kilogramm | $0.001 g/kg$ | 2 700 Litern, ca. einem Tanklaster |</span>
+<span id="cb5-93"><a href="#cb5-93" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-94"><a href="#cb5-94" aria-hidden="true" tabindex="-1"></a>: Umrechnung von Prozenten und Anteilen. {#tbl-unit-05}</span>
 </code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Mathematik wurde von <a href="https://www.hs-osnabrueck.de/prof-dr-jochen-kruppa/">Jochen Kruppa-Scheetz</a> geschrieben.</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/jkruppa/jkruppa.github.io/math/edit/master/geometry-unit.qmd" class="toc-action"><i class="bi bi-github"></i>Seite editieren</a></li><li><a href="https://github.com/jkruppa/jkruppa.github.io/math/issues/new" class="toc-action"><i class="bi empty"></i>Problem melden</a></li><li><a href="https://github.com/jkruppa/jkruppa.github.io/math/blob/master/geometry-unit.qmd" class="toc-action"><i class="bi empty"></i>Quellcode anzeigen</a></li></ul></div></div>
+    <div class="nav-footer-right">
+<p>Dieses Openbook wurde mit <a href="https://quarto.org/">Quarto</a> erstellt.</p>
+</div>
+  </div>
+</footer>
 
 
 

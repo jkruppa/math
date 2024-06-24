@@ -33,6 +33,14 @@ Nachdem wir einmal die ganz großen Zahlen dargestellt haben, wollen wir uns in 
 
 : Sehr kleine Zahlen mit vielen Nullen mit den jeweiligen Abkürzungen und Schreibweisen. {#tbl-unit-02}
 
+::: callout-tip
+## Wieviele Nullen sollen es sein?
+
+Du kannst dir merken, dass bei positiven Hochzahlen, die Hochzahl die Anzahl an Nullen angibt. So ist eben 1e+2 eine 1 mit zwei Nullen, also Hundert. Eine $10^3$ ist eine Eins mit drei Nullen, also Tausend.
+
+Bei den negativen Hochzahlen, siehst du immer eine Null weniger, als die Hochzahl angibt. So ist 1e-2 eben 0.01 und damit nur eine Null vor der Eins. Ebenso ist dann $10^{-4}$ dann 0.0001 also eine Eins mit drei Nullen.
+:::
+
 Wenn dir unklar ist, wie denn eine Zahl mit dem `e` aussehen würde, kannst du die Funktion `format()` mit der Option `scientific = FALSE` nutzen. Damit schaltest du die exponentielle Schreibweise in R aus.
 
 ```{r}
@@ -58,7 +66,7 @@ In der @tbl-unit-03 sehen wir nochmal die Umrechnung von gängigen Flächenmaße
 
 Die @tbl-unit-04 zeigt die Umrechnungen von Volumenmaßen. Häufig benötigen wir verschiedene Volumen bei der Abfüllung von Dünger oder aber auch anderer Flüssigkeiten. Die Bewässerung und auch die Kühlung wird über Volumen geregelt. Auch ist es wichtig zu wisen, wie denn die Idee des *Liters* mit den $m^3$ zusammenhängt.
 
-| Liter   | $hl$ | $l$          | $dl$      | $cl$     | $ml$      |
+| Liter   | hl | l          | dl      | cl     | ml     |
 |---------|------|--------------|-----------|----------|-----------|
 | $1m^3$  | 10   | 1 000        | 10 000    | 100 000  | 1 000 000 |
 |         | 1    | 100          | 1 000     | 10 000   | 100 000   |

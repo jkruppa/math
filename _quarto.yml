@@ -10,10 +10,22 @@ crossref:
   title-delim: —     # (default is ":")
 
 book:
-  title: "Mathematik"
+  title: "Mathematik für Agrarwissenschaften"
   subtitle: "Der kleine Leitfaden"
-  author: "Prof. Dr. Jochen Kruppa-Scheetz"
+  author: "<a href='https://www.hs-osnabrueck.de/prof-dr-jochen-kruppa/'>Prof. Dr. Jochen Kruppa-Scheetz</a>"
   date: "24. June 2024"
+  description: Eine Formelsammlung für Mathematik in den Agrarwissenschaften
+  url: https://jkruppa.github.io/math
+  repo-url: https://github.com/jkruppa/jkruppa.github.io/math
+  repo-branch: master
+  repo-actions: [edit, issue, source]
+  sharing: [twitter, facebook, linkedin]
+  search: true
+  page-footer:
+    left: |
+      Mathematik wurde von <a href="https://www.hs-osnabrueck.de/prof-dr-jochen-kruppa/">Jochen Kruppa-Scheetz</a> geschrieben. 
+    right: |
+      Dieses Openbook wurde mit <a href="https://quarto.org/">Quarto</a> erstellt.
   chapters:
     - index.qmd
     - part: geometry-preface.qmd
