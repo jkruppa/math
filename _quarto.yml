@@ -10,13 +10,12 @@ crossref:
   title-delim: —     # (default is ":")
 
 book:
-  title: "Skript Mathematik"
+  title: "Mathematik"
   subtitle: "Der kleine Leitfaden"
   author: "Prof. Dr. Jochen Kruppa-Scheetz"
   date: "24. June 2024"
   chapters:
     - index.qmd
-    - literature.qmd
     - part: geometry-preface.qmd
       chapters:
       - geometry-unit.qmd
@@ -46,7 +45,7 @@ format:
     theme:
       light: zephyr
       dark: superhero
-    cover-image: cover2023.png
+    cover-image: cover2024.png
     code-annotations: hover
     lightbox: true
     toc-expand: 2
