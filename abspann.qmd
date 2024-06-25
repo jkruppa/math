@@ -1,0 +1,13 @@
+```{r echo = FALSE}
+pacman::p_load(tidyverse, readxl, knitr, kableExtra, lubridate)
+```
+
+# Abspann {#sec-abspann .unnumbered}
+
+*Letzte Änderung am `r format(fs::file_info("abspann.qmd")$modification_time, '%d. %B %Y um %H:%M:%S')`*
+
+> *"Kein Buch kann jemals fertig sein. Während wir daran arbeiten, lernen wir gerade genug, um es in dem Moment unfertig zu finden, in dem wir uns von ihm lösen." --- Karl Popper*
+
+Kein Buch kann je fertig gestellt werden, auch dieses kurze Buch hier über die "Mathematik in den Agrawissenschaften" nicht. Ich bin aber soweit, das Buch als fertig zu empfinden an diesem sonnigen, beliebigen Montagmittag. Es hat alles was du und ich brauchen um eine Mathematikvorlesung zu gestalten. Am Ende ist es dann doch eine gute Referenz zum nachschlagen geworden. Möge dir das Buch von Nutzen sein. Mmir hat es Spaß gemacht zu schreiben.
+
+-- Osnabrück im Juni 2024
