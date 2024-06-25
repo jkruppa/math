@@ -69,7 +69,7 @@ format:
     code-tools: true
     mermaid:
       theme: neutral
-    pdf:
-      documentclass: scrreprt
+  pdf:
+    documentclass: scrreprt
 
 
