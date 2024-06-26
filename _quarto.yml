@@ -48,7 +48,8 @@ book:
     - part: zinsen-preface.qmd
       chapters: 
       - zins-basic.qmd
-    - part: abspann.qmd
+    appendices:
+      - abspann.qmd
 
 bibliography: references.bib
 lang: de 
