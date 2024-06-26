@@ -48,8 +48,8 @@ book:
     - part: zinsen-preface.qmd
       chapters: 
       - zins-basic.qmd
-    appendices:
-      - abspann.qmd
+  appendices: 
+    - abspann.qmd
 
 bibliography: references.bib
 lang: de 
@@ -70,7 +70,4 @@ format:
     code-tools: true
     mermaid:
       theme: neutral
-  pdf:
-    documentclass: scrreprt
-
 
