@@ -6,6 +6,8 @@ pacman::p_load(tidyverse, readxl, knitr, kableExtra, Hmisc)
 
 *Letzte Änderung am `r format(fs::file_info("geometry-unit.qmd")$modification_time, '%d. %B %Y um %H:%M:%S')`*
 
+
+
 ## Maßeinheiten
 
 Wozu brauchen wir Maßeinheiten? Zum einen wollen wir nicht immer so große Zahlen schreiben oder aber sehr kleine Zahlen. Die ganzen Nullen machen dann doch den Text sehr unübersichtlich. Aus diesem Grund gibt es mehrere Arten der Kurzschreibweise um Zahlen in einer kürzeren Form darzustellen. In der folgenden @tbl-unit-01 sind einem die sehr großen Zahlen bis $10^{12}$ einmal dargestellt.
