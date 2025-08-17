@@ -13,7 +13,8 @@ book:
   title: "Mathematik für Agrarwissenschaften"
   subtitle: "Der kleine Leitfaden"
   author: "<a href='https://www.hs-osnabrueck.de/prof-dr-jochen-kruppa/'>Prof. Dr. Jochen Kruppa-Scheetz</a>"
-  date: "25. June 2024"
+  date: "17. August 2025"
+  favicon: cover2025_favi.png
   description: Eine Formelsammlung für Mathematik in den Agrarwissenschaften
   url: https://jkruppa.github.io/math
   repo-url: https://github.com/jkruppa/jkruppa.github.io/math
@@ -55,19 +56,20 @@ bibliography: references.bib
 lang: de 
 
 format:
-  html:
+  html: 
     theme:
-      light: zephyr
-      dark: superhero
-    cover-image: cover2024.png
+      - pulse
+      - bioscience.scss
+    cover-image: cover2025.png
     code-annotations: hover
     lightbox: true
     toc-expand: 2
-    code-fold: true
+    code-fold: show
     highlight-style: tango
     code-block-border-left: true
     code-summary: "R Code [zeigen / verbergen]"
     code-tools: true
     mermaid:
       theme: neutral
+      htmlLabels: true
 

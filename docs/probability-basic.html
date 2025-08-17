@@ -2,13 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="de" xml:lang="de"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.552">
+<meta name="generator" content="quarto-1.6.39">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="description" content="Eine Formelsammlung für Mathematik in den Agrarwissenschaften">
 
-<title>Mathematik für Agrarwissenschaften - 8&nbsp; Berechnungen mit Wahrscheinlichkeiten</title>
+<title>8&nbsp; Berechnungen mit Wahrscheinlichkeiten – Mathematik für Agrarwissenschaften</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -34,7 +34,7 @@ div.sourceCode { overflow: auto; }
 }
 @media print {
 pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
 }
 pre.numberSource code
   { counter-reset: source-line 0; }
@@ -72,12 +72,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-05fe91a66cf75bbbb8c9664867fe5124.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-4161d778553868da077d3f61bd01e85a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
 <link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
@@ -109,7 +107,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   }
 }</script>
 
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <script type="text/javascript">
@@ -147,13 +145,13 @@ window.Quarto = {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
         <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./probability-preface.html">Von Wahrscheinlichkeiten</a></li><li class="breadcrumb-item"><a href="./probability-basic.html"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Berechnungen mit Wahrscheinlichkeiten</span></a></li></ol></nav>
-        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
-      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+      <button type="button" class="btn quarto-search-button" aria-label="Suchen" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
     </div>
@@ -166,32 +164,31 @@ window.Quarto = {
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="./">Mathematik für Agrarwissenschaften</a> 
-        <div class="sidebar-tools-main tools-wide">
+        <div class="sidebar-tools-main">
     <a href="https://github.com/jkruppa/jkruppa.github.io/math" title="Quellcode" class="quarto-navigation-tool px-1" aria-label="Quellcode"><i class="bi bi-github"></i></a>
     <div class="dropdown">
-      <a href="" title="Share" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Share"><i class="bi bi-share"></i></a>
+      <a href="" title="Share" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Share"><i class="bi bi-share"></i></a>
       <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
           <li>
             <a class="dropdown-item sidebar-tools-main-item" href="https://twitter.com/intent/tweet?url=|url|">
-              <i class="bi bi-bi-twitter pe-1"></i>
+              <i class="bi bi-twitter pe-1"></i>
             Twitter
             </a>
           </li>
           <li>
             <a class="dropdown-item sidebar-tools-main-item" href="https://www.facebook.com/sharer/sharer.php?u=|url|">
-              <i class="bi bi-bi-facebook pe-1"></i>
+              <i class="bi bi-facebook pe-1"></i>
             Facebook
             </a>
           </li>
           <li>
             <a class="dropdown-item sidebar-tools-main-item" href="https://www.linkedin.com/sharing/share-offsite/?url=|url|">
-              <i class="bi bi-bi-linkedin pe-1"></i>
+              <i class="bi bi-linkedin pe-1"></i>
             LinkedIn
             </a>
           </li>
       </ul>
     </div>
-  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Dunkelmodus umschalten"><i class="bi"></i></a>
 </div>
     </div>
       </div>
@@ -212,7 +209,7 @@ window.Quarto = {
       <div class="sidebar-item-container"> 
             <a href="./geometry-preface.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Von Maßzahlen, Flächen und Volumen</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Abschnitt umschalten">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Abschnitt umschalten">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
@@ -241,7 +238,7 @@ window.Quarto = {
       <div class="sidebar-item-container"> 
             <a href="./vector-preface.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Von Vektoren und Matrizen</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Abschnitt umschalten">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Abschnitt umschalten">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
@@ -264,7 +261,7 @@ window.Quarto = {
       <div class="sidebar-item-container"> 
             <a href="./functions-preface.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Von mathematischen Funktionen</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Abschnitt umschalten">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Abschnitt umschalten">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
@@ -287,7 +284,7 @@ window.Quarto = {
       <div class="sidebar-item-container"> 
             <a href="./probability-preface.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Von Wahrscheinlichkeiten</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true" aria-label="Abschnitt umschalten">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Abschnitt umschalten">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
@@ -310,7 +307,7 @@ window.Quarto = {
       <div class="sidebar-item-container"> 
             <a href="./zinsen-preface.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Von Zinsen</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true" aria-label="Abschnitt umschalten">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Abschnitt umschalten">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
@@ -325,9 +322,9 @@ window.Quarto = {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true">
  <span class="menu-text">Anhang</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="true" aria-label="Abschnitt umschalten">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true" aria-label="Abschnitt umschalten">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
@@ -478,10 +475,10 @@ window.Quarto = {
 </dd>
 </dl>
 <p>Schauen wir uns in <a href="#fig-prob-baum-01" class="quarto-xref">Abbildung&nbsp;<span>8.2</span></a> einmal einen theoretischen Wahrscheinlichkeitsbaum an. Wir schreiben hier erstmal nur die Ereignisse <span class="math inline">\(A\)</span> und <span class="math inline">\(B\)</span> auf. Danach betrachten wir einmal die Sachlage an einem Beispiel für unabhängige Ereignisse und einmal für abhängige Ereignisse.</p>
-<div id="fig-prob-baum-01" class="quarto-figure quarto-figure-center quarto-float anchored" data-fig-align="center">
+<div id="fig-prob-baum-01" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-prob-baum-01-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="images/prob_baum_01.png" class="lightbox" data-glightbox="description: .lightbox-desc-7" data-gallery="quarto-lightbox-gallery-7"><img src="images/prob_baum_01.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%"></a>
+<a href="images/prob_baum_01.png" class="lightbox" data-gallery="quarto-lightbox-gallery-7" title="Abbildung&nbsp;8.1— Schematische Abbilung eines Wahrscheinlichkeitsbaum mit den Ereignissen A und B sowie deren Gegenereignis \bar{A} und \bar{B}."><img src="images/prob_baum_01.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-prob-baum-01-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Abbildung&nbsp;8.1— Schematische Abbilung eines Wahrscheinlichkeitsbaum mit den Ereignissen <span class="math inline">\(A\)</span> und <span class="math inline">\(B\)</span> sowie deren Gegenereignis <span class="math inline">\(\bar{A}\)</span> und <span class="math inline">\(\bar{B}\)</span>.
@@ -499,10 +496,10 @@ Abbildung&nbsp;8.1— Schematische Abbilung eines Wahrscheinlichkeitsbaum mit de
 <section id="unabhängiger-zufallsversuch" class="level3" data-number="8.2.1">
 <h3 data-number="8.2.1" class="anchored" data-anchor-id="unabhängiger-zufallsversuch"><span class="header-section-number">8.2.1</span> Unabhängiger Zufallsversuch</h3>
 <p>Wir werfen eine faire Münze zweimal und erhalten folgendes Baumdiagramm. Darüber hinaus gehen wir davon aus, dass wir es mit einem unabhängigen Zufallsexperiment zu tun haben.</p>
-<div id="fig-prob-baum-01" class="quarto-figure quarto-figure-center quarto-float anchored" width="100%" data-fig-align="center">
+<div id="fig-prob-baum-01" class="quarto-float quarto-figure quarto-figure-center anchored" width="100%" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-prob-baum-01-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="images/prob_baum_02.png" class="lightbox" data-glightbox="description: .lightbox-desc-8" data-gallery="quarto-lightbox-gallery-8"><img src="images/prob_baum_02.png" id="fig-prob-baum-01" class="img-fluid quarto-figure quarto-figure-center anchored figure-img" style="width:100.0%"></a>
+<a href="images/prob_baum_02.png" class="lightbox" data-gallery="quarto-lightbox-gallery-8" title="Abbildung&nbsp;8.2— "><img src="images/prob_baum_02.png" id="fig-prob-baum-01" class="img-fluid quarto-figure quarto-figure-center anchored figure-img" style="width:100.0%"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-prob-baum-01-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Abbildung&nbsp;8.2
@@ -536,10 +533,10 @@ Pr(Kopf \cap Kopf) &amp;= Pr(Kopf) \times Pr(Kopf) \\
 <section id="abhängiger-zufallsversuch" class="level3" data-number="8.2.2">
 <h3 data-number="8.2.2" class="anchored" data-anchor-id="abhängiger-zufallsversuch"><span class="header-section-number">8.2.2</span> Abhängiger Zufallsversuch</h3>
 <p>Soweit haben wir uns einen unabhängigen Zufallsversuch angeschaut. Der zweite Münzwurf war unabhängig vom ersten Münzwurf. Oder der erste Münzwurf beeinflusst nicht den zweiten Münzwurf. Im Folgenden wollen wir uns ein abhängiges Zufallsexperiment anschauen. Wenn das Ereignis <span class="math inline">\(A\)</span> oder das Gegenereignis <span class="math inline">\(\bar{A}\)</span> auftritt, dann tritt das Ereignis <span class="math inline">\(B\)</span> und das Gegenereignis <span class="math inline">\(\bar{B}\)</span> nicht unabhängig voneinander auf. Das Ereignis <span class="math inline">\(A\)</span> tritt mit einer Wahrscheinlichkeit von <span class="math inline">\(0.3\)</span> auf. Somit tritt das Gegenereignis <span class="math inline">\(\bar{A}\)</span> mit einer Wahrscheinlichkeit von <span class="math inline">\(0.7\)</span> auf. Im Weiteren tritt das Ereignis <span class="math inline">\(B\)</span> abhängig vom Auftreten von <span class="math inline">\(A\)</span> oder <span class="math inline">\(\bar{A}\)</span> mit unterschiedlicher Wahrscheinlichkeit auf. Im folgenden Baumdiagramm ist der Zusammenhang visualisiert.</p>
-<div id="fig-prob-baum-03" class="quarto-figure quarto-figure-center quarto-float anchored" width="100%" data-fig-align="center">
+<div id="fig-prob-baum-03" class="quarto-float quarto-figure quarto-figure-center anchored" width="100%" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-prob-baum-03-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="images/prob_baum_03.png" class="lightbox" data-glightbox="description: .lightbox-desc-9" data-gallery="quarto-lightbox-gallery-9"><img src="images/prob_baum_03.png" id="fig-prob-baum-03" class="img-fluid quarto-figure quarto-figure-center anchored figure-img" style="width:100.0%"></a>
+<a href="images/prob_baum_03.png" class="lightbox" data-gallery="quarto-lightbox-gallery-9" title="Abbildung&nbsp;8.3— "><img src="images/prob_baum_03.png" id="fig-prob-baum-03" class="img-fluid quarto-figure quarto-figure-center anchored figure-img" style="width:100.0%"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-prob-baum-03-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Abbildung&nbsp;8.3
@@ -562,7 +559,7 @@ Pr(\bar{A} \cap \bar{B}) &amp;= 0.7 \cdot 0.9 = 0.63 \\
 \end{aligned}
 \]</span></p>
 <p>Wenn dir die Schreibweise mit dem Bogen <span class="math inline">\(\cap\)</span> ungewohnt ist, dann kannst du dir das Baumdiagramm auch als eine Kreuztabelle vorstellen. Wir tragen in die Felder immer den Wert ein, bei dem der Spaltenwert und der Zeilenwert gilt. Im ersten Feld gilt <span class="math inline">\(A\)</span> aus der ersten Zeile und <span class="math inline">\(B\)</span> aus der ersten Spalte.</p>
-<table class="table">
+<table class="caption-top table">
 <colgroup>
 <col style="width: 10%">
 <col style="width: 30%">
@@ -639,7 +636,7 @@ Pr(A\mid B) &amp;= \cfrac{Pr(B\mid A) \cdot Pr(A)} {Pr(B)} \\
 <section id="mengenschreibweise" class="level2" data-number="8.4">
 <h2 data-number="8.4" class="anchored" data-anchor-id="mengenschreibweise"><span class="header-section-number">8.4</span> Mengenschreibweise</h2>
 <p>Im Folgenden sehen wir nochmal als Wiederholung verschiedene Mengenschreibweisen.</p>
-<table class="table">
+<table class="caption-top table">
 <thead>
 <tr class="header">
 <th style="text-align: center;"></th>
@@ -679,13 +676,13 @@ Pr(A\mid B) &amp;= \cfrac{Pr(B\mid A) \cdot Pr(A)} {Pr(B)} \\
 <section id="logische-operatoren" class="level2" data-number="8.5">
 <h2 data-number="8.5" class="anchored" data-anchor-id="logische-operatoren"><span class="header-section-number">8.5</span> Logische Operatoren</h2>
 <p>In <a href="#tbl-logical-figures" class="quarto-xref">Tabelle&nbsp;<span>8.1</span></a> nochmal die Zusammenfassung von Menge, mathematischer Mengenschreibweise sowie deren Bedeutung.</p>
-<div id="tbl-logical-figures" class="quarto-float anchored">
+<div id="tbl-logical-figures" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-logical-figures-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Tabelle&nbsp;8.1— Zusammenfassung von Menge und mathematischer Mengenschreibweise
 </figcaption>
 <div aria-describedby="tbl-logical-figures-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<table class="table">
+<table class="caption-top table">
 <colgroup>
 <col style="width: 36%">
 <col style="width: 26%">
@@ -700,32 +697,32 @@ Tabelle&nbsp;8.1— Zusammenfassung von Menge und mathematischer Mengenschreibwe
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: center;"><a href="images/schnitt_1.png" class="lightbox" data-glightbox="description: .lightbox-desc-11" data-gallery="quarto-lightbox-gallery-11"><img src="images/schnitt_1.png" class="img-fluid figure-img"></a></td>
+<td style="text-align: center;"><a href="images/schnitt_1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-11" title="Tabelle&nbsp;8.1— Zusammenfassung von Menge und mathematischer Mengenschreibweise"><img src="images/schnitt_1.png" class="img-fluid figure-img"></a></td>
 <td style="text-align: center;"><span class="math inline">\(A \cup B\)</span></td>
 <td style="text-align: center;"><span class="math inline">\(A\)</span> tritt ein oder <span class="math inline">\(B\)</span> tritt ein</td>
 </tr>
 <tr class="even">
-<td style="text-align: center;"><a href="images/schnitt_2.png" class="lightbox" data-glightbox="description: .lightbox-desc-12" data-gallery="quarto-lightbox-gallery-12"><img src="images/schnitt_2.png" class="img-fluid figure-img"></a></td>
+<td style="text-align: center;"><a href="images/schnitt_2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-12" title="Tabelle&nbsp;8.1— Zusammenfassung von Menge und mathematischer Mengenschreibweise"><img src="images/schnitt_2.png" class="img-fluid figure-img"></a></td>
 <td style="text-align: center;"><span class="math inline">\(A \cap B\)</span></td>
 <td style="text-align: center;"><span class="math inline">\(A\)</span> tritt ein und <span class="math inline">\(B\)</span> tritt ein</td>
 </tr>
 <tr class="odd">
-<td style="text-align: center;"><a href="images/schnitt_3.png" class="lightbox" data-glightbox="description: .lightbox-desc-13" data-gallery="quarto-lightbox-gallery-13"><img src="images/schnitt_3.png" class="img-fluid figure-img"></a></td>
+<td style="text-align: center;"><a href="images/schnitt_3.png" class="lightbox" data-gallery="quarto-lightbox-gallery-13" title="Tabelle&nbsp;8.1— Zusammenfassung von Menge und mathematischer Mengenschreibweise"><img src="images/schnitt_3.png" class="img-fluid figure-img"></a></td>
 <td style="text-align: center;"><span class="math inline">\(A \setminus B\)</span></td>
 <td style="text-align: center;"><span class="math inline">\(A\)</span> tritt ein, aber <span class="math inline">\(B\)</span> tritt nicht ein</td>
 </tr>
 <tr class="even">
-<td style="text-align: center;"><a href="images/schnitt_4.png" class="lightbox" data-glightbox="description: .lightbox-desc-14" data-gallery="quarto-lightbox-gallery-14"><img src="images/schnitt_4.png" class="img-fluid figure-img"></a></td>
+<td style="text-align: center;"><a href="images/schnitt_4.png" class="lightbox" data-gallery="quarto-lightbox-gallery-14" title="Tabelle&nbsp;8.1— Zusammenfassung von Menge und mathematischer Mengenschreibweise"><img src="images/schnitt_4.png" class="img-fluid figure-img"></a></td>
 <td style="text-align: center;"><span class="math inline">\(\bar{A} = \Omega \setminus A\)</span></td>
 <td style="text-align: center;"><span class="math inline">\(A\)</span> tritt nicht ein</td>
 </tr>
 <tr class="odd">
-<td style="text-align: center;"><a href="images/schnitt_5.png" class="lightbox" data-glightbox="description: .lightbox-desc-15" data-gallery="quarto-lightbox-gallery-15"><img src="images/schnitt_5.png" class="img-fluid figure-img"></a></td>
+<td style="text-align: center;"><a href="images/schnitt_5.png" class="lightbox" data-gallery="quarto-lightbox-gallery-15" title="Tabelle&nbsp;8.1— Zusammenfassung von Menge und mathematischer Mengenschreibweise"><img src="images/schnitt_5.png" class="img-fluid figure-img"></a></td>
 <td style="text-align: center;"><span class="math inline">\(A \cup B\)</span></td>
 <td style="text-align: center;">Entweder <span class="math inline">\(A\)</span> ein oder <span class="math inline">\(B\)</span> tritt ein oder keins von beiden</td>
 </tr>
 <tr class="even">
-<td style="text-align: center;"><a href="images/schnitt_6.png" class="lightbox" data-glightbox="description: .lightbox-desc-16" data-gallery="quarto-lightbox-gallery-16"><img src="images/schnitt_6.png" class="img-fluid figure-img"></a></td>
+<td style="text-align: center;"><a href="images/schnitt_6.png" class="lightbox" data-gallery="quarto-lightbox-gallery-16" title="Tabelle&nbsp;8.1— Zusammenfassung von Menge und mathematischer Mengenschreibweise"><img src="images/schnitt_6.png" class="img-fluid figure-img"></a></td>
 <td style="text-align: center;"><span class="math inline">\(B \subset A\)</span></td>
 <td style="text-align: center;"><span class="math inline">\(B\)</span> ist Teilmenge von <span class="math inline">\(A\)</span></td>
 </tr>
@@ -738,17 +735,6 @@ Tabelle&nbsp;8.1— Zusammenfassung von Menge und mathematischer Mengenschreibwe
 
 <!-- -->
 
-<div class="hidden" aria-hidden="true">
-<span class="glightbox-desc lightbox-desc-7">Abbildung&nbsp;8.1— Schematische Abbilung eines Wahrscheinlichkeitsbaum mit den Ereignissen <span class="math inline">\(A\)</span> und <span class="math inline">\(B\)</span> sowie deren Gegenereignis <span class="math inline">\(\bar{A}\)</span> und <span class="math inline">\(\bar{B}\)</span>.</span>
-<span class="glightbox-desc lightbox-desc-8">Abbildung&nbsp;8.2— </span>
-<span class="glightbox-desc lightbox-desc-9">Abbildung&nbsp;8.3— </span>
-<span class="glightbox-desc lightbox-desc-11">Tabelle&nbsp;8.1— Zusammenfassung von Menge und mathematischer Mengenschreibweise</span>
-<span class="glightbox-desc lightbox-desc-12">Tabelle&nbsp;8.1— Zusammenfassung von Menge und mathematischer Mengenschreibweise</span>
-<span class="glightbox-desc lightbox-desc-13">Tabelle&nbsp;8.1— Zusammenfassung von Menge und mathematischer Mengenschreibweise</span>
-<span class="glightbox-desc lightbox-desc-14">Tabelle&nbsp;8.1— Zusammenfassung von Menge und mathematischer Mengenschreibweise</span>
-<span class="glightbox-desc lightbox-desc-15">Tabelle&nbsp;8.1— Zusammenfassung von Menge und mathematischer Mengenschreibweise</span>
-<span class="glightbox-desc lightbox-desc-16">Tabelle&nbsp;8.1— Zusammenfassung von Menge und mathematischer Mengenschreibweise</span>
-</div>
 </section>
 
 </main> <!-- /main -->
@@ -772,150 +758,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
-  const disableStylesheet = (stylesheets) => {
-    for (let i=0; i < stylesheets.length; i++) {
-      const stylesheet = stylesheets[i];
-      stylesheet.rel = 'prefetch';
-    }
-  }
-  const enableStylesheet = (stylesheets) => {
-    for (let i=0; i < stylesheets.length; i++) {
-      const stylesheet = stylesheets[i];
-      stylesheet.rel = 'stylesheet';
-    }
-  }
-  const manageTransitions = (selector, allowTransitions) => {
-    const els = window.document.querySelectorAll(selector);
-    for (let i=0; i < els.length; i++) {
-      const el = els[i];
-      if (allowTransitions) {
-        el.classList.remove('notransition');
-      } else {
-        el.classList.add('notransition');
-      }
-    }
-  }
-  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
-    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
-    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
-    let newTheme = '';
-    if(darkModeDefault) {
-      newTheme = isAlternate ? baseTheme : alternateTheme;
-    } else {
-      newTheme = isAlternate ? alternateTheme : baseTheme;
-    }
-    const changeGiscusTheme = () => {
-      // From: https://github.com/giscus/giscus/issues/336
-      const sendMessage = (message) => {
-        const iframe = document.querySelector('iframe.giscus-frame');
-        if (!iframe) return;
-        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
-      }
-      sendMessage({
-        setConfig: {
-          theme: newTheme
-        }
-      });
-    }
-    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
-    if (isGiscussLoaded) {
-      changeGiscusTheme();
-    }
-  }
-  const toggleColorMode = (alternate) => {
-    // Switch the stylesheets
-    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
-    manageTransitions('#quarto-margin-sidebar .nav-link', false);
-    if (alternate) {
-      enableStylesheet(alternateStylesheets);
-      for (const sheetNode of alternateStylesheets) {
-        if (sheetNode.id === "quarto-bootstrap") {
-          toggleBodyColorMode(sheetNode);
-        }
-      }
-    } else {
-      disableStylesheet(alternateStylesheets);
-      toggleBodyColorPrimary();
-    }
-    manageTransitions('#quarto-margin-sidebar .nav-link', true);
-    // Switch the toggles
-    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
-    for (let i=0; i < toggles.length; i++) {
-      const toggle = toggles[i];
-      if (toggle) {
-        if (alternate) {
-          toggle.classList.add("alternate");     
-        } else {
-          toggle.classList.remove("alternate");
-        }
-      }
-    }
-    // Hack to workaround the fact that safari doesn't
-    // properly recolor the scrollbar when toggling (#1455)
-    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
-      manageTransitions("body", false);
-      window.scrollTo(0, 1);
-      setTimeout(() => {
-        window.scrollTo(0, 0);
-        manageTransitions("body", true);
-      }, 40);  
-    }
-  }
-  const isFileUrl = () => { 
-    return window.location.protocol === 'file:';
-  }
-  const hasAlternateSentinel = () => {  
-    let styleSentinel = getColorSchemeSentinel();
-    if (styleSentinel !== null) {
-      return styleSentinel === "alternate";
-    } else {
-      return false;
-    }
-  }
-  const setStyleSentinel = (alternate) => {
-    const value = alternate ? "alternate" : "default";
-    if (!isFileUrl()) {
-      window.localStorage.setItem("quarto-color-scheme", value);
-    } else {
-      localAlternateSentinel = value;
-    }
-  }
-  const getColorSchemeSentinel = () => {
-    if (!isFileUrl()) {
-      const storageValue = window.localStorage.getItem("quarto-color-scheme");
-      return storageValue != null ? storageValue : localAlternateSentinel;
-    } else {
-      return localAlternateSentinel;
-    }
-  }
-  const darkModeDefault = false;
-  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
-  // Dark / light mode switch
-  window.quartoToggleColorScheme = () => {
-    // Read the current dark / light value 
-    let toAlternate = !hasAlternateSentinel();
-    toggleColorMode(toAlternate);
-    setStyleSentinel(toAlternate);
-    toggleGiscusIfUsed(toAlternate, darkModeDefault);
-  };
-  // Ensure there is a toggle, if there isn't float one in the top right
-  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
-    const a = window.document.createElement('a');
-    a.classList.add('top-right');
-    a.classList.add('quarto-color-scheme-toggle');
-    a.href = "";
-    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
-    const i = window.document.createElement("i");
-    i.classList.add('bi');
-    a.appendChild(i);
-    window.document.body.appendChild(a);
-  }
-  // Switch to dark mode if need be
-  if (hasAlternateSentinel()) {
-    toggleColorMode(true);
-  } else {
-    toggleColorMode(false);
-  }
   const icon = "";
   const anchorJS = new window.AnchorJS();
   anchorJS.options = {
@@ -931,18 +773,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -974,7 +805,27 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
   const viewSource = window.document.getElementById('quarto-view-source') ||
                      window.document.getElementById('quarto-code-tools-source');
   if (viewSource) {
@@ -1033,7 +884,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
     // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
     for (var i=0; i<links.length; i++) {
       const link = links[i];
       if (!isInternal(link.href)) {
@@ -1130,7 +981,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {
@@ -1634,7 +1484,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb1-225"><a href="#cb1-225" aria-hidden="true" tabindex="-1"></a>| <span class="al">![](images/schnitt_5.png)</span> |           $A \cup B$           | Entweder $A$ ein oder $B$ tritt ein oder keins von beiden |</span>
 <span id="cb1-226"><a href="#cb1-226" aria-hidden="true" tabindex="-1"></a>| <span class="al">![](images/schnitt_6.png)</span> |         $B \subset A$          |                 $B$ ist Teilmenge von $A$                 |</span>
 <span id="cb1-227"><a href="#cb1-227" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-228"><a href="#cb1-228" aria-hidden="true" tabindex="-1"></a>: Zusammenfassung von Menge und mathematischer Mengenschreibweise {#tbl-logical-figures}</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-228"><a href="#cb1-228" aria-hidden="true" tabindex="-1"></a>: Zusammenfassung von Menge und mathematischer Mengenschreibweise {#tbl-logical-figures}</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 <footer class="footer">
@@ -1650,30 +1500,37 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div>
   </div>
 </footer>
-<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","loop":false,"descPosition":"bottom","selector":".lightbox","openEffect":"zoom"});
-window.onload = () => {
-  lightboxQuarto.on('slide_before_load', (data) => {
-    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
-    const href = trigger.getAttribute('href');
-    if (href !== null) {
-      const imgEl = window.document.querySelector(`a[href="${href}"] img`);
-      if (imgEl !== null) {
-        const srcAttr = imgEl.getAttribute("src");
-        if (srcAttr && srcAttr.startsWith("data:")) {
-          slideConfig.href = srcAttr;
-        }
-      }
-    } 
-  });
-
-  lightboxQuarto.on('slide_after_load', (data) => {
-    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
-    if (window.Quarto?.typesetMath) {
-      window.Quarto.typesetMath(slideNode);
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
     }
-  });
-
-};
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
           </script>
 
 
